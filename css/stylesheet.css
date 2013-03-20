@@ -3,5 +3,14 @@ body {
     font-family: 'PT Serif', serif;
     max-width: 700px;
     margin: 0 auto;
+    background-color: #FFEEDB;
 
+}
+
+h1 {
+    text-align: center;
+}
+
+article h1 {
+    text-align: left;
 }
