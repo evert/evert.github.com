@@ -2,7 +2,7 @@
 date: 2012-05-04 20:44:14 UTC
 layout: post
 slug: new-http-status-codes
-title: New HTTP status codes
+title: "New HTTP status codes"
 categories:
   - http
 

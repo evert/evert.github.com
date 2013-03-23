@@ -2,7 +2,7 @@
 date: 2010-08-09 10:13:36 UTC
 layout: post
 slug: content-security-policy-introduction
-title: Content Security Policy introduction
+title: "Content Security Policy introduction"
 categories:
   - websec
   - csp

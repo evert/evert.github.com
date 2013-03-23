@@ -2,7 +2,7 @@
 date: 2010-05-17 15:33:52 UTC
 layout: post
 slug: when-to-escape-your-data
-title: When to escape your data
+title: "When to escape your data"
 categories:
   - php
   - html

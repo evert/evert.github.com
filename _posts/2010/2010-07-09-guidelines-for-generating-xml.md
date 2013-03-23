@@ -2,7 +2,7 @@
 date: 2010-07-09 17:19:59 UTC
 layout: post
 slug: guidelines-for-generating-xml
-title: Guidelines for generating XML
+title: "Guidelines for generating XML"
 categories:
   - php
   - cdata

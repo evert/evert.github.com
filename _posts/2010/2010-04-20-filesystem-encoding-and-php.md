@@ -2,7 +2,7 @@
 date: 2010-04-20 16:30:28 UTC
 layout: post
 slug: filesystem-encoding-and-php
-title: Filesystem encoding and PHP
+title: "Filesystem encoding and PHP"
 categories:
   - php
   - os/x

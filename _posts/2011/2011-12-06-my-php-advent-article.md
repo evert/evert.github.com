@@ -2,7 +2,7 @@
 date: 2011-12-06 21:31:56 UTC
 layout: post
 slug: my-php-advent-article
-title: My PHP Advent article
+title: "My PHP Advent article"
 categories:
   - php
   - datetime

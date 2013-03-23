@@ -2,7 +2,7 @@
 date: 2011-08-30 02:01:25 UTC
 layout: post
 slug: fake-googlecom-ssl-certificate-in-the-wild
-title: Fake *.google.com SSL certificate in the wild
+title: "Fake *.google.com SSL certificate in the wild"
 categories:
   - websec
   - ssl

@@ -2,7 +2,7 @@
 date: 2012-11-08 15:12:03 UTC
 layout: post
 slug: markdown-output-for-phpdocumentor
-title: Markdown output for PHPDocumentor2
+title: "Markdown output for PHPDocumentor2"
 categories:
   - github
   - phpdocumentor

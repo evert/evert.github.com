@@ -2,7 +2,7 @@
 date: 2010-05-25 14:58:43 UTC
 layout: post
 slug: blogging-for-4-years
-title: Blogging for 4 years
+title: "Blogging for 4 years"
 categories:
   - metablogging
 

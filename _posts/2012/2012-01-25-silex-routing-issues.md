@@ -2,7 +2,7 @@
 date: 2012-01-25 14:03:52 UTC
 layout: post
 slug: silex-routing-issues
-title: Silex routing issues
+title: "Silex routing issues"
 
 ---
 <p>I've had a bit of an interest for micro frameworks, and for a new project I'm working on I decided on <a href="http://silex.sensiolabs.org/">Silex</a>.</p>

@@ -2,7 +2,7 @@
 date: 2011-10-10 15:13:50 UTC
 layout: post
 slug: moved-sabredav-to-github
-title: Moved SabreDAV to Github
+title: "Moved SabreDAV to Github"
 categories:
   - sabredav
   - mercurial

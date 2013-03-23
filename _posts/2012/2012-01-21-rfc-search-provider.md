@@ -2,7 +2,7 @@
 date: 2012-01-21 18:10:08 UTC
 layout: post
 slug: rfc-search-provider
-title: RFC search provider
+title: "RFC search provider"
 categories:
   - opensearch
   - rfc

@@ -2,7 +2,7 @@
 date: 2012-10-06 12:47:38 UTC
 layout: post
 slug: sabredav-17-released
-title: SabreDAV 1.7 released
+title: "SabreDAV 1.7 released"
 categories:
   - webdav
   - sabredav

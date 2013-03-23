@@ -2,7 +2,7 @@
 date: 2012-06-07 16:30:11 UTC
 layout: post
 slug: ie10-and-dnt-header-update
-title: IE10 and DNT-header update
+title: "IE10 and DNT-header update"
 categories:
   - ie
   - privacy

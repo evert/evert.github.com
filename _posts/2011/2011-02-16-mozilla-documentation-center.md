@@ -2,7 +2,7 @@
 date: 2011-02-16 13:47:35 UTC
 layout: post
 slug: mozilla-documentation-center
-title: Mozilla Documentation Center
+title: "Mozilla Documentation Center"
 categories:
   - html
   - javascript

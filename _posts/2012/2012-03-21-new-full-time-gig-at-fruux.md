@@ -2,7 +2,7 @@
 date: 2012-03-21 13:44:50 UTC
 layout: post
 slug: new-full-time-gig-at-fruux
-title: New full-time gig at fruux
+title: "New full-time gig at fruux"
 categories:
   - sabredav
   - fruux

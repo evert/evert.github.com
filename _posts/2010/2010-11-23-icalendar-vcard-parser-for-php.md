@@ -2,7 +2,7 @@
 date: 2010-11-23 20:58:18 UTC
 layout: post
 slug: icalendar-vcard-parser-for-php
-title: iCalendar / vCard parser for PHP
+title: "iCalendar / vCard parser for PHP"
 categories:
   - php
   - sabredav

@@ -2,7 +2,7 @@
 date: 2011-04-06 20:48:03 UTC
 layout: post
 slug: temporary
-title: Temporary
+title: "Temporary"
 
 ---
 <p>I'm officially stopping development for my <a href="http://code.google.com/p/sabreamf">SabreAMF</a> and <a href="http://code.google.com/p/dropbox-php/">Dropbox php library</a>. I'm not using either myself anymore, which is detrimental for my interest and time I devote. So I felt like it's better to make it official.</p>

@@ -2,7 +2,7 @@
 date: 2010-04-13 09:37:33 UTC
 layout: post
 slug: new-habari-based-blog
-title: New habari-based blog
+title: "New habari-based blog"
 categories:
   - metablogging
   - habari

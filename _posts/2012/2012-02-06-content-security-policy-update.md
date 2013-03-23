@@ -2,7 +2,7 @@
 date: 2012-02-06 22:57:04 UTC
 layout: post
 slug: content-security-policy-update
-title: Content Security Policy update
+title: "Content Security Policy update"
 categories:
   - firefox
   - html

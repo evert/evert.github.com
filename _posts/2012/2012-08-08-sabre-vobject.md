@@ -2,7 +2,7 @@
 date: 2012-08-08 08:13:35 UTC
 layout: post
 slug: sabre-vobject
-title: New open source project: Sabre VObject
+title: "New open source project: Sabre VObject"
 categories:
   - sabredav
   - icalendar

@@ -2,7 +2,7 @@
 date: 2010-04-23 18:22:50 UTC
 layout: post
 slug: mbstring-function-overloading-dont-use-it
-title: mbstring function overloading: don't use it
+title: "mbstring function overloading: don't use it"
 categories:
   - php
   - unicode

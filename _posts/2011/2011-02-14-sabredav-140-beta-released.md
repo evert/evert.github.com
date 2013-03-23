@@ -2,7 +2,7 @@
 date: 2011-02-14 13:00:00 UTC
 layout: post
 slug: sabredav-140-beta-released
-title: SabreDAV 1.4.0-beta released
+title: "SabreDAV 1.4.0-beta released"
 categories:
   - php
   - webdav

@@ -2,7 +2,7 @@
 date: 2010-07-13 20:54:59 UTC
 layout: post
 slug: storing-encrypted-session-information-in-a-cookie
-title: Storing encrypted session information in a cookie
+title: "Storing encrypted session information in a cookie"
 categories:
   - php
   - websec

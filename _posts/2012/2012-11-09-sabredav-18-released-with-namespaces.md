@@ -2,7 +2,7 @@
 date: 2012-11-09 12:50:59 UTC
 layout: post
 slug: sabredav-18-released-with-namespaces
-title: SabreDAV 1.8 released (with namespaces!)
+title: "SabreDAV 1.8 released (with namespaces!)"
 categories:
   - php
   - namespaces
