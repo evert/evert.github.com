@@ -8,14 +8,14 @@ categories:
   - escaping
 
 ---
-<p>We're all being drilled over and over again to always use <a href="http://nl3.php.net/manual/en/mysqli.real-escape-string.php">mysqli::escape_string</a>, <a href="http://nl3.php.net/manual/en/pdo.quote.php">PDO::quote</a>, or preferably prepared statements when escaping user-supplied strings for use in MySQL queries.</p>
+We're all being drilled over and over again to always use <a href="http://nl3.php.net/manual/en/mysqli.real-escape-string.php">mysqli::escape_string</a>, <a href="http://nl3.php.net/manual/en/pdo.quote.php">PDO::quote</a>, or preferably prepared statements when escaping user-supplied strings for use in MySQL queries.
 
-<p>The downside to these methods is that they only work when there's an open connection to a server. So what if there's no connection available? In traditional Unix philosophy I'm writing an export script that doesn't execute SQL statements right to a server, but sends them to stdout. Forcing people to make a connection seems like a major inconvenience.</p>
+The downside to these methods is that they only work when there's an open connection to a server. So what if there's no connection available? In traditional Unix philosophy I'm writing an export script that doesn't execute SQL statements right to a server, but sends them to stdout. Forcing people to make a connection seems like a major inconvenience.
 
-<p>So what's left? Manual escaping I suppose.. The manual page for <a href="http://nl3.php.net/manual/en/mysqli.real-escape-string.php">mysqli::escape_string</a> mentions: <q>Characters encoded are NUL (ASCII 0), \n, \r, \, ', ", and Control-Z.</q>. </p>
+So what's left? Manual escaping I suppose.. The manual page for <a href="http://nl3.php.net/manual/en/mysqli.real-escape-string.php">mysqli::escape_string</a> mentions: _Characters encoded are NUL (ASCII 0), \n, \r, \, ', ", and Control-Z._
 
 ```php
-
+<?php
 function dontHateMe($unescaped) {
   $replacements = array(
      "\x00"=>'\x00',
@@ -28,10 +28,10 @@ function dontHateMe($unescaped) {
   );
   return strtr($unescaped,$replacements);
 }
-
+?>
 ```
 
-<p>There's a risk though.. Certain multi-byte character sets (such as BIG5 and GBK) may still allow for a security hole. You *should* be fine with UTF-8, so make sure you start your file with:</p>
+There's a risk though.. Certain multi-byte character sets (such as BIG5 and GBK) may still allow for a security hole. You *should* be fine with UTF-8, so make sure you start your file with:
 
 ```sql
 
@@ -39,6 +39,6 @@ SET CHARACTER SET utf8;
 
 ```
 
-<p>Still no guarantee from my side though. Tread carefully and avoid this if you can. If you have a better idea, or you feel like shouting at me for this.. let's hear it in the comments.</p>
+Still no guarantee from my side though. Tread carefully and avoid this if you can. If you have a better idea, or you feel like shouting at me for this.. let's hear it in the comments.
 
-<p><small>Special thanks to <a href="http://stackoverflow.com/questions/5696355/exporting-data-to-a-sql-format-how-to-escape/5702846#5702846">Spudley</a> for providing me with a reasonable answer to this question.</small></p>
+Special thanks to <a href="http://stackoverflow.com/questions/5696355/exporting-data-to-a-sql-format-how-to-escape/5702846#5702846">Spudley</a> for providing me with a reasonable answer to this question.

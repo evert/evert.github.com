@@ -13,11 +13,11 @@ categories:
 ---
 <p>HTML 5 video is coming, but which codec is going to be used to deliver it?</p>
 
-<p>Internet Explorer, Safari and Chrome have chosen on H.264, while Firefox and Opera are going for Ogg Theora. For us developers this sucks, because there is no one codec we can bet on to work in any browser. There's flash, which is more ubiquitous than any single browser, but it's a whole new toolchain to learn, and in my opinion it's a declining technology which will one day join the ranks of shockwave and <applet>. The future is in HTML, so what to do? Unfortunately there's no easy answer, so the most I can do is give an overview of what is going on today.</p>
+<p>Internet Explorer, Safari and Chrome have chosen on H.264, while Firefox and Opera are going for Ogg Theora. For us developers this sucks, because there is no one codec we can bet on to work in any browser. There's flash, which is more ubiquitous than any single browser, but it's a whole new toolchain to learn, and in my opinion it's a declining technology which will one day join the ranks of shockwave and &gt;applet&lt;. The future is in HTML, so what to do? Unfortunately there's no easy answer, so the most I can do is give an overview of what is going on today.</p>
 
 <h3>Choose multiple</h3>
 
-<p>First and foremost, keep in mind that the standard for the <video> tag allows multiple codes. You can easily specify a video tag with both an ogg vorbis and an H.264 source. This works as follows:</p>
+<p>First and foremost, keep in mind that the standard for the &lt;video&gt; tag allows multiple codes. You can easily specify a video tag with both an ogg vorbis and an H.264 source. This works as follows:</p>
 
 ```html
 

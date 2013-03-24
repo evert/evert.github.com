@@ -30,11 +30,11 @@ categories:
 <p>Currently no zip is provided. You should simply add it to your composer dependencies, as:</p>
 
 ```json
-
-"require" : {
-  "sabre/vobject" : "2.0.*"
+{
+    "require" : {
+      "sabre/vobject" : "2.0.*"
+    }
 }
-
 ```
 
 <p>I hope it's useful, and would love to hear your feedback!</p>
