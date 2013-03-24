@@ -24,7 +24,7 @@ categories:
 
 <h3>Sample code</h3>
 
-<code lang="php">
+```
 <?php
 
 class BrowserSession {
@@ -43,7 +43,7 @@ class BrowserSession {
         }
 
         list($userId, $time, $signature) = explode(':',$_COOKIE['MYSESSION']);
-        
+
         // The cookie is old
         if ($time> time() + $this->timeout) {
             echo "The session cookie timed out\n";

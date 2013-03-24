@@ -20,10 +20,10 @@ X-Content-Security-Policy: allow 'self'
 
 <p>A simple PHP example to see this in action:</p>
 
-<code lang="php">
+```php
 <?php
 
-header("X-Content-Security-Policy: allow 'self'"); 
+header("X-Content-Security-Policy: allow 'self'");
 
 ?>
 <html>
@@ -53,7 +53,7 @@ alert('XSS!');
   <li>javascript: urls</li>
   <li>HTML event attributes (onclick, onload, etc.).</li>
   <li>All images, plugin objects (flash, quicktime etc.), audio, video, html frames and fonts <em>not</em> served from the same domain as the html page.</li>
-  <li>XMLHttpRequest to domains other than the source domain.</li> 
+  <li>XMLHttpRequest to domains other than the source domain.</li>
 </ul>
 
 <p>Fortunately there are fine grained controls about what you want to allow from which domains. Here are some examples from <a href="https://wiki.mozilla.org/Security/CSP/Specification">the specification</a>.</p>
@@ -85,7 +85,7 @@ X-Content-Security-Policy: allow 'self'; report-uri http://example.org/cspreport
 
 <p>This allows you to detect any problems with your policy, or successful attempts by your evil users to inject code. An example of such a report is the following:</p>
 
-<code lang="json">
+```json
 {
   "csp-report":
     {
