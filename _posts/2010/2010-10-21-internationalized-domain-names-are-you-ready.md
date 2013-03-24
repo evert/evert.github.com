@@ -14,14 +14,16 @@ categories:
 
 <p>Many email-validation scripts might use an approach like this:</p>
 
-<code lang="php">
+```php
+
 $ok = preg_match('/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$/i', $email);
 
 ```
 
 <p>This one is pretty simple, it matches the most common address formats, as long as the tld (.com, nl, .uk, etc) is under 6 characters. For a bit more sophistication you might want to ensure that the tld is a bit more valid:</p>
 
-<code lang="php">
+```php
+
 $ok = preg_match('/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.(?:[A-Z]{2}|com|org|net|edu|gov|mil|biz|info|mobi|name|aero|asia|jobs|museum)$/i',$email);
 
 ```
@@ -52,7 +54,8 @@ $ok = preg_match('/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.(?:[A-Z]{2}|com|org|net|edu|gov|
 
 <p>The best way really to check for valid email addresses is to use a very liberal regex, but verify with a simple MX record lookup if a mailserver exists for the given domain. This example is an expansion on the first regex.</p>
 
-<code lang="php">
+```php
+
 $email = 'example@xn--9n2bp8q.xn--9t4b11yi5a';
 
 if(preg_match('/^[A-Z0-9._%+-]+@([A-Z0-9.-]+\.[A-Z0-9-]{2,})$/i', $email,$matches)) {

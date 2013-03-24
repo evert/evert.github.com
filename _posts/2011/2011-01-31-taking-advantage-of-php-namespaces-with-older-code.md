@@ -12,7 +12,8 @@ categories:
 
 <p>If you're running PHP 5.3 and you have to use pesky old code that uses long class prefixes (yea, so, pretty much all PHP code out there), you can still make use of namespace features to shorten them.</p>
 
-<code lang="php">
+```php
+
 <?php
 use Sabre_DAV_Auth_Backend_PDO as AuthBackend;
 use Zend_Controller_Action_Helper_AutoComplete_Abstract as AutoComplete;

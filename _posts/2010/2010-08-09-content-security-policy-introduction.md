@@ -20,7 +20,8 @@ X-Content-Security-Policy: allow 'self'
 
 <p>A simple PHP example to see this in action:</p>
 
-<code lang="php">
+```php
+
 <?php
 
 header("X-Content-Security-Policy: allow 'self'"); 
@@ -85,7 +86,8 @@ X-Content-Security-Policy: allow 'self'; report-uri http://example.org/cspreport
 
 <p>This allows you to detect any problems with your policy, or successful attempts by your evil users to inject code. An example of such a report is the following:</p>
 
-<code lang="json">
+```json
+
 {
   "csp-report":
     {

@@ -15,7 +15,8 @@ categories:
 
 <p>You can download the ttf's from <a href="http://font.ubuntu.com/">here</a>. Embedding it using css is easy:</p>
 
-<code lang="css">
+```css
+
 @font-face {
         font-family: "Ubuntu Sans";
         src: url('font/ubuntu/Ubuntu-R.ttf');

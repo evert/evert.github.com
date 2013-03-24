@@ -14,7 +14,8 @@ categories:
 
 <p>A few days ago on PHP-internals I saw a behavior that was completely new to me, and very much counter-intuitive.</p>
 
-<code lang="php">
+```php
+
 if( '20110204024217300000' == '20110204024217300264' )
   echo 'equal';
 else

@@ -24,7 +24,8 @@ categories:
 
 <h3>Sample code</h3>
 
-<code lang="php">
+```php
+
 <?php
 
 class BrowserSession {

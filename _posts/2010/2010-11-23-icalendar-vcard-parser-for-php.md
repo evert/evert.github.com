@@ -33,7 +33,8 @@ pear install sabredav/Sabre_VObject-alpha
 
 <p>To load in an object, you use the Reader class:</p>
 
-<code lang="php">
+```php
+
 // Link to the correct path if you manually dowloaded the package
 include 'Sabre/VObject/includes.php';
 
@@ -44,7 +45,8 @@ $calendar = Sabre_VObject_Reader::read(file_get_contents('icalendartest.ics'));
 
 <p>iCalendar objects consist of components (VEVENT, VTODO, VTIMEZONE, etc), properties (SUMMARY, DESCRIPTION, DTSTART, etc) and parameters, which are to properties what attributes are to elements in XML. To show a listing of all events in a calendar, this snippet would work:</p>
 
-<code lang="php">
+```php
+
 echo "There are ", count($calendar->vevent), " events in this calendar\n";
 
 // Looping through events
@@ -58,14 +60,16 @@ foreach($calendar->vevent as $event) {
 
 <p>You can easily modify properties:</p>
 
-<code lang="php">
+```php
+
 $calendar->vevent[0]->description = "It's a birthday party";
 
 ```
 
 <p>Creating new objects uses the following syntax:</p>
 
-<code lang="php">
+```php
+
 $todo = Sabre_VObject_Component::create('vtodo');
 $todo->summary = 'Take out the dog';
 $calendar->add($todo);
@@ -74,7 +78,8 @@ $calendar->add($todo);
 
 <p>And to turn your newly modified calendar back into an ics file:</p>
 
-<code lang="php">
+```php
+
 file_put_contents('output.ics', $calendar->serialize());
 
 ```
@@ -97,7 +102,8 @@ echo (string)$calendar->vevent[0]->dtstart['tzid'], "\n";
 
 <p>Creating a new calendar works similar to creating a new component. Simply:</p>
 
-<code lang="php">
+```php
+
 <?php
 
 $vcal = Sabre_VObject_Component::create('VCALENDAR');
@@ -115,7 +121,8 @@ $vcal->CALSCALE = 'GREGORIAN';
 
 <p>You can just use the following syntax:</p>
 
-<code lang="php">
+```php
+
 <?php
 
 $vevent = Sabre_VObject_Component::create('VEVENT');
@@ -127,7 +134,8 @@ $vevent->DTSTART = '20120101T000000Z';
 
 <p>But it's also possible to pass in PHP DateTime objects. However, the syntax for this is not that great:</p>
 
-<code lang="php">
+```php
+
 <?php
 
 $dateTime = new DateTime('now', new DateTimeZone('Europe/London'));
