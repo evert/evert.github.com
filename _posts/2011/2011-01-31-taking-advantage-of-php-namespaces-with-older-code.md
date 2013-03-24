@@ -19,6 +19,7 @@ use Zend_Controller_Action_Helper_AutoComplete_Abstract as AutoComplete;
 
 $backend = new AuthBackend();
 ?>
+
 ```
 
 <p>Might have been super obvious to most of you, but it just hadn't occurred to me.</p>

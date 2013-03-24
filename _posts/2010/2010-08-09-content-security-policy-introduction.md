@@ -15,7 +15,8 @@ categories:
 <h3>A simple example</h3>
 
 ```
-X-Content-Security-Policy: allow 'self'```
+X-Content-Security-Policy: allow 'self'
+```
 
 <p>A simple PHP example to see this in action:</p>
 
@@ -39,6 +40,7 @@ alert('XSS!');
 
   </body>
 </html>
+
 ```
 
 <p>If the above code is opened in Firefox 4.0 beta1, the script will not execute, and a warning is added to the "Error Console" (in the Tools menu).</p>
@@ -60,6 +62,7 @@ alert('XSS!');
 X-Content-Security-Policy: allow 'self'; img-src *; \
                            object-src media1.com media2.com *.cdn.com; \
                            script-src trustedscripts.example.com
+
 ```
 
 <p>This example starts with "allow 'self'", allowing only content from the same domain. The "img-src *" rule allows images from any domain. "object-src: media1.com media2.com" allows &lt;object&gt; tags to use files from media1.com, media1.com and the same domain as the html was served from. To learn more about these, I would recommend just taking a good look at the <a href="https://wiki.mozilla.org/Security/CSP/Specification#Directives">directives list in the specification</a>.</p>
@@ -69,14 +72,16 @@ X-Content-Security-Policy: allow 'self'; img-src *; \
 <p>Using the 'options' directive it's possible to turn on specific measures. Valid values for options are 'eval-script' and 'inline-script'.</p>
 
 ```
-X-Content-Security-Policy: allow 'self'; options inline-script, eval-script```
+X-Content-Security-Policy: allow 'self'; options inline-script, eval-script
+```
 
 <p>The preceding example allows inline scripts (using html event attributes, or the script tag) as well as the 'eval()' function. In general I would try to avoid this though.</p>
 
 <p>When a security rule is violated, it's possible to get the browser to send a report back to the server. For example, if an image is referenced from a blocked domain, the browser can send a simple report to a url you specify.</p>
 
 ```
-X-Content-Security-Policy: allow 'self'; report-uri http://example.org/cspreport.php```
+X-Content-Security-Policy: allow 'self'; report-uri http://example.org/cspreport.php
+```
 
 <p>This allows you to detect any problems with your policy, or successful attempts by your evil users to inject code. An example of such a report is the following:</p>
 
@@ -98,6 +103,7 @@ X-Content-Security-Policy: allow 'self'; report-uri http://example.org/cspreport
       "original-policy": "allow 'none'; img-src *, allow 'self'; img-src 'self'"
     }
 }
+
 ```
 
 <h3>Final notes</h3>

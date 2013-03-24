@@ -29,7 +29,8 @@ $xmlWriter->endElement(); // root
 $xmlWriter->endDocument();
 echo $xmlWriter->outputMemory();
 
-?>``` 
+?>
+``` 
 
 <p>Granted, XMLWriter is verbose, but you have to worry a lot less about escaping and validating your xml documents.</p>
 

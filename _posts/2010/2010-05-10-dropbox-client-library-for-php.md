@@ -18,6 +18,7 @@ categories:
 
 pear channel-discover pear.sabredav.org
 pear install sabredav/Dropbox-alpha
+
 ```
 
 <p>If that worked, you should be able to start using the API. The following example displays account information and uploads a file.</p>
@@ -40,6 +41,7 @@ var_dump($dropbox->getAccountInfo());
 
 /* Upload itself */
 $dropbox->putFile(basename(__FILE__), __FILE__);
+
 
 ```
 

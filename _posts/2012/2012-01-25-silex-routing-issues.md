@@ -15,6 +15,7 @@ title: "Silex routing issues"
 $app->get('/{name}', function($name) { 
    // If the page exists, render it, otherwise throw 404
 });
+
 ```
 
 <p>Simple enough. We also want to match the root of the application (the index, basically). This can be easily done with a default value:</p>
@@ -23,6 +24,7 @@ $app->get('/{name}', function($name) {
 $app->get('/{name}', function($name) { 
    // If the page exists, render it, otherwise throw 404
 })->value('name','index');
+
 ```
 
 <p>The first problem arose here. The existing site used urls all ending with a slash (/contact/ for example). But these routes won't match that. These routes will match /contact, but not /contact/. This can be fixed though. If your routes end with a slash, silex will be able to match both:</p>
@@ -31,6 +33,7 @@ $app->get('/{name}', function($name) {
 $app->get('/{name}/', function($name) { 
    // If the page exists, render it, otherwise throw 404
 })->value('name','index');
+
 ```
 
 <p>The preceding example will match /contact/. If the user went to /contact instead, it will redirect the user back to /contact/. I would have preferred the opposite in this case, but fair enough. This route will however no longer match the root of the website, so we need to refactor this a bit:</p>
@@ -44,6 +47,7 @@ $app->get('/{name}/', $staticHandler);
 $app->get('/', function() use ($staticHandler) { 
   return $staticHandler('index'); 
 } );
+
 ```
 
 <p>Note that the last example could have been structured a bit nicer, but you get the point.</p>
@@ -52,5 +56,6 @@ $app->get('/', function() use ($staticHandler) {
 
 <code lang="php">
 $app->mount('/blog/', new MySite\Controller\Blog());
+
 ```
 

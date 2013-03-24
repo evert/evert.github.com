@@ -17,6 +17,7 @@ categories:
 
 pear upgrade sabredav/Sabre_DAV
 pear upgrade sabredav/Sabre_CalDAV
+
 ```
 
 <p>To install using pear:</p>
@@ -26,6 +27,7 @@ pear upgrade sabredav/Sabre_CalDAV
 pear channel-discover pear.sabredav.org
 pear install sabredav/Sabre_DAV
 pear install sabredav/Sabre_CalDAV 
+
 ```
 
 <p>There is a list of 4 (smallish) backwards compatibility breaks in the API. You can read about it in the <a href="http://code.google.com/p/sabredav/wiki/Migrating1_2to1_3">migration guide</a>.</p>

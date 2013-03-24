@@ -17,6 +17,7 @@ categories:
 ```
 
 phpincludes . includes.php
+
 ```
 
 <p>This will generate a file such as:</p>
@@ -30,6 +31,7 @@ include __DIR__ . '/Class1.php';
 include __DIR__ . '/Class2.php';
 include __DIR__ . '/Class3.php';
 // End includes
+
 ```
 
 <p>You can edit everything before "// Begin includes" and after "// End includes". Subsequent edits will only replace the lines in between those comments.</p>
@@ -42,4 +44,5 @@ include __DIR__ . '/Class3.php';
 
 pear channel-discover pear.sabredav.org
 pear install sabredav/PHPIncludes
+
 ```

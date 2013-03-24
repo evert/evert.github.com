@@ -16,12 +16,14 @@ categories:
 
 <code lang="php">
 $ok = preg_match('/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$/i', $email);
+
 ```
 
 <p>This one is pretty simple, it matches the most common address formats, as long as the tld (.com, nl, .uk, etc) is under 6 characters. For a bit more sophistication you might want to ensure that the tld is a bit more valid:</p>
 
 <code lang="php">
 $ok = preg_match('/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.(?:[A-Z]{2}|com|org|net|edu|gov|mil|biz|info|mobi|name|aero|asia|jobs|museum)$/i',$email);
+
 ```
 
 <p><small>Note: both these regexes were taken from <a href="http://www.regular-expressions.info/email.html">regular-expression.info</a>. The top google hit, and decent examples.</small></p>
@@ -63,6 +65,7 @@ if(preg_match('/^[A-Z0-9._%+-]+@([A-Z0-9.-]+\.[A-Z0-9-]{2,})$/i', $email,$matche
 } else {
     echo "Email address did not match regular expression\n";
 }
+
 ```
 
 <p>The preceeding code does not convert UTF-8 to punycode though. There's not yet an easy native way in PHP to do this, but <a href="http://pear.php.net/package/Net_IDNA2">Pear's Net_IDNA2</a> provides a way. The <a href="http://svn.php.net/viewvc/pear/packages/Net_IDNA2/trunk/Net/IDNA2.php?view=markup">implementation</a> seems very complex though, and leaves me wondering if there's an easier way to go about it.</p>

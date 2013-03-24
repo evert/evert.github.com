@@ -15,6 +15,7 @@ categories:
 
 Host *
 EscapeChar ~
+
 ```
 
 <p>You can change the character here too, but ~ is the default and a sensible one.</p>
@@ -25,4 +26,5 @@ EscapeChar ~
 
 Host *
 ServerAliveInterval 60
+
 ```

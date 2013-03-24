@@ -97,7 +97,8 @@ else {
     echo '<br /><a href="?login=1234">Log in as user 1234</a>';
 
 }
-?>```
+?>
+```
 
 <p>A few notes:</p>
 

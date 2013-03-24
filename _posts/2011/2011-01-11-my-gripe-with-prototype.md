@@ -19,6 +19,7 @@ categories:
 
 <code lang="javascript">
 var myElem = $(myDomNode);
+
 ```
 
 <p>This augments the underlying variable with jQuery functionality. Besides the '$' (which can be turned off), jQuery pretty much keeps it's hands off your global namespace</p>
@@ -31,12 +32,14 @@ YUI().use('node-base', function(Y) {
    Y.on("domready", function() { console.log('ready!'); });
 
 });
+
 ```
 
 <p>This is a stark contrast with Prototype. As soon as you include it, it changes basic types such as strings, arrays and numbers. An example:</p>
 
 <code lang="javascript">
 alert( [1, 2, 3].toJSON() ); // outputs "[1, 2, 3]"
+
 ```
 
 <p>While from an API perspective, this seems quite nice and by far the simplest. Prototype provides these handy methods close to where you need them.</p>
@@ -63,11 +66,13 @@ var test = {
   }
 }
 alert(JSON.stringify(test));
+
 ```
 
 <p>The output of this last example will be :</p>
 
-<code lang="javascript">{"prop1":"val1"}```
+<code lang="javascript">{"prop1":"val1"}
+```
 
 <p>I would argue that this functionality is not a great design decision (separation of concerns!). However, it's there and it's standard. Prototype however, adds a toJSON() method to every Array, Object and String. In Prototype this has a different meaning though. The prototype methods actually json-encode themselves and return a string.</p>
 
@@ -79,18 +84,21 @@ alert(JSON.stringify(test));
 JSON.stringify({
   prop : [1, 2, 3, 4]
 });
+
 ```
 
 <p>The normal result:</p>
 
 <code lang="javascript">
 {"prop":[1,2,3,4]}
+
 ```
 
 <p>The result with prototype:</p>
 
 <code lang="javascript">
 {"prop":"[1, 2, 3, 4]"}
+
 ```
 
 <p>The easy fix is to simply get rid of toJSON functions as such:</p>
@@ -100,6 +108,7 @@ delete Object.prototype.toJSON;
 delete Array.prototype.toJSON;
 delete Hash.prototype.toJSON;
 delete String.prototype.toJSON;
+
 ```
 
 <p>There's even a comment on <a href="http://stackoverflow.com/questions/710586/json-stringify-bizarreness">stackoverflow</a> that fixes the issue and keeps Prototype's methods intact, but I know that as long as I will maintain applications that use Prototype, I'll have to deal with API collisions and incompatibilities.</p>
