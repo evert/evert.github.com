@@ -1,0 +1,30 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>{{ site.title }}</title>
+  <link type="application/atom+xml" rel="self" href="http://evertpot.com/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://evertpot.com/</id>
+  <author>
+    <name>Evert Pot</name>
+    <email>evert@rooftopsolutions.nl</email>
+  </author>
+
+  {% for post in site.posts limit:20 %}
+  <entry>
+    <id>http://evertpot.com/{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://evertpot.com/{{ post.id }}"/>
+    <title>{{ post.title | xml_escape }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Evert Pot</name>
+      <email>evert@rooftopsolutions.nl</email>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+
+</feed>
