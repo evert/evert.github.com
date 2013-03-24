@@ -29,7 +29,8 @@ categories:
 
 <p>Currently no zip is provided. You should simply add it to your composer dependencies, as:</p>
 
-<code lang="json">
+```json
+
 "require" : {
   "sabre/vobject" : "2.0.*"
 }

@@ -14,7 +14,8 @@ categories:
 
 <p>So what's left? Manual escaping I suppose.. The manual page for <a href="http://nl3.php.net/manual/en/mysqli.real-escape-string.php">mysqli::escape_string</a> mentions: <q>Characters encoded are NUL (ASCII 0), \n, \r, \, ', ", and Control-Z.</q>. </p>
 
-<code lang="php">
+```php
+
 function dontHateMe($unescaped) {
   $replacements = array(
      "\x00"=>'\x00',
@@ -32,7 +33,8 @@ function dontHateMe($unescaped) {
 
 <p>There's a risk though.. Certain multi-byte character sets (such as BIG5 and GBK) may still allow for a security hole. You *should* be fine with UTF-8, so make sure you start your file with:</p>
 
-<code lang="sql">
+```sql
+
 SET CHARACTER SET utf8;
 
 ```

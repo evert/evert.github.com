@@ -21,7 +21,8 @@ pear install sabredav/Dropbox-alpha
 
 <p>If that worked, you should be able to start using the API. The following example displays account information and uploads a file.</p>
 
-<code lang="php">
+```php
+
 <?php
 
 /* Please supply your own consumer key and consumer secret */

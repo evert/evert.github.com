@@ -18,7 +18,8 @@ categories:
 
 <p>In PHP land the best example is <a href="http://nl2.php.net/manual/en/book.xmlwriter.php">XMLWriter</a>. It is actually quite easy to use:</p>
 
-<code lang="php"><?php
+```php
+<?php
 
 $xmlWriter = new XMLWriter();
 $xmlWriter->openMemory();

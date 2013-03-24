@@ -22,7 +22,8 @@ phpincludes . includes.php
 
 <p>This will generate a file such as:</p>
 
-<code lang="php">
+```php
+
 <?php
 
 // Begin includes

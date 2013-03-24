@@ -19,7 +19,8 @@ categories:
 
 <p>First and foremost, keep in mind that the standard for the <video> tag allows multiple codes. You can easily specify a video tag with both an ogg vorbis and an H.264 source. This works as follows:</p>
 
-<code lang="html">
+```html
+
 <video controls="true">  
    <source src="video.ogg" type="video/ogg" />  
    <source src="video.mp4" type="video/mp4" />

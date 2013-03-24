@@ -17,7 +17,8 @@ categories:
 
 <p>This is a big difference with other established libraries such as jQuery. If you want to use any of the jQuery functionality, you're expected to wrap other types in a jQuery object, for example:</p>
 
-<code lang="javascript">
+```javascript
+
 var myElem = $(myDomNode);
 
 ```
@@ -26,7 +27,8 @@ var myElem = $(myDomNode);
 
 <p>Same with YUI. All the functionality is imported through the YUI object:</p>
 
-<code lang="javascript">
+```javascript
+
 YUI().use('node-base', function(Y) {
 
    Y.on("domready", function() { console.log('ready!'); });
@@ -37,7 +39,8 @@ YUI().use('node-base', function(Y) {
 
 <p>This is a stark contrast with Prototype. As soon as you include it, it changes basic types such as strings, arrays and numbers. An example:</p>
 
-<code lang="javascript">
+```javascript
+
 alert( [1, 2, 3].toJSON() ); // outputs "[1, 2, 3]"
 
 ```
@@ -52,7 +55,8 @@ alert( [1, 2, 3].toJSON() ); // outputs "[1, 2, 3]"
 
 <p>Example:</p>
 
-<code lang="javascript">
+```javascript
+
 var test = {
  
   prop1: 'val1',
@@ -71,7 +75,8 @@ alert(JSON.stringify(test));
 
 <p>The output of this last example will be :</p>
 
-<code lang="javascript">{"prop1":"val1"}
+```javascript
+{"prop1":"val1"}
 ```
 
 <p>I would argue that this functionality is not a great design decision (separation of concerns!). However, it's there and it's standard. Prototype however, adds a toJSON() method to every Array, Object and String. In Prototype this has a different meaning though. The prototype methods actually json-encode themselves and return a string.</p>
@@ -80,7 +85,8 @@ alert(JSON.stringify(test));
 
 <p>Example of how this fails:</p>
 
-<code lang="javascript">
+```javascript
+
 JSON.stringify({
   prop : [1, 2, 3, 4]
 });
@@ -89,21 +95,24 @@ JSON.stringify({
 
 <p>The normal result:</p>
 
-<code lang="javascript">
+```javascript
+
 {"prop":[1,2,3,4]}
 
 ```
 
 <p>The result with prototype:</p>
 
-<code lang="javascript">
+```javascript
+
 {"prop":"[1, 2, 3, 4]"}
 
 ```
 
 <p>The easy fix is to simply get rid of toJSON functions as such:</p>
 
-<code lang="javascript">
+```javascript
+
 delete Object.prototype.toJSON;
 delete Array.prototype.toJSON;
 delete Hash.prototype.toJSON;

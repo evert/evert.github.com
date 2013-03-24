@@ -13,7 +13,8 @@ categories:
 
 <h3>Benchmark script</h3>
 
-<code lang="php">
+```php
+
 <?php
 
 $str = str_repeat("foo",100000);

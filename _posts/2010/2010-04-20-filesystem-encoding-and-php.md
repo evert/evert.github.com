@@ -28,7 +28,8 @@ categories:
 
 <p>To illustrate this, I'm going to make a tiny file using a php script:</p>
 
-<code lang="php"><?php
+```php
+<?php
 file_put_contents("saved by the \x07.txt","contents");
 ?>
 ```
@@ -39,7 +40,8 @@ file_put_contents("saved by the \x07.txt","contents");
 
 <p>If I run this script:</p>
 
-<code lang="php"><?php
+```php
+<?php
 print_r(glob('saved*'));
 ?>
 ```
@@ -54,7 +56,8 @@ print_r(glob('saved*'));
 
 <p>Back to the test. I'm now creating a new file from the Nautilus interface, and want to see how it shows up for PHP. Im creating a file called test_ü.txt and listing it with the following script:</p>
 
-<code lang="php">
+```php
+
 <?php
 list($file) = glob('test_*');
 echo urlencode($file) . "\n";
@@ -73,7 +76,8 @@ test_%C3%BC.txt
 
 <p>The last test is to create this file using ISO-8859-1/latin1 encoding. The latin1 representation of ü is 0xFC. The script for this:</p>
 
-<code lang="php"><?php
+```php
+<?php
 file_put_contents("uumlaut_\xFC.txt","contents");
 ?>
 ```
@@ -86,7 +90,8 @@ file_put_contents("uumlaut_\xFC.txt","contents");
 
 <p>We'll start with the bell test. The result is the same as on linux. The bell character is represented by ?. When checking it out in finder, the character is missing altogether. It's definitely still there though, as the following script illustrates:</p>
 
-<code lang="php"><?php
+```php
+<?php
 list($filename) = glob('saved*');
 echo urlencode($filename) . "\n";
 ?>
@@ -94,21 +99,24 @@ echo urlencode($filename) . "\n";
 
 <p><strong>Output:</strong></p>
 
-<code line="off">
+```
+
 saved+by+the+%07.txt
 
 ```
 
 <p>Next, we're going to do the ü test. First, I'll encode it as latin-1, which would be invalid for this UTF-8 filesystem.</p>
 
-<code lang="php"><?php
+```php
+<?php
 file_put_contents("uumlaut_\xFC.txt","contents");
 ?>
 ```
 
 <p>This one is weird. If I now do 'ls', the result is this:</p>
 
-<code lines="false">
+```
+
 drwxr-xr-x  10 evert2  staff   340 16 Apr 17:08 .
 drwxr-xr-x  32 evert2  staff  1088 16 Apr 16:53 ..
 -rw-r--r--   1 evert2  staff     8 16 Apr 16:54 saved by the ?.txt
@@ -124,14 +132,16 @@ drwxr-xr-x  32 evert2  staff  1088 16 Apr 16:53 ..
 
 <p>The last test is to store the umlaut again, but this time using the correct utf-8 sequence:</p>
 
-<code lang="php"><?php
+```php
+<?php
 file_put_contents("uumlaut2_\xC3\xBC.txt","contents");
 ?>
 ```
 
 <p>Upon first sight this seems to have worked as expected, but it gets weird when we check out how this was actually stored:</p>
 
-<code lang="php">
+```php
+
 <?php
 list($file) = glob('uumlaut2_*');
 echo urlencode($file) . "\n";
@@ -140,7 +150,8 @@ echo urlencode($file) . "\n";
 
 <p><strong>Output:</strong></p>
 
-<code line="off">uumlaut2_u%CC%88.txt
+```
+uumlaut2_u%CC%88.txt
 ```
 
 <p>OS/X stored u0xCC88 instead of 0xC3BC. Note that the u is not a typo. OS/X uses a different way to store the ü. The encoding we used is unicode codepoint U+00FC, which is ü. OS/X first stores the u and the two little dots as separate characters, taking up 3 bytes instead of 2.</p>
@@ -151,7 +162,8 @@ echo urlencode($file) . "\n";
 
 <p>This is how you would do this conversion yourself:</p>
 
-<code lang="php">
+```php
+
 <?php
 
 $before = "\xC3\xBC";
@@ -165,7 +177,8 @@ echo 'After: ', urlencode($after),  "\n";
 
 <p><strong>Output:</strong></p>
 
-<code line="off">
+```
+
 Before: %C3%BC
 After: u%CC%88
 
@@ -177,7 +190,8 @@ After: u%CC%88
 
 <p>Windows also uses UTF-16 to store filenames (using NTFS). Just like OS/X, this translation is done automatically, due to the filesystem api's php uses. We'll start with the bell-test:</p>
 
-<code lang="php"><?php
+```php
+<?php
 file_put_contents("saved by the \x07.txt","contents");
 ?>
 ```
@@ -190,7 +204,8 @@ Warning: file_put_contents(saved by the .txt): failed to open stream: Invalid ar
 
 <p>Indeed, windows does not allow control characters such as bell. The second thing we'll try is the latin-1 encoded ü:</p>
 
-<code lang="php"><?php
+```php
+<?php
 file_put_contents("uumlaut_\xFC.txt","contents");
 list($file) = glob('uumlaut_*');
 echo urlencode($file) . "\n";
@@ -205,7 +220,8 @@ uumlaut_%FC.txt
 
 <p>Not only did windows accept this encoding, it also displayed correctly in both cmd.exe, and the windows explorer. So it appears that windows and PHP actually translate from and to ISO-8859-1/latin1 instead of UTF-8. When trying this with the UTF-8 encoding of ü this gets confirmed.</p>
 
-<code lang="php"><?php
+```php
+<?php
 file_put_contents("uumlaut2_\xC3\xBC.txt","contents");
 list($file) = glob('uumlaut2_*');
 echo urlencode($file) . "\n";
@@ -222,7 +238,8 @@ uumlaut2_%C3%BC.txt
 
 <p>The results were interesting. I used the ü again, and 한글, which is the name of the korean writing system, hangul. With 2 files in this directory, I simply did:</p>
 
-<code lang="php"><?php
+```php
+<?php
 $files = glob('*');
 foreach($files as $file) {
     echo urlencode($file), "\n";
@@ -242,7 +259,8 @@ total: 2
 
 <p>My korean file was completely missing. Just to make sure I did the same with scandir:</p>
 
-<code lang="php"><?php
+```php
+<?php
 $files = scandir('.');
 foreach($files as $file) {
     echo urlencode($file), "\n";
