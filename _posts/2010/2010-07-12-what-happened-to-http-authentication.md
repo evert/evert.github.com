@@ -3,7 +3,7 @@ date: 2010-07-12 14:08:35 UTC
 layout: post
 slug: what-happened-to-http-authentication
 title: "What happened to HTTP authentication?"
-categories:
+tags:
   - firefox
   - websec
   - authentication

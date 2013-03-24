@@ -3,7 +3,7 @@ date: 2010-04-20 16:30:28 UTC
 layout: post
 slug: filesystem-encoding-and-php
 title: "Filesystem encoding and PHP"
-categories:
+tags:
   - php
   - os/x
   - ext3

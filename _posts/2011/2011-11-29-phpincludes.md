@@ -3,7 +3,7 @@ date: 2011-11-29 15:55:58 UTC
 layout: post
 slug: phpincludes
 title: "PHP Includes file generator"
-categories:
+tags:
   - php
   - phpincludes
 

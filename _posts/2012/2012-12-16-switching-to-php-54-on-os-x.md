@@ -3,7 +3,7 @@ date: 2012-12-16 16:53:22 UTC
 layout: post
 slug: switching-to-php-54-on-os-x
 title: "Switching to PHP 5.4 on OS X"
-categories:
+tags:
   - php
   - os/x
   - mac

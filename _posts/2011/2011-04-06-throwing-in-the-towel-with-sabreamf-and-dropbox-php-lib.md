@@ -3,7 +3,7 @@ date: 2011-04-06 21:12:26 UTC
 layout: post
 slug: throwing-in-the-towel-with-sabreamf-and-dropbox-php-lib
 title: "Throwing in the towel with SabreAMF and Dropbox PHP lib"
-categories:
+tags:
   - sabreamf
   - opensource
   - dropbox

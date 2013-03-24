@@ -3,7 +3,7 @@ date: 2011-04-18 20:20:37 UTC
 layout: post
 slug: escaping-mysql-strings-with-no-connection-available
 title: "Escaping MySQL strings with no connection available"
-categories:
+tags:
   - mysql
   - escaping
 

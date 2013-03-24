@@ -3,7 +3,7 @@ date: 2011-10-07 11:53:39 UTC
 layout: post
 slug: timezone-database-closed-down
 title: "Timezone database closed down"
-categories:
+tags:
   - datetime
   - timezones
   - olson

@@ -3,7 +3,7 @@ date: 2011-04-26 10:05:10 UTC
 layout: post
 slug: numeric-string-comparison-in-php
 title: "Numeric string comparison in PHP"
-categories:
+tags:
   - php
   - type juggling
 

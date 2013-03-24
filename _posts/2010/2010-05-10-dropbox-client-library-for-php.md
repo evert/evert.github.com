@@ -3,7 +3,7 @@ date: 2010-05-10 13:25:41 UTC
 layout: post
 slug: dropbox-client-library-for-php
 title: "Dropbox client library for PHP"
-categories:
+tags:
   - php
   - dropbox
 

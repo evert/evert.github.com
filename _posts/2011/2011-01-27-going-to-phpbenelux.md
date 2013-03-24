@@ -3,7 +3,7 @@ date: 2011-01-27 12:02:44 UTC
 layout: post
 slug: going-to-phpbenelux
 title: "Going to PHPBenelux"
-categories:
+tags:
   - phpbenelux
 
 ---

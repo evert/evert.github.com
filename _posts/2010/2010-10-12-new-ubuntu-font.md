@@ -3,7 +3,7 @@ date: 2010-10-12 19:28:34 UTC
 layout: post
 slug: new-ubuntu-font
 title: "Ubuntu has a new font"
-categories:
+tags:
   - css
   - ubuntu
   - font-face

@@ -3,7 +3,7 @@ date: 2010-10-14 20:44:19 UTC
 layout: post
 slug: sabredav-130-released
 title: "SabreDAV 1.3.0 released"
-categories:
+tags:
   - webdav
   - sabredav
   - caldav

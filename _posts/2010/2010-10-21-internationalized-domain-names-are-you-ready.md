@@ -3,7 +3,7 @@ date: 2010-10-21 13:13:20 UTC
 layout: post
 slug: internationalized-domain-names-are-you-ready
 title: "Internationalized domain names, are you ready?"
-categories:
+tags:
   - php
   - idn tld
   - regex

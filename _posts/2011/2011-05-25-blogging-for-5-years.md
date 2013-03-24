@@ -3,7 +3,7 @@ date: 2011-05-25 21:53:11 UTC
 layout: post
 slug: blogging-for-5-years
 title: "Blogging for 5 years"
-categories:
+tags:
   - metablogging
 
 ---

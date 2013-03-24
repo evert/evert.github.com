@@ -3,7 +3,7 @@ date: 2010-10-30 14:50:54 UTC
 layout: post
 slug: slowdeath-a-simple-denial-of-service-attack-for-most-php-based-servers
 title: "slowdeath - a simple denial of service attack for most PHP-based servers"
-categories:
+tags:
   - websec
   - slowdeath
   - dos

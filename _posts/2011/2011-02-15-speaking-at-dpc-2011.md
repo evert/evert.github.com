@@ -3,7 +3,7 @@ date: 2011-02-15 16:50:07 UTC
 layout: post
 slug: speaking-at-dpc-2011
 title: "Speaking at DPC 2011"
-categories:
+tags:
   - rest
   - dpc
   - talk

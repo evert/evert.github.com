@@ -3,7 +3,7 @@ date: 2012-06-02 13:49:47 UTC
 layout: post
 slug: ie10-will-enable-the-dnt-header-by-default-and-why-i-think-this-is-a-bad-thing
 title: "IE10 will enable the DNT header by default, and why I think this is a bad thing."
-categories:
+tags:
   - firefox
   - ie
   - dnt

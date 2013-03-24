@@ -3,7 +3,7 @@ date: 2010-05-12 07:55:30 UTC
 layout: post
 slug: goodbye-old-firefox-profile
 title: "Goodbye old Firefox profile"
-categories:
+tags:
   - firefox
 
 ---

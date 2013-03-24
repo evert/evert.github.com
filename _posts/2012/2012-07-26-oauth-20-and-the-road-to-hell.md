@@ -3,7 +3,7 @@ date: 2012-07-26 15:50:22 UTC
 layout: post
 slug: oauth-20-and-the-road-to-hell
 title: "OAuth 2.0 and the Road to Hell"
-categories:
+tags:
   - openid
   - webdav
   - oauth

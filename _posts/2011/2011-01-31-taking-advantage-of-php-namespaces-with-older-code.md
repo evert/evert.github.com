@@ -3,7 +3,7 @@ date: 2011-01-31 22:17:16 UTC
 layout: post
 slug: taking-advantage-of-php-namespaces-with-older-code
 title: "Taking advantage of PHP namespaces with older code"
-categories:
+tags:
   - php
   - namespaces
 

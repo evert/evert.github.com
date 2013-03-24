@@ -3,7 +3,7 @@ date: 2011-09-29 14:57:15 UTC
 layout: post
 slug: iconv_substr-vs-mbstring_substr
 title: "iconv_substr vs mbstring_substr"
-categories:
+tags:
   - php
   - mbstring
   - iconv

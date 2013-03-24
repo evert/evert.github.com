@@ -3,7 +3,7 @@ date: 2010-09-22 13:16:38 UTC
 layout: post
 slug: evercookie-the-cookie-that-just-wont-die
 title: "Evercookie: the cookie that just won't die"
-categories:
+tags:
   - flash
   - websec
   - cookies

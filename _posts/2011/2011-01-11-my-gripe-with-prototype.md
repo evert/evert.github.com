@@ -3,7 +3,7 @@ date: 2011-01-11 18:14:51 UTC
 layout: post
 slug: my-gripe-with-prototype
 title: "My gripe with Prototype"
-categories:
+tags:
   - javascript
   - jquery
   - prototype

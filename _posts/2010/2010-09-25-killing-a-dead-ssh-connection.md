@@ -3,7 +3,7 @@ date: 2010-09-25 12:00:00 UTC
 layout: post
 slug: killing-a-dead-ssh-connection
 title: "Killing a dead ssh connection"
-categories:
+tags:
   - ssh
 
 ---

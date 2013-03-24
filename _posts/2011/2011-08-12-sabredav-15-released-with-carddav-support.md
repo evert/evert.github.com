@@ -3,7 +3,7 @@ date: 2011-08-12 14:08:57 UTC
 layout: post
 slug: sabredav-15-released-with-carddav-support
 title: "SabreDAV 1.5 released with CardDAV support"
-categories:
+tags:
   - php
   - webdav
   - sabredav
