@@ -24,6 +24,7 @@ categories:
 
 pear channel-discover pear.sabredav.org
 pear install sabredav/Sabre_VObject-alpha
+
 ```
 
 <p><small>Or download from <a href="http://pear.sabredav.org/">pear.sabredav.org</a>.</small></p>
@@ -38,6 +39,7 @@ include 'Sabre/VObject/includes.php';
 
 // Reading an object
 $calendar = Sabre_VObject_Reader::read(file_get_contents('icalendartest.ics'));
+
 ```
 
 <p>iCalendar objects consist of components (VEVENT, VTODO, VTIMEZONE, etc), properties (SUMMARY, DESCRIPTION, DTSTART, etc) and parameters, which are to properties what attributes are to elements in XML. To show a listing of all events in a calendar, this snippet would work:</p>
@@ -51,12 +53,14 @@ foreach($calendar->vevent as $event) {
     echo (string)$event->dtstart, ": ", $event->summary, "\n";
 
 }
+
 ```
 
 <p>You can easily modify properties:</p>
 
 <code lang="php">
 $calendar->vevent[0]->description = "It's a birthday party";
+
 ```
 
 <p>Creating new objects uses the following syntax:</p>
@@ -65,12 +69,14 @@ $calendar->vevent[0]->description = "It's a birthday party";
 $todo = Sabre_VObject_Component::create('vtodo');
 $todo->summary = 'Take out the dog';
 $calendar->add($todo);
+
 ```
 
 <p>And to turn your newly modified calendar back into an ics file:</p>
 
 <code lang="php">
 file_put_contents('output.ics', $calendar->serialize());
+
 ```
 
 <p>Lastly, parameters are accessible through array-syntax:</p>
@@ -78,6 +84,7 @@ file_put_contents('output.ics', $calendar->serialize());
 ```
 
 echo (string)$calendar->vevent[0]->dtstart['tzid'], "\n";
+
 ```
 
 <p>I had fun building this, I hope it's useful to you as well. It's 100% unittested, but bugs might still appear due to the complex nature of API. Use at your own risk :). This library will be part of the <a href="http://code.google.com/p/sabredav/">SabreDAV</a> project, which is also where you can go for the source, report bugs or make suggestions.</p>
@@ -99,6 +106,7 @@ $vcal->PRODID = '-//SabreDAV//SabreDAV//EN';
 $vcal->CALSCALE = 'GREGORIAN';
 
 ?>
+
 ```
 
 <p>After that, you can use the 'add' function on the calendar to add additional components and properties.</p>
@@ -114,6 +122,7 @@ $vevent = Sabre_VObject_Component::create('VEVENT');
 $vevent->DTSTART = '20120101T000000Z';
 
 ?>
+
 ```
 
 <p>But it's also possible to pass in PHP DateTime objects. However, the syntax for this is not that great:</p>
@@ -128,6 +137,7 @@ $dtstart = Sabre_VObject_Property::create('DTSTART');
 $dtstart->setDateTime($dateTime, Sabre_VObject_Property_DateTime::LOCALTZ);
 
 ?>
+
 ```
 
 <p>The last constant represents how you want the date and time to be represented. In this case it will be represented as a local time with a timezone identifier, but it's also possible to specify it as a date-only string, local (floating time) with now tz information, or a UTC time. Check the source of that class for more info.</p>

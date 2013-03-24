@@ -35,6 +35,7 @@ categories:
         src: url('font/ubuntu/Ubuntu-BI.ttf'); 
         font-style: italic; font-weight: bold 
 } 
+
 ```
 
 <p>This looked immediately brilliant on Firefox, but Safari acts a bit weird, only anti-aliasing some of the text after hovering over.</p>

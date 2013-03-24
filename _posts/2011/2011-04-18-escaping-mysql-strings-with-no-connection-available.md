@@ -27,12 +27,14 @@ function dontHateMe($unescaped) {
   );
   return strtr($unescaped,$replacements);
 }
+
 ```
 
 <p>There's a risk though.. Certain multi-byte character sets (such as BIG5 and GBK) may still allow for a security hole. You *should* be fine with UTF-8, so make sure you start your file with:</p>
 
 <code lang="sql">
 SET CHARACTER SET utf8;
+
 ```
 
 <p>Still no guarantee from my side though. Tread carefully and avoid this if you can. If you have a better idea, or you feel like shouting at me for this.. let's hear it in the comments.</p>

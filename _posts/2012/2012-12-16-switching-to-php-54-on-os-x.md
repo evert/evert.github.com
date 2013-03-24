@@ -21,6 +21,7 @@ brew tap josegonzalez/homebrew-php
 brew install php54 --with-mysql 
 brew install php54-memcached
 brew install php54-xdebug
+
 ```
 
 <p>After that, open /etc/apache2/httpd.conf, and look for this line:</p>
@@ -28,6 +29,7 @@ brew install php54-xdebug
 ```
 
 LoadModule php5_module libexec/apache2/libphp5.so
+
 ```
 
 <p>Comment that out (with #) and add the following line:</p>
@@ -35,6 +37,7 @@ LoadModule php5_module libexec/apache2/libphp5.so
 ```
 
 LoadModule php5_module /usr/local/Cellar/php54/5.4.12/libexec/apache2/libphp5.so
+
 ```
 
 <p>After that, restart apache and things should just work. For more detailed instructions, take a look at the <a href="https://github.com/josegonzalez/homebrew-php">documentation for homebrew-php</a></p>

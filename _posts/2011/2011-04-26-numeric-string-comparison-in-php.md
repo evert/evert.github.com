@@ -19,6 +19,7 @@ if( '20110204024217300000' == '20110204024217300264' )
   echo 'equal';
 else
   echo 'not equal';
+
 ```
 
 <p>Guess what the output is.</p>

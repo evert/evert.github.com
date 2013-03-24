@@ -35,6 +35,7 @@ substr($str,1000,90000);
 
 echo "substr: " . (microtime(true)-$time) . "\n";
 ?>
+
 ```
 
 <p>The results widely varied between machines, operating systems and PHP versions; but here are two results I recorded.</p>
@@ -46,6 +47,7 @@ echo "substr: " . (microtime(true)-$time) . "\n";
 iconv_substr: 0.014400005340576
 mb_substr: 0.00049901008605957
 substr: 3.7193298339844E-5  # Note the E-notation, this was actually something like 0.00003 seconds.
+
 ```
 
 <p>As you can see iconv took <strong>0.01</strong> seconds, while mbstring took only <strong>0.0004</strong> seconds. Already a significant difference (<strong>2800%</strong> slower), but the difference became more apparent when running this on a Debian box with PHP 5.2.13.</p>
@@ -55,6 +57,7 @@ substr: 3.7193298339844E-5  # Note the E-notation, this was actually something l
 iconv_substr: 8.3735179901123
 mb_substr: 0.00039505958557129
 substr: 4.8160552978516E-5
+
 ```
 
 <p>Yup, it took 8.3 seconds. That's an increase of over <strong>2100000%</strong>. So next time you're wondering which of the two may be smarter to use, this may help you decide.</p>

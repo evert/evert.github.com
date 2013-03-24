@@ -23,6 +23,7 @@ categories:
 ```
 
 X-Content-Security-Policy: default-src 'self'
+
 ```
 
 <p>While Safari and Chrome use:</p>
@@ -30,6 +31,7 @@ X-Content-Security-Policy: default-src 'self'
 ```
 
 X-Webkit-CSP: default-src 'self'
+
 ```
 
 <p>When the specification is finalized, the X- will be dropped, and it will simply be 'Content-Security-Policy'.</p>

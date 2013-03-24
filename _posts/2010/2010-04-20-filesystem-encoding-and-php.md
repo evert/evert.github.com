@@ -30,7 +30,8 @@ categories:
 
 <code lang="php"><?php
 file_put_contents("saved by the \x07.txt","contents");
-?>```
+?>
+```
 
 <p>After running this I simply get a questionmark when viewing the file using 'ls', but when I auto-complete it, it expands to ^G (which is bell). In Nautilus, this is displayed:</p>
 
@@ -40,7 +41,8 @@ file_put_contents("saved by the \x07.txt","contents");
 
 <code lang="php"><?php
 print_r(glob('saved*'));
-?>```
+?>
+```
 
 <p>The output is simply missing my bell character, and I get a short beep.</p>
 
@@ -56,13 +58,15 @@ print_r(glob('saved*'));
 <?php
 list($file) = glob('test_*');
 echo urlencode($file) . "\n";
-?>```
+?>
+```
 
 <p><strong>Output:</strong></p>
 
 ```
 
 test_%C3%BC.txt
+
 ```
 
 <p>%C3%BC is the UTF-8 encoding of codepoint U+00FC, which is the most common way to encode ü. Great!</p>
@@ -71,7 +75,8 @@ test_%C3%BC.txt
 
 <code lang="php"><?php
 file_put_contents("uumlaut_\xFC.txt","contents");
-?>```
+?>
+```
 
 <p>Linux stores the file with that exact byte sequence. 'ls' shows the questionmark again, and this type in gnome I'm getting the typical 'incorrect encoding' question mark.</p>
 
@@ -84,19 +89,22 @@ file_put_contents("uumlaut_\xFC.txt","contents");
 <code lang="php"><?php
 list($filename) = glob('saved*');
 echo urlencode($filename) . "\n";
-?>```
+?>
+```
 
 <p><strong>Output:</strong></p>
 
 <code line="off">
 saved+by+the+%07.txt
+
 ```
 
 <p>Next, we're going to do the ü test. First, I'll encode it as latin-1, which would be invalid for this UTF-8 filesystem.</p>
 
 <code lang="php"><?php
 file_put_contents("uumlaut_\xFC.txt","contents");
-?>```
+?>
+```
 
 <p>This one is weird. If I now do 'ls', the result is this:</p>
 
@@ -109,6 +117,7 @@ drwxr-xr-x  32 evert2  staff  1088 16 Apr 16:53 ..
 -rw-r--r--   1 evert2  staff   101 16 Apr 17:07 test3.php
 -rw-r--r--   1 evert2  staff    57 16 Apr 17:08 test4.php
 -rw-r--r--   1 evert2  staff     8 16 Apr 17:08 uumlaut_%FC.txt
+
 ```
 
 <p>Instead of taking the literal bytes, OS/X urlencoded them, and stored those sequences instead. This translation is transparent; but it might be confusing if you ever try to store latin1 filenames from your users.</p>
@@ -117,7 +126,8 @@ drwxr-xr-x  32 evert2  staff  1088 16 Apr 16:53 ..
 
 <code lang="php"><?php
 file_put_contents("uumlaut2_\xC3\xBC.txt","contents");
-?>```
+?>
+```
 
 <p>Upon first sight this seems to have worked as expected, but it gets weird when we check out how this was actually stored:</p>
 
@@ -125,11 +135,13 @@ file_put_contents("uumlaut2_\xC3\xBC.txt","contents");
 <?php
 list($file) = glob('uumlaut2_*');
 echo urlencode($file) . "\n";
-?>```
+?>
+```
 
 <p><strong>Output:</strong></p>
 
-<code line="off">uumlaut2_u%CC%88.txt```
+<code line="off">uumlaut2_u%CC%88.txt
+```
 
 <p>OS/X stored u0xCC88 instead of 0xC3BC. Note that the u is not a typo. OS/X uses a different way to store the ü. The encoding we used is unicode codepoint U+00FC, which is ü. OS/X first stores the u and the two little dots as separate characters, taking up 3 bytes instead of 2.</p>
 
@@ -148,6 +160,7 @@ $after = Normalizer::normalize($before, Normalizer::FORM_D);
 echo 'Before: ', urlencode($before),  "\n";
 echo 'After: ', urlencode($after),  "\n";
 ?>
+
 ```
 
 <p><strong>Output:</strong></p>
@@ -155,6 +168,7 @@ echo 'After: ', urlencode($after),  "\n";
 <code line="off">
 Before: %C3%BC
 After: u%CC%88
+
 ```
 
 <p>This normalization process for OS/X is also transparent. Whenever you will try to open a file with the wrong normalization form, OS/X will put it in form D before opening.</p>
@@ -165,12 +179,14 @@ After: u%CC%88
 
 <code lang="php"><?php
 file_put_contents("saved by the \x07.txt","contents");
-?>```
+?>
+```
 
 <p><strong>Output:</strong></p>
 
 ```
-Warning: file_put_contents(saved by the .txt): failed to open stream: Invalid argument in C:\Documents and Settings\Administrator\test\test.php on line 2```
+Warning: file_put_contents(saved by the .txt): failed to open stream: Invalid argument in C:\Documents and Settings\Administrator\test\test.php on line 2
+```
 
 <p>Indeed, windows does not allow control characters such as bell. The second thing we'll try is the latin-1 encoded ü:</p>
 
@@ -178,12 +194,14 @@ Warning: file_put_contents(saved by the .txt): failed to open stream: Invalid ar
 file_put_contents("uumlaut_\xFC.txt","contents");
 list($file) = glob('uumlaut_*');
 echo urlencode($file) . "\n";
-?>```
+?>
+```
 
 <p><strong>Output:</strong></p>
 
 ```
-uumlaut_%FC.txt```
+uumlaut_%FC.txt
+```
 
 <p>Not only did windows accept this encoding, it also displayed correctly in both cmd.exe, and the windows explorer. So it appears that windows and PHP actually translate from and to ISO-8859-1/latin1 instead of UTF-8. When trying this with the UTF-8 encoding of ü this gets confirmed.</p>
 
@@ -191,12 +209,14 @@ uumlaut_%FC.txt```
 file_put_contents("uumlaut2_\xC3\xBC.txt","contents");
 list($file) = glob('uumlaut2_*');
 echo urlencode($file) . "\n";
-?>```
+?>
+```
 
 <p><strong>Output:</strong></p>
 
 ```
-uumlaut2_%C3%BC.txt```
+uumlaut2_%C3%BC.txt
+```
 
 <p>While windows stores this correctly, the filename is now garbled in cmd.exe and windows explorer. Here it looks like Ã¼. This is pretty bad. I do know that Windows does support UTF-8, so I can't help but wonder what would happen if I do the exact opposite: making a file containing non-ascii characters in windows explorer, and reading out the filename in PHP.</p>
 
@@ -208,7 +228,8 @@ foreach($files as $file) {
     echo urlencode($file), "\n";
 } 
 echo "total: " . count($files) . "\n";
-?>```
+?>
+```
 
 <p><strong>Output:</strong></p>
 
@@ -216,6 +237,7 @@ echo "total: " . count($files) . "\n";
 test.php
 uumlaut%FC.txt
 total: 2
+
 ```
 
 <p>My korean file was completely missing. Just to make sure I did the same with scandir:</p>
@@ -226,7 +248,8 @@ foreach($files as $file) {
     echo urlencode($file), "\n";
 } 
 echo "total: " . count($files) . "\n";
-?>```
+?>
+```
 
 <p><strong>Output:</strong></p>
 
@@ -237,6 +260,7 @@ hangul_%3F%3F.txt
 test.php
 uumlaut%FC.txt
 total: 5
+
 ```
 
 <p>Oddly enough it did show up here. This time however, the korean characters were replaced by %3F, which is, surprise: the question mark. We've seen characters replaced by question marks before, but this is the first time it ends up in a literal string.</p>

@@ -27,6 +27,7 @@ categories:
    Alternative content
 
 </video>
+
 ```
 
 <p>There are big drawbacks to this approach though. Having 2 different files means it will take (about) twice as much diskspace, cpu, energy and time to encode. So there is definitely benefit in having a single filetype that works everywhere.</p>
