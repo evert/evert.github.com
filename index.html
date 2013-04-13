@@ -1,56 +1,61 @@
 ---
 layout: default
-title: home
+title: Het Bijstere Spoor 
 ---
 
-Het Bijstere spoor
-==================
+<h1>Het Bijstere spoor</h1>
 
 <img src="resources/images/evert/evert.png" style="width: 200px; float: right; max-width: 50%; padding-left: 3px;"/>
 
+<p>
 My name is Evert Pot, and you're looking at the 6th reincarnation of my web
 presence.
+</p>
 
-I'm a [programmer](http://github.com/evert), mainly working with
-[PHP](http://php.net/) and [JavaScript](https://developer.mozilla.org/en-US/docs/JavaScript).
+<p>I'm a <a href="http://github.com/evert">programmer</a>, mainly working with
+<a href="http://php.net/">PHP</a> and <a href="https://developer.mozilla.org/en-US/docs/JavaScript">JavaScript</a>.</p>
 
-I'm involved with the [PHP Framework Interop Group](http://www.php-fig.org/faq/),
-I'm the lead developer for [SabreDAV](http://code.google.com/p/sabredav/),
-and I'm one of [fruux](https://fruux.com/)' co-founders and CTO. In the past
-I played a similar role at [filemobile](http://filemobile.com/).
+<p>I'm involved with the <a href="http://www.php-fig.org/faq/">PHP Framework Interop Group</a>,
+I'm the lead developer for <a href="http://code.google.com/p/sabredav/">SabreDAV</a>,
+and I'm one of <a href="https://fruux.com/">fruux</a>' co-founders and CTO. In the past
+I played a similar role at <a href="http://filemobile.com/">filemobile</a>.</p>
 
-I'm available for [consulting](mailto:evert@rooftopsolutions.nl) as well. If
+<p>I'm available for <a href="mailto:evert@rooftopsolutions.nl">consulting</a> as well. If
 you're into that sort of thing, you could take a gander at my
-[resume](resources/resume/resume-dec-2012.pdf).
+<a href="resources/resume/resume-dec-2012.pdf">resume</a>.</p>
 
-I'm a console junkie, I love good software architecture and I still remember my
-ICQ number.
+<p>I'm a console junkie, I love good software architecture and I still remember my
+ICQ number.</p>
 
-On the web
-----------
+
+<h2>On the web</h2>
 
 * Twitter : [@evertp](https://twitter.com/evertp)
 * Github : [evert](https://github.com/evert)
 * [Subscribe to my feed](http://localhost:4000/atom.xml)
 
-Blog
-----
+<h2>Blog</h2>
 
-I've been writing blog-posts on and off since 2006. Below you'll find the full
+<p>I've been writing blog-posts on and off since 2006. Below you'll find the full
 archive. Don't scroll too far though, quality degrades as go backwards in time.
+</p>
 
 {% for post in site.posts %}
 
 {% unless post.next %}
+
 <h3>{{ post.date | date: '%Y' }}</h3>
 <ul>
+
 {% else %}
 {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
 {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
 {% if year != nyear %}
+
 </ul>
 <h3>{{ post.date | date: '%Y' }}</h3>
 <ul>
+
 {% endif %}
 {% endunless %}
 
@@ -61,8 +66,8 @@ archive. Don't scroll too far though, quality degrades as go backwards in time.
   <a href="{{ post.url }}">{{ post.title }}</a>
 </li>
 
-{% if forloop.last %}</ul>{% endif %}
-
 {% assign lastyear = year %}
 {% endfor %}
+
 </ul>
+
