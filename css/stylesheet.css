@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700);
+
 html {
     height: 100%;
 }
@@ -78,4 +80,5 @@ pre {
     color: #ffffff;
     box-shadow: inset 0 0 10px #000;
     overflow-x: auto;
+    font-family: "Monaco", monospace;
 }
