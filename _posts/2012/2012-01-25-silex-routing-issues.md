@@ -11,7 +11,7 @@ title: "Silex routing issues"
 
 <p>I have a default route that acts as a fallback. This default route simply includes a static template (if it exists). This route looks something like this:</p>
 
-```
+```php
 
 $app->get('/{name}', function($name) { 
    // If the page exists, render it, otherwise throw 404
@@ -21,7 +21,7 @@ $app->get('/{name}', function($name) {
 
 <p>Simple enough. We also want to match the root of the application (the index, basically). This can be easily done with a default value:</p>
 
-```
+```php
 
 $app->get('/{name}', function($name) { 
    // If the page exists, render it, otherwise throw 404
@@ -31,7 +31,7 @@ $app->get('/{name}', function($name) {
 
 <p>The first problem arose here. The existing site used urls all ending with a slash (/contact/ for example). But these routes won't match that. These routes will match /contact, but not /contact/. This can be fixed though. If your routes end with a slash, silex will be able to match both:</p>
 
-```
+```php
 
 $app->get('/{name}/', function($name) { 
    // If the page exists, render it, otherwise throw 404
@@ -41,7 +41,7 @@ $app->get('/{name}/', function($name) {
 
 <p>The preceding example will match /contact/. If the user went to /contact instead, it will redirect the user back to /contact/. I would have preferred the opposite in this case, but fair enough. This route will however no longer match the root of the website, so we need to refactor this a bit:</p>
 
-```
+```php
 
 $staticHandler = function($name) {
   // If the page exists, render it, otherwise throw 404
