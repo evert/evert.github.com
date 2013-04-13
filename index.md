@@ -19,6 +19,22 @@ I'm available for [consulting](mailto:evert@rooftopsolutions.nl) as well. If
 you're into that sort of thing, you could take a gander at my
 [resume](resources/resume/resume-dec-2012.pdf).
 
+I'm a console junkie, I love good software architecture and I still remember my
+ICQ number.
+
+On the web
+----------
+
+* Twitter : [@evertp](https://twitter.com/evertp)
+* Github : [evert](https://github.com/evert)
+* [Subscribe to my feed](http://localhost:4000/atom.xml)
+
+Blog
+----
+
+I've been writing blog-posts on and off since 2006. Below you'll find the full
+archive. Don't scroll too far though, quality degrades as go backwards in time.
+
 <ul>
 {% for post in site.posts %}
     <li>
