@@ -6,7 +6,7 @@ title: home
 Het Bijstere spoor
 ==================
 
-<img src="resources/images/evert/evert.png" style="width: 200px; float: right"/>
+<img src="resources/images/evert/evert.png" style="width: 200px; float: right; max-width: 50%; padding-left: 3px;"/>
 
 My name is Evert Pot, and you're looking at the 6th reincarnation of my web
 presence.
