@@ -14,7 +14,7 @@ tags:
 
 <p><a href="http://mxcl.github.com/homebrew/">Homebrew</a> provides a solution. Homebrew is OS X missing package manager, and it's an absolute great tool to work with. Getting started with it is a bit harder, as there's a few bigger dependencies you need, such as an up-to-date XCode installation. Once you've installed homebrew, it's a matter of running the following commands:</p>
 
-```
+```bash
 
 brew tap homebrew/dupes
 brew tap josegonzalez/homebrew-php
@@ -26,7 +26,7 @@ brew install php54-xdebug
 
 <p>After that, open /etc/apache2/httpd.conf, and look for this line:</p>
 
-```
+```apache
 
 LoadModule php5_module libexec/apache2/libphp5.so
 
@@ -34,7 +34,7 @@ LoadModule php5_module libexec/apache2/libphp5.so
 
 <p>Comment that out (with #) and add the following line:</p>
 
-```
+```apache
 
 LoadModule php5_module /usr/local/Cellar/php54/5.4.12/libexec/apache2/libphp5.so
 

@@ -39,14 +39,30 @@ Blog
 I've been writing blog-posts on and off since 2006. Below you'll find the full
 archive. Don't scroll too far though, quality degrades as go backwards in time.
 
-<ul>
 {% for post in site.posts %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}
-            <time>
-                {{ post.date | date_to_string }}
-            </time>
-        </a>
-    </li>
-    {% endfor %}
+
+{% unless post.next %}
+<h3>{{ post.date | date: '%Y' }}</h3>
+<ul>
+{% else %}
+{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+{% if year != nyear %}
+</ul>
+<h3>{{ post.date | date: '%Y' }}</h3>
+<ul>
+{% endif %}
+{% endunless %}
+
+<li>
+  <time>
+    {{ post.date | date:"%b %d" }}
+  </time>
+  <a href="{{ post.url }}">{{ post.title }}</a>
+</li>
+
+{% if forloop.last %}</ul>{% endif %}
+
+{% assign lastyear = year %}
+{% endfor %}
 </ul>

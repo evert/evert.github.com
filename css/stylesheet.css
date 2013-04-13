@@ -9,21 +9,27 @@ body {
     background-color: #FFEEDB;
     margin: 0;
     height: 100%;
-
 }
 
 h1 {
-    margin: 0;
+    text-align: left;
+    font-size: 1.9em;
+    text-shadow: 1px 1px 2px;
+}
+h2 {
+    text-align: left;
+    font-size: 1.7em;
+    text-shadow: 1px 1px 2px;
 }
 
 div#wrap {
     min-height: 100%;
+    padding: 0 20px 0 20px;
 }
 
 main {
     max-width: 700px;
     margin: 0 auto;
-    padding: 0 20px;
     padding-bottom: 100px;
     overflow:auto;
 }
@@ -37,17 +43,6 @@ main a {
 main a:hover {
     color: #900;
 
-}
-
-h1 {
-    text-align: center;
-    padding-top: 20px;
-}
-
-article h1 {
-    text-align: left;
-    font-size: 3em;
-    text-shadow: 1px 2px 4px;
 }
 
 footer {
@@ -83,4 +78,5 @@ pre {
     background: #333333;
     color: #ffffff;
     box-shadow: inset 0 0 10px #000;
+    overflow-x: auto;
 }
