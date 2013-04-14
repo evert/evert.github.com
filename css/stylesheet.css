@@ -26,13 +26,14 @@ h2 {
 
 div#wrap {
     min-height: 100%;
-    padding: 0 20px 40px 20px;
+    padding: 0 20px 0px 20px;
 }
 
 main {
     max-width: 700px;
     margin: 0 auto;
     overflow:auto;
+    padding-bottom: 40px;
 }
 
 main a {
