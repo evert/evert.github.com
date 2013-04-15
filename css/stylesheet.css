@@ -16,12 +16,12 @@ body {
 h1 {
     text-align: left;
     font-size: 1.9em;
-    text-shadow: 1px 1px 2px;
+    text-shadow: 1px 1px 2px #333;
 }
 h2 {
     text-align: left;
     font-size: 1.7em;
-    text-shadow: 1px 1px 2px;
+    text-shadow: 1px 1px 2px #333;
 }
 
 div#wrap {
