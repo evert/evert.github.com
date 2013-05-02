@@ -81,7 +81,7 @@ Thanks!
 -------
 
 Thanks everyone for your continued support, pull requests and relying on
-SabreDAV for your projects :). It's the best rewards, really.
+SabreDAV for your projects :). It's the best reward, really.
 
 If you're interested, also check out the announcement on the [fruux blog][6]
 
