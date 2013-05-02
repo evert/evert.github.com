@@ -8,7 +8,7 @@ tags:
   - csp
 
 ---
-<p>I <a href="http://www.rooftopsolutions.nl/blog/190">blogged</a> about Content Security Policy about 2 year ago when it was still called 'Site Security Policy'. It started as a specification and an add-on, and turned into a patch a bit later. Finally it made it into <a href="http://www.mozilla.com/en-US/firefox/all-beta.html">Firefox 4 beta 1</a>. I think CSP is the next web security revolution, so make yourself aware of how it works and the implications.</p>
+<p>I <a href="http://evertpot.com/190">blogged</a> about Content Security Policy about 2 year ago when it was still called 'Site Security Policy'. It started as a specification and an add-on, and turned into a patch a bit later. Finally it made it into <a href="http://www.mozilla.com/en-US/firefox/all-beta.html">Firefox 4 beta 1</a>. I think CSP is the next web security revolution, so make yourself aware of how it works and the implications.</p>
 
 <p>So what is it? The short version is that it's a very effective measure against cross-site scripting. By specifying a policy through the 'X-Content-Security-Policy', you can specify exactly from which locations you accept javascript and other content. This allows you to block scripts from any domains unknown to you, and inline scripts altogether.</p>
 

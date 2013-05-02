@@ -8,7 +8,7 @@ tags:
   - ibuildings
 
 ---
-<div style="float: left"><a href="http://www.ibuildings.co.uk"><img alt="IBuildings" src="http://www.rooftopsolutions.nl/blog/user/files/logos/ibuildings_logo_small.jpg" width="236" height="57" /></a></div>
+<div style="float: left"><a href="http://www.ibuildings.co.uk"><img alt="IBuildings" src="http://evertpot.com/resources/files/logos/ibuildings_logo_small.jpg" width="236" height="57" /></a></div>
 
 <p>Since a 2 weeks I'm now employed by <a href="http://www.ibuildings.co.uk/">IBuildings</a>. First a couple of weeks from their office in Vlissingen, and then if all goes well, to Utrecht.</p>
 

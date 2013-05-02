@@ -12,7 +12,7 @@ tags:
   - carddav
 
 ---
-<p style="float: right"><img alt="sabredav_200x60.png" src="http://www.rooftopsolutions.nl/blog/user/files/logos/sabredav_200x60.png" width="197" height="60" /></p>
+<p style="float: right"><img alt="sabredav_200x60.png" src="http://evertpot.com/resources/files/logos/sabredav_200x60.png" width="197" height="60" /></p>
 
 <p>Only a month after 1.7 I just released <a href="http://code.google.com/p/sabredav">SabreDAV 1.8</a>.</p>
 <p>Not that much changes since 1.7, except that I migrated all old prefix-style code to PHP 5.3 namespaces.</p>
