@@ -11,7 +11,7 @@ tags:
   - carddav
 
 ---
-<p style="float: right"><img alt="sabredav_200x60.png" src="http://www.rooftopsolutions.nl/blog/user/files/logos/sabredav_200x60.png" width="197" height="60" /></p>
+<p style="float: right"><img alt="sabredav_200x60.png" src="http://evertpot.com/resources/files/logos/sabredav_200x60.png" width="197" height="60" /></p>
 
 <p>Over the last month I've been working hard at the <a href="http://atmail.com/">Atmail</a> office in sunny Australia to get CardDAV support built into <a href="http://code.google.com/p/sabredav/">SabreDAV</a>; and I've finally completed all the steps to do this release.</p>
 

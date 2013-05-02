@@ -9,7 +9,7 @@ tags:
 
 ---
 <p style="float: left; padding: 0 10px 10px 0">
-<a href="https://fruux.com"><img alt="fruux_logo.png" src="http://www.rooftopsolutions.nl/blog/user/files/logos/fruux_logo.png" /></a>
+<a href="https://fruux.com"><img alt="fruux_logo.png" src="http://evertpot.com/resources/files/logos/fruux_logo.png" /></a>
 </p>
 
 <p>I've been at this for a bit, but now it's official: I'm now based in Münster, and working at <a href="https://fruux.com/">fruux</a> as a co-founder / tech-lead.</p>

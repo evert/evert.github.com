@@ -36,7 +36,7 @@ file_put_contents("saved by the \x07.txt","contents");
 
 <p>After running this I simply get a questionmark when viewing the file using 'ls', but when I auto-complete it, it expands to ^G (which is bell). In Nautilus, this is displayed:</p>
 
-<p><img alt="fsencoding_gnome.png" src="http://www.rooftopsolutions.nl/blog/user/files/posts/fsencoding_gnome.png" alt="display of bell in gnome nautilus" /></p>
+<p><img alt="fsencoding_gnome.png" src="http://evertpot.com/resources/files/posts/fsencoding_gnome.png" alt="display of bell in gnome nautilus" /></p>
 
 <p>If I run this script:</p>
 

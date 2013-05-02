@@ -29,7 +29,7 @@ pear install sabredav/Sabre_VObject-alpha
 
 <p><small>Or download from <a href="http://pear.sabredav.org/">pear.sabredav.org</a>.</small></p>
 
-<p>For testing, I used this iCalendar file: <a href="http://www.rooftopsolutions.nl/blog/user/files/posts/icalendartest.ics">icalendartest.ics</a>.</p>
+<p>For testing, I used this iCalendar file: <a href="http://evertpot.com/resources/files/posts/icalendartest.ics">icalendartest.ics</a>.</p>
 
 <p>To load in an object, you use the Reader class:</p>
 

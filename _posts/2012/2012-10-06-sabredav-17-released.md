@@ -14,7 +14,7 @@ tags:
   - composer
 
 ---
-<p style="float: right"><img alt="sabredav_200x60.png" src="http://www.rooftopsolutions.nl/blog/user/files/logos/sabredav_200x60.png" width="197" height="60" /></p>
+<p style="float: right"><img alt="sabredav_200x60.png" src="http://evertpot.com/resources/files/logos/sabredav_200x60.png" width="197" height="60" /></p>
 
 <p>I just released <a href="http://code.google.com/p/sabredav">SabreDAV 1.7</a>, after about 7 months of work. A lot of work has gone into optimizing operations, and a bunch of new features have been added. I also stopped supporting the PEAR packages, and fully migrated to <a href="http://getcomposer.org/">composer</a>. If you download the zip, the required composer files are actually shipped along.</p>
 
