@@ -1,5 +1,5 @@
 ---
-date: 2013-05-02 20:53:11 UTC
+date: 2013-05-02 15:58:42 UTC
 layout: post
 slug: sabredav-acquired-by-fruux
 title: "SabreDAV acquired by fruux"
