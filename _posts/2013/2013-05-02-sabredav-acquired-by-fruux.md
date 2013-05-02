@@ -49,7 +49,7 @@ commercial product around SabreDAV.
 What will change?
 -----------------
 
-Small stuff really. The github urls have changed. The new project pages are:
+Small stuff really. The GitHub urls have changed. The new project pages are:
 
 * https://github.com/fruux/sabre-dav
 * https://github.com/fruux/sabre-vobject
