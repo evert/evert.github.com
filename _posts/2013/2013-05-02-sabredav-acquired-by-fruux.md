@@ -43,8 +43,8 @@ A few years ago steam really picked up, and it changed from the hobby project
 that it was back then, to something I could actually make a living off by
 doing consulting.
 
-In 2012 I've took it one step further, and teamed up with fruux use SabreDAV
-and build a commercial product around it.
+In 2012 I've took it one step further, and teamed up with fruux to build a
+commercial product around SabreDAV.
 
 What will change?
 -----------------
