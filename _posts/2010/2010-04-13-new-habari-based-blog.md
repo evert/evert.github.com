@@ -20,4 +20,4 @@ tags:
 
 <h3>Old design</h3>
 
-<a href="http://evertpot.com/resources/files/posts/bijsterespoorv2.png"><img alt="The old design" src="http://www.rooftopsolutions.nl/blog/user/files/posts/bijsterespoorv2.png" /></a>
+<a href="http://evertpot.com/resources/files/posts/bijsterespoorv2.png"><img alt="The old design" src="http://evertpot.com/resources/files/posts/bijsterespoorv2.png" /></a>
