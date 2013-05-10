@@ -67,7 +67,8 @@ Any property may have a parameter, a parameter looks a bit like this:
     NOTE;ENCODING=QUOTED-PRINTABLE:Handsome guy, for sure..
     END:VCARD
 
-A parameter in vCard starts with a `;`, has a name and a value.
+A parameter in vCard starts with a `;`, has a name and a value. Only the colon
+may be escaped in parameters, using `\:`.
 
 If you somehow wanted to encode a real backslash though, there's no mention
 of escaping it as a double-backslash.
@@ -93,7 +94,8 @@ Quoted-printable is now deprecated, and should no longer be used.
 
 Parameters have also changed. The new rule is that parameters _must not_
 contain `;`, `:` or `"`, unless they are surrounded by double-quotes, in which
-case only `"` may not appear.
+case only `"` may not appear. Escaping of the colon character (`\:`) has
+disappeared.
 
 vCard 4.0
 ---------
