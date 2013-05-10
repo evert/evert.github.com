@@ -1,5 +1,5 @@
 ---
-date: 2013-05-13 15:57:12 UTC
+date: 2013-05-10 15:57:12 UTC
 layout: post
 title: "Escaping in iCalendar and vCard"
 tags:
