@@ -151,7 +151,7 @@ based on what likely the intention was.
 Found mistakes?
 ---------------
 
-You can fork this post or easily make edits on Github. 
+You can fork this post or easily [make edits of this post on Github][8].
 
 [1]: https://github.com/fruux/sabre-vobject
 [2]: http://www.imc.org/pdi/pdiproddev.html
@@ -160,3 +160,4 @@ You can fork this post or easily make edits on Github.
 [5]: http://tools.ietf.org/html/rfc6350
 [6]: http://tools.ietf.org/html/rfc5545
 [7]: http://tools.ietf.org/html/rfc6868
+[8]: https://github.com/evert/evert.github.com/blob/master/_posts/2013/2013-05-10-escaping-in-vcards-and-icalendar.md
