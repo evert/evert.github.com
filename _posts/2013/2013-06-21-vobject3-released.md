@@ -13,18 +13,18 @@ tags:
 
 ---
 
-I just released version 3 of the sabre/vobject library. The ultimate library
-for parsing and manipulating vCard and iCalendar files (I hope!).
+I just released version 3 of the [sabre/vobject][11] library. The ultimate library
+for parsing and manipulating vCard and iCalendar files in PHP (I hope!).
 
 The library started off as component of [SabreDAV][1], but it's actually become
-more popular than it's parent project since then.
+more popular than it's parent project.
 
 It's been an interesting project for me. SabreDAV is my main other open source
-project, and that project has a really strong focus on a proper OOP design and
+project at [fruux][10], and that project has a really strong focus on a proper OOP design and
 structure.
 
 With vobject, the focus has been on providing as convenient API as possible
-and follows the "api over implementation" mantra. This means that the
+and follows the "api over implementation" mantra. For me this means that the
 experience for the user is the most important, but if you pop open the hood
 it can turn out to be a bit messy.
 
@@ -42,7 +42,7 @@ has their own set of rules for encoding, and a lot of edge-cases.
 
 I admit to not having dug into that enough when I originally created the
 library, and I was required to rewrite huge portions of it and break BC just
-to properly support everything. Hence a 3.0 version.
+to properly support everything. Hence: 3.0.
 
 A mini tutorial
 ---------------
@@ -95,16 +95,16 @@ END:VEVENT
 END:VCALENDAR
 ```
 
-Check out the [documentation][2] for most other operations.
+Check out the [documentation][2] for everything else, there's quite a bit :).
 
 What's new?
 -----------
 
-1. We're now following all the escaping rules from vCard 2.1[3], 3.0, 4.0,
+1. We're now following all the escaping rules from vCard 2.1, 3.0, 4.0,
    iCalendar 2.0 and rfc6868.
 2. Support for exporting [jCal][3] and [jCard][4] formats, which are json
    representations of this format, and soon to be official RFC's.
-2. Easily creating multi-valued properties using arrays.
+2. Easily create multi-valued properties using arrays.
 3. Great vCard 2.1 support, including the broken vCards microsoft generates.
 4. It's much easier to create components such as VEVENT, VTODO.
 4. Stream-based parser.
@@ -150,4 +150,5 @@ Thanks guys! You rock.
 [7]: https://github.com/staabm
 [8]: https://github.com/clue
 [9]: http://www.bokxing-it.nl/
-
+[10]: https://fruux.com/opensource/
+[11]: https://github.com/fruux/sabre-vobject
