@@ -258,4 +258,4 @@ Suggest edits or additions on [GitHub][9]
 [6]: http://php.net/manual/en/book.apc.php
 [7]: https://wiki.php.net/rfc/optimizerplus
 [8]: https://github.com/fruux/sabre-vobject/blob/master/lib/Sabre/VObject/Component/VCalendar.php#L45
-[9]: https://github.com/evert/evert.github.com/edit/master/_posts/2013/2013-06-13-php-55-released.md
+[9]: https://github.com/evert/evert.github.com/blob/master/_posts/2013/2013-06-13-php-55-released.md
