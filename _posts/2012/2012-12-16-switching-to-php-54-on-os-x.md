@@ -39,6 +39,7 @@ LoadModule php5_module libexec/apache2/libphp5.so
 LoadModule php5_module /usr/local/Cellar/php54/5.4.12/libexec/apache2/libphp5.so
 
 ```
+<p><strong>Hint:</strong> Check your php version ('php -v') and adjust the version number if necessary.
 
 <p>After that, restart apache and things should just work. For more detailed instructions, take a look at the <a href="https://github.com/josegonzalez/homebrew-php">documentation for homebrew-php</a></p>
 
