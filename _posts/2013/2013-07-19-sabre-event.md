@@ -46,9 +46,7 @@ extending it, or using it as a trait:
 
 use Sabre\Event;
 
-class MyNotUneventfulApplication
-    extends AppController
-    implements Event\EventEmitterInterface
+class MyNotUneventfulApplication implements Event\EventEmitterInterface
 {
 
     use Event\EventEmitterTrait();
