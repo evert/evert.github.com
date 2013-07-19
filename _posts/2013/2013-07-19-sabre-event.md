@@ -60,7 +60,8 @@ class MyNotUneventfulApplication
 
 It differs from Événement in two features:
 
-1. It's possible to prioritize listeners, and let them trigger earlier.
+1. It's possible to prioritize listeners, and let them trigger earlier or
+   later in the event chain.
 2. It's possible for listeners to break the event chain, much like
    javascript's `preventDefault()`.
 
