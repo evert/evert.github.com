@@ -91,7 +91,7 @@ There's two ways to supply a request body, as a string or as a stream. If we
 were uploading a file it makes much more sense to use a stream, because it
 unlike posting a string, a stream doesn't have to be kept in memory.
 
-To post an open file system, you need `CURLOPT_PUT` and `CURLOPT_INFILE`.
+To upload a stream with curl, you need `CURLOPT_PUT` and `CURLOPT_INFILE`.
 Don't let the name `CURLOPT_PUT` fool you, it's use for every request, and
 without `CURLOPT_PUT`, `CURLOPT_INFILE` is ignored.
 
@@ -169,7 +169,7 @@ curl_exec($curl);
 
 
 According to the PHP changelog, this was added in PHP 5.3.2, and according to
-[PHP bug #49571] there are four possible values:
+[PHP bug #49571][2] there are four possible values:
 
 ```
 0 -> do not set any behavior
