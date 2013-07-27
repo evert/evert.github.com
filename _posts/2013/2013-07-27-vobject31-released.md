@@ -26,4 +26,8 @@ add to 3.0, namely:
 
 ![vobject cli screenshot](/resources/images/posts/vobject-cli.png "sabre/vobject cli")
 
+Read all about the new features in the [Documentation][2] or check out the [ChangeLog][3] for the full list of changes.
+
 [1]: https://github.com/fruux/sabre-vobject
+[2]: https://github.com/fruux/sabre-vobject/blob/master/doc/usage_3.md
+[3]: https://github.com/fruux/sabre-vobject/blob/master/ChangeLog
