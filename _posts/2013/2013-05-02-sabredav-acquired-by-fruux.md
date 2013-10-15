@@ -9,7 +9,7 @@ tags:
 
 ---
 
-<div style="float: right; with: 210px; text-align: center">
+<div style="float: right; width: 210px; text-align: center">
 
     <img src="http://evertpot.com/resources/files/logos/fruux_logo.png" style="padding-bottom: 20px" /><br/>
     <img src="http://evertpot.com/resources/files/logos/sabredav_200x60.png" />
