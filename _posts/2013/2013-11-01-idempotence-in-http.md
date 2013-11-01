@@ -95,14 +95,14 @@ O'Reilly's [RESTful Web Services Cookbook][5]. An excerpt:
 > "The DELETE method is idempotent. This implies that the server must return
 > response code 200 (OK) even if the server deleted the resource in a previous"
 
-[source][7]
+[source][6]
 
 I guess this is just a subtle reminder that beceause it uses dead trees as
 medium, it doesn't necessarily it's correct ;).
 
 The book implies with that statement that a REST server must actually keep
 track of every previously deleted resource, just so it can return a 2xx status
-code and pretend that the `DELETE` succeeded again,
+code and pretend that the `DELETE` succeeded again. This is absolutely false.
 
 On HTTP 200 vs 204
 ------------------
@@ -110,17 +110,17 @@ On HTTP 200 vs 204
 This was also addressed in the [blog post][1], and I felt it was worth
 explaining the difference here too.
 
-`204 No Content` is often used as the standard response to a standard `DELETE`.
-However, `200 OK` is also a perfectly valid response code.
+`204 No Content` is often used as the standard response to a successful
+`DELETE`. However, `200 OK` is also a perfectly valid response code.
 
-The only different between `200 OK` and `204 No Content` is that with 200 some
-response body is expected, and with `204 No Content` no response is allowed to
-be sent back.
+The only different between `200 OK` and `204 No Content` is that with `200`
+some response body is expected, and with `204 No Content` no response is
+allowed to be sent back.
 
 So it is also perfectly acceptable to send back a `204` as a response to a
 `PUT` or `POST` request. There's also nothing in the specification that seems
 to argue against the idea of using a `204` as a response to a `GET` request,
-if the `Content-Length` of the response is 0.
+As long as the `Content-Length` of the response is 0.
 
 [1]: http://www.duckheads.co.uk/is-a-http-delete-requests-idempotent/491
 [2]: http://www.reddit.com/r/PHP/comments/1pohye/is_a_http_delete_request_idempotent/
