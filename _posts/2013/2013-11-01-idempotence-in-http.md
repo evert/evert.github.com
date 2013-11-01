@@ -111,8 +111,7 @@ once, the outcome is the same as performing the identical HTTP request more
 than once.
 
 Outcome in this sentence does not refer to the literal HTTP response, which
-is always different anyway as most HTTP servers send back a `Date:` header
-anyway.
+is usually different anyway as most HTTP servers send back a `Date:` header.
 
 Outcome refers to the state of the resource on the server. If I do the same
 `DELETE` more than once, the first `DELETE` that comes through will return
