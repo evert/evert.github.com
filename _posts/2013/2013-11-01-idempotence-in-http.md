@@ -104,6 +104,21 @@ The book implies with that statement that a REST server must actually keep
 track of every previously deleted resource, just so it can return a 2xx status
 code and pretend that the `DELETE` succeeded again. This is absolutely false.
 
+### tl;dr
+
+When a HTTP method is idempotent, this means that when you do a HTTP request
+once, the outcome is the same as performing the identical HTTP request more
+than once.
+
+Outcome in this sentence does not refer to the literal HTTP response, which
+is always different anyway as most HTTP servers send back a `Date:` header
+anyway.
+
+Outcome refers to the state of the resource on the server. If I do the same
+`DELETE` more than once, the first `DELETE` that comes through will return
+a `2xx` status code, and any subsequent `DELETE` will return a `4xx` status
+code because the resource has already been removed.
+
 On HTTP 200 vs 204
 ------------------
 
