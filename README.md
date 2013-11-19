@@ -18,7 +18,7 @@ sudo gem install redcarpet
 Then, from the root of the blog just run:
 
 ```
-jekyll --server --auto
+jekyll serve --watch
 ```
 
 This will typically start a server on port 4000.
