@@ -2,15 +2,14 @@
 layout: default
 ---
 
-<div class="post">
-  <h1>{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+<h1>{{ page.title }}</h1>
+
+<span class="post-date">{{ page.date | date_to_string }}</span>
+{{ content }}
 
 <div class="comments">
-  <h2>Respond</h2>
-  <div id="disqus_thread"></div>
+<h2>Respond</h2>
+<div id="disqus_thread"></div>
 </div>
 
 <script type="text/javascript">

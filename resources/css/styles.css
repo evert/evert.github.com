@@ -10,3 +10,10 @@ pre {
     overflow-x: auto;
     font-family: "Monaco", monospace;
 }
+
+
+@media (min-width: 768px) {
+    h1 {
+        margin-top: 60px;
+    }
+}
