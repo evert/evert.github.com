@@ -1,37 +1,96 @@
 <!DOCTYPE html>
-<head>
-    <title>{{ page.title }}</title>
-    <link href="/css/stylesheet.css" type="text/css" rel="stylesheet" />
-    <link href="/css/desert.css" type="text/css" rel="stylesheet" />
-    <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/bijsterespoor" title="Atom feed" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-</head>
-<body>
-  <div id="wrap">
-      <main>
-        {{ content }}
-      </main>
-   </div>
-   <footer>
-     Written by <a href="/">Evert Pot</a>. Find me on <a href="https://twitter.com/evertp">Twitter</a> or <a href="https://github.com/evert">Github</a>.
-   </footer>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1">
+    <link href="/resources/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
 
-<script type="text/javascript">
+    <title>
+      {% if page.title %}{{ page.title }} &middot; {% endif %}
+      Het Bijstere spoor
+    </title>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-2848664-4']);
-  _gaq.push(['_setDomainName', 'evertpot.com']);
-  _gaq.push(['_setAllowLinker', true]);
-  _gaq.push(['_trackPageview']);
+    <!-- CSS -->
+    <link rel="stylesheet" href="/resources/css/hyde.css">
+    <link rel="stylesheet" href="/resources/css/styles.css">
+    <link rel="stylesheet" href="/resources/css/desert.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Abril+Fatface">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/resources/touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/resources/favicon.png">
 
-</script>
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+  <body>
 
-</body>
+    <header class="masthead">
+
+      <!-- temp maple edition -->
+      <div align="center">
+        <br/>
+        <p>
+          <img src="http://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Flag_of_Canada.svg/800px-Flag_of_Canada.svg.png" width="25px" style="margin: 0 0 0;" />
+          <small style="font-size:60%;">The Maple Edition</small>
+        </p>
+      </div>
+      <!-- temp maple edition -->
+
+      <div class="masthead-inner">
+        <a href="/">
+          <img src="/resources/favicon.png" />
+        </a>
+        <p class="lead"><a href="/">Het Bijstere spoor</a>
+
+          <br/><br/>
+
+          I'm the lead developer for <a href="https://github.com/fruux/sabre-dav/">SabreDAV</a>, and one of <a href="https://fruux.com/">fruux</a>' co-founders and CTO.
+        </p>
+
+        <div class="colophon">
+          <ul class="colophon-links">
+            <li>
+              <a href="https://twitter.com/evertp">@evertp</a>
+            </li>
+            <li>
+              <a href="https://github.com/evert">GitHub</a>
+            </li>
+            <li>
+              &nbsp;
+            </li>
+            <li>
+              <a href="/about.html">About</a>
+            </li>
+          </ul>
+
+          <p>&copy; 2006-2013. All rights reserved.</p>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="content container">
+      {{ content }}
+    </div>
+
+  </body>
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2848664-4']);
+    _gaq.push(['_setDomainName', 'evertpot.com']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+</html>
