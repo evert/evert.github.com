@@ -36,5 +36,11 @@ My results:
 
 <a href="/resources/images/posts/emailprivacy.png"><img src="/resources/images/posts/emailprivacy.png" style="max-width: 100%"/></a>
 
+For comparison, clients such as Thunderbird will show the above grid as
+completely gray.
+
+What's especially telling here, is that the privacy problems here are not
+simple mistakes, but definite design choices.
+
 [1]: http://www.mozilla.org/en-US/thunderbird/
 [2]: https://emailprivacytester.com/
