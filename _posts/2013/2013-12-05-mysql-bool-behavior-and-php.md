@@ -128,4 +128,14 @@ Why the choice was made in PDO to default every value to string beats me, I
 feel that it would be much more sensible to automatically map PHP types to
 MySQL types.
 
+Update: STRICT_TRANS_TABLES
+---------------------------
+
+Morgan Tocker points out in the comments that this is due to a new default
+configuration value: `STRICT_TRANS_TABLES`.
+
+Disabling this will get you the old behavior back. Dynom mentions that it
+may not be a bad idea regardless to keep this on, as well as a few other
+settings to let MySQL behave more strictly.
+
 [1]: http://php.net/manual/en/book.pdo.php
