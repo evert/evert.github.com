@@ -73,7 +73,6 @@ $stmt = $pdo->prepare('INSERT INTO foo (my_bool) VALUES (?)');
 $stmt->execute([0]);
 
 // Or:
-
 $stmt = $pdo->prepare('INSERT INTO foo (my_bool) VALUES (?)');
 $stmt->bindValue(1, false, PDO::PARAM_BOOL); // 1st param gets value false.
 $stmt->execute();
