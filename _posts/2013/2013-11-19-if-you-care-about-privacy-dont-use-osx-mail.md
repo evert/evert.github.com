@@ -36,5 +36,26 @@ My results:
 
 <a href="/resources/images/posts/emailprivacy.png"><img src="/resources/images/posts/emailprivacy.png" style="max-width: 100%"/></a>
 
+For comparison, clients such as Thunderbird will show the above grid as
+completely gray.
+
+What's especially telling here, is that the privacy problems here are not
+simple mistakes, but definite design choices.
+
+### Edit
+
+Ken Neville points out in the comments that there's actually a setting in Mail
+that allows you to turn off this behavior.
+
+I have to be honest that I looked for this very setting several times, but
+must have simply missed it.
+
+However, I feel that my earlier point stands. Unlike other almost every other
+client on the planet, in Mail the default is terrible for privacy, and unless
+you are aware of the privacy implications of 'not displaying remote images',
+there is absolutely no indication why it's a good idea to turn this off.
+
+In my opinion the setting should be well hidden and off by default.
+
 [1]: http://www.mozilla.org/en-US/thunderbird/
 [2]: https://emailprivacytester.com/
