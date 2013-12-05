@@ -118,7 +118,7 @@ This always works though:
 
 $stmt = $pdo->prepare('SELECT from FOO LIMIT ?, ?');
 $stmt->bindValue(1, 15, PDO::PARAM_INT); // 1st param gets value 15
-$stmt->bindValue(2, 5, PDO::PARAM_INT); // 1st param gets value 5
+$stmt->bindValue(2, 5, PDO::PARAM_INT); // 2nd param gets value 5
 $stmt->execute();
 
 ?>
