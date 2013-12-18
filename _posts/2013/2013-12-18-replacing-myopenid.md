@@ -17,8 +17,8 @@ the coffin. MyOpenID will go down February 1st, 2014.
 Too bad really, because I really liked OpenID from a conceptual perspective,
 and [this blog][2] tells me I've been a fan since at least 2006.
 [I predicted][3] in 2009 (apparently) that it was already going down a route
-of over engineering, even though the scope of the OpenID specifications was
-rather minimal compared to right now.
+of over-engineering, even though the scope of the OpenID specifications was
+rather minimal compared to how things are looking right now.
 
 At the moment you can't even find the specifications on the [OpenID website][4]
 website without some intense searching, which is a stark contrast from for
@@ -65,8 +65,10 @@ the following links:
 
 The link to my profile and `rel="me"` is what's important here. On both my
 GitHub and Twitter accounts, I now need to create links _back_ to
-http://evertpot.com/. To do this, you simply need to make sure that the url
-used on your profile has your homepage, as you can see on [my github][11].
+http://evertpot.com/. To do this, you simply need to make sure that these
+respective profile pages link back to your homepage.
+
+You can see this on [my GitHub profile][11].
 
 Then, head over to [IndieAuth][7]. Log in once using their form, and you're
 off.
@@ -81,15 +83,17 @@ IndieAuth can't pick up my Twitter account for some reason. I assume that
 that's a bug yet to fix.
 
 Initially my website didnt have the `<html></html>` start and end tags. These
-tags become optional in HTML5, but almost every OpenID consumer (such as
+tags became optional in HTML5, but almost every OpenID consumer (such as
 Stack Overflow) trips on that, as well as IndieAuth itself. So I begrudgingly
 added them back.
 
 Scanning for providers also fails with 500 Internal Server Error from time to
+time. Refreshing and trying again helps. One providers are discovered, this
+infromation is retained though.. so you likely only run into this the first
 time.
 
 All of this together makes me feel that IndieAuth is still beta quality. The
-fact that the website comes off broken on Firefox on certain widts strongly
+fact that the website comes out broken on Firefox on certain widths strongly
 underlines that.
 
 But for now it solves my problem. Keeping control of my OpenID identity until
