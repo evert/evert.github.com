@@ -30,19 +30,23 @@ The request objects acts as a wrapper around the `$_SERVER` array and
 `header()`.
 
 Because all of these PHP language constructs operate globally, by wrapping
-these in objects we can use all the standard OOP functionality such as
-polymorphism. To aid with this, a [Request-][5], and [ResponseDecorator][6] are also
+these in classes objects we can use all the standard OOP functionality such as
+polymorphism.
+
+To aid with this, a [Request-][5], and [ResponseDecorator][6] have also been
+included.
 
 In addition to that, it also provides a simple HTTP Client. This client just
-wraps around curl with not much fuss and simply allows you to re-use the
-existing request and responses.
+wraps around Curl with not much fuss and simply allows you to re-use the
+existing Request and Responses, for a consistent experience.
 
 The client doesn't attempt to give you all the features on the planet such
 as [Guzzle][7]. It just gives you a simple event-based asynchronous API, but
-if you need advanced curl features, you do get easy access to them.
+if you need advanced Curl features, you do get easy access to them.
 
 By doing both a Client and a Server-side of this, this also makes it
-ridiculously easy to build stuff like a [reverse proxy server][10] right in PHP.
+ridiculously easy to build stuff like a [reverse proxy server][10] right in
+PHP.
 
 To read more, all the documentation can be found on the [github page][11].
 
@@ -57,22 +61,24 @@ When this library was first written, neither that package, nor an
 consider integrating it instead.
 
 The first deterrence was that both it's API and implementation are quite ugly,
-there are a massive number of classes, and violations of what I consider are
-violations of separations of concerns.
+there are a massive number of classes, and a bunch of design decisions have
+been made that I consider violations of seperations of concerns.
 
 I was willing to get over those for the sake of interopability. The main issue
 I ran into then was that I absolutely required features that the authors were
 unwilling to implement. Specifically the retention of the capitalization of http
-headerse.
+headers.
 
-This made me realize that because [sabre/dav][2] is really a power-use for this
+This made me realize that because [sabre/dav][2] is really a power-user for this
 type of package. WebDAV is an extension of HTTP, and uses nearly every feature
-out there. In addition to that it has to work with many broken clients. WebDAV
-clients are not nearly as well-behaving as Browsers.
+out there. It leans much heavier on HTTP than most browser applications and
+even API's do. In addition to that it has to work with many broken clients.
+WebDAV clients are not nearly as well-behaving as Browsers.
 
-So we decided this package was 'core' enough to maintain ourselves. Looking
-back I think this was a good decision, as symfony has also done a number of
-backwards-compatiblity breaking releases since I originally looked at it.
+So we decided this package was 'core' enough to maintain ourselves, so we can
+have full control over it. Looking back I think this was a good decision, as
+symfony has also done a number of backwards-compatiblity breaking releases
+since I originally looked at it.
 
 Also, it's a small enough package that there's not that much of a maintenance
 burden, and it was hella fun to write.
@@ -89,7 +95,7 @@ In conclusion
 Well, I hope you like it. I'd probably still recommend using symfony's package,
 for the sole reason that it has a _much_ larger user-base, but if you are
 looking for something pure and lightweight to solve this particular problem,
-perhaps you like it.
+perhaps you can consider sabre/http instead.
 
 [1]: https://github.com/fruux/sabre-http/
 [2]: https://github.com/fruux/sabre-dav/
