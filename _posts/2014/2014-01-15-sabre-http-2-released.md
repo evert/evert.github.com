@@ -77,6 +77,12 @@ backwards-compatiblity breaking releases since I originally looked at it.
 Also, it's a small enough package that there's not that much of a maintenance
 burden, and it was hella fun to write.
 
+Integration with SabreDAV
+-------------------------
+
+This package will be part of the next major SabreDAV release. So don't use it
+with the current line of releases (1.8.x), as it will not work!
+
 In conclusion
 -------------
 
