@@ -4,8 +4,7 @@ layout: post
 title: "fpassthru broken on OS X"
 tags:
   - fpassthru
-- php
-
+  - php
 ---
 
 I've gotten a few strange bug reports about broken downloads in SabreDAV over
