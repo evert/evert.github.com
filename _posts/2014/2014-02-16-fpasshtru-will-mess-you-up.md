@@ -21,10 +21,12 @@ dd if=/dev/zero of=5gigs bs=1024 count=5242880
 Next, we want to stream this with `fpassthru()`, the following script should
 do this:
 
-    $file = __DIR__ . '/5gigs';
+```php
+$file = __DIR__ . '/5gigs';
 
-    $h = fopen($file, 'r');
-    fpassthru($h);
+$h = fopen($file, 'r');
+fpassthru($h);
+```
 
 I've tried this at a few sizes:
 
@@ -50,12 +52,13 @@ Do not use fpassthru on OS X if you want to support large files!
 
 The following workaround always works though:
 
-    $file = __DIR__ . '/5gigs';
+```php
+$file = __DIR__ . '/5gigs';
 
-    $h = fopen($file, 'r');
+$h = fopen($file, 'r');
 
-    while(!feof($h)) {
-        echo fread($h, 4096);
-    }
-
+while(!feof($h)) {
+    echo fread($h, 4096);
+}
+```
 
