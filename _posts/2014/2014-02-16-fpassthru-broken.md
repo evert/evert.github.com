@@ -16,7 +16,7 @@ other people are seeing.
 
 To test, create a large file. The following statement creates a 5GB file:
 
-dd if=/dev/zero of=5gigs bs=1024 count=5242880
+    dd if=/dev/zero of=5gigs bs=1024 count=5242880
 
 Next, we want to stream this with `fpassthru()`, the following script should
 do this:
