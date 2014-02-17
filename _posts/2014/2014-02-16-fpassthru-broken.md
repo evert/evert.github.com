@@ -22,6 +22,8 @@ Next, we want to stream this with `fpassthru()`, the following script should
 do this:
 
 ```php
+<?php
+
 $file = __DIR__ . '/5gigs';
 
 $h = fopen($file, 'r');
@@ -53,6 +55,8 @@ Do not use fpassthru on OS X if you want to support large files!
 The following two workarounds always workthough:
 
 ```php
+<?php
+
 $file = __DIR__ . '/5gigs';
 
 $h = fopen($file, 'r');
@@ -65,6 +69,8 @@ while(!feof($h)) {
 And my personal preference:
 
 ```php
+<?php
+
 $file = __DIR__ . '/5gigs';
 
 $h = fopen($file, 'r');
