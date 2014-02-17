@@ -50,7 +50,7 @@ So unless I'm making a mistake somewhere, else:
 Do not use fpassthru on OS X if you want to support large files!
 ----------------------------------------------------------------
 
-The following workaround always works though:
+The following two workarounds always workthough:
 
 ```php
 $file = __DIR__ . '/5gigs';
@@ -62,3 +62,11 @@ while(!feof($h)) {
 }
 ```
 
+And my personal preference:
+
+```php
+$file = __DIR__ . '/5gigs';
+
+$h = fopen($file, 'r');
+file_put_contents('php://output', $h);
+```
