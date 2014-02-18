@@ -76,3 +76,8 @@ $file = __DIR__ . '/5gigs';
 $h = fopen($file, 'r');
 file_put_contents('php://output', $h);
 ```
+
+PHP Bug
+-------
+
+Now confirmed on 5.5.9 and opened a php bug report: <https://bugs.php.net/bug.php?id=66736>
