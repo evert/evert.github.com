@@ -13,8 +13,8 @@ composer has a `replace` feature, that allows pretty much anyone to 'replace'
 a package of someone else.
 
 The result is, that a simple `composer update` can allow an attacker to
-execute code on your machine. Either by using `post-install-cmd` or by
-replacing stuff in packages that get executed after the fact.
+execute code on your machine. ~~Either by using `post-install-cmd` or~~ by
+replacing things in packages that get executed after the fact.
 
 [Pádraic Brady][1] has more details. Largly as a response to [this post by naderman][2].
 
