@@ -8,6 +8,8 @@ tags:
   - packagist
 ---
 
+**Update: bug is now fixed. See [my new post][3]**
+
 There's been a bit of an uproar in the php world. The short version is that
 composer has a `replace` feature, that allows pretty much anyone to 'replace'
 a package of someone else.
@@ -66,3 +68,4 @@ and compare it with what we expect to see on github?
 
 [1]: http://blog.astrumfutura.com/2014/02/composer-downloading-random-code-is-not-a-security-vulnerability/
 [2]: http://blog.naderman.de/2014/02/17/replace-conflict-forks-explained/
+[3]: http://evertpot.com/composer-bug-fixed/
