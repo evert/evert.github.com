@@ -1,5 +1,5 @@
 ---
-date: 2014-02-20 15:43:05 UTC
+date: 2014-02-21 15:43:05 UTC
 layout: post
 title: "Composer's bug now fixed"
 tags:
