@@ -16,7 +16,7 @@ The result is, that a simple `composer update` can allow an attacker to
 execute code on your machine. Either by using `post-install-cmd` or by
 replacing stuff in packages that get executed after the fact.
 
-[Pádriac Brady][1] has more details. Largly as a response to [this post by naderman][2].
+[Pádraic Brady][1] has more details. Largly as a response to [this post by naderman][2].
 
 The response
 ------------
