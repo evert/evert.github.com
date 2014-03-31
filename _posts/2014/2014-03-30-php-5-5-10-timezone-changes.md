@@ -34,7 +34,7 @@ Would output:
     UTC
 
 Now, `GMT` no longer automatically gets converted to `UTC`, and the same
-script will now output `UTC`. `UTC` and `GMT` are very similar, and in most
+script will now output `GMT`. `UTC` and `GMT` are very similar, and in most
 practical situation interchangeable. ([but not all][3]).
 
 If you relied before on figuring out wether a time is in `UTC`, be careful,
