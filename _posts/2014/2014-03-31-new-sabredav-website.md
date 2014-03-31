@@ -55,6 +55,9 @@ require.
 If you've ever had to do any HTML layouts (and I'm sure you have, and will
 again), do yourself a favor and [learn about it][4]!
 
+Everything was also writting from the ground up using
+`box-sizing: border-box`, which makes the css math a lot easier as well.
+
 Thanks!
 -------
 
