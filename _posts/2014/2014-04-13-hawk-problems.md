@@ -70,6 +70,8 @@ What to use instead?
 I'd highly recommend using simply either [HTTP Digest][3], or if you're looking for
 something a little bit more fancy, use [Amazon's authentication header][4].
 
+Some benefits:
+
 * They are tried and tested for many years.
 * Not a moving target.
 * Documented.
