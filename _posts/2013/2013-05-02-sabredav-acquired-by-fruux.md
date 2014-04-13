@@ -86,7 +86,7 @@ SabreDAV for your projects :). It's the best reward, really.
 If you're interested, also check out the announcement on the [fruux blog][6]
 
 
-[1]: http://code.google.com/p/sabredav
+[1]: http://sabre.io/
 [2]: https://fruux.com/
 [3]: http://en.wikipedia.org/wiki/WebDAV
 [4]: http://en.wikipedia.org/wiki/CalDAV

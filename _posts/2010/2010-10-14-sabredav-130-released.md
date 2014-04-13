@@ -11,26 +11,18 @@ tags:
 ---
 <p>I just released version 1.3.0 of SabreDAV. Uptake has been very strong, especially for the CalDAV components. The biggest change is a big performance boost for most tree operations.</p>
 
-<p>To upgrade, download the new file <a href="http://code.google.com/p/sabredav/downloads/list">here</a>, or if you installed it using pear:</p>
+<p>To upgrade, download the new file <a href="https://github.com/fruux/sabre-dav/releases/">here</a>, or if you installed it using pear:</p>
 
-```
-
-pear upgrade sabredav/Sabre_DAV
-pear upgrade sabredav/Sabre_CalDAV
-
-```
+    pear upgrade sabredav/Sabre_DAV
+    pear upgrade sabredav/Sabre_CalDAV
 
 <p>To install using pear:</p>
 
-```
+    pear channel-discover pear.sabredav.org
+    pear install sabredav/Sabre_DAV
+    pear install sabredav/Sabre_CalDAV
 
-pear channel-discover pear.sabredav.org
-pear install sabredav/Sabre_DAV
-pear install sabredav/Sabre_CalDAV 
-
-```
-
-<p>There is a list of 4 (smallish) backwards compatibility breaks in the API. You can read about it in the <a href="http://code.google.com/p/sabredav/wiki/Migrating1_2to1_3">migration guide</a>.</p>
+<p>There is a list of 4 (smallish) backwards compatibility breaks in the API. You can read about it in the <a href="http://sabre.io/dav/upgrade/1.2-to-1.3/">migration guide</a>.</p>
 
 <p>Full list of changes:</p>
 

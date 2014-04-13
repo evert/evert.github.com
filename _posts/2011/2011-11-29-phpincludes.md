@@ -8,22 +8,17 @@ tags:
   - phpincludes
 
 ---
-<p>While profiling <a href="http://code.google.com/p/sabredav/">SabreDAV</a>, I noticed a few times more than half of the request time was spent in the autoloader.</p>
+<p>While profiling <a href="https://sabre.io/">SabreDAV</a>, I noticed a few times more than half of the request time was spent in the autoloader.</p>
 
 <p>So instead of autoloading, now I prefer to unconditionally include every file for each package (there are 5 packages). For a while I manually maintained these files manually, but a while back I automated this process.</p>
 
 <p>This is how you run it:</p>
 
-```
-
-phpincludes . includes.php
-
-```
+    phpincludes . includes.php
 
 <p>This will generate a file such as:</p>
 
 ```php
-
 <?php
 
 // Begin includes
@@ -32,7 +27,6 @@ include __DIR__ . '/Class1.php';
 include __DIR__ . '/Class2.php';
 include __DIR__ . '/Class3.php';
 // End includes
-
 ```
 
 <p>You can edit everything before "// Begin includes" and after "// End includes". Subsequent edits will only replace the lines in between those comments.</p>

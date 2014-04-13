@@ -14,10 +14,8 @@ tags:
 
 <p>If you want to give it a shot, you first need to sign up for the <a href="https://www.dropbox.com/developers/">developer program</a> and get yourself your security tokens. Once that's done, you can install the library using:</p>
 
-```
-pear channel-discover pear.sabredav.org
-pear install sabredav/Dropbox-alpha
-```
+    pear channel-discover pear.sabredav.org
+    pear install sabredav/Dropbox-alpha
 
 <p>If that worked, you should be able to start using the API. The following example displays account information and uploads a file.</p>
 

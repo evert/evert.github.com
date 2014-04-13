@@ -14,7 +14,7 @@ tags:
 ---
 <p style="float: right"><img alt="sabredav_200x60.png" src="http://evertpot.com/resources/files/logos/sabredav_200x60.png" width="197" height="60" /></p>
 
-<p>Only a month after 1.7 I just released <a href="http://code.google.com/p/sabredav">SabreDAV 1.8</a>.</p>
+<p>Only a month after 1.7 I just released <a href="http://sabre.io/">SabreDAV 1.8</a>.</p>
 <p>Not that much changes since 1.7, except that I migrated all old prefix-style code to PHP 5.3 namespaces.</p>
 
 <p>This means that when you used to refer to a class as "Sabre_DAV_Server", this is now "Sabre\DAV\Server".</p>
@@ -26,8 +26,8 @@ tags:
 <h3>Some links</h3>
 
 <ul>
-<li><a href="https://github.com/evert/SabreDAV/blob/master/ChangeLog">Full changelog</a></li>
-<li><a href="http://code.google.com/p/sabredav/wiki/Migrating1_7to1_8">Upgrade instructions</a></li>
+<li><a href="https://github.com/fruux/sabre-dav/blob/master/ChangeLog">Full changelog</a></li>
+<li><a href="http://sabre.io/dav/upgrade/1.7-to-1.8/">Upgrade instructions</a></li>
 <li><a href="http://packagist.org/packages/sabre/dav">Composer package</a></li>
-<li><a href="http://code.google.com/p/sabredav/downloads/list">Zip download</a></li>
+<li><a href="https://github.com/fruux/sabre-dav/releases/">Zip download</a></li>
 </ul>

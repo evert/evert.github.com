@@ -141,8 +141,8 @@ along:
 
 Thanks guys! You rock.
 
-[1]: http://code.google.com/p/sabredav
-[2]: https://github.com/fruux/sabre-vobject/blob/master/doc/usage_3.md
+[1]: http://sabre.io/
+[2]: http://sabre.io/vobject/usage/
 [3]: http://tools.ietf.org/html/draft-ietf-jcardcal-jcard-03
 [4]: http://tools.ietf.org/html/draft-ietf-jcardcal-jcal-04
 [5]: https://github.com/fruux/sabre-vobject/blob/master/doc/MigratingFrom2to3.md

@@ -20,12 +20,8 @@ tags:
 
 <p>To install using pear, run the following:</p>
 
-```
-
-pear channel-discover pear.sabredav.org
-pear install sabredav/Sabre_VObject-alpha
-
-```
+    pear channel-discover pear.sabredav.org
+    pear install sabredav/Sabre_VObject-alpha
 
 <p><small>Or download from <a href="http://pear.sabredav.org/">pear.sabredav.org</a>.</small></p>
 
@@ -96,7 +92,7 @@ echo (string)$calendar->vevent[0]->dtstart['tzid'], "\n";
 ?>
 ```
 
-<p>I had fun building this, I hope it's useful to you as well. It's 100% unittested, but bugs might still appear due to the complex nature of API. Use at your own risk :). This library will be part of the <a href="http://code.google.com/p/sabredav/">SabreDAV</a> project, which is also where you can go for the source, report bugs or make suggestions.</p>
+<p>I had fun building this, I hope it's useful to you as well. It's 100% unittested, but bugs might still appear due to the complex nature of API. Use at your own risk :). This library will be part of the <a href="http://sabre.io/">SabreDAV</a> project, which is also where you can go for the source, report bugs or make suggestions.</p>
 
 <h3>Update 31-05-2012</h3>
 
