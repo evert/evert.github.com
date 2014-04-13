@@ -24,6 +24,9 @@ not as easy to read as a plain-english reference.
 In addition, the version of the protocol (currently 2.0) appears to be locked
 to the javascript library, and not the actual protocol.
 
+This means that if bugs get fixed in the javascript source, the protocol
+version gets a bump. Leaving us no way to figure out something changed in the
+protocol, unless you're willing to go through the diffs for the source.
 
 Uses the used hostname and port as part of the signed string
 ------------------------------------------------------------
@@ -45,12 +48,14 @@ original host header to the client.
 Could have built upon Digest auth
 ---------------------------------
 
-Digest has a lot of good things going for it, and almost is 1:1 in terms of
-features.
+Digest has a lot of good things going for it, and has a great deal of overlap
+in features.
 
-Hawk uses a stronger hash algorithm (hmac-sha256) and forces an extra
-pre-flighted request to discover the server's nonce. The latter is also the
-author's main concern with using Digest instead, as stated in the FAQ.
+Hawks strengths here are that it uses a stronger hash algorithm (hmac-sha256)
+and unlike Digest, it there's no need for pre-flighted requests to discover
+the service nonce.
+The latter is also the author's main concern with using Digest instead, as
+stated in the FAQ.
 
 An answer to that would have been rather simple though. Any server could
 simply hardcode and document their server-side nonce, rendering the initial
@@ -71,7 +76,7 @@ something a little bit more fancy, use [Amazon's authentication header][4].
 * Easier to implement.
 * Have lots of sample implementations.
 
-That being said, I will still add support to an upcoming version of
+That being said, I will probably still add support to an upcoming version of
 [sabre/http][2].
 
 [1]: https://github.com/hueniverse/hawk
