@@ -24,7 +24,7 @@ tags:
 
 <ul>
   <li>A bunch of REPORT queries got a lot faster. Especially some CalDAV-related requests can be exponentially faster. Some larger operations sped up from several minutes, to several seconds.</li>
-  <li>The VObject library has spun off into a separate project: <a href="https://github.com/fruux/sabre-vobject">sabre-vobject</a>.</li>
+  <li>The VObject library has spun off into a separate project: <a href="http://sabre.io/vobject/">sabre-vobject</a>.</li>
   <li>Experimental support for caldav-sharing and caldav-notifications.</li>
   <li>Added a VCFExportPlugin, similar to the ICSExportPlugin.</li>
   <li>Added a bunch of free-busy reports that now make it possible for iCal to use them.</li>

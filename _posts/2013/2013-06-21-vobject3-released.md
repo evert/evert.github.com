@@ -151,4 +151,4 @@ Thanks guys! You rock.
 [8]: https://github.com/clue
 [9]: http://www.bokxing-it.nl/
 [10]: https://fruux.com/opensource/
-[11]: https://github.com/fruux/sabre-vobject
+[11]: http://sabre.io/vobject/

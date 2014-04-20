@@ -142,9 +142,9 @@ not only will my parser have to be aware which document it's parsing, it will
 also have to make individual decisions based on which property it's parsing.
 
 Researching and listing these rules helped, and I hope it's also helpful for
-a future implementor. 
+a future implementor.
 
-It's important to be strict in generating these formats, but 
+It's important to be strict in generating these formats, but
 considering the complexity of these rules, it's extremely likely other
 software has bugs when generating these (and they do! a lot!) any parser needs
 to be able to handle these mistakes and attempt to make logical decisions
@@ -155,7 +155,7 @@ Found mistakes?
 
 You can fork this post or easily [make edits of this post on Github][8].
 
-[1]: https://github.com/fruux/sabre-vobject
+[1]: http://sabre.io/vobject/
 [2]: http://www.imc.org/pdi/pdiproddev.html
 [3]: http://tools.ietf.org/html/rfc2425
 [4]: http://tools.ietf.org/html/rfc2425

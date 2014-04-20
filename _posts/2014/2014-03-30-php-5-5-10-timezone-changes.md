@@ -98,7 +98,7 @@ This now automatically gets picked up as the '+01:00' timezone by
 and we're no longer returning `Europe/Sarajevo'.
 
 [1]: http://www.php.net/ChangeLog-5.php#5.5.10
-[2]: https://github.com/fruux/sabre-vobject
+[2]: http://sabre.io/vobject/
 [3]: http://geography.about.com/od/timeandtimezones/a/gmtutc.htm
 [4]: https://php.net/manual/en/timezones.others.php
 [5]: https://bugs.php.net/bug.php?id=66985
