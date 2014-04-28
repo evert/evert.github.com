@@ -16,4 +16,4 @@ tags:
 
 <p><a href="http://mercurial.selenic.com/">Mercurial</a> is still the best source control system, but I feel switching to Git was worth it, solely for GitHub.</p>
 
-<p>You can find the source at <a href="https://github.com/fruux/sabre-dav">https://github.com/evert/SabreDAV</a>.</p>
+<p>You can find the source at <a href="https://github.com/fruux/sabre-dav">https://github.com/fruux/sabre-dav</a>.</p>
