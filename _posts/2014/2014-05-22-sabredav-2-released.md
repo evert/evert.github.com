@@ -10,9 +10,9 @@ tags:
 I just released sabre/dav 2.0. It's been 18 months since 1.8, and almost 5
 years since the 1.0 release, so it's been a long time coming.
 
-PHP 5.3 support is now dropped, and it spawned two new php packages:
-[sabre/event][1] and [sabre/http][2]. Hopefully they are useful beyond the
-realm of sabre/dav.
+PHP 5.3 support is now dropped, PSR-4 adopted, and it spawned two new php
+packages: [sabre/event][1] and [sabre/http][2]. Hopefully they are useful
+beyond the realm of sabre/dav.
 
 We've made lots of performance jumps, did a ton of refactoring and added a
 bunch of new features.
