@@ -26,11 +26,11 @@ is a big deal.
 
 [RFC 2616][11], which was written more than 15 years ago, was _the_
 specification everybody has implemented, and I suspect many of you
-occassionally has read.
+occassionally has used as a reference.
 
 Since then, the HTTPBis group has worked from what I can tell, at least 7
 years on updating these specs. You can imagine that for a protocol as
-widespread as HTTP, there will be many stakeholders and caveats.
+widespread as HTTP, there will be many stakeholders and opinions to satisfy.
 
 HTTP/2.0, which is still under development, will also reference these rfcs
 and essentially just link to them, as opposed to re-define all the definitions
@@ -48,12 +48,12 @@ more text. A lot of things are easier to understand and read, and parts where
 there were ambigiousness have been resolved.
 
 A second change is that the core specification has not been split up over 6
-separate specs, whereas before there was just RFC 2616 and [RFC 2617][12] for
-Basic and Digest authentication.
+separate specs, whereas before there was just [RFC 2616][11] for HTTP, and
+[RFC 2617][12] for Basic and Digest authentication.
 
-Just for those reasons it may make a lot of sense for API authors to read the
-specs from end-to-end. Guarenteed you'll learn and get enspired into doing
-better HTTP api design.
+Just for those reasons alone it may make a lot of sense for API authors to
+read the specs from end-to-end. Guarenteed you'll learn and get enspired into
+doing better HTTP api design.
 
 Furthermore the `308` status code is now standard, which provides a 4th
 redirect status. `308` is a permanent redirect. Clients that receive a `308`
