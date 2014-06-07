@@ -26,7 +26,7 @@ is a big deal.
 
 [RFC 2616][11], which was written more than 15 years ago, was _the_
 specification everybody has implemented, and I suspect many of you
-occassionally has used as a reference.
+occassionally have used as a reference.
 
 Since then, the HTTPBis group has worked from what I can tell, at least 7
 years on updating these specs. You can imagine that for a protocol as
