@@ -52,7 +52,7 @@ separate specs, whereas before there was just [RFC 2616][11] for HTTP, and
 [RFC 2617][12] for Basic and Digest authentication.
 
 Just for those reasons alone it may make a lot of sense for API authors to
-read the specs from end-to-end. Guarenteed you'll learn and get enspired into
+read the specs from end-to-end. Guarenteed you'll learn and get inspired into
 doing better HTTP api design.
 
 Furthermore the `308` status code is now standard, which provides a 4th
