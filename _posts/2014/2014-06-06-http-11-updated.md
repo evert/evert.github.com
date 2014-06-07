@@ -64,7 +64,33 @@ a `GET`.
 [RFC 7239][10] standardizes a `Forwarded` header, which is supposed to replace
 headers such as `X-Forwarded-For` and `X-Forwarded-Proto`.
 
+### A far from complete list of interesting things that have changed.
+
+* Clarifications around dealing with unexpected whitespace, which should
+  fix response splitting vulnerabilities.
+* The limit of two connections per server has been removed.
+* HTTP/0.9 support has been dropped.
+* Default charset of ISO-8859-1 has been removed.
+* Servers are no longer required to handle all `Content-*` header fields.
+* `Content-Range` has been explicitly banned in PUT requests.
+* It's now suggested to use the `about:blank` uri in the `Referer` header
+  when no referer exists, to distinguish between "there was no referrer" and
+  "I don't want to send a referrer".
+* The `204`, `404`, `405`, `414` and `501` status codes are now cachable.
+* The status codes `301` and `302` have been changed to allow user agents
+  to rewrite the method from `POST` to `GET`. This is a good example of a case
+  where everybody has been (incorrectly) already doing this, and the spec now
+  reflects the real world implementation.
+* The `Location` header can now contain relative uri's as well as fragment
+  identifiers.
+* `Content-MD5` has been removed.
+
 Anything else I missed?
+
+References
+----------
+
+* [Post from the chair the IETF HTTPbis Working Group][13]
 
 [1]: http://tools.ietf.org/html/rfc7230
 [2]: http://tools.ietf.org/html/rfc7231
@@ -78,3 +104,4 @@ Anything else I missed?
 [10]: http://tools.ietf.org/html/rfc7239
 [11]: http://tools.ietf.org/html/rfc2616
 [12]: http://tools.ietf.org/html/rfc2617
+[13]: https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead
