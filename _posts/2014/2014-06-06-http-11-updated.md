@@ -10,21 +10,21 @@ tags:
 
 The IETF just published several new RFCs that update HTTP/1.1:
 
-* [RFC7230: Message Syntax and Routing][1]
-* [RFC7231: Semantics and Content][2]
-* [RFC7232: Conditional Requests][3]
-* [RFC7233: Range Request][4]
-* [RFC7234: Caching][5]
-* [RFC7235: Authentication][6]
-* [RFC7236: Authentication Scheme Registrations][7]
-* [RFC7237: Method Registrations][8]
-* [RFC7238: the 308 status code][9]
-* [RFC7239: Forwarded HTTP extension][10]
+* [RFC 7230: Message Syntax and Routing][1]
+* [RFC 7231: Semantics and Content][2]
+* [RFC 7232: Conditional Requests][3]
+* [RFC 7233: Range Request][4]
+* [RFC 7234: Caching][5]
+* [RFC 7235: Authentication][6]
+* [RFC 7236: Authentication Scheme Registrations][7]
+* [RFC 7237: Method Registrations][8]
+* [RFC 7238: the 308 status code][9]
+* [RFC 7239: Forwarded HTTP extension][10]
 
 These documents make the original HTTP/1.1 **obsolete**. As a HTTP geek, this
 is a big deal.
 
-[RFC2616][11], which was written more than 15 years ago, was _the_
+[RFC 2616][11], which was written more than 15 years ago, was _the_
 specification everybody has implemented, and I suspect many of you
 occassionally has read.
 
