@@ -64,6 +64,7 @@ a `GET`.
 [RFC 7239][10] standardizes a `Forwarded` header, which is supposed to replace
 headers such as `X-Forwarded-For` and `X-Forwarded-Proto`.
 
+Anything else I missed?
 
 [1]: http://tools.ietf.org/html/rfc7230
 [2]: http://tools.ietf.org/html/rfc7231
