@@ -8,7 +8,7 @@ tags:
     - rfc
 ---
 
-The IETF just publishes several new RFCs that update HTTP/1.1:
+The IETF just published several new RFCs that update HTTP/1.1:
 
 * [RFC7230: Message Syntax and Routing][1]
 * [RFC7231: Semantics and Content][2]
