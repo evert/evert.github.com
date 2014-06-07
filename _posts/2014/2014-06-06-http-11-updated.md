@@ -45,7 +45,7 @@ What's new?
 
 The biggest difference compared to the old spec, is that there is simply a lot
 more text. A lot of things are easier to understand and read, and parts where
-there were ambigiousness have been resolved.
+there were ambiguity has been resolved.
 
 A second change is that the core specification has not been split up over 6
 separate specs, whereas before there was just [RFC 2616][11] for HTTP, and
