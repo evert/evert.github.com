@@ -21,8 +21,8 @@ The IETF just published several new RFCs that update HTTP/1.1:
 * [RFC 7238: the 308 status code][9]
 * [RFC 7239: Forwarded HTTP extension][10]
 
-These documents make the original HTTP/1.1 **obsolete**. As a HTTP geek, this
-is a big deal.
+These documents make the original speccification for HTTP/1.1 **obsolete**.
+As a HTTP geek, this is a big deal.
 
 [RFC 2616][11], which was written more than 15 years ago, was _the_
 specification everybody has implemented, and I suspect many of you
