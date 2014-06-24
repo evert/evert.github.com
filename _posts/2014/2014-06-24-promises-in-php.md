@@ -17,14 +17,14 @@ you're one of the few that use [libevent][2] in PHP. It actually too me a long
 time to fully grasp promises up to a point where I was comfortable writing an
 implementation.
 
-So dispite being interested in the pattern, it took a while for me to find a
+So despite being interested in the pattern, it took a while for me to find a
 use-case where it actually made sense to deploy it.
 
 Recently I was tasked to write a client for a webservice that would require:
 
 1. Lots and lots of HTTP request for many users.
 2. Some of which were _required_ to happen in a specific order.
-3. Others could happen in paralel.
+3. Others could happen in parallel.
 
 Using Promises was absolutely ideal here, and a lot of fun. So I added it
 to the sabre/event library.
