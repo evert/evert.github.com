@@ -13,7 +13,7 @@ Promises.
 
 It's still kinda rare to need Promises in PHP. PHP isn't asynchronous the same
 way languages such as javascript are, and there's no real eventloop, unless
-you're one of the few that use [libevent][2] in PHP. It actually too me a long
+you're one of the few that use [libevent][2] in PHP. It actually took me a long
 time to fully grasp promises up to a point where I was comfortable writing an
 implementation.
 
