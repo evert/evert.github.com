@@ -29,11 +29,13 @@ Recently I was tasked to write a client for a webservice that would require:
 Using Promises was absolutely ideal here, and a lot of fun. So I added it
 to the sabre/event library.
 
-I managed to compress the full concept into [a single, relatively class][4],
+I managed to compress the full concept into [a single, relatively simple
+class][4],
 but it took a fair bit of step-through debugging to figure out what I did
 wrong at times.
 
-The full documentation for it can be found [on the website][3].
+The full documentation for it can be found [on the website][3]. I hope others
+have some use for it!
 
 [1]: http://sabre.io/event/
 [2]: http://www.php.net/manual/en/book.libevent.php
