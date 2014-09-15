@@ -50,8 +50,9 @@ as `private`.
 
 The other day, I realized though that this even works for objects of other
 classes, as long as you are accessing members that are defined in a class that
-also appears in the accessing class' ancestry. Sounds a bit complicated, so
-here's the example:
+also appears in the accessing class' ancestry.
+
+Sounds a bit complicated, so here's the example:
 
 ```php
 <?php
@@ -140,7 +141,7 @@ After all if a certain behavior (in this case a property) works for an
 ancestor, the liskov substitution principle dictates it should also work for
 any sub-classes.
 
-In addition, PHP normally only allows you to modify properties visibility to
+In addition, PHP normally only allows you to modify a property's visibility to
 become more visible.
 
 Still, I just ran into a case where the behavior of example #2 is super handy,
@@ -156,6 +157,8 @@ The PHP spec does not explictly disallow it though. This is the relevant text:
 Of course the PHP spec is likely not finished yet, and not sure if it's vetted
 by the PHP team at all.
 
-Opinions?
+So I'm left not really knowing wether relying on this behavior is a good idea,
+but at the very least it's immediately a good example of why having a correct
+and official PHP standard is a great idea.
 
 [1]: https://github.com/php/php-langspec/blob/master/spec/14-classes.md
