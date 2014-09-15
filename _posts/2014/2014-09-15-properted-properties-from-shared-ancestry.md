@@ -153,7 +153,7 @@ The PHP spec does not explictly disallow it though. This is the relevant text:
 > A member with protected visibility may be accessed only from within its own
 > class and from classes derived from that class. [source][1]
 
-Of course the PHP spec is likely to be finished, and not sure if it's vetted
+Of course the PHP spec is likely not finished yet, and not sure if it's vetted
 by the PHP team at all.
 
 Opinions?
