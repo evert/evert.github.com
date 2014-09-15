@@ -12,6 +12,8 @@ It's possible in PHP to access protected properties from other objects, as
 long as they are from the same class, as illustrated here:
 
 ```php
+<?php
+
 class MyClass {
 
     protected $val;
@@ -35,6 +37,8 @@ $obj2 = new MyClass("hello world");
 
 $obj1->output($obj2);
 // Output: hello world
+
+?>
 ```
 
 I always thought that `protected` strictly allows objects to access things
@@ -50,6 +54,8 @@ also appears in the accessing class' ancestry. Sounds a bit complicated, so
 here's the example:
 
 ```php
+<?php
+
 class Ancestor {
 
     protected $val = 'ancestor';
@@ -82,6 +88,8 @@ $child2 = new Child2();
 
 $child2->output($child1);
 // Output: child1
+
+?>
 ```
 
 Interestingly, if the last example is modified so that the properties are not
@@ -89,6 +97,8 @@ set in the constructors, but instead by overriding the property, this will
 break:
 
 ```php
+<?php
+
 class Ancestor {
 
     protected $var = 'ancestor';
@@ -117,6 +127,8 @@ $child2 = new Child2();
 
 $child2->output($child1);
 // Output: Fatal error: Cannot access protected property Child1::$var
+
+?>
 ```
 
 Because the third example throws an error, but the second does not, this makes
