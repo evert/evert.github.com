@@ -11,29 +11,31 @@ I realized something odd about accessing protected properties the other day.
 It's possible in PHP to access protected properties from other objects, as
 long as they are from the same class, as illustrated here:
 
-    class MyClass {
+```php
+class MyClass {
 
-        protected $val;
+    protected $val;
 
-        function __construct($newVal = 'default') {
+    function __construct($newVal = 'default') {
 
-            $this->val = $newVal;
+        $this->val = $newVal;
 
-        }
-
-        function output(MyClass $subject) {
-
-            echo $subject->val, "\n";
-
-        }
     }
 
+    function output(MyClass $subject) {
 
-    $obj1 = new MyClass();
-    $obj2 = new MyClass("hello world");
+        echo $subject->val, "\n";
 
-    $obj1->output($obj2);
-    // Output: hello world
+    }
+}
+
+
+$obj1 = new MyClass();
+$obj2 = new MyClass("hello world");
+
+$obj1->output($obj2);
+// Output: hello world
+```
 
 I always thought that `protected` strictly allows objects to access things
 from the current inheritence tree, but didn't realize that this also extends
@@ -47,71 +49,75 @@ classes, as long as you are accessing members that are defined in a class that
 also appears in the accessing class' ancestry. Sounds a bit complicated, so
 here's the example:
 
-    class Ancestor {
+```php
+class Ancestor {
 
-        protected $val = 'ancestor';
+    protected $val = 'ancestor';
 
-    }
+}
 
 
-    class Child1 extends Ancestor {
+class Child1 extends Ancestor {
 
-        function __construct() {
+    function __construct() {
 
-            $this->val = 'child1';
-
-        }
-
-    }
-
-    class Child2 extends Ancestor {
-
-        function output(Ancestor $subject) {
-
-            echo $subject->val, "\n";
-
-        }
+        $this->val = 'child1';
 
     }
 
-    $child1 = new Child1();
-    $child2 = new Child2();
+}
 
-    $child2->output($child1);
-    // Output: child1
+class Child2 extends Ancestor {
+
+    function output(Ancestor $subject) {
+
+        echo $subject->val, "\n";
+
+    }
+
+}
+
+$child1 = new Child1();
+$child2 = new Child2();
+
+$child2->output($child1);
+// Output: child1
+```
 
 Interestingly, if the last example is modified so that the properties are not
 set in the constructors, but instead by overriding the property, this will
 break:
 
-    class Ancestor {
+```php
+class Ancestor {
 
-        protected $var = 'ancestor';
+    protected $var = 'ancestor';
+
+}
+
+
+class Child1 extends Ancestor {
+
+    protected $var = 'child1';
+
+}
+
+class Child2 extends Ancestor {
+
+    function output(Ancestor $subject) {
+
+        echo $subject->var, "\n";
 
     }
 
+}
 
-    class Child1 extends Ancestor {
+$child1 = new Child1();
+$child2 = new Child2();
 
-        protected $var = 'child1';
-
-    }
-
-    class Child2 extends Ancestor {
-
-        function output(Ancestor $subject) {
-
-            echo $subject->var, "\n";
-
-        }
-
-    }
-
-    $child1 = new Child1();
-    $child2 = new Child2();
-
-    $child2->output($child1);
-    // Output: Fatal error: Cannot access protected property Child1::$var
+$child2->output($child1);
+// Output: Fatal error: Cannot access protected property Child1::$var
+```
 
 Because the third example throws an error, but the second does not, this makes
 me feel that I've simply stumbled upon an edge-case of the PHP engine, and
