@@ -41,7 +41,7 @@ relevant meta-data such as parameters and groups that influence how a vCard may
 be interpreted.
 
 The effect for the end-user is that a user may create vCards and add a bunch of
-information to a contact, which gets discared by Google, and upon the next sync,
+information to a contact, which gets discarded by Google, and upon the next sync,
 also gets removed from the users local version.
 
 
