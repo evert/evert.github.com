@@ -19,9 +19,9 @@ protocol, I thought it was doable.
 I was wrong.
 
 I'm writing this blog post as a general warning to _not_ use Google's CardDAV
-server for well, pretty much anything. It's a huge mistake, and util they fix
-massive mistakes in their interpretation of the protocol, you are much better
-off using their proprietary [Contacts API][4].
+server for well, pretty much anything. It's a huge mistake, and until they fix
+the massive mistakes in their interpretation of the protocol, you are much
+better off using their proprietary [Contacts API][4].
 
 
 Data-loss
@@ -31,30 +31,34 @@ Lets start with the most glaring issue, the loss of data.
 The primary data-format that's being used in CardDAV are [vCards][2], in
 particular version 3.0.
 
-There are certain expectations when use use vCards with CardDAV. In particular,
-if you add some information to your vCard and send it to the server, with a `PUT`
-request, you also expect that information back with `GET`.
+There are certain things that you can expect when you use vCards with CardDAV.
+In particular, if you add some information to your vCard and send it to the
+server, with a `PUT` request, you also expect that information back with `GET`.
 
 Google's CardDAV server silently wipes out all kinds of data it doesn't care
 about. Both the very important stuff, such as properties, but also other
 relevant-meta data such as parameters and groups that influence how a vCard may
 be interpreted.
 
-The effect for the end-user is that a user may create vCards and add contact
-information, this information gets saved by google, and upon a next sync, all of
-this is gone.
+The effect for the end-user is that a user may create vCards and add a bunch of
+information to a contact.  This information gets saved by google, and upon a
+next sync, all of this is gone.
 
 
 Rejection of vCards
 -------------------
 
 We've sent hundreds of thousands of valid vCards to google's carddav server. The
-server rejects a whopping 15% of all the vCards we send them.
+server rejects a whopping 15% of all the vCards we send them. Note that these
+are not vCards we produce. We receive them from other CardDAV clients, and since
+we get millions of them, this is statistically a decent source view on what kind
+of vCards appear in the wild.
 
-The biggest issue we're having with this, is that we're not getting any feedback.
+The biggest issue we're having with this though, is that we're not getting any
+feedback.
 
 No, this isn't just a `400 Bad Request` we're getting back, we're not actually
-not receiving any TCP packets back, at all. Any (valid) vCard that the carddav
+receiving any TCP packets back, at all. Any (valid) vCard that the carddav
 serverdoes not understand, will result in our HTTP requests timing out.
 
 There's no clear pattern to what they do and do not support. We've noticed that
@@ -68,15 +72,19 @@ Slowness
 --------
 
 Nearly any write operation you do on the CardDAV server will take 10-20 seconds
-to complete. This may not seem like a big deal, but many of our pro users have
-address books with over 2000 contacts. If you don't paralelize, it can mean
-that the initial sync process can take 5-10 hours to complete.
+to complete. This may not seem like a big deal, but many of our users have
+address books with over 2000 contacts.
+
+Given that our HTTP requests time out after 1 minute, and we retry HTTP requests
+2 times before failing, and 15% of requests fail by timing out, this means that
+for an addressbook with 2000 contacts, this would take over 22 hours to
+complete.
 
 
 UID and urls
 ------------
 
-When sync with a carddav system, especially with carddav systems that discard
+When syncing with a carddav system, especially with carddav systems that discard
 data when they feel like it, you'll need to keep some kind of reference to
 the vCard you're sending, so you can keep the important data local.
 
@@ -108,8 +116,8 @@ The response
 ------------
 
 Normally, when running into bugs like this, I'm quite forgiving. I wrote a
-[popular][6] server myself, and I know that standards are hard, and it's not
-easy to write a well behaving server from scratch.
+[reasonably popular server][6] myself, and I know that standards are hard, and
+it's not easy to write a well behaving server from scratch.
 
 So the first thing I did was to try to contact the relevant developers.
 
@@ -123,11 +131,14 @@ This was in August 2013, and nothing has changed since.
 In conclusion
 -------------
 
-The Google Google CardDAV server has similarities to what we call CardDAV.
-For very simple, controlled stuff, it may be possible to use it.
+The fact that Google advertises their servers as supporting CardDAV is an
+insult to anyone who does try to be standards compliant.
 
-For anything advanced, and avoid it at all cost. I've made the mistake of
-trying to work around various issues, when in reality that time could have
+The Google Google CardDAV server has similarities to what we call CardDAV.
+For very simple, controlled stuff, it may be possible to pretend it is.
+
+For anything advanced, avoid it at all cost. I've made the mistake of trying
+to work around various issues, when in reality that time could have
 been better spent porting our code to the Google Contacts API. Which is much
 simpler, but it's predictable and behaves sanely.
 
@@ -135,15 +146,15 @@ If you're a CardDAV client developer and you're thinking of syncing with
 google, keep the following in mind:
 
 1. Google only supports a very small part of vCards and will silently discard
-   any of your user's data that it doesn't support.
+   or mangle any of your user's data that it doesn't support.
 2. About 15% of normal vCards will be rejected by google by timing out your
    http request.
 3. It's extremely slow, which can be problematic for mobile clients.
-4. You'll need to add additional heuristics to maintain referential integrety
+4. You'll need to add additional heuristics to maintain referential integrity
    to your contacts.
 
-Furthermore, if you're writing an actual vCard sync service, I think the only
-correct way to implement this is to:
+Furthermore, if you're writing an actual vCard sync service that targets
+google, I think the only sane way to implement this is to:
 
 1. Maintain an additional database, as google's can't be trusted.
 2. After sending vCards, immediately also retrieve it so find out how google
@@ -155,7 +166,8 @@ correct way to implement this is to:
 One issue with this is that it's hard to process semantic updates of vCards.
 vCard properties may have a `PID` parameter to uniquely identify properties,
 so you know what has been updated, but this is a vCard 4 feature, and even
-if you specify it, google just discards it anyway.
+if you did specify it, google would just discard it anyway.
+
 
 
 [1]: https://fruux.com/
