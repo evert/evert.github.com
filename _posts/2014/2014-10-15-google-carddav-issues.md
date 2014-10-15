@@ -99,6 +99,10 @@ The official [documentation][5] for the server conveniently just refers to the
 open standards, but since they are so far from a carddav-compliant server,
 there's little to no information about why they do the things they do.
 
+For instance, if they only choose to support an extremely limited subset of
+vCards, ignoring many often-used features, it would have been great that that
+was documented.
+
 
 The response
 ------------
@@ -111,7 +115,7 @@ So the first thing I did was to try to contact the relevant developers.
 
 Out of respect and privacy I will withold their response, but I was met with
 disinterest, and kind of got the impression I was overstepping my boundaries
-by suggesting that there may be one or two bugs in their system.
+by even suggesting that there may be one or two bugs in their system.
 
 This was in August 2013, and nothing has changed since.
 
