@@ -51,8 +51,8 @@ Rejection of valid vCards and error handling
 We've sent hundreds of thousands of valid vCards to Google's CardDAV server. The
 server rejects a whopping 15% of all the vCards we send it. Note that these
 are not vCards we produce. We receive them from other CardDAV clients, and since
-we get millions of them, this is statistically a decent source view on what kind
-of vCards appear in the wild.
+we get millions of them, this is statistically a decent source on what kind of
+vCards appear in the wild.
 
 The biggest issue we're having with this though, is that we're not getting any
 feedback.
