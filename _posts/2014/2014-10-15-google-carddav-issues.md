@@ -41,8 +41,8 @@ relevant meta-data such as parameters and groups that influence how a vCard may
 be interpreted.
 
 The effect for the end-user is that a user may create vCards and add a bunch of
-information to a contact.  This information gets saved by Google, and upon the
-next sync, all of this is gone.
+information to a contact, which gets discared by Google, and upon the next sync,
+also gets removed from the users local version.
 
 
 Rejection of valid vCards and error handling
@@ -71,11 +71,11 @@ accounts.
 Slowness
 --------
 
-Nearly any write operation you do on the CardDAV server will take 10-20 seconds
+Nearly any write operation you do on Google's CardDAV server will take 10-20 seconds
 to complete. This may not seem like a big deal, but many of our users have
 address books with well over 2000 contacts.
 
-Given that our HTTP requests time out after 1 minute, and we retry HTTP requests
+Given that our HTTP requests time out after 1 minute, we retry HTTP requests
 2 times before failing, and 15% of requests fail by timing out, this means that
 for an address book with 2000 contacts, this would take over 22 hours to
 complete.
@@ -85,20 +85,20 @@ UID and urls
 ------------
 
 When syncing with a CardDAV system, especially with one that discards data
-whenevert it feels like it, you'll need to keep some kind of
+whenever it feels like it, you'll need to keep some kind of
 reference to the vCard you're sending, so you can keep the important data
 local.
 
 CardDAV provides two identifiers that are unique and stable id's.
 
 Google's CardDAV server discards both, and replaces them with their own. From
-the perspective of any CardDAV client, Google made it appear as if a new
+the perspective of any CardDAV client, Google makes it appear as if a new
 contact is sent. That contact is deleted on the server, and a new contact
 appears on the server that's similar, but not entirely (see Data-loss).
 
-For very simple clients that may be sufficient, but even for for example Apple's
-Contacts app on OS X, which uses ID's to group contacts together, this relationship
-gets lost as soon as the card is sent to Google.
+For very simple clients that may be sufficient, but even for example Apple's
+Contacts app on OS X, which uses ID's to group contacts together, loses this
+relationship as soon as the card is sent to Google.
 
 
 Lack of documentatation
@@ -110,7 +110,7 @@ CardDAV-compliant server, there's little to no information about why they do
 the things they do.
 
 For instance, if they only choose to support an extremely limited subset of
-vCards, ignoring many often-used features, it would have been great that that
+vCards, ignoring many often-used features, it would have been great if that
 was documented.
 
 
@@ -118,7 +118,7 @@ The response
 ------------
 
 Normally, when running into bugs like this, I'm quite forgiving. I wrote a
-[reasonably popular server][6] myself, and I know that standards are hard, and
+[reasonably popular server][6] myself, I know that standards are hard and
 it's not easy to write a well behaving server from scratch.
 
 So the first thing I did was to try to contact the relevant developers.
@@ -144,10 +144,10 @@ to work around various issues, when in reality that time could have
 been better spent porting our code to the Google Contacts API. Which is much
 simpler, but it's predictable and behaves sanely.
 
-If you're a CardDAV client developer and you're thinking of syncing with
+If you are a CardDAV client developer and you're thinking of syncing with
 Google, keep the following in mind:
 
-1. Google only supports a very small part of vCards and will silently discard
+1. Google only supports a very small subset of vCards and will silently discard
    or mangle any of your user's data that it doesn't support.
 2. About 15% of normal vCards will be rejected by Google without telling you
    why. Their system will just time out your http request.
@@ -166,7 +166,7 @@ Google, I think the only sane way to implement this is to:
    vCard, compare it to the last version you received, and apply the
    differences to the *correct* copy of the vCards.
 
-One issue with this is that it's hard to process semantic updates of vCards.
+Another issue with this is that it's hard to process semantic updates of vCards.
 vCard properties may have a `PID` parameter to uniquely identify properties,
 so you know what has been updated, but this is a vCard 4 feature, and even
 if you did specify it, Google would just discard it anyway.
