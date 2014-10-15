@@ -8,9 +8,9 @@ tags:
     - carddav
 ---
 
-For [fruux][1], we've decided to do implement syncing with Google Contacts
-some time ago, allowing people to do bi-directional sync between their fruux
-and Google Contacts addressbook.
+For [fruux][1], we've decided to implement syncing with Google Contacts some
+time ago, allowing people to do bi-directional sync between their fruux and
+Google Contacts addressbook.
 
 Bi-directional sync is not particularly easy, but since Google implemented
 [CardDAV][2] support [some time ago][3], and I'm pretty well versed at that
@@ -28,7 +28,7 @@ Data-loss
 ---------
 
 Lets start with the most glaring issue, the loss of data.
-The primary data-format that's being used in CardDAV are [vCards][2], in
+The primary data-format that's being used in CardDAV is [vCard][2], in
 particular version 3.0.
 
 There are certain things that you can expect when you use vCards with CardDAV.
@@ -37,18 +37,18 @@ server, with a `PUT` request, you also expect that information back with `GET`.
 
 Google's CardDAV server silently wipes out all kinds of data it doesn't care
 about. Both the very important stuff, such as properties, but also other
-relevant-meta data such as parameters and groups that influence how a vCard may
+relevant meta-data such as parameters and groups that influence how a vCard may
 be interpreted.
 
 The effect for the end-user is that a user may create vCards and add a bunch of
-information to a contact.  This information gets saved by google, and upon a
+information to a contact.  This information gets saved by Google, and upon a
 next sync, all of this is gone.
 
 
-Rejection of vCards
--------------------
+Rejection of valid vCards and error handling
+--------------------------------------------
 
-We've sent hundreds of thousands of valid vCards to google's carddav server. The
+We've sent hundreds of thousands of valid vCards to Google's CardDAV server. The
 server rejects a whopping 15% of all the vCards we send them. Note that these
 are not vCards we produce. We receive them from other CardDAV clients, and since
 we get millions of them, this is statistically a decent source view on what kind
@@ -59,7 +59,7 @@ feedback.
 
 No, this isn't just a `400 Bad Request` we're getting back, we're not actually
 receiving any TCP packets back, at all. Any (valid) vCard that the carddav
-serverdoes not understand, will result in our HTTP requests timing out.
+server does not understand, will result in our HTTP requests timing out.
 
 There's no clear pattern to what they do and do not support. We've noticed that
 almost every vCard with an attachment is rejected, and after dropping the
@@ -84,20 +84,21 @@ complete.
 UID and urls
 ------------
 
-When syncing with a carddav system, especially with carddav systems that discard
-data when they feel like it, you'll need to keep some kind of reference to
-the vCard you're sending, so you can keep the important data local.
+When syncing with a CardDAV system, especially with carddav systems that
+discards data when they feel like it, you'll need to keep some kind of
+reference to the vCard you're sending, so you can keep the important data
+local.
 
 CardDAV provides two identifiers that are unique and stable id's.
 
 Google's CardDAV server discards both, and replaces them with their own. From
-the perspective of any CardDAV client, google made it appear as if a new
+the perspective of any CardDAV client, Google made it appear as if a new
 contact is sent. That contact is deleted on the server, and a new contact
 appears on the server that's similar, but not entirely (see Data-loss).
 
 For very simple clients that may be sufficient, but even for for example the
 Apple client, which uses ID's to group contacts together, this relationship
-gets lost as soon as the card is sent to google.
+gets lost as soon as the card is sent to Google.
 
 
 Lack of documentatation
@@ -143,30 +144,30 @@ been better spent porting our code to the Google Contacts API. Which is much
 simpler, but it's predictable and behaves sanely.
 
 If you're a CardDAV client developer and you're thinking of syncing with
-google, keep the following in mind:
+Google, keep the following in mind:
 
 1. Google only supports a very small part of vCards and will silently discard
    or mangle any of your user's data that it doesn't support.
-2. About 15% of normal vCards will be rejected by google by timing out your
+2. About 15% of normal vCards will be rejected by Google by timing out your
    http request.
 3. It's extremely slow, which can be problematic for mobile clients.
 4. You'll need to add additional heuristics to maintain referential integrity
    to your contacts.
 
 Furthermore, if you're writing an actual vCard sync service that targets
-google, I think the only sane way to implement this is to:
+Google, I think the only sane way to implement this is to:
 
-1. Maintain an additional database, as google's can't be trusted.
-2. After sending vCards, immediately also retrieve it so find out how google
+1. Maintain an additional database, as Google's can't be trusted.
+2. After sending vCards, immediately also retrieve it so find out how Google
    mangled it.
-3. After a change was made on the google contacts side, retrieve the updated
+3. After a change was made on the Google contacts side, retrieve the updated
    vcard, compare it to the last version you received, and apply the
    differences to the *correct* copy of the vCards.
 
 One issue with this is that it's hard to process semantic updates of vCards.
 vCard properties may have a `PID` parameter to uniquely identify properties,
 so you know what has been updated, but this is a vCard 4 feature, and even
-if you did specify it, google would just discard it anyway.
+if you did specify it, Google would just discard it anyway.
 
 
 
