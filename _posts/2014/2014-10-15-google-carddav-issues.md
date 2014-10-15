@@ -101,8 +101,8 @@ Contacts app on OS X, which uses ID's to group contacts together, loses this
 relationship as soon as the card is sent to Google.
 
 
-Lack of documentatation
------------------------
+Lack of documentation
+---------------------
 
 The official [documentation][5] for the server conveniently just refers to the
 open standards, but since Google's system couldn't be further from being a 
