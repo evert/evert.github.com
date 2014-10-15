@@ -1,5 +1,5 @@
 ---
-date: 2014-09-15 17:55:21 UTC
+date: 2014-10-15 19:03:49 UTC
 layout: post
 title: "Why Google's CardDAV server isn't."
 tags:
