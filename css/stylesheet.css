@@ -75,10 +75,10 @@ footer a:hover {
 
 pre {
     border-radius: 5px;
-    padding: 10px;
-    background: #333333;
+    padding: 10px 10px 0 10px;
+    background: #444;
     color: #ffffff;
-    box-shadow: inset 0 0 10px #000;
+    box-shadow: inset 0 0 8px #000;
     overflow-x: auto;
     font-family: "Monaco", monospace;
 }
@@ -97,7 +97,7 @@ code {
      padding-bottom: 0.2em;
      margin: 0;
      background-color: rgba(0,0,0,0.09);
-     border-radius: 3px;
+     border-radius: 2px;
 }
 
 code:before,
