@@ -16,8 +16,8 @@ PuTTY, slackware and what must have been Windows 98.
 
 These days my environment consists of OS X 10.10, [tmux][1], [iTerm2][2] and
 well, [Vim][3] has never gone away. Neither have my issues with copy-pasting
-though. It seems that every time I have a solution, a few months later a wheel
-in the cog changes and breaks the whole set-up again, which then takes me
+though. It seems that every time I have a solution, a few months later a cog
+in the machine changes and breaks the whole set-up again, which then takes me
 months to fix due to my lazyness.
 
 I finally took the time again to look into this, and figured I should share.
@@ -45,11 +45,13 @@ tmux
 ----
 
 OS X has two command-line utilities to interact with the clipboard, `pbcopy`
-and `pbpaste`. These utilities break when running into tmux.
+and `pbpaste`. These utilities break when running inside of tmux.
 
 To fix this, we need a small utility that can be installed using [brew][4]:
 
-    brew install reattach-to-user-namespace
+```sh
+brew install reattach-to-user-namespace
+```
 
 If you would like to know exactly how this works and why it's needed, or if
 you want to install this without using brew, the [github project page][5]
@@ -60,23 +62,24 @@ Bonus fact: this also fixes `launchctl` in tmux.
 After this, we need to make a few modifications to your `~/.tmux.conf`. Add
 the following lines:
 
-    # Copy-paste integration
-    set-option -g default-command "reattach-to-user-namespace -l bash"
+```sh
+# Copy-paste integration
+set-option -g default-command "reattach-to-user-namespace -l bash"
 
-    # Use vim keybindings in copy mode
-    setw -g mode-keys vi
+# Use vim keybindings in copy mode
+setw -g mode-keys vi
 
-    # Setup 'v' to begin selection as in Vim
-    bind-key -t vi-copy v begin-selection
-    bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
+# Setup 'v' to begin selection as in Vim
+bind-key -t vi-copy v begin-selection
+bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
 
-    # Update default binding of `Enter` to also use copy-pipe
-    unbind -t vi-copy Enter
-    bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
+# Update default binding of `Enter` to also use copy-pipe
+unbind -t vi-copy Enter
+bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
 
-    # Bind ']' to use pbpaste
-    bind ] run "reattach-to-user-namespace pbpaste | tmux load-buffer - && tmux paste-buffer"
-
+# Bind ']' to use pbpaste
+bind ] run "reattach-to-user-namespace pbpaste | tmux load-buffer - && tmux paste-buffer"
+```
 
 The previous lines sets up tmux correctly, and binds various copy and paste
 keys to use pbpaste and pbcopy.
@@ -89,7 +92,9 @@ Know how to extend this feature to get mouse support? Do let me know!
 
 Don't forget to restart tmux or run:
 
-    tmux source-file ~/.tmux.conf
+```sh
+tmux source-file ~/.tmux.conf
+```
 
 To start using this new configuration.
 
@@ -103,8 +108,9 @@ Lastly, vim! It would be awesome if we can just 'yank' and paste using `y` and
 This is rather easy. Open up your `.vimrc`, or `.vim/vimrc` file and simply
 add this line:
 
-    set clipboard=unnamed
-
+```sh
+set clipboard=unnamed
+```
 
 That's literally all I needed.
 
