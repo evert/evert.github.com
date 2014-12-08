@@ -112,8 +112,12 @@ add this line:
 set clipboard=unnamed
 ```
 
-That's literally all I needed.
+However, this did not work with the Vim version that OS X shipped with (which
+is 7.3). To upgrade to 7.4, just use Homebrew again:
 
+```sh
+brew install vim
+```
 
 Sources
 -------
@@ -134,11 +138,12 @@ Bonus tmux feature
 Add the following lines in `~/.tmux.conf` to automatically open new windows
 and tabs in the directory from where you opened them:
 
-    # New window with default path set to last path
-    bind '"' split-window -c "#{pane_current_path}"
-    bind % split-window -h -c "#{pane_current_path}"
-    bind c new-window -c "#{pane_current_path}"
-
+```sh
+# New window with default path set to last path
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+bind c new-window -c "#{pane_current_path}"
+```
 
 [1]: http://tmux.sourceforge.net/
 [2]: http://iterm2.com/
