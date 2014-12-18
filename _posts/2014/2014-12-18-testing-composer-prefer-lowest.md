@@ -74,7 +74,7 @@ which makes this super easy to do.
 
 If for instance your `.travis.yml` looks a bit like this:
 
-```yml
+```yaml
 language: php
 
 php:
@@ -94,7 +94,7 @@ You can modify it to this, to allow Travis to do 1 build for the latest, and
 one build for the oldest possible depdendencies:
 
 
-```yml
+```yaml
 language: php
 
 php:
