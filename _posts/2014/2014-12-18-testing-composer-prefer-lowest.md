@@ -11,7 +11,7 @@ tags:
     - php
 ---
 
-A few days ago, a new feature [landed in composer][1], the `--prefer-oldest`
+A few days ago, a new feature [landed in composer][1], the `--prefer-lowest`
 argument.
 
 Normally, for any dependency, composer will attempt to always install the
@@ -30,12 +30,12 @@ after 1.2.1, but before 1.3.
 
 If version 1.2.5 is the latest, composer will always grab that version.
 
-With the new `--prefer-oldest` setting, you can tell composer to install the
+With the new `--prefer-lowest` setting, you can tell composer to install the
 oldest possible version of a package that still matches your requirement.
 
 So if we run:
 
-    composer update --prefer-oldest
+    composer update --prefer-lowest
 
 We should get version 1.2.1 for `vendor/package` and all its dependencies.
 
@@ -55,7 +55,7 @@ correctly works with the oldest package they claim to support.
 
 So for us to test this, we can simply run:
 
-    composer update --prefer-oldest
+    composer update --prefer-lowest
     ./bin/phpunit
 
 If our unittests break with older dependencies, we know that we either need
