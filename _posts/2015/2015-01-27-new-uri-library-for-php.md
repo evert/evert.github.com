@@ -13,14 +13,14 @@ The last little while have been all about URI's for me. I've been engaged in
 discussions about the upcoming ['PSR-7'][1], I started working on a sort of
 'hypermedia'-focussed router/repository type of system, and I recently ran
 into a bug in [sabredav][2] that forced me to get a better understanding
-of the URI specification, in particular on the topics of 'normalization' and
-resolving relative URLs.
+of the [URI specification][3], in particular on the topics of 'normalization'
+and resolving relative URLs.
 
 All of this accumulated in a set of functions of operations I commonly need,
 which I'm now releasing as an open source library.
 
 Yup! Yet another URI library. All this library is though, is a collection of
-5 functions:
+5 php functions:
 
 * `resolve` to resolve relative uris.
 * `normalize` to aid in comparing uris.
@@ -41,10 +41,23 @@ For example, the following uris are all identical:
 * `http://example.org:80/~foo/`
 * `http://example.org/%7Efoo/`
 * `http://example.org/%7efoo/`
-* `http://example.org/bar/./../foo/`
+* `http://example.org/bar/./../~foo/`
 
 The new `normalize` function can take *any* of these previous URIs, and will
 turn it into the first.
+
+```php
+<?php
+
+use Sabre\Uri;
+
+$input = 'HTTP://example.ORG:80/bar/./../%7efoo/';
+
+echo Uri::normalize($input);
+// output: http://example.org/~foo/
+
+?>
+```
 
 I hope it's useful for others.
 
