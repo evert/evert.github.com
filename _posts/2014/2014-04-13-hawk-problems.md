@@ -67,8 +67,8 @@ Furthermore, digest can be easily extended with new algoritms.
 What to use instead?
 --------------------
 
-I'd highly recommend using simply either [HTTP Digest][3], or if you're looking for
-something a little bit more fancy, use [Amazon's authentication header][4].
+I'd highly recommend using simply either [HTTP Digest][4], or if you're looking for
+something a little bit more fancy, use [Amazon's authentication header][3].
 
 Some benefits:
 
