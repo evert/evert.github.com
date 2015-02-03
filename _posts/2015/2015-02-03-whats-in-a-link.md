@@ -459,13 +459,13 @@ Except in Atom, where the default relationship type is "alternate" and empty
 ### Other properties of links
 
 When specifying a link, you may include some information about the target of
-the link.
+the link, such as a target content-type.
 
 This information is considered 'not normative', which means that the
 information may be incorrect and you should really just fetch the resource to
 find out for sure.
 
-These are the common ones:
+These are the most common:
 
 | Format          | hreflang | title | type |
 | --------------- | -------- | ----- | ---- |
@@ -483,8 +483,8 @@ simply reduce HTTP requests. If a consumer knows in advance they won't be able
 to support the link by inspecting the `type`, they can ignore it and skip a
 network round-trip.
 
-In addition to these three common ones, there are also many others that only
-appear in one specification. A non-exhaustive list:
+In addition to the previous attributes, there are also many others, most of
+which only appear in one specification. A non-exhaustive list:
 
 * `media` (HTML, HTTP)
 * `target` (HTML)
@@ -494,7 +494,7 @@ appear in one specification. A non-exhaustive list:
 * `depreciation` (HAL)
 * `profile` (HAL)
 
-One common trend is that all of these are simply key-value structures.
+One common trend is that all of these are simple key-value structures.
 
 ### URI templates
 
@@ -556,7 +556,7 @@ interface Link {
      * Any value that appears that is not valid in the context in which it is
      * used should be ignored.
      *
-     * Some attributes, (commonly hreflang) may appear more than ones in their
+     * Some attributes, (commonly hreflang) may appear more than once in their
      * context. Attributes such as those may be specified as an array of
      * strings.
      *
