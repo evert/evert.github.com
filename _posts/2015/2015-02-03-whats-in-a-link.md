@@ -27,7 +27,7 @@ is.
 
 This blogpost is quite literally me making progress through all the specs. It
 might be boring, and not well written. If you want to skip the details, you
-can [jump straight to the conclusion][#conclusion].
+can [jump straight to the conclusion](#conclusion).
 
 History
 -------
@@ -68,13 +68,14 @@ gained a few attributes.
 
 * `href`, `title`, and `rel` are still there.
 * There's now a `target` attribute, which is really a UI concern that leaked
-  into the HTML datamodel. It allows you to create popups and such ;).
-* `download`, similarly, triggers a link being opened as a 'download' in a
-  browser, rather than opening it in a browser window.
+  into the HTML datamodel. If it wasn't for `target`, there may have never
+  been pop-ups.
+* `download`, triggers a link being opened as a 'download' in a browser,
+  rather than opening it the normal way.
 * `hreflang` is a hint that specifies what the language will be of the target
   resource. (`hreflang="en-US"`).
-* `type`, another hint that tells the agent what the content-type will be of
-  the target resource (e.g.: `type="text/css"`).
+* `type`, another hint that tells the agent what the target resource's
+  content-type might be. (e.g.: `type="text/css"`).
 
 HTML gained an `<area>` element that also functions as a link, embedded in an
 "image map".
@@ -89,7 +90,9 @@ The `rel` attribute is the relationship type between two resources. This blog
 for instance has a link relationship to a css file. The contents of the
 `rel` attribute will be `stylesheet`.
 
-    <link href="/css/stylesheet.css" type="text/css" rel="stylesheet" />
+```html
+<link href="/css/stylesheet.css" type="text/css" rel="stylesheet" />
+```
 
 Keywords such as 'stylesheet' are formalized and accurately [described][3] in
 the HTML5 specification.
@@ -107,9 +110,6 @@ On that document, there's a huge list of valid, recognized keywords.
 In HTML5, you are allowed to specify more than one relationship in the `rel=`
 attribute, each separated with space.
 
-The exception is that there is a specific meaning given to the combination of
-both "alternate" and "stylesheet" in a specific `rel=` attribute.
-
 It's possible to create your own relationship types, by:
 
 1. Simply defining a new keyword.
@@ -124,35 +124,41 @@ The `rev` attribute is the reverse relationship type. For instance, I might have
 written a document that lives on `/article.html`. That document might have the
 following link:
 
-    <link href="/evert.html" rel="author" />
+```html
+<link href="/evert.html" rel="author" />
+```
 
 On `/evert.html`, there could be a reverse-link such as this:
 
-    <link href="/article.html" rev="author" />
+```html
+<link href="/article.html" rev="author" />
+```
 
 Various sources on the web tend to describe `rev` as a 'bad idea', because
 it's rarely used, and when it is used, often used incorrectly.
 
 [An article from 2005 from developer.google.com says][4]
 
-    ...An interesting thing to note from this is that the ... only
-    `<link rev="">` link to appear is `rev="made"` (to point to the author's
-    page) — and the latter is not used that much more than the more sensible
-    `rel="author"`. Also, ironically, just off the graph in position 21 is
-    `rel="made"`, probably showing that the distinction between `rel` and `rev`
-    may be too subtle for many authors. More evidence of this is at position 29
-    on the list, with `<link rev="stylesheet">`...
+> ...An interesting thing to note from this is that the ... only
+> `<link rev="">` link to appear is `rev="made"` (to point to the author's
+> page) — and the latter is not used that much more than the more sensible
+> `rel="author"`. Also, ironically, just off the graph in position 21 is
+> `rel="made"`, probably showing that the distinction between `rel` and `rev`
+> may be too subtle for many authors. More evidence of this is at position 29
+> on the list, with `<link rev="stylesheet">`...
 
 
 The HTTP 'Link' header
 ----------------------
 
-HTTP also the means to specify a link for a document. For example, the
-following HTML link:
+It is also possible to specify links by just using a HTTP link header.
+For example, the following HTML link:
 
-    <link href="/evert.html" rel="author" />
+```html
+<link href="/evert.html" rel="author" />
+```
 
-Could also appear as:
+Could also appear in a HTTP header as:
 
     Link: </evert.html>; rel="previous";
 
@@ -164,14 +170,16 @@ add a `copyright` link relationship to a javascript file:
     Link: </copyright.html>; rel="copyright";
 
 The Link header is defined in [RFC5988][5]. While this RFC mostly talks about
-the Link: header, it also describes how the header relates to the HTML link as
-well as the [Atom Link][6].
+the Link: header, it also describes the abstract concept of a link of the web.
+The title of the document is "Web Linking", and is also referred to as the
+canonical reference by many other specifications that describe links.
 
 The [IANA Link Relation Types][8] is the official list of relationship types
 for the Link header. Any user-defined relationship types can be specified by
 using an absolute URL instead of a short keyword.
 
-The Link header also has support for `hreflang`, `media` and `type` paramters.
+The Link header also has support for `hreflang`, `media` and `type` parameters.
+`hreflang` may appear more than once.
 
 The Link header defines both a `title` and `title*` header. When the extra
 asterisk is added, the title might be a in a non-ascii character set, such as
@@ -217,9 +225,11 @@ string `http://www.iana.org/assignments/relation/`.
 
 So this implies that the following are equivalent:
 
-    <link href="http://evertpot.com/" />
-    <link href="http://evertpot.com/" rel="alternate" />
-    <link href="http://evertpot.com/" rel="http://www.iana/assignments/relation/" />
+```xml
+<link href="http://evertpot.com/" />
+<link href="http://evertpot.com/" rel="alternate" />
+<link href="http://evertpot.com/" rel="http://www.iana/assignments/relation/" />
+```
 
 Atom also introduces a `length` attribute, which allows someone who produces a
 feed to give an agent a hint about how large the target URI will be, in bytes.
@@ -233,31 +243,35 @@ format.
 
 A simple XRD file might look a little bit like this:
 
-    <?xml version='1.0' encoding='UTF-8'?>
-    <XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>
+```xml
+<?xml version='1.0' encoding='UTF-8'?>
+<XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>
 
-     <Subject>http://evertpot.com/</Subject>
-     <Property type='http://evertpot.com/props/authorname'>Evert Pot</Property>
+ <Subject>http://evertpot.com/</Subject>
+ <Property type='http://evertpot.com/props/authorname'>Evert Pot</Property>
 
-     <Link rel='stylesheet' href='http://evertpot.com/css/stylesheet.css' type="text/css" />
+ <Link rel='stylesheet' href='http://evertpot.com/css/stylesheet.css' type="text/css" />
 
-    </XRD>
+</XRD>
+```
 
 And it's little brother, JRD:
 
-    {
-        "subject" : "http://evertpot.com/",
-        "properties" : {
-            "http://evertpot.com/props/authorname" : "Evert Pot"
-        },
-        "links" : [
-            {
-                "rel" : "stylesheet",
-                "href" : "http://evertpot.com/css/stylesheet.css",
-                "type" : "text/css"
-            }
-        ]
-    }
+```json
+{
+    "subject" : "http://evertpot.com/",
+    "properties" : {
+        "http://evertpot.com/props/authorname" : "Evert Pot"
+    },
+    "links" : [
+        {
+            "rel" : "stylesheet",
+            "href" : "http://evertpot.com/css/stylesheet.css",
+            "type" : "text/css"
+        }
+    ]
+}
+```
 
 XRD largely refers to the ["Web Linking"][5] document to describe its links,
 and therefore they follow the same rules for `rel` and how to extend it. JRD
@@ -301,16 +315,18 @@ borrow several ideas from XRD/JRD.
 Dispite HAL still being a work in progress, it's already in use in various
 places.
 
-    {
-      "_links": {
-        "self": { "href": "/orders/523" },
-        "warehouse": { "href": "/warehouse/56" },
-        "invoice": { "href": "/invoices/873" }
-      },
-      "currency": "USD",
-      "status": "shipped",
-      "total": 10.20
-    }
+```json
+{
+  "_links": {
+    "self": { "href": "/orders/523" },
+    "warehouse": { "href": "/warehouse/56" },
+    "invoice": { "href": "/invoices/873" }
+  },
+  "currency": "USD",
+  "status": "shipped",
+  "total": 10.20
+}
+```
 
 We only really care about the `_links` property. This property contains an
 object whose keys are relationship types (equivalent of `rel`) and values
@@ -321,15 +337,17 @@ HAL refers to the [IANA registry][8] for its relationship types.
 If there are multiple links with the same relationship type (for example, two
 links with "stylesheet"), the link object can be replaced with an array:
 
-    {
-      "_links": {
-        "self": { "href": "http://evertpot.com/" },
-        "stylesheet": [
-            { "href": "/css/stylesheet.css", "type" : "text/css" },
-            { "href": "/css/desert.css", "type" : "text/css" }
-        ]
-      }
-    }
+```json
+{
+  "_links": {
+    "self": { "href": "http://evertpot.com/" },
+    "stylesheet": [
+        { "href": "/css/stylesheet.css", "type" : "text/css" },
+        { "href": "/css/desert.css", "type" : "text/css" }
+    ]
+  }
+}
+```
 
 Links in HAL have a `href`, `hreflang` and `title` property, but there are
 also a few new ones:
@@ -367,9 +385,11 @@ strict, but also has a lot more features.
 In Collection+JSON links will appear either in the "links" property, which
 looks a bit like this:
 
-    "links" : [
-      {"rel" : "icon", "href" : "/favicon.ico"}
-    ],
+```json
+"links" : [
+  {"rel" : "icon", "href" : "/favicon.ico"}
+]
+```
 
 Links in Collection+JSON may have the `rel` and `href` properties which are
 well known at this point. Collection+JSON adds `prompt`, `render` and `name`,
@@ -384,9 +404,11 @@ SIREN
 
 A link in SIREN is pretty straightforward:
 
-    "links": [
-        { "rel": ["self"], "href": "http://api.x.io/orders/1234" }
-    ]
+```json
+"links": [
+    { "rel": ["self"], "href": "http://api.x.io/orders/1234" }
+]
+```
 
 The `rel` property is specified as an array, for multiple relationship types.
 SIREN also mentions a `type` property.
@@ -394,6 +416,7 @@ SIREN also mentions a `type` property.
 SIREN refers to [RFC5988 "Web Linking"][5], which would imply that it also
 follows the [IANA registry][8] for relationship types.
 
+<span id="conclusion"></span>
 
 Conclusion
 ----------
@@ -459,11 +482,13 @@ simply reduce HTTP requests. If a consumer knows in advance they won't be able
 to support the link by inspecting the `type`, they can ignore it and skip a
 network round-trip.
 
-In addition to these three common ones, there are also:
+In addition to these three common ones, there are also many others that only
+appear in one specification. A non-exhaustive list:
 
 * `media` (HTML, HTTP)
 * `target` (HTML)
 * `download` (HTML)
+* `sizes` (HTML)
 * `length` (Atom)
 * `depreciation` (HAL)
 * `profile` (HAL)
@@ -482,6 +507,8 @@ Based on this research, I think this PHP interface will suffice to describe
 a hyperlink:
 
 ```php
+<?php
+
 interface Link {
 
     /**
@@ -516,8 +543,7 @@ interface Link {
     /**
      * Returns a list of attributes that describe the target URI.
      *
-     * The list should be specified as a key-value list, both specified as
-     * strings.
+     * The list should be specified as a key-value list.
      *
      * There is no formal registry of the values that are allowed here, and
      * validity of values is depdendent on context.
@@ -528,6 +554,12 @@ interface Link {
      *
      * Any value that appears that is not valid in the context in which it is
      * used should be ignored.
+     *
+     * Some attributes, (commonly hreflang) may appear more than ones in their
+     * context. Attributes such as those may be specified as an array of
+     * strings.
+     *
+     * @return array
      */
     function getAttributes();
 
