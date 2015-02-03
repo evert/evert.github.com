@@ -57,8 +57,9 @@ have all the same attributes. The difference between a `<link>` and `<a>` is
 that a `<a>` may contain text and usually appears in a document, whereas the
 `<link>` element doesn't have content.
 
-    <link href="/index.html" rel="index">
-
+```html
+<link href="/index.html" rel="index">
+```
 
 HTML5
 -----
