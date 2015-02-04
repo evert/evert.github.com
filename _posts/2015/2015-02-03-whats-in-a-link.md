@@ -161,7 +161,7 @@ For example, the following HTML link:
 
 Could also appear in a HTTP header as:
 
-    Link: </evert.html>; rel="previous";
+    Link: </evert.html>; rel="author";
 
 The benefit of using the `Link:` HTTP header, is that it would allow you to
 add links to resources that normally don't support it. For instance, you could
@@ -401,7 +401,7 @@ Collection+JSON refers to the [microformats][19] wiki as its source for `rel`.
 SIREN
 -----
 
-[SIREN][18] is another JSON-based format that solves similar problems. 
+[SIREN][18] is another JSON-based format that solves similar problems.
 
 A link in SIREN is pretty straightforward:
 
@@ -428,7 +428,7 @@ the concept 'link'.
 So far I've learned the following:
 
 1. A link always has a source URI.
-2. A link always has a destination URI. 
+2. A link always has a destination URI.
 3. A link may have a "relationship type".
 
 ### Relationship type
@@ -516,17 +516,20 @@ interface Link {
      * Returns the target of the link.
      *
      * The target must be a URI or a Relative URI reference.
-     * 
+     *
      * @return string
      */
     function getHref();
 
     /**
-     * Returns the relationship type of the link.
+     * Returns the relationship type(s) of the link.
      *
-     * The returned value should be either a simple keyword or an absolute URI.
-     * In case a simple keyword is used, it should match one from the IANA
-     * registry at:
+     * This method returns 0 or more relationship types for a link, expressed
+     * as an array of strings.
+     *
+     * The returned values should be either a simple keyword or an absolute
+     * URI. In case a simple keyword is used, it should match one from the
+     * IANA registry at:
      *
      * http://www.iana.org/assignments/link-relations/link-relations.xhtml
      *
@@ -537,7 +540,7 @@ interface Link {
      *
      * Private relationship types should always be an absolute URI.
      *
-     * @return string
+     * @return string[]
      */
     function getRel();
 
@@ -578,7 +581,7 @@ A PHP link interface should therefore behave the same way.
 [1]: http://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt "HTML 1.2"
 [2]: http://www.w3.org/TR/html5/ "HTML5"
 [3]: http://www.w3.org/TR/html5/links.html#linkTypes "HTML5 - Link Types"
-[4]: https://developers.google.com/webmasters/state-of-the-web/2005/linkrels?csw=1 
+[4]: https://developers.google.com/webmasters/state-of-the-web/2005/linkrels?csw=1
 [5]: https://tools.ietf.org/html/rfc5988 "Web Linking"
 [6]: https://tools.ietf.org/html/rfc4287#section-4.2.7 "Atom link element"
 [7]: http://www.w3.org/TR/html5/links.html#attr-hyperlink-rel "HTML5 - rel"
@@ -589,7 +592,7 @@ A PHP link interface should therefore behave the same way.
 [12]: http://feeds.feedburner.com/bijsterespoor
 [13]: http://docs.oasis-open.org/xri/xrd/v1.0/os/xrd-1.0-os.html "Extensible Resource Descriptor"
 [14]: https://tools.ietf.org/html/rfc7033
-[15]: http://stateless.co/hal_specification.html "Hal" 
+[15]: http://stateless.co/hal_specification.html "Hal"
 [16]: https://tools.ietf.org/html/rfc6570
 [17]: http://amundsen.com/media-types/collection/format/
 [18]: https://github.com/kevinswiber/siren
