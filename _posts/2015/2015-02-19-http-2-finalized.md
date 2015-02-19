@@ -129,7 +129,7 @@ This is not unlike video formats, which also is split up in multiple streams
 
 There's a few different frame types:
 
-1. The [`DATA'][5] frame carries a list of bytes, for example to encode HTTP
+1. The [`DATA`][5] frame carries a list of bytes, for example to encode HTTP
    request and response bodies.
 2. The [`HEADERS`][6] frame carries a list of HTTP headers.
 3. The [`PRIORITY`][7] frame allows the sender of a message (client or server)
@@ -149,7 +149,7 @@ There's a few different frame types:
    started on the current connection, and instead open up a new connection.
 9. The [`WINDOW_UPDATE`][13] frame may be used to implement 'flow control',
    which apparently may help peers with resource constraints, such as memory.
-10. The [`CONTINUATION'][14] frame follows a `HEADERS` or `PUSH_PROMISE`
+10. The [`CONTINUATION`][14] frame follows a `HEADERS` or `PUSH_PROMISE`
    frame and contains additional data that didn't fit in the last frame.
 
 Typical HTTP requests and responses therefore usually consist of:
