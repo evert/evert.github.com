@@ -1,5 +1,5 @@
 ---
-date: 2015-02-03 04:58:08 UTC
+date: 2015-02-19 22:49:48 UTC
 layout: post
 title: "HTTP/2 finalized - a quick overview"
 tags:
