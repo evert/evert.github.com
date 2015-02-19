@@ -51,13 +51,13 @@ Upgrades to HTTP/2 can be invisible and transparent
 
 Most browsers will start supporting HTTP/2 extremely soon. When a browser
 makes a normal HTTP/1.1 request in the future, they will include some
-information that tells the server they can support HTTP/2 using the
-[`Upgrade`][2] HTTP header. For HTTPS, this is done using a [different mechanism][3].
+information that tells the server they support HTTP/2 using the [`Upgrade`][2]
+HTTP header. For HTTPS, this is done using a [different mechanism][3].
 
 If the server supports HTTP/2 as well, the switch will happen instantly
 and this will be invisible to the user.
 
-Everyone will still use `http://` urls.
+Everyone will still use `http://` and `https://` urls.
 
 If a HTTP client already knows the server will support HTTP/2, they can
 start speaking HTTP/2 right from the get-go.
@@ -80,9 +80,10 @@ A big feature that came with HTTP/1.1 was 'pipelining'. This is a feature
 that allows a HTTP client to send multiple requests in a connection without
 having to wait for a response. Because of poor and broken implementations, this
 feature has never really been enabled in browsers. In HTTP/2 this feature
-comes out of the box. Only one connection is needed, and a client can send
-and receive multiple requests and responses in parallel. If one of the HTTP
-responses is stalled, this doesn't block the rest of the HTTP responses.
+comes out of the box. Only one TCP connection is needed per client, and a
+client can send and receive multiple requests and responses in parallel. If
+one of the HTTP responses is stalled, this doesn't block the rest of the HTTP
+responses.
 
 So for application this can mean:
 
@@ -137,7 +138,7 @@ There's a few different frame types:
 5. The [`SETTINGS`][9] frame is used for senders to indicate how they wish
    to communicate. For example, a client can indicate that it does not wish to
    get resources preemptively pushed by the server.
-6. The [`PUSH_PROMISE`][10] is a message that the server sents to the client
+6. The [`PUSH_PROMISE`][10] is a message that the server sends to the client
    with information about a server-push that will in the future be sent.
 7. The [`PING`][11] allows a peer to measure the roundtrip time between client
    and server, and is a simple way to find out of the other peer is still
@@ -145,18 +146,16 @@ There's a few different frame types:
 8. The [`GOAWAY`][12] allows a peer to inform that no new streams should be
    started on the current connection, and instead open up a new connection.
 9. The [`WINDOW_UPDATE`][13] frame may be used to implement 'flow control',
-   which apparently may help peers that with resource constraints, such as
-   memory.
+   which apparently may help peers with resource constraints, such as memory.
 10. The [`CONTINUATION'][14] frame follows a `HEADERS` or `PUSH_PROMISE`
-   frame and contains additional datat that didn't fit in the last frame.
+   frame and contains additional data that didn't fit in the last frame.
 
 Typical HTTP requests and responses therefore usually consist of:
 
-1. A `HEADER` frames, followed by Zero or more `CONTINUATION` frames
-   frames.
+1. A `HEADER` frames, followed by zero or more `CONTINUATION` frames
 2. Zero or more `DATA` frames with the message body.
 
-A response may have more than one `HEADER` frame at the start, as somtimes a
+A response may have more than one `HEADER` frame at the start, as sometimes a
 server will send back more than 1 HTTP status line (Such as `100 Continue`
 followed by `200 OK`).
 
@@ -174,6 +173,8 @@ Wanna know more?
 
 * Read the [current spec][15].
 * Check out [Nghttp2][16], for a bunch of HTTP/2-related tools.
+* [How speedy is SPDY][17], talks about SPDY, but is also relevant to HTTP/2.
+* [Server side push with nghttp2][18] by Mattias Geniar.
 
 [1]: https://www.mnot.net/blog/2015/02/18/http2
 [2]: https://tools.ietf.org/html/draft-ietf-httpbis-http2-17#section-3.2 "Starting HTTP/2 for http URIs"
@@ -191,3 +192,5 @@ Wanna know more?
 [14]: https://tools.ietf.org/html/draft-ietf-httpbis-http2-17#section-6.10 "CONTINUATION"
 [15]: https://tools.ietf.org/html/draft-ietf-httpbis-http2-17 "HTTP/2"
 [16]: https://nghttp2.org/ "Nghttp2"
+[17]: https://www.usenix.org/sites/default/files/conference/protected-files/nsdi14_slides_wang.pdf "How speedy is SPDY"
+[18]: http://ma.ttias.be/service-side-push-http2-nghttp2/
