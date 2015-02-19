@@ -16,6 +16,8 @@ major release of the protocol since 1999, which is 16(!) years ago.
 While E-mail may still be the most popular protocol on the internet, http
 certainly is the most visible and relevant to many developers day-to-day work.
 
+Even [the bbc][19] is talking about it!
+
 As many of you develop HTTP-based applications, here are a few things you
 should know:
 
@@ -194,3 +196,4 @@ Wanna know more?
 [16]: https://nghttp2.org/ "Nghttp2"
 [17]: https://www.usenix.org/sites/default/files/conference/protected-files/nsdi14_slides_wang.pdf "How speedy is SPDY"
 [18]: http://ma.ttias.be/service-side-push-http2-nghttp2/
+[19]: http://www.bbc.co.uk/news/technology-31520413
