@@ -21,8 +21,8 @@ these functions, and for projects that require PHP 5.4, I use
 does so quite excellently.
 
 However, the initial introduction and rfc for these functions made me uneasy,
-and I felt like a lone voice against many in that I felt that they were kinda
-bad. I felt that they should not be added to the PHP engine.
+and I felt like a lone voice against many in that I thought something bad was
+happening. I felt that they should not be added to the PHP engine.
 
 I think that we should not extend the PHP engine, when it's possible to write
 the same API in userland, or there are significant benefits to do it in PHP,
