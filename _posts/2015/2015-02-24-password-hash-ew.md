@@ -68,7 +68,7 @@ C. Why are we not 'eating our own dogfood' in PHP? Perhaps [PEAR][6] was once
 that, but there's no real replacement.
 
 If code for PHP is required to be written in C to be considered legitimate and
-dependable, I think we should admit we have a problem.
+dependable, I think we need to admit we have a problem.
 
 [1]: http://php.net/manual/en/function.password-hash.php
 [2]: http://php.net/manual/en/function.password-verify.php
