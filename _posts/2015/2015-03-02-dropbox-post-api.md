@@ -111,7 +111,7 @@ An alternative approach
 -----------------------
 
 One way to solve this issue entirely and fix all problems related to this, is
-disconnect the query you are doing with it's result.
+disconnect the query you are doing from its result.
 
 To do this, you could create a `/queries` endpoint where you could submit a
 `POST` to with a body that contains all the details to your query.
