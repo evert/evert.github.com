@@ -51,7 +51,7 @@ The HTTP specification has an [extension][3] that defines the `PATCH` request,
 this spec is picking up some steam, and a lot of people are starting to use it
 to solve common problems in API design.
 
-In the same vain, there's been another standard HTTP method for a while with
+In the same vein, there's been another standard HTTP method for a while with
 the name `REPORT`, which specifically addresses some of the issues with `POST`.
 
 The `REPORT` request:
@@ -89,7 +89,7 @@ not based on request bodies, and these requests are not addressable with a
 URI.
 
 Literally the only reason why anyone would do this is because `GET` looks
-nicer, it's an aestetic decision, and nothing more.
+nicer, it's an aesthetic decision, and nothing more.
 
 
 Why real `GET` requests are great: addressability
