@@ -8,7 +8,7 @@ tags:
     - rest
 ---
 
-Today dropbox announced in a blogpost titled
+Today Dropbox announced in a blogpost titled
 ["Limitations of the GET method in HTTP"][1] that it will start allowing `POST`
 requests for APIs that would otherwise only be accessible using `GET`.
 
@@ -20,7 +20,7 @@ Using URL parameters is cumbersome for a number of reasons:
    [2KB and 8KB apparently][2].
 2. URL parameters don't allow nearly enough flexibility in terms of how you
    can define your query. The percent-encoded string doesn't really have a
-   universal way to define a character set.
+   universal way to define in what character set its bytes are,
 3. The URL is not nearly as versatile and expressive as JSON, and let alone
    XML. 
 
@@ -32,8 +32,8 @@ running into artificial limitations here that are poorly solved by existing
 technology.
 
 
-The problem with POST
----------------------
+The problem with `POST`
+-----------------------
 
 Switching to `POST` discards a number of very useful features though. `POST`
 is defined as a non-safe, non-idempotent method. This means that if a `POST`
