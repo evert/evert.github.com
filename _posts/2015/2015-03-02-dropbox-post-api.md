@@ -113,8 +113,9 @@ An alternative approach
 One way to solve this issue entirely and fix all problems related to this, is
 disconnect the query you are doing from its result.
 
-To do this, you could create a `/queries` endpoint where you could submit a
-`POST` to with a body that contains all the details to your query.
+To do this, you could create a `/queries` endpoint where you allow clients to
+submit `POST` requests to, with request bodies containing all the details of
+your query.
 
 This operation could create a new 'query resource' and responds by saying that
 the result of this query can be found at `/queries/1` using a
@@ -127,8 +128,12 @@ Then to fetch the result of the query, you can just issue a `GET` request on
 2. Resources in your API are still addressable and can be linked to.
 3. The results are still cacheable, safe and idempotent.
 
-The drawback? It's definitely a bit more complicated to design this API, it
-requires storage on the server (store queries and/or their results).
+We're still using a `POST` request here though, but there's a fundamental
+difference: we are using `POST` to create a new 'query resource' and we don't
+use it to do the query itself.
+
+The drawback? It's definitely a bit more complicated to design this API and it
+requires storage on the server (for the query and/or the result of the query).
 
 But then, REST services are not meant to be simple. They are meant to be as
 robust and long-lasting.
