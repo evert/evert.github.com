@@ -135,8 +135,8 @@ use it to do the query itself.
 The drawback? It's definitely a bit more complicated to design this API and it
 requires storage on the server (for the query and/or the result of the query).
 
-But then, REST services are not meant to be simple. They are meant to be as
-robust and long-lasting.
+But then, REST services are not meant to be simple. They are meant to be
+robust and long-lasting, just like the web itself.
 
 
 [1]: https://blogs.dropbox.com/developers/2015/03/limitations-of-the-get-method-in-http/
