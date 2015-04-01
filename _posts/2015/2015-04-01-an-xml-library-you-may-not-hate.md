@@ -47,6 +47,8 @@ sabre/xml extends the XMLReader and XMLWriter class and adds a bunch of
 functionality that makes it quick to generate xml:
 
 ```php
+<?php
+
 $xmlWriter = new Sabre\Xml\Writer();
 $xmlWriter->openMemory();
 $xmlWriter->startDocument();
@@ -57,6 +59,8 @@ $xmlWriter->write(['{http://example.org}book' => [
     '{http://example.org}title' => 'Cryptonomicon',
     '{http://example.org}author' => 'Neil Stephenson',
 ]]);
+
+?>
 ```
 
 Output:
@@ -99,6 +103,8 @@ $reader->elementMap = [
 $reader->xml($input);
 
 print_r($reader->parse());
+
+?>
 ```
 
 This will output something like:
@@ -131,11 +137,15 @@ easily create your own by writing deserializer classes, or just by providing a
 callback:
 
 ```php
+<?php
+
 $reader->elementMap = [
     '{http://example.org/}article' => function(Sabre\Xml\Reader $reader) {
         // Read the element's contents, and return the result here.
     }
 ];
+
+?>
 ```
 
 The benefits
