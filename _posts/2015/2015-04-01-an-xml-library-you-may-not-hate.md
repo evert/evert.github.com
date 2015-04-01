@@ -32,10 +32,10 @@ them, they need a sort of design pattern. I've experimented with this concept
 off and on since 2009, and finally landed on something I'm reasonably happy
 with. 
 
-A few people have randomly stumbled upon it and I got mostly positive feedback.
-Today I wanted to show it off to everyone. I've iterated on the base
-concept for several years, and tweaked it every time to get a sort of 'good
-enough' api that behaves reasonably sane in various scenarios.
+A few people have randomly stumbled upon this experiment and I got mostly
+positive feedback.  Today I wanted to show it off to everyone. I've iterated
+on the base concept for several years, and tweaked it every time to get a sort
+of 'good enough' api that behaves reasonably sane in various scenarios.
 
 The library is called [sabre/xml][6], and I hope people are willing to kick
 its tires and give some feedback.
@@ -77,7 +77,7 @@ As you can see, you can quickly generate complex xml from simple array
 structures.
 
 Instead of serializing strings, you can also serialize objects. There's a
-`Sabre\Xml\XmlSerializable` interface included that is meant to work similar
+[`Sabre\Xml\XmlSerializable`][10] interface included that is meant to work similar
 to PHP's [`JsonSerializable`][7].
 
 
@@ -182,3 +182,4 @@ The full docs can be found on [http://sabre.io/xml/][6], the source on
 [7]: http://php.net/manual/en/class.jsonserializable.php "JsonSerializable"
 [8]: https://tools.ietf.org/html/rfc4287  
 [9]: https://github.com/fruux/sabre-xml/
+[10]: https://github.com/fruux/sabre-xml/blob/master/lib/XmlSerializable.php
