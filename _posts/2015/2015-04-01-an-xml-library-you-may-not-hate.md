@@ -30,7 +30,7 @@ these objects not being very stable.
 The XMLReader and XMLWriter objects are nice, but in order to effectively use
 them, they need a sort of design pattern. I've experimented with this concept
 off and on since 2009, and finally landed on something I'm reasonably happy
-with. 
+with.
 
 A few people have randomly stumbled upon this experiment and I got mostly
 positive feedback.  Today I wanted to show it off to everyone. I've iterated
@@ -40,11 +40,21 @@ of 'good enough' api that behaves reasonably sane in various scenarios.
 The library is called [sabre/xml][6], and I hope people are willing to kick
 its tires and give some feedback.
 
+
+How it works
+------------
+
+sabre/xml extends the XMLReader and XMLWriter class and adds a bunch of
+functionality that makes it quick to generate and parse xml.
+
+By default it parses from/to PHP arrays, which is great for quick one-shot
+parsers/writers, but the biggest feature is that it allows you to intuitively
+map XML to PHP objects and vice-versa.
+
+
 Writing XML in a nutshell
 -------------------------
 
-sabre/xml extends the XMLReader and XMLWriter class and adds a bunch of
-functionality that makes it quick to generate xml:
 
 ```php
 <?php
@@ -148,6 +158,22 @@ $reader->elementMap = [
 ?>
 ```
 
+Element classes and interfaces
+------------------------------
+
+* `Sabre\Xml\XmlSerializable` is used to allow an object to serialize itself.
+* `Sabre\Xml\XmlDeserializable` turns an object into a factory for parsing and returning a value.
+* `Sabre\Xml\Element` is a convenience interface that just extends the previous two.
+
+You can implement these interfaces yourself, but a few standard implementations are included:
+
+* `Sabre\Xml\Element\Base` is the default and turns every element into an array with a `name`, `value`, and `attributes` key.
+* `Sabre\Xml\Element\KeyValue` flattens the array, and turns it into a key-value array.
+* `Sabre\Xml\Element\Elements` discards element values, and gives you a flat array of element names. Useful for 'enums'.
+* `Sabre\Xml\Element\CData` allows you to easily embed a CDATA structure.
+* `Sabre\Xml\Element\XmlFragment` extracts a subtree from XML and gives you a valid xml fragment, including namespace declarations.
+
+
 The benefits
 ------------
 
@@ -162,7 +188,7 @@ It would also allow someone to publish a set of Element classes for a specific
 xml format such as [Atom][8] on packagist and allow someone else to re-use
 specific parts of of that format into a new format. I'm hoping to fulfill the
 promise of XML extensibility by bringing it in PHP, but that might be too bold
-of a statement. 
+of a statement.
 
 At the very least I think it will make your XML parsing code simpler, reusable,
 extensible and more legible. I also found it more fun to work with XML, but
@@ -180,6 +206,6 @@ The full docs can be found on [http://sabre.io/xml/][6], the source on
 [5]: http://php.net/manual/en/book.xmlwriter.php
 [6]: http://sabre.io/xml/ "sabre/xml homepage"
 [7]: http://php.net/manual/en/class.jsonserializable.php "JsonSerializable"
-[8]: https://tools.ietf.org/html/rfc4287  
+[8]: https://tools.ietf.org/html/rfc4287
 [9]: https://github.com/fruux/sabre-xml/
 [10]: https://github.com/fruux/sabre-xml/blob/master/lib/XmlSerializable.php
