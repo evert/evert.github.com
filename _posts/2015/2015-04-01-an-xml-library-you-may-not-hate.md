@@ -51,6 +51,13 @@ By default it parses from/to PHP arrays, which is great for quick one-shot
 parsers/writers, but the biggest feature is that it allows you to intuitively
 map XML to PHP objects and vice-versa.
 
+This gives this XML library a distinct advantage. It's very easy to get
+started, but its design pattern still works for more complex XML application.
+
+The one caveat is that reading and writing are single-pass by design. Unlike
+the DOM, you can't load in a document, make a small modification and save it
+again.
+
 
 Writing XML in a nutshell
 -------------------------
