@@ -1,7 +1,7 @@
 ---
 date: 2015-05-06 17:03:34 UTC
 layout: post
-title: "PHP's callable typehint too loose?."
+title: "PHP's callable typehint too loose?"
 tags:
     - php
     - callable
@@ -116,8 +116,8 @@ Lastly
 ------
 
 I came to write this because I got a bug report from someone who wanted to be
-able to use the `'MyClass::method'` syntax. I was a bit surprised this issue 
-existed, but I had always used `['MyClass', 'method']`. Before changing all my
+able to use the `'MyClass::method'` syntax. I was a bit surprised this didn't
+work, as I had always used `['MyClass', 'method']`. So, before changing all my
 `$x()` to `call_user_func($x)`, I first had to figure out how this was
 possible.
 
