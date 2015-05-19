@@ -15,7 +15,7 @@ Today [PSR-7][4] got the 'accepted' state after quite a long journey. This is
 the result of the hard work of many people, but in particular
 [Matthew Weier O'Phinney][1] who did an amazing job herding cats with class.
 
-Dispite my [concerns][2] and my lone vote against the proposal, I'm excited
+Despite my [concerns][2] and my lone vote against the proposal, I'm excited
 to see this become the standard. It's long overdue and it's time for PHP to
 move on from its clumsy [superglobals][3]. I'm also very interested to see if
 my concerns around the immutability aspect of the objects turned out to be
