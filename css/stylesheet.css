@@ -74,7 +74,7 @@ footer {
     color: #DDD;
     text-align: center;
     background-image: url('../resources/flower200.png');
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center bottom;
 }
 
