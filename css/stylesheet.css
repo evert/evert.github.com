@@ -106,8 +106,9 @@ pre {
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    width: 100%;
+    width: 70px;
     height: 70px;
+    margin: 0 auto;
 }
 .flower:hover {
     background-image: url(../resources/flower200.gif);
