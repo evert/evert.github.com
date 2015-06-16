@@ -69,11 +69,10 @@ footer {
     width: 100%;
     background: #30303B;
     margin-top: -50px;
-    height: 15px;
-    padding: 50px 0 5px 0;
+    height: 25px;
+    padding: 5px;
     color: #DDD;
     text-align: left;
-    background-image: url('../resources/flower200.png');
     background-repeat: no-repeat;
     background-position: right bottom 5px;
 }
@@ -99,6 +98,15 @@ pre {
     color: #000;
     overflow-x: auto;
     font-family: "Monaco", monospace;
+}
+
+div.flower {
+    background-repeat: none;
+    background-position: center;
+    background-image: url(../resources/flower200.png');
+}
+div.flower:hover {
+    background-image: url(../resources/flower200.gif');
 }
 
 blockquote {
