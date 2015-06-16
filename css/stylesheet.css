@@ -70,9 +70,12 @@ footer {
     background: #30303B;
     margin-top: -50px;
     height: 35px;
-    padding: 10px 0 5px 0;
+    padding: 10px 0 70px 0;
     color: #DDD;
     text-align: center;
+    background-image: url('../resource/flower200.png');
+    background-repeat: none;
+    background-position: center bottom;
 }
 
 footer a {
