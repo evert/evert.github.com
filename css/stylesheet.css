@@ -106,7 +106,7 @@ pre {
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    width: 70px;
+    width: 100%;
     height: 70px;
 }
 .flower:hover {
