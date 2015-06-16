@@ -11,6 +11,8 @@ body {
     background-color: #EEE;
     margin: 0;
     height: 100%;
+    box-sizing: border-box;
+
 }
 
 h1 {
@@ -100,12 +102,15 @@ pre {
     font-family: "Monaco", monospace;
 }
 
-div.flower {
-    background-repeat: none;
-    background-position: center;
+.flower {
     background-image: url(../resources/flower200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 70px;
+    height: 70px;
 }
-div.flower:hover {
+.flower:hover {
     background-image: url(../resources/flower200.gif');
 }
 
