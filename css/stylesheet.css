@@ -102,7 +102,7 @@ pre {
 }
 
 .flower {
-    background-image: url(../resources/flower200.png);
+    background-image: url(../resources/flowerstatic.gif);
     background-repeat: no-repeat;
     background-position: center;
     display: block;
