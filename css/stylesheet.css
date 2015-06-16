@@ -11,7 +11,6 @@ body {
     background-color: #EEE;
     margin: 0;
     height: 100%;
-    box-sizing: border-box;
 
 }
 
@@ -72,9 +71,9 @@ footer {
     background: #30303B;
     margin-top: -50px;
     height: 25px;
-    padding: 5px;
+    padding: 5px 0;
     color: #DDD;
-    text-align: left;
+    text-align: center;
     background-repeat: no-repeat;
     background-position: right bottom 5px;
 }
