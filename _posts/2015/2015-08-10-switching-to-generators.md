@@ -47,7 +47,7 @@ Somewhere else in the application, this might be used like this in some view:
 
 foreach($model->getArticles() as $article) {
 
-    echo "<li>", htmlspecialchars($article['title']), "</li>";
+    echo "<li>", htmlspecialchars($article->title), "</li>";
 
 }
 ?>
@@ -106,7 +106,7 @@ exactly as-is:
 
 foreach($model->getArticles() as $article) {
 
-    echo "<li>", htmlspecialchars($article['title']), "</li>";
+    echo "<li>", htmlspecialchars($article->title), "</li>";
 
 }
 ?>
@@ -128,11 +128,15 @@ For instance, before we switched to generators, we would have been able to
 access a specific record from `getArticles()` like this:
 
 ```php
+<?php
+
 $fifthArticle = $model->getArticles()[4];
+
+?>
 ```
 
-Now, this will break. So the result of switching to a generator means that
-you must access the result in sequence.
+With generators you can no longer do this, and it will result in an error.
+Switching to generators means that you must access the result in sequence.
 
 ### The big PHP fuck-up
 
@@ -151,9 +155,10 @@ $array = iterator_to_array(
 ?>
 ```
 
-But this defeats the point a bit.
+But, converting to an array defeats the point of using generators a little
+bit.
 
-To me, this is something that can instantly in the infamous
+To me, this is something that can instantly get added to the infamous
 ["fractal of bad design"][2] article. We've had generators since PHP 5.5,
 iterators since PHP 5.0, and array_map since PHP 4.0, so PHP maintainers have
 had over a decade to fix this shortcoming.
