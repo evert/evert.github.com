@@ -37,7 +37,7 @@ function getArticles() {
 ?>
 ```
 
-The preceeding example is a faily common pattern in CRUD application. In the
+The preceding example is a fairly common pattern in CRUD application. In the
 example, we're fetching a list of records from the database, and we apply
 some function to the records before returning them.
 
