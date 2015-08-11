@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Evert Pot - Resume 
+title: Evert Pot - Resume
 ---
 
 Evert Pot
@@ -22,9 +22,9 @@ Links
 Experience
 ----------
 
-### Co-Founder/CTO fruux, Germany + UK — 2011 - TODAY
+### Co-Founder/CTO fruux, Germany + UK — 2011 - 2015
 
-In december 2011 I went full-time with fruux, which was a bit of a
+In December 2011 I went full-time with fruux, which was a bit of a
 side-project at the time. We got a seed invest- ment round, and opened the
 door to our office. As the technical lead I’ve been responsible for the
 technical and product direction, as well as leading the team from a
@@ -164,6 +164,9 @@ I've been blogging on and off since 2006. Here's some of my favourites:
   </li>
 </ul>
 {% endfor %}
+
+Because of this, I've been published in both PHP Architect (a paper PHP
+magazine), and PHP Advent (now defunct series of articles).
 
 ### sabre.io
 

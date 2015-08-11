@@ -10,6 +10,7 @@ tags:
     - html
     - html5
     - link
+    - featured
 ---
 
 When you ask a developer, what is a "link", they may quickly answer "a URL" or

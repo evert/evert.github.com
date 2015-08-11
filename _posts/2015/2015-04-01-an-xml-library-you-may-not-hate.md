@@ -9,6 +9,7 @@ tags:
     - xmlwriter
     - dom
     - simplexml
+    - featured
 ---
 
 If you are a PHP programmer, chances are that you will need to write and parse

@@ -5,7 +5,7 @@ title: "On idempotence in HTTP"
 tags:
   - http
   - idempotence
-
+  - featured
 ---
 
 Today I came across a [blogpost][1] arguing idempotence of the HTTP `DELETE`

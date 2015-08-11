@@ -9,7 +9,7 @@ tags:
   - prototype
   - json
   - stringify
-
+  - featured
 ---
 <p>Many of you might already know this, but I wanted to point out why I think using the <a href="http://www.prototypejs.org/">Prototype Javascript library</a> is a bad idea. The biggest problem is actually highlighted in it's name: it changes many of the prototypes of core javascript types.</p>
 

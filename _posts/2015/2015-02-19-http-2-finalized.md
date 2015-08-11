@@ -4,6 +4,7 @@ layout: post
 title: "HTTP/2 finalized - a quick overview"
 tags:
     - http
+    - featured
 ---
 
 The HTTP/2 specification [has been finalized][1] and will soon be released as

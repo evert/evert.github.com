@@ -5,6 +5,7 @@ slug: new-http-status-codes
 title: "New HTTP status codes"
 tags:
   - http
+  - featured
 
 ---
 <p><a href="http://tools.ietf.org/html/rfc6585">RFC 6585</a> has been published quite recently. This document describes 4 new HTTP status codes.</p>

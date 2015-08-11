@@ -6,6 +6,7 @@ tags:
     - promises
     - sabre
     - event
+    - featured
 ---
 
 We just released [sabre/event 2.0][1] last week, featuring support for

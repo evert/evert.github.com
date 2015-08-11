@@ -6,6 +6,7 @@ tags:
     - http
     - ietf
     - rfc
+    - featured
 ---
 
 The IETF just published several new RFCs that update HTTP/1.1:

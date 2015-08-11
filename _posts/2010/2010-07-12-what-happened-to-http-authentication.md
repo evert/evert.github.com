@@ -11,7 +11,7 @@ tags:
   - browser
   - account manager
   - rant
-
+  - featured
 ---
 <p><strong>Rant warning</strong></p>
 

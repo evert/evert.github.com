@@ -14,7 +14,7 @@ tags:
   - windows
   - ntfs
   - hfs+
-
+  - featured
 ---
 <p>Many PHP applications save files to a local filesystem. Most of the times for the bulk of readers here you'll likely only ever store files using US-ASCII encoding, either because your filenames are simply based on databasefields (as you should try in most cases), or simply because most of your users never have a need for non-english characters.</p>
 
