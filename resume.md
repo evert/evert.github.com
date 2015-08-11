@@ -25,26 +25,22 @@ Experience
 ### Co-Founder/CTO fruux, Germany + UK — 2011 - 2015
 
 In December 2011 I went full-time with fruux, which was a bit of a
-side-project at the time. We got a seed invest- ment round, and opened the
+side-project at the time. We got a seed investment round, and opened the
 door to our office. As the technical lead I’ve been responsible for the
 technical and product direction, as well as leading the team from a
 technical perspective. Aside from that I’ve also got my hands dirty in some
 marketing and sales, and basically just stepped in where needed.
 
-### Consultant/owner Rooftop Solutions, worldwide — 2003-today
-
-Rooftop Solutions is the name of my consulting company. Having a private
-company allowed me to gain much experience in the field of Web Development
-and client relations / communication skills. The company-name mostly exist
-as a legal entity for my commercial and open source projects.
+### Consulting, worldwide — 2003-today
 
 I’ve been doing this ‘full-time’ on and off, whenever I’ve not really been
 fully focussed on a job. I’ve had the opportunity to work in
-telecommunication, social media, group ware, advertising and broadcasting
-companies in Australia, Portugal, Canada and The Netherlands, and worked for
-more companies in the States and various European and Asian businesses.
+telecommunication, social media, group ware, advertising, broadcasting,
+Afinance companies in Australia, Portugal, Canada and The Netherlands, and
+remotely worked for various other companies from North America, Europe and
+Asia.
 
-### Software engineer, Ibuildings, Utrecht, Netherlands - 2010-2011
+### Software engineer, Ibuildings, Utrecht, Netherlands — 2010-2011
 
 In 2010 I started working for Ibuildings in the Netherlands as a senior
 software engineer. Ibuildings is a software development company based in
@@ -67,8 +63,8 @@ engine, working with Canada’s leading media brands such as CBC, CTV, Fox, TSN,
 CP24.
 
 In this job I worked with PHP, complicated multi-master, MySQL setups (with
-geographic redundancy), Mem- cached, Amazon S3 and EC2 and I was responsible
-for developing a multi-core, multi-machine transcoding en- gine as well as
+geographic redundancy), Memcached, Amazon S3 and EC2 and I was responsible
+for developing a multi-core, multi-machine transcoding engine as well as
 leading the development team.
 Starting august 2009 I resigned as lead architect to continue my work as
 independent consultant, but I’m still involved as in an advisory role and
@@ -83,7 +79,7 @@ Together with Collab I’ve got a taste of many experimental innovative software
 such as real-time, multi-user rich internet applications including web video
 chat and media conversion. Using technologies such as Flash Communication
 Server (now Flash Media Server) and FFMpeg. In these 3 years I’ve worked with
-Dutch media and in- ternet companies, such as NOS, BNN, Telegraaf/Speurders.nl,
+Dutch media and internet companies, such as NOS, BNN, Telegraaf/Speurders.nl,
 EasyConcepts, Netmasters and UDC/Dancevalley.
 
 ### Application developer/Sys admin, V/d Veer, Surhuisterveen, The Netherlands — 2003
