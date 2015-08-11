@@ -6,6 +6,7 @@ tags:
     - php
     - generators
     - iterators
+    - featured
 ---
 
 Since the release of PHP 5.5, we now have access to [generators][1].
