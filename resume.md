@@ -156,14 +156,14 @@ Other projects
 
 I've been blogging on and off since 2006. Here's some of my favourites:
 
-{% for post in site.tags.featured limit: 20 %}
 <ul>
+{% for post in site.tags.featured %}
   <li>
      <a href="{{ post.url }}">{{ post.title }}</a>
      <span>({{ post.date | date:"%Y-%m-%d" }})</span>
   </li>
-</ul>
 {% endfor %}
+</ul>
 
 Because of this, I've been published in both PHP Architect (a paper PHP
 magazine), and PHP Advent (now defunct series of articles).
