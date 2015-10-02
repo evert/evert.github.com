@@ -10,6 +10,8 @@ _Web architect, API developer_
 
 * Last update: *October 2nd, 2015*.
 * Location: Toronto, ON, Canada.
+* Contact: <mailto:me@evertpot.com>.
+
 
 Summary
 -------
@@ -19,16 +21,19 @@ doing consulting for a wide range of companies, from small businesses to
 telcos, financial services and national broadcasters.
 
 I'm especially interested in API design, implementing better engineering
-practices, scalability problems and application architecture.
+practices, scalability problems and application architecture. In the past I've
+had a strong focus on PHP, but I'm very open to other technology stacks as
+well.
 
 I'm currently looking for projects! In particular:
 
 * Short and long term projects.
-* Hourly or project basis.
+* Can work hourly or on project-basis.
 * I can work on-site in Toronto, remotely anywhere and I would also be
   thrilled to fly to you for a week or two to kick off a new project.
 
 I am specifically _not_ looking for full or part-time employment.
+
 
 Links
 -----
@@ -37,6 +42,7 @@ Links
 * Github: <https://github.com/evert/>
 * LinkedIn: <https://ca.linkedin.com/in/evertpot>
 * Stack Overflow: <http://stackoverflow.com/users/80911/evert>
+
 
 Experience
 ----------
@@ -53,11 +59,12 @@ marketing and sales, and basically just stepped in where needed.
 ### Consulting, worldwide — 2003-today
 
 I’ve been doing this ‘full-time’ on and off, whenever I’ve not really been
-fully focussed on a job. I’ve had the opportunity to work in
+fully focused on a job. I’ve had the opportunity to work in
 telecommunication, social media, group ware, advertising, broadcasting,
-Afinance companies in Australia, Portugal, Canada and The Netherlands, and
-remotely worked for various other companies from North America, Europe and
-Asia.
+financial service companies in Australia, Portugal, Canada and The
+Netherlands, and remotely worked for various other companies from North
+America, Europe and Asia.
+
 
 ### Software engineer, Ibuildings, Utrecht, Netherlands — 2010-2011
 
@@ -85,11 +92,11 @@ In this job I worked with PHP, complicated multi-master, MySQL setups (with
 geographic redundancy), Memcached, Amazon S3 and EC2 and I was responsible
 for developing a multi-core, multi-machine transcoding engine as well as
 leading the development team.
-Starting august 2009 I resigned as lead architect to continue my work as
-independent consultant, but I’m still involved as in an advisory role and
-owner.
+Starting August 2009 I resigned as lead architect to continue my work as
+independent consultant, after that I was still involved as in an advisory role
+and owner.
 
-In late 2015 the company was sold to NewZulu, an australian-based media
+In late 2015 the company was sold to NewZulu, an Australian-based media
 company.
 
 ### Senior Web developer/partner, Collab, Utrecht, the Netherlands — 2004-2006
@@ -114,6 +121,7 @@ This job involved many system administrator tasks, such as working with
 hardware, installing and preparing massive amounts of desktop machines and
 occasionally getting coffee for the more senior people in the company.
 
+
 Skills
 ------
 
@@ -133,7 +141,7 @@ Skills
 * Beginner skills: C, Bash programming, Java, Python, Ruby.
 * Ancient skills: (Q/GW)Basic, Delphi, Interbase, Turbo Pascal, x86 assembler,
   Actionscript, Podcasting, AMF, Flash-PHP interaction using Flash Remoting,
-  FMS/FCS-PHP integration, Flix Encoder, XULi, Wowza Media Server, Lighttpd.
+  FMS/FCS-PHP integration, Flix Encoder, XUL, Wowza Media Server, Lighttpd.
 
 ### Management
 
@@ -191,5 +199,3 @@ Since 2007 I started working on an open source library that would be named
 sabre/dav. This project spawned a number of PHP libraries that are now widely
 in use for various purposes. The project site is <http://sabre.io/>. I'm still
 the lead maintainer for all of these projects.
-
-
