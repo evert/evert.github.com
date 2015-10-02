@@ -11,6 +11,25 @@ _Web architect, API developer_
 * Last update: *August 10th, 2015*.
 * Location: Toronto, ON, Canada.
 
+Summary
+-------
+
+My name is Evert, and I've been a Web Developer for over 10 years. I've been
+doing consulting for a wide range of companies, from small businesses to
+telcos, financial services and national broadcasters.
+
+I'm especially interested in API design, implementing better engineering
+practices, scalability problems and application architecture.
+
+I'm currently looking for projects! In particular:
+
+* Short and long term projects.
+* Hourly or project basis.
+* I can work on-site in Toronto, remotely anywhere and I would also be
+  thrilled to fly to you for a week or two to kick off a new project.
+
+I am specifically _not_ looking for full or part-time employment.
+
 Links
 -----
 
