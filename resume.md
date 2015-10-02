@@ -34,6 +34,7 @@ I'm currently looking for projects! In particular:
 
 I am specifically _not_ looking for full or part-time employment.
 
+References are available upon request.
 
 Links
 -----
