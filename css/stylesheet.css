@@ -40,6 +40,8 @@ main a {
     color: #009;
     transition-property: color;
     transition-duration: 0.4s;
+    /** Long links may be arbitrarily broken */
+    word-wrap: break-word;
 }
 
 main a:hover {
