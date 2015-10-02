@@ -2,6 +2,7 @@
 date: 2015-10-02 15:40:23 +0200 
 layout: post
 title: "Going freelance"
+nocomments: true
 tags:
     - php
     - freelance

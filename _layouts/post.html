@@ -11,6 +11,8 @@ layout: default
 
 </article>
 
+{% if not page.nocommments %}
+
 <section class="respond">
 
 <h1>Respond</h1>
@@ -30,3 +32,5 @@ var disqus_identifier = '{{ page.id }}';
 </script>
 
 </section>
+
+{% endif %}
