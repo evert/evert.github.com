@@ -8,7 +8,7 @@ Evert Pot
 
 _Web architect, API developer_
 
-* Last update: *August 10th, 2015*.
+* Last update: *October 2th, 2015*.
 * Location: Toronto, ON, Canada.
 
 Summary
