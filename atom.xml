@@ -10,7 +10,7 @@ layout: nil
   <id>http://evertpot.com/</id>
   <author>
     <name>Evert Pot</name>
-    <email>evert@rooftopsolutions.nl</email>
+    <email>me@evertpot.com</email>
   </author>
 
   {% for post in site.posts limit:20 %}
@@ -21,7 +21,7 @@ layout: nil
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
       <name>Evert Pot</name>
-      <email>evert@rooftopsolutions.nl</email>
+      <email>me@evertpot.com</email>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
