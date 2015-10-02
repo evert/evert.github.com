@@ -20,3 +20,5 @@ My resume is right here at: <http://evertpot.com/resume.html>. My end game is
 to work regularly for a small set of recurring customers, but any step that
 helps me get there is very appreciated!
 
+Cheers,  
+Evert
