@@ -151,6 +151,8 @@ communicating technical requirements.
 * PHPBenelux Meetup 2011, Amersfoort, Netherlands: Integrating WebDAV in PHP applications.
 * Dutch PHP conference 2011 - Amsterdam, Netherlands: RESTful webservices.
 * Dutch PHP conference 2012 - Amsterdam, Netherlands: Backbone.js.
+* OwnCloud contributer conference 2015 - Berlin, Germany: sabre/dav and Promises & Generators.
+
 
 ### Recognition
 
