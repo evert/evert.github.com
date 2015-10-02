@@ -11,6 +11,9 @@
     <link rel="openid.server" href="https://indieauth.com/openid" />
     <link rel="openid.delegate" href="http://evertpot.com/" />
 
+    <meta property="og:title" content="{{ page.title }}" />
+    {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
+
 </head>
 <body>
   <div id="wrap">
