@@ -10,7 +10,7 @@ _Web architect, API developer_
 
 * Last update: *October 2nd, 2015*.
 * Location: Toronto, ON, Canada.
-* Contact: <mailto:me@evertpot.com>.
+* Contact: <mailto:work@evertpot.com>.
 
 
 Summary
