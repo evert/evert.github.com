@@ -40,6 +40,8 @@ main a {
     color: #009;
     transition-property: color;
     transition-duration: 0.4s;
+    /** Long links may be arbitrarily broken */
+    word-wrap: break-word;
 }
 
 main a:hover {
@@ -100,18 +102,18 @@ pre {
     overflow-x: auto;
     font-family: "Monaco", monospace;
 }
-
 .flower {
-    background-image: url(../resources/flowerstatic.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
+	background-image: url(../resources/flowerstatic.gif), url(../resources/flower200.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0, 0 70px;
+	display: block;
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
 }
+
 .flower:hover {
-    background-image: url(../resources/flower200.gif);
+	background-position: -70px 0, 0 0;
 }
 
 blockquote {
