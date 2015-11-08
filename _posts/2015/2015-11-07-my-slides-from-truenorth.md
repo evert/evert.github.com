@@ -10,7 +10,7 @@ tags:
 
 ---
 
-This weekend I went to the [True North PHP conference][3]. First PHP
+This weekend I went to the [True North PHP conference][1]. First PHP
 conference I went to since quite a few years, and it was a really great time.
 
 My talk was about Promises and Generators and how they can be used together
