@@ -134,6 +134,7 @@ Skills
 * Frisian: advanced speaking
 * German: basic speaking/writing
 
+
 ### Technology
 
 * Expert skills: PHP, MySQL, WebDAV, CalDAV, CardDAV, HTTP, Rest APIs,
@@ -145,6 +146,7 @@ Skills
   Actionscript, Podcasting, AMF, Flash-PHP interaction using Flash Remoting,
   FMS/FCS-PHP integration, Flix Encoder, XUL, Wowza Media Server, Lighttpd.
 
+
 ### Management
 
 I’ve built and lead several development teams, implemented development
@@ -154,6 +156,7 @@ Actionscript developers, DBA’s, Linux system administrators and
 backend-engineers. Experience in interpreting business requirements and
 communicating technical requirements.
 
+
 ### Speaking
 
 * FlashInTO 2007, Toronto, Video conversion with FFMpeg.
@@ -162,6 +165,7 @@ communicating technical requirements.
 * Dutch PHP conference 2011 - Amsterdam, Netherlands: RESTful webservices.
 * Dutch PHP conference 2012 - Amsterdam, Netherlands: Backbone.js.
 * OwnCloud contributer conference 2015 - Berlin, Germany: sabre/dav and Promises & Generators.
+* True North PHP 2015 - Toronto, Canada: Promises & Generators. ([slides](https://github.com/evert/promises-and-generators))
 
 
 ### Recognition
