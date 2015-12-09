@@ -19,7 +19,7 @@ step in. At the time
 it was the perfect combination of a great UX, combined with the power a
 unix-ish system.
 
-Since then I've gradually got more locked into the Apple eco-system. With a
+Since then I've gradually got more locked into the Apple ecoystem. With a
 bit of a grudge too, as what was once the technically superior, and arguably
 the cooler option
 has slowly become a bit of an icon of vendor lock-in and various other
@@ -58,8 +58,8 @@ But for some reason the iMac from last year with 8GB of memory is simply
 doing a worse job at it than the basic Macbook I had in 2006 running OS X
 Tiger. Starting applications is terribly slow, starting a new terminal session
 takes forever, after start-up it takes up to 15 minutes for the machine to
-feel somewhat smoothly. The effect on my much newer iMac is much stronger
-than my compartively underpowered Macbook air. The prime difference is that
+feel somewhat smooth. The effect on my much newer iMac is much stronger
+than my comparatively underpowered Macbook air. The prime difference is that
 the latter has an SSD. On the Big Mac 'force quit' and reboots are both
 frequent enough to be anger inducing. And yes I did do a a full reinstall!
 
@@ -68,21 +68,26 @@ Leopard, and I now also see that as the time they absolutely peaked. To say
 that this is planned obsolescence is giving them too much credit, as it feels
 more like it stems from a lack of planning. Performance optimization of new
 software seems to end when it works smoothly on 'current' hardware, which
-means that it doesn't take long for hardware to get branded 'old'.
+means that it doesn't take long for hardware to get branded 'old'. Even though
+every OS X release comes with the promise of better performance, my own
+experience tells me the inverse is true. How awesome would it be if OS X
+developers were forced to run base-line 5-year old hardware? I imagine that
+this problem would not exist.
 
 Everything these days feels worse, and it's extremely frustrating that I got
 this big honking machine fairly recently, and it already feels old and not fun
-to use.
+to use. This was a big expense! I justified it because programming is my
+livelyhood.
 
 So there was my reason to try Linux. I had a sneaking suspicion that running
 Linux on the same hardware would easily outperform OS X. Granted, I do believe
-that Linux tends to be a bit more 'maintenence' heavy, but if it runs fast,
+that Linux tends to be a bit more 'maintenance' heavy, but if it runs fast,
 I consider it a win.
 
 But where to start? I didn't want to lose my main development machine, so
 instead I used my 4-year old Air.
 
-Choosing a linux distribution
+Choosing a Linux distribution
 -----------------------------
 
 The first choice for Linux distributions these days is always [Ubuntu][1].
@@ -93,7 +98,7 @@ It seemed like a good idea to pick something else, but I had no idea where to
 start looking. The cool kids always seem to go for [Arch Linux][2] these days,
 and I also considered installing [Debian][3]. All seem to have their pros and
 cons, and it was hard to make a good choice. I even resorted to googling "how
-to pick a linux distro" only to be none the wiser.
+to pick a Linux distro" only to be none the wiser.
 
 In the end I decided to just play it safe. I've been using Debian-based
 distributions for a long time, so since I'm already making all these changes,
@@ -174,13 +179,13 @@ Dropbox has always had great Linux support. Just find it in the
 
 ### 1Password
 
-This is where things get dicey. There's currently no linux version for the
+This is where things get dicey. There's currently no Linux version for the
 popular password management application [1Password][7].
 
 The options appear to be:
 
 1. Use 1Password for windows inside [Wine][8].
-2. Use the read-only '1password anywhere' application inside the dropbox
+2. Use the read-only '1password anywhere' application inside the Dropbox
    website.
 
 <img src="/resources/images/posts/switchingtolinux/1password.png" title="1Password for Windows for Linux"  style="max-width: 100%"/>
@@ -194,7 +199,7 @@ in the day.
 
 ### Chat
 
-I use facebook chat, gtalk, irc and slack for chat. The default chat client
+I use Facebook chat, Gtalk, irc and Slack for chat. The default chat client
 for Ubuntu is Empathy, and is supposed to support all of these out of the box.
 
 Unfortunately setting up irc (after installing `account-plugin-irc`) also
@@ -219,7 +224,7 @@ it doesn't seem like there's something on the horizon either.
 
 On OS X we have iCal and [BusyCal][13], which both are best of breed
 applications, supporting open protocols. On windows the ultimate client for me
-is [emClient][14]. It seems that the Linux ecosystem has failed to deliver a
+is [eM Client][14]. It seems that the Linux ecosystem has failed to deliver a
 great calendaring or 'outlook' alternative, and defers to the web for this.
 
 
@@ -240,7 +245,7 @@ different table because my battery was dead again, it was the final drop. I
 had to get a new machine because I'm starting to look a bit unprofessional.
 
 However, the lesson I learned so far was that despite the issues I had ran
-into so far, none of them were dealbreakers. Linux on dying laptop was a less
+into so far, none of them were deal-breakers. Linux on dying laptop was a less
 frustrating experience than OS X on a 1-year old overpowered iMac.
 
 So I went out to look for a new laptop with great Linux support.
@@ -250,10 +255,10 @@ XPS 13
 ------
 
 I'd write down the pros and cons for the various models I've looked at, but
-frankly the only ultra-portable laptop with great linux support I ran into
+frankly the only ultra-portable laptop with great Linux support I ran into
 appeared to be the Dell XPS 13.
 
-Dell sells a ['Developer edition'][16] that even comes with Ubuntu preinstalled.
+Dell sells a ['Developer edition'][16] that even comes with Ubuntu pre-installed.
 That's not just a positive sign that it works, it tells me it's 'official
 support', which generally is a hard to find for Linux systems. Dell shamelessly
 describes the XPS 13 as a Macbook Air replacement, and that happened to be
@@ -298,7 +303,7 @@ improve support. Today it seems that most of those issues are resolved, and all
 of Dell's patches are integrated into the Linux kernel.
 
 Having USB Type-C would have been cool, but the difference between an Intel
-5th gen and 6th gen chip is frankly completely unclear to me. Realisticly I
+5th gen and 6th gen chip is frankly completely unclear to me. Realistically I
 doubt I would be able to notice the difference.
 
 The model I got has a 256GB SSD harddrive and 8GB of memory. Had I been buying
@@ -336,12 +341,12 @@ Switching to KDE
 
 In the meantime I had seen some screenshots from KDE Plasma, and to my
 surprise it was quite gorgeous. I always remembered KDE as being the
-slightly more ugly, but more flexibilitilty-offering option between
+slightly more ugly, but more flexibility-offering option between
 KDE and Gnome, but a lot has changed.
 
 <img src="/resources/images/posts/switchingtolinux/plasma.png" alt="KDE Plasma" style="max-width: 100%" />
 
-So instead of intalling Ubuntu as soon as I got the laptop in the mail, I opted
+So instead of installing Ubuntu as soon as I got the laptop in the mail, I opted
 for Kubuntu instead.
 
 As it turns out, my timing was perfect because this was days after the 15.10
@@ -368,7 +373,7 @@ KUbuntu, Dell, KDE or Linux, but really that's not that relevant.
    shortcut disables visual effects completely and solves all of these issues.
 2. HiDPI, while it works well for KDE applications, Java and Wine and Chromium are
    all super tiny and almost unusable. I'm mostly a Firefox user anyway, but if
-   you want Chrome on linux, don't get the HiDPI or switch to a lower resolution, or
+   you want Chrome on Linux, don't get the HiDPI or switch to a lower resolution, or
    wait till Chrome properly supports it.
 3. 1Password via Wine works but it's not great. The HiDPI just made the experience
    a lot worse. I'm in the market for a new password manager with great browser
