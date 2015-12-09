@@ -1,6 +1,6 @@
 ---
-date: 2015-11-28 18:32:23 -0500
-layout: post-no-comments
+date: 2015-12-09 16:18:23 -0500
+layout: post
 title: "Switching to Linux"
 tags:
     - linux
