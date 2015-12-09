@@ -60,21 +60,24 @@ Tiger. Starting applications is terribly slow, starting a new terminal session
 takes forever, after start-up it takes up to 15 minutes for the machine to
 feel somewhat smoothly. The effect on my much newer iMac is much stronger
 than my compartively underpowered Macbook air. The prime difference is that
-the latter has an SSD. On the Big Mac reboots, force quit is frequent enough
-to be anger inducing.
+the latter has an SSD. On the Big Mac 'force quit' and reboots are both
+frequent enough to be anger inducing. And yes I did do a a full reinstall!
 
 It really seems that the last well-performing OS Apple has created is Snow
 Leopard, and I now also see that as the time they absolutely peaked. To say
 that this is planned obsolescence is giving them too much credit, as it feels
 more like it stems from a lack of planning. Performance optimization of new
-software ends when it works smoothly on new hardware.
+software seems to end when it works smoothly on 'current' hardware, which
+means that it doesn't take long for hardware to get branded 'old'.
 
 Everything these days feels worse, and it's extremely frustrating that I got
 this big honking machine fairly recently, and it already feels old and not fun
 to use.
 
 So there was my reason to try Linux. I had a sneaking suspicion that running
-Linux on the same hardware would easily outperform OS X.
+Linux on the same hardware would easily outperform OS X. Granted, I do believe
+that Linux tends to be a bit more 'maintenence' heavy, but if it runs fast,
+I consider it a win.
 
 But where to start? I didn't want to lose my main development machine, so
 instead I used my 4-year old Air.
@@ -101,7 +104,6 @@ shallow in that regard. That leaves Ubuntu and [Linux Mint][4]. I remembered
 then that Mint had issues in the past upgrading from one major version to
 another without reinstalling, so I ended back at Ubuntu. The safest choice.
 Perhaps at some point in the future I'll be a bit more adventurous again.
-For now, I'll just disable the spyware after install.
 
 
 Installing Ubuntu
@@ -190,61 +192,6 @@ I was surprised to learn how easy and fast Wine was. Very different from back
 in the day.
 
 
-### Slack
-
-We use [Slack][9]. A lot! I use it for 3 separate teams. While Slack runs just
-fine in a webbrowser, I like having a separate app icon and Window. I don't
-really enjoy 'long running applications' in browsers. I like my Thunderbird as
-well, and browser tabs tend to get closed and reopened a lot for me, which is
-not ideal when somebody is trying to get a hold of you.
-
-> Hey Slack! How about supporting Firefox's Web application spec, which is
-> infinitely more awesome and works on FirefoxOS and any OS?
->
-> Some more info on that feature via [davidwalsh.name][11].
-
-The official Slack answer is to open the web interface in chrome, and then
-click "Create Application Shortcut". While this feature creates a really
-pretty slack desktop icon, it oddly enough uses an ugly icon for the launch
-bar. It also doesn't allow signing into multiple teams, which really sucks!
-
-Fortunately, slack has an irc and an xmpp client. Which brings me to the
-next topic.
-
-
-### Online accounts
-
-Similar to OS X, Ubuntu now has an "accounts" panel, that allows you to set
-up things like Facebook, Gtalk, Contact sync, calendar sync, etc.
-
-I've ran into a slew of issues with this system, which lead me to wonder if
-this was ever tested before release. It was very sloppy... great idea, very
-poor execution.
-
-<img src="/resources/images/posts/switchingtolinux/accounts.png" title="Ubuntu's broken online accounts"  style="max-width: 100%"/>
-
-I first ran into this feature, because I wanted to open the "Contacts" app,
-which gives the option to store contacts locally, or in an online account.
-
-The 'Online account' button didn't work at all, with no feedback what so ever.
-Doing a bit of research (and curious how it was supposed to work), I found out
-that it first requires a manual install of a package that wasn't installed by
-default:
-
-    sudo apt-get install gnome-online-accounts
-
-After that, I find that the only option given to sync accounts is Google. I
-would have expected support for open protocols such as CardDAV by now, but
-that doesn't appear to be the case.
-
-After that, I find out that the Contacts application uses the same data-store
-as [Evolution][11], so I install that and set it up there. After a bit of a
-fight with the interface, I did manage to set up CardDAV sync with the
-Contacts application.
-
-The next surprise: thunderbird, the default mail client for Ubuntu, does not
-integrate with this. The main place I need contacts ignores it.
-
 ### Chat
 
 I use facebook chat, gtalk, irc and slack for chat. The default chat client
@@ -253,22 +200,15 @@ for Ubuntu is Empathy, and is supposed to support all of these out of the box.
 Unfortunately setting up irc (after installing `account-plugin-irc`) also
 fails, and I'm left with a broken interface.
 
-So empathy also gets removed, and I'm installing [pidgin][12] instead.
-Pidgin feels like a much more mature and stable chat client, and will allow
-me to connect to Slack, irc, gtalk and facebook chat. Another great benefit
-is that it doesn't use gnome-online-accounts.
+So I remove empathy. I also tried [pidgin][12] as an alternative, but after
+having tried that for a bit, I've now pretty much landed on using web
+applications and pinned tabs for all of these.
 
-<img src="/resources/images/posts/switchingtolinux/pidgin.png" title="Pidgin ftw"  style="max-width: 100%"/>
-
-
-This combined chat experience definitely feels like an upgrade to what I had
-going on in OS X, which was pretty much a different application for every
-protocol.
 
 ### No great calendar app
 
-Another ajor problem is that there's just not a great calendar application
-for Linux. I sync all my calendars via CalDAV, and the main two applications
+Another major problem is that there's just not a great calendar application
+for Ubuntu. I sync all my calendars via CalDAV, and the main two applications
 that support CalDAV are Evolution and Thunderbird (via the Lightning add-on).
 
 The major problem that both these applications have, is that neither support
@@ -379,11 +319,11 @@ a reason to prefer touch over clicking.
 
 ### The cons
 
-The battery lives for about 4 hours. This is a far cry from the advertised 11,
+The battery lives for about 5 hours. This is a far cry from the advertised 11,
 but I'm certain this is 100% because it's Linux. A lot of people seem to say
-that Linux simply 'does more' which is hard to optimize away.
+that Linux simply 'does more all the time' which is hard to optimize away.
 
-I can deal with 4 hours battery. If you need more, you can opt to choose the
+I can deal with 5 hours battery. If you need more, you can opt to choose the
 non-HiDPI - non-touch screen instead. It's 1920x1080 pixels instead which is
 still a big step up from the Air's 1440x900.
 
@@ -412,7 +352,72 @@ which drivers to use everything has been running smooth ever since.
 
 I'd pick KDE over Unity every day now. It really feels like Ubuntu has dropped
 the ball a bit with Unity. KDE is a much more polished, bug-free experience and
-looks more like a professional tool rather than a toy.
+looks more like a professional tool rather than a toy. KDE is awesome now and
+quote a looker!
+
+Several weeks later with KDE and the XPS 13
+-------------------------------------------
+
+So after having tried KDE for several weeks now, I'm still pretty happy, but also
+have come across a few problems.
+
+It's unclear to me who is responsible for these issues. Some of these might be
+KUbuntu, Dell, KDE or Linux, but really that's not that relevant.
+
+1. Screen tearing happens, and it's annoying. I found that the `SHIFT`-`ALT`-`F12`
+   shortcut disables visual effects completely and solves all of these issues.
+2. HiDPI, while it works well for KDE applications, Java and Wine and Chromium are
+   all super tiny and almost unusable. I'm mostly a Firefox user anyway, but if
+   you want Chrome on linux, don't get the HiDPI or switch to a lower resolution, or
+   wait till Chrome properly supports it.
+3. 1Password via Wine works but it's not great. The HiDPI just made the experience
+   a lot worse. I'm in the market for a new password manager with great browser
+   integration and works with self-hosting.
+4. I'm running into CalDAV sync issues with Kontact. It's simply not reliable yet,
+   but this might be something I can actually try to fix myself. We'll see!
+5. The KDE 'Updates' widget always tells me I need to update, even if I don't!
+6. I found a reason to use the touch screen. Reading in bed! Unfortunately it's
+   unusable, as a swipe in a browser does not scroll the screen, it acts as a
+   "mouse click and hold" which is interpreted by the browser and OS as making
+   a text-selection.
+
+I've also since discovered [Back in Time][17] which is a great TimeMachine-like
+backup application system.  I'm only syncing my 'home' and it works well.
+rsync+ssh seems much, much faster than apple's sparse HFS+ images over AFP.
+"Back in time" has both a QT (KDE) and GTK (Gnome/Unity) frontend.
+
+I'm now kind of excited to the point where I can financially justify replacing
+my desktop machine, as I will be able to do a custom build which is something I
+haven't done in years.
+
+I'm also pumped to sell the Apple TV and get a Raspberry Pi with Kodi.
+
+
+Conclusion
+----------
+
+If you are the type of developer that doesn't shy away from a bit of
+tinkering, and you are as fed-up as I was with Apple, I can so far recommend
+the switch I made.
+
+I would definitely say that it's not particularly easy though. Tinkering is
+required! You're not up and running within a day.
+
+One thing that I also noticed, and I feel is is true for switching to any
+new operating system, is that if you switch from system A to system B, the first
+things you will run into are all the things that system A did great, but
+system B does not.
+
+It takes a lot longer to start seeing all the things that system B has over
+system A, because it takes time to discover those benefits and create
+new habits.
+
+This is perhaps true for Linux even more than other operating systems. And
+even though I feel like I'm not quite there yet, I feel that in the end I will
+end up running operating systems and hardware that are incredibly customizable,
+don't lock you into a proprietary tightly controlled eco-system and you'll
+feel you support the advancement of freedom of knowledge instead of helping
+restricting it.
 
 
 [1]: http://www.ubuntu.com/
@@ -431,3 +436,4 @@ looks more like a professional tool rather than a toy.
 [14]: http://www.emclient.com/
 [15]: https://developer.mozilla.org/en-US/Apps/Quickstart/Build/Intro_to_open_web_apps
 [16]: http://www.dell.com/ca/p/xps-13-9343-laptop-ubuntu/pd
+[17]: http://backintime.le-web.org/ "Back in time"
