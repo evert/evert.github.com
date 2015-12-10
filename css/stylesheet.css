@@ -14,10 +14,15 @@ body {
 
 }
 
+ul,ol,p {
+    line-height: 1.75;    
+}
+
 h1 {
     text-align: left;
     font-size: 1.9em;
 }
+
 h2 {
     text-align: left;
     font-size: 1.7em;
