@@ -13,11 +13,16 @@ body {
     height: 100%;
 }
 
+ul,ol,p {
+    line-height: 1.75;    
+}
+
 h1 {
     text-align: left;
     font-size: 1.9em;
     text-shadow: 1px 1px 2px #333;
 }
+
 h2 {
     text-align: left;
     font-size: 1.7em;
