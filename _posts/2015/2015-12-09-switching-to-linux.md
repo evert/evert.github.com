@@ -372,9 +372,10 @@ KUbuntu, Dell, KDE or Linux, but really that's not that relevant.
 1. Screen tearing happens, and it's annoying. I found that the `SHIFT`-`ALT`-`F12`
    shortcut disables visual effects completely and solves all of these issues.
 2. HiDPI, while it works well for KDE applications, Java and Wine and Chromium are
-   all super tiny and almost unusable. I'm mostly a Firefox user anyway, but if
+   all super tiny and almost unusable. I'm mostly a Firefox user anyway, --but if
    you want Chrome on Linux, don't get the HiDPI or switch to a lower resolution, or
-   wait till Chrome properly supports it.
+   wait till Chrome properly supports it--. **Edit: it's possible to force Chromium
+   to work correctly with a HiDPI screen. See the [arch wiki][18] for more info.**
 3. 1Password via Wine works but it's not great. The HiDPI just made the experience
    a lot worse. I'm in the market for a new password manager with great browser
    integration and works with self-hosting.
@@ -442,3 +443,4 @@ restricting it.
 [15]: https://developer.mozilla.org/en-US/Apps/Quickstart/Build/Intro_to_open_web_apps
 [16]: http://www.dell.com/ca/p/xps-13-9343-laptop-ubuntu/pd
 [17]: http://backintime.le-web.org/ "Back in time"
+[18]: https://wiki.archlinux.org/index.php/HiDPI#Chromium_.2F_Google_Chrome "HiDPI google chrome"
