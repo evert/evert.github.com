@@ -13,7 +13,7 @@ available over unencrypted HTTP.
 
 Even though it's just a simple blog, it would be nicer to be able to just use
 the latest tech and best practices. It is my profession after all, so I want
-tot set an example. But I use [github pages][1] for my blog
+to set an example. But I use [github pages][1] for my blog
 ([full source here][2]) and I don't really feel like running my own webserver.
 
 Recently I found out though that [CloudFlare][3] offers a free service that
