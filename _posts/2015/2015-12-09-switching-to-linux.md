@@ -335,6 +335,14 @@ still a big step up from the Air's 1440x900.
 Another drawback is that I thought that scrolling was not nearly as smooth
 as the Mac. Especially scrolling long-distances is frustrating.
 
+And lastly, the number one design flaw with this machine is the placement of
+the camera. Instead of being at the top as most laptops have, it's actually
+placed on the bottom left of the screen.
+
+This makes skyping extremely unflattering, an effect that's increased even
+more if you like skyping from the couch. This is such a deal-breaker for skype
+that I'll probably just start using my phone for this instead.
+
 
 Switching to KDE
 ----------------
