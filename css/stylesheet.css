@@ -102,7 +102,8 @@ footer a:hover {
 pre {
     border-radius: 3px;
     padding: 8px 8px 0 8px;
-    background: #e1e1e1;
+    background: #49483e;
+    line-height: 1;
     color: #000;
     overflow-x: auto;
     font-family: "Monaco", monospace;
