@@ -29,8 +29,8 @@ My requirements:
    existing domains.
 2. Support `ALIAS` records.
 3. Support email forwarding.
-4. Support simple URL redirection for some parked domains on a subdomain-level
-   sometimes this is called a `URL` record.
+4. Support simple URL redirection for some parked domains on a subdomain-level.
+   Sometimes this is called a `URL` record.
 
 It turns out that Route 53 does not do email forwarding, and URL redirection
 seems clumsy at best (requires an S3 bucket, nothing fancy).
@@ -42,10 +42,10 @@ this, I have the following fictional setup and calculate the total for it:
 
 1. 10 Domains total
 2. 5 are `.com` domains, 2 are `.io` domains.
-2. 3 domains registered on a different registrar, but I want to use the service
-   for their nameservers only.
-3. 3 of these domains have 1 email address forwarded.
-4. 3 of these domains simply redirect to a different URL.
+3. I have 3 domains that I use an different registrar for, but I want to use
+   their application to manage the zone. Having everything in one place is nice.
+4. 3 of these domains have 1 email address forwarded.
+5. 3 of these domains simply redirect to a different URL.
 
 
 Namecheap
@@ -80,7 +80,7 @@ Conclusion
 Just based on this, namecheap wins by a large margin.
 
 Did I miss anything? Have others to add? Comment here, or better yet:
-[edit this page to make additions or corrections].
+[edit this page to make additions or corrections][6].
 
 
 [1]: https://www.hover.com/
