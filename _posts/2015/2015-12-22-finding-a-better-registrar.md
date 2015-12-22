@@ -61,7 +61,7 @@ Namecheap
 
 Total : $ 119.21
 
-DNSimple 
+DNSimple
 --------
 
 | Line item                     | Price per year |
@@ -88,4 +88,4 @@ Did I miss anything? Have others to add? Comment here, or better yet:
 [3]: https://aws.amazon.com/route53/
 [4]: https://www.namecheap.com/
 [5]: https://dnsimple.com/
-[6]: /edit 
+[6]: https://github.com/evert/evert.github.com/blob/master/_posts/2015/2015-12-22-finding-a-better-registrar.md
