@@ -141,11 +141,15 @@ This automatically signals the parser that you feed may have more than one
 
 This system has some limitations, as it doesn't for example work with XML
 attributes, but for those cases you can still fall back on the other facilities
-to get access to those.
+to get access to those. If you paid attention so far, then yes this implies
+that the earlier example was not complete: the `<link>` elements would not have
+correctly been parsed.
 
 For a full demonstration of this, we're releasing a [`sabre/xml-atom`][2]
 package that's basically a full Atom parser. This acts both as a real package
 for parsing atom, as well as a demonstration of how you would go about this.
+This package *does* parse everything correctly, and thankfully it's fairly
+simple.
 
 Anyway, I'm pretty excited about this project. It's the #1 hit on Packagist
 when searching for 'XML', and install rates have increased quite a bit. I would
