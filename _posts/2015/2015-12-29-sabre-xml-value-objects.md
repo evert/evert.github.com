@@ -145,7 +145,7 @@ to get access to those. If you paid attention so far, then yes this implies
 that the earlier example was not complete: the `<link>` elements would not have
 correctly been parsed.
 
-For a full demonstration of this, we're releasing a [`sabre/xml-atom`][2]
+For a full demonstration of this, we're releasing a [`sabre/xml-atom`][3]
 package that's basically a full Atom parser. This acts both as a real package
 for parsing atom, as well as a demonstration of how you would go about this.
 This package *does* parse everything correctly, and thankfully it's fairly
