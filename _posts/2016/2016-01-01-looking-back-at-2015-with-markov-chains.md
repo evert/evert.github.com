@@ -405,7 +405,7 @@ Confused?
 
 The above blog post was automatically generated using a [Markov chain][7].
 This concept allows you to generate random english text using a very simple
-statistical analysis. As it's input, I simply used all my blog posts from
+statistical analysis. For its input, I simply used all my blog posts from
 2015.
 
 I ran the script a few times until I got a reasonable one, and then I only
