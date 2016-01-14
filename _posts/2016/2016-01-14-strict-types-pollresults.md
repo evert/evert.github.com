@@ -75,7 +75,7 @@ Comments
 <blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/evertp">@evertp</a> I&#39;ll just leave this here ... <a href="https://t.co/Trq5eYDnOm">https://t.co/Trq5eYDnOm</a> <a href="https://twitter.com/hashtag/php?src=hash">#php</a> <a href="https://twitter.com/hashtag/yolo?src=hash">#yolo</a></p>&mdash; Joe Watkins (@krakjoe) <a href="https://twitter.com/krakjoe/status/687539251014189057">January 14, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-[On reddit, @OndrejMirtes mentions][4]:
+[On reddit, OndrejMirtes mentions][4]:
 
 > Yes! We started adding that to the files in our codebase on the day we deployed PHP 7 to our servers and it already uncovered a lot of bugs and inconsistencies, most often passing different parameters than was intended to invoked functions and methods.
 
