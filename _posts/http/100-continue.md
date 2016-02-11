@@ -1,0 +1,45 @@
+---
+date: 2016-02-11 23:58:27 -0500
+layout: http-series 
+title: "100 Continue"
+tags:
+   - http
+   - http-series
+---
+
+[100 Continue][1] is a status-code you might not deal with very often.
+Generally, as a web developer, the `100 Continue` status is sent under
+the hood by your webserver.
+
+
+So what's it for? The best example comes from [RFC 7231][2]. Say, you're
+sending a large object to the server using a `PUT` request, you may
+include a `Expect` header like this:
+
+    PUT /media/file.mp4  HTTP/1.1
+    Host: api.example.org
+    Content-Length: 1073741824
+    Expect: 100-continue
+
+This tells the server that it should respond with a `100 Continue` status code
+if the server accepts the request:
+
+    HTTP/1.1 100 Continue
+
+When the client receives this, it tells the client the server will accept the
+request, and it may start sending the request body.
+
+The big benefit here is that if there's a problem with the request, a server
+can immediately respond with an error before the client starts sending the
+request body.
+
+The most common use-case is that a server might first require authentication
+using `401 Unauthorized`.
+
+Unfortunately, it's not always possible to hook into this functionality. With
+PHP for example the average PHP script only starts running after the entire
+request body has already arrived. This means we can't tell clients early
+that it's not worth sending the entire request over.
+
+[1]: https://tools.ietf.org/html/rfc7231#section-6.2.1
+[2]: https://tools.ietf.org/html/rfc7231#section-5.1.1 
