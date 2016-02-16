@@ -1,7 +1,5 @@
 highlighter: rouge
-# safe: true
+safe: true
 lsi: false
 permalink: "/:title"
 markdown: kramdown
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables"]
