@@ -37,7 +37,7 @@ interview processes to ask for my profile. I feel that "I don't have one"
 because of "principles" is never a great opener when you just made a new
 connection with someone.
 
-Here's to the next 10 years!
+Here's to the next 10!
 
 [1]: https://medium.com/@danrschlosser/linkedin-dark-patterns-3ae726fe1462
 [2]: http://www.fastcodesign.com/3051906/fast-feed/after-lawsuit-settlement-linkedins-dishonest-design-is-now-a-13-million-problem
