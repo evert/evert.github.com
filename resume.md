@@ -150,7 +150,7 @@ Skills
 
 ### Management
 
-I’ve built and lead several development teams, implemented development
+I’ve built and led several development teams, implemented development
 processes (where appropriate and keeps people happy). Teams consisting of
 people with various skills such as browser front-end developer, designers,
 Actionscript developers, DBA’s, Linux system administrators and
