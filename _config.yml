@@ -1,7 +1,7 @@
 highlighter: rouge
 safe: true
 lsi: false
-permalink: "/:title"
+permalink: "/:title/"
 
 kramdown:
     input: GFM
