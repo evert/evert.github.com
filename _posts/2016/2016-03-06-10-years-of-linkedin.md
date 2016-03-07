@@ -22,8 +22,8 @@ around it.
 LinkedIn is riddled with so-called [Dark Patterns][1] which basically means it's
 continuously trying to trick me into doing things I don't actually want, such
 as uploading my address book, or spamming my existing contacts (whether they
-are or are not already on linkedin). These practices were recently actually
-[deemed illigal by a californa judge][2]. Almost every action I do presents me
+are or are not already on LinkedIn). These practices were recently actually
+[deemed illigal by a Californa judge][2]. Almost every action I do presents me
 with a screen that I'll immediately want to close. That is: if I'm focused,
 because sometimes I'm not, and I end up spamming people again. LinkedIn is a giant
 opt-in spam engine masquerading as a directory and address book.

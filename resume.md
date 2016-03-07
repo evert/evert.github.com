@@ -2,6 +2,7 @@
 layout: default
 title: Evert Pot - Resume
 description: I started freelancing again, and I'm looking for work as a Web Developer
+permalink: "/resume.html"
 ---
 
 Evert Pot
