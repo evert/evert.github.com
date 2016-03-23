@@ -11,7 +11,7 @@ tags:
 
 I just came across an [interesting post][1] via [Hacker News][2], from an
 author of several hundred NPM packages (some of which quite popular) that
-just removed all this packages from NPM.
+just removed all of his packages from NPM.
 
 Tons of other projects around the world depending on his packages broke as
 a result of this. The NPM project responded by un-un-publishing the packages:
