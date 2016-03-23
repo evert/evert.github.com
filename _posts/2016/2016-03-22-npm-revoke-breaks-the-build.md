@@ -21,10 +21,11 @@ a result of this. The NPM project responded by un-un-publishing the packages:
 
 While you can say that the original author was not very nice to do this as
 a protest, and without warning, I think it highlights a larger underlying
-problems that exist not just in the NPM ecosystem:
+problems, in not just NPM but also other packaging systems:
 
-* External authors of packages you depend on must be trustworthy.
-* Package repositories such as NPM, Packagist, etc, must be trusted.
+* We're currently relying on the trustworthiness and ethics of many package
+  authors.
+* Package repositories are a critical piece of our infrastructure.
 
 Both are single points of failure for a lot of projects, except the few
 that actually commit their `node_modules`, `vendor`, etc directories to
