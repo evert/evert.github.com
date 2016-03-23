@@ -35,13 +35,13 @@ Another interesting thing is that package authors can not just un-publish
 their packages, they can even modify already-released packages.
 
 I think this is a very weak link in our infrastructure. What we need is a
-packagisting system that is:
+packaging system that is:
 
 * Immutable / Append-only
 * Decentralized
-* Lots of redundancy.
+* Lots of redundancy, because anyone can run a mirror.
 
-Meaning that once you publish a package, it can never be changed or
+Append-only means that once you publish a package, it can never be changed or
 unpublished. It can't be censored or taken down. This puts the control
 back in the hands of the user, and we're no longer at the mercy of package
 developers or centralized repositories.
