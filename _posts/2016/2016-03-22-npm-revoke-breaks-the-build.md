@@ -39,7 +39,7 @@ packaging system that is:
 
 * Immutable / Append-only
 * Decentralized
-* Distributedy, anyone should be able to run a mirror.
+* Distributed, anyone should be able to run a mirror.
 
 Append-only means that once you publish a package, it can never be changed or
 unpublished. It can't be censored or taken down. This puts the control
