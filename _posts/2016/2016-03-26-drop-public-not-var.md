@@ -1,5 +1,5 @@
 ---
-date: 2016-03-26 15:32:16 -0400
+date: 2016-03-26 15:58:16 -0400
 layout: post
 title: "Drop 'public' not 'var'!"
 tags:
@@ -43,6 +43,14 @@ class ImConformist {
 
     }
 
+    public function getFoo() {
+
+    }
+
+    public function setFoo(Foo $foo) {
+
+    }
+
     abstract public function implementMe();
 
     final public function dontTouchMe() {
@@ -54,8 +62,6 @@ class ImConformist {
     }
 
 }
-
-?>
 ```
 
 Now, I write it like this:
@@ -73,6 +79,14 @@ class HateGenerator {
 
     }
 
+    function getFoo() {
+
+    }
+
+    function setFoo(Foo $foo) {
+
+    }
+
     abstract function implementMe();
 
     final function dontTouchMe() {
@@ -84,8 +98,6 @@ class HateGenerator {
     }
 
 }
-
-?>
 ```
 
 This change has generated integesting responses. A lot of people think it's
@@ -110,8 +122,8 @@ That's my main argument for dropping the `public` keyword where possible. I
 believe that the people who are against it, generally fall in three camps:
 
 
-1. Everyone doing the same thing is good
-----------------------------------------
+#1: Everyone doing the same thing is good
+-----------------------------------------
 
 This is the conformist argument, and the best one. There is definitely a case
 to be made that if most PHP code-based look similar, it is easier for new
@@ -126,8 +138,8 @@ way, we never progress. Being consistent is good, but it's also good to be
 open to change, especially if that change has real benefits.
 
 
-2. It's ugly!
--------------
+#2: It's ugly!
+--------------
 
 The aesthetics argument! It's not an invalid one. I care quite a bit about
 how my source 'looks'. I'm an "API over Implemenation" guy, and I think the
@@ -143,8 +155,8 @@ Whenever I look at sources that use the `public` keyword, the feelings it's
 giving me is "dense", "corporate" and "java-esk".
 
  
-3. The `public` keyword is useful to convey intent
---------------------------------------------------
+#3: The `public` keyword is useful to convey intent
+---------------------------------------------------
 
 On the surface this argument sounds reasonable, but ultimately I think people
 who hold this opinion are suffering a form of denial. A new idea was
@@ -162,20 +174,44 @@ Furthermore, did you ever wish you could `public` in front of your `class`,
 `interface` or `namespace`, or your regular non-class functions? What about
 `public const`? Be honest! Have you really ever missed `public` there? Really?
 
-`public` pretty much implied when defining those symbols. I think private
-classes would be a great feature for PHP, but if we get those, I would not jump
-on the opportinity to add `public` to every class and interface that is not
-`private`.
+Hey I do think it would be great to have private classes and private namespace
+functions, but I definitely haven't "missed" being able to tack on the
+`public` symbol to a constant. `public` is already implied.
+
+
+So given those arguments, why does everyone add `public` everywhere?
+--------------------------------------------------------------------
+
+This is a theory: Back in the day when we all made the transition from PHP 4
+to 5, everybody was just really really excited.
+
+PHP 5 introduced a new object model that was just so much better than the PHP
+4 one. The visibility keywords are just a small aspect of that. The game
+changer was in how references are dealt with!
+
+The object model was the number 1 selling point for PHP 5. There was some
+criticism that PHP became too Java-like, but the vast majority of the community
+was thrilled.
+
+However, it took a bit before people could drop PHP 4 support. Only around PHP
+5.2, the 5.x series became really good and people started migrating en-masse.
+
+Using `public`, `protected` and `private` was, aside from the feature, almost
+worn like a badge of honor. This is PHP 5 code and we love PHP 5. It says loud
+and clear that PHP 4 is unsupported and behind us.
+
+But since then, the PHP 5 object model became the new normal, and we've never
+gone back and challenge the use of `public`.
 
 
 But then, what about `var`?
 ---------------------------
 
-I realized that the `public` keyword can be removed from every function and
+The `public` keyword can be removed from every function and
 every property declaration, with one exception: A non-static, non-final public
 class property:
 
-```
+```php
 <?php
 
 class Foo {
@@ -193,7 +229,7 @@ It's the last place you'll find `public` in my source. So I've been toying
 with the idea of ditching `public` there too and just start using `var`:
 
  
-```
+```php
 <?php
 
 class Foo {
@@ -202,23 +238,15 @@ class Foo {
 
 }
 ```
- 
-The argument there is not nearly as strong as dropping `public` from function
-declarations. Two shitty arguments I see are:
 
-* It's slightly shorter (3 instead of 5 characters, who gives a damn?).
-* It feels nice to be able to ditch `public` universally. (pretty much a
-  non-argument).
-
-Some argument that are slightly better are:
+The arguments for this are a bit weaker, but I think they're still valid:
 
 1. If public is not anywhere else, it would be nice if you also don't need it
-   for properties. If ditching `public` becomes the statis-quo, then needing
+   for properties. If ditching `public` becomes the status-quo, then needing
    `public` for properties might actually become confusing.
 2. I think `var` is more useful to convey intent than `public`. It's a
    "variable on a class" not "a public" in the same way that the `function`
-   keyword is useful. I think this is great for newcomes to the language as
-   well, especially if they are coming from Javascript.
+   keyword is useful. I think this is better for newcomers to the language.
 
 
 However, I haven't made this change from `public` to `var` yet, given the 
@@ -231,5 +259,6 @@ removes it for you. If you are able to recognize your biases and join me,
 I guarantee that it won't take you long to be happy you made this change! 
 
 [1]: https://wiki.php.net/rfc/var_deprecation
-[2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
+[2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md "PSR-2"
 [3]: https://github.com/fruux/sabre-cs/blob/master/lib/PublicVisibility.php
+[4]: http://cs.sensiolabs.org/ "PHP CS Fixer"
