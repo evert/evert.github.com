@@ -100,7 +100,7 @@ class HateGenerator {
 }
 ```
 
-This change has generated integesting responses. A lot of people think it's
+This change has generated interesting responses. A lot of people think it's
 ugly. Some think I should just follow [PSR-2][2]. I also heard from a whole
 bunch that weren't aware that ommitting `public` actually has no effect on
 your code!
