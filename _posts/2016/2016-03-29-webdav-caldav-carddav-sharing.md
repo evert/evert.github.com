@@ -82,7 +82,7 @@ turn them into official rfc's soon, as soon as the remaining issues are
 settled and put into prose.
 
 The plan is to start doing the first interop tests next month during
-CalConnect 33 in Hong Kong.
+CalConnect 36 in Hong Kong.
 
 
 A list of features
