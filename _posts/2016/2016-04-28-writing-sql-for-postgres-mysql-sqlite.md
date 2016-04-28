@@ -349,7 +349,7 @@ Conclusions
 [6]: http://propelorm.org/ "Propel ORM"
 [7]: http://ca2.php.net/manual/en/book.pdo.php "PHP PDO documentation"
 [8]: https://en.wikipedia.org/wiki/SQL-92 "SQL-92"
-[9]:
+[9]:  https://github.com/evert/evert.github.com/blob/master/_posts/2016/2016-04-28-writing-sql-for-postgres-mysql-sqlite.md
 [10]: https://github.com/fruux/sabre-dav/tree/master/examples/sql "sabre/dav sql samples"
 [11]: http://www.postgresql.org/docs/9.5/static/largeobjects.html "PostgreSQL large objects"
 [12]: http://www.postgresql.org/docs/9.5/static/datatype-binary.html "PostgreSQL byeta type"
