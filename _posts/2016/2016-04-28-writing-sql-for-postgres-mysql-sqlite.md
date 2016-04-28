@@ -1,5 +1,5 @@
 ---
-date: 2016-04-28 15:56:19 +0700 
+date: 2016-04-28 15:56:19 +0700
 layout: post
 title: "Writing SQL that works on PostgreSQL, MySQL and SQLite"
 tags:
@@ -68,23 +68,24 @@ post][9] on github, or leave a comment.
 * If there's no possible way to do things in a generic way, I fall back on
   something like this:
 
-    <?php
+```php
+<?php
 
-    if ($pdo->getAttribute(PDO::ATTR_DRIVER_NAME) === 'pgsql') {
+if ($pdo->getAttribute(PDO::ATTR_DRIVER_NAME) === 'pgsql') {
 
-        $query = "...";
+    $query = "...";
 
-    } else {
+} else {
 
-        $query = "...';
+    $query = "...';
 
-    }
+}
 
-    $stmt = $pdo->prepare($query);
+$stmt = $pdo->prepare($query);
 
 
-    ?>
-
+?>
+```
 
 ### DDL
 
@@ -110,15 +111,21 @@ but I would strongly suggest to avoid that.
 
 This means that this MySQL query:
 
-    SELECT * FROM `foo` WHERE `a` = "b"
+```sql
+SELECT * FROM `foo` WHERE `a` = "b"
+```
 
 is equivalent to this PostgreSQl query:
 
-    SELECT * FROM 'foo' WHERE "a" = 'b'
+```sql
+SELECT * FROM 'foo' WHERE "a" = 'b'
+```
 
 Luckily you can often just write this query, which works for all databases:
 
-    SELECT * FROM foo WHERE a = 'b'
+```sql
+SELECT * FROM foo WHERE a = 'b'
+```
 
 But keep in mind that when you create your tables, using double quotes will
 cause PostgreSQL to retain the upper/lower case characters. If you do not use
@@ -142,21 +149,27 @@ PostgreSQL gained a new feature that allows you to achieve the same effect.
 
 This statement from MySQL or SQLite:
 
-    REPLACE INTO blog (uuid, title) VALUES (:uuid, :title)
+```sql
+REPLACE INTO blog (uuid, title) VALUES (:uuid, :title)
+```
 
 then might become something like this in PostgreSQL:
 
-    INSERT INTO blog (uuid, title) VALUES (:uuid, :title)
-    ON CONFLICT (uuid) DO UPDATE SET title = :title
+```sql
+INSERT INTO blog (uuid, title) VALUES (:uuid, :title)
+ON CONFLICT (uuid) DO UPDATE SET title = :title
+```
 
 So the major difference here is with PostgreSQL we specifically have to tell
 it which key conflict we're handling (`uuid`) and what to do in that case
-(`UPDATE`). 
+(`UPDATE`).
 
 In addition to `REPLACE INTO`, MySQL also has this syntax to do the same thing:
 
-    INSERT INTO blog (uuid, title) VALUES (:uuid, :title)
-    ON DUPLICATE KEY UPDATE title = :title 
+```sql
+INSERT INTO blog (uuid, title) VALUES (:uuid, :title)
+ON DUPLICATE KEY UPDATE title = :title
+```
 
 But as far as I know SQLite does not have a direct equivalent.
 
@@ -178,14 +191,16 @@ differences.
 
 First, if you do a select such as this:
 
-    <?php
+```sql
+<?php
 
-        $stmt = $pdo->prepare('SELECT myblob FROM binaries WHERE id = :id');
-        $stmt->execute(['id' => $id]);
-        
-        echo $stmt->fetchColumn();
+$stmt = $pdo->prepare('SELECT myblob FROM binaries WHERE id = :id');
+$stmt->execute(['id' => $id]);
 
-    ?>
+echo $stmt->fetchColumn();
+
+?>
+```
 
 On MySQL and Sqlite this will just work. The `myblob` field is represented as
 a string.
@@ -193,19 +208,23 @@ a string.
 On PostgreSQL, `byta` is represented as a PHP stream. So you might have to
 rewrite that last statement as:
 
-    <?php
+```php
+<?php
 
-        echo stream_get_contents($stmt->fetchColumn());
+echo stream_get_contents($stmt->fetchColumn());
 
-    ?>
+?>
+```
 
 Or:
 
-    <?php
+```php
+<?php
 
-        stream_copy_to_stream($stmt->fetchColumn(), STDOUT);
+stream_copy_to_stream($stmt->fetchColumn(), STDOUT);
 
-    ?>
+?>
+```
 
 Luckily in sabre/dav we pretty much support streams where we also support
 strings, so we were already agnositic to this, but some unittests had to be
@@ -215,24 +234,28 @@ Inserting `bytea` is also a bit different. I'm not a fan of of using
 [`PDOStatement::bindValue`][13] and [`PDOStatement::bindParam`][14], instead
 I prefer to just send all my bound parameters at once using `execute`:
 
-    <?php
+```php
+<?php
 
-        $stmt = $pdo->prepare('INSERT INTO binaries (myblob) (:myblob)');
-        $stmt->execute([
-            'myblob' => $blob
-        ]);
+$stmt = $pdo->prepare('INSERT INTO binaries (myblob) (:myblob)');
+$stmt->execute([
+    'myblob' => $blob
+]);
 
-    ?>
+?>
+```
 
 This doesn't work in PostgreSQL. Instead you must do:
 
-    <?php
+```php
+<?php
 
-        $stmt = $pdo->prepare('INSERT INTO binaries (myblob) (:myblob)');
-        $stmt->bindParam('myblob', $blob, PDO::PARAM_LOB);
-        $stmt->execute();
+$stmt = $pdo->prepare('INSERT INTO binaries (myblob) (:myblob)');
+$stmt->bindParam('myblob', $blob, PDO::PARAM_LOB);
+$stmt->execute();
 
-    ?>
+?>
+```
 
 Luckily this also works in SQlite and MySQL.
 
@@ -241,17 +264,23 @@ Luckily this also works in SQlite and MySQL.
 
 Standard SQL has a string concatenation operator. It works like this:
 
-    SELECT 'foo' || bar'
-    // Output: foobar
+```sql
+SELECT 'foo' || bar'
+// Output: foobar
+```
 
 This works in PostgreSQL and Sqlite. MySQL has a function for this:
 
-    SELECT CONCAT('foo', 'bar')
+```sql
+SELECT CONCAT('foo', 'bar')
+```
 
 PostgreSQL also has this function, but SQLite does not. You can enable Standard
 SQL concatenation in MySQL by enabling it:
 
-    SET SESSION sql_mode = 'PIPES_AS_CONCAT'
+```sql
+SET SESSION sql_mode = 'PIPES_AS_CONCAT'
+```
 
 I'm not sure why this isn't the default.
 
@@ -261,20 +290,24 @@ I'm not sure why this isn't the default.
 The `PDO` object has a `lastInsertId()` function. For SQLite and MySQL you can
 just call it as such:
 
-    <?php
+```php
+<?php
 
-        $id = $pdo->lastInsertId();
+$id = $pdo->lastInsertId();
 
-    ?>
+?>
+```
 
 However, PostgreSQL requires an explicit sequence identifier. By default this
 follows the format `tablename_idfield_seq`, so we might specifiy as this:
 
-    <?php
+```php
+<?php
 
-        $id = $pdo->lastInsertId('articles_id_seq');
+$id = $pdo->lastInsertId('articles_id_seq');
 
-    ?>
+?>
+```
 
 Luckily the parameter gets ignored by SQLite and MySQL, so we can just specify
 it all the time.
@@ -284,12 +317,14 @@ it all the time.
 
 If you have an `INT` field (or similar) and you access it in this way:
 
-    <?php
+```php
+<?php
 
-        $result = $pdo->query('SELECT id FROM articles');
-        $id = $result->fetchColumn();
+$result = $pdo->query('SELECT id FROM articles');
+$id = $result->fetchColumn();
 
-    ?>
+?>
+```
 
 With PostgreSQL `$id` will actually have the type `INT`. In MySQL and SQlite
 everything is a string though, which is unfortunate.
@@ -317,6 +352,8 @@ abstract PDOTest extends \PHPUnit_Framework_TestCase {
     /** all the unittests go here **/
 
 }
+
+?>
 ```
 
 Then I create one subclass for PostgreSQL, Sqlite and MySQL that each only
@@ -329,7 +366,7 @@ server running, so everything automatically gets checked every time.
 
 If a developer is testing locally, we detect if a database server is running,
 and automatically just skip the tests if this was not the case. In most cases
-this means only the Sqlite tests get hit, which is fine. 
+this means only the Sqlite tests get hit, which is fine.
 
 
 Conclusions
@@ -337,13 +374,13 @@ Conclusions
 
 1. Created a monster.
 2. PostgreSQL is by far the sanest database, and I would recommend everyone to
-  move from MySQL towards it. 
+  move from MySQL towards it.
 
 
 
 [1]: https://www.sqlite.org/
 [2]: https://www.mysql.com/
-[3]: http://www.postgresql.org/ 
+[3]: http://www.postgresql.org/
 [4]: http://sabre.io/dav/ "sabre/dav"
 [5]: http://www.doctrine-project.org/ "Doctrine project"
 [6]: http://propelorm.org/ "Propel ORM"
