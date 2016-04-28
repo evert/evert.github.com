@@ -115,10 +115,10 @@ This means that this MySQL query:
 SELECT * FROM `foo` WHERE `a` = "b"
 ```
 
-is equivalent to this PostgreSQl query:
+is equivalent to this PostgreSQL query:
 
 ```sql
-SELECT * FROM 'foo' WHERE "a" = 'b'
+SELECT * FROM "foo" WHERE "a" = 'b'
 ```
 
 Luckily you can often just write this query, which works for all databases:
@@ -191,7 +191,7 @@ differences.
 
 First, if you do a select such as this:
 
-```sql
+```php
 <?php
 
 $stmt = $pdo->prepare('SELECT myblob FROM binaries WHERE id = :id');
@@ -245,7 +245,13 @@ $stmt->execute([
 ?>
 ```
 
-This doesn't work in PostgreSQL. Instead you must do:
+While that works for PostgreSQL for some strings, it will throw errors
+when you give it data that's invalid in the current character set. It's also
+dangerous, as PostgreSQL might try to transcode the data into a different
+character set.
+
+If you truly need to store binary data (like I do) you must do this:
+
 
 ```php
 <?php
@@ -257,7 +263,7 @@ $stmt->execute();
 ?>
 ```
 
-Luckily this also works in SQlite and MySQL.
+Luckily this also just works in SQlite and MySQL.
 
 
 ### String concatenation
