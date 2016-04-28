@@ -271,7 +271,7 @@ Luckily this also just works in SQlite and MySQL.
 Standard SQL has a string concatenation operator. It works like this:
 
 ```sql
-SELECT 'foo' || bar'
+SELECT 'foo' || 'bar'
 // Output: foobar
 ```
 
