@@ -332,8 +332,9 @@ $id = $result->fetchColumn();
 ?>
 ```
 
-With PostgreSQL `$id` will actually have the type `INT`. In MySQL and SQlite
-everything is a string though, which is unfortunate.
+With PostgreSQL `$id` will actually have the type php type `integer`. If you
+use MySQL or SQlite, everything gets cast to a php `string`, which is
+unfortunate.
 
 The sane thing to do is to cast everything to int after the fact, so you can
 correctly do PHP 7 strict typing with these in the future.
