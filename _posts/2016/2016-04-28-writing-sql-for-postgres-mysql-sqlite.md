@@ -63,7 +63,7 @@ post][9] on github, or leave a comment.
 * I avoid stored procedures, triggers, functions, views. I'm really just
   dealing with tables and indexes.
 * Even if that means that it's not the most optimal query. So I'm ok with
-  sarcrificing some performance, if that means my queries can stay generic,
+  sacrificing some performance, if that means my queries can stay generic,
   within reason.
 * If there's no possible way to do things in a generic way, I fall back on
   something like this:
