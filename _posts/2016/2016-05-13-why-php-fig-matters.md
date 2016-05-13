@@ -52,7 +52,7 @@ Process is needed, but it needs to be good process, and you need humble people
 to shepard it.  As long as the role comes with a certain amount of prestige,
 it will attract the wrong people. This has happened with the group
 of voting representatives. Some voters have joined and then put in zero effort,
-while others have devised elaborate schemes to get admitted as a member.
+while others have devised elaborate schemes to get admitted as one.
 
 I think PHP-FIG needs to immediately create a separate mailing list,
 specifically for organizational / process matters. Let its moderators
