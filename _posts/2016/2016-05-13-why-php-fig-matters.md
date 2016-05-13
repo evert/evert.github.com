@@ -23,8 +23,9 @@ inefficient process.
 Now as a sort of knee-jerk reaction to these issues, [PHP-CDS][2] was setup
 with a much simpler process. Anyone can submit a PSR document there, first
 come first serve, disrespectfully in the `psr` composer vendor name.
-While it's a nice protest, this will of course go no where. I do believe that
-ultimately the key to the success of PHP-FIG will be a more open group,
+While it's a nice protest, this will of course go no where. But the initiative
+makes a few good points:
+Ultimately the key to the success of PHP-FIG will be a more open group,
 a much lower barrier to entry and the ability to more rapidly release PSR's;
 allowing them to fail quicker so better versions can rise from their ashes.
 
