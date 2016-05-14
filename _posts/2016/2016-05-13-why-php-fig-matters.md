@@ -140,9 +140,9 @@ interacts with a framework-agnostic plugin. In the world of PSR-7, we all
 first need to convert to the church of event sourcing. There is one de facto
 implementation, and while there is traction, the traction largely exists
 within libraries that subscribe to the idea of this particular approach to
-Middleware and they seem mostly new utilities, not feature bundles that are
-becoming framework agnostic. We pretty much need new major versions of the
-major frameworks first, and then PSR-7 to become a first-class citizen.
+Middleware and they seem mostly new utilities, not existing feature bundles
+that are becoming framework agnostic. We pretty much need new major versions
+of the major frameworks first, and then PSR-7 to become a first-class citizen.
 Had PSR-7 been a simple mutable interface,
 every framework could have created a simple proxy pattern between PSR-7
 and the underlying request/response objects they already had.
