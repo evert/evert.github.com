@@ -35,7 +35,7 @@ started somewhere in 2011, took 5 years to complete (I gave up after 2).
 Originally a simple key-value store that mimicked interfaces from memcache and
 apc 1:1, it has become a textbook example of "design by committee" and aims to
  solve a wide range of problems such as being able to store and retrieve NULL
-from a cache. (yes, this was a major design consideration, and a big influencer
+from a cache (yes, this was a major design consideration, and a big influencer
 for the resulting API. See the [meta document][4]).
 
 Now I don't think we need to try to aim to create an organization that
