@@ -81,6 +81,10 @@ Libraries today generally have a few options to solve this:
 All of these solutions have drawbacks, and all of these solutions are
 happening in the wild. A (sane) PSR-Cache can solve this.
 
+We are creating a TON of redundant code, each framework
+and ecosystem gets its own implementation of everything, and the few packages
+that are used across frameworks get framework-specific bundle packages.
+
 I think it requires a bit of change in thinking to make successful interfaces
 though. The problem that haunts PSR-Cache, but also the earlier Logging
 interface and PSR-7 (HTTP), is that they all aim to be the framework directly
