@@ -17,24 +17,24 @@ properly organize itself. From having followed the mailing lists for that time,
 I believe that the amount of emails entailing "the process, bylaws, voting and
 general bureaucracy" outnumber the actually productive technical discussions by
 maybe something like 4 to 1. This is a lot of wasted time, for a lot of people,
-and the while (some) good documents have come from it, it is an incredibly
+and while (some) good documents have come from it, it is an incredibly
 inefficient process.
 
 Now as a sort of knee-jerk reaction to these issues, [PHP-CDS][2] was setup
 with a much simpler process. Anyone can submit a PSR document there, first
 come first serve, disrespectfully in the `psr` composer vendor name.
-While it's a nice protest, this will of course go no where. But the initiative
+While it's a nice protest, this will of course go nowhere. But the initiative
 makes a few good points:
 Ultimately the key to the success of PHP-FIG will be a more open group,
 a much lower barrier to entry and the ability to more rapidly release PSR's;
 allowing them to fail quicker so better versions can rise from their ashes.
 
 If you want a great example of why this is needed, look no further than
-than [PSR-6 a.k.a. the "Caching" interface][3]. This is an effort I originally
-started somewhere in 2011, took 5 years to complete (I gave up after 2).
+[PSR-6 a.k.a. the "Caching" interface][3]. This is an effort I originally
+started somewhere in 2011. It took 5 years to complete (I gave up after 2).
 Originally a simple key-value store that mimicked interfaces from memcache and
 apc 1:1, it has become a textbook example of "design by committee" and aims to
- solve a wide range of problems such as being able to store and retrieve NULL
+solve a wide range of problems such as being able to store and retrieve NULL
 from a cache (yes, this was a major design consideration, and a big influencer
 for the resulting API. See the [meta document][4]).
 
@@ -49,7 +49,7 @@ effort to restructure the organization dubbed "FIG 3.0". (thanks Larry
 Garfield and Michael Cullum). Contrary what you might read in the first half
 of my post, I don't actually believe that total anarchy is the solution.
 Process is needed, but it needs to be good process, and you need humble people
-to shepard it.  As long as the role comes with a certain amount of prestige,
+to shepard it. As long as the role comes with a certain amount of prestige,
 it will attract the wrong people. This has happened with the group
 of voting representatives. Some voters have joined and then put in zero effort,
 while others have devised elaborate schemes to get admitted as one.
@@ -75,7 +75,7 @@ Libraries today generally have a few options to solve this:
 
 1. Build in a caching library in the library.
 2. Depend on a specific external caching library.
-3. Only work with one framework. (by expecting for example a Symfony cache).
+3. Only work with one framework (by expecting for example a Symfony cache).
 4. Provide adapters for different frameworks.
 
 All of these solutions have drawbacks, and all of these solutions are
@@ -86,7 +86,7 @@ and ecosystem gets its own implementation of everything, and the few packages
 that are used across frameworks get framework-specific bundle packages.
 
 I think it requires a bit of change in thinking to make successful interfaces
-though. The problem that haunts PSR-Cache, but also the earlier Logging
+though. The problem that haunts PSR-Cache, but also the earlier PSR-3 Logging
 interface and PSR-7 (HTTP), is that they all aim to be the framework directly
 exposed to the user, instead just the plumbing.
 
@@ -128,7 +128,7 @@ end-user API, each of these standards have become very opiniated which is
 good for the people running those projects, or people who hold that opinion,
 but it leaves little space for other opinions. There's also a risk that
 these PSRs will go out of fashion when their respective 'host projects'
-are.
+do.
 
 The folks that sign up to taking an "event sourcing" / functional approach
 to PHP have largely dictated the design of PSR-7. This is why we're left with
