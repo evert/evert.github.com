@@ -71,6 +71,8 @@ callback, the callback will automatically be called with the `XMLWriter`
 object:
 
 ```php
+<?php
+
 $service = new Sabre\Xml\Service();
 $xmlstr = $service->write('books', function(Sabre\Xml\Writer $writer) {
     $writer->writeElement('book', 'php');
@@ -93,6 +95,8 @@ like this:
 To facilitate this, there is a standard serializer function:
 
 ```php
+<?php
+
 $service = new Sabre\Xml\Service();
 $xmlstr = $service->write('books', function(Sabre\Xml\Writer $writer) {
     $books = [
