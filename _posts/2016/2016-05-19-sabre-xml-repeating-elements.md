@@ -43,8 +43,8 @@ But this generates this xml:
 <?xml version="1.0"?>
 <books>
     <book>php</book>
-    <book1>c++</book>
-    <book2>c#</book>
+    <book1>c++</book1>
+    <book2>c#</book2>
 </books>
 ```
 
