@@ -120,8 +120,8 @@ $xml = <<<XML
 <?xml version="1.0"?>
 <books>
     <book>php</book>
-    <book1>c++</book>
-    <book2>c#</book>
+    <book>c++</book>
+    <book>c#</book>
 </books>
 XML;
 
