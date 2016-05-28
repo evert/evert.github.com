@@ -1,5 +1,5 @@
 ---
-date: 2016-05-25 15:10:34 -0400
+date: 2016-05-28 16:27:46 -0400
 layout: post
 title: "Blogging for 10 years!"
 tags:
@@ -40,7 +40,9 @@ benefit of the doubt.
 
 It's by far been my most useful career development tool.
 
-The best time to plant a tree was 20 years ago. The second best time is now.
+**Note: This post was written and was supposed to be posted on the 25th, the
+actual birthday of this blog, but in an ironic twist of faith, github pages
+decided not to publish it with a cryptic error.**
 
 [1]: https://evertpot.com/10-years-of-linkedin/
 [2]: http://habariproject.org/en/
