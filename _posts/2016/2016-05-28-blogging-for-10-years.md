@@ -25,10 +25,12 @@ particular post actually got me 4 new customers for my freelance work.
 Technology wise I've gone from a custom solution, to [Habari][2], eventually
 landing on [Github Pages][3] + [Disqus][4]. Disqus has become more and more
 social media and less 'comment box' and they added some dark patterns,
- so if you have a different recommendation I'd love to hear it! Especially if
-I can import from Disqus. 
+so if you have a different recommendation I'd love to hear it! Especially if
+I can import from Disqus. But I love Github pages (except when they upgrade
+jekyll and throw non-descript errors). The static markdown approach to
+blogging makes so much sense, but I miss scheduling posts in the future.
 
-Since this year this blog is also running on HTTPS via the HTTPi/2 protocol.
+Since this year this blog is also running on HTTPS via the HTTP/2 protocol.
 You gotta practise what you preach after all! This is provided via
 [Cloudflare][5], which is a nice service and free if your needs are simple.
 
