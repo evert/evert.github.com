@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Evert Pot - Resume
-description: I started freelancing again, and I'm looking for work as a Web Developer
 permalink: "/resume.html"
 ---
 
@@ -10,7 +9,7 @@ Evert Pot
 
 _Web architect, API developer_
 
-* Last update: *October 2nd, 2015*.
+* Last update: *July 13th, 2016*.
 * Location: Toronto, ON, Canada.
 * Contact: <mailto:work@evertpot.com>.
 
@@ -18,25 +17,18 @@ _Web architect, API developer_
 Summary
 -------
 
-My name is Evert, and I've been a Web Developer for over 10 years. I've been
+My name is Evert, and I've been a Web Developer for almost 15 years. I've been
 doing consulting for a wide range of companies, from small businesses to
 telcos, financial services and national broadcasters.
 
 I'm especially interested in API design, implementing better engineering
 practices, scalability problems and application architecture. In the past I've
 had a strong focus on PHP, but I'm very open to other technology stacks as
-well.
+well. I also have decent soft skills and served as CTO and technical leadership
+in most of the companies I've worked at.
 
-I'm currently looking for projects! In particular:
-
-* Short and long term projects.
-* Can work hourly or on project-basis.
-* I can work on-site in Toronto, remotely anywhere and I would also be
-  thrilled to fly to you for a week or two to kick off a new project.
-
-I am specifically _not_ looking for full or part-time employment.
-
-References are available upon request.
+I'm currently looking for my next big thing! I would love to start a new venture
+or join a young, promising business. How can I help?
 
 Links
 -----
