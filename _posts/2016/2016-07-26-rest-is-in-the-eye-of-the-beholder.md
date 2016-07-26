@@ -13,8 +13,8 @@ of how web applications should be built and designed.
 
 REST, at the time, was a breath of fresh air and it seemed very sane in
 a world where SOAP and XML-RPC were dominant. I can look at a webservice
-straight from my browser? Wow. Returning simple XML documents instead us
-using XML as the protocol made a lot of sense.
+straight from my browser? Wow. Returning simple XML documents instead of
+using XML as the transport made a lot of sense.
 
 I'm not really sure if Flickr was the first to use the term REST for that
 type of service, but in my memory it played a fairly big part in
@@ -22,8 +22,6 @@ popularizing it.
 
 I used the [wayback machine][2] to find these early examples, but then
 quickly realized that the Flickr API [has actually not changed][3]!
-Take that however way you want, but I think we should all strive for
-building stable API's for 10 years plus.
 
 
 But it's not REST
