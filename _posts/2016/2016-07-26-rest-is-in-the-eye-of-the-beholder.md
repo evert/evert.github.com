@@ -131,7 +131,7 @@ makes it difficult to research. Most REST books and presentations you'll find
 tend to be about 'correct REST' not 'popular REST', but most services are
 'popular REST' not 'correct REST'.
 
-I think coming up with a new term and popularizing is going to be very
+I think coming up with a new term and popularizing it is going to be very
 difficult though, so I propose that we let the programming lingo evolve the
 same way words' definitions in languages do. "REST" is far and wide used
 to describe non-hypermedia API's, so I think it's safe to say that the term
