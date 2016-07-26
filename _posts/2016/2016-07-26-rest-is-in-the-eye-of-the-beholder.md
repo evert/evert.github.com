@@ -146,7 +146,7 @@ Microsoft released a pretty great [REST API Guidelines][11] document that's
 actually not hypermedia.
 If you're looking for a body of work that _does_ try to stick very close to
 the original definition of REST, take a look at [Collection+JSON][8], which is
-highly correct and highly impracticle.
+highly correct and highly impractical.
 
 
 [1]: https://www.flickr.com/
