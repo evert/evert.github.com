@@ -123,7 +123,7 @@ and come to the conclusion:
 4. Therefore good API's must be hypermedia-driven.
 
 I've seen many people fall for this logic trap, not realizing that it's based
-on a false assumption. REST is not popular. Someting that's not quite REST is
+on a false assumption. REST is not popular. Something that's not quite REST is
 popular and everybody just calls it that.
 
 We don't have a good popular term to describe simple web API's though, which
