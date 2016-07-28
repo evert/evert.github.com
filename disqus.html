@@ -18,6 +18,7 @@ var disqus_config = function () {
     this.page.identifier = id;
     this.callbacks.afterRender.push(function() {
 
+        console.log('resize callback triggered');
         // AMP page resize event
         window.parent.postMessage({
             sentinel: 'amp',
