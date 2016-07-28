@@ -94,7 +94,7 @@ short-term goals, preferring ease-of-use over correctness. We're not building
 an API for the library of congress. Having lots of people use an API is
 probably more important than that API being relevant for multiple decades.
 
-What I'm really sugegstion is that 'correct REST' is wrong for most people, but
+What I'm really suggesting is that 'correct REST' is wrong for most people, but
 this leaves us with a major problem.
 
 There's a massive body of work that calls itself REST but is not quite REST.
