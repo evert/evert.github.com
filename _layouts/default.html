@@ -1,19 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html ⚡ lang="en">
 <head>
+    <meta charset="utf-8" />
     <title>{{ page.title }}</title>
-    <link href="/css/stylesheet.css" type="text/css" rel="stylesheet" />
-    <link href="/css/monokai.css" type="text/css" rel="stylesheet" />
     <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/bijsterespoor" title="Atom feed" />
     <link rel="shortcut icon" href="/favicon.ico" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <link rel="canonical" href="https://evertpot.com{{page.url}}" />
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1" />
     <link rel="openid.server" href="https://indieauth.com/openid" />
     <link rel="openid.delegate" href="http://evertpot.com/" />
 
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:type" content="article" />
     {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "{{ page.title }}",
+        {% if page.date %}"datePublished": "{{page.date | date_to_xmlschema}}",{% endif %}
+        "image": [
+        ]
+      }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700" rel="stylesheet" type="text/css">
+    <style amp-custom>
+        {% include css/stylesheet.css %}
+        {% include css/monokai.css %}
+    </style>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-analytics"
+        src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
 </head>
 <body>
@@ -29,21 +53,21 @@
      Written by <a href="/">Evert Pot</a>. Find me on <a href="https://twitter.com/evertp">Twitter</a> or <a href="https://github.com/evert">Github</a>.
    </footer>
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-2848664-4']);
-  _gaq.push(['_setDomainName', 'evertpot.com']);
-  _gaq.push(['_setAllowLinker', true]);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+    <amp-analytics type="googleanalytics" id="analytics1">
+    <script type="application/json">
+    {
+      "vars": {
+        "account": "UA-2848664-4"
+      },
+      "triggers": {
+        "trackPageview": {
+          "on": "visible",
+          "request": "pageview"
+        }
+      }
+    }
+    </script>
+    </amp-analytics>
 
 </body>
 
