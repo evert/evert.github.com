@@ -21,7 +21,6 @@ var disqus_config = function () {
 
     window.addEventListener('message', function(ev) {
 
-        console.log(ev.data);
         if (String(ev.data).charAt(0)!=='{') {
             // Not a disqus event
             return;
@@ -29,11 +28,9 @@ var disqus_config = function () {
 
         var data = JSON.parse(ev.data);
         
-        console.log(data);
-
         if (data.name !== "resize") return;
 
-        console.log('foo');
+        console.log(data.data.height);
 
         // We just got a resize event from disqus.
         // This means we need to tell AMP in the parent
