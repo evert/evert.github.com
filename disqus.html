@@ -16,17 +16,29 @@ var disqus_config = function () {
     var id = getQueryParameterByName('id')
     this.page.url = 'https://evertpot.com' + id;
     this.page.identifier = id;
-    this.callbacks.afterRender.push(function() {
 
-        console.log('resize callback triggered');
-        // AMP page resize event
+    window.addEventListener('message', function(ev) {
+
+        if (String(ev.data).charAt(0)!=='{') {
+            // Not a disqus event
+            return;
+        }
+
+        var data = JSON.parse(ev.data);
+        if (data.name !== "resize") return;
+
+        // We just got a resize event from disqus.
+        // This means we need to tell AMP in the parent
+        // to also resize the parent iframe.
         window.parent.postMessage({
             sentinel: 'amp',
             type: 'embed-size',
             height: document.body.scrollHeight
         }, '*');
 
-    });
+
+    }, false);
+
 };
 
 
