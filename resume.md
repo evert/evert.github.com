@@ -9,7 +9,7 @@ Evert Pot
 
 _Web architect, API developer_
 
-* Last update: *July 13th, 2016*.
+* Last update: *July 28th, 2016*.
 * Location: Toronto, ON, Canada.
 * Contact: <mailto:work@evertpot.com>.
 
@@ -53,13 +53,18 @@ marketing and sales, and basically just stepped in where needed.
 
 ### Consulting, worldwide — 2003-today
 
-I’ve been doing this ‘full-time’ on and off, whenever I’ve not really been
-fully focused on a job. I’ve had the opportunity to work in
+I've been a consultant / freelancer pretty much at any point in my career where
+there's gaps between jobs.
+
+I’ve had the opportunity to work in
 telecommunication, social media, group ware, advertising, broadcasting,
 financial service companies in Australia, Portugal, Canada and The
 Netherlands, and remotely worked for various other companies from North
 America, Europe and Asia.
 
+Used many different technologies such PHP / Lamp stack, NodeJS, Lots of
+Javascript, AWS, Backbone, Golang, Sass/Less, or basically whatever tech the
+job called for.
 
 ### Software engineer, Ibuildings, Utrecht, Netherlands — 2010-2011
 
@@ -131,9 +136,10 @@ Skills
 ### Technology
 
 * Expert skills: PHP, MySQL, WebDAV, CalDAV, CardDAV, HTTP, Rest APIs,
-  Javascript, Backbone.js, Atom, HTML, LessCSS, YUI3, Debian and Ubuntu, Video
-  Transcoding tools, CSS 3, Flash Video, Amazon S3 and EC2, Apache, Nginx.
-* Novice skills: NodeJS, Squid, CakePHP.
+  Javascript, Backbone.js, Atom, HTML5, CSS3, Less, Sass,YUI3, Node,
+  Debian and Ubuntu, Video Transcoding tools, CSS 3, Flash Video, Amazon S3
+  and EC2, Apache, Nginx.
+* Novice skills: NodeJS, Squid, CakePHP, Make, Golang.
 * Beginner skills: C, Bash programming, Java, Python, Ruby.
 * Ancient skills: (Q/GW)Basic, Delphi, Interbase, Turbo Pascal, x86 assembler,
   Actionscript, Podcasting, AMF, Flash-PHP interaction using Flash Remoting,
