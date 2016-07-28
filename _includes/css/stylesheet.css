@@ -160,3 +160,8 @@ pre>code {
     background: transparent;
     border: 0;
 }
+
+.evert-pic {
+    float: right;
+    padding: 0 10px 10px 0;
+}
