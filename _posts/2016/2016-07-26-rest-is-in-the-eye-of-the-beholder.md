@@ -5,6 +5,7 @@ title: "REST is in the eye of the beholder"
 tags:
    - rest
    - webservices 
+   - featured
 ---
 
 The first time I came across the term REST must have been around 2005 or
