@@ -24,8 +24,8 @@
           "@type": "NewsArticle",
           "headline": "{{ page.title | truncate: 106 }}",
           {% if page.date %}
-          "datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
-          "dateModified": "{{ page.modified | default: page.date | date_to_xmlschema }}",{% endif %}
+          "datePublished": "{{ page.date | date_to_xmlschema }}",
+          "dateModified": "{{ page.modified | default: page.date | date_to_xmlschema }}",
           {% endif %}
           "author": {
             "@type": "Person",
