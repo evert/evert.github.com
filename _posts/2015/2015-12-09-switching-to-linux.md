@@ -138,7 +138,7 @@ backlight buttons all just worked.
 Ubuntu also looks nicer than it did back the day. There's a lot less brown
 going on:
 
-<img src="/resources/images/posts/switchingtolinux/blankslate.png" title="Ubuntu 15.04"  style="max-width: 100%"/>
+<img src="/resources/images/posts/switchingtolinux/blankslate.png" title="Ubuntu 15.04"  class="fill-width"/>
 
 Software works reasonably well. Especially all the Gnome stuff. But there were
 also a few negatives.
@@ -188,7 +188,7 @@ The options appear to be:
 2. Use the read-only '1password anywhere' application inside the Dropbox
    website.
 
-<img src="/resources/images/posts/switchingtolinux/1password.png" title="1Password for Windows for Linux"  style="max-width: 100%"/>
+<img src="/resources/images/posts/switchingtolinux/1password.png" title="1Password for Windows for Linux"  class="fill-width"/>
 
 The second option actually works decently well. At least it works as a stopgap
 measure until I find a properly supported alternative.
@@ -269,19 +269,19 @@ my laptop to look cool. The Thinkpad just doesn't cut it for me.
 
 ### Some pictures
 
-<img src="/resources/images/posts/switchingtolinux/compare_open.jpg" alt="XPS 13 vs Macbook air - Opened"  style="max-width: 100%"/>
+<img src="/resources/images/posts/switchingtolinux/compare_open.jpg" alt="XPS 13 vs Macbook air - Opened"  class="fill-width"/>
 
 The screen is very vibrant, and the bevel is tiny. Both of these screens are 13
 inch, but the Mac has a much larger profile.
 
-<img src="/resources/images/posts/switchingtolinux/compare_thickness.jpg" alt="XPS 13 vs. Macbook air - Thickness"  style="max-width: 100%"/>
+<img src="/resources/images/posts/switchingtolinux/compare_thickness.jpg" alt="XPS 13 vs. Macbook air - Thickness"  class="fill-width"/>
 
 As you can see the laptop is about equally thick, except the Air becomes much
 thinner on the bottom.
 
-<img src="/resources/images/posts/switchingtolinux/compare_top.jpg" alt="XPS 13 vs. Macbook air - Top"  style="max-width: 100%"/>
+<img src="/resources/images/posts/switchingtolinux/compare_top.jpg" alt="XPS 13 vs. Macbook air - Top"  class="fill-width"/>
 
-<img src="/resources/images/posts/switchingtolinux/compare_width.jpg" alt="XPS 13 vs. Macbook air - Width"  style="max-width: 100%"/>
+<img src="/resources/images/posts/switchingtolinux/compare_width.jpg" alt="XPS 13 vs. Macbook air - Width"  class="fill-width"/>
 
 
 ### The model
@@ -310,7 +310,7 @@ The model I got has a 256GB SSD harddrive and 8GB of memory. Had I been buying
 a new mac I would have probably wanted to have 16GB, but for Linux 8GB seems
 plenty.
 
-<img src="/resources/images/posts/switchingtolinux/powered_by_ubuntu.jpb" alt="Powered by Ubuntu"  style="max-width: 100%"/>
+<img src="/resources/images/posts/switchingtolinux/powered_by_ubuntu.jpb" alt="Powered by Ubuntu"  class="fill-width"/>
 
 The "Ubuntu" sticker is a nice touch, but I wish the keyboard didn't come with
 a Windows key ;). In this picture you can also see the 'braided' looking
@@ -352,7 +352,7 @@ surprise it was quite gorgeous. I always remembered KDE as being the
 slightly more ugly, but more flexibility-offering option between
 KDE and Gnome, but a lot has changed.
 
-<img src="/resources/images/posts/switchingtolinux/plasma.png" alt="KDE Plasma" style="max-width: 100%" />
+<img src="/resources/images/posts/switchingtolinux/plasma.png" alt="KDE Plasma" class="fill-width" />
 
 So instead of installing Ubuntu as soon as I got the laptop in the mail, I opted
 for Kubuntu instead.

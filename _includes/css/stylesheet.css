@@ -165,3 +165,7 @@ pre>code {
     float: right;
     padding: 0 10px 10px 0;
 }
+
+img.fill-width {
+    max-width: 100%;
+}
