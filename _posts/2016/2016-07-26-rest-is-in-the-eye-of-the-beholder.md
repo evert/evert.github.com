@@ -12,6 +12,9 @@ The first time I came across the term REST must have been around 2005 or
 2006 via [Flickr][1], which was back then in many ways a pioneer in terms
 of how web applications should be built and designed.
 
+<!--more-->
+
+
 REST, at the time, was a breath of fresh air and it seemed very sane in
 a world where SOAP and XML-RPC were dominant. I can look at a webservice
 straight from my browser? Wow. Returning simple XML documents instead of

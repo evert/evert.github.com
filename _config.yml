@@ -11,3 +11,5 @@ gems:
     - jekyll-paginate
 
 lsi: false
+
+excerpt_separator: <!--more-->
