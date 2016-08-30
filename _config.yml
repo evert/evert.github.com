@@ -13,3 +13,11 @@ gems:
 lsi: false
 
 excerpt_separator: <!--more-->
+
+defaults:
+    -
+        scope:
+            path: ""    # empty string for all files
+            type: posts # limit to posts
+        values:
+            amp: true   # enabled amp for posts
