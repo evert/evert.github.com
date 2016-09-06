@@ -3,6 +3,7 @@ date: 2011-03-16 11:59:04 UTC
 layout: post
 slug: speaking-at-the-phpbenelux-march-meetup
 title: "Speaking at the PHPBenelux march meetup"
+amp: false
 tags:
   - webdav
   - sabredav

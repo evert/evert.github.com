@@ -3,6 +3,7 @@ date: 2010-05-24 16:08:42 UTC
 layout: post
 slug: sabredav-12-released-with-caldav-support
 title: "SabreDAV 1.2 released (with CalDAV support)"
+amp: false
 tags:
   - php
   - webdav
