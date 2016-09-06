@@ -23,7 +23,7 @@
           "@context": "http://schema.org",
           "@type": "NewsArticle",
           "headline": "{{ page.title | truncate: 106 }}",
-          "mainEntityOfPage" : "{{https://evertpot.com{{page.url}}",
+          "mainEntityOfPage" : "https://evertpot.com{{page.url}}",
           {% if page.date %}
           "datePublished": "{{ page.date | date_to_xmlschema }}",
           "dateModified": "{{ page.modified | default: page.date | date_to_xmlschema }}",
