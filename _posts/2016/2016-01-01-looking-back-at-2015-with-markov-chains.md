@@ -2,6 +2,7 @@
 date: 2016-01-01 23:58:27 -0500
 layout: post
 title: "Looking back at 2015 using Markov chains"
+amp: false
 tags:
    - metablogging
    - markov

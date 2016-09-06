@@ -2,6 +2,7 @@
 date: 2016-03-22 20:49:42 -0400
 layout: post
 title: "Npm package author revokes his packages, breaking tons of builds"
+amp: false
 tags:
     - npm
     - js

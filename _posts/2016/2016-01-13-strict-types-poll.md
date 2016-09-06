@@ -2,6 +2,7 @@
 date: 2016-01-13 18:01:34 -0500
 layout: post
 title: "Poll: Will you be using strict typing with PHP"
+amp: false
 tags:
    - php
    - poll

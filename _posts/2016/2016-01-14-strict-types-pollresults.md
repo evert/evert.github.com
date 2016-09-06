@@ -2,6 +2,7 @@
 date: 2016-01-14 18:06:17 -0500
 layout: post
 title: "Strict typing in PHP 7 - poll results"
+amp: false
 tags:
    - php
    - poll
