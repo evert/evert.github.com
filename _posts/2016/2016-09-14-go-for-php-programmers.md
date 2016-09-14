@@ -1,6 +1,6 @@
 ---
 date: 2016-09-14 17:58:43 +0200
-layout: post
+layout: post-no-comments
 title: "Go for PHP programmers"
 tags:
    - php
