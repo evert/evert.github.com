@@ -165,7 +165,7 @@ communicating technical requirements.
 * Dutch PHP conference 2012 - Amsterdam, Netherlands: Backbone.js.
 * OwnCloud contributer conference 2015 - Berlin, Germany: sabre/dav and Promises & Generators.
 * True North PHP 2015 - Toronto, Canada: Promises & Generators. ([slides](https://github.com/evert/promises-and-generators))
-
+* PHP Meetup, September 2016 - Toronto, Canada: Go for PHP programmers. ([slides](/talks/go-for-php-programmers/) )
 
 ### Recognition
 
