@@ -5,7 +5,7 @@ author:
     url: https://evertpot.com/
 output: go-for-php-progammers.html
 style: evert.css
-controls: false
+controls: true
 --
 
 # Go for PHP programmers
