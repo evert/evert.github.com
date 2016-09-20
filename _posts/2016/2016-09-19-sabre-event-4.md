@@ -36,7 +36,7 @@ It also features an as-simple-as-possible event loop, that works with
 `stream_select` and doesn't require extensions. It also has 0-dependencies,
 100% unittested and has a fairly stable surprise-free API.
 
-Version 4 tightens the Promise API a bit and adds support for an `EventEmitter`
+Version 4 tightens the Promise API a bit and adds support for an event emitter
 that has support for listening to events via a wildcard. Example:
 
 ```php
