@@ -62,6 +62,7 @@ automatically do this. The file assumes that you have:
 * An empty `rtf/` directory.
 
 ```Makefile
+
 STYLE=xcode
 SRC = $(wildcard src/*.js)
 
