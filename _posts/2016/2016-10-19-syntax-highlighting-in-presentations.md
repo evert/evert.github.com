@@ -21,12 +21,12 @@ command line.
 
 On ubuntu it can be installed with:
 
-    apt-get install python-pygments
+	apt-get install python-pygments
 
 If you're on a Mac, I don't believe there's a homebrew package. This _should_
 work though:
 
-    sudo easy_install Pygments
+	sudo easy_install Pygments
 
 After that, we're using the tool to convert your source file into a syntax
 highlighted [RTF file][3]! Yes, the old school format you'd never thought
@@ -34,13 +34,13 @@ you'd need again.
 
 Run it like this:
 
-    pygmentize -O style=xcode -o output.rtf input.js
+	pygmentize -O style=xcode -o output.rtf input.js
 
 I picked the `xcode` style, because it worked fairly well with the light
 backgrounds in my presentation, but other styles are supported. To see a list
 run:
 
-    pygmentize -L
+	pygmentize -L
 
 Instead of pygmentize I also tried [highlight][4], but it was impossible for
 me to build and seems a bit over engineered.
@@ -61,7 +61,7 @@ automatically do this. The file assumes that you have:
 * A `src/` directory containing `.js` files (you can change the extension).
 * An empty `rtf/` directory.
 
-```Makefile
+```make
 
 STYLE=xcode
 SRC = $(wildcard src/*.js)
@@ -71,10 +71,10 @@ RTF = $(patsubst src/%.js, rtf/%.js.rtf, $(SRC))
 all: $(RTF)
 
 rtf/%.js.rtf: src/%.js
-    pygmentize -O style=$(STYLE) -o $@ $<
+	pygmentize -O style=$(STYLE) -o $@ $<
 
 clean:
-    rm rtf/*.rtf
+	rm rtf/*.rtf
 
 ```
 
