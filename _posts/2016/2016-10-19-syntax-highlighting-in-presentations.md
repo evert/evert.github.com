@@ -61,7 +61,7 @@ automatically do this. The file assumes that you have:
 * A `src/` directory containing `.js` files (you can change the extension).
 * An empty `rtf/` directory.
 
-```make
+```Makefile
 STYLE=xcode
 SRC = $(wildcard src/*.js)
 
@@ -70,10 +70,11 @@ RTF = $(patsubst src/%.js, rtf/%.js.rtf, $(SRC))
 all: $(RTF)
 
 rtf/%.js.rtf: src/%.js
-pygmentize -O style=$(STYLE) -o $@ $<
+    pygmentize -O style=$(STYLE) -o $@ $<
 
 clean:
-rm rtf/*.rtf
+    rm rtf/*.rtf
+
 ```
 
 
