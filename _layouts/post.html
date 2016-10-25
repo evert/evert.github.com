@@ -21,15 +21,18 @@ amp: true
 
 <section class="respond">
 
-<amp-iframe width="300" height="50"
-            layout="responsive"
-            sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-top-navigation allow-same-origin"
-            resizable
-            frameborder="0"
-            src="https://disqus.evertpot.com/disqus.html?id={{page.id}}">
-    <div overflow tabindex=0 role=button aria-label="Read comments">Read comments</div>
-</amp-iframe>
-
-
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+  this.page.url = 'https://evertpot.com' + page.url;
+  this.page.identifier = page.url;
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = '//evertsblog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
 
 </section>

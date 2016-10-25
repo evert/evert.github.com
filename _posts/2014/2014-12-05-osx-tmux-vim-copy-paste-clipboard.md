@@ -36,7 +36,7 @@ Before today I had this setting on, which kinda worked but it always truncated
 the clipboard, which made it completely frustrating for copy-pasting larger
 things such as logfiles.
 
-<a href="/resources/images/posts/iterm-settings.png"><amp-img src="/resources/images/posts/iterm-settings.png" width="1036" height="652" layout="responsive"></amp-img></a>
+<a href="/resources/images/posts/iterm-settings.png"><img src="/resources/images/posts/iterm-settings.png" style="max-width: 100%" layout="responsive" /></a>
 
 So to repeat this, the "Allow clipboard access to terminal apps" must be **OFF** 
 
