@@ -26,7 +26,7 @@ AMP site, instead of creating two seperate main and AMP sites.
 In practice these are the things I had to do:
 
 * Inline stylesheets. This was fairly easy with jekyll, I just had to change
-  my linked stylesheets to an `{% include .. %}`.
+  my linked stylesheets to an `{% raw %}{% include .. %}{% endraw %}`.
 * Add a bunch of AMP boilerplate.
 * Add JSON-LD in my website header. The AMP website says it's not required,
   but without it you're not going to get AMP support in google results.
