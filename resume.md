@@ -42,6 +42,16 @@ Links
 Experience
 ----------
 
+### API Architect at Turnstyle, Toronto, Canada - 2016-today
+
+In October 2016, I joined Turnstyle, a company in Toronto that does location-
+based marketing analytics.
+
+My role here is to help drive the design and architecture of a REST API. We've
+used HAL, OAuth2, json-schema to drive the hypermedia API using NodeJS, ES6,
+ES7. On a docker-container infrastructure running on Amazon Web Services..
+
+
 ### Co-Founder/CTO fruux, Germany + UK — 2011 - 2015
 
 In December 2011 I went full-time with fruux, which was a bit of a
@@ -136,10 +146,10 @@ Skills
 ### Technology
 
 * Expert skills: PHP, MySQL, WebDAV, CalDAV, CardDAV, HTTP, Rest APIs,
-  Javascript, Backbone.js, Atom, HTML5, CSS3, Less, Sass,YUI3, Node,
-  Debian and Ubuntu, Video Transcoding tools, CSS 3, Flash Video, Amazon S3
-  and EC2, Apache, Nginx.
-* Novice skills: NodeJS, Squid, CakePHP, Make, Golang.
+  Node JS, Ecmascript 6/7, OAuth2, Javascript, Backbone.js, Atom, HTML5, CSS3,
+  Less, Sass,YUI3, Debian and Ubuntu, Video Transcoding tools, CSS 3, Flash
+  Video, Amazon S3 and EC2, Apache, Nginx.
+* Novice skills: Squid, CakePHP, Make, Golang.
 * Beginner skills: C, Bash programming, Java, Python, Ruby.
 * Ancient skills: (Q/GW)Basic, Delphi, Interbase, Turbo Pascal, x86 assembler,
   Actionscript, Podcasting, AMF, Flash-PHP interaction using Flash Remoting,
@@ -166,6 +176,9 @@ communicating technical requirements.
 * OwnCloud contributer conference 2015 - Berlin, Germany: sabre/dav and Promises & Generators.
 * True North PHP 2015 - Toronto, Canada: Promises & Generators. ([slides](https://github.com/evert/promises-and-generators))
 * PHP Meetup, September 2016 - Toronto, Canada: Go for PHP programmers. ([slides](/talks/go-for-php-programmers/) )
+* True North PHP 2016 - Toronto, Canada: Making CSS fun again with Sass. ([slides](https://github.com/evert/sass-talk)).
+* True North PHP 2016 - Toronto, Canada: Introducing sabre/dav.
+
 
 ### Recognition
 
