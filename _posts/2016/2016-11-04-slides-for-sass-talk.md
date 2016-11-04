@@ -12,7 +12,9 @@ At True North PHP, I gave a talk "Making CSS fun again with Sass". The talk
 is an introduction to [Sass][1].
 
 Slides are available on [Github][2]. If you saw it, and you want to leave a
-comment, please do so via [joind.in][3].
+comment, please do so via [joind.in][3]. Good or bad, it's all appreciated!
+
+I'm having a great time. If you're here, come say hi!
 
 [1]: http://sass-lang.com/
 [2]: https://github.com/evert/sass-talk
