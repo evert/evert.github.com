@@ -203,7 +203,7 @@ Content-Type: application/vnd.blog.hal+json
 }
 ```
 
-### Omitting `_links`
+### `_links` is optional
 
 Because `_links` are almost always server-controlled with a few exceptions,
 and might be a bit confusing for new users, we decided that we're going to make
@@ -211,14 +211,19 @@ specifying the `_links` in `PUT` requests optional. For the most part they are
 'meta data' and not part of the core resource representation, and want to keep
 it somewhat simple.
 
-This has one big side-effect though. What if the `category` in our blog post is
-optional, and we want to to delete it with `PUT`?
+This goes somewhat against the rules if you follow HTTP strictly. After all, a
+`PUT` request should completely replace the target resource. This is definitely
+something I choose to not strictly follow though. It rarely makes real sense.
 
-Well, since `_links` normally is optional, this would not modify the blog post:
+But making `_links` optional creates a new problem. What if the `category` in
+our blog post is optional, and we want to to remove the `category` from an
+existing post.
+
+Well, since `_links` normally is optional, this would not do the trick:
 
 
 ```http
-PUT /blog/6
+PUT /blog/6 HTTP/1.1
 Content-Type: application/vnd.blog.hal+json
 
 {
@@ -233,7 +238,7 @@ link as removed:
 
 
 ```http
-PUT /blog/6
+PUT /blog/6 HTTP/1.1
 Content-Type: application/vnd.blog.hal+json
 
 {
