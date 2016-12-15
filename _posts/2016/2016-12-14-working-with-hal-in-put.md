@@ -38,7 +38,7 @@ might receive something like this:
 {
   "firstName" : "Evert",
   "lastName" : "Pot",
-  
+
   "_links" : {
     "self" : { "href" : "/team/5/user/4234" },
     "team" : { "href" : "/team/5" }
@@ -69,7 +69,7 @@ Content-Type: application/vnd.foo-bar.hal+json
 {
   "firstName" : "Roxy",
   "lastName" : "Kesh"
-    
+
 }
 ```
 
@@ -125,7 +125,7 @@ mentioned:
 > mediatype you define for your API; this mediatype would be used to describe
 > the particular structure of your resources _without_ any HAL “_links”.
 > Any “_embedded” resources will typically be described as properties of the
-> resource, and point to the mediatype relevant to the embedded resource. 
+> resource, and point to the mediatype relevant to the embedded resource.
 
 This is one of the top hits for this google search and pretty much implies that
 a HAL document (with `_links`) is only meant to be returned from a `GET` request
@@ -133,9 +133,9 @@ and not sent along with a `PUT`. Two different media-types depending on which
 direction the data flows.
 
 They can get away with it though, because they express relationship as both id's
-and links, which I definitely believe is the wrong way to go about it. So there's
-a bit of an odd convention. If I followed it, my `PUT` request would look like
-this:
+and links, which I definitely believe is the wrong way to go about it. So when
+PhlyRestfully updates a resoource, they follow a bit of an odd convention. If I
+followed it, my `PUT` request should look like this:
 
 ```json
 {
