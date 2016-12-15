@@ -133,7 +133,7 @@ direction the data flows.
 
 They can get away with it though, because they express relationship as both id's
 and links, which I definitely believe is the wrong way to go about it. So when
-PhlyRestfully updates a resoource, they follow a bit of an odd convention. If I
+PhlyRestfully updates a resource, they follow a bit of an odd convention. If I
 followed it, my `PUT` request should look like this:
 
 ```json
@@ -165,8 +165,8 @@ Here poster asks whether he should use `_embedded` in `PUT` requests. Having
 the `_links` there seem like a given.
 
 However, looking again at a whole bunch of the public HAL apis that exists,
-most of them completely ignore the notion of using `_links` as a real relation
-ship and either use id-properties as well, or just provide `_links` separately,
+most of them completely ignore the notion of using `_links` as a real relationship
+and either use id-properties as well, or just provide `_links` separately,
 completely redundant.
 
 Here's a bunch:
@@ -233,7 +233,7 @@ Content-Type: application/vnd.blog.hal+json
 }
 ```
 
-Instead, we're not opting for using the `about:blank` to specifically mark the
+Instead, we're opting for using the `about:blank` to specifically mark the
 link as removed:
 
 
