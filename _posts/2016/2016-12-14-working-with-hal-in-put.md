@@ -129,7 +129,8 @@ mentioned:
 
 This is one of the top hits for this google search and pretty much implies that
 a HAL document (with `_links`) is only meant to be returned from a `GET` request
-and not sent along with a `PUT`.
+and not sent along with a `PUT`. Two different media-types depending on which
+direction the data flows.
 
 They can get away with it though, because they express relationship as both id's
 and links, which I definitely believe is the wrong way to go about it. So there's
