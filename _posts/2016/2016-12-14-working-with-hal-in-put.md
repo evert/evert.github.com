@@ -69,7 +69,6 @@ Content-Type: application/vnd.foo-bar.hal+json
 {
   "firstName" : "Roxy",
   "lastName" : "Kesh"
-
 }
 ```
 
@@ -187,7 +186,7 @@ If you are creating a new blog post, and want it to be filed under a certain
 category, this how how it looks like:
 
 ```http
-POST /blog/
+POST /blog/ HTTP/1.1
 Content-Type: application/vnd.blog.hal+json
 
 {
