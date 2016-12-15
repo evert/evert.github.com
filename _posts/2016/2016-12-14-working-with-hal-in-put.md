@@ -46,7 +46,7 @@ might receive something like this:
 }
 ```
 
-Here we see the link `self`, which is the uri for this user, and the team it
+Here we see the link `self`, which is the uri for this user, and the `team` it
 belongs to. This works pretty well. We made a really strong effort to
 absolutely _never_ expose database `id`'s anywhere in our documents, as the URI
 is ultimately the real identifier, and we don't want clients to start
