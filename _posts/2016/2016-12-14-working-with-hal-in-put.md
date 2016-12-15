@@ -175,6 +175,9 @@ Here's a bunch:
 * [artsy API][6]
 * [SlimPay API][7].
 
+Apparently both Amazon and Comcast also use HAL, but I had trouble finding their
+API documentation.
+
 
 Our decision
 ------------
@@ -253,3 +256,5 @@ I would love to hear it!
 [3]: http://stateless.co/hal_specification.html
 [4]: http://phlyrestfully.readthedocs.io/en/latest/halprimer.html
 [5]: http://developer.viagogo.net/
+[6]: https://developers.artsy.net/
+[7]: https://api-sandbox.slimpay.net/
