@@ -126,7 +126,7 @@ mentioned:
 > Any “_embedded” resources will typically be described as properties of the
 > resource, and point to the mediatype relevant to the embedded resource.
 
-This is one of the top hits for this google search and pretty much implies that
+This is one of the top hits for this Google search and pretty much implies that
 a HAL document (with `_links`) is only meant to be returned from a `GET` request
 and not sent along with a `PUT`. Two different media-types depending on which
 direction the data flows.
