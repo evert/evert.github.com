@@ -51,7 +51,7 @@ belongs to. This works pretty well. We made a really strong effort to
 absolutely _never_ expose database `id`'s anywhere in our documents, as the URI
 is ultimately the real identifier, and we don't want clients to start
 composing these urls on their own. We also don't want to create two types of
-unique idenfifiers (database id's and URIs) and force users to have to think
+unique identifiers (database id's and URIs) and force users to have to think
 about which to use in which situation.
 
 
