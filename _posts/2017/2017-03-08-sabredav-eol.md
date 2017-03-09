@@ -63,9 +63,9 @@ This has caused two big effects:
 2. This guilt is preventing me from starting new things that excite me,
    because I feel bad starting the next thing if I haven't finished the last.
 
-I left this gut feeling sink in from around January, and I finallly realized
-that I need to make a change. This is pretty personal and emotional and it
-sucks to have to make this decision.
+It was a gut-feeling that took a while to sink in from around January. I
+finally realized that I need to make a change. This is pretty personal and
+emotional and it sucks to have to make this decision.
 
 So, starting today:
 
@@ -105,7 +105,7 @@ cared and decided to make the project slightly better. It's been really
 amazing! It's super scary to think that 10 years have passed and all the things
 that have changed :O
 
-<img src="/resources/images/posts/fruux-team.jpg" title="Fruux team in 2012" />
+<img src="/resources/images/posts/fruux-team.jpg" title="Fruux team in 2012" style="max-width: 100%" />
 
 _Pictured above: the original fruux team_
 
