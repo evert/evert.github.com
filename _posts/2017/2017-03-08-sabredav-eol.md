@@ -23,11 +23,12 @@ or at the heart of their product, including various ISP's, product companies
 and open source vendors like Owncloud.
 
 At this point I started working with Dominik Tobschall and we opened the doors
-to a business named [fruux][2] where we would try to build a consumer and
-small-business product, which also used sabre/dav at it's core for
-synchronization. I also started working with [CalConnect][3] to help drive
-forward the actual calendaring and scheduling standards that sabre/dav and
-many other vendors implement.
+to a business named [fruux][2] in Munster, Germany. We got a bunch of funding
+and we would try to build a consumer and small-business product. Fruux also
+used sabre/dav at it's core for synchronization and became the copyright owner
+of the project. I also started working with
+[CalConnect][3] to help drive forward the actual calendaring and scheduling
+standards that sabre/dav and many other vendors implement.
 
 We were unable to grow this company quickly enough, so in 2014 we made a pivot
 and try to focus on professional services around sabre/dav. We got burned with
