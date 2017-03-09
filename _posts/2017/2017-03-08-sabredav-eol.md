@@ -36,6 +36,11 @@ the incredibly long sales cycles, so later in 2015 we had to wind this business
 down and find alternative income streams while still passionately working on
 this project.
 
+<img src="/resources/images/posts/fruux-team.jpg" title="Fruux team in 2012" style="max-width: 100%" />
+
+_Pictured above: the original fruux team_
+
+
 Unfortunately over time the alternative income streams slowly became the main
 ones leading me to September 2016, in which I started a new full-time job at
 a company in Toronto called [Turnstyle][4]. It's a great change of pace after
@@ -105,9 +110,6 @@ cared and decided to make the project slightly better. It's been really
 amazing! It's super scary to think that 10 years have passed and all the things
 that have changed :O
 
-<img src="/resources/images/posts/fruux-team.jpg" title="Fruux team in 2012" style="max-width: 100%" />
-
-_Pictured above: the original fruux team_
 
 [1]: http://sabre.io/
 [2]: https://fruux.com/
