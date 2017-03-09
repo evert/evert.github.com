@@ -25,8 +25,8 @@ and open source vendors like [Owncloud][7].
 At this point I started working with Dominik Tobschall and we opened the doors
 to a business named [fruux][2] in Munster, Germany. We got a bunch of funding
 and we would try to build a consumer and small-business product. Fruux also
-used sabre/dav at it's core for synchronization and became the copyright owner
-of the project.
+used sabre/dav at it's core for synchronization and became the owner of the
+project.
 
 I also started working with [CalConnect][3] to help drive forward the actual
 calendaring and scheduling standards that sabre/dav and many other vendors
