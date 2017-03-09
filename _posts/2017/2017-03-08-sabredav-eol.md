@@ -111,10 +111,9 @@ projects as being 'unmaintained' and unsubscribe from any notifications.
 
 I am super grateful for the doors this project has opened for me, and the
 adventures I've had. It wasn't possible without all the people who stopped by,
-cared and decided to make the project slightly better. It's been really
-amazing! It's super scary to think that 10 years have passed and all the things
-that have changed :O
-
+cared and decided to make the project better. It's been really amazing! It's
+super scary to think that 10 years have passed and all the things that have
+changed :O
 
 [1]: http://sabre.io/
 [2]: https://fruux.com/
