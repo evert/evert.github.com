@@ -35,7 +35,7 @@ iCal and iCloud, Mozilla's Lightning (hey Philipp!), Google Calendar and many
 other industry leaders. Instead of just being disgruntled about a bug (or
 feature) I could just ask the developers directly and work things out together!
 
-We were unable to grow this company quickly enough, so in 2014 we made a pivot
+We were unable to grow fruux company quickly enough, so in 2014 we made a pivot
 and try to focus on professional services around sabre/dav. We got burned with
 the incredibly long sales cycles, so later in 2015 we had to wind this business
 down and find alternative income streams while still passionately working on
