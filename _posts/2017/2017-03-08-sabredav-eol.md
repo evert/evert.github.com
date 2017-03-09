@@ -51,7 +51,7 @@ a company in Toronto called [Turnstyle][4]. It's a great change of pace after
 having worked remotely and contracting for half a decade.
 
 This leads me to today. I recently read a blog post titled ["What it feels
-like to be an open-source maintainer" by Nolan Lawson][5], which kind of hits
+like to be an open-source maintainer" by Nolan Lawson][5], which kind of hit
 home. This made me realize that after nearly 10 years, my work on this project
 has turned from something I was very excited about into something a bit more
 like a chore.
