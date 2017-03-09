@@ -90,8 +90,8 @@ and small:
 * [sabre/uri](https://github.com/fruux/sabre-uri)
 
 For the first 5 I'm looking for suitable new maintainers. I do care about the
-future quality of these projects, so I won't just hand it over to anyone. So
-if you're interested, let me know what you're planning to do with it. I'll
+future quality of these projects, so I won't just hand it over to anyone.
+If you're interested, let me know what you're planning to do with it. I'll
 probably hang out and guard quality control for a while before I fully step
 down, but I am more than happy to provide mentorship during this transition.
 It's easier to answer questions than to do the actual development ;).
