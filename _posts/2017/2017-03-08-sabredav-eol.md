@@ -110,10 +110,13 @@ If I don't find new maintainers within a month or so, I will advertise these
 projects as being 'unmaintained' and unsubscribe from any notifications.
 
 I am super grateful for the doors this project has opened for me, and the
-adventures I've had. It wasn't possible without all the people who stopped by,
-cared and decided to make the project better. It's been really amazing! It's
-super scary to think that 10 years have passed and all the things that have
-changed :O
+adventures I've had. Working on an open source project has allowed me to work
+in 8 countries on 4 continents, and it wasn't possible without all the people
+who stopped by, cared and decided to make the project better. It's been really
+amazing! It's super scary to think that 10 years have passed and all the things
+that have changed :O
+
+Peace out and onto the next adventure!
 
 [1]: http://sabre.io/
 [2]: https://fruux.com/
