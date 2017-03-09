@@ -50,10 +50,10 @@ like a chore.
 I'm not really using my own project(s) anymore. I don't get paid, but I'm
 really the only maintainer. Lots of businesses depend on it, there are lots of
 open bug reports, feature requests and pull requests but I can't find the
-time and motivation to work on it. According to packagist, it's been downloaded
-27000 times in the last 30 days. I think I would still love it if it were
-my full-time job and I had coworkers also working on it, but it all comes
-down to me.
+time and motivation to work on it. According to [packagist][6], it's been
+downloaded 27000 times in the last 30 days. I think I would still love it if
+it were my full-time job and I had coworkers also working on it, but it all
+comes down to me.
 
 This has caused two big effects:
 
@@ -114,3 +114,4 @@ _Pictured above: the original fruux team_
 [3]: http://calconnect.org/
 [4]: http://getturnstyle.com/
 [5]: https://nolanlawson.com/2017/03/05/what-it-feels-like-to-be-an-open-source-maintainer/
+[6]: https://packagist.org/packages/sabre/dav/stats
