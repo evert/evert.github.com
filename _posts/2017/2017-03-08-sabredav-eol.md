@@ -1,7 +1,7 @@
 ---
 date: 2017-03-08 21:04:46 -0500
 layout: post
-title: "I'm stopping my work on sabre/dav"
+title: "After 10 years, I'm stopping my work on sabre/dav"
 tags:
    - sabredav
    - sabre
