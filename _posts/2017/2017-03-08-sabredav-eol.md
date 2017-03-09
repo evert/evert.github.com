@@ -20,7 +20,7 @@ me all the way to a beach in Australia! (Thanks Ben!)
 
 In 2012 plenty of businesses relied on this project for either a side-feature,
 or at the heart of their product, including various ISP's, product companies
-and open source vendors like Owncloud.
+and open source vendors like [Owncloud][7].
 
 At this point I started working with Dominik Tobschall and we opened the doors
 to a business named [fruux][2] in Munster, Germany. We got a bunch of funding
@@ -117,3 +117,4 @@ that have changed :O
 [4]: http://getturnstyle.com/
 [5]: https://nolanlawson.com/2017/03/05/what-it-feels-like-to-be-an-open-source-maintainer/
 [6]: https://packagist.org/packages/sabre/dav/stats
+[7]: https://owncloud.org/
