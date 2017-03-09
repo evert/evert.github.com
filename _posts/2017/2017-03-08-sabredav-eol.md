@@ -26,9 +26,14 @@ At this point I started working with Dominik Tobschall and we opened the doors
 to a business named [fruux][2] in Munster, Germany. We got a bunch of funding
 and we would try to build a consumer and small-business product. Fruux also
 used sabre/dav at it's core for synchronization and became the copyright owner
-of the project. I also started working with
-[CalConnect][3] to help drive forward the actual calendaring and scheduling
-standards that sabre/dav and many other vendors implement.
+of the project.
+
+I also started working with [CalConnect][3] to help drive forward the actual
+calendaring and scheduling standards that sabre/dav and many other vendors
+implement. It was really awesome to work directly with the people behind Apple's
+iCal and iCloud, Mozilla's Lightning (hey Philipp!), Google Calendar and many
+other industry leaders. Instead of just being disgruntled about a bug (or
+feature) I could just ask the developers directly and work things out together!
 
 We were unable to grow this company quickly enough, so in 2014 we made a pivot
 and try to focus on professional services around sabre/dav. We got burned with
