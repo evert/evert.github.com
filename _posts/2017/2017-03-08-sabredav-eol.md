@@ -35,16 +35,15 @@ iCal and iCloud, Mozilla's Lightning (hey Philipp!), Google Calendar and many
 other industry leaders. Instead of just being disgruntled about a bug (or
 feature) I could just ask the developers directly and work things out together!
 
-We were unable to grow fruux company quickly enough, so in 2014 we made a pivot
-and try to focus on professional services around sabre/dav. We got burned with
-the incredibly long sales cycles, so later in 2015 we had to wind this business
+We were unable to grow fruux quickly enough, so in 2014 we made a pivot and try
+to focus on professional services around sabre/dav. We got burned with the
+incredibly long sales cycles, so later in 2015 we had to wind this business
 down and find alternative income streams while still passionately working on
 this project.
 
 <img src="/resources/images/posts/fruux-team.jpg" title="Fruux team in 2012" style="max-width: 100%" />
 
 _Pictured above: the original fruux team_
-
 
 Unfortunately over time the alternative income streams slowly became the main
 ones leading me to September 2016, in which I started a new full-time job at
