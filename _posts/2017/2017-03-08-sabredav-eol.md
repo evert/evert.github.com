@@ -15,8 +15,8 @@ our company.
 A lot of people ended up being pretty excited about it. In 2010 I got to a
 point where doing consulting around this project allowed me to travel around
 the world, working for various companies and get paid enough to not have to
-do any other jobs. Life was pretty good! One of these gigs was on an
-Australian beach. (Thanks Ben!)
+do any other jobs. Life was pretty good! One of these gigs actually brought
+me all the way to a beach in Australia! (Thanks Ben!)
 
 In 2012 plenty of businesses relied on this project for either a side-feature,
 or at the heart of their product, including various ISP's, product companies
