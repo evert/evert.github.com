@@ -1,7 +1,7 @@
 ---
-date: 2017-04-02 16:07:38 -0500
+date: 2017-04-03 10:19:25 -0400
 layout: post
-title: "The problems embedding with REST today and how it might be solved"
+title: "The problems with embedding in REST today and how it might be solved with HTTP/2"
 tags:
    - rest
    - hypermedia
