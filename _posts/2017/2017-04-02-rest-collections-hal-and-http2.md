@@ -10,7 +10,7 @@ tags:
 ---
 
 When looking at REST, the underlying theory, and various interpretations and
-event HTTP, you'll find that REST is about singular resources and transfering
+even HTTP, you'll find that REST is about singular resources and transfering
 state of those resources.
 
 There's very little supporting information about the concept of a collection
@@ -29,7 +29,7 @@ technically handle them.
 > entities, not the entity that corresponds to the mapping at any particular
 > point in time. 
 
-This parapgraph is the only place where the word 'collection' appears, and it
+This paragraph is the only place where the word 'collection' appears, and it
 basically says that it's just another resource. This is good, because it tells
 us that collections are not a separate concept from other resources and should
 abide by the same constraints. 
@@ -184,8 +184,8 @@ We noticed that all clients _always_ requests the current users' information
 after logging in. It always follows up this initial `GET` to a `GET` to
 whatever the `current-user` relation points at.
 
-Knowing this, we can adapt our API to simply assume this and
-pre-emptively send that information over:
+Knowing this, we can change our API to simply assume this and
+pre-emptively send that resource over:
 
 
 ```json
@@ -215,17 +215,20 @@ A few problems with this
 ------------------------
 
 One of the biggest advantages and promises that REST typically gives us, is
-by using the functionality HTTP brings out of the box, we get all the benefits
-that HTTP brings itself. One of the biggest examples that is always given, is
-the rich caching features HTTP has.
+by using the functionality HTTP, we get all the benefits from HTTP. The usual
+example of this is being able to use the rich caching features from HTTP.
 
 However, HTTP caches will not be aware of embedded resources. In the last
 example, the cache doesn't know that `/user/1356` was embedded and cached, and
 it doesn't know it does not know it can skip a future `GET` request to that
 resource.
 
+Also, if we did a real cached `GET` request, but later on we issue a `PUT` on
+that same resource, a HTTP client 'knows' that since a `PUT` was issued, the
+local cache is no longer valid.
+
 So typically, a HAL client that wants to be adaptable to this needs it's own
-local cache. What we'll ideally want to do, is something like this (in
+cache. What we'll ideally want to do, is something like this (in
 pseudo-code)
 
 ```js
@@ -236,7 +239,8 @@ console.log(await currentUserResource.get());
 
 I hope the source makes some sense, but the general idea is that once we
 'follow' the `current-user` link and get its representation, we only need the
-extra `GET` request, if it wasn't embedded. This should be seamless.
+extra `GET` request, if it wasn't embedded. This should be a seamless
+experience.
 
 To implement this in browsers today, it means that the API client will need
 to:
@@ -245,14 +249,19 @@ to:
 * Take items from `_embedded`, treat them the same as links
 * Store them into a some kind of local cache.
 * Use that local cache when the user wants to do a `GET` request.
+* Invalidate that local cache when `PUT`, `DELETE` or another non-safe HTTP
+  request is issued on that same resource.
+
+So while we can still use HTTP semantics, we now have two caching layers which
+may conflict.
 
 
 Fetch: A future solution to this problem
 ----------------------------------------
 
-The [Fetch API][6] is the future of doing HTTP requests. It's much nicer api than
-XMLHTTPRequest, but also has another really cool feature. Once it lands it gives
-us direct access to the browsers' HTTP cache.
+The [Fetch API][6] is the future of doing HTTP requests in browsers. It's a
+much nicer api than XMLHTTPRequest, but also has another really cool feature:
+Once it lands it gives us direct access to the browsers' HTTP cache.
 
 The specific thing to look for is [Cache.put()][7]. This API should allow us to
 directly add things to the browser cache. a HAL client in this case could parse
@@ -290,8 +299,8 @@ of need to make these values up, and that's not great.
 A suggested proposal to improve HAL
 -----------------------------------
 
-If we start seeing HAL `_embedded` not as a standard way to specify
-collections, but instead we're really abstracting it, `_embedded` is just a
+Conceptually I feel that HAL's `_embedded` is not strictly for specifying
+collections and/or sub-resources. It's core feature is really
 means to prepopulate the HTTP cache to avoid future `GET` requests.
 
 Knowing that, I believe `_embedded` is not the best format to achieve this
@@ -337,7 +346,7 @@ Here's a format I would like to see instead:
 
 Changed from `_embedded` are:
 
-* I added HTTP request and response headers.
+* I added HTTP request and response headers and the request method.
 * I'm no longer indexing things in `_embedded` by their relation type, it's
   just an array of requests and response pairs.
 * I'm no longer removing items from `_links`. The link just stays there.
@@ -348,20 +357,24 @@ The drawback? If you're not interesed in developing an an advanced HAL
 client/server, and just want to build a 'dumb' parser of collections, there's
 more data and a higher cognitive load.
 
+However, even if this is a better way to push resources to a client, it's only
+really needed for HTTP/1.1. HTTP/2 makes this obsolete.
+
 
 HTTP/2
 ------
 
-Those aware of what's going on with HTTP/2 might recognize this and realize
-that `_push` might not be needed for HTTP/2 clients and servers.
+Those aware of what's going on with HTTP/2 might recognize `_push`. HTTP/2
+has a very similar feature.
 
 HTTP/2 actually introduces a protocol-level push and it works in the exact
 same way. HTTP/2 Push can be used to preemptively populate the browser cache
-if the server knows the client will likely request certain resources.
+if the server knows the client will likely want to do certain `GET` requests
+in the future.
 
-HTTP/2 Push also works in the exact same way, a HTTP/2 push message always
-contains BOTH the HTTP response, but also the HTTP Request that the browser
-_would_ send if they did have to do the `GET` request.
+A HTTP/2 push message always contains BOTH the HTTP response, but also the
+HTTP Request that the browser _would_ send if they did have to do the `GET`
+request.
 
 And now there's a new feature under development that makes this especially
 cool: [HTTP/2 cache digest][8].
@@ -384,12 +397,12 @@ client didn't already have an up-to-date copy of it.
 
 For this reason I think that my `_push` proposal doesn't make all that much
 sense. It's only really useful to provide a HTTP/2-like push feature to
-HTTP/1.1. It's just a stopgap.
+HTTP/1.1. It's a stopgap.
 
 And since we no longer really need `_embedded`, it might make sense to also
-ditch `_links` and just move them to the [HTTP Link][9] header, which also
-means all this REST linking logic is no longer restricted to JSON or XML-based
-formats.
+ditch `_links` and just move the information to the [HTTP Link][9] header,
+which also means all this REST linking logic is no longer restricted to JSON
+or XML-based formats.
 
 
 Conclusion
@@ -397,7 +410,7 @@ Conclusion
 
 In HAL and REST we currently have an awkward and poor fit for embedding
 resources. The only reason we need this in the first place, is because clients
-doing many GET requests is expensive.
+doing many GET requests is expensive. Technical limitations of HTTP.
 
 This causes problems because these resources are not easily cached and simply
 don't fit well within the HTTP design. We need to create layers on top of HTTP
@@ -408,9 +421,8 @@ avoid embedding resources and preemptively send resources that the client
 will probably want and doesn't already have an up-to-date copy for.
 
 This will make REST extremely powerful and alleviate some of the largest
-problems it has to today. I think it eventually makes formats like HAL
-completely obsolete. Frankly I think that this future fulfills the REST
-promise.
+isues people have with it today. I think it eventually makes formats like HAL
+completely obsolete.
 
 
 [1]: https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
