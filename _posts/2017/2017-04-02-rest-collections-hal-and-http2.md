@@ -425,8 +425,8 @@ will probably want and doesn't already have an up-to-date copy for.
 
 This will make REST much more practical and alleviate some of the largest
 isues people have with it today. I think it eventually makes formats like HAL
-completely obsolete.
-
+completely obsolete, because we're moving the hard stuff to the protocol
+layer.
 
 [1]: https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
 [2]: https://tools.ietf.org/html/draft-kelly-json-hal-08
