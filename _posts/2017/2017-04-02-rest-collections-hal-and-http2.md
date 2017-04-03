@@ -1,12 +1,14 @@
 ---
 date: 2017-04-02 16:07:38 -0500
 layout: post
-title: "The problems of REST today and a vision for the future."
+title: "The problems embedding with REST today and how it might be solved"
 tags:
    - rest
    - hypermedia
    - hal
    - http
+   - http2
+   - api
 ---
 
 When looking at REST, the underlying theory, and various interpretations and
@@ -328,7 +330,8 @@ Here's a format I would like to see instead:
         "headers" : {
             "vary": "Accept",
             "cache-control" : "private; max-age=3600; no-revalidate",
-            "content-type" : "application/hal+json"
+            "content-type" : "application/hal+json",
+            "etag" : "\"foo-bar\""
         },
         "body" : {
           "_links" : {
@@ -420,7 +423,7 @@ HTTP/2 and cache digests might offer a great solution, in that we can completely
 avoid embedding resources and preemptively send resources that the client
 will probably want and doesn't already have an up-to-date copy for.
 
-This will make REST extremely powerful and alleviate some of the largest
+This will make REST much more practical and alleviate some of the largest
 isues people have with it today. I think it eventually makes formats like HAL
 completely obsolete.
 
