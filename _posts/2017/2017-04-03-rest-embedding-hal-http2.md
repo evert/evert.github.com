@@ -12,7 +12,7 @@ tags:
 ---
 
 When looking at REST, the underlying theory, and various interpretations and
-even HTTP, you'll find that REST is about singular resources and transfering
+even HTTP, you'll find that REST is about singular resources and transferring
 state of those resources.
 
 There's very little supporting information about the concept of a collection
@@ -42,7 +42,7 @@ resources?
 
 Well, when you look at any of the common hypermedia formats, you'll find that
 each of them has a slightly different idea about it. However, each of these
-formats tend to have something in common: they treat items in a collection as
+formats tends to have something in common: they treat items in a collection as
 a sort of 'sub-resource' inside a 'resource'.
 
 
@@ -53,7 +53,7 @@ Before we go into some examples, I think it's worthwhile to discuss this. A
 collection is a set of resources. Resources may 'belong' to a collection in
 some cases, but resources may also appear in multiple collections.
 
-For example, if my REST api represents blog posts, the same article may appear
+For example, if my REST API represents blog posts, the same article may appear
 in a collection that represents all posts from 2017, and all posts written
 by me.
 
@@ -182,7 +182,7 @@ contains a link to a resource that has information about the current user:
 }
 ```
 
-We noticed that all clients _always_ requests the current users' information
+We noticed that all clients _always_ request the current users' information
 after logging in. It always follows up this initial `GET` to a `GET` to
 whatever the `current-user` relation points at.
 
@@ -222,8 +222,7 @@ example of this is being able to use the rich caching features from HTTP.
 
 However, HTTP caches will not be aware of embedded resources. In the last
 example, the cache doesn't know that `/user/1356` was embedded and cached, and
-it doesn't know it does not know it can skip a future `GET` request to that
-resource.
+it does not know it can skip a future `GET` request to that resource.
 
 Also, if we did a real cached `GET` request, but later on we issue a `PUT` on
 that same resource, a HTTP client 'knows' that since a `PUT` was issued, the
@@ -266,7 +265,7 @@ much nicer api than XMLHTTPRequest, but also has another really cool feature:
 Once it lands it gives us direct access to the browsers' HTTP cache.
 
 The specific thing to look for is [Cache.put()][7]. This API should allow us to
-directly add things to the browser cache. a HAL client in this case could parse
+directly add things to the browser cache. A HAL client in this case could parse
 out everything that appears in `_embedded` and directly add it to this cache.
 
 A future `GET` request will then simply directly be taken from this cache, and
