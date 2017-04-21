@@ -17,8 +17,9 @@ I would joke "I must have done something right", but the truth is that I work
 with some extremely smart and genuine people, who totally earned this.
 
 Working for am much larger company like Yelp will be a huge adventure, and a
-massive experience to learn from, so I feel really to have jumped on this chance
-at just the right moment.
+massive experience to learn from, so I feel really lucky to have jumped on this
+chance at just the right moment. I can't wait to build great things with an army
+of smart people.
 
 And who knows, maybe I'll get to see a bit more of San Francisco in the future!
 
