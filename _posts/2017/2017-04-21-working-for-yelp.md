@@ -7,7 +7,7 @@ tags:
     - turnstyle
 ---
 
-<img src="/resources/images/posts/yelp.png" style="float: right; padding: 10px; max-width: 100%;" alt="Yelp" title="Yelp" />
+<img src="/resources/images/posts/yelp.png" style="float: right; padding: 10px; max-width: 100%; width: 216px" alt="Yelp" title="Yelp" />
 
 In a twisted turn of events, I suddenly find myself to be working for [Yelp][1]!
 It sounds a bit like it was a surprise, and it kind of was. Only 6 months after
