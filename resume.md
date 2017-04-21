@@ -42,14 +42,22 @@ Links
 Experience
 ----------
 
-### API Architect at Turnstyle, Toronto, Canada - 2016-today
+### Software Engineer at Yelp, Toronto, San Francisco - 2017-today
+
+Turnstyle got acquired by Yelp. At Yelp my title changed to Software Engineer,
+but I'm pretty much doing the same thing as I did as Turnstyle, that is:
+
+I helped design a REST API and manage the team that's building it.
+
+
+### API Architect at Turnstyle, Toronto, Canada - 2016-2017
 
 In October 2016, I joined Turnstyle, a company in Toronto that does location-
 based marketing analytics.
 
 My role here is to help drive the design and architecture of a REST API. We've
 used HAL, OAuth2, json-schema to drive the hypermedia API using NodeJS, ES6,
-ES7. On a docker-container infrastructure running on Amazon Web Services..
+ES7. On a docker-container infrastructure running on Amazon Web Services.
 
 
 ### Co-Founder/CTO fruux, Germany + UK — 2011 - 2015
