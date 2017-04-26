@@ -13,7 +13,7 @@ tags:
 ---
 
 Hi there! My name is Evert, and for the past 10 years I've probably done
-around 90-95% of development for the [sabre/*][2] packages, and took over 
+around 90-95% of development for the [sabre/*][2] packages, and took over
 [Baikal][3] development last year.
 
 After this time, it all became a little bit too much for me to maintain
@@ -35,7 +35,7 @@ like it, but I'm no longer giving any guarantees. It's really completely up to
 you.
 
 If you're a corporation and rely on the sabre/* projects, and you're also willing
-to invest in this, [drop me a line][4]. If there's a few businesses like yours,
+to invest in this, [drop me a line][4]. If there are a few businesses like yours,
 it might just be enough to setup a small foundation and hire a person to
 continue working on this and I'm willing to help in setting this up.
 
@@ -52,7 +52,7 @@ I would just want to say: do it! You don't need my permission or blessing.
 
 The packages are on github, you can submit pull requests and there's also lots
 of open, unanswered support questions. If over time the quality of your
-contributions is high, I'm super open to just hand over control of the 
+contributions is high, I'm super open to just handing over control of the
 repositories you're interested in.
 
 Someone also asked "is there going to be a fork?", which I found a hilarious
