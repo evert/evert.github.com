@@ -9,7 +9,7 @@ Evert Pot
 
 _Web architect, API developer_
 
-* Last update: *April 21st, 2017*.
+* Last update: *August 1st, 2017*.
 * Location: Toronto, ON, Canada.
 * Contact: <mailto:work@evertpot.com>.
 
@@ -26,9 +26,6 @@ practices, scalability problems and application architecture. In the past I've
 had a strong focus on PHP, but I'm very open to other technology stacks as
 well. I also have decent soft skills and served as CTO and technical leadership
 in most of the companies I've worked at.
-
-I'm currently looking for my next big thing! I would love to start a new venture
-or join a young, promising business. How can I help?
 
 Links
 -----
@@ -186,6 +183,7 @@ communicating technical requirements.
 * PHP Meetup, September 2016 - Toronto, Canada: Go for PHP programmers. ([slides](/talks/go-for-php-programmers/) )
 * True North PHP 2016 - Toronto, Canada: Making CSS fun again with Sass. ([slides](https://github.com/evert/sass-talk)).
 * True North PHP 2016 - Toronto, Canada: Introducing sabre/dav.
+* Midwest PHP 2016 - Minneapolis, USA: Promises and Generators. ([slides](https://github.com/evert/promises-and-generators))
 
 
 ### Recognition
