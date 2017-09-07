@@ -9,7 +9,7 @@ Evert Pot
 
 _Web architect, API developer_
 
-* Last update: *August 1st, 2017*.
+* Last update: *September 7th, 2017*.
 * Location: Toronto, ON, Canada.
 * Contact: <mailto:work@evertpot.com>.
 
@@ -41,21 +41,24 @@ Experience
 
 ### Software Engineer at Yelp, Toronto, San Francisco - 2017-today
 
-Turnstyle got acquired by Yelp. At Yelp my title changed to Software Engineer,
-but I'm pretty much doing the same thing as I did as Turnstyle, that is:
+Turnstyle got acquired by Yelp in April 2017. At Yelp my title changed to
+Software Engineer, but my role thusfar has been very similar to what it
+was at Turnstyle.
 
-I helped design a REST API and manage the team that's building it.
-
+Things that are different is that I now help onboard a quickly growing
+development team, and working with the needs and requirements of a much
+larger corporation, including integrating our existing systems in Yelp's
+infrastructure.
 
 ### API Architect at Turnstyle, Toronto, Canada - 2016-2017
 
 In October 2016, I joined Turnstyle, a company in Toronto that does location-
 based marketing analytics.
 
-My role here is to help drive the design and architecture of a REST API. We've
+My role there was to help drive the design and architecture of a REST API. We've
 used HAL, OAuth2, json-schema to drive the hypermedia API using NodeJS, ES6,
 ES7. On a docker-container infrastructure running on Amazon Web Services.
-
+I also helped mentor other developers, and act as a technical lead.
 
 ### Co-Founder/CTO fruux, Germany + UK — 2011 - 2015
 
@@ -66,10 +69,15 @@ technical and product direction, as well as leading the team from a
 technical perspective. Aside from that I’ve also got my hands dirty in some
 marketing and sales, and basically just stepped in where needed.
 
+As a programmer I helped develop their synchronization system for personal
+information such as calendars, contacts and files. I acted as a liaison for
+the CalConnect calendar and scheduling standard consortium.
+
 ### Consulting, worldwide — 2003-today
 
-I've been a consultant / freelancer pretty much at any point in my career where
-there's gaps between jobs.
+I originally incorporated at age 17 at the Chamber of Commerce in the
+Netherlands. I've been a consultant and freelancer pretty much at any point
+in my career where there's gaps between jobs.
 
 I’ve had the opportunity to work in
 telecommunication, social media, group ware, advertising, broadcasting,
@@ -80,6 +88,7 @@ America, Europe and Asia.
 Used many different technologies such PHP / Lamp stack, NodeJS, Lots of
 Javascript, AWS, Backbone, Golang, Sass/Less, or basically whatever tech the
 job called for.
+
 
 ### Software engineer, Ibuildings, Utrecht, Netherlands — 2010-2011
 
@@ -223,3 +232,9 @@ Since 2007 I started working on an open source library that would be named
 sabre/dav. This project spawned a number of PHP libraries that are now widely
 in use for various purposes. The project site is <http://sabre.io/>. I'm still
 the lead maintainer for all of these projects.
+
+### Ketting
+
+In 2016 I started a new open-source project called
+[Ketting](https://github.com/evert/ketting). This project is an opiniated REST
+client, written in Javascript for both server and client side.

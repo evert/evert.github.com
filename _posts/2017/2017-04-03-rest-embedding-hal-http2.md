@@ -9,6 +9,7 @@ tags:
    - http
    - http2
    - api
+   - featured
 ---
 
 When looking at REST, the underlying theory, and various interpretations and
