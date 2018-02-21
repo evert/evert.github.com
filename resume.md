@@ -37,7 +37,7 @@ Links
 Experience
 ----------
 
-### Technical Lead at Yelp/Turnstyle, Toronto/San Francisco - 2016-today
+### Technical Lead at Yelp, Toronto/San Francisco - 2016-today
 
 In October 2016, I joined Turnstyle, a company in Toronto that does location-
 based marketing analytics.
@@ -54,16 +54,6 @@ Although my role hasn't changed that much, I helpbed onboard a quickly growing
 development team, and working with the needs and requirements of a much
 larger corporation, including integrating our existing systems and culture with
 Yelp's.
-
-### API Architect at Turnstyle, Toronto, Canada - 2016-2017
-
-In October 2016, I joined Turnstyle, a company in Toronto that does location-
-based marketing analytics.
-
-My role there was to help drive the design and architecture of a REST API. We've
-used HAL, OAuth2, json-schema to drive the hypermedia API using NodeJS, ES6,
-ES7. On a docker-container infrastructure running on Amazon Web Services.
-I also helped mentor other developers, and act as a technical lead.
 
 ### Co-Founder/CTO fruux, Germany + UK — 2011 - 2015
 
