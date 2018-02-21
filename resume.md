@@ -9,23 +9,21 @@ Evert Pot
 
 _Web architect, API developer_
 
-* Last update: *September 7th, 2017*.
-* Location: Toronto, ON, Canada.
+* Last update: *February 20th, 2017*.
+* Location: San Francisco, CA, United States.
 * Contact: <mailto:work@evertpot.com>.
 
 
 Summary
 -------
 
-My name is Evert, and I've been a Web Developer for almost 15 years. I've been
+My name is Evert, and I've been a Web Developer for 15 years. I've been
 doing consulting for a wide range of companies, from small businesses to
 telcos, financial services and national broadcasters.
 
 I'm especially interested in API design, implementing better engineering
-practices, scalability problems and application architecture. In the past I've
-had a strong focus on PHP, but I'm very open to other technology stacks as
-well. I also have decent soft skills and served as CTO and technical leadership
-in most of the companies I've worked at.
+practices, scalability problems and application architecture. I served
+as CTO and technical leadership in most of the companies I've worked at.
 
 Links
 -----
@@ -39,16 +37,23 @@ Links
 Experience
 ----------
 
-### Software Engineer at Yelp, Toronto, San Francisco - 2017-today
+### Technical Lead at Yelp/Turnstyle, Toronto/San Francisco - 2016-today
 
-Turnstyle got acquired by Yelp in April 2017. At Yelp my title changed to
-Software Engineer, but my role thusfar has been very similar to what it
-was at Turnstyle.
+In October 2016, I joined Turnstyle, a company in Toronto that does location-
+based marketing analytics.
 
-Things that are different is that I now help onboard a quickly growing
+My role there was to help drive the design and architecture of a REST API. We've
+used HAL, OAuth2, json-schema to drive the hypermedia API using NodeJS, ES6,
+ES7. On a docker-container infrastructure running on Amazon Web Services.
+I also helped mentor other developers, and act as a technical lead.
+
+In April 2017 Turnstyle got acquired by Yelp, and I subsequently moved to San
+Francisco in October.
+
+Although my role hasn't changed that much, I helpbed onboard a quickly growing
 development team, and working with the needs and requirements of a much
-larger corporation, including integrating our existing systems in Yelp's
-infrastructure.
+larger corporation, including integrating our existing systems and culture with
+Yelp's.
 
 ### API Architect at Turnstyle, Toronto, Canada - 2016-2017
 
