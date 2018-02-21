@@ -23,7 +23,7 @@ telcos, financial services and national broadcasters.
 
 I'm especially interested in API design, implementing better engineering
 practices, scalability problems and application architecture. I served
-as CTO and technical leadership in most of the companies I've worked at.
+as CTO or technical leadership in most of the companies I've worked at.
 
 Links
 -----
