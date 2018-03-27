@@ -42,5 +42,5 @@ The library will be marked as '1.0.0' as soon as the draft is released as an
 RFC. Until then BC breaking changes might happen as the spec evolves.
 
 [1]: https://tools.ietf.org/html/draft-ietf-httpbis-header-structure
-[2]: https://travis-ci.org/evert/structured-header
+[2]: https://github.com/evert/structured-header
 [3]: https://www.npmjs.com/package/structured-header
