@@ -28,9 +28,9 @@ as CTO or technical leadership in most of the companies I've worked at.
 Links
 -----
 
-* Blog: <http://evertpot.com/>
+* Blog: <https://evertpot.com/>
 * Github: <https://github.com/evert/>
-* LinkedIn: <https://ca.linkedin.com/in/evertpot>
+* LinkedIn: <https://www.linkedin.com/in/evert-pot-868746147>
 * Stack Overflow: <http://stackoverflow.com/users/80911/evert>
 
 
