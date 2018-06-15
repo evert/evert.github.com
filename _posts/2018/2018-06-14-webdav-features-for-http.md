@@ -1,5 +1,5 @@
 ---
-title: 5 WebDAV features that might be useful for HTTP services.
+title: WebDAV features that might be useful for HTTP services.
 date: 2018-06-14 23:03:18 -0700
 tags:
   - webdav
