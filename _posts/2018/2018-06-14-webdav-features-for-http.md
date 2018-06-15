@@ -120,9 +120,9 @@ are:
 * `If-Unmodified-Since`
 * `If-Range`
 
-WebDAV has a header for conditional requests that much more powerful: `If`.
-It can do the same as `If-Match` and `If-None-Match`, but adds a number of
-features on top of this.
+WebDAV defines another header for conditional requests that's much more
+powerful: `If`.  It can do the same as `If-Match` and `If-None-Match`, but
+adds a number of features on top.
 
 Here's some examples of `If` and their equivalent `If-[None-]Match` headers:
 
@@ -146,9 +146,10 @@ PUT /resourceA HTTP/1.1
 If: </resourceB> (["foo-bar"])
 ```
 
-A specific example where this is useful, might actually be the earlier
-mentioned `COPY` and `MOVE` operations. In those cases, you might want to
-check the etag of both the source and destinations to avoid conflicts.
+A specific example where this is useful might actually be the earlier
+mentioned `COPY` and `MOVE` operations. Because those methods affect
+resources not specified in the request-URI, you might want to check the etag
+of both the source and destinations to avoid conflicts.
 
 ```
 COPY /source HTTP/1.1
@@ -171,12 +172,14 @@ PUT /foo
 If: (["etag1"] ["etag2"]).
 ```
 
-There's another feature that's very powerful. In every previous example we
-always made our requests conditional on ETags. HTTP also allows conditions
-based on the `Last-Modified` header, but that's it. The `If` header allows
-for conditions on your own custom flags.
+### Conditions on custom flags
 
-This is a purely fictional example, but imagine that we have a "user"
+There's another feature that's very powerful. In every previous example we
+always made our requests conditional on ETags. HTTP itself also allows
+conditions based on the `Last-Modified` header, but that's really it. The `If`
+header allows for conditions on your own custom flags & extensions.
+
+The following is a purely fictional example, but imagine that we have a "user"
 resource, and that user has a flag indicating whether or not they paid for
 a service.
 
@@ -191,9 +194,9 @@ PUT /foo
 If: </user/234> (<https://example.org/flags/user-has-paid>).
 ```
 
-This example is a bit silly, but I tried to find a simple one. The underlying
-idea is that conditional requests can sometimes be useful, and 'ETag' is not
-always the best way to express certain states on the server.
+This example is a bit contrived, but I tried to find a simple one. The
+underlying idea is that conditional requests can sometimes be useful, and
+'ETag' is not always the best way to express certain states on the server.
 
 * [RFC4918, section 10.4: If header][10]. 
 
