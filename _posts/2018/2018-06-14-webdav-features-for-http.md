@@ -17,11 +17,6 @@ useful in other contexts. And even though it 'extends' HTTP, it does so within
 the confines of the HTTP framework, so you can take advantage of them using
 standard HTTP clients and servers.
 
-I want to avoid suggesting whether you _should_ use these features, I merely
-want to suggest that you _can_, although I would be curious to hear if readers
-see any specific concerns with them.
-
-
 MOVE & COPY
 -----------
 
@@ -35,9 +30,9 @@ PUT /destination <-- create the new resource
 DELETE /source <-- remove the old one
 ```
 
-Copying would behave similar without the last step. One issue with this
-approach is that it's not an atomic operation. In the middle of this 3-step
-process 2 resources might exist.
+One issue with this approach is that it's not an atomic operation. In the
+middle of this process there is a short window where both the source and
+destination exist.
 
 If an atomic move operation is required, a typical solution might be to create
 a `POST` request with a specific media-type for this, and this is a completely
@@ -56,14 +51,14 @@ Content-Type: application/vnd.move+json
 
 The WebDAV `MOVE` request looks like this:
 
-```http
+```
 MOVE /source HTTP/1.1
 Destination: /destination
 ```
 
 Both the `MOVE` and `COPY` request use the `Destination` header to tell the
 server where to copy/move to. The server is supposed to perform this operation
-as an atomic one, and it must either completely succeed or completely fail.
+as an atomicly, and it must either completely succeed or completely fail.
 
 Using `POST` for this is completely valid. However, in my mind using a HTTP
 method with more specific semantic can be nice. This is not that different
@@ -84,10 +79,11 @@ times where it's infeasable to embed the entire query in the url.
 
 There's more than one way to solve this problem. Here's a few common ones:
 
-1. Use `POST` instead. This is by far the most common, and by many considered
-   the most pragmatic.
+1. You can use `POST` instead. This is by far the most common, and by many
+   considered the most pragmatic.
 2. Create a "report" resource, expose a separate "result" resource and fetch it
-   with `GET`. This is considered a better RESTful solution.
+   with `GET`. This is considered a better RESTful solution because you still
+   get a way to reference the result by its address.
 3. Supply a request body with your `GET` request. This is a really bad idea, and
    goes against many HTTP best practices, but some products like
    [Elasticsearch][6] do this.
@@ -103,9 +99,6 @@ If that last issue is something you care about, you might want to consider
 using `REPORT` or `SEARCH` instead. The requests and response bodies could
 identical if you were to use `POST`, but these methods are both idempotent,
 and safe.
-
-If you can, you should always use `GET` for retrieving information, but if you
-can't and consider using `POST`, you could consider `REPORT` or `SEARCH` instead.
 
 * [RFC3252, section 3.6: REPORT method][7].
 * [RFC5323, section 2: The SEARCH method][8].
@@ -231,7 +224,7 @@ What didn't make the list
 [5]: https://tools.ietf.org/html/rfc4918#section-9.8 "COPY Method"
 [6]: https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-multi-get.html
 [7]: https://tools.ietf.org/html/rfc3253#section-3.6 "REPORT Method"
-[8]: https://tools.ietf.org/html/rfc5323#section-2 "The SEARCH Method".
+[8]: https://tools.ietf.org/html/rfc5323#section-2 "The SEARCH Method"
 [9]: https://tools.ietf.org/html/rfc7232 "Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests" 
 [10]: https://tools.ietf.org/html/rfc4918#section-10.4 "If Header"
 [11]: https://tools.ietf.org/html/rfc4437 "Web Distributed Authoring and Versioning (WebDAV) Redirect Reference Resources"
