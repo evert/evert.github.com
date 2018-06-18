@@ -12,6 +12,8 @@ gems:
 
 lsi: false
 
+future: false
+
 excerpt_separator: <!--more-->
 
 defaults:
