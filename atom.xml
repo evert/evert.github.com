@@ -1,11 +1,11 @@
 ---
-layout: nil
+layout: null
 ---
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title>Het bijstere spoor</title>
-  <link type="application/atom+xml" rel="self" href="http://evertpot.com/atom.xml"/>
+  <link type="application/atom+xml" rel="self" href="https://evertpot.com/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://evertpot.com/</id>
   <author>
@@ -16,7 +16,7 @@ layout: nil
   {% for post in site.posts limit:20 %}
   <entry>
     <id>http://evertpot.com{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://evertpot.com{{ post.id }}"/>
+    <link type="text/html" rel="alternate" href="https://evertpot.com{{ post.id }}"/>
     <title>{{ post.title | xml_escape }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>

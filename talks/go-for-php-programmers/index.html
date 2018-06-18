@@ -1,0 +1,1157 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Go for PHP programmers</title>
+  <style type="text/css">
+    body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
+  font-size: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  background-color: #f7f7f7;
+}
+
+.slide-content {
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+  margin: 80px auto 0 auto;
+  padding: 30px;
+
+  font-weight: 200;
+  font-size: 200%;
+  line-height: 1.375;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.arrow {
+  width: 0; height: 0;
+  border: 30px solid #333;
+  float: left;
+  margin-right: 30px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.prev {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  border-left-width: 0;
+  border-right-width: 50px;
+}
+
+.next {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+
+  border-left-width: 50px;
+  border-right-width: 0;
+}
+
+.prev:hover {
+  border-right-color: #888;
+  cursor: pointer;
+}
+
+.next:hover {
+  border-left-color: #888;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 300%;
+  line-height: 1.2;
+  text-align: center;
+  margin: 170px 0 0;
+}
+
+h2 {
+  font-size: 100%;
+  line-height: 1.2;
+  margin: 5px 0;
+  text-align: center;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 140%;
+  line-height: 1.2;
+  border-bottom: 1px solid #aaa;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+ul {
+  padding: 20px 0 0 60px;
+  font-weight: 200;
+  line-height: 1.375;
+}
+
+.author h1 {
+  font-size: 170%;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.author h3 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 95%;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #44a4dd;
+}
+
+a:hover {
+  color: #66b5ff;
+}
+
+pre {
+  font-size: 60%;
+  line-height: 1.3;
+}
+
+.progress {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 3px;
+  background-color: #b4b4b4;
+
+  -webkit-transition: width 0.05s ease-out;
+  -moz-transition: width 0.05s ease-out;
+  -o-transition: width 0.05s ease-out;
+  transition: width 0.05s ease-out;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 850px) {
+
+  body {
+    font-size: 70%;
+  }
+
+  .slide-content {
+    width: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    margin-top: 120px;
+  }
+
+  .prev, .prev:hover {
+    border-right-color: rgba(135, 135, 135, 0.5);
+  }
+
+  .next, .next:hover {
+    border-left-color: rgba(135, 135, 135, 0.5);
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 50%;
+    overflow: hidden;
+  }
+
+  .slide-content {
+    padding: 10px;
+    margin-top: 10px;
+    height: 340px;
+  }
+
+  h1 {
+    margin-top: 50px;
+  }
+
+  ul {
+    padding-left: 25px;
+  }
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+
+  @page {
+    size: letter;
+  }
+
+  .hidden {
+    display: inline;
+  }
+
+  html {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  body {
+    margin: 0 auto !important;
+    border: 0;
+    padding: 0;
+    float: none !important;
+    overflow: visible;
+    background: none !important;
+    font-size: 52%;
+  }
+
+  .progress, .controls {
+    display: none;
+  }
+
+  .slide {
+    position: static;
+  }
+
+  .slide-content {
+    border: 1px solid #222;
+    margin-top: 0;
+    margin-bottom: 40px;
+    height: 3.5in;
+    overflow: visible;
+  }
+
+  .slide:nth-child(even) {
+    /* 2 slides per page */
+    page-break-before: always;
+  }
+}
+
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+pre {
+    display: flex;
+}
+
+pre > code {
+    font-size: 150%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.slide-content {
+    width: 1066px;
+    margin-top: 40px;
+}
+
+.progress-bar {
+    background: black;
+    height: 5px;
+}
+
+.slide {
+    top: 5px;
+}
+
+  </style>
+</head>
+<body>
+    <div class="progress">
+    <div class="progress-bar"></div>
+  </div>
+
+  <div class="slide" id="slide-1">
+    <section class="slide-content"><h1 id="go-for-php-programmers">Go for PHP programmers</h1>
+<div style="text-align: center; font-size: 60%; padding-top: 30px">
+By Evert Pot, for GTA PHP User Group. September 2016
+</div></section>
+  </div>
+  <div class="slide hidden" id="slide-2">
+    <section class="slide-content"><h3 id="my-journey-the-last-6-months">My journey, the last 6 months</h3>
+<ul>
+<li>Been very focused on PHP for most of my professional career.</li>
+<li>Recently wrote a blog post titled &#39;PHP sucks&#39;.</li>
+<li>Disillusioned with php-fig.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-3">
+    <section class="slide-content"><h3 id="what-to-do-next-">What to do next?</h3>
+<ul>
+<li>The choice was between Go, Rust and Swift.</li>
+<li>All are very modern, have similar properties but also big differences.</li>
+<li>All are statically typed and compiled.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-4">
+    <section class="slide-content"><h3 id="i-settled-on-go">I settled on Go</h3>
+<ul>
+<li>Go has the least amount of features.</li>
+<li>Go is focussed on concurrency, multi-core, networked machines.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-5">
+    <section class="slide-content"><h3 id="what-is-go-">What is Go?</h3>
+<ul>
+<li>A relatively new language. Open source, but from Google.</li>
+<li>Brought to you by the people from C, Unix and UTF-8.</li>
+<li>Still up and coming.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-6">
+    <section class="slide-content"><p><img src="gonodetrend.png" style="max-width: 100%" /></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-7">
+    <section class="slide-content"><h3 id="what-is-go-">What is go?</h3>
+<ul>
+<li>It&#39;s compiled (like C).</li>
+<li>It&#39;s statically typed (like Java).</li>
+<li>It&#39;s managed and garbage collected (like PHP/Java).</li>
+<li>It has great async primitives (like Erlang)</li>
+<li>It has a weird type system (unlike anything)</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-8">
+    <section class="slide-content"><h3 id="use-cases-for-php-developers">Use-cases for PHP developers</h3>
+<ul>
+<li>You need a real-time Websocket server that scales.</li>
+<li>You have a microservice or script that benefits from better performance.</li>
+<li>You&#39;re writing a TCP service.</li>
+<li>You&#39;re writing a critical component in your business logic where bugs are
+a big problem.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-9">
+    <section class="slide-content"><h3 id="or-you-can-choose-java-">Or you can choose Java!</h3>
+<ul>
+<li>Just as good for thoses use-cases.</li>
+<li>But the Java ecosystem has a problem with simplicity and conciseness.</li>
+<li>Ignoring large frameworks is possible but counter-culture.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-10">
+    <section class="slide-content"><h3 id="choosing-a-language-means-choosing-a-culture">Choosing a language means choosing a culture</h3>
+<ul>
+<li>Goes beyond syntax.</li>
+<li>Ecosystem.</li>
+<li>Popular library choices.</li>
+<li>Coding standards.</li>
+<li>Application Architecture.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-11">
+    <section class="slide-content"><h3 id="lets-write-some-go-code">Lets write some Go code</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">"fmt"</span>
+)
+
+<span class="hljs-keyword">func</span> main() {
+    fmt.Println(<span class="hljs-string">"Hello, PHPers"</span>)
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-12">
+    <section class="slide-content"><h3 id="the-go-command-line-utility">The Go command-line utility</h3>
+<ul>
+<li><code>go run helloworld.go</code></li>
+<li><code>go build</code></li>
+<li><code>go fmt helloworld.go</code></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-13">
+    <section class="slide-content"><p><img src="tabsvspaces.png" style="width: 100%" /></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-14">
+    <section class="slide-content"><h3 id="strict-typing">Strict typing</h3>
+<h4 id="go">Go</h4>
+<pre><code class="lang-go">i := <span class="hljs-number">5</span>;
+s := <span class="hljs-string">"6"</span>
+
+fmt.Printf(<span class="hljs-string">"i + s: %v"</span>, i+s)
+<span class="hljs-comment">// Error</span></code></pre>
+<h4 id="php">PHP</h4>
+<pre><code class="lang-php">$i = <span class="hljs-number">5</span>;
+$s = <span class="hljs-string">"6"</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"i + s: "</span>, $i+$si;
+<span class="hljs-comment">// 11</span></code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-15">
+    <section class="slide-content"><h3 id="function-declarations">Function declarations</h3>
+<h4 id="go">Go</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> addSome(a, b <span class="hljs-keyword">int</span>) {
+    fmt.Println(a+b)
+}</code></pre>
+<h4 id="php">PHP</h4>
+<pre><code class="lang-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addSome</span><span class="hljs-params">(int $a, int $b)</span> </span>{
+    <span class="hljs-keyword">echo</span> $a + $b, <span class="hljs-string">"\n"</span>;
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-16">
+    <section class="slide-content"><h3 id="calling-that-function">Calling that function</h3>
+<blockquote>
+<pre><code class="lang-php">addSome(<span class="hljs-number">5</span>, <span class="hljs-string">"6 million"</span>);</code></pre>
+</blockquote>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-17">
+    <section class="slide-content"><h3 id="calling-that-function">Calling that function</h3>
+<blockquote>
+<pre><code class="lang-php">addSome(<span class="hljs-number">5</span>, <span class="hljs-string">"6 million"</span>);</code></pre>
+</blockquote>
+<h4 id="php">PHP</h4>
+<ul>
+<li>Prints 11, and throws notice.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-18">
+    <section class="slide-content"><h3 id="calling-that-function">Calling that function</h3>
+<blockquote>
+<pre><code class="lang-php">addSome(<span class="hljs-number">5</span>, <span class="hljs-string">"6 million"</span>);</code></pre>
+</blockquote>
+<h4 id="php">PHP</h4>
+<ul>
+<li>Prints 11, and throws notice.</li>
+<li>Or throws an error if you&#39;re in strict mode.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-19">
+    <section class="slide-content"><h3 id="calling-that-function">Calling that function</h3>
+<blockquote>
+<pre><code class="lang-php">addSome(<span class="hljs-number">5</span>, <span class="hljs-string">"6 million"</span>);</code></pre>
+</blockquote>
+<h4 id="php">PHP</h4>
+<ul>
+<li>Prints 11, and throws notice.</li>
+<li>Or throws an error if you&#39;re in strict mode.</li>
+</ul>
+<h4 id="go">Go</h4>
+<ul>
+<li>Simply not a valid program</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-20">
+    <section class="slide-content"><h3 id="why-is-this-important-">Why is this important?</h3>
+<ul>
+<li>In <em>dynamic type systems</em> you only often find this bug once the function is
+called with the invalid value.</li>
+<li>In <em>static type systems</em> these types of bugs can simply not exist.</li>
+<li>Static is also <em>faster</em>, because the check is done once, during compile.</li>
+<li>Dynamic means that the check has to be done for <em>every invocation</em>.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-21">
+    <section class="slide-content"><h3 id="some-more-types">Some more types</h3>
+<ul>
+<li>int</li>
+<li>int32</li>
+<li>int64</li>
+<li>uint</li>
+<li>uint32</li>
+<li>uint64</li>
+<li>bool</li>
+<li>string</li>
+<li>rune</li>
+<li>float32</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-22">
+    <section class="slide-content"><h3 id="some-more-types">Some more types</h3>
+<ul>
+<li>[]int</li>
+<li>[]int32</li>
+<li>[]int64</li>
+<li>[]uint</li>
+<li>[]uint32</li>
+<li>[]uint64</li>
+<li>[]bool</li>
+<li>[]string</li>
+<li>[]rune</li>
+<li>[]float32</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-23">
+    <section class="slide-content"><h3 id="oh-no-pointers">Oh no, pointers</h3>
+<ul>
+<li>*int</li>
+<li>*int32</li>
+<li>*int64</li>
+<li>*uint</li>
+<li>*uint32</li>
+<li>*uint64</li>
+<li>*bool</li>
+<li>*string</li>
+<li>*rune</li>
+<li>*float32</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-24">
+    <section class="slide-content"><h3 id="maps-">Maps!</h3>
+<ul>
+<li>map[string]int</li>
+<li>map[string]uint</li>
+<li>etc.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-25">
+    <section class="slide-content"><h3 id="structs">Structs</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Article <span class="hljs-keyword">struct</span> {
+    Id <span class="hljs-keyword">int</span>
+    Title <span class="hljs-keyword">string</span>
+    Published time.Time
+    Body <span class="hljs-keyword">string</span>
+    Comments []Comment
+}</code></pre>
+<ul>
+<li>Uppercase first character means &#39;public&#39;</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-26">
+    <section class="slide-content"><h3 id="structs">Structs</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Article <span class="hljs-keyword">struct</span> {
+    Id <span class="hljs-keyword">int</span>
+    Title <span class="hljs-keyword">string</span>
+    Published time.Time
+    Body <span class="hljs-keyword">string</span>
+    Comments []Comment
+}</code></pre>
+<pre><code class="lang-go">article := Article{
+    <span class="hljs-number">5</span>,
+    <span class="hljs-string">"Go for PHP programmers"</span>,
+    time.Now(),
+    <span class="hljs-string">"..."</span>,
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-27">
+    <section class="slide-content"><h3 id="adding-methods">Adding methods</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (a *Article) Publish() {
+    a.Published = time.Now()
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-28">
+    <section class="slide-content"><h3 id="adding-methods">Adding methods</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (a *Article) Publish() {
+    a.Published = time.Now()
+}</code></pre>
+<h4 id="constructor">Constructor</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> NewArticle() : Article {
+    <span class="hljs-comment">// Must return an Article</span>
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-29">
+    <section class="slide-content"><h3 id="polymorphism">Polymorphism</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Publishable <span class="hljs-keyword">interface</span> {
+    <span class="hljs-keyword">func</span> Publish()
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-30">
+    <section class="slide-content"><h3 id="polymorphism">Polymorphism</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Publishable <span class="hljs-keyword">interface</span> {
+    <span class="hljs-keyword">func</span> Publish()
+}</code></pre>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> PublishThis(p Publishable) {
+    p.Publish();
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-31">
+    <section class="slide-content"><h3 id="the-php-equivalent">The PHP equivalent</h3>
+<pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Article</span> </span>{
+    <span class="hljs-keyword">public</span> $id;
+    <span class="hljs-keyword">public</span> $title;
+    <span class="hljs-keyword">public</span> $published;
+    <span class="hljs-keyword">public</span> $body;
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">publish</span><span class="hljs-params">()</span> </span>{}
+}
+
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Publishable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">publish</span><span class="hljs-params">()</span></span>;
+}
+
+$article = <span class="hljs-keyword">new</span> Article();
+<span class="hljs-keyword">echo</span> $article <span class="hljs-keyword">instanceof</span> Publishable; <span class="hljs-comment">// true!</span></code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-32">
+    <section class="slide-content"><h3 id="real-example">Real example</h3>
+<pre><code class="lang-go"><span class="hljs-comment">// Adding this method satisfies the fmt.Stringer interface.</span>
+<span class="hljs-keyword">func</span> (a Article) String() : <span class="hljs-keyword">string</span> {
+    <span class="hljs-keyword">return</span> a.Title;
+}
+
+fmt.Printf(<span class="hljs-string">"&lt;h1&gt;%v&lt;/h1&gt;"</span>, someArticle);</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-33">
+    <section class="slide-content"><h3 id="example-2">Example 2</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> (
+    Reader <span class="hljs-keyword">interface</span> {
+        Read(p []<span class="hljs-keyword">byte</span>) (n <span class="hljs-keyword">int</span>, err error)
+    }
+    Writer <span class="hljs-keyword">interface</span> {
+         Write(p []<span class="hljs-keyword">byte</span>) (n <span class="hljs-keyword">int</span>, err error)
+    }
+    ReadWriter <span class="hljs-keyword">interface</span> {
+        Reader
+        Writer
+    }
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-34">
+    <section class="slide-content"><h3 id="loops">Loops</h3>
+<h4 id="there-s-only-one-loop-keyword-">There&#39;s only one loop keyword:</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++ {
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-35">
+    <section class="slide-content"><h3 id="loops">Loops</h3>
+<h4 id="while">While</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">for</span> {
+    <span class="hljs-keyword">if</span> condition {
+        <span class="hljs-keyword">break</span>;
+    }
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-36">
+    <section class="slide-content"><h3 id="loops">Loops</h3>
+<h4 id="foreach">Foreach</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">for</span> index, article := <span class="hljs-keyword">range</span> articles {
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-37">
+    <section class="slide-content"><h3 id="concurrency">Concurrency</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> hi() {
+    <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++ {
+        fmt.Printf(<span class="hljs-string">"Number %v, hahaha\n"</span>)
+    }
+}
+
+hi()</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-38">
+    <section class="slide-content"><h3 id="concurrency">Concurrency</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> hi() {
+    <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++ {
+        fmt.Printf(<span class="hljs-string">"Number %v, hahaha\n"</span>)
+    }
+}
+
+<span class="hljs-keyword">go</span> hi()</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-39">
+    <section class="slide-content"><h3 id="goroutines">Goroutines</h3>
+<ul>
+<li>Like Node / Javascript co-routines.</li>
+<li>Kind of like a Worker.</li>
+<li>Works like an event loop.</li>
+<li>Unlike JS, can break out to multiple CPUs</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-40">
+    <section class="slide-content"><h3 id="goroutines">Goroutines</h3>
+<ul>
+<li>Are cheap</li>
+<li>&quot;10,000 Goroutines are normal, 100,000 not uncommon&quot;</li>
+<li>Should be treated as real threads!</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-41">
+    <section class="slide-content"><h3 id="sharing-state">Sharing state</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> hits <span class="hljs-keyword">int</span>
+
+<span class="hljs-keyword">func</span> addHit() {
+    hits = hits + <span class="hljs-number">1</span>
+}
+
+<span class="hljs-keyword">func</span> main() {
+    hits := <span class="hljs-number">0</span>
+    addHit()
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-42">
+    <section class="slide-content"><h3 id="sharing-state">Sharing state</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> hits <span class="hljs-keyword">int</span>
+
+<span class="hljs-keyword">func</span> addHit() {
+    hits = hits + <span class="hljs-number">1</span>
+}
+
+<span class="hljs-keyword">func</span> main() {
+    hits := <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">go</span> addHit()
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-43">
+    <section class="slide-content"><h3 id="sharing-state-mutexes">Sharing state: mutexes</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> hits <span class="hljs-keyword">int</span>
+<span class="hljs-keyword">var</span> mutex *sync.Mutex
+
+<span class="hljs-keyword">func</span> addHit() {
+    mutex.Lock()
+    hits = hits + <span class="hljs-number">1</span>
+    mutex.Unlock()
+}
+
+<span class="hljs-keyword">func</span> main() {
+    hits := <span class="hljs-number">0</span>;
+    mutex = &amp;sync.Mutex{}
+    <span class="hljs-keyword">go</span> addHit()
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-44">
+    <section class="slide-content"><h3 id="sharing-state-atomic">Sharing state: atomic</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> hits <span class="hljs-keyword">int64</span>
+
+<span class="hljs-keyword">func</span> addHit() {
+    atomic.AddInt64(hits, <span class="hljs-number">1</span>)
+}
+
+<span class="hljs-keyword">func</span> main() {
+    hits := <span class="hljs-number">0</span>
+    <span class="hljs-keyword">go</span> addHit()
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-45">
+    <section class="slide-content"><h3 id="channels">Channels</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">struct</span> Hit {
+   UserAgent <span class="hljs-keyword">string</span>
+   Address <span class="hljs-keyword">string</span>
+}
+
+hitChannel := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> *Hit)
+hits := <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">go</span> <span class="hljs-keyword">func</span>() {
+    hit &lt;- hitChannel
+    hits = hits + <span class="hljs-number">1</span>;
+}()
+
+<span class="hljs-keyword">for</span> i:=<span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++ {
+    <span class="hljs-keyword">go</span> <span class="hljs-keyword">func</span>() {
+        hit := &amp;Hit{<span class="hljs-string">""</span>,<span class="hljs-string">""</span>}
+        hitsChannel &lt;- hit
+    }()
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-46">
+    <section class="slide-content"><h3 id="selecting-from-multiple-channels">Selecting from multiple channels</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">for</span> {
+    <span class="hljs-keyword">select</span> {
+    <span class="hljs-keyword">case</span> value1 &lt;- channel1:
+        <span class="hljs-comment">// do something with value 1</span>
+    <span class="hljs-keyword">case</span> value2 &lt;- channel2:
+        <span class="hljs-comment">// do something with value 2</span>
+    }
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-47">
+    <section class="slide-content"><h3 id="php-equivalents-">PHP equivalents?</h3>
+<ul>
+<li><code>curl_multi_select</code></li>
+<li><code>socket_select</code></li>
+<li><code>stream_select</code></li>
+<li><code>mysqli_poll</code></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-48">
+    <section class="slide-content"><h3 id="error-handling">Error handling</h3>
+<pre><code class="lang-go">dat, err := ioutil.ReadFile(<span class="hljs-string">"file.txt"</span>)
+
+<span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+    <span class="hljs-comment">// Handle the error</span>
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-49">
+    <section class="slide-content"><h3 id="error-handling">Error handling</h3>
+<pre><code class="lang-go">dat, _ := ioutil.ReadFile(<span class="hljs-string">"file.txt"</span>)</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-50">
+    <section class="slide-content"><h3 id="error-handling">Error handling</h3>
+<pre><code class="lang-go">dat, err := ioutil.ReadFile(<span class="hljs-string">"file.txt"</span>)
+<span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+    <span class="hljs-built_in">panic</span>(err)
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-51">
+    <section class="slide-content"><h3 id="error-handling">Error handling</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> ParseTextFile() (<span class="hljs-keyword">string</span>, error) {
+
+    dat, err := ioutil.ReadFile(<span class="hljs-string">"file.txt"</span>)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
+    }
+
+    <span class="hljs-comment">// Do something with file</span>
+    <span class="hljs-keyword">return</span> result, <span class="hljs-literal">nil</span>
+
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-52">
+    <section class="slide-content"><h3 id="last-tips">Last tips</h3>
+<ul>
+<li>When you&#39;re just starting off with Go, follow <em>every</em> suggestion in the tutorials.</li>
+<li>PHP is great for quick prototyping, Go is less so.</li>
+<li>You&#39;re forced to be dilligent, but this can be rewarding for mission-critical applications.</li>
+<li>Go is simple enough for teams to pick up. Posssibly better than Node for the same use-cases.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-53">
+    <section class="slide-content"><h3 id="sources">Sources</h3>
+<ul>
+<li><a href="https://www.google.com/trends/explore?q=golang,nodejs">Google Trends</a></li>
+<li><a href="https://cdn-images-1.medium.com/max/1455/1*Aaqc9L1Hc62hBg_dpNgBKg.png">Tabs vs Spaces - Felipe Hoffa</a></li>
+<li><a href="http://mwholt.blogspot.ca/2014/08/maximizing-use-of-interfaces-in-go.html">Maximizing the use of interfaces in Go</a></li>
+<li><a href="https://gobyexample.com">Go by example</a></li>
+<li><a href="http://dave.cheney.net/">Dave Cheney&#39;s blog</a></li>
+<li><a href="https://evertpot.com/PHP-Sucks/">Evert Pot</a></li>
+<li><a href="https://golang.org/doc/effective_go.html">Effective Go</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden author-slide" id="slide-54">
+    <section class="slide-content"><div class="author">
+  <h1 class="name">Evert Pot</h1>
+    <h3 class="twitter">
+      <a href="http://twitter.com/@evertp">@evertp</a>
+    </h3>
+    <h3 class="url">
+      <a href="https://evertpot.com/">https://evertpot.com/</a>
+    </h3>
+</div>
+</section>
+  </div>
+
+  <div class="controls">
+    <div class="arrow prev"></div>
+    <div class="arrow next"></div>
+  </div>
+
+
+  <script type="text/javascript">
+    /**
+ * Returns the current page number of the presentation.
+ */
+function currentPosition() {
+  return parseInt(document.querySelector('.slide:not(.hidden)').id.slice(6));
+}
+
+
+/**
+ * Navigates forward n pages
+ * If n is negative, we will navigate in reverse
+ */
+function navigate(n) {
+  var position = currentPosition();
+  var numSlides = document.getElementsByClassName('slide').length;
+
+  /* Positions are 1-indexed, so we need to add and subtract 1 */
+  var nextPosition = (position - 1 + n) % numSlides + 1;
+
+  /* Normalize nextPosition in-case of a negative modulo result */
+  nextPosition = (nextPosition - 1 + numSlides) % numSlides + 1;
+
+  document.getElementById('slide-' + position).classList.add('hidden');
+  document.getElementById('slide-' + nextPosition).classList.remove('hidden');
+
+  updateProgress();
+  updateURL();
+  updateTabIndex();
+}
+
+
+/**
+ * Updates the current URL to include a hashtag of the current page number.
+ */
+function updateURL() {
+  try {
+    window.history.replaceState({} , null, '#' + currentPosition());
+  } catch (e) {
+    window.location.hash = currentPosition();
+  }
+}
+
+
+/**
+ * Sets the progress indicator.
+ */
+function updateProgress() {
+  var progressBar = document.querySelector('.progress-bar');
+
+  if (progressBar !== null) {
+    var numSlides = document.getElementsByClassName('slide').length;
+    var position = currentPosition() - 1;
+    var percent = (numSlides === 1) ? 100 : 100 * position / (numSlides - 1);
+    progressBar.style.width = percent.toString() + '%';
+  }
+}
+
+
+/**
+ * Removes tabindex property from all links on the current slide, sets
+ * tabindex = -1 for all links on other slides. Prevents slides from appearing
+ * out of control.
+ */
+function updateTabIndex() {
+  var allLinks = document.querySelectorAll('.slide a');
+  var position = currentPosition();
+  var currentPageLinks = document.getElementById('slide-' + position).querySelectorAll('a');
+  var i;
+
+  for (i = 0; i < allLinks.length; i++) {
+    allLinks[i].setAttribute('tabindex', -1);
+  }
+
+  for (i = 0; i < currentPageLinks.length; i++) {
+    currentPageLinks[i].removeAttribute('tabindex');
+  }
+}
+
+/**
+ * Determines whether or not we are currently in full screen mode
+ */
+function isFullScreen() {
+  return document.fullscreenElement ||
+         document.mozFullScreenElement ||
+         document.webkitFullscreenElement ||
+         document.msFullscreenElement;
+}
+
+/**
+ * Toggle fullScreen mode on document element.
+ * Works on chrome (>= 15), firefox (>= 9), ie (>= 11), opera(>= 12.1), safari (>= 5).
+ */
+function toggleFullScreen() {
+  /* Convenient renames */
+  var docElem = document.documentElement;
+  var doc = document;
+
+  docElem.requestFullscreen =
+      docElem.requestFullscreen ||
+      docElem.msRequestFullscreen ||
+      docElem.mozRequestFullScreen ||
+      docElem.webkitRequestFullscreen.bind(docElem, Element.ALLOW_KEYBOARD_INPUT);
+
+  doc.exitFullscreen =
+      doc.exitFullscreen ||
+      doc.msExitFullscreen ||
+      doc.mozCancelFullScreen ||
+      doc.webkitExitFullscreen;
+
+  isFullScreen() ? doc.exitFullscreen() : docElem.requestFullscreen();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Update the tabindex to prevent weird slide transitioning
+  updateTabIndex();
+
+  // If the location hash specifies a page number, go to it.
+  var page = window.location.hash.slice(1);
+  if (page) {
+    navigate(parseInt(page) - 1);
+  }
+
+  document.onkeydown = function (e) {
+    var kc = e.keyCode;
+
+    // left, down, H, J, backspace, PgUp - BACK
+    // up, right, K, L, space, PgDn - FORWARD
+    // enter - FULLSCREEN
+    if (kc === 37 || kc === 40 || kc === 8 || kc === 72 || kc === 74 || kc === 33) {
+      navigate(-1);
+    } else if (kc === 38 || kc === 39 || kc === 32 || kc === 75 || kc === 76 || kc === 34) {
+      navigate(1);
+    } else if (kc === 13) {
+      toggleFullScreen();
+    }
+  };
+
+  if (document.querySelector('.next') && document.querySelector('.prev')) {
+    document.querySelector('.next').onclick = function (e) {
+      e.preventDefault();
+      navigate(1);
+    };
+
+    document.querySelector('.prev').onclick = function (e) {
+      e.preventDefault();
+      navigate(-1);
+    };
+  }
+});
+
+
+  </script>
+</body>
+</html>

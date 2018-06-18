@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Evert Pot - Resume
-description: I started freelancing again, and I'm looking for work as a Web Developer
+permalink: "/resume.html"
 ---
 
 Evert Pot
@@ -9,45 +9,51 @@ Evert Pot
 
 _Web architect, API developer_
 
-* Last update: *October 2nd, 2015*.
-* Location: Toronto, ON, Canada.
+* Last update: *February 20th, 2018*.
+* Location: San Francisco, CA, United States.
 * Contact: <mailto:work@evertpot.com>.
 
 
 Summary
 -------
 
-My name is Evert, and I've been a Web Developer for over 10 years. I've been
+My name is Evert, and I've been a Web Developer for 15 years. I've been
 doing consulting for a wide range of companies, from small businesses to
 telcos, financial services and national broadcasters.
 
 I'm especially interested in API design, implementing better engineering
-practices, scalability problems and application architecture. In the past I've
-had a strong focus on PHP, but I'm very open to other technology stacks as
-well.
-
-I'm currently looking for projects! In particular:
-
-* Short and long term projects.
-* Can work hourly or on project-basis.
-* I can work on-site in Toronto, remotely anywhere and I would also be
-  thrilled to fly to you for a week or two to kick off a new project.
-
-I am specifically _not_ looking for full or part-time employment.
-
-References are available upon request.
+practices, scalability problems and application architecture. I served
+as CTO or technical leadership in most of the companies I've worked at.
 
 Links
 -----
 
-* Blog: <http://evertpot.com/>
+* Blog: <https://evertpot.com/>
 * Github: <https://github.com/evert/>
-* LinkedIn: <https://ca.linkedin.com/in/evertpot>
+* LinkedIn: <https://www.linkedin.com/in/evert-pot-868746147>
 * Stack Overflow: <http://stackoverflow.com/users/80911/evert>
 
 
 Experience
 ----------
+
+### Technical Lead at Yelp, Toronto/San Francisco - 2016-today
+
+In October 2016, I joined Turnstyle, a company in Toronto that does location-
+based marketing analytics.
+
+My role there was to help drive the design and architecture of a REST API. We've
+used HAL, OAuth2, json-schema to drive the hypermedia API using NodeJS, ES6,
+ES7. On a docker-container infrastructure running on Amazon Web Services.
+I also helped mentor other developers, and act as a technical lead.
+
+In April 2017 Turnstyle got acquired by Yelp, and I subsequently moved to San
+Francisco in October.
+
+Although my role hasn't changed that much, I helpbed onboard a quickly growing
+development team, and working with the needs and requirements of a much
+larger corporation, including integrating our existing systems and culture with
+Yelp's.
 
 ### Co-Founder/CTO fruux, Germany + UK — 2011 - 2015
 
@@ -58,14 +64,25 @@ technical and product direction, as well as leading the team from a
 technical perspective. Aside from that I’ve also got my hands dirty in some
 marketing and sales, and basically just stepped in where needed.
 
+As a programmer I helped develop their synchronization system for personal
+information such as calendars, contacts and files. I acted as a liaison for
+the CalConnect calendar and scheduling standard consortium.
+
 ### Consulting, worldwide — 2003-today
 
-I’ve been doing this ‘full-time’ on and off, whenever I’ve not really been
-fully focused on a job. I’ve had the opportunity to work in
+I originally incorporated at age 17 at the Chamber of Commerce in the
+Netherlands. I've been a consultant and freelancer pretty much at any point
+in my career where there's gaps between jobs.
+
+I’ve had the opportunity to work in
 telecommunication, social media, group ware, advertising, broadcasting,
 financial service companies in Australia, Portugal, Canada and The
 Netherlands, and remotely worked for various other companies from North
 America, Europe and Asia.
+
+Used many different technologies such PHP / Lamp stack, NodeJS, Lots of
+Javascript, AWS, Backbone, Golang, Sass/Less, or basically whatever tech the
+job called for.
 
 
 ### Software engineer, Ibuildings, Utrecht, Netherlands — 2010-2011
@@ -138,9 +155,10 @@ Skills
 ### Technology
 
 * Expert skills: PHP, MySQL, WebDAV, CalDAV, CardDAV, HTTP, Rest APIs,
-  Javascript, Backbone.js, Atom, HTML, LessCSS, YUI3, Debian and Ubuntu, Video
-  Transcoding tools, CSS 3, Flash Video, Amazon S3 and EC2, Apache, Nginx.
-* Novice skills: NodeJS, Squid, CakePHP.
+  Node JS, Ecmascript 6/7, OAuth2, Javascript, Backbone.js, Atom, HTML5, CSS3,
+  Less, Sass,YUI3, Debian and Ubuntu, Video Transcoding tools, CSS 3, Flash
+  Video, Amazon S3 and EC2, Apache, Nginx.
+* Novice skills: Squid, CakePHP, Make, Golang.
 * Beginner skills: C, Bash programming, Java, Python, Ruby.
 * Ancient skills: (Q/GW)Basic, Delphi, Interbase, Turbo Pascal, x86 assembler,
   Actionscript, Podcasting, AMF, Flash-PHP interaction using Flash Remoting,
@@ -149,7 +167,7 @@ Skills
 
 ### Management
 
-I’ve built and lead several development teams, implemented development
+I’ve built and led several development teams, implemented development
 processes (where appropriate and keeps people happy). Teams consisting of
 people with various skills such as browser front-end developer, designers,
 Actionscript developers, DBA’s, Linux system administrators and
@@ -166,6 +184,10 @@ communicating technical requirements.
 * Dutch PHP conference 2012 - Amsterdam, Netherlands: Backbone.js.
 * OwnCloud contributer conference 2015 - Berlin, Germany: sabre/dav and Promises & Generators.
 * True North PHP 2015 - Toronto, Canada: Promises & Generators. ([slides](https://github.com/evert/promises-and-generators))
+* PHP Meetup, September 2016 - Toronto, Canada: Go for PHP programmers. ([slides](/talks/go-for-php-programmers/) )
+* True North PHP 2016 - Toronto, Canada: Making CSS fun again with Sass. ([slides](https://github.com/evert/sass-talk)).
+* True North PHP 2016 - Toronto, Canada: Introducing sabre/dav.
+* Midwest PHP 2016 - Minneapolis, USA: Promises and Generators. ([slides](https://github.com/evert/promises-and-generators))
 
 
 ### Recognition
@@ -205,3 +227,9 @@ Since 2007 I started working on an open source library that would be named
 sabre/dav. This project spawned a number of PHP libraries that are now widely
 in use for various purposes. The project site is <http://sabre.io/>. I'm still
 the lead maintainer for all of these projects.
+
+### Ketting
+
+In 2016 I started a new open-source project called
+[Ketting](https://github.com/evert/ketting). This project is an opiniated REST
+client, written in Javascript for both server and client side.

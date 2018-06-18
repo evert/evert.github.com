@@ -11,6 +11,7 @@ tags:
   - stringify
   - featured
 ---
+
 <p>Many of you might already know this, but I wanted to point out why I think using the <a href="http://www.prototypejs.org/">Prototype Javascript library</a> is a bad idea. The biggest problem is actually highlighted in it's name: it changes many of the prototypes of core javascript types.</p>
 
 <p>You might have realized this before, when you tried to 'for(i in arr)' and came across many of the extra functions prototype added. (and you should have realized at this point this wasn't the proper way to loop through an array anyway.).</p>

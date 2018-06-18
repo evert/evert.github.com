@@ -1,7 +1,23 @@
-highlighter: pygments
-# safe: true
+highlighter: rouge
+safe: true
 lsi: false
-permalink: "/:title"
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables"]
+permalink: "/:title/"
+
+kramdown:
+    input: GFM
+    hard_wrap: false
+gems:
+    - jekyll-coffeescript
+    - jekyll-paginate
+
+lsi: false
+
+excerpt_separator: <!--more-->
+
+defaults:
+    -
+        scope:
+            path: ""    # empty string for all files
+            type: posts # limit to posts
+        values:
+            amp: true   # enabled amp for posts

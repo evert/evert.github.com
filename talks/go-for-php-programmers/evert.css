@@ -1,0 +1,23 @@
+pre {
+    display: flex;
+}
+
+pre > code {
+    font-size: 150%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.slide-content {
+    width: 1066px;
+    margin-top: 40px;
+}
+
+.progress-bar {
+    background: black;
+    height: 5px;
+}
+
+.slide {
+    top: 5px;
+}
