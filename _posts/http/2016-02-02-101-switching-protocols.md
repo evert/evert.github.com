@@ -2,6 +2,7 @@
 date: 2016-02-02 23:58:27 -0500
 layout: http-series
 title: "101 Switching Protocols"
+slug: /http/101-switching-protocols
 tags:
    - http
    - http-series
