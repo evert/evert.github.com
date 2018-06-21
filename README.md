@@ -10,9 +10,12 @@ Installation instructions
 Make sure you've got a clone of the source code.
 After that, we need a few ruby dependencies:
 
-```
-sudo gem install jekyll
-sudo gem install redcarpet
+  sudo gem install jekyll
+  sudo gem install github-pages
+
+On Ubuntu, you might need to run the follwoing first:
+
+  sudo apt install zlib1g-dev ruby ruby-dev
 ```
 
 Then, from the root of the blog just run:

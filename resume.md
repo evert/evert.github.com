@@ -37,7 +37,7 @@ Links
 Experience
 ----------
 
-### Technical Lead at Yelp, Toronto/San Francisco - 2016-today
+### Technical Lead at Yelp, Toronto/San Francisco - 2016-2018
 
 In October 2016, I joined Turnstyle, a company in Toronto that does location-
 based marketing analytics.
