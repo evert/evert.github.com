@@ -1,5 +1,5 @@
 ---
-date: 2016-02-02 23:58:27 -0500
+date: "2018-07-10 08:00:00 -0500"
 layout: http-series
 title: "101 Switching Protocols"
 slug: /http/101-switching-protocols
@@ -18,27 +18,30 @@ a HTTP handshake when creating the connection, mainly for security reasons.
 When a WebSocket client starts the connection, the first few bytes will
 look like this:
 
-    GET /chat HTTP/1.1
-    Host: server.example.com
-    Upgrade: websocket
-    Connection: Upgrade
-    Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==
-    Origin: http://example.com
-    Sec-WebSocket-Protocol: chat, superchat
-    Sec-WebSocket-Version: 13
+```http
+GET /chat HTTP/1.1
+Host: server.example.com
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==
+Origin: http://example.com
+Sec-WebSocket-Protocol: chat, superchat
+Sec-WebSocket-Version: 13
+```
 
 If the server supports WebSocket, it will response with
 `101 Switching Protocols` and then switch to the WebSocket protocol:
 
-    HTTP/1.1 101 Switching Protocols
-    Upgrade: websocket
-    Connection: Upgrade
-    Sec-WebSocket-Accept: s3pPLMBiTxaQ9kYGzzhZRbK+xOo=
-    Sec-WebSocket-Protocol: chat
+```http
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: s3pPLMBiTxaQ9kYGzzhZRbK+xOo=
+Sec-WebSocket-Protocol: chat
+```
 
 HTTP/2 also uses this mechanism to upgrade from a HTTP/1.1 to a non-ssl
 HTTP/2 connection. See [rfc7540][3].
-
 
 [1]: https://tools.ietf.org/html/rfc7231#section-6.2.2
 [2]: https://tools.ietf.org/html/rfc6455#section-1.2
