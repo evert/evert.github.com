@@ -2,7 +2,7 @@
 date: "2018-07-10 08:00:00 -0500"
 layout: http-series
 title: "101 Switching Protocols"
-slug: /http/101-switching-protocols
+permalink: /http/101-switching-protocols
 tags:
    - http
    - http-series
