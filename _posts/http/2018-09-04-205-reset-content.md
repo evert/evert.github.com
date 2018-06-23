@@ -41,7 +41,7 @@ References
 ----------
 
 * [RFC7231][1] - `205` status code.
-* [Ben Ramsey on 204 and 205][7].
+* [Ben Ramsey on 204 and 205][3].
 
 [1]: https://tools.ietf.org/html/rfc7231#section-6.3.6
 [2]: /http/204-no-content
