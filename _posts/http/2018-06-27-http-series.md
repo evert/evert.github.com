@@ -8,8 +8,8 @@ tags:
    - http-series
 ---
 
-Because I want to get into the habit of blogging more often, I thought it
-would be a fun idea to write a series of articles on one of my favourite
+Because I want to get into the habit of blogging on a regular basis, I thought
+it would be a fun idea to write a series of articles on one of my favourite
 topics: HTTP and Webservices.
 
 To start, I began writing an article for every HTTP status code. I only
