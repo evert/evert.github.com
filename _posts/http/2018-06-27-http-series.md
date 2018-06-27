@@ -16,8 +16,15 @@ To start, I'm going to write an article on every HTTP status code. According
 to the [IANA][1] page, there are at least 68 official ones, so if I write one
 once per week, that's over a year worth of posts.
 
+My goal is to try and do a good job giving my interpretation of the status
+codes in a way that's easier to grasp than the official standards.
+
+I'm probably not going to be correct all the time, so corrections are welcome
+and I intend to apply changes when I receive criticisms, making them a sort
+of living document.
+
 I'm going to release the first few this week, and then switch to a weekly
-schedule. Hopefully I can keep this going!
+schedule. Hopefully I can keep this going for a year!
 
 Today I'm releasing the first one about [100 Continue][2].
 

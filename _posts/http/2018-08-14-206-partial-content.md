@@ -1,5 +1,5 @@
 ---
-date: "2018-09-11 08:00:00 -0700"
+date: "2018-08-14 08:00:00 -0700"
 layout: http-series
 title: "206 Partial Content"
 permalink: /http/206-partial-content
@@ -9,14 +9,14 @@ tags:
 ---
 
 [`206 Partial Content`][1] is used for range requests. It's possible for a
-HTTP client to request only portions of a resource.
+HTTP client to request only portions of a resource using range requests.
 
 Examples of this might include a large log resource for which a client only
-wants the last n bytes, a video where the client doesn't want to buffer more
-than needed, or wants to quickly respond to a user seeking further into the
-video.
+wants the last _n_ bytes. Or maybe a video and the client doesn't want to
+buffer more data than needed, or maybe a user is seeking through the video
+by fast-forwarding.
 
-If a client issued a ranged request, and the server is able to handle this
+If a client issued a range request, and the server is able to handle this
 feature, it can indicate to the client that it's sending back only certain
 ranges with the `206 Partial Content` status, and `Content-Range` headers.
 
@@ -37,10 +37,15 @@ Content-Type: video/mp4
 ...
 ```
 
+If a server doesn't support Range requests, it will just return a [`200 OK`][3]
+and send back the entire video. A client will know that the server didn't
+support it via this status code and the omission of the `Content-Range` header.
+
 References
 ----------
 
 * [RFC7233][2] - (HTTP/1.1): Range Requests
 
 [1]: https://tools.ietf.org/html/rfc7233#section-4.1 "206 Partial Content"
-[2]: https://tools.ietf.org/html/rfc7233
+[2]: https://tools.ietf.org/html/rfc7233 "(HTTP/1.1): Range Requests"
+[3]: /http/200-ok "200 OK"

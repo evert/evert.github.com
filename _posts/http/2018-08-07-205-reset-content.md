@@ -1,5 +1,5 @@
 ---
-date: "2018-09-04 08:00:00 -0700"
+date: "2018-08-07 08:00:00 -0700"
 layout: http-series
 title: "205 Reset Content"
 permalink: /http/205-reset-content
@@ -14,11 +14,11 @@ especially meant for hypertext applications.
 Imagine if a user is filling in a HTML form, and this form gets submitted
 to the server.
 
-If the server sends back a `204`, a browser could respond to this by telling
+If the server sends back a `204`, a browser could act on this by telling
 the user the form submission was successful and NOT refresh the page.
 
 If the server sent back a `205`, a browser can reset the form, similar to a
-html form using the a HTML reset button:
+a reset button a HTML form:
 
 ```html
 <input type="reset" />

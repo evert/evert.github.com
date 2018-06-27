@@ -1,5 +1,5 @@
 ---
-date: "2018-08-21 08:00:00 -0700"
+date: "2018-07-24 08:00:00 -0700"
 layout: http-series
 title: "203 Non-Authoritative Information"
 permalink: /http/203-non-authoritative-information
@@ -8,7 +8,7 @@ tags:
    - http-series
 ---
 
-[203 Non-Authoritative Information][1] is a status-code that might be used by
+[`203 Non-Authoritative Information`][1] is a status-code that might be used by
 a HTTP proxy.
 
 A HTTP Proxy sits in the middle between a client and a server (origin). In
@@ -24,11 +24,12 @@ what the original status code was. For this reason it might be better to not
 use this status-code.
 
 The RFC also [suggest][1] to use the [`Warning` header][2] for this instead.
-The warning header can be set to the code `214 Transformation applied`, which
-can be set without having to modify the original status code.
+The warning header can be set to the code `214 Transformation applied`. The
+benefit of a warning code over a status-code is that it can be set without
+obscuring what the original status code was.
 
-I would not recommend using `203`, and I'm not aware of any software that
-does.
+I would not recommend never using `203`, and I'm not aware of any software that
+does. A `Warning` header is better.
 
 Example using `203 Non-Authorititative Information`:
 
@@ -54,6 +55,9 @@ Content-Length: 515
 Even though the Warning header is actually required when proxies modify
 the response, most proxies don't appear to include it.
 
+`Non-Authoritative Information` has 10 syllables. It shares the top spot for
+most syllables with another status code.
+
 References
 ----------
 
@@ -62,4 +66,3 @@ References
 
 [1]: https://tools.ietf.org/html/rfc7231#section-6.3.3
 [2]: https://tools.ietf.org/html/rfc7234#section-5.5
-
