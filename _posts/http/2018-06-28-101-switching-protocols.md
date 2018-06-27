@@ -1,5 +1,5 @@
 ---
-date: "2018-07-10 08:00:00 -0500"
+date: "2018-06-28 08:00:00 -0700"
 layout: http-series
 title: "101 Switching Protocols"
 permalink: /http/101-switching-protocols

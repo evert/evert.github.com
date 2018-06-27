@@ -13,7 +13,7 @@ body {
 }
 
 ul,ol,p {
-    line-height: 1.75;    
+    line-height: 1.75;
 }
 
 h1 {
@@ -99,7 +99,7 @@ footer a:hover {
 
 pre {
     border-radius: 3px;
-    padding: 8px 8px 0 8px;
+    padding: 8px 8px 8px 8px;
     background: #49483e;
     line-height: 1;
     color: #FFF;
@@ -137,12 +137,11 @@ blockquote {
 }
 
 code {
-     padding: 0;
-     padding-top: 0.2em;
-     padding-bottom: 0.2em;
+     padding: 2px;
      margin: 0;
      background-color: rgba(0,0,0,0.09);
      border-radius: 2px;
+     border: 1px solid #888;
 }
 
 pre>code {
@@ -162,4 +161,11 @@ pre>code {
 
 img.fill-width {
     max-width: 100%;
+}
+
+.http-series {
+  background: #DDD;
+  padding: 0px 20px 10px;
+  border: 2px dashed #000;
+  font-size: 80%;
 }
