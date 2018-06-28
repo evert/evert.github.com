@@ -8,7 +8,7 @@ tags:
    - http-series
 ---
 
-[`101 Switching Protocols]`[1] is a status code that's used for a server to
+[`101 Switching Protocols`][1] is a status code that's used for a server to
 indicate that the TCP conncection is about to be used for a different
 protocol.
 
