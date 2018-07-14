@@ -1,6 +1,5 @@
 ---
 date: "2018-06-27 08:00:00 -0700"
-layout: http-series
 title: "Series of posts on HTTP status codes"
 permalink: /http/
 tags:

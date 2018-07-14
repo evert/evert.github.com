@@ -1,6 +1,5 @@
 ---
 layout: default
-amp: true
 ---
 
 <article>
@@ -15,6 +14,35 @@ amp: true
 
 </article>
 
+{% if page.tags contains 'http-series' %}
+<section class="http-series">
+
+    <h2>HTTP series</h2>
+
+    <p>
+      This article is part of an ongoing series about the HTTP protocol.
+    </p>
+
+    <p>
+      If you want to follow along as I write them, you can Subscribe to my
+      <a href="/atom.xml">Atom feed</a> or
+      <a href="http://eepurl.com/dzjtcv">Mailing list</a>.
+    </p>
+
+    <h3>Archive</h3>
+    <ul>
+    {% for post in site.tags.http-series reversed %}
+      <li>
+         <a href="{{ post.url }}">{{ post.title }}</a>
+         <span>({{ post.date | date:"%Y-%m-%d" }})</span>
+      </li>
+    {% endfor %}
+    </ul>
+
+</section>
+
+{% endif %}
+
 <!--
 <section class="hireme">
     Looking for a CTO or senior developer for your next project? I'm looking for contracts or full-time gigs!
@@ -22,9 +50,11 @@ amp: true
 </section>
 -->
 
-<section class="respond">
+<h1>Respond</h1>
 
+<section class="respond">
 <div id="disqus_thread"></div>
+
 <script>
 var disqus_config = function () {
   this.page.url = 'https://evertpot.com{{page.url}}';

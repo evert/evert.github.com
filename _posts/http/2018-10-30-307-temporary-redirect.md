@@ -1,6 +1,5 @@
 ---
 date: "2018-10-30 08:00:00 -0700"
-layout: http-series
 title: "307 Temporary Redirect"
 permalink: /http/307-temporary-redirect
 tags:

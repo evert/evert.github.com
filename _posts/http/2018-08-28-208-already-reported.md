@@ -1,6 +1,5 @@
 ---
 date: "2018-08-28 08:00:00 -0700"
-layout: http-series
 title: "208 Already Reported"
 permalink: /http/208-already-reported
 tags:

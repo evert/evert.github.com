@@ -1,6 +1,5 @@
 ---
 date: "2018-09-18 08:00:00 -0700"
-layout: http-series
 title: "301 Moved Permanently"
 permalink: /http/301-moved-permanently
 tags:

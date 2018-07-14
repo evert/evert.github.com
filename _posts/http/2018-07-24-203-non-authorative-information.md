@@ -1,6 +1,5 @@
 ---
 date: "2018-07-24 08:00:00 -0700"
-layout: http-series
 title: "203 Non-Authoritative Information"
 permalink: /http/203-non-authoritative-information
 tags:

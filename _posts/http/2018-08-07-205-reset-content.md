@@ -1,6 +1,5 @@
 ---
 date: "2018-08-07 08:00:00 -0700"
-layout: http-series
 title: "205 Reset Content"
 permalink: /http/205-reset-content
 tags:

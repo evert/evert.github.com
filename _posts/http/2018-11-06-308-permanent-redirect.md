@@ -1,6 +1,5 @@
 ---
 date: "2018-11-06 08:00:00 -0700"
-layout: http-series
 title: "308 Permanent Redirect"
 permalink: /http/308-permanent-redirect
 tags:

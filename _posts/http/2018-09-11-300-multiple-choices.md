@@ -1,6 +1,5 @@
 ---
 date: "2018-09-11 08:00:00 -0700"
-layout: http-series
 title: "300 Multiple Choices"
 permalink: /http/300-multiple-choices
 tags:
