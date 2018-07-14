@@ -4,7 +4,10 @@ amp: true
 ---
 
 <article>
-<p><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+<p>
+<time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+{% if page.update_date %}(last updated: <time datetime="{{ page.update_date | date: "%Y-%m-%d" }}">{{ page.update_date | date: "%B %d, %Y" }}</time>){% endif %}
+</p>
 
 <h1>{{page.title}}</h1>
 
