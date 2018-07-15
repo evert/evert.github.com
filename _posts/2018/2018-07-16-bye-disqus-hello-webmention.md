@@ -7,9 +7,6 @@ tags:
   - webmention
 ---
 
-
-<img src="https://webmention.io/img/webmention-logo-380.png" style="float: left; padding: 0 10px 10px 0" />
-
 Since 2013 I've used [Disqus][1] on this website for comments. Over the years
 Disqus has been getting 'fatter', so I've been thinking of switching to
 something new.
@@ -26,6 +23,9 @@ to do the same.
 
 What are webmentions?
 ---------------------
+
+
+<img src="https://webmention.io/img/webmention-logo-380.png" style="float: right; padding: 0 0 10px 10px; width: 190px" />
 
 Webmentions is a [W3C standard][2] for distributed commenting. It's very
 similar to "Pingbacks". When somebody wants to respond to an article here
@@ -60,46 +60,7 @@ Jekyll has a 'data files' feature, which allows me to just drop the json file
 in a `_data` directory, and with a recursive liquid include I can show comments
 and threads:
 
-
-```
-// _includes/comments.html
-<ul>
-  {% for comment in include.comments %}
-    {% include comment-single.html comment=comment %}
-  {% endfor %}
-</ul>
-```
-
-```
-// _includes/comment-single.html
-<li>
-  {% if include.comment.url %}<a href="{{ include.comment.url }}">{% endif %}
-  {% if include.comment.avatar %}<img src="{{ include.comment.avatar }}" alt="{{ include.comment.name }}" />{% endif %}
-  {% if include.comment.url %}</a>{% endif %}
-
-  {% if include.comment.url %}<a href="{{ include.comment.url }}">{% endif %}
-  <span class="author">{{ include.comment.name }}</span>
-  {% if include.comment.url %}</a>{% endif %}
-  • <time>{{ include.comment.created | date: "%b %d, %Y" }}</time>
-
-  {{ include.comment.message }}
-
-  {% if include.comment.children %}
-    <ul>
-      {% for child in include.comment.children %}
-        {% include comment-single.html comment=child %}
-      {% endfor %}
-    </ul>
-  {% endif %}
-</li>
-```
-
-And then lastly, to include it in the layout:
-
-```
-{% assign comments = site.data.comments[page.id] %}
-{% include comments.html comments=comments %}
-```
+<script src="https://gist.github.com/evert/409f5effca5e7fe706bd1c3aad13af9d.js"></script>
 
 Getting tweets and likes from twitter
 -------------------------------------

@@ -38,7 +38,7 @@ function displayWebMentions(elem, result) {
   var activityHtml = [];
   var likeHtml = [];
   for(var linkIdx in result.links) {
-    var link = result.links[0];
+    var link = result.links[linkIdx];
 
     switch(link.activity.type) {
       case 'like' :
