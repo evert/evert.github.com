@@ -169,3 +169,45 @@ img.fill-width {
   border: 2px dashed #000;
   font-size: 80%;
 }
+
+.webmentions {
+  display: none;
+}
+
+.webmentions h2 {
+  font-size: 18px;
+  padding: 10px 10px 10px 0;
+  margin: 0;
+}
+
+.webmentions.visible {
+  display: block;
+}
+
+.webmentions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.webmentions .likes {
+  display: flex;
+  align-items: center;
+}
+
+
+.webmentions .likes img {
+  width: 30px;
+  padding: 5px;
+}
+
+.webmentions ul.activity li {
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+}
+
+.webmentions ul.activitiy img {
+  width: 35px;
+  padding-right: 10px;
+}
