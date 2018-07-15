@@ -30,7 +30,7 @@ function loadWebMentions() {
 
 function displayWebMentions(elem, result) {
 
-  if (!result.links) {
+  if (!result.links.length) {
     // No mentions
     return;
   }

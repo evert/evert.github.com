@@ -1,0 +1,20 @@
+{% if include.comments %}
+
+<section class="comments">
+
+<h1>Comments</h1>
+
+<div id="comments">
+
+<ul>
+{% for comment in include.comments %}
+
+  {% include comment-single.html comment=comment %}
+
+{% endfor %}
+</ul>
+
+</div>
+
+</section>
+{% endif %}

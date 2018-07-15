@@ -211,3 +211,41 @@ img.fill-width {
   width: 35px;
   padding-right: 10px;
 }
+
+/**
+ * Comments
+ */
+.comments {
+  padding-bottom: 40px;
+}
+.comments ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comments ul ul {
+  padding-left: 50px;
+  clear: both;
+}
+
+.comments .comment {
+  display: flex;
+  padding-top: 25px;
+  border-bottom: 1px dotted #aaa;
+}
+
+.comments img {
+  width: 50px;
+  padding-right: 10px;
+}
+.comments p {
+  margin: 0 0 15px 0;
+}
+.comments .author {
+  font-weight: 700;
+}
+.comments time {
+  font-size: 90%;
+  color: #555;
+}

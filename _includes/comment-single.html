@@ -1,0 +1,30 @@
+<li>
+
+  <div class="comment">
+    {% if include.comment.url %}<a href="{{ include.comment.url }}">{% endif %}
+    {% if include.comment.avatar %}<img src="{{ include.comment.avatar }}" alt="{{ include.comment.name }}" />{% endif %}
+    {% if include.comment.url %}</a>{% endif %}
+
+    <div class="inner">
+      <p>
+        {% if include.comment.url %}<a href="{{ include.comment.url }}">{% endif %}
+          <span class="author">{{ include.comment.name }}</span>
+        {% if include.comment.url %}</a>{% endif %}
+        •
+        <time>{{ include.comment.created | date: "%b %d, %Y" }}</time>
+      </p>
+
+      {{ include.comment.message }}
+    </div>
+
+  </div>
+
+  {% if include.comment.children %}
+
+  <ul>
+    {% for child in include.comment.children %}
+      {% include comment-single.html comment=child %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+</li>
