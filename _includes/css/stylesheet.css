@@ -172,6 +172,7 @@ img.fill-width {
 
 .webmentions {
   display: none;
+  padding-bottom: 40px;
 }
 
 .webmentions h2 {
