@@ -62,7 +62,6 @@ function displayWebMentions(elem, result) {
     html += '<div class="likes"><h2>Likes:</h2>' + likeHtml.join('\n') + '</p>\n';
   }
 
-  console.log(html);
   elem.innerHTML = html;
   document.getElementsByClassName('webmentions')[0].className = 'webmentions visible';
 
