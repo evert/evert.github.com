@@ -79,7 +79,8 @@ is a free service that listens for responses to tweets and converts them to
 Web mentions.
 
 It also supports other networks, but Twitter is the only one I have setup. To
-see it in action, you can see a twitter follow on [this blogpost][8].
+see it in action, you can see a bunch of twitter responses right below this
+article.
 
 
 What's missing?
@@ -110,7 +111,6 @@ I intend to just run this crawler manually when I publish new posts.
 [5]: https://gist.github.com/evert/3332e6cc73848aefe36fd9d0a30ac390
 [6]: /70/
 [7]: https://brid.gy/
-[8]: /http/201-created
 [9]: https://nicolas-hoizey.com/2017/07/so-long-disqus-hello-webmentions.html
 [10]: /npm-revoke-breaks-the-build/
 [11]: https://github.com/evert/evert.github.com/blob/master/_data/comments.json
