@@ -62,6 +62,15 @@ and threads:
 
 <script src="https://gist.github.com/evert/409f5effca5e7fe706bd1c3aad13af9d.js"></script>
 
+Unfortunately Disqus has no means to get an email address, url or avatar from
+the export, so all Disqus comments are now just show up as a boring name, as
+can be seen [here][10].
+
+If you ever commented on this site with Disqus, and want to show up with a
+url and/or avatar find yourself in the [comment archive on github][11] and
+send me a PR, or just tell me!
+
+
 Getting tweets and likes from twitter
 -------------------------------------
 
@@ -78,12 +87,14 @@ What's missing?
 
 It's not easy currently to discover on this site that Webmentions are
 possible, and it's it's not possible to leave a regular comment anymore. I
-hope I can fix both of these in the future.
+hope I can fix both of these in the future. I think the result is that the
+barrier to entry has become very high, and I'd like to see if it's possible
+for me to reduce that again. How would you go about it?
 
-Webmention.io does not have good spam protection. Spam was a major issue with
-pingbacks, and is pretty much why pingbacks died. Webmention is not big enough
-for this to be an issue, but if Webmentions grow, the spam issue has to be
-solved.
+[Webmention.io][3] does not have good spam protection. Spam was a major issue
+with pingbacks, and is pretty much why pingbacks died. Webmention is not big
+enough for this to be an issue, but if Webmentions grow, the spam issue has to
+be solved.
 
 Lastly, this blog does not yet do outgoing Web mentions. There's no obvious
 way to do this with a static site generator either, so my intent is to write a
@@ -97,7 +108,9 @@ I intend to just run this crawler manually when I publish new posts.
 [3]: https://webmention.io/
 [4]: https://github.com/evert/evert.github.com/blob/master/js/webmentions.js
 [5]: https://gist.github.com/evert/3332e6cc73848aefe36fd9d0a30ac390
-[6]: https://evertpot.com/70/
+[6]: /70/
 [7]: https://brid.gy/
-[8]: https://evertpot.com/http/201-created
+[8]: /http/201-created
 [9]: https://nicolas-hoizey.com/2017/07/so-long-disqus-hello-webmentions.html
+[10]: /npm-revoke-breaks-the-build/
+[11]: https://github.com/evert/evert.github.com/blob/master/_data/comments.json
