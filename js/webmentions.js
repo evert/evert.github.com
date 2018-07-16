@@ -55,10 +55,10 @@ function displayWebMentions(elem, result) {
 
   var html = '';
 
-  if (activityHtml) {
+  if (activityHtml.length) {
     html += '<ul class="activity">' + activityHtml.join('\n') + '</ul>\n';
   }
-  if (likeHtml) {
+  if (likeHtml.length) {
     html += '<div class="likes"><h2>Likes:</h2>' + likeHtml.join('\n') + '</p>\n';
   }
 
