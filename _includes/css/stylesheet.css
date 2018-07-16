@@ -211,7 +211,8 @@ img.fill-width {
 
 .webmentions ul.activity img {
   width: 35px;
-  padding-right: 10px;
+  padding-right: 15px;
+  border-radius: 25px;
 }
 
 /**
