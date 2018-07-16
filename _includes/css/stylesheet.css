@@ -177,7 +177,7 @@ img.fill-width {
 
 .webmentions h2 {
   font-size: 18px;
-  padding: 10px 10px 10px 0;
+  padding: 1px 5px 10px 0;
   margin: 0;
 }
 
@@ -198,8 +198,9 @@ img.fill-width {
 
 
 .webmentions .likes img {
-  width: 30px;
+  width: 35px;
   padding: 5px;
+  border-radius: 25px;
 }
 
 .webmentions ul.activity li {
