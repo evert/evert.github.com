@@ -191,13 +191,13 @@ img.fill-width {
   padding: 0;
 }
 
-.webmentions .likes {
+.webmentions .facepile {
   display: flex;
   align-items: center;
 }
 
 
-.webmentions .likes img {
+.webmentions .facepile img {
   width: 35px;
   padding: 5px;
   border-radius: 25px;
@@ -207,12 +207,6 @@ img.fill-width {
   display: flex;
   align-items: center;
   line-height: 20px;
-}
-
-.webmentions ul.activity img {
-  width: 35px;
-  padding-right: 15px;
-  border-radius: 25px;
 }
 
 /**
@@ -232,23 +226,25 @@ img.fill-width {
   clear: both;
 }
 
-.comments .comment {
+.comment {
   display: flex;
   padding-top: 25px;
+  padding-bottom: 25px;
   border-bottom: 1px dotted #aaa;
 }
 
-.comments img {
+.comment img {
   width: 50px;
-  padding-right: 10px;
+  margin-right: 10px;
+  border-radius: 30px;
 }
-.comments p {
+.comment p {
   margin: 0 0 15px 0;
 }
-.comments .author {
+.comment .author {
   font-weight: 700;
 }
-.comments time {
+.comment time {
   font-size: 90%;
   color: #555;
 }
