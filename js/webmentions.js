@@ -47,6 +47,7 @@ function displayWebMentions(elem, result) {
         repostHtml.push(getAvatar(link, link.data.url));
         break;
       case 'reply' :
+      case 'link' :
         activityHtml.push('<li><div class="comment">' + getAvatar(link) + '<div class="inner"><p>' + getAuthorName(link) + ' • <time>' + getPublishedTime(link) + '</time></p>' + link.data.content + '</div></div>');
         break;
       default :
