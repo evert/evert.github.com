@@ -36,6 +36,11 @@ function displayWebMentions(elem, result) {
   var activityHtml = [];
   var likeHtml = [];
   var repostHtml = [];
+
+  result.links.sort( (a, b) => {
+    return a.data.published_ts - b.data.published_ts
+  });
+
   for(var linkIdx in result.links) {
     var link = result.links[linkIdx];
 
@@ -124,7 +129,7 @@ function h(input) {
     '>': '&gt;',
     '"': '&quot;'
   };
-  
+
   return input.replace(/&|<|>|"/g, char => {
 
     return charsToReplace[char];
