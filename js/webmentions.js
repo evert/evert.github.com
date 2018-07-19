@@ -1,6 +1,10 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+if (document.readyState === 'interactive' || document.readyState === 'complete') {
   loadWebMentions();
-});
+} else {
+  document.addEventListener("DOMContentLoaded", function(event) {
+    loadWebMentions();
+  });
+}
 
 function loadWebMentions() {
 
