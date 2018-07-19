@@ -42,7 +42,7 @@ Location: https://evertpot.com/http/307-temporary-redirect
 References
 ----------
 
-* [RFC7231, Section 6.4.7][1].
+* [RFC7231, Section 6.4.7][1] - 307 Temporary Redirect.
 
 [1]: https://tools.ietf.org/html/rfc7231#section-6.4.7 "307 Temporary Redirect"
 [2]: /http/302-found "302 Found"

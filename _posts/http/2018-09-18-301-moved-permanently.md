@@ -44,7 +44,7 @@ status-code was introduced later that restored the original behavior:
 References
 ----------
 
-* [RFC7231, Section 6.4.1][1] - 301 Moved Permantently
+* [RFC7231, Section 6.4.2][1] - 301 Moved Permantently
 * [RFC7238][2] - 308 Permanent Redirect
 
 [1]: https://tools.ietf.org/html/rfc7231#section-6.4.2 "301 Moved Permanently"
