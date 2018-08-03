@@ -56,13 +56,11 @@ what I really care about, is what the feature represents.
 > individuals can shape their own experience and are empowered, safe and
 > independent.
 
-I don't necessarily want Mozilla to save Live Bookmarks from Firefox, but I
-sure do want them to be a catalyst for taking control back from corporate
-control back to the individual.
-
-Mozilla is in a unique position to give this type of technology an edge.
-Removing RSS/Atom support while not providing a better replacement to me goes
-against the mission that Mozilla set out to accomplish.
+I think it's important to say that I don't necessarily advocate for preserving
+this feature. I want Mozilla to be a catalyst for taking control from
+corporate silos back to the individual. RSS & Atom might not be the key to
+this goal, but without a good replacement this doesn't feel good. To me it
+goes against the mission that Mozilla set out to accomplish.
 
 [1]: https://www.ghacks.net/2018/07/25/mozilla-plans-to-remove-rss-feed-reader-and-live-bookmarks-support-from-firefox/
 [2]: https://www.mozilla.org/en-CA/mission/
