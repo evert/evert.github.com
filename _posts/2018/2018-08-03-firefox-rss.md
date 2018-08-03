@@ -41,7 +41,7 @@ censored corporate-controlled content-silos such as Facebook and Twitter. Each
 with their proprietary API's, incompatable with anything besides themselves
 and no interest to open up their networks to federation with other providers.
 These large vendors are worried about losing control of where content lives and
-where your firends are, because once, they lose the network effect and the only
+where your firends are, because once they lose the network effect the only
 thing that's left is a steaming pile of garbage where nobody really wants to
 hang out anyway.
 
@@ -54,15 +54,15 @@ but I'm sad for what it represents.
 > Our mission is to ensure the Internet is a global public resource, open and
 > accessible to all. An Internet that truly puts people first, where
 > individuals can shape their own experience and are empowered, safe and
-> independent. 
+> independent.
 
 I don't necessarily want Mozilla to save Live Bookmarks from Firefox, but I
 sure do want them to be a catalyst for taking control back from corporate
-controls back to the individual.
+control back to the individual.
 
-Mozilla is in a unique position to give this type of technology and edge.
-Removing RSS/Atom support while not providing a better replacement goes
-against the mission that Mozilla set out to do.
+Mozilla is in a unique position to give this type of technology an edge.
+Removing RSS/Atom support while not providing a better replacement to me goes
+against the mission that Mozilla set out to accomplish.
 
 [1]: https://www.ghacks.net/2018/07/25/mozilla-plans-to-remove-rss-feed-reader-and-live-bookmarks-support-from-firefox/
 [2]: https://www.mozilla.org/en-CA/mission/
