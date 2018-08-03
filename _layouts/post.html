@@ -2,15 +2,17 @@
 layout: default
 ---
 
-<article>
+<article class="h-entry">
 <p>
-<time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+<time datetime="{{ page.date | date: "%Y-%m-%d" }}" class="dt-published">{{ page.date | date: "%B %d, %Y" }}</time>
 {% if page.update_date %}(last updated: <time datetime="{{ page.update_date | date: "%Y-%m-%d" }}">{{ page.update_date | date: "%B %d, %Y" }}</time>){% endif %}
 </p>
 
-<h1>{{page.title}}</h1>
+<h1 class="p-name">{{page.title}}</h1>
 
+<div class="e-content">
 {{ content }}
+</div>
 
 </article>
 
