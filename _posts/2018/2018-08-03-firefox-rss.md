@@ -46,8 +46,8 @@ thing that's left is a steaming pile of garbage where nobody really wants to
 hang out anyway.
 
 So I'm sad to see this feature being removed from Firefox. It wasn't a really
-a fleshed out or well maintained feature, and it can be recovered with add-ons
-but I'm sad for what it represents.
+a fleshed out or well maintained feature. It's recoverable with add-ons, but
+what I really care about, is what the feature represents.
 
 [Mozilla's mission][2] is:
 
