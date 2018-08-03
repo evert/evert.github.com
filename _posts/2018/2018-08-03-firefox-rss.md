@@ -16,8 +16,8 @@ The reasons cited are the lack of usage. This doesn't completely surprise me.
 Both of the features don't fit _that_ well with modern workflows. There's not
 a lot of people using bookmarks actively except through auto-complete, and
 the reader interface never really was as effective as just looking at a
-website. Not to mention that the 'feed discovery' button is these hidden by
-default these days.
+website. Honestly the day that Mozilla didn't show the feed-discovery button
+by default in the address bar is the day they killed it.
 
 **Firefox feed reader:**
 <img src="/resources/images/posts/firefox-rss/2018.png" alt="Firefox feed reader" style="max-width: 100%" />
