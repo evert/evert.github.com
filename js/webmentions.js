@@ -48,6 +48,11 @@ function displayWebMentions(elem, result) {
   for(var linkIdx in result.links) {
     var link = result.links[linkIdx];
 
+    if (!link.data.author) {
+      console.log('Links without authors are not yet supported');
+      continue;
+    }
+
     switch(link.activity.type) {
       case 'like' :
         likeHtml.push(getAvatar(link, link.data.url));
