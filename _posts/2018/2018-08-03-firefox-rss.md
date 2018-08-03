@@ -19,15 +19,15 @@ the reader interface never really was as effective as just looking at a
 website. Not to mention that the 'feed discovery' button is these hidden by
 default these days.
 
-<img src="/resources/images/posts/firefox-rss/2018.png" alt="Firefox feed reader" style="max-width: 100%"/>
+<img src="/resources/images/posts/firefox-rss/2018.png" alt="Firefox feed reader" style="max-width: 100%" />
 
 I can't help being sad about this though. For a little while feeds were a very
 prominent and exciting feature of the web. More than an effective tool to
 replace mailing lists, they represented an idea that anyone can start a website
-and become part of the non-obsolete sounding blogosphere. The dreams were pretty
-big in the 2000's. Aside from standard protocols for getting updates from
-websites, many platforms supported standard API's for authoring blogs, and API's
-for federated commenting and even API's for federated identity (OpenID).
+and become part of the "blogosphere". The dreams were pretty big in the 2000's.
+Aside from standard protocols for getting updates from websites, many platforms
+supported standard API's for authoring blogs, and API's for federated
+commenting and even API's for federated identity (OpenID).
 
 At its height, even Microsoft Word got integration with these standard blogging
 (Metaweblog) APIs for easy authoring.
