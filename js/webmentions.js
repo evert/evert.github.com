@@ -62,7 +62,13 @@ function displayWebMentions(elem, result) {
         break;
       case 'reply' :
       case 'link' :
-        activityHtml.push('<li><div class="comment">' + getAvatar(link) + '<div class="inner"><p>' + getAuthorName(link) + ' • <time>' + getPublishedTime(link) + '</time></p>' + link.data.content + '</div></div>');
+        let publishedTime = getPublishedTime(link);
+        if (publishedTime) publishedTime = ' • ' + publishedTime;
+        let content = link.data.content;
+        if (!content) {
+          content = link.data.url;
+        }
+        activityHtml.push('<li><div class="comment">' + getAvatar(link) + '<div class="inner"><p>' + getAuthorName(link) + publishedTime + '</p>' + content + '</div></div>');
         break;
       default :
         if (link.activity.sentence_html) {
@@ -97,6 +103,7 @@ function getAvatar(link, url) {
   if (link.data && link.data.author && link.data.author.photo) {
     return '<a href="' + h(url) + '" title="' + h(link.data.author.name) + '"><img src="' + h(link.data.author.photo) + '" alt="' + h(link.data.author.name) + '" /></a>';
   }
+  return '';
 
 }
 function getAuthorName(link, url) {
@@ -110,6 +117,9 @@ function getAuthorName(link, url) {
 }
 function getPublishedTime(link) {
 
+  if (!link.data.published_ts) {
+    return '';
+  }
   var months = [
     'January',
     'February',
@@ -126,12 +136,15 @@ function getPublishedTime(link) {
   ];
 
   var d = new Date(link.data.published_ts * 1000);
-  return months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear();
+  return '<time>' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + '</time>';
 
 }
 
 function h(input) {
 
+  if (!input) {
+    return '';
+  }
   var charsToReplace = {
     '&': '&amp;',
     '<': '&lt;',
