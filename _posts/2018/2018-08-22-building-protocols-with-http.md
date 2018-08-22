@@ -13,7 +13,7 @@ with HTTP".
 
 Regardless of if you are doing pure REST or some variant, this guide has an
 absolute wealth of information that everyone should read at least once before
-building something on HTTP.
+building something on top of HTTP.
 
 It's matter-of-fact, concise and unopinionated.
 
