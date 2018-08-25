@@ -2,6 +2,7 @@
 date: "2018-09-18 08:00:00 -0700"
 title: "301 Moved Permanently"
 permalink: /http/301-moved-permanently
+location: "San Francisco, US"
 tags:
    - http
    - http-series

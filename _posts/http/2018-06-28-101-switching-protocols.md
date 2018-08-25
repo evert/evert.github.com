@@ -2,6 +2,7 @@
 date: "2018-06-28 08:00:00 -0700"
 title: "101 Switching Protocols"
 permalink: /http/101-switching-protocols
+location: "Los Angeles, US"
 tags:
    - http
    - http-series

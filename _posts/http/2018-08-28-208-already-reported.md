@@ -2,6 +2,7 @@
 date: "2018-08-28 08:00:00 -0700"
 title: "208 Already Reported"
 permalink: /http/208-already-reported
+location: "San Francisco, US"
 tags:
    - http
    - http-series

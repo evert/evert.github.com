@@ -2,6 +2,7 @@
 date: "2018-06-27 08:00:00 -0700"
 title: "Series of posts on HTTP status codes"
 permalink: /http/
+location: "Los Angeles, US"
 tags:
    - http
    - http-series

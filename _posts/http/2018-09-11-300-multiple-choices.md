@@ -2,6 +2,7 @@
 date: "2018-09-11 08:00:00 -0700"
 title: "300 Multiple Choices"
 permalink: /http/300-multiple-choices
+location: "San Francisco, US"
 tags:
    - http
    - http-series

@@ -2,6 +2,7 @@
 date: "2018-10-30 08:00:00 -0700"
 title: "307 Temporary Redirect"
 permalink: /http/307-temporary-redirect
+location: "San Francisco, US"
 tags:
    - http
    - http-series

@@ -2,6 +2,7 @@
 date: "2018-08-07 08:00:00 -0700"
 title: "205 Reset Content"
 permalink: /http/205-reset-content
+location: "Los Angeles, US"
 tags:
    - http
    - http-series

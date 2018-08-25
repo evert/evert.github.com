@@ -2,6 +2,7 @@
 date: "2018-11-07 08:00:00 -0700"
 title: "Which redirect do I choose?"
 permalink: /http/which-redirect-status
+location: "San Francisco, US"
 tags:
    - http
    - http-series

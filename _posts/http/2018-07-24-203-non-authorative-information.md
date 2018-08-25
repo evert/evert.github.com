@@ -2,6 +2,7 @@
 date: "2018-07-24 08:00:00 -0700"
 title: "203 Non-Authoritative Information"
 permalink: /http/203-non-authoritative-information
+location: "Los Angeles, US"
 tags:
    - http
    - http-series

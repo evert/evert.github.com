@@ -2,6 +2,7 @@
 date: "2018-11-06 08:00:00 -0700"
 title: "308 Permanent Redirect"
 permalink: /http/308-permanent-redirect
+location: "San Francisco, US"
 tags:
    - http
    - http-series
