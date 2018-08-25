@@ -3,6 +3,7 @@ date: 2010-04-13 13:38:58 UTC
 layout: post
 slug: html5-on2-vp8-h264-ogg-theora
 title: "HTML5 video: On2 VP8, H.264 and Ogg Theora"
+location: "Daegu, KR"
 tags:
   - h264
   - html5
