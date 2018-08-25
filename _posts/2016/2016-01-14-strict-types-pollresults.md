@@ -7,6 +7,7 @@ tags:
    - php
    - poll
    - strict_typing
+location: "Toronto, CA"
 ---
 
 I maintain a number of PHP packages, and with the release of PHP 7, I've been

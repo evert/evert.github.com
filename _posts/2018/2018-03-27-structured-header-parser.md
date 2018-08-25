@@ -1,6 +1,7 @@
 ---
 title: A HTTP structured-header parser for Javascript
 date: 2018-03-27 00:09:05 -0700
+location: San Francisco, US
 tags:
   - http
   - structured-header

@@ -2,6 +2,7 @@
 date: 2017-04-03 10:19:25 -0400
 layout: post
 title: "The problems with embedding in REST today and how it might be solved with HTTP/2"
+location: Toronto, CA
 tags:
    - rest
    - hypermedia

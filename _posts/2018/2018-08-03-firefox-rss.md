@@ -1,6 +1,7 @@
 ---
 title: Firefox removes RSS support
 date: 2018-08-03 15:45:00 -0400
+location: Toronto, CA
 tags:
   - firefox
   - standards

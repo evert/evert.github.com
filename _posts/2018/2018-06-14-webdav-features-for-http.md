@@ -1,6 +1,7 @@
 ---
 title: WebDAV features that might be useful for HTTP services.
 date: 2018-06-14 23:03:18 -0700
+location: San Francisco, US
 tags:
   - webdav
   - rest

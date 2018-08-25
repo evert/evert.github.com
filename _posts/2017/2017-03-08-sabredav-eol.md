@@ -2,6 +2,7 @@
 date: 2017-03-08 21:04:46 -0500
 layout: post
 title: "After 10 years, I'm stopping my work on sabre/dav"
+location: Toronto, CA
 tags:
    - sabredav
    - sabre

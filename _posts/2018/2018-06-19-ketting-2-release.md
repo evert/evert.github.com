@@ -1,6 +1,7 @@
 ---
 title: Ketting 2.0 release
 date: 2018-06-19 09:00:00 -0700
+location: San Francisco, US
 tags:
   - ketting
   - rest

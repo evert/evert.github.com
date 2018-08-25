@@ -1,6 +1,7 @@
 ---
 title: Bye Disqus, hello Webmention!
 date: 2018-07-16 09:00:00 -0700
+location: San Francisco, US
 tags:
   - indieweb
   - disqus

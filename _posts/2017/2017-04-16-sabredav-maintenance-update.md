@@ -10,6 +10,7 @@ tags:
     - vobject
     - event
     - http
+location: Toronto, CA
 ---
 
 Hi there! My name is Evert, and for the past 10 years I've probably done

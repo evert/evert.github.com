@@ -7,6 +7,7 @@ tags:
    - metablogging
    - markov
    - php
+location: Toronto, CA
 ---
 
 PHP got support PHP Documentor has a new 'query resource' and can generally
