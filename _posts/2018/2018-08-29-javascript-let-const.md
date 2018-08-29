@@ -16,7 +16,7 @@ exclusively. Here's why:
 * `var` uses something called 'hoisting', which can lead to unexpected results.
 * `let` and `const` are both block-scoped. Which means you can declare them in
   `for` loop or `if` statement, and they will only be valid for that block. This
-  helps with spotting bugs and makes your code more strict.
+  helps with spotting bugs and makes your code more robust.
 * `const` prevents variable re-assignment.
 
 Unless you are targetting older environments, there's no need anymore to use
