@@ -7,13 +7,13 @@ location: Nijega, NL
 ---
 
 If you are writing javascript code for Node.js, Babel, Typescript or if you can
-target up-to-date browsers, chances are that your environment supports the `let`
-and `const` keywords.
+target up-to-date [browsers][1], chances are that your environment supports the
+`let` and `const` keywords.
 
 If this is the case, you should stop using `var` and use `let` and `const`
 exclusively. Here's why:
 
-* `var` uses something called 'hoisting', which can lead to unexpected results.
+* `var` uses something called '[hoisting][2]', which can lead to unexpected results.
 * `let` and `const` are both block-scoped. Which means you can declare them in
   `for` loop or `if` statement, and they will only be valid for that block. This
   helps with spotting bugs and makes your code more robust.
