@@ -25,12 +25,17 @@ Unless you are targetting older environments, there's no need anymore to use
 But the reason I'm writing this post is because I often see `let` used where
 `const` is more appropriate.
 
+When to use `const`
+-------------------
+
 `const` stands for "constant". In a lot of sources, I see that interpreted as
 something that should never change, maybe even something that should be
 declared as uppercase:
 
-    /* I declare a constant! */
-    const MY_MAGIC_VALUE = 5;
+```javascript
+/* Hear ye, Hear ye! I declare a constant! */
+const MY_MAGIC_VALUE = 5;
+```
 
 However, `const` really should be your default for most cases. Take the
 following examples:
@@ -52,11 +57,11 @@ for(const item of users) {
 return users;
 ```
 
-In most of the sources I see, all the above `const` uses typically use `let`.
-Despite that we are 'changing' the contents of our variables above, `const`
-actually does work here.
+In most of the javascript sources I see, in all of the above cases `let`
+typically is used instead of `const`. However `const` works perfectly fine
+here, and is actually preferred.
 
-The reason for this is that if you create an array or object with `const`, you
+When you create an object with `const`, you
 can still change it's contents. `const` only prevents re-assigning, it doesn't
 make the entire object immutable.
 
