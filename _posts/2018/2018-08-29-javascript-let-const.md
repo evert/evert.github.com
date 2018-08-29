@@ -104,7 +104,7 @@ console.log(x, y); // output 6, 5
 ```
 
 In the above example, we changed `x`, but `y` remained 5. This is because
-`x++` sets x to a new value, but the old value didn't change.
+`x++` re-assigns `x` to a new value, but the old value didn't change.
 
 Contrast this with changing an object value:
 
