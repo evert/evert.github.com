@@ -1,5 +1,5 @@
 ---
-title: "Use 'let' and 'const' instead of `var`".
+title: "Use 'let' and 'const' instead of `var`"
 date: 2018-08-29 17:32:22 +0200
 tags:
   - javascript
