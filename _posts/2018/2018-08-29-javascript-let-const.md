@@ -40,33 +40,32 @@ const MY_MAGIC_VALUE = 5;
 However, `const` really should be your default for most cases. Take the
 following examples:
 
+
 ```javascript
 const user = {};
 user.firstName = 'Evert';
 user.lastName = 'Pot';
-
-const users = [];
-users.push(user);
-
-for(const item of users) {
-
-  console.log(user);
-
-}
-
-return users;
 ```
-
-In most of the javascript sources I see, in all of the above cases `let`
-typically is used instead of `const`. However `const` works perfectly fine
-here, and is actually preferred.
 
 When you create an object with `const`, you
 can still change it's contents. `const` only prevents re-assigning, it doesn't
 make the entire object immutable.
 
+```javascript
+const users = [];
+users.push(user);
+```
+
 Same for the array. Even though I'm adding something to the array, the identity
 of the array remains the same. `const` works.
+
+```javascript
+for(const item of users) {
+
+  console.log(user);
+
+}
+```
 
 In the case for the `for` loop. Every iteration of the loop is a new
 'block scope', so I am in fact able to re-create a new constant for every
@@ -79,7 +78,11 @@ accidentally overwriting variables. So a good rule of thumb is:
 2. Use `const` by default, everywhere.
 3. Use `let` if you must.
 
-And there certainly are cases where `let` is needed. For example:
+
+When to use `let`
+-----------------
+
+There certainly are cases where `let` is needed. For example:
 
 ```javascript
 let x = 5;
@@ -87,6 +90,7 @@ x++;
 ```
 
 The above example does not work `const`, because we're really redefining `x`.
+Under the hood javascript runs `x = x + 1`, which sets a new value (6) to `x`.
 
 If this is confusing, the following example might help:
 
@@ -95,13 +99,14 @@ let x = 5;
 let y = x;
 
 x++;
+
+console.log(x, y); // output 6, 5
 ```
 
-In the above example, we change `x`, but `y` remained independently 5. This
-is because the `x++` operation actually is a shortcut for `x = x + 1`, which
-redefines x to its new value.
+In the above example, we changed `x`, but `y` remained 5. This is because
+`x++` sets x to a new value, but the old value didn't change.
 
-Now an example with objects:
+Contrast this with changing an object value:
 
 ```javascript
 const x = [1, 2];
@@ -111,7 +116,7 @@ x.push(3);
 ```
 
 After this script, both `x` and `y` contain `[1, 2, 3]`. Both variables refer
-to the same value. We change the value, not the reference.
+to the same value. We changed the value, but did not re-define the variable.
 
 In contrast, this _will_ throw an error:
 
@@ -123,6 +128,17 @@ const x = x.slice(1);
 
 Here we re-define `x`, and javascript doesn't allow this. If we used `let`
 instead, only `x` would have changed but `y` would not.
+
+
+But what if I want to declare a magic constant-like value in my source
+----------------------------------------------------------------------
+
+Have you considered SHOUTING?
+
+```javascript
+/* HEAR MY VOICE */
+const MY_MAGIC_VALUE = 5;
+```
 
 [1]: https://caniuse.com/#search=let
 [2]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting
