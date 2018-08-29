@@ -17,7 +17,7 @@ exclusively. Here's why:
 * `let` and `const` are both block-scoped. Which means you can declare them in
   `for` loop or `if` statement, and they will only be valid for that block. This
   helps with spotting bugs and makes your code more strict.
-* `const` prevents variable re-use.
+* `const` prevents variable re-assignment.
 
 Unless you are targetting older environments, there's no need anymore to use
 `var`.
