@@ -1,6 +1,7 @@
 ---
 title: Scheduling posts on Github pages with AWS lambda functions
 date: 2018-06-18 09:00:00 -0700
+update_date: 2018-08-30 02:24:00 +0200
 location: San Francisco, US
 tags:
   - aws
@@ -81,8 +82,15 @@ and fun it was.
 
 Hope it's useful to anyone else!
 
+Updates
+-------
+
+[Cory Cox](https://twitter.com/CoryKnox) did a similar thing, but with Azure
+Functions instead of AWS. Read more in [his article][6].
+
 [1]: http://code.alxmjo.com/how-to-schedule-posts-with-jekyll/
 [2]: https://developer.github.com/v3/repos/pages/#request-a-page-build
 [3]: https://github.com/settings/tokens
 [4]: https://aws.amazon.com/lambda/
 [5]: https://github.com/evert/github-pages-aws-lambda-publish
+[6]: https://knoxy.ca/2018/08/Azure-Functions-FTW/
