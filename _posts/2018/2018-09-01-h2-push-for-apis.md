@@ -16,7 +16,7 @@ client knows they need it.
 
 HTTP/2 push has had mixed success, up to a point where Chrome developers are
 [thinking of experimenting with disabling it alltogether][11]. I think this
-would be a huge loss for API's, so I shared my thoughts on the [IETF HTTP-WG
+would be a huge loss for APIs, so I shared my thoughts on the [IETF HTTP-WG
 mailing list][12].
 
 I copied it in full here (slightly reformatted):
@@ -177,4 +177,4 @@ Evert
 [9]: https://tools.ietf.org/html/rfc8336
 [10]: https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest
 [11]: https://www.youtube.com/watch?time_continue=8041&v=Um5HHZkXGg4
-[12]: https://lists.w3.org/Archives/Public/ietf-http-wg/
+[12]: https://lists.w3.org/Archives/Public/ietf-http-wg/2018JulSep/0294.html
