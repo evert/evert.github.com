@@ -93,7 +93,7 @@ app.use(router('/contact', ctx => {
 app.listen(4000);
 ```
 
-### HTTP/2 Pussh
+### HTTP/2 Push
 
 Whenever you have access to the `Context` object, you can also push. Push will
 be ignored for HTTP/1 connectinons.
