@@ -22,16 +22,10 @@ I've been doing Node.js development for a little while, and I wanted to try
 my hand at writing my own framework. It's probably a rite of passage to do
 this, although it's not really my first.
 
-I'm releasing it to the world today. I think there's a really good chance that
-it will go nowhere. For something to be a disruptor, it needs to be
-exponentially better than the thing it's replacing. I'm not sure if this is.
-Plus, I'm not great at marketing, as demonstrated by this very paragraph.
-
-So by releasing it today, I want to see if this is worth investing time in in
+By releasing it today, I want to see if this is worth investing time in in
 the future, or if I should focus my energy elsewhere.
 
-Enough with the pessimism though. The project is called Curveball, and these
-are it's features:
+The project is called Curveball, and these are it's differentiating features:
 
 Project goals
 -------------
