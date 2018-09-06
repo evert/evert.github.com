@@ -1,5 +1,5 @@
 ---
-title: "Curveball - a Typescript microframework"
+title: "Curveball - a TypeScript micro-framework"
 date: 2018-09-06 16:00:00 +0200
 tags:
   - http2
@@ -18,27 +18,24 @@ tags:
 location: Nijega, NL
 ---
 
-I've been doing Node.js development for a little while, and I wanted to try
-my hand at writing my own framework. It's probably a rite of passage to do
-this, although it's not really my first.
+I’ve been doing Node.js development for a little while, and I wanted to try my hand at writing a framework. It’s probably a rite of passage to do this, although it’s not really my first.
 
-By releasing it today, I want to see if this is worth investing time in in
-the future, or if I should focus my energy elsewhere.
+By releasing it today, I want to see if this is worth investing time in in the future, or if I should focus my energy elsewhere.
 
-The project is called Curveball, and these are it's differentiating features:
+The project is called Curveball, and these are it’s differentiating features:
 
 Project goals
 -------------
 
-I'm a big fan of microframeworks. [Express][1] was great when it came out, but
-it now feels dated. [Koa][2] was written by the team behind express. Koa makes
-a lot more sense in codebases that are Promise-, rather than callback-oriented,
-and that's not the only improvement. The team waited with releasing a stable
-version, until the very moment Node.js released a stable `async`/`await`
-support.
+I'm a big fan of micro-frameworks. [Express][1] was great when it came out, but
+it now feels a little dated. [Koa][2] was written by the team behind express.
+Koa makes a lot more sense in codebases that are Promise-, rather than
+callback-oriented, and that's not the only improvement. The team waited with
+releasing a stable version, until the very moment Node.js released a stable
+`async`/`await` support.
 
 I would recommend everyone to check it out. I doubt you'll want to go back to
-Express after using it for a bit.
+Express after using Koa for a bit.
 
 Koa has been my framework of choice for a while, but there were a few things I
 would have liked. I thought it would be an interesting to to write something
@@ -132,7 +129,7 @@ app.use(ctx => async {
 });
 ```
 
-### Sending a 103 Early Hints response.
+### Sending a 103 Early Hints response
 
 ```typescript
 app.use(ctx => async {
@@ -171,10 +168,10 @@ app.use( async (ctx, next) => {
 });
 ```
 
-Where to get it Curveball
--------------------------
+Where to get Curveball
+----------------------
 
-Head to the [Github project page][3].
+You can find it on [Github project page][3].
 
 What can I do?
 --------------
