@@ -16,6 +16,9 @@ future: false
 
 excerpt_separator: <!--more-->
 
+include:
+  - .well-known
+
 defaults:
     -
         scope:
