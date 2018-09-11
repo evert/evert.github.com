@@ -1,5 +1,5 @@
 ---
-date: "2018-09-18 08:00:00 -0700"
+date: "2018-09-18 11:00:00 -0400"
 title: "301 Moved Permanently"
 permalink: /http/301-moved-permanently
 location: "San Francisco, US"
