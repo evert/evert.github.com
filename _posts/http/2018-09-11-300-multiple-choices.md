@@ -1,5 +1,5 @@
 ---
-date: "2018-09-11 08:00:00 -0700"
+date: "2018-09-11 15:00:00 +0200"
 title: "300 Multiple Choices"
 permalink: /http/300-multiple-choices
 location: "San Francisco, US"
