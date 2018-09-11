@@ -11,7 +11,7 @@ tags:
 [`300 Multiple Choices`][1] is the first of the 3xx series, which are all used
 for redirection.
 
-`300` should be emitted specifically, when a resource can redirect to more than
+`300` should be emitted specifically when a resource can redirect to more than
 one location, and it wants the user to decide which one.
 
 Support for `300` is scarce. In the past both the [`URI`][4] and
