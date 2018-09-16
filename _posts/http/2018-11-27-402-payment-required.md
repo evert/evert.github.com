@@ -5,6 +5,7 @@ permalink: /http/402-payment-required
 tags:
    - http
    - http-series
+location: Groningen, NL
 ---
 
 [`402 Payment Required`][1] is a status-code described by the standard as:
