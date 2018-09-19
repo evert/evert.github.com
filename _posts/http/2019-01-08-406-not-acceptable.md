@@ -5,7 +5,7 @@ permalink: /http/406-not-acceptable
 tags:
    - http
    - http-series
-loctation: Nijega, NL
+location: Toronto, CA
 ---
 
 Happy 2019! After a small hiatus we're back with this captivating series. I
