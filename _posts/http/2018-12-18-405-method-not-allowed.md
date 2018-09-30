@@ -5,7 +5,7 @@ permalink: /http/405-method-not-allowed
 tags:
    - http
    - http-series
-loctation: Nijega, NL
+location: Nijega, NL
 ---
 
 [`405 Method Not Allowed`][1] should be returned by a server when a certain
