@@ -14,7 +14,7 @@ location: Toronto, CA
 a tiny Typescript library with HTTP errors.
 
 Whenever I start a new Javascript-based project, whether that's on the server,
-or if I'm writing an API client with [Fetch][2], I often find myself do the
+or if I'm writing an API client with [Fetch][2], I often find myself doing the
 same thing over and over again, which is to define a simple set of exceptions
 representing HTTP errors, like this:
 
