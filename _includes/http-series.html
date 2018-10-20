@@ -1,0 +1,38 @@
+<section class="http-series">
+
+    <h2>HTTP series</h2>
+
+    <p>
+      This article is part of an ongoing series about the HTTP protocol.
+    </p>
+
+    <p>
+      If you want to follow along as I write them, you can Subscribe to my
+      <a href="/atom.xml">Atom feed</a> or
+      <a href="http://eepurl.com/dzjtcv">Mailing list</a>.
+    </p>
+
+    <ul>
+    {% for post in site.tags.http-series reversed %}
+
+      {% capture statusGroup %}{{ post.title | slice: 0, 1 }}{% endcapture %}
+      {% if statusGroup != prevStatusGroup and (statusGroup == "1" or statusGroup == "2" or statusGroup == "3" or statusGroup == "4" or statusGroup == "5") %}
+        </ul>
+        {% case statusGroup %}
+          {% when '1' %}<h3>Informational 1xx</h3>
+          {% when '2' %}<h3>Successful 2xx</h3>
+          {% when '3' %}<h3>Redirection 3xx</h3>
+          {% when '4' %}<h3>Client Error 4xx</h3>
+          {% when '5' %}<h3>Server Error 5xx</h3>
+        {% endcase %}
+        <ul>
+        {% capture prevStatusGroup %}{{ statusGroup }}{% endcapture %}
+      {% endif %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+         <span>({{ post.date | date:"%Y-%m-%d" }})</span>
+      </li>
+    {% endfor %}
+    </ul>
+
+</section>
