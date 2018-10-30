@@ -250,3 +250,16 @@ img.fill-width {
   font-size: 90%;
   color: #555;
 }
+
+.dead-link:after {
+  content: "Dead :(";
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 2px;
+  text-decoration: none;
+  margin-left: 3px;
+  border-radius: 3px;
+}
