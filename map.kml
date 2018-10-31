@@ -1,0 +1,29 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>{{ site.title }}</name>
+    <description>
+      This map contains a list of locations where I wrote an article on this blog.
+    </description>
+    <Folder>
+      <name>Posts</name>
+  {% for post in site.posts %}
+  {% if post.geo %}
+      <Placemark>
+        <name>{{ post.title | xml_escape }}</name>
+        <Point>
+          <coordinates>
+            {{ post.geo[1] }},{{ post.geo[0] }},0
+          </coordinates>
+        </Point>
+        <description>https://evertpot.com{{post.url}}</description>
+        <atom:link type="text/html" rel="alternate" href="https://evertpot.com{{ post.url }}"/>
+      </Placemark>
+  {% endif %}
+  {% endfor %}
+    </Folder>
+  </Document>
+</kml>
