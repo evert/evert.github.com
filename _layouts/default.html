@@ -28,15 +28,14 @@
     <script async src="/js/webmentions.js"></script>
 
 </head>
-<body>
-  <div id="wrap">
-      <main>
-        {{ content }}
-        <div class="flower">
-        </div>
-      </main>
+<body class="{{ page.bodyClass }}">
 
+   <main>
+     {{ content }}
+   </main>
+   <div class="flower">
    </div>
+
    <footer>
      Written by <a href="/">Evert Pot</a>. Find me on <a href="https://twitter.com/evertp">Twitter</a> or <a href="https://github.com/evert">Github</a>.
    </footer>

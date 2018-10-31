@@ -3,13 +3,13 @@ html {
 }
 
 body {
-
     font-family: 'PT Serif', serif;
     width: 100%;
     background-color: #EEE;
     margin: 0;
     height: 100%;
-
+    display: flex;
+    flex-direction: column;
 }
 
 ul,ol,p {
@@ -26,17 +26,11 @@ h2 {
     font-size: 1.7em;
 }
 
-div#wrap {
-    min-height: 100%;
-    padding: 0 20px 0px 20px;
-}
-
 main {
     max-width: 700px;
     margin: 0 auto;
-    overflow:auto;
-    padding-bottom: 40px;
-    display: block;
+    padding-bottom: 10px;
+    flex: 1;
 }
 
 main a {
@@ -74,7 +68,6 @@ footer {
     font-size: 0.8em;
     width: 100%;
     background: #30303B;
-    margin-top: -35px;
     height: 15px;
     padding: 10px 0;
     color: #DDD;
@@ -107,13 +100,16 @@ pre {
     font-family: "Monaco", monospace;
 }
 .flower {
-	background-image: url(../resources/flowerstatic.gif), url(../resources/flower200.gif);
-	background-repeat: no-repeat;
-	background-position: 0 0, 0 70px;
-	display: block;
-	width: 70px;
-	height: 70px;
-	margin: 0 auto;
+    background-image: url(../resources/flowerstatic.gif), url(../resources/flower200.gif);
+    background-repeat: no-repeat;
+    background-position: 0 0, 0 70px;
+    width: 50px;
+    height: 64px;
+    min-width: 50px;
+    min-height: 64px;
+    margin: 0 auto;
+    flex: 1;
+    padding-bottom: 10px;
 }
 
 .flower:hover {
@@ -262,4 +258,19 @@ img.fill-width {
   text-decoration: none;
   margin-left: 3px;
   border-radius: 3px;
+}
+
+body.map .flower {
+  display: none;
+}
+
+
+body.map main {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+body.map main #map {
+  flex: 1;
+  min-width: 100%;
 }
