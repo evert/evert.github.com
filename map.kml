@@ -10,8 +10,7 @@ layout: null
     </description>
     <Folder>
       <name>Posts</name>
-  {% for post in site.posts %}
-  {% if post.geo %}
+  {% for post in site.posts %}{% if post.geo %}
       <Placemark>
         <name>{{ post.title | xml_escape }}</name>
         <Point>
@@ -22,8 +21,7 @@ layout: null
         <description>https://evertpot.com{{post.url}} - {{ post.date | date: "%B %d, %Y" }}</description>
         <atom:link type="text/html" rel="alternate" href="https://evertpot.com{{ post.url }}"/>
       </Placemark>
-  {% endif %}
-  {% endfor %}
+  {% endif %}{% endfor %}
     </Folder>
   </Document>
 </kml>
