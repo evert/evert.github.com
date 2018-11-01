@@ -14,7 +14,7 @@
         <time>{{ include.comment.created | date: "%b %d, %Y" }}</time>
       </p>
 
-      {{ include.comment.message }}
+      {{ include.comment.message | xml_escape }}
     </div>
 
   </div>

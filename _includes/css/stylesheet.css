@@ -108,7 +108,7 @@ pre {
     min-width: 50px;
     min-height: 64px;
     margin: 0 auto;
-    flex: 1;
+    flex: 0;
     padding-bottom: 10px;
 }
 
