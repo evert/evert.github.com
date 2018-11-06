@@ -34,34 +34,6 @@ Location: https://evertpot.com/http/308-permanent-redirect
 Server: Apache/2.4.29
 ```
 
-A summary of redirects
-----------------------
-
-So there's a lot of weird stuff going on with redirects. Many are used
-incorrectly. So which should you use? Hopefully the following chart helps:
-
-**Are you responding to a POST request, and instead of showing a status
-immidiately, you want to redirect the user to a different (confirmation?) page**
-
-> Use [`303 See Other`][5].
-
-**Did the resource really get a brand new URL (path or domain), and move to a
-new location, and you want to make sure that clients do the exact same request
-at the new location?**
-
-> Use [`307 Temporary Redirect`][3] if the move was temporary, or
-> [`308 Permanent Redirect`][6] if the move was permanent.
-
-**Did the resource move, but you only care about GET requests, because maybe the
-resource is a web page?**
-
-> Use [`302 Found`][4] if the move was temporary, or
-> [`301 Moved Permanently`][2] if the move was permanent.
-
-**Do you want to send the user somewhere else, but there's more than one place
-you can redirect to and you want to let the user decide where to go?**
-
-> Use [`300 Multiple Choices`][7].
 
 References
 ----------
