@@ -7,7 +7,8 @@ tags:
   - ie
   - privacy
   - dnt
-
+location: "Königsstraße, Münster, DE"
+geo: [51.957255, 7.626419]
 ---
 <p>A quick update, since my last post Microsoft has reverted it's decision to enable the DNT header by default. I sort of expected this, and I'm glad they did.</p>
 

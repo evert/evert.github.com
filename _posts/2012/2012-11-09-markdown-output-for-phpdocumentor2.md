@@ -8,7 +8,8 @@ tags:
   - phpdocumentor
   - phpdoc
   - markdown
-
+location: "Königsstraße, Münster, DE"
+geo: [51.957255, 7.626419]
 ---
 <p>I'm moving some <a href="https://github.com/fruux/sabre-dav">codebases</a> to PHP namespaces, and as a result I could no longer use my crappy API documentation script.</p>
 

@@ -12,7 +12,8 @@ tags:
   - carddav
   - vobject
   - composer
-
+geo: [47.372897, 8.543735]
+location: "Zurich, CH"
 ---
 <p style="float: right"><img alt="sabredav_200x60.png" src="http://evertpot.com/resources/files/logos/sabredav_200x60.png" width="197" height="60" /></p>
 

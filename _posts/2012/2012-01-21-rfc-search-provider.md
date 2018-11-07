@@ -7,7 +7,8 @@ tags:
   - opensearch
   - rfc
   - phpfog
-
+geo: [51.966758, 7.618665]
+location: "Münzstraße, Münster, DE"
 ---
 <p>In my work I have to look a lot at the IETF rfc documents, and I always have to jump through a bunch of hoops to find the document I want. Google often links me to the text version, and often I'm looking at obsoleted versions of documents when a new rfc has been published.</p>
 

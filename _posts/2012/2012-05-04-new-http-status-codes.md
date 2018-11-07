@@ -6,7 +6,8 @@ title: "New HTTP status codes"
 tags:
   - http
   - featured
-
+geo: [51.966758, 7.618665]
+location: "Münzstraße, Münster, DE"
 ---
 <p><a href="http://tools.ietf.org/html/rfc6585">RFC 6585</a> has been published quite recently. This document describes 4 new HTTP status codes.</p>
 

@@ -8,7 +8,8 @@ tags:
   - icalendar
   - vcard
   - vobject
-
+location: "Königsstraße, Münster, DE"
+geo: [51.957255, 7.626419]
 ---
 Over the last little while I've been working at [fruux][1] on a new open
 source project: an [iCalendar][2]/[vCard][3] parser for PHP.

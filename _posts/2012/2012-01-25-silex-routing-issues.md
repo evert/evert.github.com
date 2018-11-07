@@ -3,7 +3,8 @@ date: 2012-01-25 14:03:52 UTC
 layout: post
 slug: silex-routing-issues
 title: "Silex routing issues"
-
+geo: [51.964895, 7.630586]
+location: "Martinistraße, Münster, DE"
 ---
 <p>I've had a bit of an interest for micro frameworks, and for a new project I'm working on I decided on <a href="http://silex.sensiolabs.org/">Silex</a>.</p>
 
@@ -14,7 +15,7 @@ title: "Silex routing issues"
 ```php
 <?php
 
-$app->get('/{name}', function($name) { 
+$app->get('/{name}', function($name) {
    // If the page exists, render it, otherwise throw 404
 });
 
@@ -25,7 +26,7 @@ $app->get('/{name}', function($name) {
 ```php
 <?php
 
-$app->get('/{name}', function($name) { 
+$app->get('/{name}', function($name) {
    // If the page exists, render it, otherwise throw 404
 })->value('name','index');
 
@@ -36,7 +37,7 @@ $app->get('/{name}', function($name) {
 ```php
 <?php
 
-$app->get('/{name}/', function($name) { 
+$app->get('/{name}/', function($name) {
    // If the page exists, render it, otherwise throw 404
 })->value('name','index');
 
@@ -52,8 +53,8 @@ $staticHandler = function($name) {
 }
 
 $app->get('/{name}/', $staticHandler);
-$app->get('/', function() use ($staticHandler) { 
-  return $staticHandler('index'); 
+$app->get('/', function() use ($staticHandler) {
+  return $staticHandler('index');
 } );
 
 ```

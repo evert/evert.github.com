@@ -6,7 +6,8 @@ title: "New full-time gig at fruux"
 tags:
   - sabredav
   - fruux
-
+geo: [51.966758, 7.618665]
+location: "Münzstraße, Münster, DE"
 ---
 <p style="float: left; padding: 0 10px 10px 0">
 <a href="https://fruux.com"><img alt="fruux_logo.png" src="http://evertpot.com/resources/files/logos/fruux_logo.png" /></a>

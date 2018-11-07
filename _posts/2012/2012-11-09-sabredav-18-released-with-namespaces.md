@@ -10,7 +10,8 @@ tags:
   - sabredav
   - caldav
   - carddav
-
+location: "Königsstraße, Münster, DE"
+geo: [51.957255, 7.626419]
 ---
 <p style="float: right"><img alt="sabredav_200x60.png" src="http://evertpot.com/resources/files/logos/sabredav_200x60.png" width="197" height="60" /></p>
 

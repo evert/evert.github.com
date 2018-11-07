@@ -12,7 +12,8 @@ tags:
   - internet explorer
   - safari
   - chrome
-
+geo: [51.966758, 7.618665]
+location: "Münzstraße, Münster, DE"
 ---
 <p>A quick update about CSP. Browsers are well on their way to all adopt the <a href="https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html">specification.</a></p>
 

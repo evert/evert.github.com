@@ -7,7 +7,8 @@ tags:
   - firefox
   - ie
   - dnt
-
+geo: [51.966758, 7.618665]
+location: "Münzstraße, Münster, DE"
 ---
 <p>Microsoft recently <a href="https://blogs.technet.com/b/microsoft_on_the_issues/archive/2012/05/31/advancing-consumer-trust-and-privacy-internet-explorer-in-windows-8.aspx?Redirected=true">announced</a> that they will automatically enable the 'Do Not Track' header in Internet Explorer 10.</p>
 

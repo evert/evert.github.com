@@ -7,7 +7,8 @@ tags:
   - openid
   - webdav
   - oauth
-
+location: "Königsstraße, Münster, DE"
+geo: [51.957255, 7.626419]
 ---
 <p>I just came across a a very interesting blog post by Eran Hammer about <a href="http://hueniverse.com/2012/07/oauth-2-0-and-the-road-to-hell/">OAuth 2.0, its progress and its past</a>.</p>
 

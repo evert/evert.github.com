@@ -8,7 +8,8 @@ tags:
   - os/x
   - mac
   - homebrew
-
+geo: [51.966758, 7.618665]
+location: "Münzstraße, Münster, DE"
 ---
 
 I like using OS X's built-in packages where possible, but unfortunately Apple
