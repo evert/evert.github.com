@@ -2,7 +2,8 @@
 date: "2018-06-28 08:00:00 -0700"
 title: "101 Switching Protocols"
 permalink: /http/101-switching-protocols
-location: "Los Angeles, US"
+location: "Haight St, San Francisco, CA, United States"
+geo: [37.772252, -122.431250]
 tags:
    - http
    - http-series

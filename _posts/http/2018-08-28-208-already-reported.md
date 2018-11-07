@@ -2,7 +2,8 @@
 date: "2018-08-28 08:00:00 -0700"
 title: "208 Already Reported"
 permalink: /http/208-already-reported
-location: "San Francisco, US"
+location: "Nijega, NL"
+geo: [53.140006, 6.032090]
 tags:
    - http
    - http-series

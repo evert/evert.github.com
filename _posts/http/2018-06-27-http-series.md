@@ -2,7 +2,8 @@
 date: "2018-06-27 08:00:00 -0700"
 title: "Series of posts on HTTP status codes"
 permalink: /http/
-location: "Los Angeles, US"
+location: "Haight St, San Francisco, CA, United States"
+geo: [37.772252, -122.431250]
 tags:
    - http
    - http-series
@@ -40,4 +41,4 @@ If you're interested to read the future ones or want to show support, you can:
 [2]: /http/100-continue
 [3]: /atom.xml
 [4]: http://eepurl.com/dzjtcv
-[5]: https://twitter.com/evertp 
+[5]: https://twitter.com/evertp

@@ -2,7 +2,8 @@
 date: "2018-08-14 12:00:00 +0200"
 title: "206 Partial Content"
 permalink: /http/206-partial-content
-location: "Los Angeles, US"
+location: "Nijega, NL"
+geo: [53.140006, 6.032090]
 tags:
    - http
    - http-series

@@ -2,7 +2,8 @@
 date: "2018-09-18 11:00:00 -0400"
 title: "301 Moved Permanently"
 permalink: /http/301-moved-permanently
-location: "San Francisco, US"
+location: "Dufferin St, Toronto, ON, Canada"
+geo: [43.647160, -79.430778]
 tags:
    - http
    - http-series

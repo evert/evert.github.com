@@ -2,7 +2,8 @@
 date: "2018-09-11 15:00:00 +0200"
 title: "300 Multiple Choices"
 permalink: /http/300-multiple-choices
-location: "San Francisco, US"
+location: "Kruidlaan, Groningen, NL"
+geo: [53.221237, 6.574042]
 tags:
    - http
    - http-series

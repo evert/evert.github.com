@@ -2,7 +2,7 @@
 date: "2018-11-06 08:00:00 -0700"
 title: "308 Permanent Redirect"
 permalink: /http/308-permanent-redirect
-location: "Hastings Ave, Toronto, ON, Canada"
+location: "Hastings Ave, Toronto, ON, CA"
 geo: [43.665728, -79.330084]
 tags:
    - http
