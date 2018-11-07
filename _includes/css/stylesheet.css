@@ -269,6 +269,7 @@ body.map main {
   display: flex;
   width: 100%;
   max-width: 100%;
+  padding: 0;
 }
 body.map main #map {
   flex: 1;
