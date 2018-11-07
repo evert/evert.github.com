@@ -3,7 +3,8 @@ date: 2010-08-09 10:13:36 UTC
 layout: post
 slug: content-security-policy-introduction
 title: "Content Security Policy introduction"
-location: "Vlissingen, NL"
+location: "Gildeweg, Vlissingen, NL"
+geo: [51.457330, 3.588057]
 tags:
   - websec
   - csp

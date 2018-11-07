@@ -3,11 +3,11 @@ date: 2010-05-10 13:25:41 UTC
 layout: post
 slug: dropbox-client-library-for-php
 title: "Dropbox client library for PHP"
-location: "Daegu, KR"
 tags:
   - php
   - dropbox
-
+geo: [35.833623, 128.627724]
+location: "Daegu, KR"
 ---
 <p style="float: left;"><img src="http://www.rooftopsolutions.nl/blog/user/themes/rooftop/images/dropbox.png" /></p>
 

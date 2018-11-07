@@ -3,13 +3,13 @@ date: 2010-07-13 20:54:59 UTC
 layout: post
 slug: storing-encrypted-session-information-in-a-cookie
 title: "Storing encrypted session information in a cookie"
-amp: false
 tags:
   - php
   - websec
   - cookies
   - sessions
-
+location: "Nijega, NL"
+geo: [53.140006, 6.032090]
 ---
 <p style="float: right"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Choco_chip_cookie.jpg/275px-Choco_chip_cookie.jpg" alt="cookie" /></p>
 

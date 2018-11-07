@@ -2,14 +2,13 @@
 date: 2010-04-23 18:22:50 UTC
 layout: post
 slug: mbstring-function-overloading-dont-use-it
-title: "mbstring function overloading: don't use it"
-location: "Daegu, KR"
 tags:
   - php
   - unicode
   - encoding
   - mbstring
-
+geo: [35.833623, 128.627724]
+location: "Daegu, KR"
 ---
 <p>As a library author, the worst thing I have to deal with is PHP settings that affect global behaviour. Some examples of this include:</p>
 

@@ -2,13 +2,13 @@
 date: 2010-10-14 20:44:19 UTC
 layout: post
 slug: sabredav-130-released
-location: "Utrecht, NL"
 title: "SabreDAV 1.3.0 released"
 tags:
   - webdav
   - sabredav
   - caldav
-
+geo: [52.108624, 5.086009]
+location: "Amsterdamsestraatweg, Utrecht, NL"
 ---
 <p>I just released version 1.3.0 of SabreDAV. Uptake has been very strong, especially for the CalDAV components. The biggest change is a big performance boost for most tree operations.</p>
 

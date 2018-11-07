@@ -3,14 +3,14 @@ date: 2010-05-17 15:33:52 UTC
 layout: post
 slug: when-to-escape-your-data
 title: "When to escape your data"
-location: "Daegu, KR"
 tags:
   - php
   - html
   - websec
   - mysql
   - escaping
-
+geo: [35.833623, 128.627724]
+location: "Daegu, KR"
 ---
 <p>Two examples of escaping data are the following:</p>
 

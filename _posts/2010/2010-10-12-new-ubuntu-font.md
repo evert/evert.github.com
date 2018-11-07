@@ -2,13 +2,13 @@
 date: 2010-10-12 19:28:34 UTC
 layout: post
 slug: new-ubuntu-font
-location: "Utrecht, NL"
 title: "Ubuntu has a new font"
 tags:
   - css
   - ubuntu
   - font-face
-
+geo: [52.108624, 5.086009]
+location: "Amsterdamsestraatweg, Utrecht, NL"
 ---
 <p>Along with the release of <a href="http://www.ubuntu.com/">10.10</a>, Ubuntu came with a new self-named font. I love it. It's quirky, yet very legible.</p> 
 

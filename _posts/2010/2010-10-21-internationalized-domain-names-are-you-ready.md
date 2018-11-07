@@ -3,13 +3,13 @@ date: 2010-10-21 13:13:20 UTC
 layout: post
 slug: internationalized-domain-names-are-you-ready
 title: "Internationalized domain names, are you ready?"
-location: "Utrecht, NL"
 tags:
   - php
   - idn tld
   - regex
   - email
-
+geo: [52.108624, 5.086009]
+location: "Amsterdamsestraatweg, Utrecht, NL"
 ---
 <p>Since may 11 TLD's (top-level domainnames) have been added. In order for this to work successfully, a lot of applications will have to be fixed.</p>
 

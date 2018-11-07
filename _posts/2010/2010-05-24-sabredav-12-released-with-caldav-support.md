@@ -3,13 +3,13 @@ date: 2010-05-24 16:08:42 UTC
 layout: post
 slug: sabredav-12-released-with-caldav-support
 title: "SabreDAV 1.2 released (with CalDAV support)"
-location: "Daegu, KR"
 tags:
   - php
   - webdav
   - sabredav
   - caldav
-
+geo: [35.833623, 128.627724]
+location: "Daegu, KR"
 ---
 <p style="padding: 0 0 2px 2px; float: left"><img src="http://code.google.com/p/sabredav/logo?logo_id=1264584796" title="In case you're wondering, this is indeed the SabreDAV logo. I'm not a designer, cut me some slack" /></p>
 

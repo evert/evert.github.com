@@ -9,6 +9,8 @@ tags:
   - xml
   - unicode
   - featured
+location: "Nijega, NL"
+geo: [53.140006, 6.032090]
 ---
 Over the last little while I've come across quite a few XML feed generators written in PHP, with varying degrees of 'correctness'. Even though generating XML should be very simple, there's still quite a bit of pitfalls I feel every PHP or (insert your language)-developer should know about.
 

@@ -3,10 +3,10 @@ date: 2010-05-25 14:58:43 UTC
 layout: post
 slug: blogging-for-4-years
 title: "Blogging for 4 years"
-location: "Daegu, KR"
 tags:
   - metablogging
-
+geo: [35.833623, 128.627724]
+location: "Daegu, KR"
 ---
 <p>I've been blogging for 4 years now, so it's time for some reflection.</p>
 

@@ -3,10 +3,10 @@ date: 2010-05-12 07:55:30 UTC
 layout: post
 slug: goodbye-old-firefox-profile
 title: "Goodbye old Firefox profile"
-location: "Daegu, KR"
 tags:
   - firefox
-
+geo: [35.833623, 128.627724]
+location: "Daegu, KR"
 ---
 <p>My firefox was getting a bit sluggish, which sucks.. because it's still my favourite browser. Today was just a disaster. The entire browser would just hang for seconds at a time, slow startup times.. etc.</p>
 

@@ -3,7 +3,8 @@ date: 2010-11-23 20:58:18 UTC
 layout: post
 slug: icalendar-vcard-parser-for-php
 title: "iCalendar / vCard parser for PHP"
-location: "Utrecht, NL"
+geo: [52.108624, 5.086009]
+location: "Amsterdamsestraatweg, Utrecht, NL"
 tags:
   - php
   - sabredav
@@ -13,7 +14,6 @@ tags:
   - vcf
   - vcard
   - parser
-
 ---
 <p><strong>Updated</strong></p>
 

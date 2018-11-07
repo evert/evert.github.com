@@ -3,11 +3,11 @@ date: 2010-04-13 09:37:33 UTC
 layout: post
 slug: new-habari-based-blog
 title: "New habari-based blog"
-location: "Daegu, KR"
 tags:
   - metablogging
   - habari
-
+geo: [35.833623, 128.627724]
+location: "Daegu, KR"
 ---
 <p style="float: right; padding: 0 0 10px 10px"><img src="http://habariproject.org/en/user/themes/rino/images/habari-with-tagline.png"></p>
 

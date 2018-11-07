@@ -3,10 +3,10 @@ date: 2010-09-25 12:00:00 UTC
 layout: post
 slug: killing-a-dead-ssh-connection
 title: "Killing a dead ssh connection"
-location: "Vlissingen, NL"
 tags:
   - ssh
-
+location: "Boterbloemlaan, Vlissingen, NL"
+geo: [51.451096, 3.577869]
 ---
 <p>One feature telnet has and I always missed from ssh was the ^] shortcut, giving you a way to terminate the connection.</p>
 
