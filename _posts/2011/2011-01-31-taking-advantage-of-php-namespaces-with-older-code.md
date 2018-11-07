@@ -6,7 +6,8 @@ title: "Taking advantage of PHP namespaces with older code"
 tags:
   - php
   - namespaces
-
+geo: [52.108624, 5.086009]
+location: "Amsterdamsestraatweg, Utrecht, NL"
 ---
 <p>During <a href="http://akrabat.com/">Rob Allen's </a>ZF2 talk at <a href="http://conference.phpbenelux.eu/2011/">PHPBenelux</a> an audience member shouted this really useful tip, which I thought was worth sharing.</p>
 

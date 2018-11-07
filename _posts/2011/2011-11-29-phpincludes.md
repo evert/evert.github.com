@@ -6,7 +6,8 @@ title: "PHP Includes file generator"
 tags:
   - php
   - phpincludes
-
+location: "Nijega, NL"
+geo: [53.140006, 6.032090]
 ---
 <p>While profiling <a href="https://sabre.io/">SabreDAV</a>, I noticed a few times more than half of the request time was spent in the autoloader.</p>
 

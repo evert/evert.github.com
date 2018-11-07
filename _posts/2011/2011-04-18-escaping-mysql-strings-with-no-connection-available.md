@@ -6,7 +6,8 @@ title: "Escaping MySQL strings with no connection available"
 tags:
   - mysql
   - escaping
-
+geo: [52.108624, 5.086009]
+location: "Amsterdamsestraatweg, Utrecht, NL"
 ---
 We're all being drilled over and over again to always use <a href="http://nl3.php.net/manual/en/mysqli.real-escape-string.php">mysqli::escape_string</a>, <a href="http://nl3.php.net/manual/en/pdo.quote.php">PDO::quote</a>, or preferably prepared statements when escaping user-supplied strings for use in MySQL queries.
 

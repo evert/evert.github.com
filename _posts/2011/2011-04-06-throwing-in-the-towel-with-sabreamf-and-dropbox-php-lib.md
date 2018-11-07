@@ -7,7 +7,8 @@ tags:
   - sabreamf
   - opensource
   - dropbox
-
+geo: [52.108624, 5.086009]
+location: "Amsterdamsestraatweg, Utrecht, NL"
 ---
 <p>I'm officially stopping development for my <a href="http://code.google.com/p/sabreamf">SabreAMF</a> and <a href="http://code.google.com/p/dropbox-php/">Dropbox php library</a>. I'm using neither myself anymore, which is detrimental for my interest and time I devote. So I felt like it's better to make it official.</p>
 

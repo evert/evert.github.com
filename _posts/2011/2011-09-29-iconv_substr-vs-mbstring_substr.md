@@ -7,7 +7,8 @@ tags:
   - php
   - mbstring
   - iconv
-
+location: "Lisbon, PT"
+geo: [38.731075, -9.145777]
 ---
 <p>While working on an application I ran across a huge bottleneck which I isolated down all the way to the use of the iconv_substr function. If you ever wonder which is better to use, this should help your decision:</p>
 

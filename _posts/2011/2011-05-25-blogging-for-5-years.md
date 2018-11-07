@@ -5,7 +5,8 @@ slug: blogging-for-5-years
 title: "Blogging for 5 years"
 tags:
   - metablogging
-
+geo: [52.108624, 5.086009]
+location: "Amsterdamsestraatweg, Utrecht, NL"
 ---
 <p>Well, I just checked my calendar and it turns out I've been blogging for exactly 5 years now. This is the only time I allow myself to make an off-topic post, so here goes:</p>
 

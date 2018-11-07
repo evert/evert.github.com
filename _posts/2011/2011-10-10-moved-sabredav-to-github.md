@@ -8,7 +8,8 @@ tags:
   - mercurial
   - github
   - git
-
+location: "Nijega, NL"
+geo: [53.140006, 6.032090]
 ---
 <p>I've finally taken the plunge and moved the <a href="http://sabre.io/">SabreDAV</a> source from Google code to <a href="https://github.com/fruux/sabre-dav/">GitHub</a>.</p>
 

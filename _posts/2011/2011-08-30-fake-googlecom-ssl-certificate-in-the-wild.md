@@ -6,7 +6,8 @@ title: "Fake *.google.com SSL certificate in the wild"
 tags:
   - websec
   - ssl
-
+geo: [43.647028, -79.404435]
+location: "Queen St West, Toronto, ON, Canada"
 ---
 <p>Interesting news passed by today, apparently a fraudelent SSL was issued by <a href="http://www.diginotar.com/">Diginotar</a>, effectively allowing wrong-doers to perform MITM attacks for all google services. Normally fake certificates will clearly error up in the browser, but because Diginotar is a trusted CA (certificate authority) it won't.</p>
 

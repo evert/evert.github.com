@@ -7,7 +7,8 @@ tags:
   - php
   - datetime
   - phpadvent
-
+location: "Nijega, NL"
+geo: [53.140006, 6.032090]
 ---
 <p>
 My <a href="http://phpadvent.org/2011/dates-and-times-by-evert-pot">PHP Advent</a> article just got published. It's a list of best practices around dealing with dates and times in PHP. Have a read and tell me what you think. Also, be sure to follow <a href="https://twitter.com/#!/phpadvent">@phpadvent</a> or <a href="http://feeds.feedburner.com/phpadvent">subscribe</a>.

@@ -10,6 +10,8 @@ tags:
   - json
   - stringify
   - featured
+geo: [52.103125, 5.114076]
+location: "Goeman Borgesiuslaan 77, 3515 ET Utrecht, Netherlands"
 ---
 
 <p>Many of you might already know this, but I wanted to point out why I think using the <a href="http://www.prototypejs.org/">Prototype Javascript library</a> is a bad idea. The biggest problem is actually highlighted in it's name: it changes many of the prototypes of core javascript types.</p>

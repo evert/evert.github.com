@@ -7,7 +7,8 @@ tags:
   - rest
   - dpc
   - talk
-
+geo: [52.103125, 5.114076]
+location: "Goeman Borgesiuslaan 77, 3515 ET Utrecht, Netherlands"
 ---
 <p>A bit ago I received the news I'll be a speaker at the <a href="http://www.phpconference.nl/">Dutch PHP conference</a>. My talk is titled 'So you think you know REST'. Most of you seem to have a general idea what 'REST' and being 'RESTful' means, but often times there are misconceptions.</p>
 

@@ -8,7 +8,8 @@ tags:
   - javascript
   - mdc
   - documentation
-
+geo: [52.103125, 5.114076]
+location: "Goeman Borgesiuslaan 77, 3515 ET Utrecht, Netherlands"
 ---
 <p>In case you're still using w3schools are a reference (which <a href="http://w3fools.com/">according to some</a> is harmful to the web), a few new references have recently popped up from the browser vendors.</p>
 

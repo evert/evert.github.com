@@ -6,7 +6,8 @@ title: "Numeric string comparison in PHP"
 tags:
   - php
   - type juggling
-
+geo: [52.103125, 5.114076]
+location: "Goeman Borgesiuslaan 77, 3515 ET Utrecht, Netherlands"
 ---
 <p>Although PHP's loose comparison type juggling tends to invoke some negative responses, I don't think it has really ever worked against me, and works quite comfortably in my opinion. As long as you make sure you always use strict checking (=== and !==) where you can, and fall back to the loose checks when you must.</p>
 

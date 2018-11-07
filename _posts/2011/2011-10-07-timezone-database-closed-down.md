@@ -7,7 +7,8 @@ tags:
   - datetime
   - timezones
   - olson
-
+location: "Lisbon, PT"
+geo: [38.731075, -9.145777]
 ---
 <p>Interesting news today. The Olson database, which is used in countless operating systems and other software (including PHP) has been shut down due to a Copyright claim.</p>
 

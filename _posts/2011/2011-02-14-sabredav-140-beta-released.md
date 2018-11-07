@@ -8,7 +8,8 @@ tags:
   - webdav
   - sabredav
   - caldav
-
+geo: [52.103125, 5.114076]
+location: "Goeman Borgesiuslaan 77, 3515 ET Utrecht, Netherlands"
 ---
 <p>Last Saturday I put up version SabreDAV 1.4.</p>
 

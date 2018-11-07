@@ -3,10 +3,10 @@ date: 2011-01-27 12:02:44 UTC
 layout: post
 slug: going-to-phpbenelux
 title: "Going to PHPBenelux"
-amp: false
 tags:
   - phpbenelux
-
+geo: [52.103125, 5.114076]
+location: "Goeman Borgesiuslaan 77, 3515 ET Utrecht, Netherlands"
 ---
 <p><a href="http://conference.phpbenelux.eu/2011/"><img alt="PHP-BENELUX-Logo.preview.png" src="/blog/user/files/logos/PHP-BENELUX-Logo.preview.png" style="width: 160px; height: 62px; float: left" /></a></p>
 

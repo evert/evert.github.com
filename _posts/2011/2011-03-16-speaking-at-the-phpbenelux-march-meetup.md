@@ -9,7 +9,8 @@ tags:
   - sabredav
   - phpbenelux
   - talk
-
+geo: [52.103125, 5.114076]
+location: "Goeman Borgesiuslaan 77, 3515 ET Utrecht, Netherlands"
 ---
 <p><a href="http://www.phpbenelux.eu/nl/node/1496"><img alt="PHP-BENELUX-Logo.preview.png" src="/blog/user/files/logos/PHP-BENELUX-Logo.preview.png" style="width: 160px; height: 62px; float: left" /></a></p>
 
