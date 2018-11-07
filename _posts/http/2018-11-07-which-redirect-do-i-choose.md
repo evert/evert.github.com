@@ -1,5 +1,5 @@
 ---
-date: "2018-11-07 08:00:00 -0700"
+date: "2018-11-07 11:00:00 -0400"
 title: "Which redirect do I choose?"
 permalink: /http/which-redirect-status
 location: "Hastings Ave, Toronto, ON, Canada"
