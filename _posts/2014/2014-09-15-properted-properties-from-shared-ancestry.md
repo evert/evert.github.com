@@ -5,6 +5,8 @@ title: "Accessing protected properties from objects that share the same ancestry
 tags:
     - php
     - oop
+location: "Jubet Court, London, UK"
+geo: [51.555354, -0.089209]
 ---
 
 I realized something odd about accessing protected properties the other day.

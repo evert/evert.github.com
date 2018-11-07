@@ -6,7 +6,8 @@ tags:
   - myopenid
   - openid
   - indieauth
-
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 In September Janrain announced that they were shutting down [MyOpenID][1].

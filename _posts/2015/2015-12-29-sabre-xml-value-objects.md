@@ -7,6 +7,8 @@ tags:
     - sabre/xml
     - xml
     - atom
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 [Today sabre/xml 1.3][1] was released and it brings a few new features to make it

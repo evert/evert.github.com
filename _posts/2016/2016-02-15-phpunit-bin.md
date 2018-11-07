@@ -5,6 +5,8 @@ title: "phpunit-bin - run phpunit from anywhere"
 tags:
    - php
    - phpunit 
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 These days it's common for projects to supply phpunit via `require-dev`. Most

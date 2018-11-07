@@ -7,6 +7,8 @@ tags:
     - php
     - php-fig
     - psr-7
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 <!-- Holler from home in Toronto -->

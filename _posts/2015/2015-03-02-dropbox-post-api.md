@@ -6,6 +6,8 @@ tags:
     - dropbox
     - http
     - rest
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 Today Dropbox announced in a blogpost titled

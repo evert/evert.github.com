@@ -6,6 +6,8 @@ tags:
    - sabre/xml 
    - xml
    - php 
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 We recently got a [support ticket][1] with a simple [sabre/xml][3] question. 

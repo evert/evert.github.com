@@ -8,6 +8,8 @@ tags:
   - digest
   - aws
   - sabre/http
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 I was asked recently to add support for [Hawk][1] to [sabre/http][2]. It kinda

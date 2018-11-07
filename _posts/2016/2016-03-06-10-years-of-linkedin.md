@@ -7,6 +7,8 @@ tags:
     - dark patterns
     - ux
     - spam
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 I just noticed on my LinkedIn account page that I've been a member of LinkedIn

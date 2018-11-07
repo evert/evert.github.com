@@ -6,6 +6,8 @@ tags:
   - http
   - idempotence
   - featured
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 Today I came across a [blogpost][1] arguing idempotence of the HTTP `DELETE`

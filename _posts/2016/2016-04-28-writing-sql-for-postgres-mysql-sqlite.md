@@ -8,6 +8,8 @@ tags:
    - mysql
    - sqlite
    - php
+geo: [18.783680, 98.998977]
+location: "Chiang Mai, Thailand"
 ---
 
 I am one of those crazy people who attempts to write SQL that works on

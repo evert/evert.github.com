@@ -11,6 +11,8 @@ tags:
     - html5
     - link
     - featured
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 When you ask a developer, what is a "link", they may quickly answer "a URL" or

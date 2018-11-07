@@ -5,10 +5,11 @@ title: "New sabre/dav website launched!"
 tags:
   - sabredav
   - sabre.io
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
-
 We just released a brand new website for [sabre/dav][1], on
-[http://sabre.io][1]. This new site is completely built on [Sculpin][2], which
+<http://sabre.io/>. This new site is completely built on [Sculpin][2], which
 is the best static site generator for PHP.
 
 This was a long time coming! sabre/dav had always been hosted on google code,

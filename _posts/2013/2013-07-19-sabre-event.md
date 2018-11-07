@@ -5,7 +5,8 @@ title: "sabre-event, a simple event management library for PHP 5.4"
 tags:
   - sabre-event
   - php
-
+geo: [51.523986, -0.072052]
+location: "Bacon Street, London, UK"
 ---
 
 I just released version 1.0 of [sabre-event][1], a simple event management

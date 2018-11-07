@@ -6,6 +6,8 @@ tags:
    - php
    - talk
    - go
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 Yesterday I did a talk titled "Go for PHP programmers" at the Toronto PHP

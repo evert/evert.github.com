@@ -7,6 +7,8 @@ tags:
     - uri
     - url
     - rfc3986
+location: "San Jose, CA, US"
+geo: [37.337700, -121.894144]
 ---
 
 The last little while have been all about URI's for me. I've been engaged in

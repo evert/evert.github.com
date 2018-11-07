@@ -10,6 +10,8 @@ tags:
     - dom
     - simplexml
     - featured
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 If you are a PHP programmer, chances are that you will need to write and parse

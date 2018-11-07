@@ -7,6 +7,8 @@ tags:
     - sabre
     - event
     - featured
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 We just released [sabre/event 2.0][1] last week, featuring support for

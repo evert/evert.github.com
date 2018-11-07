@@ -1,5 +1,5 @@
 ---
-date: 2013-08-27 16:11:24 UTC
+date: 2013-08-23 16:11:24 UTC
 layout: post
 title: "Joining CalConnect"
 tags:
@@ -7,7 +7,8 @@ tags:
   - fruux
   - sabredav
   - ietf
-
+geo: [51.523986, -0.072052]
+location: "Bacon Street, London, UK"
 ---
 
 I got the news this week that I'll be representing [fruux][1] as an official

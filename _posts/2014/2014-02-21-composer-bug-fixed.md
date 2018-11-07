@@ -6,6 +6,8 @@ tags:
   - php
   - composer
   - packagist
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 As an update to my [previous post][1], the composer security problem now

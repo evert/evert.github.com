@@ -6,7 +6,8 @@ tags:
   - http
   - sabre
   - sabredav
-
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 Last week we released the 2.0 version of [sabre/http][1]. This package had been

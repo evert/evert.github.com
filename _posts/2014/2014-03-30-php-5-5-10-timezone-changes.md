@@ -5,6 +5,8 @@ title: "PHP 5.5.10 timezone handling changes"
 tags:
   - php
   - timezone
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 PHP 5.5.10 [got released][1] a few weeks ago, and among other things, it added

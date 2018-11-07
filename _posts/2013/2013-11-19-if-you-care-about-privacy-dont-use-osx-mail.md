@@ -5,7 +5,8 @@ title: "If you care about privacy, don't use OS X mail"
 tags:
   - mail 
   - osx
-
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 

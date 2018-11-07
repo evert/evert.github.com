@@ -4,6 +4,8 @@ layout: post
 title: "Switching to Google AMP and back"
 tags:
    - amp
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 A few months ago I added support for [AMP][1] to this blog. Not that it

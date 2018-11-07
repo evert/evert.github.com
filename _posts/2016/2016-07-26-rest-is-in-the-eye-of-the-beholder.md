@@ -6,6 +6,8 @@ tags:
    - rest
    - webservices 
    - featured
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 The first time I came across the term REST must have been around 2005 or

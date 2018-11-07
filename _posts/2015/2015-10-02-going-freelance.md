@@ -6,6 +6,8 @@ tags:
     - php
     - freelance
     - meta
+location: "Nijega, NL"
+geo: [53.140006, 6.032090]
 ---
 
 Dear readers,

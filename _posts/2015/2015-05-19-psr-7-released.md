@@ -7,6 +7,8 @@ tags:
     - php
     - php-fig
     - psr-7
+geo: [44.478008, 26.104733]
+location: "Bucharest, Romania"
 ---
 
 <!-- Holler from bucharest, romania!! -->

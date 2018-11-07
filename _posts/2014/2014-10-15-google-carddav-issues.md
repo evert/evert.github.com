@@ -6,6 +6,8 @@ tags:
     - google
     - contacts
     - carddav
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 For [fruux][1], we've decided to implement syncing with Google Contacts some

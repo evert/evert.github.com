@@ -6,7 +6,8 @@ tags:
   - os x
   - mavericks
   - php
-
+geo: [51.515691, -0.064176]
+location: "Settles Street, London, UK"
 ---
 
 Looks like the next iteration of OS/X will still again not ship with a recent

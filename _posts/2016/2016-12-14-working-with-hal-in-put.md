@@ -8,6 +8,8 @@ tags:
    - hal
    - http
    - put
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 At my [new company][1], we're developing a REST api. We're trying to strike

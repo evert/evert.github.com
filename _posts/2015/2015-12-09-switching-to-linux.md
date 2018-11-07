@@ -11,6 +11,8 @@ tags:
     - ubuntu
     - kubuntu
     - kde
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 Back in 2006 I switched from Linux and Windows to Mac as my primary operating

@@ -7,6 +7,8 @@ tags:
     - callable
     - closure
     - typehint
+location: "Nijega, NL"
+geo: [53.140006, 6.032090]
 ---
 
 PHP got support for closures in version 5.3, and in PHP 5.4 we got support for

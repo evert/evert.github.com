@@ -6,6 +6,8 @@ tags:
    - php-fig 
    - php 
    - standards 
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 The [PHP-FIG][1] is currently going through some growing pains. I recently

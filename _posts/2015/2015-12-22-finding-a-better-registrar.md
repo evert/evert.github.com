@@ -10,6 +10,8 @@ tags:
     - amazon
     - aws
     - dnsimple
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 A few years ago I started the process of migrating my domainnames from GoDaddy

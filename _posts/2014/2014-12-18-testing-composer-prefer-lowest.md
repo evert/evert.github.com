@@ -9,6 +9,8 @@ tags:
     - dependencies
     - testing
     - php
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 A few days ago, a new feature [landed in composer][1], the `--prefer-lowest`

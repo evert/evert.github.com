@@ -7,6 +7,8 @@ tags:
    - sabredav
    - sabre
    - opensource
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 Almost 10 years ago in 2007, I started a project called [sabre/dav][1]. I

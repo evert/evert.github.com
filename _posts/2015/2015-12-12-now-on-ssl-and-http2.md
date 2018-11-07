@@ -6,6 +6,8 @@ tags:
     - http2
     - ssl
     - meta
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 Something that's been bugging me for a bit, was that my blog was only ever

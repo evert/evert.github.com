@@ -4,6 +4,8 @@ layout: post
 title: "The problem with password_hash()"
 tags:
     - php
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 PHP 5.5 introduced a new set of functions to hash and validate passwords in

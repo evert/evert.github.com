@@ -5,7 +5,8 @@ tags:
     - yelp
     - personal
     - turnstyle
-location: Toronto, CA
+location: "Stafford St, Toronto, ON, CA"
+geo: [43.643724, -79.411468]
 ---
 
 <img src="/resources/images/posts/yelp.png" style="float: right; padding: 10px; max-width: 100%; width: 216px" alt="Yelp" title="Yelp" />

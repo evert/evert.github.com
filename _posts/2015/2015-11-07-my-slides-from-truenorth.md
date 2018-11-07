@@ -7,7 +7,8 @@ tags:
     - generators
     - php
     - truenorthphp
-
+location: "Microsoft Canada, Missisauga, ON, CA"
+geo: [43.612556, -79.753928]
 ---
 
 This weekend I went to the [True North PHP conference][1]. First PHP

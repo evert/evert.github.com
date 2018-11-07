@@ -6,6 +6,8 @@ tags:
   - bikeshedding
   - oop
   - php
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 Bikeshedding time!

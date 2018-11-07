@@ -7,6 +7,8 @@ tags:
     - ietf
     - rfc
     - featured
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 The IETF just published several new RFCs that update HTTP/1.1:

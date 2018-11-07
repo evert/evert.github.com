@@ -7,7 +7,8 @@ tags:
    - php
    - poll
    - strict_typing
-location: "Toronto, CA"
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Will you be putting declare(strict_types=1); on top of your PHP 7 code by default?</p>&mdash; Evert Pot (@evertp) <a href="https://twitter.com/evertp/status/687408773946863616">January 13, 2016</a></blockquote>

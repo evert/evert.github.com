@@ -5,6 +5,8 @@ title: "sabre/dav 2.1 released."
 tags:
     - sabre/dav
     - release
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 6 months after the [last][1] major release, we just put sabre/dav 2.1 live.

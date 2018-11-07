@@ -6,6 +6,8 @@ tags:
    - truenorthphp
    - sass
    - talk
+location: "Microsoft Canada, Missisauga, ON, CA"
+geo: [43.612556, -79.753928]
 ---
 
 At True North PHP, I gave a talk "Making CSS fun again with Sass". The talk

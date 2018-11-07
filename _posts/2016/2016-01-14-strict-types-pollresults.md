@@ -2,12 +2,12 @@
 date: 2016-01-14 18:06:17 -0500
 layout: post
 title: "Strict typing in PHP 7 - poll results"
-amp: false
 tags:
    - php
    - poll
    - strict_typing
-location: "Toronto, CA"
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 I maintain a number of PHP packages, and with the release of PHP 7, I've been

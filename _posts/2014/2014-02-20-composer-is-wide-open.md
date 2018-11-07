@@ -6,6 +6,8 @@ tags:
   - php
   - composer
   - packagist
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 **Update: bug is now fixed. See [my new post][3]**

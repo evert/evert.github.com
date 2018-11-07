@@ -8,6 +8,8 @@ tags:
   - carddav
   - sabredav
   - calconnect
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 I've been working on a specification for WebDAV resource sharing since early

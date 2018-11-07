@@ -6,7 +6,8 @@ tags:
   - curl
   - php
   - http
-
+geo: [51.515691, -0.064176]
+location: "Settles Street, London, UK"
 ---
 
 As a good web citizen, I try to always follow redirects. Not just in my

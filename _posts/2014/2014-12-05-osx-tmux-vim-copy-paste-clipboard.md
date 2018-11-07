@@ -8,6 +8,8 @@ tags:
     - copypaste
     - clipboard
     - vim
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 Getting copying and pasting to behave sanely when working with the terminal

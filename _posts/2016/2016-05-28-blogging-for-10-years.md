@@ -4,6 +4,8 @@ layout: post
 title: "Blogging for 10 years!"
 tags:
    - metablogging 
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 10 years ago today I first started this blog. I guess at this point it might

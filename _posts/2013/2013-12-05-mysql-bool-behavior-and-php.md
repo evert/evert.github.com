@@ -6,7 +6,8 @@ tags:
   - mysql
   - pdo
   - php
-
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 I recently updated my workstation to run MySQL 5.6.13. It didn't take very

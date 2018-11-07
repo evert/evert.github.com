@@ -5,6 +5,8 @@ title: "sabre/dav 2.0 released."
 tags:
     - sabre/dav
     - release
+geo: [39.005327, -77.445644]
+location: "AOL, Dulles, VA, US"
 ---
 
 I just released sabre/dav 2.0. It's been 18 months since 1.8, and almost 5

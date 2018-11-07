@@ -5,6 +5,8 @@ title: "HTTP/2 finalized - a quick overview"
 tags:
     - http
     - featured
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 The HTTP/2 specification [has been finalized][1] and will soon be released as

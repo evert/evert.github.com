@@ -6,7 +6,8 @@ tags:
   - icalendar
   - vcard
   - vobject
-
+geo: [51.523986, -0.072052]
+location: "Bacon Street, London, UK"
 ---
 
 The #1 bug report in my [vObject][1] library (a library to parse and create

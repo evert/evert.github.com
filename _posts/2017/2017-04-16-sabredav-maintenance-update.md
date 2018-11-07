@@ -10,7 +10,8 @@ tags:
     - vobject
     - event
     - http
-location: Toronto, CA
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 Hi there! My name is Evert, and for the past 10 years I've probably done

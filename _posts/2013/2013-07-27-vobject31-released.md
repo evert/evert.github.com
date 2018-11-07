@@ -10,6 +10,8 @@ tags:
   - sabredav
   - jcard
   - jcal
+geo: [51.523986, -0.072052]
+location: "Bacon Street, London, UK"
 
 ---
 

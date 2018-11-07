@@ -6,7 +6,8 @@ title: "SabreDAV acquired by fruux"
 tags:
   - sabredav
   - fruux
-
+geo: [51.523986, -0.072052]
+location: "Bacon Street, London, UK"
 ---
 
 <div style="float: right; with: 210px; text-align: center">

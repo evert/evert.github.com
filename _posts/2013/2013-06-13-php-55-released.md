@@ -4,7 +4,8 @@ layout: post
 title: "PHP 5.5.0 released!"
 tags:
   - php
-
+geo: [51.523986, -0.072052]
+location: "Bacon Street, London, UK"
 ---
 
 PHP 5.5 has been released! Quite exciting stuff, and pretty great to see the

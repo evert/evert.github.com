@@ -10,7 +10,8 @@ tags:
   - sabredav
   - jcard
   - jcal
-
+geo: [51.523986, -0.072052]
+location: "Bacon Street, London, UK"
 ---
 
 I just released version 3 of the [sabre/vobject][11] library. The ultimate library

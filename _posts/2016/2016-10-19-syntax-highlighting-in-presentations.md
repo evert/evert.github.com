@@ -5,6 +5,8 @@ title: "Syntax highlighting in presentations"
 tags:
    - libreoffice 
    - make  
+geo:  [43.642392, -79.414486]
+location: "Shank St, Toronto, ON, CA"
 ---
 
 I often go back and forward between presentations software, trying to find

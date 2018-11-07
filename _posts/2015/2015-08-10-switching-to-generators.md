@@ -7,6 +7,8 @@ tags:
     - generators
     - iterators
     - featured
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 Since the release of PHP 5.5, we now have access to [generators][1].

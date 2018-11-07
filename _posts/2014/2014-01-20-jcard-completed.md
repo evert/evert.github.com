@@ -9,7 +9,8 @@ tags:
   - ietf
   - rfc
   - json
-
+geo: [43.641030, -79.416103]
+location: "King St West, Toronto, ON, CA"
 ---
 
 Last week [jCard][1] became [rfc7095][1]. jCard specifies a way to serialize
