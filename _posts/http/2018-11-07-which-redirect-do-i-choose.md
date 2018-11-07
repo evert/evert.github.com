@@ -2,8 +2,8 @@
 date: "2018-11-07 11:00:00 -0400"
 title: "Which redirect do I choose?"
 permalink: /http/which-redirect-status
-location: "Hastings Ave, Toronto, ON, CA"
-geo: [43.665728, -79.330084]
+location: "Adelaide St West, Toronto, ON, CA"
+geo: [43.646645, -79.396766]
 tags:
    - http
    - http-series
