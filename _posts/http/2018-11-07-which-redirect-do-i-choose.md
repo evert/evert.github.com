@@ -2,7 +2,8 @@
 date: "2018-11-07 08:00:00 -0700"
 title: "Which redirect do I choose?"
 permalink: /http/which-redirect-status
-location: "San Francisco, US"
+location: "Hastings Ave, Toronto, ON, Canada"
+geo: [43.665728, -79.330084]
 tags:
    - http
    - http-series
@@ -17,24 +18,24 @@ Choosing the right redirect
 Are you responding to a `POST` request, and instead of returning a status
 immediately, you want to redirect the user to a confirmation page?
 
-> Use [`303 See Other`][5].
+**Use [`303 See Other`][5].**
 
 Did the resource move to a new path, or a new domain, and you want to make sure
 that any HTTP client repeats the _exact_ same HTTP request on the new location?
 
-> Use [`307 Temporary Redirect`][3] if the move was temporary, or
-> [`308 Permanent Redirect`][6] if the move was permanent.
+**Use [`307 Temporary Redirect`][3] if the move was temporary, or
+ [`308 Permanent Redirect`][6] if the move was permanent.**
 
 Did the resource move, but you only care about `GET` request? (perhaps because
 this is a website).
 
-> Use [`302 Found`][4] if the move was temporary, or
-> [`301 Moved Permanently`][2] if the move was permanent.
+**Use [`302 Found`][4] if the move was temporary, or
+[`301 Moved Permanently`][2] if the move was permanent.**
 
 Do you want to send the user somewhere else, but you're not sure where because
 there's more than one option, and you'd like the user to decide:
 
-> Use [`300 Multiple Choices`][7].
+**Use [`300 Multiple Choices`][7].**
 
 References
 ----------
