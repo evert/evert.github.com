@@ -5,7 +5,8 @@ tags:
   - http
   - protocols
   - ietf
-location: Groningen, NL
+location: "Groningen, NL"
+geo: [53.206271, 6.559872]
 ---
 
 Mark Nottingham is working on a great [guide][1] titled "Building Protocols

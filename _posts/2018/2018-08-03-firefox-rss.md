@@ -1,7 +1,8 @@
 ---
 title: Firefox removes RSS support
 date: 2018-08-03 15:45:00 -0400
-location: Toronto, CA
+location: "Richmond, Toronto, ON, Canada"
+geo: [43.649697, -79.388892]
 tags:
   - firefox
   - standards

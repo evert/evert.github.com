@@ -1,7 +1,8 @@
 ---
 title: Ketting 2.0 release
 date: 2018-06-19 09:00:00 -0700
-location: San Francisco, US
+location: "Monteray, CA, United States"
+geo: [36.594795, -121.891454]
 tags:
   - ketting
   - rest

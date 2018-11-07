@@ -1,7 +1,8 @@
 ---
 title: A HTTP structured-header parser for Javascript
 date: 2018-03-27 00:09:05 -0700
-location: San Francisco, US
+location: "Haight St, San Francisco, CA, US"
+geo: [37.772252, -122.431250]
 tags:
   - http
   - structured-header

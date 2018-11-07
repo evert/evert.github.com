@@ -7,7 +7,8 @@ tags:
   - curveball
   - koa
   - typescript
-location: Toronto, CA 
+location: "College St, Toronto, ON, Canada"
+geo: [43.654700, -79.422188]
 ---
 
 [Hacktoberfest 5][1] has begon, and as my first contribution I wanted to make

@@ -15,7 +15,8 @@ tags:
   - expressjs
   - nodejs
   - javascript
-location: Nijega, NL
+location: "Nijega, NL"
+geo: [53.140006, 6.032090]
 ---
 
 I’ve been doing Node.js development for a little while, and I wanted to try my hand at writing a framework. It’s probably a rite of passage to do this, although it’s not really my first.

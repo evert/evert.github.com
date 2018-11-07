@@ -3,7 +3,8 @@ title: "Use 'let' and 'const' instead of 'var'"
 date: 2018-08-29 17:32:22 +0200
 tags:
   - javascript
-location: Nijega, NL
+location: "Nijega, NL"
+geo: [53.140006, 6.032090]
 ---
 
 If you are writing javascript code for Node.js, Babel, Typescript or if you can

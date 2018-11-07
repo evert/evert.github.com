@@ -2,7 +2,8 @@
 title: Scheduling posts on Github pages with AWS lambda functions
 date: 2018-06-18 09:00:00 -0700
 update_date: 2018-08-30 02:24:00 +0200
-location: San Francisco, US
+location: "Haight St, San Francisco, CA, United States"
+geo: [37.772252, -122.431250]
 tags:
   - aws
   - lamdba

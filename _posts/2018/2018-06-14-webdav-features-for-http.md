@@ -1,7 +1,8 @@
 ---
 title: WebDAV features that might be useful for HTTP services.
 date: 2018-06-14 23:03:18 -0700
-location: San Francisco, US
+location: "Haight St, San Francisco, CA, US"
+geo: [37.772252, -122.431250]
 tags:
   - webdav
   - rest

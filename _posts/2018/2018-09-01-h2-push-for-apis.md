@@ -8,7 +8,8 @@ tags:
   - rest
   - push
   - hal
-location: Nijega, NL
+location: "Nijega, NL"
+geo: [53.140006, 6.032090]
 ---
 
 HTTP/2 brought us the ability to push resources from server to client, before
