@@ -6,7 +6,7 @@ tags:
   - api
   - rest
   - graphql
-location: "Queen St E., San Francisco, CA, United States"
+location: "Tango Coffee Place, Queen St E., San Francisco, CA, United States"
 geo: [43.662593, -79.333876]
 bodyClass: bigPost
 ---
