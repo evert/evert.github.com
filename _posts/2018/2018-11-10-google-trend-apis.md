@@ -8,6 +8,7 @@ tags:
   - graphql
 location: "Queen St E., San Francisco, CA, United States"
 geo: [43.662593, -79.333876]
+bodyClass: bigPost
 ---
 <div style="margin: 30px; width: 800px">
   <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1605_RC01/embed_loader.js"></script>

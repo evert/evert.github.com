@@ -260,6 +260,17 @@ img.fill-width {
   border-radius: 3px;
 }
 
+body.bigPage {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+body.bigPage h1 {
+  text-align: center;
+}
+
 body.map .flower {
   display: none;
 }
