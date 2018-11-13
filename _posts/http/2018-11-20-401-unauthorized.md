@@ -73,6 +73,27 @@ GET / HTTP/1.1
 Authorization: Basic d2VsbCBkb25lOnlvdSBmb3VuZCB0aGUgZWFzdGVyIGVnZwo=
 ```
 
+Other authentication schemes
+----------------------------
+
+IANA has a [list of standard authenticaton schemes][6]. Aside from Bearer,
+Digest and Bearer there is also:
+
+* HOBA
+* Mutual
+* Negotiate
+* OAuth (v1)
+* SCRAM-SHA-1
+* SCRAM-SHA-256
+* vapid
+
+Most of those are less common, some should probably no longer be used. There's
+also various auth schemes defined by others in the community:
+
+* [Hawk][9], made by a disillusioned former OAuth2 contributor, fed up with the
+  standards process this protocol famously doesn't have a spec.
+* Amazon's [AWS][10] scheme.
+
 References
 ----------
 
@@ -80,9 +101,15 @@ References
 * [RFC7235, Section 3.1][1] - 401 Unauthorized
 * [RFC7616][3] - Digest authentication scheme
 * [RFC7617][2] - Basic authentication scheme
+* [IANA HTTP Authentication Scheme Registry][6]
 
 [1]: https://tools.ietf.org/html/rfc7235#section-3.1 "401 Unauthorized"
 [2]: https://tools.ietf.org/html/rfc7617 "Basic authentication"
 [3]: https://tools.ietf.org/html/rfc7616#section-3.9.1 "Digest authentication"
 [4]: https://tools.ietf.org/html/rfc6749 "OAuth2"
 [5]: https://tools.ietf.org/html/rfc6750 "Bearer token"
+[6]: https://www.iana.org/assignments/http-authschemes/http-authschemes.xhtml#authschemes
+[7]: http://tools.ietf.org/html/rfc7486
+[8]: https://tools.ietf.org/html/rfc8120
+[9]: https://github.com/hueniverse/hawk
+[10]: https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#ConstructingTheAuthenticationHeader
