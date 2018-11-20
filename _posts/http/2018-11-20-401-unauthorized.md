@@ -15,6 +15,11 @@ This could mean that a user needs to log in first, or more generally that
 authentication credentials are required. It could also mean that the provided
 credentials were incorrect.
 
+The name `Unauthorized` can be a bit confusing, and was regarded as a bit of
+misnomer. `401` is strictly used for Authentication. In cases where you want
+to indicate to a client that they simply aren't allowed to do something, you
+need [`403 Forbidden`][11] instead.
+
 When a server sends back `401`, it must also send back a `WWW-Authenticate`
 header. This header tells a client what kind of authentication scheme the
 server expects.
@@ -113,3 +118,4 @@ References
 [8]: https://tools.ietf.org/html/rfc8120
 [9]: https://github.com/hueniverse/hawk
 [10]: https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#ConstructingTheAuthenticationHeader
+[11]: /http/403-forbidden
