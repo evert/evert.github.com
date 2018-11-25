@@ -12,24 +12,10 @@ location: Groningen, NL
 
 > The 402 (Payment Required) status code is reserved for future use.
 
-This reserved status has been the case since the original HTTP/1.1
-specification.
-
 The original idea may have been that commercial websites and APIs would want
 to have a default way to communicate that a HTTP request can be repeated,
 after a user paid for service.
 
-The description in the standard implies that `402` should not be used until
-it's defined better. Personally I think the status should simply be defined
-to have to contain a `Link` header and let implementors and other standards
-figure out what's on the other end of the link.
-
-For example:
-
-```http
-HTTP/1.1 402 Payment Required
-Link: </order-now>; rel="payment"; type="text/html"
-```
 
 Usage
 -----
