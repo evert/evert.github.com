@@ -9,11 +9,11 @@ tags:
 
 A very common and oft-repeated programmer's wisdom is "Don't use floats for
 currency". This always made a lot of sense to me. The idea is that floats are
-inprecise, due to the way they are stored.
+imprecise, due to the way they are stored.
 
 Effectively floats are stored not by just their digits, but by a [formula][2].
 This formula can't accurately represent every fraction. The most popular way
-to demonstrate this is by firing up your javascript developer console and run:
+to demonstrate this is by firing up your Javascript developer console and run:
 
 ```
 > 0.3 - 0.2
@@ -121,7 +121,7 @@ I don't know if this is correct, but it feels correct:
    the result of other calculations cannot be precisely expressed with 
    fixed-point math.
 3. I think people are more comfortable with fixed-point math, because it feels
-   less suprising for simple calculations.
+   less surprising for simple calculations.
 4. Rounding to the significant digits generally 'solves' this.
 
 
@@ -129,7 +129,7 @@ What I don't know is around what scales floating point math can yield
 significant inaccurate results. It seems simpler to predict this with
 fixed-point math.
 
-I think this predictability makes people feel safer doing finanicial
+I think this predictability makes people feel safer doing financial
 calculations.
 
 Using fixed point math in Javascript
@@ -146,7 +146,7 @@ rounding.
 
 To make fixed-point math work for more complex calculations, you'll need
 more significant digits, and thus multiply by larger numbers than 100.
-When researching this I [read a great article about math in Cobol][4],
+When researching this I [read a great article about math in COBOL][4],
 which mentions that IBM's fixed point decimal type can take a maximum of 18
 digits.
 
@@ -159,11 +159,11 @@ This means that every dollar value has to be multiplied by 10<sup>7</sup>
 
 It also means that the highest number we ever need is 10<sup>18</sup>.
 
-This number is unfortunately is higher than javascript's
+This number is unfortunately is higher than Javascript's
 [`MAX_SAFE_INTEGER`][7], which is 2<sup>53</sup> - 1.
 
-When working with integers in javascript above this `MAX_SAFE_INTEGER`,
-javascript will automatically convert to floating point numbers, which is what
+When working with integers in Javascript above this `MAX_SAFE_INTEGER`,
+Javascript will automatically convert to floating point numbers, which is what
 we were trying to avoid.
 
 How would you solve this?
@@ -192,7 +192,7 @@ Ecmascript's bigint
 -------------------
 
 If you are running a new version of Firefox, Chrome or Node.js, you might
-already have support for a new javascript type: [bigint][12].
+already have support for a new Javascript type: [bigint][12].
 
 "bigint" is what it says on the tin, a type for big integers. These new numbers
 don't automatically change to floats (or regular numbers) unless explicitly
@@ -232,9 +232,9 @@ Another interesting thing about these numbers is that they always round:
     2n
 
 Using the bigint type is going to be a much faster than the npm libraries.
-The only drawback is that the bigint doesn't have a decimal point, so I'm not
-forced to multiple every number by the precision I want which makes my code
-potentially harder to read.
+The only drawback is that the bigint doesn't have a decimal point, so I'm
+forced to multiply every number by the precision I want. This will make my
+code potentially harder to read.
 
 But with all these nice new features, I still haven't found a satisfying
 answer to my original question: under what conditions do floating point
