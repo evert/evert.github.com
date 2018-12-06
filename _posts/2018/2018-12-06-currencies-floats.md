@@ -35,7 +35,7 @@ to avoid floats include:
 
 Another very common advice is, when doing math based on currency values just
 forget about the floating point and count cents instead of Euros, Yen or
-[Dollarydoos][4]. 
+[Dollarydoos][4].
 
 So instead of `$ 5.00`, you would simply multiply by 100 and use `500`, which
 fits in an integer.
@@ -120,7 +120,7 @@ I don't know if this is correct, but it feels correct:
    with inaccuracies and rounding.
 2. These problems show up for different calculations. The result of some
    calculations cannot be precisely expressed with floating point math, and
-   the result of other calculations cannot be precisely expressed with 
+   the result of other calculations cannot be precisely expressed with
    fixed-point math.
 3. I think people are more comfortable with fixed-point math, because it feels
    less surprising for simple calculations.
@@ -248,18 +248,28 @@ Disclaimer
 I was nervous publishing this, because some of the underlying technology and math
 goes over my head. I can't really vouch for any of this being 100% accurate.
 
-If you see errors or want to leave comments, feel free to [edit this article][1]
-on github. You add a new "comments" chapter right below this paragraph, or you
-can make edits anywhere in this article if you feel comfortable doing so.
-
 
 Comments
 ---------
 
-The thing about this is that you do not run into this issue often when dealing with single invoice or calculation. Where the errors start to creep up is running calculations like calculating the amount of tax on all transactions. Or when you are dealing in wholesale businesses where the price of a unit can be a fraction of a cent. Or dealing with currency exchange rates - my personal experience - those are 5 digits, and you have to deal with the fact that a 1000 transactions can have an offset of a 1000 cents if handled wrong. @psihius
+[@psihius](https://github.com/psihius) says:
+
+> The thing about this is that you do not run into this issue often when
+> dealing with single invoice or calculation. Where the errors start to creep
+> up is running calculations like calculating the amount of tax on all
+> transactions. Or when you are dealing in wholesale businesses where the price
+> of a unit can be a fraction of a cent. Or dealing with currency exchange
+> rates - my personal experience - those are 5 digits, and you have to deal
+> with the fact that a 1000 transactions can have an offset of a 1000 cents if
+> handled wrong.
 
 
-[1]: https://github.com/evert/evert.github.com/tree/master/_posts
+_If you see errors or want to leave comments, feel free to [edit this article][1]
+on github. Just add your comment right above this paragraph, or you
+can make edits anywhere in this article if you feel comfortable doing so._
+
+
+[1]: https://github.com/evert/evert.github.com/blob/master/_posts/2018/2018-12-06-currencies-floats.md
 [2]: https://en.wikipedia.org/wiki/Floating-point_arithmetic "Floating point arithmetic"
 [3]: https://dev.mysql.com/doc/refman/5.7/en/precision-math-decimal-characteristics.html
 [4]: https://www.xe.com/currency/aud-australian-dollar
