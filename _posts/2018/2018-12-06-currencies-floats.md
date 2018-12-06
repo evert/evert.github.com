@@ -192,7 +192,7 @@ Ecmascript's bigint
 -------------------
 
 If you are running a new version of Firefox, Chrome or Node.js, you might
-already have support for a new javascript type: bigint.
+already have support for a new javascript type: [bigint][12].
 
 "bigint" is what it says on the tin, a type for big integers. These new numbers
 don't automatically change to floats (or regular numbers) unless explicitly
@@ -262,3 +262,4 @@ can make edits anywhere in this article if you feel comfortable doing so.
 [9]: https://github.com/MikeMcl/bignumber.js/
 [10]: https://secure.php.net/manual/en/book.gmp.php
 [11]: https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html
+[12]: https://github.com/tc39/proposal-bigint
