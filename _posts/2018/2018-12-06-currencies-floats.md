@@ -253,6 +253,12 @@ on github. You add a new "comments" chapter right below this paragraph, or you
 can make edits anywhere in this article if you feel comfortable doing so.
 
 
+Comments
+---------
+
+The thing about this is that you do not run into this issue often when dealing with single invoice or calculation. Where the errors start to creep up is running calculations like calculating the amount of tax on all transactions. Or when you are dealing in wholesale businesses where the price of a unit can be a fraction of a cent. Or dealing with currency exchange rates - my personal experience - those are 5 digits, and you have to deal with the fact that a 1000 transactions can have an offset of a 1000 cents if handled wrong. @psihius
+
+
 [1]: https://github.com/evert/evert.github.com/tree/master/_posts
 [2]: https://en.wikipedia.org/wiki/Floating-point_arithmetic "Floating point arithmetic"
 [3]: https://dev.mysql.com/doc/refman/5.7/en/precision-math-decimal-characteristics.html
