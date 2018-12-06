@@ -231,14 +231,14 @@ Another interesting thing about these numbers is that they always round:
     > 5n / 2n
     2n
 
-Using the bigint is going to be a much faster solution. The only drawback is
-that the bigint doesn't have a decimal point, so I'm not forced to multiple
-every number by the precision I want which makes my code potentially harder
-to read.
+Using the bigint type is going to be a much faster than the npm libraries.
+The only drawback is that the bigint doesn't have a decimal point, so I'm not
+forced to multiple every number by the precision I want which makes my code
+potentially harder to read.
 
 But with all these nice new features, I still haven't found a satisfying
-answer to my original question: under what conditions break floating
-points down?
+answer to my original question: under what conditions do floating point
+numbers break down for financial calculations?
 
 Disclaimer
 ----------
