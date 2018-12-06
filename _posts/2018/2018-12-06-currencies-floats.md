@@ -5,6 +5,8 @@ tags:
   - javascript
   - float
   - currency
+location: "Adelaide St West, Toronto, ON, CA"
+geo: [43.646645, -79.396766]
 ---
 
 A very common and oft-repeated programmer's wisdom is "Don't use floats for
