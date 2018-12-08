@@ -285,6 +285,7 @@ Comments
 
 > > I needed to find out what 31% of $498.09 is... The result of this can’t be 
 > > expressed as a decimal number.
+>
 > 31% of $498.09 is $154.4079 exactly.
 
 _If you see errors or want to leave comments, feel free to [edit this article][1]
