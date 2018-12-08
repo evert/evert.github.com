@@ -146,9 +146,9 @@ I don't know if this is correct, but it feels correct:
 
 ~~What I don't know is around what scales floating point math can yield
 significant inaccurate results. It seems simpler to predict this with
-fixed-point math.
+fixed-point math.~~
 
-I think this predictability makes people feel safer doing financial
+~~I think this predictability makes people feel safer doing financial
 calculations.~~
 
 Using fixed point math in Javascript
