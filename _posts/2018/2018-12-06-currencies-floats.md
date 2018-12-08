@@ -110,6 +110,25 @@ floats, such as base10 (fixed point) math. With fixed point math you
 basically pick a precision (for example, 15 digits) and rounding errors beyond
 that precision can also show up in certain complex calculations.
 
+**Edit**
+
+I got an _excellent_ example when asking around from
+[@scurker](http://scurker.com/), the author of the [currency.js][13] project.
+
+His example was this:
+
+```javascript
+(17.954 + .001).toFixed(2); // => "17.96"
+```
+
+Even though this calculation should result in `17.955`, which _should_ round to
+`17.95`, because `.001` cannot be exactly represented by floating point numbers,
+the total ends up being `17.955000000000002`, which rounds up.
+
+So this is a super clear example of a very small difference that results in a
+significant change. I couldn't think of this myself, but this makes it super
+clear to me why fixed-point math makes sense.
+
 
 A few deductions
 ----------------
@@ -122,17 +141,15 @@ I don't know if this is correct, but it feels correct:
    calculations cannot be precisely expressed with floating point math, and
    the result of other calculations cannot be precisely expressed with
    fixed-point math.
-3. I think people are more comfortable with fixed-point math, because it feels
-   less surprising for simple calculations.
-4. Rounding to the significant digits generally 'solves' this.
+3. Insignificant differences can show up as significant ones when rounding.
 
 
-What I don't know is around what scales floating point math can yield
+~~What I don't know is around what scales floating point math can yield
 significant inaccurate results. It seems simpler to predict this with
 fixed-point math.
 
 I think this predictability makes people feel safer doing financial
-calculations.
+calculations.~~
 
 Using fixed point math in Javascript
 ------------------------------------
@@ -238,9 +255,10 @@ The only drawback is that the bigint doesn't have a decimal point, so I'm
 forced to multiply every number by the precision I want. This will make my
 code potentially harder to read.
 
-But with all these nice new features, I still haven't found a satisfying
+~~But with all these nice new features, I still haven't found a satisfying
 answer to my original question: under what conditions do floating point
-numbers break down for financial calculations?
+numbers break down for financial calculations?~~
+
 
 Disclaimer
 ----------
@@ -286,3 +304,4 @@ can make edits anywhere in this article if you feel comfortable doing so._
 [10]: https://secure.php.net/manual/en/book.gmp.php
 [11]: https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html
 [12]: https://github.com/tc39/proposal-bigint
+[13]: https://github.com/scurker/currency.js
