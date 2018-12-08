@@ -263,6 +263,11 @@ Comments
 > with the fact that a 1000 transactions can have an offset of a 1000 cents if
 > handled wrong.
 
+[@DaveCTurner](https://github.com/davecturner) says:
+
+> > I needed to find out what 31% of $498.09 is... The result of this can’t be 
+> > expressed as a decimal number.
+> 31% of $498.09 is $154.4079 exactly.
 
 _If you see errors or want to leave comments, feel free to [edit this article][1]
 on github. Just add your comment right above this paragraph, or you
