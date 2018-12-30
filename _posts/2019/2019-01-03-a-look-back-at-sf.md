@@ -13,9 +13,9 @@ Francisco. At the end of 2017 we moved, and I spent most of 2018 there.
 With the year coming to an end, I thought it might be a good time to reflect
 on my time there.
 
-As a software engineer, it's often suggested that you didn't really made it to
+As a software engineer, it's often suggested that you haven't really made it to
 the top, unless you work in the Bay Area. I disagree with this idea, but it's
-easy to see why some people feel this.
+easy to see why some people feel this way.
 
 On my first trip to SF, it was already quite telling. Flying from Toronto
 airport I noticed a higher than usual technology themed tees, stickers on
@@ -34,7 +34,7 @@ As a software engineer this more or less evens out (compared to Toronto, where
 I've lived and worked for a long time), but if you're not in the business it's
 rough. 
 
-Before I moved to SF I never had the intention to move to the bay. It just
+Before I moved to SF I never had the intention to move to the Bay. It just
 wasn't a goal for me. But when the opportunity arose, we felt that for the trip
 to be worth it, we didn't really want to lower our qualtity of living standard,
 and we wanted a 2-bedroom apartment and a reasonable commute. Ultimately this
@@ -102,7 +102,7 @@ When I first moved to San Francisco, one of my friends told me on the phone "it
 takes about 1-2 months to no longer really see the homeless". While he didn't
 mean it literally, most people I spoke to adjusted to the homelessness problem
 after living in SF for a little while, and developed a sort of cognitive
-dissonance. For me the initial also shock wore off after some time and it became
+dissonance. For me the initial shock wore off after some time and it became
 fact of life. Occasionally you're pulled back to reality when something
 particularly shocking happens right in front of you. Sharing those events with
 friends usually result in conversations where people comment on how absurd
@@ -142,10 +142,10 @@ while having so many people live under the poverty line.
 So if you're a software engineer and considering moving to the Bay Area,
 you're probably in for a great time.
 In my case, I worked for Yelp and it seemed that they were doing well
-doing pretty well in terms of benefits, diversity, pay and all the things
-any modern company should be. (at least if you're a developer. If you're in
-sales, no free lunch for you). But when you go home after work, also be
-prepared to see the dark side that your industry has created as a by-product.
+in terms of benefits, diversity, pay and all the things any modern company
+should be. (at least if you're a developer). But when you go home after work,
+also be prepared to see the dark side that your industry has created as a
+by-product.
 
 Questions / comments?
 ---------------------
@@ -178,4 +178,4 @@ But also feel free to be creative!
 [6]: https://www.theguardian.com/commentisfree/2018/aug/18/san-francisco-poop-problem-inequality-homelessness
 [7]: mailto:sf@evertpot.com
 [8]: about:blank
-[9]: about:blank
+[9]: https://github.com/evert/evert.github.com/blob/master/_posts/2019/2019-01-03-a-look-back-at-sf.md
