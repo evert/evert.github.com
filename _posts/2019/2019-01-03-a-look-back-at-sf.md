@@ -2,9 +2,9 @@
 title: "One year in San Francisco as a Software Engineer"
 date: "2019-01-03 17:00:00 UTC"
 tags:
-  - opensource
-  - typescript
-  - curveball
+  - sf
+  - usa
+  - homelessness
 ---
 
 In 2017 the company I worked for in Toronto got acquired by Yelp. The
