@@ -123,8 +123,9 @@ fight-or-flight response and wouldn't consider making a connection.
 
 There would have been safer ways for me to contribute, but I also didn't do this.
 I didn't donate or volunteer for anything. The way I sometimes justified this is
-that most people don't either and it doesn't make me a bad person. Other times I
-just feel like a hypocrite. 99% of my emphathy goes to people I know personally.
+that most of my peers don't either and it doesn't make me a bad person if I don't
+Other times I just feel like a hypocrite. 99% of my emphathy goes to people I know
+personally.
 
 It's 2019 and we left San Francisco. Yelp wasn't what I hoped it would be. I
 sound mostly negative about San Franscisco, but the thruth is that I really
@@ -135,7 +136,7 @@ my visa issues, we probably would have stayed in SF.
 
 It was fun because I could afford it and because I was part of the class that
 benefited from the system. I can't help wondering though that the only reason
-Sillicon Valley and the Bay Area has been so prosperous is because it's in a
+Silicon Valley and the Bay Area has been so prosperous is because it's in a
 country where generally people are comfortable with having so much wealth,
 while having so many people live under the poverty line.
 
