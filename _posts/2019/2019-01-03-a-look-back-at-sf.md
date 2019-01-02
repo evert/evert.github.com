@@ -94,9 +94,9 @@ defacating on the street. This is absolutely not hyperbole. San Francisco has a
 
 Some people in the tech industry feel pretty awful about this, others are
 straight up sociopaths with zero empathy and [happily broadcast][5] how they
-really feel. This specific person has turned a new page after the fallout from
+really feel (that specific person has turned a new page after the fallout from
 his comments, but the the article is worth a read to see how different people
-think about this.
+think about this).
 
 When I first moved to San Francisco, one of my friends told me on the phone "it
 takes about 1-2 months to no longer really see the homeless". While he didn't
@@ -145,7 +145,7 @@ you're probably in for a great time.
 In my case, I worked for Yelp and it seemed that they were doing well
 in terms of benefits, diversity, pay and all the things any modern company
 should be. (at least if you're a developer). But when you go home after work,
-also be prepared to see the dark side that your industry has created as a
+also be prepared to see the dystopia that your industry has created as a
 by-product.
 
 Questions / comments?
@@ -155,7 +155,6 @@ Questions / comments?
 2. You can reply to [this tweet][8] to automatically see your response here.
 3. If you're a dev, you can also send a [pull request][9] and edit in your
    comment in this article.
-
 
 <!--
 
@@ -169,7 +168,6 @@ Example template:
 
 But also feel free to be creative!
 -->
-
 
 [1]: https://twitter.com/EricZ_FamilyMan/status/745850889466953729/photo/1
 [2]: https://gizmodo.com/apple-google-reroute-employee-buses-after-series-of-at-1822182686
