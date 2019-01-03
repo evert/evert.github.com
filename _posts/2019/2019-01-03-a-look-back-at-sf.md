@@ -178,5 +178,5 @@ But also feel free to be creative!
 [5]: http://valleywag.gawker.com/happy-holidays-startup-ceo-complains-sf-is-full-of-hum-1481067192
 [6]: https://www.theguardian.com/commentisfree/2018/aug/18/san-francisco-poop-problem-inequality-homelessness
 [7]: mailto:sf@evertpot.com
-[8]: about:blank
+[8]: https://twitter.com/evertp/status/1080856477542305793
 [9]: https://github.com/evert/evert.github.com/blob/master/_posts/2019/2019-01-03-a-look-back-at-sf.md
