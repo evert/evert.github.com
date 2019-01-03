@@ -13,6 +13,12 @@ body {
     font-size: 120%;
 }
 
+@media (max-width: 512px) {
+  body {
+    font-size: 100%;
+  }
+}
+
 ul,ol,p {
     line-height: 1.75;
 }
@@ -30,7 +36,7 @@ h2 {
 main {
     max-width: 840px;
     margin: 0 auto;
-    padding: 0 5px 10px 5px;
+    padding: 5px 5px 10px 5px;
     flex: 1;
 }
 
