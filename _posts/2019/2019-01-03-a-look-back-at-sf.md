@@ -111,7 +111,7 @@ friends usually result in conversations where people comment on how absurd
 everything is or people share their own recent anecdotes.
 
 In my time there I've spent a ton thinking about the ethics of this situation
-and what my responsbility is. The truth it, aside from buying a few sandwiches
+and what my responsibility is. The truth it, aside from buying a few sandwiches
 for people who asked I've done almost nothing and feel like a hypocrite for it.
 
 I grew up in a small town in The Netherlands. Population 6000. I grew up thinking
