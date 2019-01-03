@@ -1,10 +1,12 @@
 ---
 title: "One year in San Francisco as a Software Engineer"
-date: "2019-01-03 17:00:00 UTC"
+date: "2019-01-03 15:51:41 UTC"
 tags:
   - sf
   - usa
   - homelessness
+geo: [43.647805,-79.389551]
+location: Adelaide St West, Toronto, ON, CAnada
 ---
 
 In 2017 the company I worked for in Toronto got acquired by Yelp. The
