@@ -65,7 +65,7 @@ Every now and then you're confronted by this fact that there's people who
   <figcaption>Grafiti on the street in Mission District</figcaption>
 </figure>
 
-Personally I can emphasize with the sentiment. Even though I don't think that
+Personally I can emphathize with the sentiment. Even though I don't think that
 20-something programmers in Google buses are personally responsible for the
 disparity, but the brandless tinted Google buses are a powerful symbol for new
 class system.
