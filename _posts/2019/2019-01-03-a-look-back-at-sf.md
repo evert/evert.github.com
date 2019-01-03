@@ -46,7 +46,7 @@ find a cheaper place to live and save more.
 
 <figure>
   <a href="https://medium.com/@mccannatron/1979-to-2015-average-rent-in-san-francisco-33aaea22de0e">
-    <img src="https://cdn-images-1.medium.com/max/1043/1*MdPAr5dt5AH73H1mO_NahQ.jpeg" />
+    <img src="https://cdn-images-1.medium.com/max/1043/1*MdPAr5dt5AH73H1mO_NahQ.jpeg" style="max-width: 100%"/>
   </a>
   <figcaption>Median Montly Rent Price of 2BD Rental. (<a href="https://medium.com/@mccannatron/1979-to-2015-average-rent-in-san-francisco-33aaea22de0e">source</a>).</figcaption>
 </figure>
