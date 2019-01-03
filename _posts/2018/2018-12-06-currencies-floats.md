@@ -287,6 +287,63 @@ Comments
 > > expressed as a decimal number.
 >
 > 31% of $498.09 is $154.4079 exactly.
+> This can be verified by first trying with floating point to get the error:
+```
+498.09*.31
+154.40789999999998
+```
+> Then correcting using integers:
+```
+49809*31
+1544079
+```
+
+[@chris407x](https://github.com/chris407x) says:
+
+> Your example involving _`17.955`, which should round to `17.95`_ is not correct: 
+> 17.955 should round to 17.96 anyway even without floating point errors [14].  
+> There is a floating point issue, but it does not affect the rounding. 
+
+> A real life floating point bug that I encountered was in a shopping 
+> cart page. The payment types and total had to match.  In this contrived example of a 
+> bill of $1.30 and payments of $1.20 and $0.10 the balance should be zero. 
+> With floating point errors, the balance was not `0` and the JavaScript 
+> cart validation would not allow the form to submit.
+
+```
+>1.30-1.20-0.10
+8.326672684688674e-17
+```
+> There are many ways to fix this:
+
+```
+>Math.round(1.30-1.20-0.10, 2)
+0
+```
+Another floating point bug was when I needed to pass integer ids to the user interface
+and pass them back. These numbers were larger than Number.MAX_SAFE_INTEGER:
+
+```
+>Number.MAX_SAFE_INTEGER
+9007199254740991
+```
+> What was happening is that Javascript would represent these integers with best
+> guess as floating point and the values would change. (This was happening inside
+> a function of a very popular js library at the time, which forced numeric strings
+> to numbers, so it was tough to debug!):
+
+```
+>19007199254740991
+19007199254740990
+```
+
+> The fix was to treat them as strings:
+
+```
+>"19007199254740991"
+"19007199254740991"
+```
+> Thanks for the article!
 
 _If you see errors or want to leave comments, feel free to [edit this article][1]
 on github. Just add your comment right above this paragraph, or you
@@ -306,3 +363,4 @@ can make edits anywhere in this article if you feel comfortable doing so._
 [11]: https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html
 [12]: https://github.com/tc39/proposal-bigint
 [13]: https://github.com/scurker/currency.js
+[14]: http://mathforum.org/library/drmath/sets/select/dm_rounding.html
