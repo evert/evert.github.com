@@ -59,8 +59,10 @@ Every now and then you're confronted by this fact that there's people who
 ['hate us'][1]. Take for instance the [attacks on the Google commuter bus][2].
 
 <figure style="martin: 0 auto">
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I <a href="https://twitter.com/hashtag/love?src=hash&amp;ref_src=twsrc%5Etfw">#love</a> this response to the <a href="https://twitter.com/hashtag/antitech?src=hash&amp;ref_src=twsrc%5Etfw">#antitech</a> graffiti that was trying to spread hate in <a href="https://twitter.com/hashtag/SF?src=hash&amp;ref_src=twsrc%5Etfw">#SF</a> <a href="https://twitter.com/hashtag/MissionDistrict?src=hash&amp;ref_src=twsrc%5Etfw">#MissionDistrict</a> <a href="https://t.co/jvSiw7StMV">pic.twitter.com/jvSiw7StMV</a></p>&mdash; Eric Zandona (@EricZ_FamilyMan) <a href="https://twitter.com/EricZ_FamilyMan/status/745850889466953729?ref_src=twsrc%5Etfw">June 23, 2016</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a href="https://twitter.com/EricZ_FamilyMan/status/745850889466953729?ref_src=twsrc%5Etfw">
+    <img src="/resources/images/posts/sf/queers-hate-techies.jpg" style="max-width: 100%" />
+  </a>
+  <figcaption>Grafiti on the street in Mission District</figcaption>
 </figure>
 
 Personally I can emphasize with the sentiment. Even though I don't think that
