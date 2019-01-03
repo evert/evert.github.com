@@ -24,7 +24,7 @@ function loadWebMentions() {
   // fix dev url
   url = url.replace(/^http:\/\/localhost:4000/, 'https://evertpot.com');
 
-  return fetch('https://webmention.io/api/mentions?target=' + url)
+  return fetch('https://webmention.io/api/mentions?per-page=100&target=' + url)
     .then( response => response.json() )
     .then( result => displayWebMentions(elem, result) );
 
