@@ -126,11 +126,11 @@ fight-or-flight response and wouldn't consider making a connection.
 There would have been safer ways for me to contribute, but I also didn't do this.
 I didn't donate or volunteer for anything. The way I sometimes justified this is
 that most of my peers don't either and it doesn't make me a bad person if I don't
-Other times I just feel like a hypocrite. 99% of my emphathy goes to people I know
+Other times I just feel like a hypocrite. 99% of my empathy goes to people I know
 personally.
 
 It's 2019 and we left San Francisco. Yelp wasn't what I hoped it would be. I
-sound mostly negative about San Franscisco, but the truth is that I really
+sound mostly negative about San Francisco, but the truth is that I really
 enjoyed the city. And despite all its flaws, I had a great time there and made
 some really good friends and memories. I ended up running into some issues with
 my work visa for my next job, which led me back to Toronto. Had it not been for
