@@ -84,7 +84,7 @@ have lunch in [Yerba Buena Gardens][3], and if you looked one way you would see
 electric scooters and [onewheels][4] zooming by, and I was actually reminded of
 Star Trek episodes that feature Starfleet Academy. I'm not a cynic and it felt
 like a futuristic place to be. But, look the other way and you might see someone
-defacating on the street. This is absolutely not hyperbole. San Francisco has a
+defecating on the street. This is absolutely not hyperbole. San Francisco has a
 [poo problem][6].
 
 <figure>
