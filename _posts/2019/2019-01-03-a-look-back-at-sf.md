@@ -52,7 +52,7 @@ find a cheaper place to live and save more.
 </figure>
 
 You can imagine that at those prices, it's very difficult for many people to
-live in San Franscisco. The cost of living has exploded in the last 30 years,
+live in San Francisco. The cost of living has exploded in the last 30 years,
 and many people blame the tech industry for this.
 
 Every now and then you're confronted by this fact that there's people who
@@ -130,7 +130,7 @@ Other times I just feel like a hypocrite. 99% of my emphathy goes to people I kn
 personally.
 
 It's 2019 and we left San Francisco. Yelp wasn't what I hoped it would be. I
-sound mostly negative about San Franscisco, but the thruth is that I really
+sound mostly negative about San Franscisco, but the truth is that I really
 enjoyed the city. And despite all its flaws, I had a great time there and made
 some really good friends and memories. I ended up running into some issues with
 my work visa for my next job, which led me back to Toronto. Had it not been for
