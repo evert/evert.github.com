@@ -291,3 +291,9 @@ body.map main #map {
   flex: 1;
   min-width: 100%;
 }
+
+/** Fix twitter responsiveness **/
+.twitter-tweet {
+  max-width: 100% !important;
+  overflow-x: auto;
+}
