@@ -113,7 +113,7 @@ friends usually result in conversations where people comment on how absurd
 everything is or people share their own recent anecdotes.
 
 In my time there I've spent a ton thinking about the ethics of this situation
-and what my responsibility is. The truth it, aside from buying a few sandwiches
+and what my responsibility is. The truth is, aside from buying a few sandwiches
 for people who asked I've done almost nothing and feel like a hypocrite for it.
 
 I grew up in a small town in The Netherlands. Population 6000. I grew up thinking
@@ -127,9 +127,9 @@ fight-or-flight response and wouldn't consider making a connection.
 
 There would have been safer ways for me to contribute, but I also didn't do this.
 I didn't donate or volunteer for anything. The way I sometimes justified this is
-that most of my peers don't either and it doesn't make me a bad person if I don't
-Other times I just feel like a hypocrite. 99% of my empathy goes to people I know
-personally.
+that most of my peers don't either and it doesn't make me a bad person if I
+don't.  Other times I just feel like a hypocrite. 99% of my empathy goes to
+people I know personally.
 
 It's 2019 and we left San Francisco. Yelp wasn't what I hoped it would be. I
 sound mostly negative about San Francisco, but the truth is that I really
