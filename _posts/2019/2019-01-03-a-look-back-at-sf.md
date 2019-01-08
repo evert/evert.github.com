@@ -163,6 +163,50 @@ Questions / comments?
 Comments via email
 ------------------
 
+**Sue Smart** on Jan 7th, 2018:
+
+> Hi Evert,
+>
+> I read your article with some interest.
+>
+> I live the dichotomy because my daughters are employed fruitfully in SF's
+> tech world. I, on the other hand, work in academia, which pays abysmally low
+> wages, despite the many degrees required to be employed in academia.
+>
+> I must say though that I raised my daughters as a single mom. I lived in the
+> East Bay and commuted to Silicon Valley every day for over a decade. These
+> were years when my children were very young. I endured challenges of endless
+> commutes and heart stopping fear that I would be late to pick up my kids.
+>
+> I never could have afforded to live in Palo Alto, where I was employed then.
+> I never used that excuse to camp out on the streets of Palo Alto or any town.
+> I now live in a small apartment but am happy with my lot.
+>
+> The problems are far deeper than your article permits. I have some radical
+> thoughts on how things can improve. People are required to take tests to get
+> driving permits and everything else, they should be required to take tests to
+> have children. There are way too many children in this world and in an
+> advanced country like the US, there should be some checks and balances.
+> There are way too many irresponsible people who will recklessly foist their
+> children onto the streets. It's unbelievable cruelty.
+>
+> That may seem like it's off topic but it's not. If people show such poor
+> judgment, they should have to have some checks and balances along the way.
+> Imprisonment and incarceration is not the answer but education and counseling
+> for all parties involved, caregivers, parents, etc. would be a great tool to
+> get people to live responsible and happy lives.
+>
+> Another thing, there are a lot of greedy people in San Francisco who are
+> occupying rent controlled units despite being able to afford market rate rent.
+> If those people were forced to vacate and make room for the poorer residents
+> of the city, it would free up a lot of housing. There are SO many people I
+> know personally who live in rent controlled buildings, paying $1200 for a two
+> bedroom and refusing to budge. These people are employed in: High Tech,
+> Charles Schwab, etc. That is greed. The city has not shown any will in fixing
+> that problem.
+>
+> Anyway, a much longer response than you cared to get I'm sure!
+
 **Meli Jiménez Araya** on Jan 7th, 2018:
 
 > I can relate to most of what you said in this article. I’m a tech worker in SF
