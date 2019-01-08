@@ -60,7 +60,7 @@ Content-Type: text/html
 <h1>Je ne support pas application/json</h1>
 ```
 
-Huge disclaimer: I only had years of french and it's over 15 years ago.
+Huge disclaimer: I only had 2 years of french and it's over 15 years ago.
 
 
 Usage
