@@ -163,6 +163,29 @@ Questions / comments?
 Comments via email
 ------------------
 
+**Demayne Collins** on Jan 3rd, 2018:
+
+> As a native San Franciscan who grew up there, the city has truly changed for
+> worse/best depending on who is benefiting.
+>
+> I no longer live in the Bay Area, but I still visit to see relatives who
+> live there. Your article was spot on regarding the homelessness and drug
+> addicts.
+>
+> The demographics has also shifted drastically in terms of the number of
+> minorites who work in tech and live in the city.. One of my worse fears is
+> will San Francisco become the model for other cities across the country to
+> follow; as tech companies take over and drive the "undesirebles".
+>
+> You are right, if you are not in tech making tech money you have no chance
+> to survive and live comfortably, which is why there is homelessness,
+> dispair, filth, and total disregard for the poor.
+>
+> For a city who is historically known for its liberalism its sort hard to
+> understand how such a shift in economic balance among the haves and have
+> nots are so widespread. Its depressing eveytime I visit. This is the new
+> modern Rome.
+
 **Sue Smart** on Jan 7th, 2018:
 
 > Hi Evert,
