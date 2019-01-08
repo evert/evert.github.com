@@ -163,123 +163,147 @@ Questions / comments?
 Comments via email
 ------------------
 
+**Meli Jiménez Araya** on Jan 7th, 2018:
+
+> I can relate to most of what you said in this article. I’m a tech worker in SF
+> as well, and there isn’t a single week when at least one of my commutes doesn’t
+> involve crying. Unlike a lot of my peers, I haven’t been able to turn my
+> empathy off, and the guilt of seeing the chaos all this wealth is generating
+> here and around the world eats me from the inside out. As my family and future
+> rely on my work, I can’t just quit altogether, so sometimes I feel stuck in my
+> privilege bubble, drinking fancy matcha smoothies and buying $18 avocado toasts
+> while the rest of the population of this city who can no longer afford it,
+> people whose families have lived here for generations are being displaced. And
+> tech capitalism IS to blame. San Francisco can be a disgusting place. Walking
+> around the financial district in downtown, surrounded by suits and Teslas
+> against the backdrop ofthe poverty a few blocks down, makes me feel nauseated.
+> one of this wealth is worth the suffering that it is creating. None of these
+> wealthy assholes are happy either. They just consume to the detriment of the
+> rest. I feel happy my career has lead me to a place where I’m financially
+> stable and can fend for my self, but whenever I take a step back and look at
+> what these systems are creating, I can no longer just isolate my experience.
+> I guess my only real motivation is to work myself to a place where I can
+> step off this disgusting situation, get involved with activism and use my
+> skills for something that actually helps the world. May God or Godx or
+> whatever thing you believe in have mercy on the souls of these scooter
+> riding assholes.
+
 **Neil Rhoads** on Jan 7th, 2018:
 
-
-Thanks for the article.
-
-As a guy who came here to SF 45 years ago, my experience of the city is quite
-different than the one you describe. Sure... it's changed tremendously over the
-decades, god knows; some for the better, and some for the worse. But, what
-major city hasn't? Arriving here 45 years ago from Nashville was a shock
-similar to yours. Yes, 45 years ago but still similar. This is a cosmopolitan
-city of the world, and naturally displays a huge range of people and lives and
-circumstances.
-
-I live in the city, but not downtown, though I do go downtown now and then as
-well as travel all over the city, from one end to the other, for business. My
-impression is that this is still a fabulous place to live, as it's always been,
-all these decades. Yes, I'm established, and comfortable, but my eyes and ears
-and pores are still open and receiving all the currents, pleasing and
-distressing, that this wonderful town offers to a soul longing to be free, or
-creative, or increasingly self-aware.  I don't require SF to conform to my
-expectations. I like to adapt and discover and go with the surprising flow,
-and it has never left me wanting.....but has always supported me in
-confronting and finding out more about myself as well as more about the world
-around me.
-
-It's true that the homelessness is outta control, and it's heartbreaking so
-see so many suffering, and this town is dealing with it poorly. But the
-zeitgeist that generates that misery is plaguing us all over the friggin'
-country these days.  This city has always been tolerant of, and genuinely
-compassionate about, people working out their personal trajectories in vivid
-public, and still is. We're even welcoming to those who encamp here for a
-year and then move back home to publish a bad review of us. We can take it,
-because we know how very lucky we are to call this place home.
-
-Love this place.
+> Thanks for the article.
+>
+> As a guy who came here to SF 45 years ago, my experience of the city is quite
+> different than the one you describe. Sure... it's changed tremendously over the
+> decades, god knows; some for the better, and some for the worse. But, what
+> major city hasn't? Arriving here 45 years ago from Nashville was a shock
+> similar to yours. Yes, 45 years ago but still similar. This is a cosmopolitan
+> city of the world, and naturally displays a huge range of people and lives and
+> circumstances.
+>
+> I live in the city, but not downtown, though I do go downtown now and then as
+> well as travel all over the city, from one end to the other, for business. My
+> impression is that this is still a fabulous place to live, as it's always been,
+> all these decades. Yes, I'm established, and comfortable, but my eyes and ears
+> and pores are still open and receiving all the currents, pleasing and
+> distressing, that this wonderful town offers to a soul longing to be free, or
+> creative, or increasingly self-aware.  I don't require SF to conform to my
+> expectations. I like to adapt and discover and go with the surprising flow,
+> and it has never left me wanting.....but has always supported me in
+> confronting and finding out more about myself as well as more about the world
+> around me.
+>
+> It's true that the homelessness is outta control, and it's heartbreaking so
+> see so many suffering, and this town is dealing with it poorly. But the
+> zeitgeist that generates that misery is plaguing us all over the friggin'
+> country these days.  This city has always been tolerant of, and genuinely
+> compassionate about, people working out their personal trajectories in vivid
+> public, and still is. We're even welcoming to those who encamp here for a
+> year and then move back home to publish a bad review of us. We can take it,
+> because we know how very lucky we are to call this place home.
+>
+> Love this place.
 
 **Sergio Blandon** on Jan 7th, 2018:
 
-I was raised in SF during the hippie generation. 1981  49ers win the Super
-Bowl for the first time and buddy and I get our first apartment. 2 bedroom for
-$350 a month. Probably the same one going for $4250 today. I now live and hour
-away from the city and work in the east bay. My mom lives in the house that we
-grew up in. She bought that for $55.000 now it is worth a little more than 1
-million.  Something has to change or your barista a Starbucks wont be able to
-make your drink and your favorite restaurant wont have a wait staff. I a big
-circle than needs to turn evenly  but right now it has big flat spot.
+> I was raised in SF during the hippie generation. 1981  49ers win the Super
+> Bowl for the first time and buddy and I get our first apartment. 2 bedroom for
+> $350 a month. Probably the same one going for $4250 today. I now live and hour
+> away from the city and work in the east bay. My mom lives in the house that we
+> grew up in. She bought that for $55.000 now it is worth a little more than 1
+> million.  Something has to change or your barista a Starbucks wont be able to
+> make your drink and your favorite restaurant wont have a wait staff. I a big
+> circle than needs to turn evenly  but right now it has big flat spot.
 
 **John Horn** on Jan 7th, 2018:
 
-I’ve lived in SF for 30 years, in a rent controlled apartment in the
-Civic Center area, and have worked in several graphic design jobs and various
-other fields. I’m fairly neutral with regard to whether the “techies” are
-ruining SF. It’s kind of inevitable that when digital technology comes along,
-when the Internet comes along, when cell phones come along - there’s going to
-be a major paradigm shift. And that’s just the way things change, although I
-do decry the fact that many artists, musicians and writers (not to mention
-school teachers) have been priced out of living here. And although I’m a bit
-in awe of the legacy of Steve Jobs (his difficult personality aside), I do
-think that Mark Zuckerberg is a creep.
-
-I’m an old liberal and am sympathetic to homeless people generally. But there
-are many “street” people who are just very problematic people, with mental
-illness, abusive upbringings or substance abuse issues, etc. And in my
-neighborhood there’s a pretty high level of crimes of opportunity, such as car
-break-ins, druggy encampments, screaming in the night and other obnoxious
-weirdness. I’m sympathetic, but when someone is vandalizing my vehicle on the
-street or being an uncivilized asshole 20 feet from my apartment window at 1
-AM, my compassion dissipates quickly.
+> I’ve lived in SF for 30 years, in a rent controlled apartment in the
+> Civic Center area, and have worked in several graphic design jobs and various
+> other fields. I’m fairly neutral with regard to whether the “techies” are
+> ruining SF. It’s kind of inevitable that when digital technology comes along,
+> when the Internet comes along, when cell phones come along - there’s going to
+> be a major paradigm shift. And that’s just the way things change, although I
+> do decry the fact that many artists, musicians and writers (not to mention
+> school teachers) have been priced out of living here. And although I’m a bit
+> in awe of the legacy of Steve Jobs (his difficult personality aside), I do
+> think that Mark Zuckerberg is a creep.
+>
+> I’m an old liberal and am sympathetic to homeless people generally. But there
+> are many “street” people who are just very problematic people, with mental
+> illness, abusive upbringings or substance abuse issues, etc. And in my
+> neighborhood there’s a pretty high level of crimes of opportunity, such as car
+> break-ins, druggy encampments, screaming in the night and other obnoxious
+> weirdness. I’m sympathetic, but when someone is vandalizing my vehicle on the
+> street or being an uncivilized asshole 20 feet from my apartment window at 1
+> AM, my compassion dissipates quickly.
 
 **Anonymous** on Jan 7th, 2018:
 
-So, we moved from Boston to SF in August 2001. The plane I was commuting on
-once a month went down in Pennsylvania on 911. We lived in Pleasanton in the
-East Bay with no visible homeless. I would commute to Mountainview, the SF
-and San Jose. The other cities were never an issue. But going into the City,
-I saw much of what you talked about. I was lucky and worked from home.
-However, every couple of months, a co-worker and I walked down through the
-Mission (he lives in the City and know how to maneuver and what to watch out
-for. We delivered a bottle of water, a packet of powdered something or other,
-socks, and a granola bar. I was at that point that I was a little too old to
-be doing it, because lugging the water around the City was serious work for
-an out of shape fat man. Sean would warn me which people not too approach,
-but the gratitude that people felt was embarrassing. That people show be so
-grateful for a simple human kindness.
-
-It always made us furious to see so many in distress in the wealthiest country
-in the world. We never told anyone, because that’s not why we did it. While I
-am a devout atheist, I still believe in what are now apparently Communist
-tenets, feed the hungry, clothe the naked, comfort the afflicted, and shelter
-the homeless.
+> So, we moved from Boston to SF in August 2001. The plane I was commuting on
+> once a month went down in Pennsylvania on 911. We lived in Pleasanton in the
+> East Bay with no visible homeless. I would commute to Mountainview, the SF
+> and San Jose. The other cities were never an issue. But going into the City,
+> I saw much of what you talked about. I was lucky and worked from home.
+> However, every couple of months, a co-worker and I walked down through the
+> Mission (he lives in the City and know how to maneuver and what to watch out
+> for. We delivered a bottle of water, a packet of powdered something or other,
+> socks, and a granola bar. I was at that point that I was a little too old to
+> be doing it, because lugging the water around the City was serious work for
+> an out of shape fat man. Sean would warn me which people not too approach,
+> but the gratitude that people felt was embarrassing. That people show be so
+> grateful for a simple human kindness.
+>
+> It always made us furious to see so many in distress in the wealthiest country
+> in the world. We never told anyone, because that’s not why we did it. While I
+> am a devout atheist, I still believe in what are now apparently Communist
+> tenets, feed the hungry, clothe the naked, comfort the afflicted, and shelter
+> the homeless.
 
 **Ted Miller** on Jan 8th, 2018:
 
-Thanks for the good read.
-
-A few decades ago SF was an ordinary city with working-class and minority
-neighborhoods. The tech boom in the area changed all that.
-
-The problems of homelessness etc are not unique to SF, but exist in all of
-coastal CA. IMHO as an ex-urban planner and working around housing, is that the
-correlation between a lack of affordable housing and high homelessness found in
-NY, CA, HI, etc is causal and not coincidental. A shortage of housing
-construction relative to job-related development leads to a scarcity of housing
-and high prices.
-
-CA is often thought of as the most liberal (using US lexicon) state in the US.
-That may or may not be true, but it certainly is solidly controlled by the D’s.
-(As are all the states with the highest rates of homelessness.)
-
-Are the problems you saw in SF the result of, or exacerbated by, public policy?
-I would say yes. Remedial action to alleviate a small portion of the worst of
-it is a nice, feel-good thing that does nothing to change the primary drivers
-of the fundamental problems.
-
-Unfortunately I see no indication that public policy in CA will change to
-address the core reasons for what’s happened there. It seems more likely it
-will spread, like a cancer, to other areas of the US.
+> Thanks for the good read.
+>
+> A few decades ago SF was an ordinary city with working-class and minority
+> neighborhoods. The tech boom in the area changed all that.
+>
+> The problems of homelessness etc are not unique to SF, but exist in all of
+> coastal CA. IMHO as an ex-urban planner and working around housing, is that the
+> correlation between a lack of affordable housing and high homelessness found in
+> NY, CA, HI, etc is causal and not coincidental. A shortage of housing
+> construction relative to job-related development leads to a scarcity of housing
+> and high prices.
+>
+> CA is often thought of as the most liberal (using US lexicon) state in the US.
+> That may or may not be true, but it certainly is solidly controlled by the D’s.
+> (As are all the states with the highest rates of homelessness.)
+>
+> Are the problems you saw in SF the result of, or exacerbated by, public policy?
+> I would say yes. Remedial action to alleviate a small portion of the worst of
+> it is a nice, feel-good thing that does nothing to change the primary drivers
+> of the fundamental problems.
+>
+> Unfortunately I see no indication that public policy in CA will change to
+> address the core reasons for what’s happened there. It seems more likely it
+> will spread, like a cancer, to other areas of the US.
 
 <!--
 
