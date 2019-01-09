@@ -345,6 +345,5 @@ But also feel free to be creative!
 [1]: https://www.npmjs.com/package/sequelize
 [2]: https://www.npmjs.com/package/mysql
 [3]: https://www.npmjs.com/package/mysql2
-[7]: mailto:me@evertpot.com
 [8]: about:blank
-[9]: https://github.com/evert/evert.github.com/blob/master/_posts/2019/2019-01-03-a-look-back-at-sf.md
+[9]: https://github.com/evert/evert.github.com/blob/master/_posts/2019/2019-01-10-executing-a-mysql-query-in-nodejs.md
