@@ -1,9 +1,11 @@
 ---
 title: "MySQL examples in Node.js"
-date: "2019-01-10 17:00:00 UTC"
+date: "2019-01-09 17:00:00 UTC"
 tags:
   - node
   - mysql
+geo: [43.647805,-79.389551]
+location: Adelaide St West, Toronto, ON, CAnada
 ---
 
 If you're integrating your Node.js service with MySQL, you probably want to
