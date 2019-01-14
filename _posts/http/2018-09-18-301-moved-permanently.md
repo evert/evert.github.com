@@ -50,5 +50,5 @@ References
 * [RFC7238][2] - 308 Permanent Redirect
 
 [1]: https://tools.ietf.org/html/rfc7231#section-6.4.2 "301 Moved Permanently"
-[2]: https://tools.iets.org/html/rfc7238 "308 Permanent Redirect"
+[2]: https://tools.ietf.org/html/rfc7238 "308 Permanent Redirect"
 [3]: /http/308-permanent-redirect
