@@ -228,5 +228,5 @@ But also feel free to be creative!
 [6]: http://wiki.c2.com/?BankersRounding
 [7]: https://github.com/evert/bigint-money/tree/master/bench
 [8]: about:blank
-[9]: about:blank
+[9]: https://github.com/evert/evert.github.com/blob/master/_posts/2019/2019-01-23-bigint-money-typescript.md
 [10]: https://www.npmjs.com/package/big-money
