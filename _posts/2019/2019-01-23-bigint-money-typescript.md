@@ -55,8 +55,18 @@ ledger       816 ms   |   43.201 ms
 %            100 %    |     5294 %
 ```
 
-
 The benchmark script can be found in the [repository][8].
+
+I want to stress though that I can't take credit for this (pretty good) result.
+The library is fast because `bigint` is fast.
+
+I did need to implement a few functions myself, and I actually feel that
+somebody who's better at writing fast code could probably do a much better job
+than I did.
+
+I imagine that specifically the `moneyValueToBigInt` and `bigintToFixed` intenral
+functions could probably be optimized by someone much smarter than me.
+
 
 Examples
 --------
