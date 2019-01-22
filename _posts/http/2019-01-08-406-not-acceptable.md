@@ -5,7 +5,8 @@ permalink: /http/406-not-acceptable
 tags:
    - http
    - http-series
-location: Toronto, CA
+geo: [43.647805,-79.389551]
+location: Adelaide St West, Toronto, ON, CAnada
 ---
 
 Happy 2019! After a small hiatus we're back with this captivating series. I

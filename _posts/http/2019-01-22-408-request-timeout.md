@@ -6,6 +6,7 @@ tags:
    - http
    - http-series
 location: Toronto, CA
+geo: [43.643211, -79.401529]
 ---
 
 If a client is too slow to send a full HTTP request, a server can send back a

@@ -5,7 +5,8 @@ permalink: /http/407-proxy-authentication-required
 tags:
    - http
    - http-series
-location: Toronto, CA
+geo: [43.647805,-79.389551]
+location: Adelaide St West, Toronto, ON, CAnada
 ---
 
 [`407 Proxy Authentication Required`][1] is an error a HTTP proxy returns if
