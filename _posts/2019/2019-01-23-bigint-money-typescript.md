@@ -1,6 +1,6 @@
 ---
 title: "bigint-money: an NPM package for doing math with money"
-date: "2019-01-09 17:00:00 UTC"
+date: "2019-01-23 17:00:00 UTC"
 tags:
   - math
   - money
