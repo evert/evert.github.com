@@ -238,6 +238,6 @@ But also feel free to be creative!
 [5]: https://caniuse.com/#search=bigint
 [6]: http://wiki.c2.com/?BankersRounding
 [7]: https://github.com/evert/bigint-money/tree/master/bench
-[8]: about:blank
+[8]: https://twitter.com/evertp/status/1088147830529802242
 [9]: https://github.com/evert/evert.github.com/blob/master/_posts/2019/2019-01-23-bigint-money-typescript.md
 [10]: https://www.npmjs.com/package/big-money
