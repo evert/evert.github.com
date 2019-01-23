@@ -1,12 +1,13 @@
 ---
-title: "bigint-money: an NPM package for doing math with money"
-date: "2019-01-23 17:00:00 UTC"
+title: "bigint-money: an NPM package for doing currency math"
+date: "2019-01-23 18:22:01 UTC"
 tags:
   - math
   - money
   - javascript
   - bigint
   - typescript
+geo: [43.643313, -79.401077]
 ---
 
 Not long ago, I was [confused][1] about doing math with money and floating
