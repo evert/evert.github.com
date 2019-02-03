@@ -31,7 +31,6 @@ In the case of `420`, the idea of having a standard code was considered useful
 for general purposes. So a few years later, we got the
 [`429 Too Many Requests`][3] status code, which Twitter ended up adopting too.
 
-
 [1]: https://developer.twitter.com/en/docs/basics/response-codes
 [2]: https://tools.ietf.org/html/rfc7807 "application/problem+json"
 [3]: /http/429-too-many-requests "429 Too Many Requests"

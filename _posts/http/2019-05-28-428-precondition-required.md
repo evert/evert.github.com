@@ -43,7 +43,7 @@ Please try submitting this request again with a If-Match header
 References
 ----------
 
-* [RFC7231, Section 6.5.15][1] - 426 Upgrade Required
+* [RFC6585, Section 3][1] - 428 Precondition Required
 
 [1]: https://tools.ietf.org/html/rfc6585#section-3 "428 Precondition Required"
-[2]: /http/412-precondition-failed
+[2]: /http/412-precondition-failed "412 Precondition Failed"
