@@ -1,5 +1,5 @@
 ---
-date: "2019-05-14 15:00:00 UTC"
+date: "2019-05-21 15:00:00 UTC"
 title: "426 Upgrade Required"
 permalink: /http/426-upgrade-required
 tags:
@@ -25,7 +25,7 @@ To use this service, you must use HTTP version 3.
 Usage
 -----
 
-Generally when an existing TCP connection switches from 1 protocol to another,
+Generally when an existing TCP connection switches from one protocol to another,
 the client initiates with an `Upgrade` header in the request, and the server
 responds with [101 Switching Protocols][2]. This is true for initiating a
 Websocket connection and for switching a (non-TLS) HTTP/1 to HTTP/2 connection.
