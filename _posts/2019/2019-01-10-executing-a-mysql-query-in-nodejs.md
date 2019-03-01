@@ -345,5 +345,5 @@ But also feel free to be creative!
 [1]: https://www.npmjs.com/package/sequelize
 [2]: https://www.npmjs.com/package/mysql
 [3]: https://www.npmjs.com/package/mysql2
-[8]: about:blank
+[8]: https://twitter.com/evertp/status/1083062254025822209
 [9]: https://github.com/evert/evert.github.com/blob/master/_posts/2019/2019-01-10-executing-a-mysql-query-in-nodejs.md
