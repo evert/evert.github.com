@@ -5,7 +5,8 @@ permalink: /http/412-precondition-failed
 tags:
    - http
    - http-series
-location: Toronto, CA
+location: DiiD office, Adelaide St W, Toronto, ON, Canada
+geo: [43.647767, -79.389963]
 ---
 
 In HTTP it's possible to do conditional requests. These are requests that only

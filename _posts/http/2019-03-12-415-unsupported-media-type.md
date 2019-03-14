@@ -5,7 +5,8 @@ permalink: /http/415-unsupported-media-type
 tags:
    - http
    - http-series
-location: San Francisco, US
+location: DiiD office, Adelaide St W, Toronto, ON, Canada
+geo: [43.647767, -79.389963]
 ---
 
 When a server receives a request with a body it doesn't understand, it should

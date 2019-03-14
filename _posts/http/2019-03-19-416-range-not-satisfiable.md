@@ -5,6 +5,8 @@ permalink: /http/416-range-not-satisfiable
 tags:
    - http
    - http-series
+location: DiiD office, Adelaide St W, Toronto, ON, Canada
+geo: [43.647767, -79.389963]
 ---
 
 It's possible for a client to request partial responses from a server. For

@@ -5,7 +5,8 @@ permalink: /http/413-payload-too-large
 tags:
    - http
    - http-series
-location: San Francisco, US
+location: DiiD office, Adelaide St W, Toronto, ON, Canada
+geo: [43.647767, -79.389963]
 ---
 
 The [`413 Payload Too Large`][1] response is used when the client sent a

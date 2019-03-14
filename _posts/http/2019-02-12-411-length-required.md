@@ -5,7 +5,8 @@ permalink: /http/411-length-required
 tags:
    - http
    - http-series
-location: Toronto, CA
+location: DiiD office, Adelaide St W, Toronto, ON, Canada
+geo: [43.647767, -79.389963]
 ---
 
 Most HTTP requests that have a request body, will also have a `Content-Length`
