@@ -5,6 +5,8 @@ permalink: /http/417-expectation-failed
 tags:
    - http
    - http-series
+location: "Bloor St W, Toronto, ON, Canada"
+geo: [43.660942, -79.429954]
 ---
 
 A server emits [`417 Expecation Failed`][1] when it encountered a `Expect`
