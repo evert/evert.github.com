@@ -296,6 +296,23 @@ body.map main #map {
   min-width: 100%;
 }
 
+.subscribe {
+  float: right;
+  background: #f26522;
+  color: white;
+  padding: 2px;
+  border-radius: 3px;
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 80%;
+  font-weight: 700;
+}
+
+.subscribe a {
+  color: white;
+  text-decoration: none;
+}
+
+
 /** Fix twitter responsiveness **/
 .twitter-tweet {
   max-width: 100% !important;

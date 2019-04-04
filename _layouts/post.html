@@ -2,9 +2,13 @@
 layout: default
 ---
 
+<div class="subscribe"><a href="/subscribe">subscribe</a></div>
 <article class="h-entry">
 <time datetime="{{ page.date | date: "%Y-%m-%d" }}" class="dt-published">{{ page.date | date: "%B %d, %Y" }}</time>
 {% if page.update_date %}(last updated: <time datetime="{{ page.update_date | date: "%Y-%m-%d" }}">{{ page.update_date | date: "%B %d, %Y" }}</time>){% endif %}
+
+
+
 
 <h1 class="p-name">{{page.title}}</h1>
 
