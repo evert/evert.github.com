@@ -5,6 +5,8 @@ permalink: /http/420-enhance-your-calm
 tags:
    - http
    - http-series
+location: "Bloor St W, Toronto, ON, Canada"
+geo: [43.660942, -79.429954]
 ---
 
 The [`420 Enhance Your Calm`][1] status code is an unofficial extension by
