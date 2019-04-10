@@ -81,7 +81,7 @@ Authorization: Basic d2VsbCBkb25lOnlvdSBmb3VuZCB0aGUgZWFzdGVyIGVnZwo=
 Other authentication schemes
 ----------------------------
 
-IANA has a [list of standard authentication schemes][6]. Aside from Bearer,
+IANA has a [list of standard authentication schemes][6]. Aside from Basic,
 Digest and Bearer there is also:
 
 * HOBA
