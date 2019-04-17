@@ -37,7 +37,7 @@ Example
 POST /new-article HTTP/1.1
 Content-Type: application/json
 
-{ title: "Hello world!"}
+{ "title": "Hello world!"}
 ```
 
 ```http
