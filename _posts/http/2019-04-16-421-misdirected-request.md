@@ -5,6 +5,8 @@ permalink: /http/421-misdirected-request
 tags:
    - http
    - http-series
+location: "Bloor St W, Toronto, ON, Canada"
+geo: [43.660942, -79.429954]
 ---
 
 A server should emit [`421 Misdirected Request`][1] when it receives a HTTP
