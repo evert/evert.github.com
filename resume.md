@@ -9,8 +9,8 @@ Evert Pot
 
 _Web architect, API developer_
 
-* Last update: *February 20th, 2018*.
-* Location: San Francisco, CA, United States.
+* Last update: *April 17, 2019*.
+* Location: Toronto, ON, Canada.
 * Contact: <mailto:work@evertpot.com>.
 
 
