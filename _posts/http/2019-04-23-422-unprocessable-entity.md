@@ -5,6 +5,8 @@ permalink: /http/422-unprocessable-entity
 tags:
    - http
    - http-series
+location: "Bloor St W, Toronto, ON, Canada"
+geo: [43.660942, -79.429954]
 ---
 
 The [`422 Unprocessable Entity`][1] status-code does not appear in the base
