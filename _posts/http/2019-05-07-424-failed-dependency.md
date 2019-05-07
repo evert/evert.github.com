@@ -91,4 +91,4 @@ References
 [2]: https://en.wikipedia.org/wiki/Extended_file_attributes
 [3]: https://tools.ietf.org/html/rfc4918#section-9.2 "PROPPATCH method"
 [4]: https://tools.ietf.org/html/rfc4918 "WebDAV specification"
-[5]: /http/207-mult-status
+[5]: /http/207-multi-status
