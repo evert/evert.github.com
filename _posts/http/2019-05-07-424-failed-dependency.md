@@ -5,6 +5,8 @@ permalink: /http/424-failed-dependency
 tags:
    - http
    - http-series
+geo: [40.711305, -73.941324]
+location: "Maujer St, Brooklyn, NY, USA"
 ---
 
 The [`424 Failed Dependency`][1] status-code does not appear in the base
