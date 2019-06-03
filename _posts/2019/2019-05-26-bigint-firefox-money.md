@@ -26,7 +26,7 @@ celebrate, I just released version 1.0.
 Since my last blogpost, the following features were added:
 
 1. Before all rounding was done using 'Bankers Rounding' a.k.a. 'round half to
-   0', but since then support has been added for other rounding methods such
+   odd', but since then support has been added for other rounding methods such
    as 'half away from 0', 'half towards 0' and 'truncate'.
 2. New comparison functions: `isLesserThan()`, `isGreaterThan()`, `isEqual()`,
    `isLesserThanOrEqual()`, `isGreaterThanOrEqual()`. All of this could be
