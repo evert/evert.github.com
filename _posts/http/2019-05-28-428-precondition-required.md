@@ -5,6 +5,8 @@ permalink: /http/428-precondition-required
 tags:
    - http
    - http-series
+location: Adelaide St W, Toronto, ON, Canada
+geo: [43.647767, -79.389963]
 ---
 
 To avoid multiple users writing to the same resources and overwriting each

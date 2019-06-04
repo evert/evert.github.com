@@ -27,7 +27,7 @@ Example
 HTTP/1.1 431 Request Headers Too Large
 Content-Type text/html
 
-<h1>Too many cookies! Try to reduce your footprint.</h1>
+<h1>Too many cookies! Try to reduce your cookie footprint.</h1>
 ```
 
 References

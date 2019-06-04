@@ -5,6 +5,8 @@ permalink: /http/429-too-many-requests
 tags:
    - http
    - http-series
+location: Adelaide St W, Toronto, ON, Canada
+geo: [43.647767, -79.389963]
 ---
 
 If an service wants to limit the amount of requests clients make, they can
