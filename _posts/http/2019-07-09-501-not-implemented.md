@@ -1,5 +1,5 @@
 ---
-date: "2019-07-02 15:00:00 UTC"
+date: "2019-07-09 15:00:00 UTC"
 title: "501 Not Implemented"
 permalink: /http/501-not-implemented
 tags:

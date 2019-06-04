@@ -1,5 +1,5 @@
 ---
-date: "2019-06-25 15:00:00 UTC"
+date: "2019-07-02 15:00:00 UTC"
 title: "500 Internal Server Error"
 permalink: /http/500-internal-server-error
 tags:
