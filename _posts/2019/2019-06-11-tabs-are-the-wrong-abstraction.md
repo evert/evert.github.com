@@ -81,4 +81,4 @@ things converge on Chrome.
 
 **Wanna respond? Reply to [this tweet][1]**
 
-[1]: https://twitter.com/evertp
+[1]: https://twitter.com/evertp/status/1138555764392497155
