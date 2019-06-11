@@ -24,7 +24,7 @@ Example
 
 ```http
 HTTP/1.1 429 Too Many Requests
-Content-Type text/plain
+Content-Type: text/plain
 Retry-After: 3600
 
 You exceeded the limit. Try again in an hour
