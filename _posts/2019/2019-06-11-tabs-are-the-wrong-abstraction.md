@@ -77,7 +77,13 @@ I'm sure experiments are out there, but so far it doesn't seem like major
 browser vendors have had the guts to release something new. This is a bit
 surprising to me because despite the fact that competition is fierce and
 users tend to have strong opinions, everyone seems to be doing very similar
-things converge on Chrome.
+things and converge on Chrome.
+
+Perhaps part of the issue is that everyone just wants to cater to the largest
+possible audience, making everyone risk averse.
+
+Anyway, this is all speculation with no data from a non-expert. Curious what
+your thoughts are, or if you know of any experiments that solve this problem.
 
 **Wanna respond? Reply to [this tweet][1]**
 
