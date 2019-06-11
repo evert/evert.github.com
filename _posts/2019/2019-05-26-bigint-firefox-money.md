@@ -9,6 +9,8 @@ tags:
   - bigint
   - math
   - opensource
+geo: [43.660773, -79.429926]
+location: "Bloor St W, Toronto, Canada"
 ---
 
 A couple of days ago [news][1] got out that Firefox will be getting support

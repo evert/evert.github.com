@@ -170,6 +170,11 @@ img.fill-width {
     max-width: 100%;
 }
 
+figcaption {
+  font-size: 80%;
+}
+
+
 .http-series {
   background: #DDD;
   padding: 0px 20px 10px;
@@ -319,3 +324,4 @@ body.map main #map {
   max-width: 100% !important;
   overflow-x: auto;
 }
+
