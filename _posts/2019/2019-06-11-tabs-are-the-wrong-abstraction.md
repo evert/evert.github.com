@@ -1,5 +1,5 @@
 ---
-title: "Tabs are probably the wrong abstraction"
+title: "Browser tabs are probably the wrong metaphore"
 date: "2019-06-11 21:14:00 UTC"
 tags:
   - browsers
