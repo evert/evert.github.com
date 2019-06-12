@@ -1,5 +1,6 @@
 ---
 title: "Browser tabs are probably the wrong metaphore"
+slug: /tabs-are-the-wrong-abstraction/
 date: "2019-06-11 21:14:00 UTC"
 tags:
   - browsers
