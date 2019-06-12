@@ -18,8 +18,8 @@ experience it was the number one selling point to get people to switch.
 Especially those that otherwise didn't care about Internet Explorer being
 dominant and stagnating the web.
 
-<figure style="max-width: 100%">
-  <img src="/resources/images/posts/tabs/firefox.png" alt="Firefox 1.5 featuring tabs" />
+<figure>
+  <img src="/resources/images/posts/tabs/firefox.png" alt="Firefox 1.5 featuring tabs" style="max-width: 100%"/>
   <figcaption>Firefox 1.5 featuring tabs. Via: <a href="http://www.netfaqs.com/windows/browsers/firefox15/index.asp">netfaqs.com</a></figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ managable, because tabs don't shrink below a certain size, but show arrows on
 each side to scroll through them, along with a menu. 
 
 <figure style="max-width: 100%">
-  <img src="/resources/images/posts/tabs/firefox-current.png" alt="Firefox 66 with a lot of tabs" />
+  <img src="/resources/images/posts/tabs/firefox-current.png" alt="Firefox 66 with a lot of tabs" style="max-width: 100%"/>
   <figcaption>Firefox 66 with a lot of tabs</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ On Chrome though, having a lot of tabs open makes it become completely
 unusable.
 
 <figure style="max-width: 100%">
-  <img src="/resources/images/posts/tabs/chrome.png" alt="Chrome with a lot of tabs" />
+  <img src="/resources/images/posts/tabs/chrome.png" alt="Chrome with a lot of tabs" style="max-width: 100%"/>
   <figcaption>Chrome with a lot of tabs</figcaption>
 </figure>
 
