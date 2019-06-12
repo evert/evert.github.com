@@ -68,11 +68,12 @@ organized, and I'm sure there are plenty of people like myself. But for all
 the people that accumulate hundreds of tabs, I feels like the time is right for
 a better paradigm that combines bookmarks, tabs and history.
 
-Maybe organizing sessions in interactive timelines and groups things together
-based on behavior would be better suited. I think anything that requires active
-management and organizing would probably fail. I don't think I would remove the
-tab altogether, but just show me the last few things, treat them as emphemeral
-and provide an option to explore my current and previous session(s).
+Perhaps organizing sessions in interactive timelines and grouping things together
+based on the user's behavior might be a better approach. I believe that anything
+that requires active management and organizing would probably not work though.
+I don't think I would remove the tab altogether, but just show me the last few
+things, treat them as emphemeral and provide an option to explore my current
+and previous session(s).
 
 I'm sure experiments are out there, but so far it doesn't seem like major
 browser vendors have had the guts to release something new. This is a bit
