@@ -14,11 +14,8 @@ This response can be used if either the total size of all headers exceeded some
 limit, or if there are individual headers that are too big.
 
 If a client sees a `431`, it could hypothetically remove some headers and try
-again, but I'm not really sure how a client could automatically identify
-unimportant headers.
+again. The most obvious candidate for this could be removing cookies.
 
-Aside from that, `431` can still be a useful signal to a developer that they
-should manually try to reduce the request header size.
 
 Example
 -------
