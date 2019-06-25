@@ -3,8 +3,10 @@ date: "2019-06-25 15:00:00 UTC"
 title: "451 Unavailable For Legal Reasons"
 permalink: /http/451-unavailable-for-legal-reasons
 tags:
-   - http
-   - http-series
+  - http
+  - http-series
+location: "Bloor St W, Toronto, ON, Canada"
+geo: [43.660942, -79.429954]
 ---
 
 If a server refuses to serve content for legal reasons, it can use the
