@@ -143,7 +143,7 @@ along:
 Thanks guys! You rock.
 
 [1]: http://sabre.io/
-[2]: http://sabre.io/vobject/usage/
+[2]: http://sabre.io/vobject/
 [3]: http://tools.ietf.org/html/draft-ietf-jcardcal-jcard-03
 [4]: http://tools.ietf.org/html/draft-ietf-jcardcal-jcal-04
 [5]: https://github.com/fruux/sabre-vobject/blob/master/doc/MigratingFrom2to3.md
