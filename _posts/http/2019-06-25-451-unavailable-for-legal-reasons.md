@@ -18,9 +18,10 @@ to discuss that the content was censored. For those cases the `451` status is
 not going to be very useful, but for cases where it _can_ be discussed, it's
 a good status code to use. It's a more specific version of [`403 Forbidden`][3].
 
-The number 451 is a reference to the book [Fahrenheit 451][4], where censoring
-literature is one of the central themes. 'Fahrenheit 451' is itself a reference
-to the temperature at which book ignite (232°C in the developed world).
+The number 451 is a reference to the book [Fahrenheit 451][4], by Ray Bradbury.
+In the book censorship of literature is one of the central themes. 'Fahrenheit
+451' is itself a reference to the temperature at which books ignite (232°C in
+the developed world).
 
 When a resource is blocked, a server should also respond with a `Link` header
 identifiying who blocked the request.
