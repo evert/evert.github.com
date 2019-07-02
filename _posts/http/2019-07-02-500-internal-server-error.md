@@ -5,6 +5,8 @@ permalink: /http/500-internal-server-error
 tags:
    - http
    - http-series
+location: "Bloor St W, Toronto, ON, Canada"
+geo: [43.660942, -79.429954]
 ---
 
 While the 4xx-series errors are specifically for client-side errors, the
