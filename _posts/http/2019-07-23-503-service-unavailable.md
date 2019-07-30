@@ -7,12 +7,12 @@ tags:
    - http-series
 ---
 
-[`503 Service Unavailable`][1] is a status that a server can send when they
-are overloaded, or otherwise incapable of handling a request. It couls still
-be starting, or it perhaps the application is partially down.
+[`503 Service Unavailable`][1] is a status that a server can send when it is
+overloaded, or otherwise incapable of handling a request. Maybe the server is
+just bootin gup, or perhaps the application is partially down.
 
 When this status is returned, a server can optionally include a `Retry-After`
-header to tell a client when to try the request again. 
+header to tell a client when to try the request again.
 
 Example
 -------
