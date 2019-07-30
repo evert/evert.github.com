@@ -5,6 +5,8 @@ permalink: /http/503-service-unavailable
 tags:
    - http
    - http-series
+location: Adelaide St W, Toronto, ON, Canada
+geo: [43.647767, -79.389963]
 ---
 
 [`503 Service Unavailable`][1] is a status that a server can send when it is

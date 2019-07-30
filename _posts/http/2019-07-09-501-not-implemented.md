@@ -5,6 +5,8 @@ permalink: /http/501-not-implemented
 tags:
    - http
    - http-series
+location: Adelaide St W, Toronto, ON, Canada
+geo: [43.647767, -79.389963]
 ---
 
 A server can return [`501 Not Implemented`][1] when it doesn't support a

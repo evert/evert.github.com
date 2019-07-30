@@ -5,6 +5,8 @@ permalink: /http/504-gateway-timeout
 tags:
    - http
    - http-series
+location: Adelaide St W, Toronto, ON, Canada
+geo: [43.647767, -79.389963]
 ---
 
 [`504 Gateway Timeout`][1] is a status a proxy might emit, when it's acting
