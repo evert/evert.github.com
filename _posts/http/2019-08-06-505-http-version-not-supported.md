@@ -5,6 +5,8 @@ permalink: /http/505-http-version-not-supported
 tags:
    - http
    - http-series
+location: "Muskoka, Canada"
+geo: [45.197939, -79.779739]
 ---
 
 [`505 HTTP Version Not Supported`][1] is a status that a server can emit if
