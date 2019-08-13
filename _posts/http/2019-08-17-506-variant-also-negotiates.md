@@ -5,6 +5,8 @@ permalink: /http/506-variant-also-negotiates
 tags:
    - http
    - http-series
+location: Adelaide St W, Toronto, ON, Canada
+geo: [43.647767, -79.389963]
 ---
 
 In 1998 [RFC2295][3] was published. It's experimental, and meant to introduce
