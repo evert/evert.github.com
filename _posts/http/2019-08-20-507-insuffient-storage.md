@@ -5,6 +5,8 @@ permalink: /http/507-insufficient-storage
 tags:
    - http
    - http-series
+location: Adelaide St W, Toronto, ON, Canada
+geo: [43.647767, -79.389963]
 ---
 
 [`507 Insufficient Storage`][1] is a status code that's introduced by the
