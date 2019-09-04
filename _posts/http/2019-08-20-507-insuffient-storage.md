@@ -52,7 +52,7 @@ to use the more appropriate [`413 Payload Too Large`][3].
 References
 ----------
 
-* [RFC4918, Section 11.5][3] - 507 Insuffient Storage
+* [RFC4918, Section 11.5][1] - 507 Insuffient Storage
 
 [1]: https://tools.ietf.org/html/rfc4918#section-11.5 "507 Insufficient Storage"
 [2]: https://tools.ietf.org/html/rfc4918 "HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)"
