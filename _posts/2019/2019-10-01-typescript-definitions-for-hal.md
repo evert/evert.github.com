@@ -28,9 +28,14 @@ Because there's really not that much to it, here's the entire source, in-line:
 export interface HalLink {
 
   /**
-   * Target of the link
+   * Target of the link.
    */
   href: string;
+
+  /**
+   * Content-type of the target resource.
+   */
+  type?: string;
 
   /**
    * If set to true, the href should be interpeted as a URI-Template (RFC6570).
