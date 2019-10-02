@@ -33,7 +33,7 @@ The new relationship types I'm hoping to define are:
 * `register-user` - Which might be used to find for example a login form, or
   and API endpoint where new users can be created.
 
-The full document can be read here: https://tools.ietf.org/html/draft-pot-authentication-link-01
+The full document can be read here: <https://tools.ietf.org/html/draft-pot-authentication-link-01>
 
 If you think this is an interesting spec, or if you've already adopted this
 or something similar, your feedback on the IETF Art list would be very
