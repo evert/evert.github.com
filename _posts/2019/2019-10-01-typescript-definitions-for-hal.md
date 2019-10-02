@@ -8,6 +8,8 @@ tags:
   - hateoas
   - links
   - typescript
+geo: [43.660773, -79.429926]
+location: "Bloor St W, Toronto, Canada"
 ---
 
 I've been working a lot with [HAL][1] and lately also the [link hints draft][2],
