@@ -1,5 +1,5 @@
 ---
-title: "Building awaitable and fluent interfaces in javascript"
+title: "Building awaitable and fluent interfaces in Javascript"
 date: "2019-10-28 23:06:14 UTC"
 tags:
   - javascript
@@ -32,7 +32,7 @@ const articles = await getArticles();
 
 I wanted to give users the ability to add custom HTTP headers to this call.
 
-The easy way to do this would simply be to add an optional `headers` argument
+The easy way to do this would simply be to add an option `headers` argument
 to `getArticles()`. In most cases this is probably the right choice.
 
 In my case though, HTTP headers is not the only optional someone might need,
@@ -176,7 +176,7 @@ avoid this pattern until you can't.
 
 Using this pattern will make your implementation much more complicated, but
 the potential benefit is a nicer interface. Interface is more important than
-implementation, but there's a line... be careful to not exceed it.
+implementation, but be careful not to make maintenance too difficult.
 
 ### Typescript
 
