@@ -1,5 +1,6 @@
 ---
 date: 2016-12-14 21:42:38 -0500
+updated_date: 2019-10-29 19:07:42 UTC
 layout: post
 title: "Working with HAL in PUT requests"
 tags:
@@ -16,14 +17,8 @@ At my [new company][1], we're developing a REST api. We're trying to strike
 the balance between 'easy to use' and sticking to the rules of REST, and
 that's given us more than a few unforseen benefits. When you work within a
 framework that a lot of people have spent time thinking about, there's a
-lot of answers if you know where to look.
-
-Originally this service was built using the [JSON API][2] specification, but
-we've thankfully adjusted our course early in the process and rewrote
-everything to use [HAL][3] instead.
-
-Whereas JSON API is almost like an "ORM over HTTP", HAL does a lot less for
-you though, so it's not really an apples-to-apples type of comparison.
+lot of answers if you know where to look. For this API, we've decided to use
+[HAL][3] as the primary format.
 
 HAL really is just a document format for a hypermedia API, like HTML is for
 hypertext. It doesn't tell you how to express your domain model, and doesn't
