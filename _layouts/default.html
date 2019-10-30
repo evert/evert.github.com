@@ -22,7 +22,7 @@
     <meta property="twitter:image" content="https://evertpot.com/resources/flower-icon.png" />
     <meta property="twitter:creator" content="@evertp" />
 
-    {% if page.tags %}<meta property="keywords" content="{{page.tags | join ", "}}" />{% endif %}
+    {% if page.tags %}<meta property="keywords" content="{{page.tags | join: ", "}}" />{% endif %}
 
     {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
 
