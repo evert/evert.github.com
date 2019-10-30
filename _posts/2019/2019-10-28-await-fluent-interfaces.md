@@ -174,9 +174,9 @@ its result and return it for future uses of `then()`.
 Anyway, that's it! This is _complicated_ and my general advice would be to
 avoid this pattern until you can't.
 
-Using this pattern will make your implementation much more complicated, but
+Using this pattern will make your implementation less legible, but
 the potential benefit is a nicer interface. Interface is more important than
-implementation, but be careful not to make maintenance too difficult.
+implementation, but be careful not to make maintenance too hard.
 
 ### Typescript
 
