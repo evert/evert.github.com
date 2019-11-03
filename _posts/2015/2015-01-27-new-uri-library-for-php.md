@@ -71,7 +71,7 @@ Links:
 
 [1]: https://github.com/php-fig/fig-standards/blob/master/proposed/http-message.md
 [2]: http://sabre.io/dav/
-[3]: https://tools.ietf.org/html/rfc398
+[3]: https://tools.ietf.org/html/rfc3986
 [4]: https://packagist.org/packages/sabre/uri
 [5]: http://sabre.io/uri/usage/
 [6]: https://github.com/fruux/sabre-uri
