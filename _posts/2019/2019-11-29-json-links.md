@@ -225,7 +225,7 @@ not 100% sure if it's possible to encode RFC8288 links in a lossless way.
 The issue with not having a good default
 ----------------------------------------
 
-New formats get invented every day, and may of them will have some need to
+New formats get invented every day, and many of them will have some need to
 encode a link.
 
 Using something like [JSON:API][12] or [Siren][11] - although a good choice -
