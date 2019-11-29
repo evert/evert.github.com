@@ -66,8 +66,8 @@ What follows is a nonexhaustive list of existing link serializations in JSON.
 }
 ```
 
-HAL links are technically both a sub- and superset of RFC8282, because it adds
-features such as 'templated' links, but it also explicitly allows colon `:`
+HAL links are technically both a sub- and superset of [RFC8288][1], because it
+adds features such as 'templated' links, but it also explicitly allows colon `:`
 in relationship types. HAL calls these 'curies' but they are not compatible
 with [W3C CURIES][10], and also shouldn't be used as such (they are not meant
 to be expanded, yes this is confusing).
@@ -110,7 +110,7 @@ support for `type` or `hreflang`.
 }
 ```
 
-[Source](https://github.com/kevinswiber/siren)
+[Source][11]
 
 ### draft-wilde-linkset
 
@@ -216,33 +216,33 @@ Many API formats use a convention as follows:
 ```
 
 The [Github v3 API][2] uses this convention, and it's formalized a bit more
-in [RESTful JSON][3]. You can see this convention used in the
-[OAuth2 discovery document][4], although it uses the `_uri` prefix, which is
-_probably_ more correct.
+in [RESTful JSON][3]. You can also see this convention used in the
+[OAuth2 discovery document][4], although it uses the `_uri` prefix.
 
 There is also [JSON-LD][4] and Hydra, which is a pretty popular format. I'm
-not sure if it's possible to encode RFC8288 links in a lossless way.
+not 100% sure if it's possible to encode RFC8288 links in a lossless way.
 
 The issue with not having a good default
 ----------------------------------------
 
 New formats get invented every day, and may of them will have some need to
-encode a link
+encode a link.
 
-Using something like JSON:API or Siren - although a good choice - is a big
-decision. Maybe even an emotional one. These standards are larger than their
-formats. They're fairly opiniated and imply a buy-in into these opinions and
-their ecosystems.
+Using something like [JSON:API][12] or [Siren][11] - although a good choice -
+is a big decision. Maybe even an emotional one. These standards are larger than
+their formats. They're fairly opiniated and imply a buy-in into these opinions
+and their ecosystems.
 
 The result is when authors of IETF RFC's or other standards bodies run into
 this road block, they tend to just invent their own, often drawing inspiration
 on what's out there.
 
 I would really like to see a simple, uncontroversial IETF RFC that *just* makes
-a good suggestion on how to encode a link, and a set of links so the next time
-the groups behind OAuth2, Web Things API or specialized single-purpose formats
-like [json-home][5] or [Linkset][6] only have to do something unique if they
-are really need to.
+a good suggestion on how to encode a [RFC8288][1] link and a set of links so the
+next time the groups behind OAuth2, Web Things API or specialized single-purpose
+formats like [json-home][5] or [Linkset][6] only have to do something unique if
+they really have a unique need.
+
 
 How should it look like?
 ------------------------
@@ -313,3 +313,5 @@ Example template:
 [8]: https://twitter.com/evertp/status/1200375387525697537
 [9]: https://github.com/evert/evert.github.com/blob/master/_posts/2019/2019-11-29-json-links.md "This post on Github"
 [10]: https://www.w3.org/TR/2010/NOTE-curie-20101216/ "A syntax for expressing Compact URIs"
+[11]: https://github.com/kevinswiber/siren "Siren"
+[12]: https://jsonapi.org/
