@@ -34,7 +34,7 @@ The general shape
 Most (but not everyone) of the API community has accepted ['Web linking'][1]
 as the de-facto datamodel.
 
-Broadly, this means that a link should at least have a uri (`href`) and a
+Broadly, this means that a link should at least have a URI (`href`), a
 relationship type (`rel`) and optionally the following attributes:
 
 * `title`
@@ -43,8 +43,8 @@ relationship type (`rel`) and optionally the following attributes:
 * `media`
 
 Aside from support for these attributes, I feel that for something to be a
-successful 'good default' and actually adopted is a dedicated IETF RFC, and
-ideally one that's focussed on just links and not part of a larger standard.
+successful 'good default' and actually adopted it would need a dedicated IETF
+RFC. One that's ideally just focuses links and not part of a larger standard.
 
 
 Existing JSON link formats
@@ -54,7 +54,7 @@ What follows is a nonexhaustive list of existing link serializations in JSON.
 
 ### HAL
 
-```javascript
+```json5
 {
   _links: {
     author: {
