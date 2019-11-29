@@ -66,15 +66,13 @@ What follows is a nonexhaustive list of existing link serializations in JSON.
 }
 ```
 
-HAL is technically both a sub- and superset of RFC8282, because it adds
+HAL links are technically both a sub- and superset of RFC8282, because it adds
 features such as 'templated' links, but it also explicitly allows colon `:`
 in relationship types. HAL calls these 'curies' but they are not compatible
-with W3C CURIES, and also shouldn't be used as such (they are not meant to
-be expanded, yes this is confusing). HAL also officially doesn't have a
-`type` property.
+with [W3C CURIES][10], and also shouldn't be used as such (they are not meant
+to be expanded, yes this is confusing).
 
 [Source](https://tools.ietf.org/html/draft-kelly-json-hal-00#section-5)
-
 
 ### Collection+JSON
 
@@ -314,3 +312,4 @@ Example template:
 [7]: https://xkcd.com/927/
 [8]: https://twitter.com/evertp
 [9]: https://github.com/evert/evert.github.com/blob/master/_posts/2019/2019-11-29-json-links.md "This post on Github"
+[10]: https://www.w3.org/TR/2010/NOTE-curie-20101216/ "A syntax for expressing Compact URIs"
