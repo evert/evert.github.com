@@ -32,7 +32,7 @@ The general shape
 -----------------
 
 Most (but not everyone) of the API community has accepted ['Web linking'][1]
-as the de-facto datamodel. 
+as the de-facto datamodel.
 
 Broadly, this means that a link should at least have a uri (`href`) and a
 relationship type (`rel`) and optionally the following attributes:
@@ -40,7 +40,7 @@ relationship type (`rel`) and optionally the following attributes:
 * `title`
 * `hreflang`
 * `type`
-* `media` 
+* `media`
 
 Aside from support for these attributes, I feel that for something to be a
 successful 'good default' and actually adopted is a dedicated IETF RFC, and
@@ -93,7 +93,7 @@ be expanded, yes this is confusing). HAL also officially doesn't have a
 ```
 
 Collection+JSON adds the `prompt` and `render` properties. It has no explicit
-support for `type` or `hreflang`. 
+support for `type` or `hreflang`.
 
 [Source](http://amundsen.com/media-types/collection/format/)
 
@@ -101,7 +101,7 @@ support for `type` or `hreflang`.
 
 ```javascript
 {
-  links: [ 
+  links: [
     {
       rel: ['author'],
       href: 'https://evertpot.com/',
@@ -167,7 +167,7 @@ support for `type` or `hreflang`.
       // Long
       author: {
         href: 'https://evertpot.com/',
-      } 
+      }
     }
   ]
 }
@@ -207,7 +207,7 @@ to have the same link relationship.
 
 [Source](https://tools.ietf.org/html/draft-nottingham-json-home-06)
 
-### Other notable JSON links 
+### Other notable JSON links
 
 Many API formats use a convention as follows:
 
@@ -296,7 +296,7 @@ What do you think?
 <!--
 
 If you're writing a pull request, add you contribution above this
-text. 
+text.
 
 Example template:
 
@@ -313,4 +313,4 @@ Example template:
 [6]: https://tools.ietf.org/html/draft-wilde-linkset-04 "Linkset"
 [7]: https://xkcd.com/927/
 [8]: https://twitter.com/evertp
-[9]: 
+[9]: https://github.com/evert/evert.github.com/blob/master/_posts/2019/2019-11-29-json-links.md "This post on Github"
