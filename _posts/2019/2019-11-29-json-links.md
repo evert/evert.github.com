@@ -54,7 +54,7 @@ What follows is a nonexhaustive list of existing link serializations in JSON.
 
 ### HAL
 
-```json5
+```
 {
   _links: {
     author: {
@@ -76,7 +76,7 @@ to be expanded, yes this is confusing).
 
 ### Collection+JSON
 
-```javascript
+```
 {
   collection: {
     links: [
@@ -97,7 +97,7 @@ support for `type` or `hreflang`.
 
 ### Siren
 
-```javascript
+```
 {
   links: [
     {
@@ -114,7 +114,7 @@ support for `type` or `hreflang`.
 
 ### draft-wilde-linkset
 
-```javascript
+```
 {
   linkset: [
     {
@@ -139,7 +139,7 @@ support for `type` or `hreflang`.
 
 ### Web Thing API
 
-```javascript
+```
 {
   links: [
     {
@@ -155,7 +155,7 @@ support for `type` or `hreflang`.
 
 ### JSON:API
 
-```javascript
+```
 {
   links: [
     {
@@ -179,7 +179,7 @@ not provide a way for a specific links relationship to appear twice.
 ### draft-nottingham-json-home
 
 
-```javascript
+```
 {
   api: {
     links: {
@@ -209,7 +209,7 @@ to have the same link relationship.
 
 Many API formats use a convention as follows:
 
-```javascript
+```
 {
   author_url: 'https://evertpot.com/'
 }
@@ -250,7 +250,7 @@ How should it look like?
 Based on what everyone is doing, it feels that the least controversial way to
 encode a single link would look a bit like this:
 
-```javascript
+```
 {
   rel: 'author',
   href: 'https://evertpot.com/',
@@ -261,7 +261,7 @@ encode a single link would look a bit like this:
 
 And a collection of links would just be an array of these objects:
 
-```javascript
+```
 {
   links: [
     {
