@@ -310,6 +310,6 @@ Example template:
 [5]: https://tools.ietf.org/html/draft-nottingham-json-home-06  "Home Documents for HTTP APIs"
 [6]: https://tools.ietf.org/html/draft-wilde-linkset-04 "Linkset"
 [7]: https://xkcd.com/927/
-[8]: https://twitter.com/evertp
+[8]: https://twitter.com/evertp/status/1200375387525697537
 [9]: https://github.com/evert/evert.github.com/blob/master/_posts/2019/2019-11-29-json-links.md "This post on Github"
 [10]: https://www.w3.org/TR/2010/NOTE-curie-20101216/ "A syntax for expressing Compact URIs"
