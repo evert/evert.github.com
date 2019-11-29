@@ -44,7 +44,7 @@ relationship type (`rel`) and optionally the following attributes:
 
 Aside from support for these attributes, I feel that for something to be a
 successful 'good default' and actually adopted it would need a dedicated IETF
-RFC. One that's ideally just focuses links and not part of a larger standard.
+RFC. One that's ideally just focuses on links and not part of a larger standard.
 
 
 Existing JSON link formats
@@ -230,7 +230,7 @@ encode a link.
 
 Using something like [JSON:API][12] or [Siren][11] - although a good choice -
 is a big decision. Maybe even an emotional one. These standards are larger than
-their formats. They're fairly opiniated and imply a buy-in into these opinions
+their formats. They're fairly opinionated and imply a buy-in into these opinions
 and their ecosystems.
 
 The result is when authors of IETF RFC's or other standards bodies run into
@@ -278,7 +278,7 @@ This allows links to appear in-line and and on a document-level, it can fully
 encode [RFC8288][1] and it looks a lot many other things out there.
 
 This is not really a specification, but I thought I would start with just
-floating this as an idea. One issue with this illustrated well in
+floating this as an idea. One issue with this is illustrated well in
 [XKCD 927][7], but my goal with this idea is not really coming up with a
 standard to unify them all. I just want something to exist for folks that
 don't want to make this decision and I do think it needs the weight of a IETF
