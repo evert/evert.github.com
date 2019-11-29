@@ -241,7 +241,7 @@ I would really like to see a simple, uncontroversial IETF RFC that *just* makes
 a good suggestion on how to encode a [RFC8288][1] link and a set of links so the
 next time the groups behind OAuth2, Web Things API or specialized single-purpose
 formats like [json-home][5] or [Linkset][6] only have to do something unique if
-they really have a unique need.
+they have an actual unique need.
 
 
 How should it look like?
@@ -314,4 +314,4 @@ Example template:
 [9]: https://github.com/evert/evert.github.com/blob/master/_posts/2019/2019-11-29-json-links.md "This post on Github"
 [10]: https://www.w3.org/TR/2010/NOTE-curie-20101216/ "A syntax for expressing Compact URIs"
 [11]: https://github.com/kevinswiber/siren "Siren"
-[12]: https://jsonapi.org/
+[12]: https://jsonapi.org/ "A specification for building APIs in JSON"
