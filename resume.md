@@ -9,7 +9,7 @@ Evert Pot
 
 _Web architect, API developer_
 
-* Last update: *April 17, 2019*.
+* Last update: *December 17th, 2019*.
 * Location: Toronto, ON, Canada.
 * Contact: <mailto:work@evertpot.com>.
 
@@ -36,6 +36,28 @@ Links
 
 Experience
 ----------
+
+### Owner at Bad Gateway, Toronto, 2019-now
+
+In June 2019 I started a new software development agency in Toronto. Our team
+builds Web Applications and APIs for a number of clients.
+
+### Software Engineer at Ascendant Digital, Cayman Islands/Toronto - 2018-now
+
+Ascendant Digital is a private investment firm, providing investors exposure
+to crypto currencies.
+
+My role was to develop tools to help the company analyze the market, to build
+a system for tracking performance and reconsilation of different investment
+strategies and advise on information security.
+
+To do this, I've built REST apis (primarily HAL) in Node.js and Typescript,
+browser-based frontends using React, integrations with tools such as Google
+Sheets and Dropbox and various serverless processes using the AWS ecosystem.
+
+Initially I joined the team as a full-time position, but as my services became
+less necessary, my role became a fractional position allowing me to start my
+own agency.
 
 ### Technical Lead at Yelp, Toronto/San Francisco - 2016-2018
 
