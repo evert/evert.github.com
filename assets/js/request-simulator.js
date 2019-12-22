@@ -37,6 +37,13 @@ const testData = {
     mode: 'cache',
     legend: ['cached', 'loading', 'received', 'pushed'],
   },
+  'h2-cors': {
+    httpVersion: '2',
+    title: 'Every request needs an OPTIONS pre-flight',
+    byline: 'The lack of a domain-wide cross-domain policy slows everything down.',
+    mode: 'cors',
+    legend: ['loading', 'preflight', 'received'],
+  },
 
 }
 
@@ -45,9 +52,7 @@ function main() {
   const containers = document.getElementsByClassName('request-simulator');
 
   for(const container of containers) {
-
     loadTestSample(container, container.dataset.id);
-
   }
 
 }
@@ -79,6 +84,8 @@ function renderTemplate(elem, test)  {
         return '<span class="pushed"></span> Received via HTTP/2 Server Push';
       case 'cached' :
         return '<span class="cached"></span> Cached';
+      case 'preflight' :
+        return '<span class="preflight"></span> Received OPTIONS response';
     }
 
   }).join('');
@@ -138,6 +145,9 @@ async function startTest(test, grid) {
     case 'cache':
       await cacheTest(test, grid);
       break;
+    case 'cors':
+      await corsTest(test, grid);
+      break;
   }
 
 }
@@ -174,6 +184,44 @@ async function parallelTest(test, grid) {
   await Promise.all(promises);
 
 }
+
+async function corsTest(test, grid) {
+
+  const promises = [];
+  const throttler = new RequestThrottler(test.httpVersion === '1.1' ? 6 : 1000);
+
+  let first = true;
+
+  for(const cell of grid) {
+    // Adding a tiny delay since there is a small
+    // amount of overhead in kicking off a request
+    await delay(5);
+
+    if (first) {
+      first = false;
+      // Hit for the first collection. This should block everything else.
+      cell.className='loading';
+      await slowRequest();
+      cell.className='preflight';
+      await slowRequest();
+      cell.className = 'received';
+      continue;
+    }
+
+    promises.push((async () => {
+      await throttler.go(() => {
+        cell.className = 'loading';
+      })
+      cell.className = 'preflight';
+      await throttler.go(() => {});
+      cell.className = 'received';
+    })());
+  }
+
+  await Promise.all(promises);
+
+}
+
 async function pushTest(test, grid) {
 
   const promises = [];

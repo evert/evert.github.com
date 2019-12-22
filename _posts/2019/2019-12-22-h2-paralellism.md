@@ -9,8 +9,8 @@ tags:
 ---
 
 
-<link href="/css/request-simulator.css" rel="stylesheet" type="text/css" />
-<script src="/js/request-simulator.js"></script>
+<link href="/assets/css/request-simulator.css" rel="stylesheet" type="text/css" />
+<script src="/assets/js/request-simulator.js"></script>
 
 When building web services, a common wisdom is to try reduce the number of
 HTTP requests to improve performance.
@@ -214,14 +214,47 @@ function articlesIndex(request, response, connection) {
 }
 ```
 
+## The CORS problem
+
+A major drawback that's worth pointing out, is [CORS][7]. CORS originally
+opened the door to making it easier to do HTTP requests from a web application
+that's hosted on some domain, to an API hosted on another domain.
+
+It does this with a few different facilities, but one that specifically kills
+performance is the pre-flight request.
+
+When doing 'unsafe' cross-domain requests, the browser will start off by doing
+a `OPTIONS` request, allowing the server to explicitly opt-in to requests.
+
+In practice most API requests are 'unsafe'. The implication is that the latency
+of each individual HTTP request at least doubles.
+
+<div class="request-simulator" data-id="h2-cors"></div>
+
+WHat's interesting is that Macromedia Flash also had this issue, and they
+solved with by creating a domain-wide cross-origin request policy. All you had
+to do is create a `crossdomain.xml` file on the root of your domain, and once
+Flash read the policy it would remember it.
+
+Every few months I search to see if someone is working on this, and this time
+I've found a [W3C Draft Specification][8]. Here's hoping browser vendors pick
+this up!
+
+A less elegant workaround to this, is to host a 'proxy script' on the API's
+domain. Embedded via an IFrame, it has unrestricted access to its own 'origin'.
+
+The parent web application can communicate to it via
+[`Window.postMessage()`][9].
+
 ## The perfect world
 
 In a perfect world, HTTP/3 is already widely available, improving performance
 even further, browsers have a standard mechansim to send [cache digests][5],
 clients inform the server of the link-relationships they want, allowing API
-servers to push any resources clients may need, as early as possible.
+servers to push any resources clients may need, as early as possible, and
+domain-wide origin policies are a thing.
 
-The last simulation show an example of how that might look like. In the below
+This last simulation show an example of how that might look like. In the below
 example the browser has a warmed up cache, and an ETag for every item.
 
 When doing a request to find out if the collection has new entries or updated
@@ -230,55 +263,54 @@ just the resources that have changed.
 
 <div class="request-simulator" data-id="h2-cached"></div>
 
+## Real-world performance testing
 
-## Real-world performance
+We're lacking some of these 'perfect world' features, but we can still work
+with what we got. We have access to HTTP/2 Server Push, and requests are cheap.
 
-The above concepts have felt to me as the 'right' way to build REST apis,
-but so far the benefits have somewhat 
-
-
-## The test
+Since HTTP/2, 'many, small HTTP endpoints' felt to me like it was the most
+elegant design, but do the numbers hold up? Some evidence would could really
+help.
 
 My goal for this performance test is fetch a collection of items in the
 following different ways:
 
-1. A HTTP/1.1 compound collection.
-2. A HTTP/2 compound collection.
-3. A HTTP/2 collection + every item individually fetched, no cache
-4. A HTTP/2 collection + every item invividually fetched, but many are cached
-   and can be revalidated with an `If-None-Match` header.
-5. A HTTP/2 collection + every item invividually fetched, but many are cached
-   with a future max-age so most requests will come directly from a browser
+1. `h1` - Invididual HTTP/1.1 requests
+2. `h1-compound` - A HTTP/1.1 compound collection.
+3. `h2` - Invididual HTTP/2 requests
+4. `h2-compound` -  HTTP/2 compound collection.
+5. `h2-cache` - A HTTP/2 collection + every item invividually fetched. Warm
    cache.
-6. HTTP/2, no cache, but every item is pushed.
-
-For each of these cases I want try to simulate real-world conditions by
-adding latency and run the test using 1, 100 and 1000 items in the collection.
-
-No test will use `Prefer-Push`, as the push-related tests all already assume
-the client will want every item pushed.
+6. `h2-cache-stale` - A HTTP/2 collection + every item invividually fetched,
+   Warm cache but needs revalidation.
+7. `h2-push` - HTTP/2, no cache, but every item is pushed.
 
 ## My prediction
 
-I suspect that for the cases that have no cache, HTTP/2 will win and HTTP/1.1
-will be a close second.
+In theory, the same amount of information is sent and work is done for a
+compound request vs. HTTP/2 pushed responses.
 
-I believe that there's still enough overhead in many HTTP/2 requests that
-overall these will still be slower.
+However, I think there's still enough overhead to HTTP requests in HTTP/2
+that the compound request will will win.
 
 The real benefit will show when caching comes in to play. For a given
 collection in a typical API I think it's fair to assume that many items may
-be cached, so I will write the tests such that 90% of all requests are
-cached.
+be cached.
 
-So my prediction in terms of speed:
+It seems logical to assume that the tests that skip 90% of the work are
+also the fastest.
 
-1. HTTP/2, 90% cached, `no-revalidate`
-2. HTTP/2, 90% cached, `If-None-Match`
-3. HTTP/2 compound
-4. HTTP/1.1 compound
-5. HTTP/2, Push (`no-revalidate`, `If-None-Match` and no cache at all more or less tie).
-6. HTTP/2, no cache, no push
+So from fastest to slowest, this is my prediction. 
+
+1. `h2-cache` - A HTTP/2 collection + every item invividually fetched. Warm
+   cache.
+2. `h2-cache-stale` - A HTTP/2 collection + every item invividually fetched,
+   Warm cache but needs revalidation.
+3. `h2-compound` -  HTTP/2 compound collection.
+4. `h1-compound` - A HTTP/1.1 compound collection.
+5. `h2-push` - HTTP/2, no cache, but every item is pushed.
+6. `h2` - Invididual HTTP/2 requests
+7. `h1` - Invididual HTTP/1.1 requests
 
 ## First test setup and initial observations
 
@@ -346,3 +378,6 @@ Second test set up:
 [4]: https://tools.ietf.org/html/rfc4287
 [5]: https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest-05
 [6]: https://tools.ietf.org/html/draft-pot-prefer-push
+[7]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+[8]: https://wicg.github.io/origin-policy/ "Origin Policy"
+[9]: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage "MDN: Window.postMessage()"

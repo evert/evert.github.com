@@ -76,6 +76,9 @@
 .request-simulator span.received {
   background: #363;
 }
+.request-simulator span.preflight {
+  background: #cc4;
+}
 .request-simulator span.cached {
   background: #d80;
 }
