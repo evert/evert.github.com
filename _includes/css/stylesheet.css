@@ -111,7 +111,7 @@ pre {
     font-family: "Monaco", monospace;
 }
 .flower {
-    background-image: url(../resources/flowerstatic.gif), url(../resources/flower200.gif);
+    background-image: url(/assets/img/flowerstatic.gif), url(/assets/img/flower200.gif);
     background-repeat: no-repeat;
     background-position: 0 0, 0 70px;
     width: 50px;
