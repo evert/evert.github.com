@@ -325,3 +325,10 @@ body.map main #map {
   overflow-x: auto;
 }
 
+
+.draft-warning {
+  background: #C33;
+  color: white;
+  font-size: 120%;
+  text-align: center;
+}

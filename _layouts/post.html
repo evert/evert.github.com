@@ -2,6 +2,10 @@
 layout: default
 ---
 
+{% if page.draft %}
+<div class="draft-warning">This is a DRAFT. Do not share</div>
+{% endif %}
+
 <div class="subscribe"><a href="/subscribe">subscribe</a></div>
 <article class="h-entry">
 <time datetime="{{ page.date | date: "%Y-%m-%d" }}" class="dt-published">{{ page.date | date: "%B %d, %Y" }}</time>

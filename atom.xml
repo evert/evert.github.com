@@ -14,6 +14,7 @@ layout: null
   </author>
 
   {% for post in site.posts limit:20 %}
+  {% unless post.draft %}
   <entry>
     <id>http://evertpot.com{{ post.url }}</id>
     <link type="text/html" rel="alternate" href="https://evertpot.com{{ post.url }}"/>
@@ -25,6 +26,7 @@ layout: null
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
+  {% endunless %}
   {% endfor %}
 
 </feed>

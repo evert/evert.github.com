@@ -82,6 +82,7 @@ archive. Don't scroll too far though, quality degrades as you go backwards in ti
 {% endif %}
 {% endunless %}
 
+{% unless post.draft %}
 <li>
   <time datetime="{{ post.date | date_to_xmlschema }}">
     {{ post.date | date:"%b %d" }}
@@ -89,7 +90,10 @@ archive. Don't scroll too far though, quality degrades as you go backwards in ti
   <a href="{{ post.url }}">{{ post.title }}</a>
 </li>
 
+{% endunless %}
+
 {% assign lastyear = year %}
+
 {% endfor %}
 
 </ul>

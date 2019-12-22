@@ -1,0 +1,93 @@
+.request-simulator {
+
+  background: white;
+  padding: 10px;
+  box-shadow: 5px 5px 40px #0003;
+  margin-bottom: 15px;
+  border-radius: 2px;
+}
+
+.request-simulator h3 {
+  margin: 0 0 10px 0;
+}
+
+.request-simulator .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.request-simulator p {
+  font-style: italic;
+  font-size: 90%;
+  margin: 0;
+}
+
+.request-simulator button {
+  border: 0px;
+  box-shadow: 5px 5px 40px #0007;
+  background: #2B4ED9;
+  color: white;
+  font-size: 120%;
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+
+.request-simulator .legend {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 80%;
+}
+
+.request-simulator .legend span:not(:first-child) {
+  margin-left: 15px;
+}
+
+.request-simulator span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  border: 1px solid #000;
+  background: white;
+  transition: background-color 100ms ease-in
+}
+
+.request-simulator .blocks span {
+  float: left;
+}
+
+.request-simulator .blocks span:first-child {
+  width: 60px;
+  height: 60px;
+}
+
+.request-simulator .blocks:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.request-simulator span.loading {
+  background: #bbb;
+}
+.request-simulator span.received {
+  background: #363;
+}
+.request-simulator span.cached {
+  background: #d80;
+}
+.request-simulator span.pushed {
+  background: #336;
+}
+.request-simulator span.fresh {
+  background: #939;
+}
+.request-simulator span.error {
+  background: #933;
+}
+.request-simulator span.compound {
+  background: #3A3;
+}
