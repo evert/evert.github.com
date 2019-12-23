@@ -12,7 +12,7 @@ tags:
 <link href="/assets/css/request-simulator.css" rel="stylesheet" type="text/css" />
 <script src="/assets/js/request-simulator.js"></script>
 
-When building web services, a common wisdom is to try reduce the number of
+When building web services, a common wisdom is to try to reduce the number of
 HTTP requests to improve performance.
 
 There are a variety of benefits to this, including less total bytes being
@@ -42,7 +42,7 @@ services. Instead of creating small, specific API calls, designers of REST
 (and other HTTP-) services are incentivized to pack many logical 'entities'
 in a single HTTP request/response.
 
-For example, when a API client needs a list of 'articles' from an API, usually
+For example, when an API client needs a list of 'articles' from an API, usually
 they will get this list from a single endpoint instead of fetching each article
 by its own URI.
 
@@ -67,7 +67,7 @@ of arbitrary queries.
 There's a number of drawbacks to this. Systems that require compounding of
 entities typically need additional complexity on both server and client.
 
-Instead of treating a single entity as some object that has an URI, which
+Instead of treating a single entity as some object that has a URI, which
 can be fetched with `GET` and subsequently cached, a new layer is required
 on both server and client-side that's responsible for teasing these entities
 apart.
@@ -91,7 +91,7 @@ on client and server (see GraphQL).
 
 A more lofty drawback is that API designers may have trended towards systems
 that are more opaque, and are no longer part of the web of information due
-to a lack that interconnectiveness that linking affords.
+to a lack that interconnectedness that linking affords.
 
 ## HTTP/2 and HTTP/3
 
@@ -102,7 +102,7 @@ requests can flow through them in parallel, and potentially out of order.
 
 <div class="request-simulator" data-id="h2-nocache"></div>
 
-Instead of delegating paralellism to compound documents, we can now actually
+Instead of delegating parallelism to compound documents, we can now actually
 rely on the protocol itself to handle this.
 
 Using many HTTP/2 requests instead of compound HTTP/1.1 requests has many
@@ -124,7 +124,7 @@ advantages:
 
 There are still benefits that combined requests have over many responses.
 
-Lets use a real example. We're building a blog api that has a list of articles.
+Let's use a real example. We're building a blog api that has a list of articles.
 When we request the list, instead of returning every article we're now just
 returning a list of links:
 
@@ -221,10 +221,10 @@ opened the door to making it easier to do HTTP requests from a web application
 that's hosted on some domain, to an API hosted on another domain.
 
 It does this with a few different facilities, but one that specifically kills
-performance is the pre-flight request.
+performance is the preflight request.
 
 When doing 'unsafe' cross-domain requests, the browser will start off by doing
-a `OPTIONS` request, allowing the server to explicitly opt-in to requests.
+an `OPTIONS` request, allowing the server to explicitly opt-in to requests.
 
 In practice most API requests are 'unsafe'. The implication is that the latency
 of each individual HTTP request at least doubles.
@@ -249,7 +249,7 @@ The parent web application can communicate to it via
 ## The perfect world
 
 In a perfect world, HTTP/3 is already widely available, improving performance
-even further, browsers have a standard mechansim to send [cache digests][5],
+even further, browsers have a standard mechanism to send [cache digests][5],
 clients inform the server of the link-relationships they want, allowing API
 servers to push any resources clients may need, as early as possible, and
 domain-wide origin policies are a thing.
@@ -275,13 +275,13 @@ help.
 My goal for this performance test is fetch a collection of items in the
 following different ways:
 
-1. `h1` - Invididual HTTP/1.1 requests
+1. `h1` - Individual HTTP/1.1 requests
 2. `h1-compound` - A HTTP/1.1 compound collection.
-3. `h2` - Invididual HTTP/2 requests
+3. `h2` - Individual HTTP/2 requests
 4. `h2-compound` -  HTTP/2 compound collection.
-5. `h2-cache` - A HTTP/2 collection + every item invividually fetched. Warm
+5. `h2-cache` - A HTTP/2 collection + every item individually fetched. Warm
    cache.
-6. `h2-cache-stale` - A HTTP/2 collection + every item invividually fetched,
+6. `h2-cache-stale` - A HTTP/2 collection + every item individually fetched,
    Warm cache but needs revalidation.
 7. `h2-push` - HTTP/2, no cache, but every item is pushed.
 
@@ -302,15 +302,15 @@ also the fastest.
 
 So from fastest to slowest, this is my prediction.
 
-1. `h2-cache` - A HTTP/2 collection + every item invividually fetched. Warm
+1. `h2-cache` - A HTTP/2 collection + every item individually fetched. Warm
    cache.
-2. `h2-cache-stale` - A HTTP/2 collection + every item invividually fetched,
+2. `h2-cache-stale` - A HTTP/2 collection + every item individually fetched,
    Warm cache but needs revalidation.
 3. `h2-compound` -  HTTP/2 compound collection.
 4. `h1-compound` - A HTTP/1.1 compound collection.
 5. `h2-push` - HTTP/2, no cache, but every item is pushed.
-6. `h2` - Invididual HTTP/2 requests
-7. `h1` - Invididual HTTP/1.1 requests
+6. `h2` - Individual HTTP/2 requests
+7. `h1` - Individual HTTP/1.1 requests
 
 ## First test setup and initial observations
 
@@ -342,7 +342,7 @@ artificial latency. Running these tests several times, in many cases serving
 items from cache was actually *slower* than going to the server and requesting
 a new copy.
 
-Given these results, I had to improve my test set up.
+Given these results, I had to improve my test setup.
 
 ## Better tests
 
@@ -374,8 +374,8 @@ The second slowest is individual HTTP/2 requests.
 
 This only gets marginally improved by HTTP/2 push or caching.
 
-Chrome and Firefox mostly have the same results. Lets zoom in
-on the Chrome results:
+Chrome and Firefox mostly have the same results. Let's zoom in on the Chrome
+results:
 
 <figure>
   <table>
@@ -431,7 +431,7 @@ on the Chrome results:
 </figure>
 
 Compound requests are by far the fastest. This indicates that my original
-guess was wrong. Even when caching comes in to play, it still can't beat
+guess was wrong. Even when caching comes into play, it still can't beat
 just re-sending the entire collection again in a single compounded response.
 
 Caching does marginally improve on not caching.
@@ -439,7 +439,7 @@ Caching does marginally improve on not caching.
 
 ### Test 2: 500 requests
 
-So lets do the big test. In this test we expect the differences to increase
+So let's do the big test. In this test we expect the differences to increase
 in some areas due to more requests simply taking longer, and we're expecting
 some differences to decrease. In particular, the effect of the 'initial'
 request should be deemphasized.
@@ -517,7 +517,7 @@ unreliable, and using the cache seemed slow.
 </figure>
 
 What we can tell here is at 500 requests, doing compound requests is around
-<strong>1.8x faster</stonger> on Firefox, and <strong>3.26x</strong> faster on
+<strong>1.8x faster</strong> on Firefox, and <strong>3.26x</strong> faster on
 chrome.
 
 The biggest surprise is the speed of browser caches. Our 'normal' test will do
@@ -528,7 +528,7 @@ These results show that doing 501 requests takes around 2.3x as long as doing
 
 In other words, the total time needed for Firefox to request something from
 its cache is only marginally faster from getting that resource from the other
-side of the contintent.
+side of the continent.
 
 This made me wonder if Firefox's cache is just slow in general, or especially
 bad at high concurrent access.
@@ -555,7 +555,7 @@ So treat these results as evidence.
 The evidence tells me that if speed is the most important requirement, you
 should continue to use compound responses.
 
-I do believe though that the results are close enough, that it might be worth
+I do believe though that the results are close enough that it might be worth
 taking a performance hit and gain a potentially simpler system design.
 
 In my tests I felt that caching was not all that important when doing many
@@ -572,6 +572,9 @@ become more important to avoid the N+1 Query problem.
 Almost all these optimizations can benefit the the server implementation and
 load.
 
+However, I still doubt some of these results. If I had more time, I would try
+to test this with a server written in Go, and more realistically simulate
+conditions of the server-side.
 
 [1]: https://graphql.org/
 [2]: https://jsonapi.org/
