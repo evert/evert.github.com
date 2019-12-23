@@ -535,7 +535,8 @@ bad at high concurrent access.
 
 Another thing that stands out here is that Chrome appears to perform especially
 bad when firing off all 500 requests in parallel. More than twice as slow as
-Firefox.
+Firefox. The massive difference made me doubt my results, but I re-ran the
+tests later and I get similar outcomes every time.
 
 We also see that the benefit of using Push becomes less pronounced, as we only
 really save time by reducing the latency of the first request.
