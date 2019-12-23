@@ -66,7 +66,7 @@ can simply ask the pool to execute the query.
 ```javascript
 async function getBlogPost(id) {
 
-  const result = await pool.query('SELECT * from posts WHERE id = ?', [id]); 
+  const result = await pool.query('SELECT * from posts WHERE id = ?', [id]);
   if (!result[0].length < 1) {
     throw new Error('Post with this id was not found');
   }
@@ -81,8 +81,8 @@ query, and the second has the meta data. This subtle decision is my #1
 complaint about the library because it makes a lot of things slightly uglier
 than they need to be.
 
-So if we want just the first record of the result, this would you need to
-use `result[0][0]`.
+So if we want just the first record of the result, you can access it with
+`result[0][0]`.
 
 Whenever I write a function that should return exactly 1 item, I will either
 return an item or throw an error. I don't return `undefined` or `null`.
@@ -93,7 +93,7 @@ A `SELECT` query that returns multiple records is more elegant:
 ```javascript
 async function getAllBlogPost() {
 
-  const result = await pool.query('SELECT * from posts'); 
+  const result = await pool.query('SELECT * from posts');
   return result[0];
 
 }
@@ -150,7 +150,7 @@ async function insertPost(title, body) {
 
   await pool.query(
     'INSERT INTO posts SET ?',
-    { title, body } 
+    { title, body }
   );
 
 }
@@ -195,7 +195,7 @@ async function getByCategoryIds(ids) {
   const result = await pool.query(
     'SELECT * from posts WHERE category_id IN (?)',
     [ids],
-  ); 
+  );
   return result[0];
 
 }
@@ -297,7 +297,7 @@ async function batchingThings() {
   } catch (err) {
 
     await connection.rollback();
-    // Throw the error again so others can catch it. 
+    // Throw the error again so others can catch it.
     throw err;
 
   } finally {
@@ -332,7 +332,7 @@ Questions / comments?
 <!--
 
 If you're writing a pull request, add you contribution above this
-text. 
+text.
 
 Example template:
 
