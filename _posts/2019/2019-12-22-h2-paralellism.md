@@ -577,6 +577,12 @@ However, I still doubt some of these results. If I had more time, I would try
 to test this with a server written in Go, and more realistically simulate
 conditions of the server-side.
 
+Resources:
+
+* [Raw test results](https://github.com/evert/push-benchmark/blob/master/results/raw-data.csv)
+* [Results in Google Sheets](https://docs.google.com/spreadsheets/d/1m2XJKzA4loiqiZr7R5Cl0w34ezsJGrOlxzpGf3Vh35M/edit?usp=sharing)
+* [Scripts used for testing](https://github.com/evert/push-benchmark)
+
 [1]: https://graphql.org/
 [2]: https://jsonapi.org/
 [3]: https://tools.ietf.org/html/draft-kelly-json-hal-00
