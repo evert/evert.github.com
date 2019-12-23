@@ -333,6 +333,14 @@ body.map main #map {
   text-align: center;
 }
 
+figure * {
+  margin: 0 auto;
+}
+
+figure figcaption {
+  text-align: center;
+}
+
 figure video, figure svg {
   max-width: 100%
 }
@@ -340,4 +348,28 @@ figure video, figure svg {
 figure figcaption {
   font-size: 90%;
   font-style: italic;
+}
+
+figure table {
+  box-shadow: 5px 5px 40px #0003;
+  margin-bottom: 10px;
+  font-family: serif;
+}
+
+figure table th {
+  background: #333;
+  color: white;
+}
+
+figure table tr:nth-child(odd) {
+  background: #fff;
+}
+
+figure table tr:nth-child(even) {
+  background: #ccc;
+}
+
+figure table td, figure table th {
+  border: 0;
+  padding: 8px;
 }
