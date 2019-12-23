@@ -332,3 +332,12 @@ body.map main #map {
   font-size: 120%;
   text-align: center;
 }
+
+figure video, figure svg {
+  max-width: 100%
+}
+
+figure figcaption {
+  font-size: 90%;
+  font-style: italic;
+}
