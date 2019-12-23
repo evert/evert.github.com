@@ -129,12 +129,12 @@ When we request the list, instead of returning every article we're now just
 returning a list of links:
 
 ```http
-GET /articles HTTP/2
+GET /articles HTTP/1.1
 Host: api.example.org
 ```
 
 ```http
-HTTP/2 200 OK
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
