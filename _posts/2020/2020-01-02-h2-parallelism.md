@@ -1,11 +1,18 @@
 ---
 title: "Testing the viability of HTTP/2 and Prefer-Push over compounded HTTP/1.1 responses in REST APIs"
-date: "2019-12-22 11:20:00 UTC"
-draft: true
+date: "2020-01-02 12:00:00 UTC"
 tags:
   - http
   - http2
   - featured
+  - firefox
+  - chrome
+  - hateoas
+  - rest
+  - api
+  - push
+  - cache
+  - browsers
 ---
 
 
@@ -21,7 +28,7 @@ sent, but the predominant reason is that traditionally browsers will only make
 limited this to 2.
 
 When this limit is reached, it means that browsers will have to wait until
-earlier requests are finished until starting new ones. One implication is that
+earlier requests are finished before starting new ones. One implication is that
 the higher the latency is, the longer it will take until all requests finish.
 
 Take a look at an example of this behavior. In the following simulation we're
@@ -80,9 +87,10 @@ On the REST-side of things, examples of compound-documents can be seen in
 virtually any standard.  [JSON:API][2], [HAL][3] and [Atom][4] all have
 this notion.
 
-Most full-featured JSON:API client implementation will ship with some kind
-of 'entity store', allowing it to keep track of which entities it received,
-effectively maintaining its own HTTP Cache.
+If you look at most full-featured JSON:API client implementations, you will
+usually see that these clients often ship with some kind of 'entity store',
+allowing it to keep track of which entities it received, effectively
+maintaining an equivalent of a HTTP cache.
 
 Another issue is that for some of these systems, is that it's typically
 harder for clients to just request the data they need. Since they are often
@@ -149,7 +157,7 @@ Content-Type: application/json
       { "href": "/articles/7" }
     ]
   },
-  total: 7
+  "total": 7
 }
 ```
 
@@ -231,20 +239,19 @@ of each individual HTTP request at least doubles.
 
 <div class="request-simulator" data-id="h2-cors"></div>
 
-WHat's interesting is that Macromedia Flash also had this issue, and they
+What's interesting is that Macromedia Flash also had this issue, and they
 solved with by creating a domain-wide cross-origin request policy. All you had
 to do is create a `crossdomain.xml` file on the root of your domain, and once
 Flash read the policy it would remember it.
 
-Every few months I search to see if someone is working on this, and this time
-I've found a [W3C Draft Specification][8]. Here's hoping browser vendors pick
-this up!
+Every few months I search to see if someone is working on a modern version of
+this for Javascript, and this time I've found a [W3C Draft Specification][8].
+Here's hoping browser vendors pick this up!
 
 A less elegant workaround to this, is to host a 'proxy script' on the API's
-domain. Embedded via an IFrame, it has unrestricted access to its own 'origin'.
-
-The parent web application can communicate to it via
-[`Window.postMessage()`][9].
+domain. Embedded via an `<iframe>`, it has unrestricted access to its own
+'origin', and the te parent web application can communicate to it via
+[`window.postMessage()`][9].
 
 ## The perfect world
 
@@ -269,7 +276,7 @@ We're lacking some of these 'perfect world' features, but we can still work
 with what we got. We have access to HTTP/2 Server Push, and requests are cheap.
 
 Since HTTP/2, 'many, small HTTP endpoints' felt to me like it was the most
-elegant design, but do the numbers hold up? Some evidence would could really
+elegant design, but does the perforance hold up? Some evidence could really
 help.
 
 My goal for this performance test is fetch a collection of items in the
@@ -291,7 +298,7 @@ In theory, the same amount of information is sent and work is done for a
 compound request vs. HTTP/2 pushed responses.
 
 However, I think there's still enough overhead to HTTP requests in HTTP/2
-that the compound request will will win.
+that doing compound requests probably still have a leg up.
 
 The real benefit will show when caching comes in to play. For a given
 collection in a typical API I think it's fair to assume that many items may
@@ -528,10 +535,11 @@ These results show that doing 501 requests takes around 2.3x as long as doing
 
 In other words, the total time needed for Firefox to request something from
 its cache is only marginally faster from getting that resource from the other
-side of the continent.
+side of the continent. I was very surprised by this.
 
 This made me wonder if Firefox's cache is just slow in general, or especially
-bad at high concurrent access.
+bad at high concurrent access. I have no evidence for this, but it _felt_ that
+maybe Firefox's cache has some bad global locking behavior.
 
 Another thing that stands out here is that Chrome appears to perform especially
 bad when firing off all 500 requests in parallel. More than twice as slow as
@@ -551,7 +559,7 @@ My server-implementation might also not have been the best one. My service
 served files from the filesystem, but a system under real load might behave
 differently.
 
-So treat these results as evidence.
+So treat these results as evidence, but not proof.
 
 The evidence tells me that if speed is the most important requirement, you
 should continue to use compound responses.
@@ -559,25 +567,51 @@ should continue to use compound responses.
 I do believe though that the results are close enough that it might be worth
 taking a performance hit and gain a potentially simpler system design.
 
-In my tests I felt that caching was not all that important when doing many
-small requests for browser speed. I expect that this can be drastically
-different depending on how it long it takes on the server to generate the
-response and the connection speed. But just looking at my implementation of
-this test, it was better to send 500 items in one response, than 50 items in
-separate responses + 450 served from cache.
+It also appears that caching does not really make a significant difference.
+Potentially due to poor browser optimization, often doing a fresh HTTP request
+can take just as long as serving it from cache. This is especially true with
+Firefox.
 
 I also believe that the effect of Push was visible but not massive. The biggest
 benefits of Push are on the first load from a new collection, and will also
-become more important to avoid the N+1 Query problem.
+become more important to avoid the N+1 Query problem. Pushing responses earlier
+is mostly useful if:
 
-Almost all these optimizations can benefit the the server implementation and
-load.
+* The server can really benefit from generating the responses all at once.
+* If there are multiple *hops* needed in the API to get all its data, an
+  intelligent push mechanism can be very effective reducing the compound
+  latency.
+
+Short summary:
+
+* If speed is the overriding requirement, keep using compound documents.
+* If a simpler, elegant API is the most important, having smaller-scoped,
+  many endpoints is definitely viable.
+* Caching only makes a bit of difference.
+* Optimizations benefit the server more than the client.
 
 However, I still doubt some of these results. If I had more time, I would try
 to test this with a server written in Go, and more realistically simulate
 conditions of the server-side.
 
-Resources:
+## My wishlist for 2020
+
+I'm ending this post with a wish list for 2020 and beyond:
+
+* [Browser support for a domain-wide cross-domain policy][8].
+* HTTP/3 available for use on many server-side systems.
+* [Cache Digest Bloom Filters][5] in browsers that use `ETag`.
+* [Prefer-Push][6] adoption by REST api engineers.
+* Better parallel request performance in Chrome.
+* Less buggy HTTP/2 Push and better cache performance in in Firefox.
+
+It's an ambitious wish list. When we do arrive at this point, I believe
+it will be a major step forward towards making our REST clients simpler gain,
+our server implementations making fewer trade-offs for performance vs.
+simplicity and treating our browsers and servers as a reliable, fast engine for
+synchronizing URI-indexed resource state.
+
+## Resources:
 
 * [Raw test results](https://github.com/evert/push-benchmark/blob/master/results/raw-data.csv)
 * [Results in Google Sheets](https://docs.google.com/spreadsheets/d/1m2XJKzA4loiqiZr7R5Cl0w34ezsJGrOlxzpGf3Vh35M/edit?usp=sharing)
