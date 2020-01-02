@@ -276,7 +276,7 @@ We're lacking some of these 'perfect world' features, but we can still work
 with what we got. We have access to HTTP/2 Server Push, and requests are cheap.
 
 Since HTTP/2, 'many, small HTTP endpoints' felt to me like it was the most
-elegant design, but does the perforance hold up? Some evidence could really
+elegant design, but does the performance hold up? Some evidence could really
 help.
 
 My goal for this performance test is fetch a collection of items in the
