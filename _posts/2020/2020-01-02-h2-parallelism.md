@@ -1,5 +1,5 @@
 ---
-title: "Testing the viability of HTTP/2 and Prefer-Push over compounded HTTP/1.1 responses in REST APIs"
+title: "Performance testing HTTP/1.1 vs HTTP/2 vs HTTP/2 + Server Push for REST APIs"
 date: "2020-01-02 12:00:00 UTC"
 tags:
   - http
