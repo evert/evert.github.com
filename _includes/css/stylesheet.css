@@ -58,6 +58,10 @@ main a:hover {
 
 }
 
+main a:visited {
+    color: purple;
+}
+
 table {
     border-collapse: collapse;
 }
