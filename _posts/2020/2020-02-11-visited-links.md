@@ -47,3 +47,6 @@ but if you're making a list, consider the humble purple link!
 ```css
 a:visited { color: purple }
 ```
+
+Confession: I added this rule minutes before I posted this article. Turns out
+that while I was annoyed by other applications, I'm guilty of the same thing.
