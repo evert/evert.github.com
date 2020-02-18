@@ -157,9 +157,10 @@ function isValidEmail(input: string): input is Email {
 }
 ```
 
-The main difference is that assertions should throw an exception, and type
+The difference is that assertions should throw an exception, and type
+guards just return true or false. This means that you need to handle the
+"false case" of the type guard.
 
-guards just return true or false.
 
 The full source
 ---------------
