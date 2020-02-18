@@ -242,9 +242,9 @@ Not only could this be used for strings, it could also be a good way to validate
 more complex business logic and associations.
 
 For example, when a type refers to some other database object by its id, using
-this system you could force developers to first enforce the existance of this
-object. You can also limit the range of numbers, make sure that a number is
-a whole number, etc.
+this system you could force developers to first make sure that the object with
+that id exists in the database. You can also limit the range of numbers, make
+sure that a number is a whole number, etc.
 
 In general it allows your type system do more complex assertions that
 typescript itself can't express.
