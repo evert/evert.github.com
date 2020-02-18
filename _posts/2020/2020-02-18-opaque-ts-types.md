@@ -136,7 +136,7 @@ It ensures that whomever constructed the original `User` object, was already
 forced to make sure that it was valid. Therefore, it's not possible to ever
 receive a `User` object that's in an invalid state.
 
-An interesting side-note is that even though we used a symbol as a market, we
+An interesting side-note is that even though we used a symbol as a marker, we
 never actually had to add it to string. The marker only exists in the
 type-system as a means to ensure that nobody can easily create the `Email` type,
 circumventing the validation system.
