@@ -129,11 +129,12 @@ save(user);
 This is helpful, because it allows you to construct types, such as string
 types, and enforce their contents to be validated.
 
-This means that the information that a string is a valid email, is almost like
-a tag or label on your string that ensures that whoever constructed the
-original user object, already made sure that it's valid, and that the user
-object can therefore never be created in an invalid state.
+The implication is that the fact that an email address is valid, is almost
+like a tag or label on the original string.
 
+It ensures that whomever constructed the original `User` object, was already
+forced to make sure that it was valid. Therefore, it's not possible to ever
+receive a `User` object that's in an invalid state.
 
 An interesting side-note is that even though we used a symbol as a market, we
 never actually had to add it to string. The marker only exists in the
