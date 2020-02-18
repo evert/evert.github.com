@@ -155,10 +155,11 @@ function isValidEmail(input: string): input is Email {
 ```
 
 The main difference is that assertions should throw an exception, and type
+
 guards just return true or false.
 
-
-Here's the full script:
+The full source
+---------------
 
 ```typescript
 const validEmail = Symbol('valid-email');
@@ -223,5 +224,26 @@ save(user);
 
 Effectively, having a variable that has the type `Email` is proof that at some point
 `assertValidEmail` was called, and it didn't throw the exception.
+
+Should you use this pattern?
+----------------------------
+
+It feels like a good idea, but I haven't seen this in the wild much. The biggest
+drawback of not having a 'native' opaque type, like Flow does, is that it might
+confuse the users that are not used to running into errors associated with it.
+
+That said, it does feel like a smart way to ensure correctness across the
+system.
+
+Not only could this be used for strings, it could also be a good way to validate
+more complex business logic and associations.
+
+For example, when a type refers to some other database object by its id, using
+this system you could force developers to first enforce the existance of this
+object. You can also limit the range of numbers, make sure that a number is
+a whole number, etc.
+
+In general it allows your type system do more complex assertions that
+typescript itself can't express.
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
