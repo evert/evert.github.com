@@ -141,7 +141,9 @@ type-system as a means to ensure that nobody can easily create the `Email` type,
 circumventing the validation system.
 
 After compilation, from a javascript perspective, email is still always just a
-string.
+string. Typescript trusts that your assertion function is correct, and doesn't
+double-check its internal behavior.
+
 
 Instead of an assertion function, you can also use a type guarding function:
 
