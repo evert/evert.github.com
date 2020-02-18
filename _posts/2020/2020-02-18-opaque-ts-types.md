@@ -54,6 +54,7 @@ We can however extend the email type _slighty_ to contain a property that
 nobody can ever add.
 
 ```typescript
+declare const validEmail: unique symbol;
 const validEmail = Symbol('valid-email');
 
 type Email = string & {
@@ -67,8 +68,11 @@ export type User = {
 }
 ```
 
-In the above example, we're taking advantage of Javascript's [Symbol][1]. A
-symbol is a type that is always unique. 
+In the above example, we're declaring a symbol. This is similar to using
+`const validEmail = new Symbol('valid-email');`, but it doesn't exist
+after compiling.
+
+The `unqiue symbol` type is a type that can never be created.
 
 We're adding a property with this key to our Email string. A user can _only_
 add this property, if they have an exact reference to the original symbol.
@@ -166,7 +170,7 @@ The full source
 ---------------
 
 ```typescript
-const validEmail = Symbol('valid-email');
+declare const validEmail: unique symbol;
 
 type Email = string & {
   [validEmail]: true
@@ -204,8 +208,6 @@ save(user);
 This compiles to:
 
 ```javascript
-const validEmail = Symbol('valid-email');
-
 function save(user) {
 
 }
