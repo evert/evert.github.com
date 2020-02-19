@@ -55,7 +55,6 @@ nobody can ever add.
 
 ```typescript
 declare const validEmail: unique symbol;
-const validEmail = Symbol('valid-email');
 
 type Email = string & {
   [validEmail]: true
@@ -69,7 +68,7 @@ export type User = {
 ```
 
 In the above example, we're declaring a symbol. This is similar to using
-`const validEmail = new Symbol('valid-email');`, but it doesn't exist
+`const validEmail = Symbol('valid-email');`, but it doesn't exist
 after compiling.
 
 The `unqiue symbol` type is a type that can never be created.
