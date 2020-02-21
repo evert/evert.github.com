@@ -120,4 +120,4 @@ Function lacks ending return statement and return type does not include 'undefin
 ```
 
 It's better and faster to get feedback from static analysis. It also implies
-there's fewer branches and unittests necessary.
+there's fewer branches and therefore unittests necessary
