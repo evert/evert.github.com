@@ -70,7 +70,7 @@ function processMessage(message: Message): number {
 ```
 
 The area of interest is the `default` clause. It's perfectly reasonable in
-Javascript and other dynamic languages to add guards to invalid conditions.
+Javascript and other dynamic languages to add guards for invalid conditions.
 
 Throwing an exception makes sense, because if an invalid type was passed,
 you'll want the function to fail and not silently ignore the error case.
