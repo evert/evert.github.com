@@ -120,4 +120,12 @@ Function lacks ending return statement and return type does not include 'undefin
 ```
 
 It's better and faster to get feedback from static analysis. It also implies
-there's fewer branches and therefore unittests necessary
+there's fewer branches and therefore unittests necessary.
+
+Another thing this example covers, is that you get more benefit from creating
+functions that return their results, over for example class methods that
+update their internal state.
+
+If the result of an operation is emitted through a function's return value,
+we can add a type for this. If the function returned nothing and had
+side-effects, this couldn't have worked.
