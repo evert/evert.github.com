@@ -5,7 +5,8 @@ tags:
   - node
   - mysql
 geo: [43.647805,-79.389551]
-location: Adelaide St West, Toronto, ON, CAnada
+location: Adelaide St West, Toronto, ON, Canada
+updated_date: "2020-02-24 19:28:14 UTC"
 ---
 
 If you're integrating your Node.js service with MySQL, you probably want to
@@ -311,6 +312,56 @@ async function batchingThings() {
 
 If my transaction code becomes too complex and I need to split it up
 over multiple functions, I pass the `connection` object around as the argument.
+
+
+Wrapping it into a function
+---------------------------
+
+If you're finding you're doing this kind of thing a lot, it's also possible to
+generalize this pattern into a transaction function.
+
+```javascript
+async transaction(pool, callback) {
+
+  const connection = await pool.getConnection();
+  await connection.beginTransaction();
+
+  try {
+
+    await callback(connection);
+    await connection.commit();
+
+  } catch (err) {
+
+    await connection.rollback();
+    // Throw the error again so others can catch it.
+    throw err;
+
+  } finally {
+
+    connection.release();
+
+  }
+
+
+}
+```
+
+To use it:
+
+```javascript
+await transaction(pool, async connection => {
+
+  await connection.query('...');
+  await connection.query('...');
+
+});
+```
+
+This is not a 'universal' solution, as you might have other clean-up tasks,
+but for the simple transaction cases this is an easy way to reduce a lot of
+boilerplate.
+
 
 Typescript everything
 ---------------------
