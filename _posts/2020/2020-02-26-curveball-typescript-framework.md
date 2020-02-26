@@ -25,7 +25,7 @@ tags:
 
 Since mid-2018 I've been working on a new micro-framework, written in
 typescript. The framework competes with [Express][1], and takes heavy
-inspiration from [Koa][2].
+inspiration from [Koa][2]. It's called [Curveball][8].
 
 If you only ever worked with Express, I feel that for most people this
 project will feel like a drastic step up. Express was really written in an
@@ -47,6 +47,8 @@ We've been using this in a variaty of (mostly API) projects for the past
 few years, and it's been working really well for us. We're also finding that
 it tends to be a pretty 'sticky' product. People exposed to it, tend to want
 to use it for their next project too.
+
+Curious? Here are a bunch of examples of tasks you might want to do:
 
 Examples
 --------
@@ -281,6 +283,19 @@ const foo = ctx.request.prefer('return');
 console.log(foo);
 ```
 
+Installation and links
+----------------------
+
+Installation:
+
+```typescript
+npm i @curveball/core
+```
+
+Documentation can be found on [Github][10]. A list of middlewares can be seen
+in the [organization page][8].
+
+
 Stable release
 --------------
 
@@ -291,6 +306,9 @@ If you have thoughts or feedback on this project, it would be really helpful
 to hear. Don't hesitate to leave comments, questions or suggestions as a
 [Github Issue][7].
 
+A big thing that's still to be done is the completion of the [website][9]. We
+got a great design, it just needs to be pushed over the finish line.
+
 
 [1]: https://expressjs.com/
 [2]: https://koajs.com/
@@ -299,3 +317,6 @@ to hear. Don't hesitate to leave comments, questions or suggestions as a
 [5]: https://github.com/curveball/problem/
 [6]: https://github.com/curveball/hal-browser
 [7]: https://github.com/curveball/core/issues
+[8]: https://github.com/curveball
+[9]: https://curveballjs.org/
+[10]: https://github.com/curveball/core
