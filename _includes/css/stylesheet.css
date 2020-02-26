@@ -388,7 +388,7 @@ figure table td, figure table th {
   display: flex;
   align-content: center;
   align-items: center;
-  justify-content: left;
+  float: right;
 }
 
 .badgateway p {
