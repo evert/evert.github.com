@@ -43,10 +43,10 @@ are the major differences:
 * Curveball's request/response objects are decoupled from the Node.js `http`
   library.
 
-We've been using this in a variaty of (mostly API) projects for the past
-few years, and it's been working really well for us. We're also finding that
-it tends to be a pretty 'sticky' product. People exposed to it, tend to want
-to use it for their next project too.
+At [Bad Gateway][11] we've been using this in a variety of (mostly API)
+projects for the past few years, and it's been working really well for us.
+We're also finding that it tends to be a pretty 'sticky' product. People exposed
+to it, tend to want to use it for their next project too.
 
 Curious? Here are a bunch of examples of tasks you might want to do:
 
@@ -205,7 +205,7 @@ can only be achieved through a complicated hack.
 This is due to the fact that responses are immediately written to the TCP
 sockets, and once written to the socket it's effecftively gone.
 
-So do do things like gzipping responses, Express middleware authors needs to
+So to do things like gzipping responses, Express middleware authors needs to
 mock the response stream and intercept any bytes sent to it. This can be
 clearly seen in the express-compression source:
 <https://github.com/expressjs/compression/blob/master/index.js>.
@@ -309,6 +309,27 @@ to hear. Don't hesitate to leave comments, questions or suggestions as a
 A big thing that's still to be done is the completion of the [website][9]. We
 got a great design, it just needs to be pushed over the finish line.
 
+One more thing?
+---------------
+
+Apologies for the cliché header. We're also working on an Authentcation server,
+written in curveball. It handles the following for you:
+
+* Login
+* Registration
+* Lost password
+* OAuth2:
+  * `client_credentials`, `password`, `authorization_code` grant types.
+  * revoke, introspect support
+* TOTP (Google authenticator style)
+* User management, privilege management.
+
+The project needs some love in the user experience department, but if you're
+stick of creating another authentication system and don't want to break the
+bank, [a12n-server][12] might be for you.
+
+The ultimate goal here is to create a great headless authentication server,
+and compete with OAuth0 and Okta, but we can use some more people power here!
 
 [1]: https://expressjs.com/
 [2]: https://koajs.com/
@@ -320,3 +341,5 @@ got a great design, it just needs to be pushed over the finish line.
 [8]: https://github.com/curveball
 [9]: https://curveballjs.org/
 [10]: https://github.com/curveball/core
+[11]: https://badgateway.net/
+[12]: https://github.com/curveball/a12n-server
