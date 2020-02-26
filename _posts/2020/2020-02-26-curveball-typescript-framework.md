@@ -23,7 +23,7 @@ tags:
   <img src="/assets/img/curveball.svg" style="float: left; padding: 0 10px 10px 0" alt="Curveball" width="150px" />
 </a>
 
-Since mid-2018 I've been working on a new micro-framework, written in
+Since mid-2018 we've been working on a new micro-framework, written in
 typescript. The framework competes with [Express][1], and takes heavy
 inspiration from [Koa][2]. It's called [Curveball][8].
 
@@ -46,9 +46,9 @@ are the major differences:
 At [Bad Gateway][11] we've been using this in a variety of (mostly API)
 projects for the past few years, and it's been working really well for us.
 We're also finding that it tends to be a pretty 'sticky' product. People exposed
-to it, tend to want to use it for their next project too.
+to it tend to want to use it for their next project too.
 
-Curious? Here are a bunch of examples of tasks you might want to do:
+Curious? Here are a bunch of examples of common tasks:
 
 Examples
 --------
@@ -59,13 +59,15 @@ Examples
 import { Application } from '@curveball/core';
 
 const app = new Application();
-app.use( ctx => {
+app.use( async ctx => {
   ctx.response.type = 'text/plain';
   ctx.body = 'hello world';
 });
 
 app.listen(80);
 ```
+
+Everything is a middleware, and middlewares may or may not be `async`.
 
 ### Hello world on AWS Lambda
 
@@ -288,7 +290,7 @@ Installation and links
 
 Installation:
 
-```typescript
+```
 npm i @curveball/core
 ```
 
@@ -299,7 +301,7 @@ in the [organization page][8].
 Stable release
 --------------
 
-We're currently on the 11'th beta, and closing in on a stable release. Changes
+We're currently on the 11th beta, and closing in on a stable release. Changes
 will at this point be minor.
 
 If you have thoughts or feedback on this project, it would be really helpful
