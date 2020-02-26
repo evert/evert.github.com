@@ -19,6 +19,10 @@ tags:
   - lambda
 ---
 
+<a href="https://github.com/curveball">
+  <img src="/assets/img/curveball.svg" style="float: left; padding: 0 10px 10px 0" alt="Curveball" width="150px" />
+</a>
+
 Since mid-2018 I've been working on a new micro-framework, written in
 typescript. The framework competes with [Express][1], and takes heavy
 inspiration from [Koa][2].
@@ -215,7 +219,7 @@ app.use( async (ctx, next) => {
 
   // Let the entire middleware stack run
   await next();
-  
+ 
   // HTML encode JSON responses if the client was a browser.
   if (ctx.accepts('text/html') && ctx.response.type ==== 'application/json') {
     ctx.response.type = 'text/html';
@@ -235,9 +239,47 @@ is to allow users to set a callback on the `body` property, so writing the
 body will not be buffered, just deferred. The complexity of implementing these
 middlewares will not change.
 
+### HTML API browser
+
 Curveball also ships with an [API browser][6] that automatically transforms
 JSON in to traversable HTML, and automatically parses HAL links and HTTP Link
 headers.
+
+Every navigation element is completely generated based on links found in the
+response.
+
+To use it:
+
+```typescript
+import { halBrowser } from 'hal-browser';
+import { Application } from '@curveball/core';
+
+const app = new Application();
+app.use(halBrowser());
+```
+
+Once set up, your API will start rendering HTML when accessed by a browser.
+
+<figure>
+  <img src="/assets/posts/hal-browser.png" alt="HAL browser example" />
+</figure>
+
+
+### Sending informational responses
+
+```typescript
+ctx.response.sendInformational(103, {
+  link: '</foo>; rel="preload"'
+})
+```
+
+### Parsing Prefer headers
+
+```typescript
+const foo = ctx.request.prefer('return');
+// Could be 'representation', 'minimal' or false
+console.log(foo);
+```
 
 Stable release
 --------------
