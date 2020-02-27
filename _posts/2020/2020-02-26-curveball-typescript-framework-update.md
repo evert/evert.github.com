@@ -106,7 +106,7 @@ app.use( ctx => {
 
 The callback to `ctx.push` will only get called if Push was supported by the
 client, and because it creates a new 'context', any middleware can be attached
-to it, ot even *all* the middleware by doing a 'sub request'.
+to it, or even *all* the middleware by doing a 'sub request'.
 
 
 ### Resource-based controllers
@@ -210,7 +210,7 @@ handled, but if you ever want to transform a response in a middleware, this
 can only be achieved through a complicated hack.
 
 This is due to the fact that responses are immediately written to the TCP
-sockets, and once written to the socket it's effecftively gone.
+sockets, and once written to the socket it's effectively gone.
 
 So to do things like gzipping responses, Express middleware authors needs to
 mock the response stream and intercept any bytes sent to it. This can be
