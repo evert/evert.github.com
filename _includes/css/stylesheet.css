@@ -388,7 +388,6 @@ figure table td, figure table th {
   display: flex;
   align-content: center;
   align-items: center;
-  float: right;
 }
 
 .badgateway p {
@@ -418,8 +417,10 @@ figure table td, figure table th {
 
 
 @media screen and (min-width: 800px) {
+  .badgateway {
+    float: right;
+  }
   .badgateway div {
-    float: left;
     max-width: 100%;
     margin: 0 0 10px 0;
   }
