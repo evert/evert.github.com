@@ -1,7 +1,6 @@
 ---
 title: "Curveball - A typescript microframework"
-date: "2020-02-26 20:19:04 UTC"
-draft: true
+date: "2020-02-27 18:00:00 UTC"
 tags:
   - http2
   - hypermedia
