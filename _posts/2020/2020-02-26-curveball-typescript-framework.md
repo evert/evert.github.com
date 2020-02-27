@@ -106,7 +106,7 @@ app.use( ctx => {
 
 ### Resource-based controllers
 
-Controllers are optional and opiniated. A single controller should only ever
+Controllers are optional and opinionated. A single controller should only ever
 manage one type of resource, or one route.
 
 
@@ -137,7 +137,7 @@ app.use(new MyController());
 
 ### Routing
 
-The recommended pattern is to use exactly 1 controller per route.
+The recommended pattern is to use exactly one controller per route.
 
 ```typescript
 import { Application } from '@curveball/core';
