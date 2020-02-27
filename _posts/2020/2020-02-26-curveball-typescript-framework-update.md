@@ -1,6 +1,6 @@
 ---
 title: "Curveball - A typescript microframework"
-date: "2020-02-27 18:00:00 UTC"
+date: "2020-02-27 16:17:00 UTC"
 tags:
   - http2
   - hypermedia
@@ -16,6 +16,8 @@ tags:
   - nodejs
   - javascript
   - lambda
+geo: [43.660773, -79.429926]
+location: "Bloor St W, Toronto, Canada"
 ---
 
 <a href="https://github.com/curveball">
