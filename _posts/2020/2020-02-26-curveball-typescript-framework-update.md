@@ -105,6 +105,11 @@ app.use( ctx => {
 });
 ```
 
+The callback to `ctx.push` will only get called if Push was supported by the
+client, and because it creates a new 'context', any middleware can be attached
+to it, ot even *all* the middleware by doing a 'sub request'.
+
+
 ### Resource-based controllers
 
 Controllers are optional and opinionated. A single controller should only ever
