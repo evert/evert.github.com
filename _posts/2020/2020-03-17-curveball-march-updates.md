@@ -16,7 +16,7 @@ tags:
   - nodejs
   - javascript
   - lambda
-cover_image: /assets/cover/curveball.png
+cover_image: https://evertpot.com/assets/cover/curveball.png
 location: Adelaide St W, Toronto, ON, Canada
 geo: [43.647767, -79.389963]
 ---
