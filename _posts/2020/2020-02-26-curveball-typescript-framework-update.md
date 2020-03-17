@@ -18,6 +18,7 @@ tags:
   - lambda
 geo: [43.660773, -79.429926]
 location: "Bloor St W, Toronto, Canada"
+cover_image: /assets/cover/curveball.png
 ---
 
 <a href="https://github.com/curveball">

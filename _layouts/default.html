@@ -19,12 +19,19 @@
     <meta property="og:type" content="article" />
 
     <meta property="twitter:site" content="@evertp" />
-    <meta property="twitter:image" content="https://evertpot.com/assets/img/flower-icon.png" />
+
     <meta property="twitter:creator" content="@evertp" />
 
     {% if page.tags %}<meta property="keywords" content="{{page.tags | join: ", "}}" />{% endif %}
 
     {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
+
+    {% if page.cover_image %}
+      <meta property="og:image" content="{{ page.cover_image }}" />
+      <meta property="twitter:image:src" content="{{ page.cover_image }}" />
+    {% else %}
+      <meta property="twitter:image" content="https://evertpot.com/assets/img/flower-icon.png" />
+    {% endif %}
 
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700" rel="stylesheet" />
 
