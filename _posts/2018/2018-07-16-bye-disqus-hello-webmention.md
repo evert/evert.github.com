@@ -109,7 +109,7 @@ I intend to just run this crawler manually when I publish new posts.
 [1]: http://disqus.com/
 [2]: https://indieweb.org/Webmention
 [3]: https://webmention.io/
-[4]: https://github.com/evert/evert.github.com/blob/master/js/webmentions.js
+[4]: https://github.com/evert/evert.github.com/blob/master/assets/js/webmentions.js
 [5]: https://gist.github.com/evert/3332e6cc73848aefe36fd9d0a30ac390
 [6]: /70/
 [7]: https://brid.gy/
