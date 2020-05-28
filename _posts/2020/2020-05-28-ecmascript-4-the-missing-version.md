@@ -24,10 +24,9 @@ According to [Wikipedia][1], the first draft of ECMAscript 4 was dated
 February 1999. The original target for completion was August 2008.
 
 ECMAscript 4 was a very ambitious, and added a ton of features that were
-percieved as important and missing from ECMAscript 3.
-
-ECMAscript 4 didn't just add features, it also 'fixed' a number of things
-in the previous version, making it backwards incompatible in a few ways.
+percieved as important and missing from ECMAscript 3. It also 'fixed' a
+number of things in the previous version, making it backwards incompatible
+in various ways.
 
 ES4 was met with a bunch of controversies, and lacked sufficient support
 from browser vendors to be released and was ultimately abandoned.
@@ -35,7 +34,7 @@ from browser vendors to be released and was ultimately abandoned.
 In 2008 the standard was pronounced dead, and ES3.1 was renamed to ES5,
 which was a much more conservative and incremental update to ECMAScript.
 
-The closest thing we had for ES4, was actually Flash Actionscript 3.
+The closest thing we had for ES4, was probably Flash Actionscript 3.
 There was a point during the release of AS3 that some of us thought that
 Flash and the Web was eventually going to converge.
 
@@ -57,7 +56,7 @@ class C {
 
  var val
  var number = 500;
- 
+
  const pi = 3.14
 
  // A function
@@ -178,7 +177,7 @@ const hi = """Hello my name is "Evert"""";
 
 ### Packages
 
-Packages are a bit like what we have now with modules. Packages can be 
+Packages are a bit like what we have now with modules. Packages can be
 imported, but unlike ES6 modules, namespaces are more like
 a global naming system.
 
@@ -186,7 +185,7 @@ If a class is defined as :
 
 ```as3
 package com.evertpot {
-  
+
   // Private
   internal const foo = 5;
 
@@ -257,8 +256,8 @@ const foo = <div class={myClass}>{"Hello " + name }</div>;
 
 Looks familiar?
 
-Although not quite the same as `jsx`, it's pretty clear what `jsx` used for
-inspiration.
+Although not quite the same as [JSX][7], it's becoming clear that this might
+have been a part of JSX's origin story.
 
 While ES4 never landed, E4X actually lived in Firefox for a long time.
 
@@ -289,8 +288,9 @@ Sources
 * [Wikipedia: ECMAScript for XML][6]
 
 [1]: https://en.wikipedia.org/wiki/ECMAScript#4th_Edition_(abandoned)
-[2]: https://auth0.com/blog/the-real-story-behind-es4/ "The Real Story Behind ECMAScript 4" 
+[2]: https://auth0.com/blog/the-real-story-behind-es4/ "The Real Story Behind ECMAScript 4"
 [3]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields
 [4]: https://www.ecma-international.org/activities/Languages/Language%20overview.pdf
 [5]: https://www.typescriptlang.org/docs/handbook/functions.html
 [6]: https://en.wikipedia.org/wiki/ECMAScript_for_XML
+[7]: https://reactjs.org/docs/introducing-jsx.htm://reactjs.org/docs/introducing-jsx.html
