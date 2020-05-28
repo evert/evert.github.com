@@ -259,7 +259,8 @@ Looks familiar?
 Although not quite the same as [JSX][7], it's becoming clear that this might
 have been a part of JSX's origin story.
 
-While ES4 never landed, E4X actually lived in Firefox for a long time.
+While ES4 never landed, E4X actually worked in Firefox, until it was removed in
+Firefox 10.
 
 ### More features
 
