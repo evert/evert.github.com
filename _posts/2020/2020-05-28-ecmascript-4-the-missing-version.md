@@ -1,5 +1,5 @@
 ---
-title: "ECMAscript 4: The missing version"
+title: "ECMAScript 4: The missing version"
 date: "2020-05-28 09:41:38 UTC"
 tags:
   - javascript
@@ -10,21 +10,21 @@ geo: [43.660773, -79.429926]
 location: "Bloor St W, Toronto, Canada"
 ---
 
-In your build tools, you may have noticed that you have an ECMAscript 3
+In your build tools, you may have noticed that you have an ECMAScript 3
 target, and 5 and up, but never a 4. Why is that?
 
-I thought it would be fun to dive into ECMAscript 4 a bit and see what
+I thought it would be fun to dive into ECMAScript 4 a bit and see what
 we didn't get.
 
 
 A brief history
 ---------------
 
-According to [Wikipedia][1], the first draft of ECMAscript 4 was dated
+According to [Wikipedia][1], the first draft of ECMAScript 4 was dated
 February 1999. The original target for completion was August 2008.
 
-ECMAscript 4 was very ambitious, and added a ton of features that were
-percieved as important and missing from ECMAscript 3. It also 'fixed' a
+ECMAScript 4 was very ambitious, and added a ton of features that were
+percieved as important and missing from ECMAScript 3. It also 'fixed' a
 number of things in the previous version, making it backwards incompatible
 in various ways.
 
