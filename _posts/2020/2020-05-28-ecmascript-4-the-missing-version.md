@@ -1,13 +1,13 @@
 ---
 title: "ECMAscript 4: The missing version"
-date: "2020-05-28 16:00:00 UTC"
+date: "2020-05-28 09:41:38 UTC"
 tags:
   - javascript
   - ecmascript
   - actionscript
+  - jsx
 geo: [43.660773, -79.429926]
 location: "Bloor St W, Toronto, Canada"
-draft: 1
 ---
 
 In your build tools, you may have noticed that you have an ECMAscript 3
@@ -23,7 +23,7 @@ A brief history
 According to [Wikipedia][1], the first draft of ECMAscript 4 was dated
 February 1999. The original target for completion was August 2008.
 
-ECMAscript 4 was a very ambitious, and added a ton of features that were
+ECMAscript 4 was very ambitious, and added a ton of features that were
 percieved as important and missing from ECMAscript 3. It also 'fixed' a
 number of things in the previous version, making it backwards incompatible
 in various ways.
@@ -67,7 +67,7 @@ class C {
    val = n;
  }
 
- function get foo) {
+ function get foo() {
    return val;
  }
 }
@@ -270,6 +270,21 @@ While ES4 never landed, E4X actually lived in Firefox for a long time.
 * Namespaced properties, classes and everything to avoid collisions, much like
   XML namespaces.
 
+How would you load it?
+----------------------
+
+Because Ecmascript 4 would break backwards compatibility, it would be important
+to tell a browser to interpret a script as ES4:
+
+```html
+<script type="text/javascript;version=4" src="..."></script>
+```
+
+This is not unlike what we do with modules today:
+
+```html
+<script type="module" src="..."></script>
+```
 
 Afterword
 ---------
@@ -278,6 +293,9 @@ I hope this was an interesting view in the Javascript that could have been.
 Although we are slowly catching up with newer ECMAScript versions and
 tools like Typescript and JSX preprocessors, we're still not quite at 2007's
 vision for ECMAScript.
+
+Perhaps if ES4 landed, fewer people would need complex build tools like Babel,
+Webpack and Typescript.
 
 
 Sources
