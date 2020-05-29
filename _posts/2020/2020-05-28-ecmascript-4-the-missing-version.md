@@ -24,7 +24,7 @@ According to [Wikipedia][1], the first draft of ECMAScript 4 was dated
 February 1999. The original target for completion was August 2008.
 
 ECMAScript 4 was very ambitious, and added a ton of features that were
-percieved as important and missing from ECMAScript 3. It also 'fixed' a
+perceived as important and missing from ECMAScript 3. It also 'fixed' a
 number of things in the previous version, making it backwards incompatible
 in various ways.
 
