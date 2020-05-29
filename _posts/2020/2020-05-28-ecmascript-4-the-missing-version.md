@@ -8,6 +8,7 @@ tags:
   - jsx
 geo: [43.660773, -79.429926]
 location: "Bloor St W, Toronto, Canada"
+cover_image: https://evertpot.com/assets/cover/es4.png
 ---
 
 In your build tools, you may have noticed that you have an ECMAScript 3
