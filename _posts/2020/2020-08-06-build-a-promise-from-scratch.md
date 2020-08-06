@@ -15,7 +15,7 @@ This week I presented a talk ["Building a Promise From Scratch"][1] for the
 awesome [TorontoJS user group][2]. This was all done online, and you can watch
 the recording here or on [YouTube][1].
 
-<iframe style="width: 100%; min-width: 500px; height: calc(width * 0.8)" src="https://www.youtube.com/embed/CVzx-6fu0d8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width: 100%; min-width: 500px; min-height: 500px" src="https://www.youtube.com/embed/CVzx-6fu0d8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [1]: https://www.youtube.com/watch?v=CVzx-6fu0d8
 [2]: https://torontojs.com/
