@@ -13,7 +13,7 @@ layout: null
     <email>me@evertpot.com</email>
   </author>
 
-  {% for post in site.posts limit:100 %}
+  {% for post in site.posts limit:25 %}
   {% unless post.draft %}
   <entry>
     <id>http://evertpot.com{{ post.url }}</id>
