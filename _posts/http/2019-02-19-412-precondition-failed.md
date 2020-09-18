@@ -21,7 +21,7 @@ Examples
 --------
 
 This client only wants the `PUT` request to succeed, if it didn't already
-exit:
+exist:
 
 ```http
 PUT /foo/new-article.md HTTP/1.1
@@ -30,7 +30,7 @@ If-None-Match: *
 ```
 
 This request is an update, and it should only succeed if the article hasn't
-change since last time.
+changed since last time.
 
 ```http
 PUT /foo/old-article.md HTTP/1.1

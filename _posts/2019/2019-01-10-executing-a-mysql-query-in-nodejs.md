@@ -68,7 +68,7 @@ can simply ask the pool to execute the query.
 async function getBlogPost(id) {
 
   const result = await pool.query('SELECT * from posts WHERE id = ?', [id]);
-  if (!result[0].length < 1) {
+  if (result[0].length < 1) {
     throw new Error('Post with this id was not found');
   }
   return result[0][0];
