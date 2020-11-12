@@ -58,7 +58,7 @@ header as `Prefer-Push`; [`Prefer: transclude`][9], which Ketting also
 supports.
 
 A feature that I hoped would work well in the future with Server Push was
-server-iniiated cache invalidation. We never quite got that. To work around
+server-initiated cache invalidation. We never quite got that. To work around
 this, we use Websockets and will keep doing this for the forseeable future.
 
 To reduce general latency of fetching many things, the [`103 Early Hints`][9]
