@@ -10,7 +10,7 @@ geo: [43.686467, -79.328627]
 location: "Monarch Park Ave, Toronto, Canada"
 ---
 
-One of the hot features that came wth HTTP/2 was PUSH frames. The main idea is
+One of the hot features that came with HTTP/2 was PUSH frames. The main idea is
 that if the server can predict what requests a client might want to make, the
 server can preemptively send request/response pairs to the client and warm it's
 cache.
