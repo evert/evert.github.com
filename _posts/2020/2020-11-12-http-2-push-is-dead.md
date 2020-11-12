@@ -6,13 +6,14 @@ tags:
   - http2
   - push
   - chrome
-geo: [43.660773, -79.429926]
-location: "Bloor St W, Toronto, Canada"
+geo: [43.686467, -79.328627]
+location: "Monarch Park Ave, Toronto, Canada"
 ---
 
-One of the hot features that HTTP/2 was PUSH frames. The main idea is that if
-the server can predict what requests a client might want to make, the server
-can preemptively send request/response pairs to the client and warm it's cache.
+One of the hot features that came wth HTTP/2 was PUSH frames. The main idea is
+that if the server can predict what requests a client might want to make, the
+server can preemptively send request/response pairs to the client and warm it's
+cache.
 
 This is a feature I've been very interested in for a long time. I feel that it
 can be incredibly useful for APIs to invalidate & warm caches, remove the need
