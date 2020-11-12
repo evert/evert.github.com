@@ -41,6 +41,11 @@ I no longer think it's worthwhile to invest in this feature. So I'm ceasing
 my work on `Prefer-Push`, and will also remove support from the next major
 Ketting version.
 
+On a positive note, I spent a lot of time thinking and working on this, but
+it is sometimes nice to just be able to close a chapter, rather than to wait
+and let it sizzle out. It's not an ideal conclusion, but it's a conclusion
+nonetheless.
+
 Current alternatives
 --------------------
 
@@ -61,12 +66,6 @@ can help, although this is not supported _yet_ in Chrome, and this is also
 only really useful for speeding up delivery of assets like images, css and
 Javascript as there's no way to hook into 1xx responses programmatically in
 a browser.
-
-On a positive note, I spent a lot of time thinking and working on this, but
-it is sometimes nice to just be able to close a chapter, rather than to wait
-and let it sizzle out. It's not an ideal conclusion, but it's a conclusion
-nonetheless.
-
 
 [1]: https://apisyouwonthate.com/blog/lets-stop-building-apis-around-a-network-hack
 [2]: https://tools.ietf.org/html/draft-pot-prefer-push-00
