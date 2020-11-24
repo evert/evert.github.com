@@ -12,7 +12,7 @@ location: "Monarch Park Ave, Toronto, Canada"
 
 One of the hot features that came with HTTP/2 was PUSH frames. The main idea is
 that if the server can predict what requests a client might want to make, the
-server can preemptively send request/response pairs to the client and warm it's
+server can preemptively send request/response pairs to the client and warm its
 cache.
 
 This is a feature I've been very interested in for a long time. I feel that it
