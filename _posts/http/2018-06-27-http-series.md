@@ -18,14 +18,6 @@ realized after I drafted the first few, that the [IANA][1] page actually lists
 68 official ones. Definitely a bit more than I thought, but I started and I'm
 going to see if I can finish it.
 
-My long term dream is to write a book on the matter, and I figured this might
-be a nice way to try and see if I'm cut out for it. Perhaps I can use these
-articles as sample chapters.
-
-I would love to hear what you think; good or bad. If you like the idea of
-(yet) another book about this, it really helps to know how many people would
-want to read it.
-
 I'm going to release the first few this week, and then switch to a weekly
 schedule. Hopefully I can keep this going for a year!
 
