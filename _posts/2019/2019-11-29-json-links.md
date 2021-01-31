@@ -8,7 +8,7 @@ tags:
   - collection-json
   - rfc8288
   - weblinking
-  - hateaos
+  - hateoas
   - siren
   - hypermedia
   - rest

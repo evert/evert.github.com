@@ -10,7 +10,7 @@ geo: [43.660773, -79.429926]
 location: "Bloor St W, Toronto, Canada"
 ---
 
-I just realized this is the third time I'm writing async middleware invoker,
+I just realized this is the third time I'm writing an async middleware invoker,
 I thought I would share the generic pattern for the benefit of others.
 
 I'm not sure if this is interesting enough for a NPM package, so I'll leave
