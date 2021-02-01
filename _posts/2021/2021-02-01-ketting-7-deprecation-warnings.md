@@ -49,7 +49,7 @@ Link: </docs/update-2021>; rel="deprecation"
 ```
 
 These headers allow a server to tell a client when the endpoint will stop
-responding, and point to additional information about the depreciation.
+responding, and point to additional information about the deprecation.
 
 If either of these are specified, Ketting will provide this information in
 the console.
