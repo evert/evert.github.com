@@ -29,7 +29,7 @@ There's currently work done on a new internet standard:
 The way this works is that the server may emit a header such as one of these:
 
 ```http
-HTTP/2 200 OK
+HTTP/1.1 200 OK
 Deprecation: Mon, 1 Nov 2021 00:00:00 GMT
 Deprecation: true
 ```
@@ -43,7 +43,7 @@ making it easier to spot reliance on deprecated endpoints.
 The draft also defines the following additional headers:
 
 ```http
-HTTP/2 200 OK
+HTTP/1.1 200 OK
 Sunset: Wed, 1 Dec 2021 00:00:00 GMT
 Link: </docs/update-2021>; rel="deprecation"
 ```
