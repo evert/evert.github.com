@@ -16,3 +16,6 @@ draft: true
 * [The Guardian](https://www.programmableweb.com/news/how-guardian-approaching-hypermedia-based-api-infrastructure/2015/04/27)
   appears to be using [Argo](https://github.com/argo-rest/spec) for some of
   their internal APIs.
+* [Swedbank Pay](https://developer.swedbankpay.com/) uses a custom hypermedia
+  format with extensive use of URIs as identifiers and `operations` for
+  hypermedia controls.
