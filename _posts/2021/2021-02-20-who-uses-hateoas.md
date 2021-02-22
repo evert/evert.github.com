@@ -15,6 +15,8 @@ draft: true
   between entities across the board.
 * [Github REST API](https://docs.github.com/en/rest) uses a custom format,
   but links are used across the board to find related resources.
+* [Huddle](https://github.com/Huddle/huddle-apis/wiki/Link) has custom.
+  JSON (and XML) hypermedia format, and also uses [HTTP Link headers][2]
 * [Mailchimp](https://mailchimp.com/developer/marketing/api/) uses a custom
   hypermedia format that looks a bit like HAL, but isn't.
 * [PayPal](https://developer.paypal.com/docs/api/reference/api-responses/)
@@ -24,10 +26,11 @@ draft: true
   format with extensive use of URIs as identifiers and `operations` for
   hypermedia controls.
 * [The Guardian](https://www.programmableweb.com/news/how-guardian-approaching-hypermedia-based-api-infrastructure/2015/04/27)
-  appears to be using [Argo](https://github.com/argo-rest/spec) for some of
-  their internal APIs.
+  appears to be using [Argo][3] for some of their internal APIs.
 * [Visa](https://developer.visa.com/capabilities/vpp/docs-how-to) uses HAL
   for their payments processing API.
 
 
 [1]: https://tools.ietf.org/html/draft-kelly-json-hal-08
+[2]: https://tools.ietf.org/html/rfc8288
+[3]: https://github.com/argo-rest/spec
