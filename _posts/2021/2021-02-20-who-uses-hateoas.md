@@ -15,8 +15,8 @@ draft: true
   between entities across the board.
 * [Github REST API](https://docs.github.com/en/rest) uses a custom format,
   but links are used across the board to find related resources.
-* [Huddle](https://github.com/Huddle/huddle-apis/wiki/Link) has custom.
-  JSON (and XML) hypermedia format, and also uses [HTTP Link headers][2]
+* [Huddle](https://github.com/Huddle/huddle-apis/wiki/Link) has a custom
+  JSON (and XML) hypermedia format, and also uses [HTTP Link headers][2].
 * [Mailchimp](https://mailchimp.com/developer/marketing/api/) uses a custom
   hypermedia format that looks a bit like HAL, but isn't.
 * [PayPal](https://developer.paypal.com/docs/api/reference/api-responses/)
