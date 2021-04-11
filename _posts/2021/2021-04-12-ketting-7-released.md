@@ -24,6 +24,7 @@ project like this to get a little stale. For me personally, the opposite
 has been true and using Ketting (especially with React) is starting to feel
 a bit like a paradigm shift.
 
+Read on to see what's new!
 
 What is Ketting?
 ----------------
@@ -121,7 +122,7 @@ function ArticleList() {
 
   return <section>
     <h1>Articles!</h1>
-    
+
     {items.map( item => <ArticleItem key={item.uri} resource={item} /> ) }
   </section>;
 
@@ -151,7 +152,7 @@ This can have a pretty magical effect when you (for example) use a `POST`
 request on a collection to add a new member.
 
 If you also used a `useCollection` hook on the same page to show the
-collection, that collection will automatically refresh on the server.
+collection, that collection will automatically refresh it's own list.
 
 The _first_ fetch of `useCollection` will include a `Prefer-Transclude` HTTP
 header, telling the user to (ideally) embed every item of the collection in
@@ -165,7 +166,7 @@ one more HTTP request from that list.
 
 Similarly this can be used for `DELETE` requests of members of the collection,
 as long as your response includes `Link: </parent-collection>; rel="invalidates"`,
-react-ketting will refresh the collection, but ideally only the member list.
+the collection will also automatically re-render with the deleted item removed.
 
 For one application we took this a step further, and used Websockets to emit
 'stale' events from the server. With virtually no modifications to the frontend,
