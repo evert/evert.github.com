@@ -15,9 +15,14 @@ cover_image: https://evertpot.com/assets/cover/ketting.png
 We just released version 7 of [Ketting][1]. Ketting is a generic HATEOAS
 client for Javascript.
 
-While the changes are not as earth-shattering as [the last major release][2],
-which added first-class React support, but a bunch of new features have been
-added, removed and changed.
+A whole bunch of features have been added since September. We've been
+testing Ketting 7 in beta since January, so I'm excited to get this out
+the door.
+
+I've been working on this project since 2016. Normally, I would expect a
+project like this to get a little stale. For me personally, the opposite
+has been true and using Ketting (especially with React) is starting to feel
+a bit like a paradigm shift.
 
 
 What is Ketting?
@@ -33,7 +38,7 @@ It has support for Hypermedia formats such as HAL, Siren, Collection+JSON,
 JSON:API and can even understand and follow links from HTML.
 
 In the past it was not uncommon to hear that HATEOAS is lacking a good generic
-client. Ketting closes that gap.
+client. If you are a Javascript/Typescript user this is no longer true.
 
 More information can be found on the [Github][1] page.
 
@@ -44,7 +49,7 @@ What's new?
 ### Better HAL-Forms support
 
 [HAL-Forms][5] is an extension of [HAL][6], and adds support for 'actions' or
-'forms', simular to what the `<form>` tag is to HTML.
+'forms', similar to what the `<form>` tag is to HTML.
 
 Since the start of the year HAL-Forms has seen major updates, which was a
 colaborative effort by several people from projects in the HAL community
@@ -70,64 +75,9 @@ Major new features in HAL-Forms include:
   the URI.
 * Support for multiple forms per document.
 
-### Deprecation warnings
-
-Ketting 7 will now emit warnings when it encounters a `Deprecation` or `Sunset`
-header, or when a link contains the `status: "deprecated"` hint.
-
-For more information about this feature, read [my previous article][10] about
-this feature.
-
-### Removed support for Prefer-Push
-
-HTTP/2 Push support in browsers is [effectively dead][11]. To reduce drag,
-I've removed the `Prefer-Push` feature from Ketting.
-
-### Smarter caching of newly created resoures.
-
-If you use Ketting to create a new resource (for example with `POST`), and
-the server returns a `Content-Location` header in its response, it will
-store the response body with the new URI in it's cache.
-
-This can potentially reduce roundtrips. `Content-Location` is a way for a
-server to say: 'The response body is the representation of the resource
-this URI'.
-
-This is another great example of a HTTP caching feature in Ketting that goes
-beyond what Web Browsers typically do.
-
-Other examples of this is being able to tease apart trancluded/embedded
-responses, allowing servers to invalidate caches for entires with an
-`invalidates` link and exposing cache-related events to the user.
-
-### `State` objects now have a `.follow()` and `.followAll()` function.
-
-A `State` object is returned when you (for example) call `resource.get()`,
-`resource.patch()`, etc.
-
-This object represents an 'Entity' or 'State' returned from the server, which
-really is a fancy way of saying 'the body' + headers that directly pertain
-to the body.
-
-It also provides direct access to hypermedia features such as links and
-actions. The new addition lets you follow hypermedia links straight from
-any HTTP response.
-
-```typescript
-const response = await myResource.post({
-  data: {
-     param1: 'value1'
-  }
-});
-
-// If response contained a HAL, Siren, HTML link or HTTP Link header,
-// we can follow it!
-const newResource = response.follow('more-info');
-```
-
 ### React bindings: `<RequireLogin>`
 
-(note: all of these features were backported)
+(note: all of the new react-ketting features were backported to Ketting 6)
 
 [react-ketting][12] now has a `RequireLogin` component, that can be use to handle
 the OAuth2 `authorization_code` flow in React applications.
@@ -229,6 +179,62 @@ Personally I'm very hyped about this feature, and I can't wait to demo this
 on a meetups or a conferences (if my talk proposals ever get accepted!?).
 
 
+### Deprecation warnings
+
+Ketting 7 will now emit warnings when it encounters a `Deprecation` or `Sunset`
+header, or when a link contains the `status: "deprecated"` hint.
+
+For more information about this feature, read [my previous article][10] about
+this feature.
+
+### Removed support for Prefer-Push
+
+HTTP/2 Push support in browsers is [effectively dead][11]. To reduce drag,
+I've removed the `Prefer-Push` feature from Ketting.
+
+### Smarter caching of newly created resoures.
+
+If you use Ketting to create a new resource (for example with `POST`), and
+the server returns a `Content-Location` header in its response, it will
+store the response body with the new URI in it's cache.
+
+This can potentially reduce roundtrips. `Content-Location` is a way for a
+server to say: 'The response body is the representation of the resource
+this URI'.
+
+This is another great example of a HTTP caching feature in Ketting that goes
+beyond what Web Browsers typically do.
+
+Other examples of this is being able to tease apart trancluded/embedded
+responses, allowing servers to invalidate caches for entires with an
+`invalidates` link and exposing cache-related events to the user.
+
+### `State` objects now have a `.follow()` and `.followAll()` function.
+
+A `State` object is returned when you (for example) call `resource.get()`,
+`resource.patch()`, etc.
+
+This object represents an 'Entity' or 'State' returned from the server, which
+really is a fancy way of saying 'the body' + headers that directly pertain
+to the body.
+
+It also provides direct access to hypermedia features such as links and
+actions. The new addition lets you follow hypermedia links straight from
+any HTTP response.
+
+```typescript
+const response = await myResource.post({
+  data: {
+     param1: 'value1'
+  }
+});
+
+// If response contained a HAL, Siren, HTML link or HTTP Link header,
+// we can follow it!
+const newResource = response.follow('more-info');
+```
+
+
 Upgrading
 ---------
 
@@ -249,10 +255,11 @@ Ketting 7 has been in development and used by us in production since January.
 
 
 Future plans
-------------
+----------------
 
 Long-term Ketting plans include
 
+* Better documentation and educational resources.
 * More React support, including a library of components for automatically
   rendering Hypermedia Forms/Actions and automatic paging of collections.
 * Bindings to other frontend-frameworks.
