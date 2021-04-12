@@ -310,12 +310,11 @@ body.map main #map {
   float: right;
   background: #f26522;
   color: white;
-  padding: 2px;
+  padding: 2px 4px;
   border-radius: 3px;
   margin: 3px 3px 0 0;
   font-family: helvetica, Arial, sans-serif;
   font-size: 90%;
-  font-weight: 700;
 }
 
 .subscribe a {

@@ -1,7 +1,6 @@
 ---
 title: "Ketting 7 released"
-date: "2021-04-11 18:30:00 UTC"
-draft: true
+date: "2021-04-12 17:30:00 UTC"
 tags:
   - ketting
   - hypermedia
@@ -29,7 +28,6 @@ Read on to see what's new!
 What is Ketting?
 ----------------
 
-What’s Ketting?
 
 In short: Ketting is a generic REST client for Javascript. You can use it for
 pushing JSON objects via HTTP, but the richer your API is in terms of best

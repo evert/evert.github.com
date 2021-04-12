@@ -2,6 +2,10 @@
 layout: default
 ---
 
+{% if page.cover_image %}
+<div class="cover"><img src="{{page.cover_image}}" style="width: 100%" /></div>
+{% endif %}
+
 {% if page.draft %}
 <div class="draft-warning">This is a DRAFT. Do not share</div>
 {% endif %}
