@@ -51,7 +51,7 @@ What's new?
 'forms', similar to what the `<form>` tag is to HTML.
 
 Since the start of the year HAL-Forms has seen major updates, which was a
-colaborative effort by several people from projects in the HAL community
+collaborative effort by several people from projects in the HAL community
 (including [Spring HATEOAS][8] and yours truly) and lead by it's author
 [Mike Amudsen][7].
 
@@ -204,8 +204,8 @@ this URI'.
 This is another great example of a HTTP caching feature in Ketting that goes
 beyond what Web Browsers typically do.
 
-Other examples of this is being able to tease apart trancluded/embedded
-responses, allowing servers to invalidate caches for entires with an
+Other examples of this is being able to tease apart transcluded/embedded
+responses, allowing servers to invalidate caches for entries with an
 `invalidates` link and exposing cache-related events to the user.
 
 ### `State` objects now have a `.follow()` and `.followAll()` function.
