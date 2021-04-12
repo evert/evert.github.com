@@ -91,7 +91,7 @@ function MyApp() {
     authorizeEndpoint="https://..."
     tokenEndpoint="https://..">
 
-    You are nog logged in!
+    You are now logged in!
   </RequireLogin>;
 
 }
