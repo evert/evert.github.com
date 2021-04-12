@@ -1,6 +1,6 @@
 ---
 title: "Ketting 7 released"
-date: "2021-04-12 17:30:00 UTC"
+date: "2021-04-12 16:30:00 UTC"
 tags:
   - ketting
   - hypermedia
