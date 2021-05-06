@@ -148,12 +148,18 @@ I realize that that doens't mean imply that 'JWTs are more popular than
 session tokens', for the same reason that GraphQL isn't more popular than
 REST, or NoSQL than relational databases: it's just not that interesting
 to write about the technology that's been tried and tested for a decade or
-more.
+more. In addition, subject experts that write about new solutions are
+likely going to have different problems & scale than the majority of
+their own readers.
 
-However, this phenomenon does create confusion for newcomers. If you keep
-hearing about JWTs, it ends up becoming your default, even if it's the
-sub-optimal choice. If enough new developers pick JWT as their default,
-it could end up being the popular choice.
+However, these new technologies create a lot more buzz than their simpler
+counterparts, and if enough people keep talking about the hot thing,
+eventually this can translate to actual adoption, depsite it being a
+sub-optimal choice for the majority of simple use-cases.
+
+If you're a small shop, and you have a complex Javascript SPA application,
+you use GraphQL, Microservices, Lambdas, Mongo and Kubernetes you may
+be a victim.
 
 This is similar to many newer developers learning how to build SPAs with
 React before server-rendered HTML.  experienced devs would likely feel that
