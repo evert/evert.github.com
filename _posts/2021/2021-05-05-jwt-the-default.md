@@ -245,6 +245,9 @@ us are not building software for space ships, so opting out of security
 features in favor of releasing early is a decision we make every day. It's
 better when that trade-off is made deliberatly.
 
+Acknowledgements
+----------------
+
 Thanks to [Dominik Zogg][6] for providing feedback and suggestions to this
 article!
 
