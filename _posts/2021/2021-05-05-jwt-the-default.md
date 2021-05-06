@@ -67,7 +67,7 @@ information in the cookie and cryptographically sign it:
 
 <figure>
   <a href="https://stackoverflow.com/questions/3240246/signed-session-cookies-a-good-idea">
-    <img src="/assets/posts/jwt/stackoverflow.png" alt="Question about session tokens on Stack Overflow" />
+    <img src="/assets/posts/jwt/stackoverflow.png" alt="Question about session tokens on Stack Overflow" style="max-width: 100%"/>
   </a>
 </figure>
 
