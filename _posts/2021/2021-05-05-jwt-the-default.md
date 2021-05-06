@@ -236,9 +236,14 @@ Conclusion
 ----------
 
 JWTs are cool. They're also difficult to get right and you probably don't
-need it.  Be careful adopting them for anything serious, and maybe choose
-the simpler option: opaque tokens and Redis.
+need it.  Be careful adopting them for anything serious, and consider the
+simpler option first: Opaque session tokens.
 
+If you feel you have legimite reasons to adopt JWT, familiarize
+yourself with revoking, refresh tokens and asymmetric encryption. Most of
+us are not building software for space ships, so opting out of security
+features in favor of releasing early is a decision we make every day. It's
+better when that trade-off is made deliberatly.
 
 Thanks to [Dominik Zogg][6] for providing feedback and suggestions to this
 article!
