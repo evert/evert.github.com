@@ -108,7 +108,8 @@ To be fair, the specific issue (allowing `none` as a "algorithm" by default)
 is better now, and most libraries don't do this anymore. However, this issue
 is part of a larger reason why many security experts [dislike][4] JWT: it has
 a ton of features and options, which means there's a large surface area for
-mistakes, by either library authors or users.
+mistakes, by either library authors or users. (alternative stateless tokens
+to JWT [exists][7], and some of them have fewer issues)
 
 A second issue is 'logging out'. With traditional sessions, you can just
 remove the session token from your session storage, which is effectively
@@ -117,25 +118,38 @@ enough to 'invalidate' the session
 With JWT this is not possible. We can't remove the token, because it's
 self-contained and there's no central authority that can invalidate them.
 
-This is typically solved in two ways:
+This is typically solved in three ways:
 
 1. The tokens are made very short lived. For example, 5 minutes. Before the
    5 minutes are over, we generate a new one. (often using a separate refresh
    token).
 2. Maintain a system that has a list of recently expired tokens.
+3. There is no server-driven log out, and the assumption is that the client
+   can delete their own tokens.
 
-Good systems will typically use both. An important thing to point out is,
-in order to support logout, you'll likely still need a centralized storage
+Good systems will typically use the first two. An important thing to point out
+is, in order to support logout, you'll likely still need a centralized storage
 mechanism (for refresh tokens, revocation lists or both) , which is the very
 thing that JWT were supposed to 'solve'.
+
+> Sidenote: some people like JWT because it's fewer systems to hit per request,
+> but that contradicts with being able to revoke tokens before they expire.
+>
+> My favourite solution to this is keep a global list of JWTs that have been
+> revoked before they expired (and remove the tokens after expiry). Instead
+> of letting webservers hit a server to get this list, push the list to each
+> server using a pub/sub mechanism.
+>
+> Revoking tokens is important for security, but rare. Realistically this
+> list is small and easily fits into memory. This largely solves the
+> logout issue.
 
 A last issue with JWT is that they are relatively big, and when used in
 cookies it adds a lot of per-request overhead.
 
 All in all, that's a lot of drawbacks just to avoid a central session
 store. It's not my opinion that JWT are universally a bad idea or without
-benefits, but there are are things to consider.
-
+benefits, but there is a lot to consider.
 
 Why are they popular?
 ---------------------
@@ -144,7 +158,7 @@ One thing that's surprised me when reading the tech blogs, is that there
 is a _lot_ of chatter around JWT. Especially on Medium and subreddits like
 [/r/node][5] I see intros to JWT on an extremely regular basis.
 
-I realize that that doens't mean imply that 'JWTs are more popular than
+I realize that that doesn't mean that 'JWTs are more popular than
 session tokens', for the same reason that GraphQL isn't more popular than
 REST, or NoSQL than relational databases: it's just not that interesting
 to write about the technology that's been tried and tested for a decade or
@@ -180,6 +194,8 @@ From these 12 articles and Github repos:
   logging out.
 * **1** article mentions that it _might_ be better to use a standard session
   storage instead.
+* **1** article uses _both_ a standard session storage and JWT, making JWT
+  unneeded.
 * **1** github repository ships with pre-generated private keys. (yup)
 * The posts that don't mention refresh tokens have expiry times of
   weeks or months and 3 posts **never** expire their JWTs.
@@ -187,13 +203,13 @@ From these 12 articles and Github repos:
 Except 1, the quality of these highly upvoted posts was extremely low, the
 authors were not qualified to write about this and can potentially cause
 real-world harm. What personally bothered me was the authorative voice they
-all had.
+all had (much like this article, _whoops_).
 
 The list of articles is available on request, I don't want to publicly shame
 what are likely exitable new devs.
 
 This super unscientific experiment with a small sample size at least confirmed
-my bias that JWT is difficult to secure. 
+my bias that JWT is difficult to secure.
 
 On JWT and scale
 ----------------
@@ -205,15 +221,16 @@ there's some nuance.
 
 If you have an active session for every human on earth, and on average
 each session takes about 1000 bytes, that's about 8 TB of storage, which
-is chunky, but doable with conventional databases, and easier with a
-distributed key-value store.
+definitely gets painful with conventional databases, but still very doable
+with distributed key-value stores
 
-The vast majority of applications will of course never even get to 1% of
+The vast majority of applications will never even get to 1% of
 this. If you have not considered logging out for your application, chances
 are that scaling a KV store is not going to be a major concern for you.
 
 Statistically, most of us are building applications that won't make a
 Raspberry Pi break a sweat.
+
 
 Conclusion
 ----------
@@ -222,8 +239,15 @@ JWTs are cool. They're also difficult to get right and you probably don't
 need it.  Be careful adopting them for anything serious, and maybe choose
 the simpler option: opaque tokens and Redis.
 
+
+Thanks to [Dominik Zogg][6] for providing feedback and suggestions to this
+article!
+
+
 [1]: https://crypto.stackexchange.com/questions/9336/is-hmac-md5-considered-secure-for-authenticating-encrypted-data
 [2]: https://insomniasec.com/blog/auth0-jwt-validation-bypass
 [3]: https://jwt.io/
 [4]: https://paragonie.com/blog/2017/03/jwt-json-web-tokens-is-bad-standard-that-everyone-should-avoid
 [5]: https://www.reddit.com/r/node/
+[6]: https://twitter.com/dominikzogg
+[7]: https://www.scottbrady91.com/JOSE/Alternatives-to-JWTs
