@@ -27,10 +27,10 @@ Sessions
 
 The traditional way to solve this is what is often referred to as 'sessions'.
 I don't know what the earliest usage of sessions is, but it's in every web
-framework.
+framework, and has been since web frameworks are a thing.
 
 Often, 'sessions' and 'cookies' are described as 2 different things, but
-they're really now. Cookies are still used for sessions.
+they're really not. A session needs a cookie to work.
 
 ```
 Cookie: MY_SESSION_ID=WW91IGdvdCBtZS4gRE0gbWUgb24gdHdpdHRlciBmb3IgYSBmcmVlIGNvb2tpZQ
@@ -54,8 +54,12 @@ that outlives the server. An easy choice is a database, but it's common for
 sites to use systems like Redis and Memcached, which works for tiny sites, but
 still works at massive scales.
 
-Encrypted cookies
------------------
+This basic concept also extends to authenticating APIs using 'Bearer' or
+'Access' tokens.
+
+
+Encrypted token
+---------------
 
 Over 10 years ago, I started working a bit more with OAuth (1) and similar
 authentication system, and I wondered if we could just store all the
