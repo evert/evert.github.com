@@ -1,5 +1,5 @@
 ---
-title: "JWT appears to have become the default for tokens, and I'm a little surprised"
+title: "I looked at 12 posts recommending JWT, and it's all bad."
 date: "2021-05-05 16:30:00 UTC"
 tags: jwt, security
 draft: true
