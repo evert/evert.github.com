@@ -101,8 +101,8 @@ beginners-level problem either, last year [Auth0][2] had a bug in one of
 their products that had this very problem.
 
 Auth0 is(/was?) a major vendor for security products, and ironically sponsor
-the [jwt.io][3] website. If they're not safe, what chance does the long-tail
-of devs have?
+the [jwt.io][3] website. If they're not safe, what chance does the general
+(developer) public have?
 
 To be fair, the specific issue (allowing `none` as a "algorithm" by default)
 is better now, and most libraries don't do this anymore. However, this issue
@@ -126,7 +126,8 @@ This is typically solved in two ways:
 
 Good systems will typically use both. An important thing to point out is,
 in order to support logout, you'll likely still need a centralized storage
-mechanism, which is the very thing that JWT were supposed to 'solve'.
+mechanism (for refresh tokens, revocation lists or both) , which is the very
+thing that JWT were supposed to 'solve'.
 
 A last issue with JWT is that they are relatively big, and when used in
 cookies it adds a lot of per-request overhead.
@@ -135,11 +136,6 @@ All in all, that's a lot of drawbacks just to avoid a central session
 store. It's not my opinion that JWT are universally a bad idea or without
 benefits, but there are are things to consider.
 
-Overall I feel that traditional session storage should probably be
-everyone's default, and JWT should only be (carefully) considered if there
-are real problems with the default.
-
-The reverse seems to be true though!
 
 Why are they popular?
 ---------------------
@@ -167,34 +163,39 @@ an SPA *when needed*. This is however not the world we live in anymore.
 I see this happening everywhere, but it surprised me for JWT. There's real
 pitfalls, and it's (dare I say) objectively harder to to implement.
 
-So as a small experiment, I looked up the top most popular (by votes) posts
+As a small experiment, I looked up the top most popular (by votes) posts
 on /r/node that mention JWT. I was going to go over the first 100, but got
 bored after the top 12.
 
 From these 12 articles and Github repos:
 
-* 1 mentions using a revocation list, and 3 mention refesh tokens. The
-  remaining articles and github repositories simply have no means of
+* **1** mentions using a revocation list, and **3** mention refesh tokens.
+  The remaining articles and github repositories simply have no means of
   logging out.
-* 1 article mentions that it _might_ be better to use a standard session
+* **1** article mentions that it _might_ be better to use a standard session
   storage instead.
-* 1 github repository ships with pre-generated private keys. (yup)
+* **1** github repository ships with pre-generated private keys. (yup)
 * The posts that don't mention refresh tokens have expiry times of
-  weeks or months and 3 posts _never_ expire their JWTs.
+  weeks or months and 3 posts **never** expire their JWTs.
 
-The quality of these highly upvoted posts was extremely low, the authors
-were not qualified to write about this and can potentially cause real-world
-harm. What personally bothered me was the authorative voice they all had.
+Except 1, the quality of these highly upvoted posts was extremely low, the
+authors were not qualified to write about this and can potentially cause
+real-world harm. What personally bothered me was the authorative voice they
+all had.
 
-This super unscientific experiment small sample size at least confirmed
+The list of articles is available on request, I don't want to publicly shame
+what are likely exitable new devs.
+
+This super unscientific experiment with a small sample size at least confirmed
 my bias that JWT is difficult to secure. 
+
+On JWT and scale
+----------------
 
 Going through tons of Reddit posts and comments also got me a more refined
 idea of why people think JWTs are better. The top reason everywhere is:
 "it's more scalable". Which is similar to "You don't need a database", but
 there's some nuance.
-
-This is also a point I disagree with.
 
 If you have an active session for every human on earth, and on average
 each session takes about 1000 bytes, that's about 8 TB of storage, which
@@ -205,16 +206,15 @@ The vast majority of applications will of course never even get to 1% of
 this. If you have not considered logging out for your application, chances
 are that scaling a KV store is not going to be a major concern for you.
 
+Statistically, most of us are building applications that won't make a
+Raspberry Pi break a sweat.
+
 Conclusion
 ----------
 
-JWTs are cool. They're also difficult to get right and have major security
-pitfalls. Be careful adopting them, and maybe choose the simple option:
-opaque tokens and a session storage.
-
-If you do want to use JWT, and you're so excited to write an article about
-it, consider opening with a big disclaimer.
-
+JWTs are cool. They're also difficult to get right and you probably don't
+need it.  Be careful adopting them for anything serious, and maybe choose
+the simpler option: opaque tokens and Redis.
 
 [1]: https://crypto.stackexchange.com/questions/9336/is-hmac-md5-considered-secure-for-authenticating-encrypted-data
 [2]: https://insomniasec.com/blog/auth0-jwt-validation-bypass
