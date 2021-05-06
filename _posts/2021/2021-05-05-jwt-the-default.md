@@ -62,7 +62,7 @@ Encrypted token
 ---------------
 
 Over 10 years ago, I started working a bit more with OAuth (1) and similar
-authentication system, and I wondered if we could just store all the
+authentication systems, and I wondered if we could just store all the
 information in the cookie and cryptographically sign it:
 
 <figure>
@@ -73,10 +73,7 @@ information in the cookie and cryptographically sign it:
 
 Despite getting some good answers, I never went through with it as I didn't
 feel confident enough in making this secure, and being a trailblazer in crypto
-requires a better understanding in crypto than I did. I would have done this
-by keeping the information in plain text, and using a HMAC-MD5-based signture,
-which in hindsight [maybe(?) holds up][1], although it's far from the state of
-the art.
+requires a better understanding in crypto than I did.
 
 A few years later, we got JWT, and it's hot shit! JWT itself is a standard for
 encrypting/signing JSON objects, but it's used a LOT for authentication.
