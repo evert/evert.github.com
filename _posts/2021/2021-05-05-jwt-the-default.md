@@ -240,10 +240,10 @@ need it.  Be careful adopting them for anything serious, and consider the
 simpler option first: Opaque session tokens.
 
 If you feel you have legimite reasons to adopt JWT, familiarize
-yourself with revoking, refresh tokens and asymmetric encryption. Most of
-us are not building software for space ships, so opting out of security
-features in favor of releasing early is a decision we make every day. It's
-better when that trade-off is made deliberatly.
+yourself with the risks. Most of us are not building software for space
+ships, so opting out of security features in favor of releasing early is
+a decision many of us make every day. It's better when that trade-off is made
+deliberatly.
 
 Acknowledgements
 ----------------
