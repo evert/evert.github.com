@@ -1,5 +1,5 @@
 ---
-title: "I looked at 12 posts recommending JWT, and it's all bad."
+title: "Why using JWT for sessions probably shouldn't be your default choice"
 date: "2021-05-05 16:30:00 UTC"
 tags: jwt, security
 draft: true
