@@ -154,7 +154,7 @@ their own readers.
 
 However, these new technologies create a lot more buzz than their simpler
 counterparts, and if enough people keep talking about the hot thing,
-eventually this can translate to actual adoption, depsite it being a
+eventually this can translate to actual adoption, despite it being a
 sub-optimal choice for the majority of simple use-cases.
 
 If you're a small shop, and you have a complex Javascript SPA application,
