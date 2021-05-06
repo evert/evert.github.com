@@ -245,7 +245,7 @@ and templates, and don't make it the default choice.
 Acknowledgements
 ----------------
 
-Thanks to [Nick Chang-Fong][10] [Dominik Zogg][6] for providing feedback and
+Thanks to [Nick Chang-Fong][10] and [Dominik Zogg][6] for providing feedback and
 suggestions to this article!
 
 
