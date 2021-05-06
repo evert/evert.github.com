@@ -179,13 +179,22 @@ From these 12 articles and Github repos:
 * 1 article mentions that it _might_ be better to use a standard session
   storage instead.
 * 1 github repository ships with pre-generated private keys. (yup)
-* The ones that mention refresh tokens also suggest expiring after 5 minutes,
-  some default to 7 days and 3 _never_ expire their JWTs.
+* The posts that don't mention refresh tokens have expiry times of
+  weeks or months and 3 posts _never_ expire their JWTs.
+
+The quality of these highly upvoted posts was extremely low, the authors
+were not qualified to write about this and can potentially cause real-world
+harm. What personally bothered me was the authorative voice they all had.
+
+This super unscientific experiment small sample size at least confirmed
+my bias that JWT is difficult to secure. 
 
 Going through tons of Reddit posts and comments also got me a more refined
 idea of why people think JWTs are better. The top reason everywhere is:
 "it's more scalable". Which is similar to "You don't need a database", but
 there's some nuance.
+
+This is also a point I disagree with.
 
 If you have an active session for every human on earth, and on average
 each session takes about 1000 bytes, that's about 8 TB of storage, which
@@ -194,7 +203,18 @@ distributed key-value store.
 
 The vast majority of applications will of course never even get to 1% of
 this. If you have not considered logging out for your application, chances
-are that scaling a KV store is not going to be a major concern for you, like
+are that scaling a KV store is not going to be a major concern for you.
+
+Conclusion
+----------
+
+JWTs are cool. They're also difficult to get right and have major security
+pitfalls. Be careful adopting them, and maybe choose the simple option:
+opaque tokens and a session storage.
+
+If you do want to use JWT, and you're so excited to write an article about
+it, consider opening with a big disclaimer.
+
 
 [1]: https://crypto.stackexchange.com/questions/9336/is-hmac-md5-considered-secure-for-authenticating-encrypted-data
 [2]: https://insomniasec.com/blog/auth0-jwt-validation-bypass
