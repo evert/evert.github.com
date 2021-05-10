@@ -1,8 +1,7 @@
 ---
-title: "Why using JWT for sessions probably shouldn't be your default choice"
-date: "2021-05-05 16:30:00 UTC"
+title: "JWT should not be your default for sessions"
+date: "2021-05-10 20:37:00 UTC"
 tags: jwt, security
-draft: true
 ---
 
 Cookies
@@ -230,10 +229,11 @@ Conclusion
 ----------
 
 Using JWTs for tokens add some neat properties and make it possible in some
-cases for your services to be stateless.
+cases for your services to be stateless, which can be desirable property in
+some architectures.
 
 Adopting them comes with drawbacks. You either forego revocation, or you
-need to have infrastructure in place that might in some ways be more complex
+need to have infrastructure in place that be way more complex
 than simply adopting a session store and opaque tokens.
 
 My point in all this is not to discourage the use of JWT in general, but
