@@ -50,7 +50,7 @@ which means the cookie is no longer associated with a user.
 ### Where is the session data stored?
 
 Languages like PHP have a storage system for this built in, and will by default
-by default store data in the local filesystem. In the Node.js ecosystem, by
+store data in the local filesystem. In the Node.js ecosystem, by
 default this data will be in 'memory' and disappear after the server restarts.
 
 These approaches make sense on developer machines, or when sites were hosted
