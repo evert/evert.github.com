@@ -97,7 +97,7 @@ a per-request basis.
 Drawbacks
 ---------
 
-Theres are major drawbacks to using JWT.
+There are major drawbacks to using JWT.
 
 First, it's a complicated standard and users are prone to get the settings
 wrong. If the settings are wrong, in the worst case it could mean that *anyone*
