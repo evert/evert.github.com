@@ -9,6 +9,8 @@ tags:
   - typescript
   - hateoas
 cover_image: https://evertpot.com/assets/cover/ketting.png
+geo: [43.686510, -79.328419]
+location: "East York, ON, Canada"
 ---
 
 We just released version 7 of [Ketting][1]. Ketting is a generic HATEOAS

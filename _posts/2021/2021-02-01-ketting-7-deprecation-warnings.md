@@ -11,6 +11,8 @@ tags:
   - warning
   - depreciation
 cover_image: https://evertpot.com/assets/cover/ketting.png
+geo: [43.686510, -79.328419]
+location: "East York, ON, Canada"
 ---
 
 [Ketting][1] is the generic REST client for Javascript.

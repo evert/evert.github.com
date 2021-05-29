@@ -2,6 +2,8 @@
 title: "JWT should not be your default for sessions"
 date: "2021-05-10 20:37:00 UTC"
 tags: jwt, security
+geo: [43.686510, -79.328419]
+location: "East York, ON, Canada"
 ---
 
 Cookies
