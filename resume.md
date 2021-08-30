@@ -9,7 +9,7 @@ Evert Pot
 
 _Web architect, API developer_
 
-* Last update: *December 17th, 2019*.
+* Last update: *August 29th, 2021*.
 * Location: Toronto, ON, Canada.
 * Contact: <mailto:work@evertpot.com>.
 
@@ -17,9 +17,9 @@ _Web architect, API developer_
 Summary
 -------
 
-My name is Evert, and I've been a Web Developer for 15 years. I've been
-doing consulting for a wide range of companies, from small businesses to
-telcos, financial services and national broadcasters.
+My name is Evert, and I've been professionally programming for 18 years. I've
+been consulting for a wide range of companies, from startups to telcos,
+financial services and national broadcasters.
 
 I'm especially interested in API design, implementing better engineering
 practices, scalability problems and application architecture. I served
@@ -37,10 +37,14 @@ Links
 Experience
 ----------
 
-### Owner at Bad Gateway, Toronto, 2019-now
+### Founder at Bad Gateway, Toronto, 2019-now
 
-In June 2019 I started a new software development agency in Toronto. Our team
-builds Web Applications and APIs for a number of clients.
+In June 2019 I founded a software development agency in Toronto. Our team
+builds Web Applications and APIs for clients in a variety of industries.
+
+My role includes running the company, architect, sales, support and
+recruiting. (Hopefully this list steadily decreases over time).
+
 
 ### Software Engineer at Ascendant Digital, Cayman Islands/Toronto - 2018-now
 
@@ -176,15 +180,29 @@ Skills
 
 ### Technology
 
-* Expert skills: PHP, MySQL, WebDAV, CalDAV, CardDAV, HTTP, Rest APIs,
-  Node JS, Ecmascript 6/7, OAuth2, Javascript, Backbone.js, Atom, HTML5, CSS3,
-  Less, Sass,YUI3, Debian and Ubuntu, Video Transcoding tools, CSS 3, Flash
-  Video, Amazon S3 and EC2, Apache, Nginx.
-* Novice skills: Squid, CakePHP, Make, Golang.
-* Beginner skills: C, Bash programming, Java, Python, Ruby.
-* Ancient skills: (Q/GW)Basic, Delphi, Interbase, Turbo Pascal, x86 assembler,
-  Actionscript, Podcasting, AMF, Flash-PHP interaction using Flash Remoting,
-  FMS/FCS-PHP integration, Flix Encoder, XUL, Wowza Media Server, Lighttpd.
+Expert skills
+-------------
+
+HTTP, Node.js, Typescript, AWS, React, RestAPI, Javascript, OAuth2
+HTML5, MySQL, CSS3, Linux, Video transcoding tools, Docker.
+
+Things I'm good at but not use every day (anymore)
+--------------------------------------------------
+
+PHP, WebDAV, CalDAV, CardDAV, Backbone.js, Atom, Less, Sass, YUI3, Flash
+Video, Apache, Nginx, Squid, CakePHP, Make, Golang.
+
+Beginner skills
+---------------
+
+C, Bash programming, Java, Python, Ruby.
+
+Ancient skills
+--------------
+
+(Q/GW)Basic, Delphi, Interbase, Turbo Pascal, x86 assembler,
+Actionscript, Podcasting, AMF, Flash-PHP interaction using Flash Remoting,
+FMS/FCS-PHP integration, Flix Encoder, XUL, Wowza Media Server, Lighttpd.
 
 
 ### Management
@@ -209,7 +227,10 @@ communicating technical requirements.
 * PHP Meetup, September 2016 - Toronto, Canada: Go for PHP programmers. ([slides](/talks/go-for-php-programmers/) )
 * True North PHP 2016 - Toronto, Canada: Making CSS fun again with Sass. ([slides](https://github.com/evert/sass-talk)).
 * True North PHP 2016 - Toronto, Canada: Introducing sabre/dav.
-* Midwest PHP 2016 - Minneapolis, USA: Promises and Generators. ([slides](https://github.com/evert/promises-and-generators))
+* Midwest PHP 2017 - Minneapolis, USA: Promises and Generators. ([slides](https://github.com/evert/promises-and-generators))
+* React + Native Toronto - Using Ketting with React.
+* TorontoJS, August 2020 - Building a Promise from scratch ([video](https://www.youtube.com/watch?v=CVzx-6fu0d8))
+* Apidays New York 2021 - Introduction to HATEOAS with Ketting. ([video](https://www.youtube.com/watch?v=cZ0e-HoPPJ8))
 
 
 ### Recognition
@@ -222,6 +243,15 @@ communicating technical requirements.
   Contributor to various PHP standards.
 * Member of CalConnect, the Calendaring & Scheduling Consortium. Currently
   working on several documents that hopefully will become IETF RFCs.
+
+IETF drafts:
+
+* [draft-pot-authentication-link](https://datatracker.ietf.org/doc/html/draft-pot-authentication-link)
+* [draft-pot-json-link](https://datatracker.ietf.org/doc/html/draft-pot-json-link)
+* [draft-pot-prefer-push](https://datatracker.ietf.org/doc/html/draft-pot-prefer-push)
+* [draft-pot-webdav-notifications](https://datatracker.ietf.org/doc/html/draft-pot-webdav-notifications)
+* [draft-pot-caldav-sharing](https://datatracker.ietf.org/doc/html/draft-pot-caldav-sharing)
+* [draft-pot-carddav-sharing](https://datatracker.ietf.org/doc/html/draft-pot-carddav-sharing)
 
 
 Other projects
