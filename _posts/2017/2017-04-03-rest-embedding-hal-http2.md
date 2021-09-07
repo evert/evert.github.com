@@ -1,5 +1,6 @@
 ---
-date: 2017-04-03 10:19:25 -0400
+date: "2017-04-03 10:19:25 -0400"
+updated: "2021-09-07 20:14:00 UTC"
 layout: post
 title: "The problems with embedding in REST today and how it might be solved with HTTP/2"
 tags:
@@ -13,6 +14,11 @@ tags:
 location: "Stafford St, Toronto, ON, CA"
 geo: [43.643724, -79.411468]
 ---
+
+**Please note: Recently
+browsers moved to deprecated and remove HTTP/2 Push from the Web Platform,
+making some of the ideas in this POST no longer relevant. See [Push is Dead][10]
+for some more information.**
 
 When looking at REST, the underlying theory, and various interpretations and
 even HTTP, you'll find that REST is about singular resources and transferring
@@ -439,3 +445,4 @@ layer.
 [7]: https://developer.mozilla.org/en-US/docs/Web/API/Cache/put
 [8]: https://tools.ietf.org/html/draft-kazuho-h2-cache-digest-01
 [9]: https://tools.ietf.org/html/rfc5988 "Web linking"
+[10]: /http-2-push-is-dead/ "HTTP/2 Push is Dead"
