@@ -1,6 +1,6 @@
 ---
 date: "2017-04-03 10:19:25 -0400"
-updated: "2021-09-07 20:14:00 UTC"
+update_date: "2021-09-07 20:14:00 UTC"
 layout: post
 title: "The problems with embedding in REST today and how it might be solved with HTTP/2"
 tags:
