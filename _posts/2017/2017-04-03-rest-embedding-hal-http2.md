@@ -15,10 +15,9 @@ location: "Stafford St, Toronto, ON, CA"
 geo: [43.643724, -79.411468]
 ---
 
-**Please note: Recently
-browsers moved to deprecated and remove HTTP/2 Push from the Web Platform,
-making some of the ideas in this POST no longer relevant. See [Push is Dead][10]
-for some more information.**
+**Please note: Recently browsers  deprecate HTTP/2 Push from the Web Platform,
+making some of the ideas in this article no longer relevant.
+See [Push is Dead][10] for some more information.**
 
 When looking at REST, the underlying theory, and various interpretations and
 even HTTP, you'll find that REST is about singular resources and transferring
