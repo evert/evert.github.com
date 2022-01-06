@@ -48,5 +48,5 @@ Thanks for being interested. If you have any feedback I would love to hear it!
 
 [1]: https://www.thunderbird.net/en-US/
 [2]: mailto:rss@evertpot.com
-[3]: http://eepurl.com/dzjtcv
+[3]: https://www.getrevue.co/profile/evertp
 [4]: https://twitter.com/evertp
