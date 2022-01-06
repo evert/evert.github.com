@@ -25,12 +25,12 @@ Today I published the first one: [100 Continue][2].
 
 If you're interested to read the future ones or want to show support, you can:
 
-* [Subscribe to the Mailchip Email list][4], which I've setup for this purpose.
+* [Subscribe to the mailing list][4], which I've setup for this purpose.
 * [Subscribe to my RSS feed][3]
 * Or just follow me on [Twitter][5].
 
 [1]: https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
 [2]: /http/100-continue
 [3]: /atom.xml
-[4]: http://eepurl.com/dzjtcv
+[4]: https://www.getrevue.co/profile/evertp
 [5]: https://twitter.com/evertp
