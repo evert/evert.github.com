@@ -76,7 +76,7 @@ I also helped mentor other developers, and act as a technical lead.
 In April 2017 Turnstyle got acquired by Yelp, and I subsequently moved to San
 Francisco in October.
 
-Although my role hasn't changed that much, I helpbed onboard a quickly growing
+Although my role hasn't changed that much, I helped onboard a quickly growing
 development team, and working with the needs and requirements of a much
 larger corporation, including integrating our existing systems and culture with
 Yelp's.
@@ -138,7 +138,7 @@ geographic redundancy), Memcached, Amazon S3 and EC2 and I was responsible
 for developing a multi-core, multi-machine transcoding engine as well as
 leading the development team.
 Starting August 2009 I resigned as lead architect to continue my work as
-independent consultant, after that I was still involved as in an advisory role
+independent consultant, after that I was still involved in an advisory role
 and owner.
 
 In late 2015 the company was sold to NewZulu, an Australian-based media
@@ -186,7 +186,7 @@ Expert skills
 HTTP, Node.js, Typescript, AWS, React, RestAPI, Javascript, OAuth2
 HTML5, MySQL, CSS3, Linux, Video transcoding tools, Docker.
 
-Things I'm good at but not use every day (anymore)
+Things I'm good at but do not use every day (anymore)
 --------------------------------------------------
 
 PHP, WebDAV, CalDAV, CardDAV, Backbone.js, Atom, Less, Sass, YUI3, Flash
