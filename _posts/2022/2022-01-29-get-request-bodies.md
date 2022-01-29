@@ -141,14 +141,16 @@ But why should be care about semantics? 2 reasons:
 2. It's self-documenting behavior. If you see a `GET` request it tells a
    developer something is being retrieved.
 
-So it makes sense to want to use `GET` for something like a complex search.
-Unfortunately if we can't put the search in the body, our only options
-are headers and the URL. There's a number of issues with this: Encoding UTF-8
-is unclear, no real support for documents/mine-types, length limitations.
-It's a bit of a mess!
+So while #1 doesn't really apply here (there's no technical advantages,
+because it's not defined/standard yet), but #2 makes sense.
 
-Why doesn't it support bodies?
-------------------------------
+So if we decided to use `GET` for our complex search, what can we do?
+Body is obviously not allowed; our only options are headers and the URL.
+There's a number of issues with this: Encoding UTF-8 is unclear, no real
+support for documents/mine-types, length limitations.  It's a bit of a mess!
+
+Why was it designed not to support bodies?
+------------------------------------------
 
 Most developers working with HTTP and learning about it is in the context
 of APIs, but this is not the original use-case.
