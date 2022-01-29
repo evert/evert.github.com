@@ -1,7 +1,7 @@
 ---
 title: "Request bodies in GET requests"
-date: "2022-01-29 13:56:58 UTC"
-geo: [43.686510, -79.328419]
+date: "2022-01-29 19:14:00 UTC"
+geo: [60.183984, -46.400107]
 location: "IE127, Above the Atlantic"
 draft: true
 ---
