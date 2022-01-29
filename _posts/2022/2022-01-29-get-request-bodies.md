@@ -33,11 +33,11 @@ to request bodies with `GET` requests, and that the behavior is left up to the
 implementor.
 
 The reality is that this is more like [Undefined behavior][4] from languages
-like C/C++. My understanding is that leaving certain aspects of the language
+like C/C++. My understanding is that leaving certain aspects of the C language
 undefined (instead of for example requiring an error to be thrown) leaves room for
 compiler implementations to make certain optimizations. Some compilers also
-have fun with this; GCC [starts a video game][5] in a specific case
-of undefined behavior.
+have fun with this; GCC hilariously [starts a video game][5] in a specific case
+of undefined behavior which really brings home this point.
 
 If you were to write a C program that relies on how a compiler dealt with
 specific undefined behavior, it means your program is no longer a portable
