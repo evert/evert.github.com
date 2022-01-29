@@ -180,7 +180,7 @@ documents associated with the URL. [HTTP/0.9 didn't even have headers and
 can be read during a bathroom break][13].
 
 
-Our needs have evolved, why hasn't HTTP?
+Our needs have evolved, has HTTP?
 ----------------------------------------
 
 I still maintain that even if you're building a REST api, it's good to think
