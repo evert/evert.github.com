@@ -60,8 +60,8 @@ prevent people from documenting their arguably broken APIs.
 Why it's not defined
 --------------------
 
-The best source I have is this quote from Roy Fielding in 2007. Roy is one
-of the main authors of the HTTP/1.1 RFCs, and also invented REST.
+The best source I have is this quote from Roy Fielding in 2007. Roy Fielding
+coined REST is and is one of the main authors of the HTTP/1.1 RFCs.
 
 > Yes. In other words, any HTTP request message is allowed to contain a message body, and thus must parse messages with that in mind. Server semantics for GET, however, are restricted such that a body, if any, has no semantic meaning to the request. The requirements on parsing are separate from the requirements on method semantics.
 >  So, yes, you can send a body with GET, and no, it is never useful to do so.
