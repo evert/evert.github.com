@@ -220,6 +220,8 @@ one of those things that's been bouncing around my head for a bit too long.
 
 I hope it's out of my system!
 
+Big thank you to everyone who originally answered my SO question.
+
 Wanna discuss?
 --------------
 
