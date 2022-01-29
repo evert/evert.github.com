@@ -142,7 +142,7 @@ But why should be care about semantics? 2 reasons:
    developer something is being retrieved.
 
 So while #1 doesn't really apply here (there's no technical advantages,
-because it's not defined/standard yet), but #2 makes sense.
+because it's undefined behavior), but #2 makes sense.
 
 So if we decided to use `GET` for our complex search, what can we do?
 Body is obviously not allowed; our only options are headers and the URL.
