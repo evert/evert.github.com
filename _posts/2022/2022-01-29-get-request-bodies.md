@@ -74,10 +74,11 @@ of the main authors of the HTTP/1.1 rfcs, and also invented REST.
 group on Yahoo Groups, but I found an [archive in JSON format][6]</small>)
 
 However, I always found this answer unsatisfying. I understand that you might
-want a lower-layer protocol design that just deals with methods, bodies and
-headers and not concern itself with method-specific behavior.
+want a low-level protocol design that just passes messages containing headers,
+bodies, urls, methods and statuses and not concern itself with method-specific
+behavior.
 
-This design goal doesn't preclude `GET` from specifically rejecting request
+That design goal doesn't preclude `GET` from specifically rejecting request
 bodies though, and it also doesn't preclude the spec from mentioning that
 request bodies should not be emitted.
 
@@ -229,10 +230,10 @@ Hit me up on [Twitter](https://twitter.com/evertp) or use chat on
 [4]: https://en.wikipedia.org/wiki/Undefined_behavior
 [5]: https://feross.org/gcc-ownage/
 [6]: https://github.com/jam01/rest-discuss-archive/blob/262d6768f83cdf811c2a997564105fc74bad8987/rest-discuss/9962.json
-[7]: https://github.com/httpwg/http-core/issues/202 
+[7]: https://github.com/httpwg/http-core/issues/202
 [8]: https://en.wikipedia.org/wiki/The_Death_of_the_Author
 [9]: https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-semantics#section-9.3.1
 [10]: https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-safe-method-w-body-02
 [11]: https://swagger.io/docs/specification/describing-request-body/
-[12]: https://github.com/OAI/OpenAPI-Specification/pull/2117 
+[12]: https://github.com/OAI/OpenAPI-Specification/pull/2117
 [13]: https://www.w3.org/Protocols/HTTP/AsImplemented.html
