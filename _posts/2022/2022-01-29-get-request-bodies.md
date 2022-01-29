@@ -25,7 +25,7 @@ Undefined behavior
 ------------------
 
 A number of people (most famously [ElasticSearch][2]) have gotten this wrong,
-but why? I think it comes from this line in the [HTTP Spec][3]:
+but why? I think it's because of this sentence in the [HTTP Spec][3]:
 
 > A payload within a GET request message has no defined semantics
 
@@ -35,23 +35,23 @@ implementor.
 
 The reality is that this is more like [Undefined behavior][4] from languages
 like C/C++. My understanding is that leaving certain aspects of the language
-undefined (instead of, say, require an error to be thrown) leaves room for
+undefined (instead of for example requiring an error to be thrown) leaves room for
 compiler implementations to make certain optimizations. Some compilers also
 have fun with this; GCC [starts a video game][5] in a specific case
 of undefined behavior.
 
 If you were to write a C program that relies on how a compiler dealt with
-specific undefined behavior, it means you're program is no longer a portable
-C program, but a variant of C that only works on some compilers.
+specific undefined behavior, it means your program is no longer a portable
+C program, but it's written in variant of C that only works on some compilers.
 
 The same applies for HTTP as well. It's true that undefined behavior means
 that *you* as a server developer can define it, but you are not an island!
 
 When working with HTTP, there's servers but also load balancers, proxies,
-browsers and other clients that all need talk to you. The behavior isn't
+browsers and other clients that all need to work together. The behavior isn't
 just undefined server-side, a load balancer might choose to silently drop
-bodies or throw errors. There's many real-world examples of this, `fetch()`
-being a bit one.
+bodies or throw errors. There's many real-world examples of this. `fetch()`
+for example will throw an error.
 
 This hasn't stopped people from doing this anyway. OpenAPI [removed][11]
 support for describing `GET` request bodies in version 3.0 (and `DELETE`,
@@ -67,7 +67,7 @@ The best source I have is this quote from 2007:
 >  So, yes, you can send a body with GET, and no, it is never useful to do so.
 > This is part of the layered design of HTTP/1.1 that will become clear again once the spec is partitioned (work in progress).
 >
->               ....Roy
+> ....Roy
 
 Roy here is 'Roy Fielding', the person behind REST and a major contributor
 of the HTTP/1.1 spec. (<small>His message was originally sent to the now-dead rest-discuss
