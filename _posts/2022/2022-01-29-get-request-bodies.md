@@ -96,10 +96,10 @@ The goal of the spec is to accurately describe the standard, not to define
 it. If what everyone is doing is different from the author's intention,
 the spec has failed to accurately describe the standard, not vice versa.
 
-The HTTP believes this too, which is why we've seen new releases of `HTTP/1.1`,
-without increasing the version. In each iteration major steps are taken
-to capture real-world usage, sometimes even in conflict with the original
-RFC2616.
+The team behind the HTTP specs believes this too, which is why we've
+seen new releases of `HTTP/1.1` without increasing the version.
+In each iteration major steps are taken to capture real-world usage,
+sometimes even in conflict with the original RFC2616.
 
 However, in this case it's irrelevant. Many popular HTTP implementations
 will throw errors when seeing `GET` bodies, such as `fetch()`. Using `GET`
