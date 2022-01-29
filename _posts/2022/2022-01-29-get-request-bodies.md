@@ -199,7 +199,7 @@ GraphQL.
 But there's a new contender. Now I think your best option is [`QUERY`][10].
 This is a new method, that's not quite standard yet but any compliant HTTP
 client and server should already support it. The goal of `QUERY` is
-specifically for this use-case.
+specifically to solve this use-case.
 
 `QUERY` solves the following problems:
 
