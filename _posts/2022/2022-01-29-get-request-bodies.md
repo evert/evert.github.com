@@ -155,8 +155,8 @@ Why was it designed not to support bodies?
 Most developers working with HTTP and learning about it is in the context
 of APIs, but this is not the original use-case.
 
-HTTP and HTML used to be inseperable. The world wide web was mainly a
-distributed hypertext document system, where every document has a global
+It all starts with HTML and browsers and URLS. The world wide web was designed
+as a distributed hypertext document system, where every document has a global
 unique identifier called a URL.
 
 To retrieve a hypertext document, you would do a `GET` on this url, to
