@@ -14,11 +14,11 @@ in some cases disagree with the accepted answer.
 
 Because it keeps popping up in my Stack Overflow notifications (and
 I compulsively visit the site), the question has lived in my head
-rent-free. I've been meaning to write a few thoughts about for a few
-years now it in hopes to evict it.
+rent-free. I keep adding context in my head, and I've been meaning to write
+some of this down for a few years now and hopefully evict it.
 
-Anyway, if you're just looking for an answer, it's 'No, you shouldn't do
-this.'.
+Anyway, if you're just looking for a quick answer, it's 'No, you shouldn't do
+this.', you should probably use [`QUERY`][9].
 
 Undefined behavior
 ------------------
