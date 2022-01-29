@@ -88,7 +88,7 @@ Despite this explanation from one of the authors of the HTTP spec itself,
 I noticed some people will still claim a different interpretation, making
 a sort of a ['death of the author'][8] argument. It's a bit funny to think
 about 'death of the author' in technical specs, but I think they have a
-point. I believe that the definition of a 'standard' such as HTTP is not
+point. I believe that the definition of a standard such as HTTP is not
 the written RFC, it's how everyone actually implements it.
 
 The goal of the spec is to accurately describe the standard, not to define
