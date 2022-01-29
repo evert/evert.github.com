@@ -155,9 +155,9 @@ Why was it designed not to support bodies?
 Most developers working with HTTP and learning about it is in the context
 of APIs, but this is not the original use-case.
 
-It all starts with HTML and browsers and URLS. The world wide web was designed
-as a distributed hypertext document system, where every document has a global
-unique identifier called a URL.
+It all starts with HTML and browsers and URLS. The world wide web was
+[designed][14] as a distributed hypertext document system, where every
+document has a global unique identifier called a URL.
 
 To retrieve a hypertext document, you would do a `GET` on this url, to
 replace or create the document a `PUT` and to remove the document `DELETE`.
@@ -241,3 +241,4 @@ Hit me up on [Twitter](https://twitter.com/evertp) or use chat on
 [11]: https://swagger.io/docs/specification/describing-request-body/
 [12]: https://github.com/OAI/OpenAPI-Specification/pull/2117
 [13]: https://www.w3.org/Protocols/HTTP/AsImplemented.html
+[14]: http://info.cern.ch/hypertext/WWW/Summary.html
