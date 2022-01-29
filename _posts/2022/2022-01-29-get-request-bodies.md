@@ -3,7 +3,6 @@ title: "Request bodies in GET requests"
 date: "2022-01-29 19:14:00 UTC"
 geo: [60.183984, -46.400107]
 location: "IE127, Above the Atlantic"
-draft: true
 ---
 
 12 years ago I asked on Stack Overflow: [Are HTTP GET requests allowed to
@@ -106,16 +105,17 @@ will throw errors when seeing `GET` bodies, such as `fetch()`. Using `GET`
 bodies will give you such poor interopability that it's worth continuing to
 not do this.
 
-In 2019 I've [opened a ticket][7] to request to fix this in the next
-HTTP spec which was taken seriously and now the upcoming HTTP/1.1 is
-going to include the following text:
+In 2019 I've [opened a ticket][7] to request to fix this, and they
+listened. The upcoming HTTP/1.1 is going to include the following text:
 
 > Although request message framing is independent of the method used,
 > content received in a GET request has no generally defined semantics,
 > cannot alter the meaning or target of the request, and might lead
 > some implementations to reject the request and close the connection
 > because of its potential as a request smuggling attack (Section 11.2
-> of [HTTP/1.1]).>A client SHOULD NOT generate content in a GET
+> of HTTP/1.1).
+>
+> A client SHOULD NOT generate content in a GET
 > request unless it is made directly to an origin server that has
 > previously indicated, in or out of band, that such a request has a
 > purpose and will be adequately supported.>An origin server SHOULD
