@@ -11,7 +11,7 @@ have request bodies?][1]. This got a 2626 upvotes and a whopping 1.6 million
 views, so clearly it's something lots of people are still curious about, and
 in some cases disagree with the accepted answer.
 
-[![Stack overflow screenshot][/assets/posts/get-body/so-screenshot.png]][1]
+[![Stack overflow screenshot](/assets/posts/get-body/so-screenshot.png)][1]
 
 Because it keeps popping up in my Stack Overflow notifications (and
 I compulsively visit the site), the question has lived in my head
