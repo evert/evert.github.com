@@ -196,7 +196,7 @@ no-guarantees catch all method. Often also used to tunnel other protocols
 that don't really speak HTTP well, such as SOAP, XMLRPC and more recently
 GraphQL.
 
-But there's a new condenter. Now I think your best option is [`QUERY`][10].
+But there's a new contender. Now I think your best option is [`QUERY`][10].
 This is a new method, that's not quite standard yet but any compliant HTTP
 client and server should already support it. The goal of `QUERY` is
 specifically for this use-case.
