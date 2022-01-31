@@ -18,7 +18,7 @@ rent-free. I keep adding context in my head, and I've been meaning to write
 some of this down for a few years now and hopefully evict it.
 
 Anyway, if you're just looking for a quick answer, it's 'No, you shouldn't do
-this.', you should probably use [`QUERY`][9].
+this.', you should probably use [`QUERY`][10].
 
 Undefined behavior
 ------------------
