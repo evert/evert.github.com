@@ -225,8 +225,8 @@ Big thank you to everyone who originally answered my SO question.
 Wanna discuss?
 --------------
 
-Hit me up on [Twitter](https://twitter.com/evertp) or use chat on
-[Github Discussions](https://github.com/evert/evert.github.com/discussions/42).
+Hit me up on [Twitter](https://twitter.com/evertp/status/1487511342374219780) or use chat on
+[Github Discussions](https://github.com/evert/evert.github.com/discussions/42), or read the [Hackernews Thread](https://news.ycombinator.com/item?id=30129631)
 
 [1]: https://stackoverflow.com/questions/978061/http-get-with-request-body
 [2]: https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html#search-search-api-desc
