@@ -1,5 +1,5 @@
 ---
-title: "Log4j and Faker - yet another take"
+title: "Log4j, Faker and Black Swan Events"
 date: "2022-03-04 22:30:00 UTC"
 tags:
   - open source
