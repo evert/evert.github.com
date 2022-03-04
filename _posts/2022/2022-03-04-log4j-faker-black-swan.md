@@ -1,6 +1,6 @@
 ---
 title: "Log4j, Faker and Black Swan Events"
-date: "2022-03-04 22:30:00 UTC"
+date: "2022-03-04 22:20:00 UTC"
 tags:
   - open source
   - log4j
@@ -53,6 +53,7 @@ issue that pops up, but all these process changes can lead to a situation
 where it's hard to get anything done. An important part of any post-mortem
 should be 'how can we prevent this in the future', but also 'is this issue
 common enough to prevent it from happening again'.
+
 
 
 [1]: https://www.cisa.gov/uscert/apache-log4j-vulnerability-guidance
