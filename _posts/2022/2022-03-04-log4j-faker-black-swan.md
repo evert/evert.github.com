@@ -21,12 +21,13 @@ funding.
 
 In the case of Faker.js/Color.js, a lot of people in the Node.js community
 suggested to no longer specify 'version ranges' for dependencies but lock
-everything to a specific version in `package.json`, but I kind of found
-myself disagreeing with most of this.
+everything to a specific version in `package.json`.
+
+I however found myself disagreeing with both of those conclusions. 
 
 For each of these major issues, I looked at the events
 unfolding and I have a hard time reaching the conclusion that there's a big
-problem that needs to be solved.
+problem that needs to be solved. It was quite the opposite actually.
 
 It's hard to find exact statistics, but the sources I could find suggests
 that there's 100.000s of open source developer as many open source packages.
