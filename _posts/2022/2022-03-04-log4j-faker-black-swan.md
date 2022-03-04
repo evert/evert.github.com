@@ -45,6 +45,10 @@ developers involved and how they were treated, but the conclusion I got
 from these events is that things are actually pretty robust and correct
 themselves in the face of major issues.
 
+A counter example of the open source world, a report recently came out that
+[Linux developers generally fix bugs faster][4] compared to Apple, Google
+or Microsoft by a wide margin.
+
 I don't want to deny that that open source needs more funding. I think it's
 a complex issue that I don't know enough about, but If there are indeed
 major structural issues related to how open source is developed, we should
@@ -61,3 +65,4 @@ common enough to prevent it from happening again'.
 [1]: https://www.cisa.gov/uscert/apache-log4j-vulnerability-guidance
 [2]: https://www.theverge.com/2022/1/9/22874949/developer-corrupts-open-source-libraries-projects-affected
 [3]: https://en.wikipedia.org/wiki/Black_swan_theory
+[4]: https://fossbytes.com/linux-developers-faster-than-apple-google/
