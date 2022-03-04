@@ -30,7 +30,7 @@ unfolding and I have a hard time reaching the conclusion that there's a big
 problem that needs to be solved. It was quite the opposite actually.
 
 It's hard to find exact statistics, but the sources I could find suggests
-that there's at least 100.000s of open source developer as many open source
+that there's at least 100,000s of open source developer as many open source
 packages.  If we have couple of major issues like Log4j and Faker.js every
 year, that feels like a number that's not really worth optimizing for.
 
