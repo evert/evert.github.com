@@ -25,7 +25,7 @@ everything to a specific version in `package.json`.
 
 I however found myself disagreeing with both of those conclusions. 
 
-For each of these major issues, I looked at the events
+For both of these major issues, I looked at the events
 unfolding and I have a hard time reaching the conclusion that there's a big
 problem that needs to be solved. It was quite the opposite actually.
 
