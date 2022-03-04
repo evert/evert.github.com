@@ -31,10 +31,8 @@ problem that needs to be solved. It was quite the opposite actually.
 
 It's hard to find exact statistics, but the sources I could find suggests
 that there's at least 100.000s of open source developer as many open source
-packages.
-
-If we have couple of major issues like Log4j and Faker.js every year, that
-feels like a number that's not really worth optimizing for.
+packages.  If we have couple of major issues like Log4j and Faker.js every
+year, that feels like a number that's not really worth optimizing for.
 
 Proprietary or well-funded software can also have major security bugs,
 and in each of these cases workarounds popped up fast and the issues were
@@ -49,7 +47,7 @@ A counter example of the open source world, a report recently came out that
 [Linux developers generally fix bugs faster][4] compared to Apple, Google
 or Microsoft by a wide margin.
 
-I don't want to deny that that open source needs more funding. I think it's
+I don't want to deny that that open source needs more funding. It's
 a complex issue that I don't know enough about, but If there are indeed
 major structural issues related to how open source is developed, we should
 look at widespread problems and not ['black swan events'][3].
@@ -59,7 +57,6 @@ issue that pops up, but all these process changes can lead to a situation
 where it's hard to get anything done. An important part of any post-mortem
 should be 'how can we prevent this in the future', but also 'is this issue
 common enough to prevent it from happening again'.
-
 
 
 [1]: https://www.cisa.gov/uscert/apache-log4j-vulnerability-guidance
