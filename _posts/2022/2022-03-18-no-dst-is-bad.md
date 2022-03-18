@@ -46,10 +46,17 @@ A lot of programming is (seems?) anglo-centric. A similar situation is that
 before Emoji became wide-spread it was way more common to see a lot more
 issues around encoding non-ascii characters 🤷.
 
-So if DST goes away in North America, I predict we'll see a lot more bugs
-related to timezones, affecting countries that have not yet abolished
-DST, places that change timezone rules and applications that deal with
-historical data.
+So if DST goes away in North America, I predict we'll see more people assuming
+using the offset is enough, resulting in bugs related to:
+
+* Times in countries that have not yet abolished DST.
+* Countries that ever change timezone rules. (This happens more often than
+  you think!)
+* Applications that deal with historical data.
+
+It doesn't help that one of the most common date formats (ISO 8601) uses an
+offset! (`2022-03-18T17:05:30.996-0400`). This is OKish for things that have
+already happened, but not good for anything in the future.
 
 So when you hear developers excited about the US abolishing DST because it
 will make their (work) life simpler, remind them this is only true if you
