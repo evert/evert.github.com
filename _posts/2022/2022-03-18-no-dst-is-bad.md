@@ -52,7 +52,7 @@ DST and places whenever they change *their* rules.
 
 So when you hear developers excited about the US abolishing DST because it
 will make their (work) life simpler, remind them this is only true if you
-never intend your software to be used outside of North America, or if the
+never intend your software to be used outside of North America, or when the
 entire rest of the world makes the same change and also freezes all
 timezone rules forever!
 
