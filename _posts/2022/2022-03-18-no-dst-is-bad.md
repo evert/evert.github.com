@@ -15,12 +15,12 @@ will probably also change where I live 🇨🇦.
 
 No doubt there's lots of benefits and advantages to this, I don't want to
 dispute that. This is also not an endorsement against that change, but I do
-however want to bring light to at least one disadvantage.
+however want to bring light to at least one disadvantage:
 
 The timezone change was for a lot of developers a twice-per-year reminder
 that we need to use timezone databases and libraries.
 
-This is useful, because every year, many countries change their timezone
+This is useful, because every year many countries change their timezone
 rules. This means that if you schedule something in the future, say.. 2pm 6
 months from, you don't know yet with absolute certainty what UTC timestamp
 this will be. This is especially important when scheduling between people
