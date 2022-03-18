@@ -40,9 +40,9 @@ because the DST change doesn't fall on the same day. Currently I'm in the
 3 weeks per year the time difference between me and my parents is 5 
 instead of 6 hours.
 
-A lot of programming is (seems?) anglo-centric. Similarly, before Emoji
-became wide-spread it was way more common to see a lot more issues around
-encoding non-ascii characters.
+A lot of programming is (seems?) anglo-centric. A similar situation is that
+before Emoji became wide-spread it was way more common to see a lot more
+issues around encoding non-ascii characters.
 
 So if DST goes away in North America, I predict we'll see a lot more bugs
 related to timezones, affecting countries that have not yet abolished
