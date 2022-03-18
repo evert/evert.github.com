@@ -28,7 +28,7 @@ in multiple timezones.
 
 The right way to handle this is to store the intended local time + a location
 such as `America/Toronto`. `EST` is not enough, because it's `EDT` half the
-year, and obviously neither is `+0500`.
+year, and obviously neither is `-0500`.
 
 Timezones are relatively stable in North America, but the US also made a
 change [in 2007][2], and it sounds like we may have another one in the future!
