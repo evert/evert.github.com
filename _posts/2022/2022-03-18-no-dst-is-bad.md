@@ -44,7 +44,8 @@ instead of 6 hours.
 
 A lot of programming is (seems?) anglo-centric. A similar situation is that
 before Emoji became wide-spread it was way more common to see a lot more
-issues around encoding non-ascii characters 🤷.
+issues around encoding non-ascii characters 🤷. Especially in languages
+that don't have good native unicode support (looking at you PHP).
 
 So if DST goes away in North America, I predict we'll see more people assuming
 using the offset is enough, resulting in bugs related to:
