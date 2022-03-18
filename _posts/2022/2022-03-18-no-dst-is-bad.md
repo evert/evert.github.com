@@ -48,7 +48,8 @@ issues around encoding non-ascii characters 🤷.
 
 So if DST goes away in North America, I predict we'll see a lot more bugs
 related to timezones, affecting countries that have not yet abolished
-DST and places whenever they change *their* rules.
+DST, places that change timezone rules and applications that deal with
+historical data.
 
 So when you hear developers excited about the US abolishing DST because it
 will make their (work) life simpler, remind them this is only true if you
