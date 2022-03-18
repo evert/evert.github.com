@@ -10,8 +10,8 @@ tags:
 
 Daylight savings time is hated by many, and twice per year a discussion
 reignites to get rid of it. Lot of folks feel this is a great idea. This year
-[this decision][1] seems especially close, although there's people are unsure
-if we should stick to summer or winter time.
+[this decision][1] seems especially close in the US. If this law passes, it
+will probably also change where I live 🇨🇦.
 
 No doubt there's lots of benefits and advantages to this, I don't want to
 dispute that. This is also not an endorsement against that change, but I do
