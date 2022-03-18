@@ -28,7 +28,9 @@ in multiple timezones.
 
 The right way to handle this is to store the intended local time + a location
 such as `America/Toronto`. `EST` is not enough, because it's `EDT` half the
-year, and obviously neither is `-0500`.
+year, and obviously neither is `-0500`. I grew up in the netherlands, and it
+was only when I got into programming I realized that our timezone is not
+`+0100` all year round, unlike what we learned in school.
 
 Timezones are relatively stable in North America, but the US also made a
 change [in 2007][2], and it sounds like we may have another one in the future!
@@ -50,7 +52,7 @@ DST and places whenever they change *their* rules.
 
 So when you hear developers excited about the US abolishing DST because it
 will make their (work) life simpler, remind them this is only true if you
-never intend your software to be used outside of north america, or if the
+never intend your software to be used outside of North America, or if the
 entire rest of the world makes the same change and also freezes all
 timezone rules forever!
 
