@@ -44,8 +44,8 @@ instead of 6 hours.
 
 A lot of programming is (seems?) anglo-centric. A similar situation is that
 before Emoji became wide-spread it was way more common to see a lot more
-issues around encoding non-ascii characters 🤷. Especially in languages
-that don't have good native unicode support (looking at you PHP).
+issues around encoding non-ascii characters 🤷 ([billpg][3]). Especially in
+languages that don't have good native unicode support (looking at you PHP).
 
 So if DST goes away in North America, I predict we'll see more people assuming
 using the offset is enough, resulting in bugs related to:
@@ -67,3 +67,4 @@ timezone rules forever!
 
 [1]: https://www.reuters.com/world/us/us-senate-approves-bill-that-would-make-daylight-savings-time-permanent-2023-2022-03-15/?utm_source=reddit.com
 [2]: https://www.cnn.com/2007/EDUCATION/03/07/extra.daylight.saving/index.html
+[3]: https://news.ycombinator.com/item?id=30696850
