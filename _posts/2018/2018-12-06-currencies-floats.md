@@ -345,6 +345,18 @@ and pass them back. These numbers were larger than Number.MAX_SAFE_INTEGER:
 ```
 > Thanks for the article!
 
+[@drkbugs](https://github.com/drkblog) says:
+
+In my experience with floating point errors you get a lot of impact without going under two decimal points when you add filtering to the combo.
+
+```
+if (2.3 - 1.3 - 1 == 0) {
+  console.log("Zero");
+}
+```
+
+And this is an operation you may expect when dealing with money.
+
 _If you see errors or want to leave comments, feel free to [edit this article][1]
 on github. Just add your comment right above this paragraph, or you
 can make edits anywhere in this article if you feel comfortable doing so._
