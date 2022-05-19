@@ -48,16 +48,6 @@ builds Web Applications and APIs for clients in a variety of industries.
 My role includes running the company, architect, sales, support and
 recruiting. (Hopefully this list steadily decreases over time).
 
-### Software Architect at Embreate, 2016-now
-
-* Since 2016 have acted as a Software Architectr and developer for Embreate on
-  a variety of client projects including the Lee Memorial interactive wall
-  project and the GestureTek Health immersive rehabilitation system.
-* Developed VidQuiz software in partnership with Plai Factory & Embreate (Bad
-  Gateway is a 33% owner in VidQuiz) that provides gamification to live-streamed
-  events like conference calls and in-person meetings.
-* Consulted on The Gathering livestream concept during early conceptualization.
-
 
 ### Software Engineer at Ascendant Digital, Cayman Islands/Toronto - 2018-2020
 
