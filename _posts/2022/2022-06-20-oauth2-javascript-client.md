@@ -63,7 +63,7 @@ const client = new OAuth2Client({
 });
 
 // Part of PCKE
-const codeVerifier = await generateCodeVerifier():
+const codeVerifier = await generateCodeVerifier();
 
 // In a browser this might work as follows:
 document.location = await client.authorizationCode.getAuthorizeUri({
