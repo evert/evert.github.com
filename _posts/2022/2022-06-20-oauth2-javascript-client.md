@@ -1,8 +1,7 @@
 ---
 title: "A new OAuth2 client for Javascript"
-date: "2022-06-19 08:51:00 UTC"
-geo: [43.686510, -79.328419]
-draft: true
+date: "2022-06-20 19:40:00 UTC"
+geo: [45.686510, -79.328419]
 location: "East York, ON, Canada"
 tags:
   - oauth2
@@ -13,7 +12,7 @@ tags:
   - rfc6749
 ---
 
-Frustrated with the lack of well maintained, mimimal OAuth2 libraries, I [wrote
+Frustrated with the lack of well maintained, minimal OAuth2 libraries, I [wrote
 my own][5]. This new OAuth2 library is only **3KB** gzipped, mainly because it
 has **0** dependencies and relies on modern APIs like `fetch()` and
 [Web Crypto][4] which are built in Node 18 (but it works with Polyfills on
@@ -27,7 +26,8 @@ It has support for key features such as:
 * OAuth2 endpoint discovery via the Server metadata document ([RFC8414][2]).
 * OAuth2 Token Introspection ([RFC7662][3]).
 
-If your server does support the meta-data, here's how simple the process looks:
+If your server does support the meta-data document, here's how simple the
+process can be:
 
 ## client_credentials example
 
@@ -42,6 +42,11 @@ const client = new Client({
 
 const tokens = await client.clientCredentials();
 ```
+
+Without the meta-data document, you will need to specify settings such as the
+`tokenEndpoint` and possibly the `authorizationEndpoint` depending on which
+flow you are using.
+
 
 ## authorization_code example
 
