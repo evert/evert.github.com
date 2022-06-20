@@ -37,7 +37,7 @@ const { OAuth2Client } from '@badgateway/oauth2';
 const client = new Client({
   clientId: '..',
   clientSecret: '..',
-  server: 'https://my-auth-server.example
+  server: 'https://my-auth-server.example'
 });
 
 const tokens = await client.clientCredentials();
