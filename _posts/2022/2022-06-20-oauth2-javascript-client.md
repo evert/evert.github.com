@@ -32,7 +32,7 @@ process can be:
 ## client_credentials example
 
 ```typescript
-const { OAuth2Client } from '@badgateway/oauth2';
+import { OAuth2Client } from '@badgateway/oauth2-client';
 
 const client = new Client({
   clientId: '..',
