@@ -55,7 +55,7 @@ The library gives you direct access to the primitives, allowing you to
 integrate in your own frameworks and applications.
 
 ```typescript
-import { OAuth2Client, generateCodeVerifier } from 'client';
+import { OAuth2Client, generateCodeVerifier } from '@badgateway/oauth2-client';
 
 const client = new OAuth2Client({
   server: 'https://authserver.example/',
