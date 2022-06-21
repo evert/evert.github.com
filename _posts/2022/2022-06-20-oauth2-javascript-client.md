@@ -85,8 +85,6 @@ const oauth2Token = await client.authorizationCode.getTokenFromCodeRedirect(
     codeVerifier,
   }
 );
-
-const oauth2Token = await authorizationCode.getToken(codeResponse);
 ```
 
 ## Docs and download
