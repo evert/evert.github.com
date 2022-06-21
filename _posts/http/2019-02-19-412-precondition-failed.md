@@ -47,9 +47,9 @@ Content-Type: text/plain
 The article you're tring to update has changed since you last seen it.
 ```
 
-One great advantage of this is that prevents lost updates, due to multiple
-people writing to the same resource. This is also known as the 'lost update'
-problem.
+One great advantage of this is that prevents conflicts when multiple
+people are writing to the same resource and overwriting each other's
+changes. This is also known as the 'lost update problem'.
 
 Using the `Prefer` header, it's possible for a client to get the current
 state of the resource, in case the local copy was outdated. This saves a `GET`
