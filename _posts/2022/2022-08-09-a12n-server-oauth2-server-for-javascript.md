@@ -75,17 +75,17 @@ Screenshots
 
 
 <figure>
-  <img src="/assets/posts/a12n/admin.png" alt="The admin account creation form" />
+  <img class="fill-width" src="/assets/posts/a12n/admin.png" alt="The admin account creation form" />
   <figcaption>Creating the first account</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/posts/a12n/totp.png" alt="Setting up TOTP" />
+  <img class="fill-width" src="/assets/posts/a12n/totp.png" alt="Setting up TOTP" />
   <figcaption>Setting up TOTP</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/posts/a12n/home.png" alt="The a12n-server home screen" />
+  <img class="fill-width" src="/assets/posts/a12n/home.png" alt="The a12n-server home screen" />
   <figcaption>The a12n-server home screen</figcaption>
 </figure>
 
