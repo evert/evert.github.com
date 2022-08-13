@@ -3,7 +3,6 @@ title: "On syntactic sugar"
 date: "2022-08-13 18:12:29 UTC"
 geo: [45.686510, -79.328419]
 location: "East York, ON, Canada"
-draft: true
 tags:
   - syntactic sugar
   - javascript
