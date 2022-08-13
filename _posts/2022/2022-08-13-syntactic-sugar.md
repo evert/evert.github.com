@@ -20,7 +20,7 @@ The 'just' has a lot of meaning here. To me it suggests that language features
 that are 'just' syntactic sugar, aren't quite as important as features that
 aren't. Maybe it even suggests to me that the language would be fine without.
 
-So while the above to examples both argue that both Javascript classes and
+So while the above two examples both argue that both Javascript classes and
 async/await _aren't_ syntactic sugar, they also kind of come to the defence
 of those features and justify their existence. In other cases when people
 call something syntactic sugar, it's often in a context that's somewhat
