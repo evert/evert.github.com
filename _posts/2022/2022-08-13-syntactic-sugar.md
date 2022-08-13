@@ -17,7 +17,7 @@ some examples:
 * [JS classes are not “just syntactic sugar”][2]
 
 The 'just' has a lot of meaning here. To me it suggests that language features
-that are 'just' syntactig sugar, aren't quite as important as features that
+that are 'just' syntactic sugar, aren't quite as important as features that
 aren't. Maybe it even suggests to me that the language would be fine without.
 
 So while the above to examples both argue that both Javascript classes and
@@ -36,11 +36,14 @@ actual definition I've found is generally positive, such as this one from
 > concisely, or in an alternative style that some may prefer.
 
 The thing is, isn't every language feature beyond the bare minimum of what
-makes a language turing-complete syntax sugar? You don't need classes because
-you can use functions and objects. You don't really need types if you have
-strings for everything. Functions can be implemented with goto. Multiply can
-be implemented with addition, `or` and `and`, `xor` can be implemented with
-`nand`, async/await can be implemented with generators.
+makes a language turing-complete syntax sugar?
+
+* You don't need classes because you can use functions and structs.
+* You don't really need types because everything can fit in a string.
+* Functions can be implemented with goto.
+* Multiply can be implemented with addition.
+* `or` and `and`, `xor` can be implemented with `nand`.
+* async/await can be implemented with generators.
 
 Almost everything is syntax sugar, that's not a bad thing, it's just
 uninteresting.
