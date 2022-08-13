@@ -45,8 +45,10 @@ makes a language turing-complete syntax sugar?
 * `or` and `and`, `xor` can be implemented with `nand`.
 * async/await can be implemented with generators.
 
-Almost everything is syntax sugar, that's not a bad thing, it's just
-uninteresting.
+These are all incredibly useful features that make it easier to read and write
+code and express ideas. Almost every language feature could be considered
+syntactic sugar. That's not a bad thing, it's just uninteresting to point out.
+
 
 [1]: https://www.zhenghao.io/posts/await-vs-promise 
 [2]: https://webreflection.medium.com/js-classes-are-not-just-syntactic-sugar-28690fedf078
