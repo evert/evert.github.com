@@ -36,7 +36,7 @@ illustrate what Ubuntu launched with:
 
 <img src="/assets/posts/firefox-snap.png" title="Update Firefox To Avoid Disruptions notification in Ubuntu" />
 
-This is just the stuff I ran into myself, I imagine the total list of bugs must be way higher.
+This is just the stuff I ran into myself, (and I have reported most of these). I imagine the total list of bugs must be way higher.
 I don't usually go out and complain on the internet like this, especially when it's about open source projects.
 I'm a Linux user, so I've kind of come to expect things to not be quite as polished as some of its commercial
 counterparts. They're small trade-offs to support Open Source.
@@ -44,4 +44,6 @@ counterparts. They're small trade-offs to support Open Source.
 However, I'm so surprised by the lack of quality control for arguably the #1 application on the #1 linux distro I'm
 frankly flabbergasted, and for the first time since switching from Debian to Ubuntu 15ish years ago I'm considering
 [jumping ship](https://getfedora.org/) again. What happened here?
+
+Comments? Reply to [this tweet](https://twitter.com/evertp/status/1565819403245129728)
 
