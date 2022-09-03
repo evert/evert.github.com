@@ -33,6 +33,8 @@ illustrate what Ubuntu launched with:
 * When there's an update to the Firefox package, the following notification appears, once per day.
   Restarting Firefox does not make this go away. The official answer is to run `snap refresh firefox` to
   make it go away.
+* [GSConnect](https://github.com/GSConnect/gnome-shell-extension-gsconnect/wiki) Firefox Add-on is
+  broken.
 
 <img src="/assets/posts/firefox-snap.png" title="Update Firefox To Avoid Disruptions notification in Ubuntu" />
 
