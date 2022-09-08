@@ -1,0 +1,167 @@
+---
+title: "Building APIs with Bun and Curveball"
+date: "2022-09-01 09:39:29 UTC"
+geo: [45.686510, -79.328419]
+location: "East York, ON, Canada"
+draft: true
+tags:
+  - bun
+  - curveball
+  - node
+  - framework
+---
+
+[Bun][1] is the hot new server-side Javascript runtime, in the same category
+as [Node][2] and [Deno][3]. Bun uses the [JavascriptCore][4] engine from
+Webkit, unlike Node and Deno which use [V8][5]. A big selling point is that
+it's coming out faster in a many benchmarks, however the things I'm personally
+excited about is some of it's quality of life features:
+
+* It parses Typescript and JSX by default (but doesn't type check), which
+  means there's no need for a separate 'dist' directory, or a separate tool
+  like `ts-node`.
+* It loads `.env` files by default.
+* It's compatible with NPM, `package.json`, and many built-in Node modules.
+
+I also like that it's 'Hello world HTTP server' is as simple as writing this
+file:
+
+```typescript
+// http.ts
+export default {
+  port: 3000,
+  fetch(request: Request): Promise<Response> {
+    return new Response("Hello world!");
+  },
+};
+```
+
+And then running it with:
+
+```sh
+bun run http.ts
+```
+
+Bun will recognize that an object with a `fetch` function was default-exported,
+and start a server on port 3000. As you can see here, this uses the standard
+[Request][6] and [Response][7] objects you use in a browser, and can use
+async/await.
+
+These are all things that didn't exist when Node and Express were first
+created, but seem like pretty good ideas for something built today. I don't think
+using `Request` and `Response` are good for more complex use-cases (streaming
+responses, 1xx responses, trailers, upgrading to other protocols, getting tcp
+connection metadata like remoteAddr are some that come to mind),
+because these objects are designed for clients first.
+
+But in many cases people are just building simple endpoints, and for that it's
+great.
+
+It's also missing some features, such as support for server-side websockets and
+the node http/https/https packages, which for now makes it incompatible with
+popular frameworks like Express.
+
+
+Porting Curveball
+-----------------
+
+At Bad Gateway I work on the [Curveball][8] framework, which differs itself a
+bit from frameworks like Express and Koa because it effectively
+abstracts/encapsulates the core 'Request' and 'Response' objects that Node
+provides.
+
+This made it very easy to create a lambda integration in the past. To get
+Express to run on lambda the Node `http` stack needs to be emulated, which
+requires a ton of code from libraries like [serverless-express][8], where
+it was just 2 functions with curveball.
+
+So after some refactoring last week, Curveball now also supports Bun.
+
+This is how you use it:
+
+```typescript
+import { Application } from '@curveball/kernel';
+
+const app = new Application();
+
+// Add all your middlewares here!
+app.use( ctx => {
+  ctx.response.body = {msg: 'hello world!'}; 
+});
+
+export default {
+  port: 3000,
+  fetch: app.fetch.bind(app)
+};
+```
+
+It's still a bit experimental, but the following middlewares are tested:
+
+* [router](https://github.com/curveball/router)
+* [controller](https://github.com/curveball/controller)
+* [cors](https://github.com/curveball/cors)
+* [accesslog](https://github.com/curveball/accesslog)
+* [bodyparser](https://github.com/curveball/bodyparser)
+* [validator](https://github.com/curveball/validator)
+
+And because JSX also just works, it's relatively easy to use it to generate
+HTML:
+
+```typescript
+import { Application } from '@curveball/kernel';
+import reactMw from '@curveball/react';
+import React from 'react';
+
+const app = new Application();
+
+app.use(reactMw());
+
+app.use( ctx => {
+
+  ctx.response.type = 'text/html; charset=utf-8';
+  ctx.response.body = <html>
+    <body>
+      <div>
+        <h1>Hello world!</h1>
+      </div>
+    </body>
+  </html>;
+
+});
+
+export default {
+  port: 3000,
+  fetch: app.fetch.bind(app)
+};
+```
+
+This is not a full-blown hydration/server-rendering solution, but JSX has
+replaced template engines like EJS and Handlebars for us. You can do the
+same stuff, but it's built into the language and type-checked.
+
+It was considerably easier to port this to Bun. Deno was a much greater
+challenge, due to it having such a radically different idea about packages
+and module loading.
+
+So, I'm curious where all of this goes! Perhaps Bun is the future, or
+perhaps we'll see Node get parity with Bun and making it obsolete. Either
+way competition is good, and Bun seems pretty impressive.
+
+I feel it might have a better chance than Deno, because it delivers its
+features while mostly staying inside with the Node ecosystem.
+
+Although as it turns out Deno also has changed their tune and also made
+it [a new goal][9] to be compatible. I wonder if this was inspired by
+Bun's recent success as well.
+
+[1]: https://bun.sh/
+[2]: https://nodejs.org/
+[3]: https://deno.land/
+[4]: https://github.com/WebKit/WebKit/tree/main/Source/JavaScriptCore
+[5]: https://v8.dev/
+[6]: https://developer.mozilla.org/en-US/docs/Web/API/Request
+[7]: https://developer.mozilla.org/en-US/docs/Web/API/Response
+[8]: https://curveballjs.org/ 
+[7]: https://github.com/curveball/aws-lambda
+[8]: https://github.com/vendia/serverless-express
+[9]: https://deno.com/blog/changes
