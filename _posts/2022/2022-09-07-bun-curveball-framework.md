@@ -136,23 +136,29 @@ export default {
 ```
 
 This is not a full-blown hydration/server-rendering solution, but JSX has
-replaced template engines like EJS and Handlebars for us. You can do the
-same stuff, but it's built into the language and type-checked.
+replaced template engines like EJS and Handlebars for us. JSX lets you do
+the same things, but you get the advantage of type checking, it's harder
+to create XSS bugs and full Javascript access.
 
-It was considerably easier to port this to Bun. Deno was a much greater
-challenge, due to it having such a radically different idea about packages
-and module loading.
+Final thoughts on Bun
+---------------------
+
+Compared to Deno, It was considerably easier to port Curveball to Bun.
+Deno was a much greater challenge, due to it having such a radically
+different idea about packages and module loading. This was over a year
+ago, so it's worth giving a shot again.
 
 So, I'm curious where all of this goes! Perhaps Bun is the future, or
 perhaps we'll see Node get parity with Bun and making it obsolete. Either
-way competition is good, and Bun seems pretty impressive.
+way competition is good.
 
-I feel it might have a better chance than Deno, because it delivers its
-features while mostly staying inside with the Node ecosystem.
+I feel Bun has a better chance than Deno, because it delivers many of
+its advantages, features while mostly staying inside with the Node
+ecosystem.
 
 Although as it turns out Deno also has changed their tune and also made
-it [a new goal][9] to be compatible. I wonder if this was inspired by
-Bun's recent success as well.
+it [a new goal][9] to be compatible. I can't help wondering if this was
+inspired by Bun's recent success as well.
 
 [1]: https://bun.sh/
 [2]: https://nodejs.org/
