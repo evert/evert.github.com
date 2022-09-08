@@ -1,6 +1,6 @@
 ---
 title: "Building APIs with Bun and Curveball"
-date: "2022-09-08 09:39:29 UTC"
+date: "2022-09-07 09:39:29 UTC"
 geo: [45.686510, -79.328419]
 location: "East York, ON, Canada"
 draft: true
