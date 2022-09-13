@@ -3,6 +3,7 @@ title: "Porting Curveball to Bun"
 date: "2022-09-13 16:30:00 UTC"
 geo: [43.647858945982136, -79.38963544544829]
 location: "Tiny Garage Office"
+cover_image: https://evertpot.com/assets/cover/curveball.png
 tags:
   - bun
   - curveball
@@ -75,7 +76,7 @@ the core 'Request' and 'Response' objects Node provides.
 
 This made it very easy to create a lambda integration in the past; instead of
 mapping to Node's Request and Response types, All I needed was simple mapping
-function for Lambdas dea of what a request and response looks like.
+function for Lambdas idea of what a request and response looks like.
 
 To get Express to run on AWS Lambda the Node `http` stack needs to be emulated, or
 a full-blown HTTP/TCP server needs to be started and proxied to. Each of these
