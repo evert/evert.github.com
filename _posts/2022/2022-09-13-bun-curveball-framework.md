@@ -81,11 +81,12 @@ To get Express to run on AWS Lambda the Node `http` stack needs to be emulated, 
 a full-blown HTTP/TCP server needs to be started and proxied to. Each of these
 workarounds require a ton of code from libraries like [serverless-express][8].
 
-So with Bun up and coming, the same work would need to be done on or Bun needs
-to add full compability for the Node `http` module.
+So with Bun up and coming, either the same work would need to be done to emulate
+Node's APIs, or Bun would would need to add full compability for the Node `http`
+module (which is eventually coming).
 
-Due to's Curveball abstract, it was relatively easy to get Curveball up and
-running and it doesn't require any Bun-specific code.
+But because Curveball abstractions, it was relatively easy to get up and running.
+Most of the work was moving the Node-specific code into a new package.
 
 Here's the Curveball 'hello world' on Bun:
 
