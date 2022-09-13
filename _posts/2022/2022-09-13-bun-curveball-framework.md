@@ -86,8 +86,9 @@ So with Bun up and coming, either the same work would need to be done to emulate
 Node's APIs, or Bun would would need to add full compability for the Node `http`
 module (which is eventually coming).
 
-But because Curveball abstractions, it was relatively easy to get up and running.
-Most of the work was moving the Node-specific code into a new package.
+But because of Curveball's message abstractions it was relatively easy to get
+up and running. Most of the work was moving the Node-specific code into a new
+package.
 
 Here's the Curveball 'hello world' on Bun:
 
