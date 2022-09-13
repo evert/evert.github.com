@@ -65,17 +65,19 @@ popular frameworks like Express.
 Porting Curveball
 -----------------
 
-At Bad Gateway I work on the [Curveball][8] framework, which differs itself a
-bit from frameworks like Express and Koa because it effectively
-abstracts/encapsulates the core 'Request' and 'Response' objects that Node
-provides.
+Curveball is a Typescript micro-framework we’ve been developing since mid-2018
+as a modern replacement for Express and Koa. A key difference between Curveball
+and these two frameowrks is that it fully abstracts/encapsulates the core
+'Request' and 'Response' objects Node provides.
 
 This made it very easy to create a lambda integration in the past. To get
 Express to run on lambda the Node `http` stack needs to be emulated, which
 requires a ton of code from libraries like [serverless-express][8], where
-it was just 2 functions with curveball.
+it was just 2 functions with curveball. To make it run on Bun, the same work
+will need to be done or Bun needs to implement the full Node `http` stack.
 
-So after some refactoring last week, Curveball now also supports Bun.
+But due to this abstraction, it was relatively easy to get Curveball up and
+running.
 
 This is how you use it:
 
