@@ -57,18 +57,18 @@ because these objects are designed for clients first.
 But in many cases people are just building simple endpoints, and for that it's
 great.
 
-It's also missing some features, such as support for server-side websockets and
-the node http/https/https packages, which for now makes it incompatible with
-popular frameworks like Express.
-
+Bun supports a ton of the standard Node modules, but it's also missing some
+such as support for server-side websockets and the node http/https/https
+packages, which for now makes it incompatible with popular frameworks like
+Express.
 
 Porting Curveball
 -----------------
 
-Curveball is a Typescript micro-framework we’ve been developing since mid-2018
-as a modern replacement for Express and Koa. A key difference between Curveball
-and these two frameworks is that it fully abstracts and encapsulates the core
-'Request' and 'Response' objects Node provides.
+[Curveball][10] is a Typescript micro-framework we’ve been developing since
+mid-2018 as a modern replacement for Express and Koa. A key difference between
+Curveball and these two frameworks is that it fully abstracts and encapsulates
+the core 'Request' and 'Response' objects Node provides.
 
 This made it very easy to create a lambda integration in the past; instead of
 mapping to Node's Request and Response types, All I needed was simple mapping
@@ -160,7 +160,7 @@ perhaps we'll see Node get parity with Bun and making it obsolete. Either
 way competition is good.
 
 I feel Bun has a better chance than Deno, because it delivers many of
-its advantages, features while mostly staying inside with the Node
+its advantages and features while mostly staying inside with the Node
 ecosystem.
 
 Although as it turns out Deno also has changed their tune and also made
@@ -178,3 +178,4 @@ inspired by Bun's recent success as well.
 [7]: https://github.com/curveball/aws-lambda
 [8]: https://github.com/vendia/serverless-express
 [9]: https://deno.com/blog/changes
+[10]: https://curveballjs.org/
