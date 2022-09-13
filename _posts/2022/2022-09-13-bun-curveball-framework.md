@@ -1,5 +1,5 @@
 ---
-title: "Building APIs with Bun and Curveball"
+title: "Porting Curveball to Bun"
 date: "2022-09-13 16:30:00 UTC"
 geo: [43.647858945982136, -79.38963544544829]
 location: "Tiny Garage Office"
@@ -147,9 +147,9 @@ export default {
 ```
 
 This is not a full-blown hydration/server-rendering solution, but JSX has
-replaced template engines like EJS and Handlebars for us. JSX lets you do
-the same things, but you get the advantage of type checking, it's harder
-to create XSS bugs and full Javascript access.
+replaced template engines like EJS and Handlebars for us at
+[Bad Gateway][11]. JSX lets you do the same things, but you get the advantage
+of type checking, it's harder to create XSS bugs and full Javascript access.
 
 Final thoughts on Bun
 ---------------------
@@ -183,3 +183,4 @@ inspired by Bun's recent success as well.
 [8]: https://github.com/vendia/serverless-express
 [9]: https://deno.com/blog/changes
 [10]: https://curveballjs.org/
+[11]: https://badgateway.net/
