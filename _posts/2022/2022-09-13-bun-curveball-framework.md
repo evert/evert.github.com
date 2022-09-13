@@ -1,14 +1,17 @@
 ---
 title: "Building APIs with Bun and Curveball"
-date: "2022-09-07 09:39:29 UTC"
-geo: [45.686510, -79.328419]
-location: "East York, ON, Canada"
-draft: true
+date: "2022-09-13 16:30:00 UTC"
+geo: [43.647858945982136, -79.38963544544829]
+location: "Tiny Garage Office"
 tags:
   - bun
   - curveball
   - node
   - framework
+  - deno
+  - express
+  - v8
+  - javascriptcore
 ---
 
 [Bun][1] is the hot new server-side Javascript runtime, in the same category
