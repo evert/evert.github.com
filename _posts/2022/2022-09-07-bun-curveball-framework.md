@@ -67,26 +67,31 @@ Porting Curveball
 
 Curveball is a Typescript micro-framework we’ve been developing since mid-2018
 as a modern replacement for Express and Koa. A key difference between Curveball
-and these two frameowrks is that it fully abstracts/encapsulates the core
+and these two frameworks is that it fully abstracts and encapsulates the core
 'Request' and 'Response' objects Node provides.
 
-This made it very easy to create a lambda integration in the past. To get
-Express to run on lambda the Node `http` stack needs to be emulated, which
-requires a ton of code from libraries like [serverless-express][8], where
-it was just 2 functions with curveball. To make it run on Bun, the same work
-will need to be done or Bun needs to implement the full Node `http` stack.
+This made it very easy to create a lambda integration in the past; instead of
+mapping to Node's Request and Response types, All I needed was simple mapping
+function for Lambdas dea of what a request and response looks like.
 
-But due to this abstraction, it was relatively easy to get Curveball up and
-running.
+To get Express to run on AWS Lambda the Node `http` stack needs to be emulated, or
+a full-blown HTTP/TCP server needs to be started and proxied to. Each of these
+workarounds require a ton of code from libraries like [serverless-express][8].
 
-This is how you use it:
+So with Bun up and coming, the same work would need to be done on or Bun needs
+to add full compability for the Node `http` module.
+
+Due to's Curveball abstract, it was relatively easy to get Curveball up and
+running and it doesn't require any Bun-specific code.
+
+Here's the Curveball 'hello world' on Bun:
 
 ```typescript
 import { Application } from '@curveball/kernel';
 
 const app = new Application();
 
-// Add all your middlewares here!
+// Add all your middlewares here! This should look familiar to Koa users.
 app.use( ctx => {
   ctx.response.body = {msg: 'hello world!'}; 
 });
@@ -106,8 +111,8 @@ It's still a bit experimental, but the following middlewares are tested:
 * [bodyparser](https://github.com/curveball/bodyparser)
 * [validator](https://github.com/curveball/validator)
 
-And because JSX also just works, it's relatively easy to use it to generate
-HTML:
+And because JSX also just works in Bun, it's relatively easy to use it to
+generate HTML:
 
 ```typescript
 import { Application } from '@curveball/kernel';
