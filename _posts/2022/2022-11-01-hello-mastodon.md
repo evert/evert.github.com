@@ -56,7 +56,7 @@ blogging culture.
 
 ## Links
 
-* If you're just getting started, check out <https://joinmastadon.org/> and
+* If you're just getting started, check out <https://joinmastodon.org/> and
   find a server.
 * [Follow me!](https://indieweb.social/web/@evert)
 * To find your Twitter friends on Mastadon try [Twitodon](https://twitodon.com/) and [Fedifinder](https://fedifinder.glitch.me/).
