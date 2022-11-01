@@ -26,11 +26,12 @@ Mastadon is interesting, because on the surface it might just seem like a
 Twitter clone, but it's based on a federated protocol called 'ActivityPub'.
 What this means in practice, is that there's no central server. There's
 many [instances](https://joinmastodon.org/servers). Each of these instances
-is managed by different people, but you can still follow and be followed
-by people on different instances.
+is managed by different people, and many of them focus on specific interests.
 
-Like email, it doesn't matter which provider you go with, you can send and
-receive messages to everyone else. Unlike email, it appears that with
+With email, it doesn't matter which provider you go with, you can send and
+receive messages to everyone else. This is the same with Mastadon. You're not
+siloed into a single instance, and you can follow people from any other
+instance. Unlike email, it appears that with
 Mastadon you can actually migrate to different instances if you don't like
 your current one.
 
