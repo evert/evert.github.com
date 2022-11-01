@@ -41,7 +41,7 @@ loved. And even though I'm not siloed in, I get access to a local feed of
 like-minded people from that community. Everything feels new and more
 intimate.
 
-Also instead of one central authority that you have to trust to make the right
+Also, instead of one central authority that you have to trust to make the right
 moderation decisions, you can join one of many that aligns with your values,
 and you can block entire instances that don't.
 
