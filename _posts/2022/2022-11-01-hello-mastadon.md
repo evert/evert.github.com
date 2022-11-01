@@ -10,7 +10,7 @@ tags:
   - activityfeed
 ---
 
-I've been a Twitter user and fan since 2007, Now Twitter's future is
+I've been a Twitter user and fan since 2007. With Twitter's future
 looking a bit grim, I started looking around if there's another place to go.
 
 Twitter can't really be replaced with anything else, because everyone's
@@ -22,18 +22,18 @@ that group would all flock to another platform.
 But for the ones that do try something else, the talk of the town seems
 to be [Mastodon](https://joinmastodon.org/).
 
-Mastadon is interesting, because on the surface it might just seem like a
+Mastodon is interesting. On the surface it might just seem like a
 Twitter clone, but it's based on a federated protocol called 'ActivityPub'.
-What this means in practice, is that there's no central server. There's
+What this means in practice is that there's no central server. There's
 many [instances](https://joinmastodon.org/servers). Each of these instances
 is managed by different people, and many of them focus on specific interests.
 
-With email, it doesn't matter which provider you go with, you can send and
-receive messages to everyone else. This is the same with Mastadon. You're not
-siloed into a single instance, and you can follow people from any other
-instance. Unlike email, it appears that with
-Mastadon you can actually migrate to different instances if you don't like
-your current one.
+With email, it doesn't matter which provider you go with Thanks to universal
+SMTP standards that every server uses, you can exchange messages with everyone
+else. This is the same with Mastadon. You're not siloed into a single instance,
+and you can follow people from any other instance. Unlike email, it appears
+that with Mastadon you can actually migrate to different instances if you don't
+like your current one.
 
 This has some interesting side effects too. I joined the
 [IndieWeb](https://indieweb.org/) instance, which is a community I already
@@ -49,9 +49,10 @@ So should you join? If you use Twitter to stay on top of news and follow high
 profile people then probably not. If you're like me, you might be able to
 find a community that fits your interest.
 
-Will I stick to this? Who knows... but Twitter, like everything before it
-will fall out of favor one day and I'm enjoying the ad-free, open source,
-developer-friendly experience. Reminds me of early Twitter.
+Will I stick to this? Who knows... but Twitter, like everything before,
+will fall out of favor one day and I'm enjoying Mastadon's ad-free, open source,
+developer-friendly experience. Reminds me of early Twitter or mid-2000's
+blogging culture.
 
 ## Links
 
@@ -69,5 +70,5 @@ single-user instance. Instead of joining some large instance, you deploy
 an instance on your own domain that's just for you. Can't get more control
 than that, and this might be something I'll consider in the future.
 
-I don't see why this blog couldn't one also be a 'microblog' and part of the
-fediverse.
+I don't see why this blog couldn't one day also be a 'microblog' and part of the
+[fediverse](https://en.wikipedia.org/wiki/Fediverse).
