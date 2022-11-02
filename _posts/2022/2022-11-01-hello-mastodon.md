@@ -30,9 +30,9 @@ is managed by different people, and many of them focus on specific interests.
 
 With email, it doesn't matter which provider you go with Thanks to universal
 SMTP standards that every server uses, you can exchange messages with everyone
-else. This is the same with Mastadon. You're not siloed into a single instance,
+else. This is the same with Mastodon. You're not siloed into a single instance,
 and you can follow people from any other instance. Unlike email, it appears
-that with Mastadon you can actually migrate to different instances if you don't
+that with Mastodon you can actually migrate to different instances if you don't
 like your current one.
 
 This has some interesting side effects too. I joined the
@@ -50,7 +50,7 @@ profile people then probably not. If you're like me, you might be able to
 find a community that fits your interest.
 
 Will I stick to this? Who knows... but Twitter, like everything before,
-will fall out of favor one day and I'm enjoying Mastadon's ad-free, open source,
+will fall out of favor one day and I'm enjoying Mastodon's ad-free, open source,
 developer-friendly experience. Reminds me of early Twitter or mid-2000's
 blogging culture.
 
@@ -59,7 +59,7 @@ blogging culture.
 * If you're just getting started, check out <https://joinmastodon.org/> and
   find a server.
 * [Follow me!](https://indieweb.social/web/@evert)
-* To find your Twitter friends on Mastadon try [Twitodon](https://twitodon.com/) and [Fedifinder](https://fedifinder.glitch.me/).
+* To find your Twitter friends on Mastodon try [Twitodon](https://twitodon.com/) and [Fedifinder](https://fedifinder.glitch.me/).
 * To automatically cross-post everything from Twitter to Mastodon and vice versa, use [Moa](https://moa.party/).
 
 Lastly, one of the interesting results of Mastodon building on open protocols,
