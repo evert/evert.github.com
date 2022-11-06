@@ -4,6 +4,11 @@
     <meta charset="utf-8" />
     <title>{{ page.title }}</title>
     <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed" />
+    {% if page.icon %}
+      <link rel="shortcut icon" href="{{ page.icon }}" />
+    {% else %}
+      <link rel="shortcut icon" href="/assets/img/flower-icon.png" />
+    {% endif %}
     <link rel="shortcut icon" href="/assets/img/flower-icon.png" />
     <link rel="canonical" href="https://evertpot.com{{page.url}}" />
 
