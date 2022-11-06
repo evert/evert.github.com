@@ -430,10 +430,6 @@ figure table td, figure table th {
   color: black;
 }
 
-body.neko .cover {
-  display: none;
-}
-
 body.neko figure {
   display: flex;
   justify-content: center;
@@ -451,18 +447,19 @@ body.neko #neko1 {
   padding-right: 10px;
 }
 
-body.neko #neko2 {
+body.neko #neko2, body.neko #neko3 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body.neko #neko1 img, body.neko #neko2 img {
+body.neko #neko1 img, body.neko #neko2 img, body.neko #neko3 {
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
   filter: drop-shadow(0px 2px 12px #0007)
 }
 
-body.neko .flower {
+body.neko .flower, body.neko .cover {
+  /* Not showing the usual art */
   display: none;
 }
