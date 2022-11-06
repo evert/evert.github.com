@@ -430,6 +430,10 @@ figure table td, figure table th {
   color: black;
 }
 
+body.neko .cover {
+  display: none;
+}
+
 body.neko figure {
   display: flex;
   justify-content: center;
