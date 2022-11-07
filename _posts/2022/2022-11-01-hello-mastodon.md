@@ -28,7 +28,7 @@ What this means in practice is that there's no central server. There's
 many [instances](https://joinmastodon.org/servers). Each of these instances
 is managed by different people, and many of them focus on specific interests.
 
-With email, it doesn't matter which provider you go with Thanks to universal
+With email, it doesn't matter which provider you go with. Thanks to universal
 SMTP standards that every server uses, you can exchange messages with everyone
 else. This is the same with Mastodon. You're not siloed into a single instance,
 and you can follow people from any other instance. Unlike email, it appears
