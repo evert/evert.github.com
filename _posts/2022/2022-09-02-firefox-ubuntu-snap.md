@@ -18,6 +18,7 @@ system. Here's a non-exhaustive list of issues I've personally ran into.
 I should note that some of these issues are now fixed, but I wanted to
 illustrate what Ubuntu launched with:
 
+* Printing is completely broken, and I can only print to PDF.
 * [KeePassXC](https://keepassxc.org/), an open source password managers' browser extension no longer works.
 * Firefox thinks that when opening 'localhost:8080' should open the URI scheme 'localhost' and tries to
   find an application that supports this scheme (now fixed!)
