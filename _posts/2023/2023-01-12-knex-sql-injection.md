@@ -16,7 +16,7 @@ Knex had a pretty scary SQL injection. Knex currently has 1.3 million weekly
 downloads and is quite popular.
 
 The security bug is probably one of the worst SQL injections I've seen in recent
-memory, especially considering the scope and popularily.
+memory, especially considering the scope and popularity.
 
 If you want to get straight to the details:
 
