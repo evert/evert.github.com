@@ -153,7 +153,8 @@ SELECT * FROM coupons WHERE product_id = 5 AND coupon_code = 'BIG_OOF2023'
 ```
 
 A user presumably would have to *know* the `coupon_code` to see the coupons,
-but if this wasn't validated a user can rewrite this query to:
+but if it wasn't validated `coupon_code` was a string, a user would have the
+power to change the query to this:
 
 ```sql
 SELECT * FROM coupons WHERE product_id = 5 AND coupon_code = product_id = 'bla'
