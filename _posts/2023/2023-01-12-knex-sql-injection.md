@@ -173,7 +173,7 @@ SELECT * FROM coupons WHERE product_id = 5
 And thus no longer requiring coupon codes to get ALL the discounts.
 
 Lastly, if you can rewrite a query that expects 1 result to return every
-record in a database is also an easy way to call a [Denial of service][10] attack.
+record in a database is also an easy way to cause a [Denial of service][10] attack.
 
 
 This does demonstrate again how is critical validating is and throw errors
