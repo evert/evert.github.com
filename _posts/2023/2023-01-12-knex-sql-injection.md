@@ -11,13 +11,16 @@ tags:
 ---
 
 [Knex][4] recently released a new version (2.4.0). Before this version, Knex had a
-pretty scary SQL injection.
+pretty scary SQL injection. Knex currently has 1.3 million weekly downloads and
+is quite popular.
 
 If you want to get straight to the details:
 
 * [Check out the Github issue][1], which was opened 7 years ago(!)
 * [An article from Ghostccamm][2] explaining the vulnerability.
 * [CVE-2016-20018][3].
+
+## My understanding of this bug
 
 If I understand the vulnerability correctly, I feel this can impact a very
 large number of sites using Knex. Even more so if you use Express.
@@ -40,7 +43,9 @@ const lookupId = 2;
 
 const result = await knex('users')
   .select(['id', 'name'])
-  .where({id: lookupId });
+  .where({
+    id: lookupId
+  });
 ```
 
 You'd expect the query to end up roughly like this
@@ -64,12 +69,19 @@ You might expect an error from Knex, but instead it generates the following quer
 SELECT `id`, `name` FROM `users` WHERE `id` = `name` = 'foo'
 ```
 
-And I'm not sure why MySQL does this, but it causes the WHERE clause to be ignored
-and the result is equivalent to:
+This query is not invalid. I don't fully understand fully understand MySQL's behavior,
+but it causes the WHERE clause to be ignored and the result is equivalent to:
 
 ```sql
 SELECT `id`, `name` FROM `users`
 ```
+
+I think it has something to do with how MySQL casts things. In MySQL this yields `true` (or `1`):
+
+```sql
+SELECT 1 = 'foo' = 'bar'
+```
+
 
 One place where this is especially scary, is if `lookupId` was provided by a user,
 via a JSON body or query string.
@@ -86,6 +98,8 @@ app.get('/', async (req, res) => {
 })
 ```
 
+Here the `id` in the `WHERE` clause is provided by the URL query string:
+
 If a the server is opened with something like:
 
 ```
@@ -99,6 +113,9 @@ It will return a single user, but if it was opened using:
 http://localhost:3000/?id%5Bname%5D=foo'
 ```
 
+It will return _every user_. And this issue is not limited to `SELECT`,
+it could also trigger in a `WHERE` clause in `DELETE`.
+
 The reason this works is that by crafting URL query parameters in a special
 way, a user can have things in `req.query` show up as objects or arrays.
 
@@ -108,7 +125,7 @@ happen. PHP does this as well, and I believe this may have been where Express
 (or specifically the [qs][6] library]) got the syntax from.
 
 This is why I think Express users are expecially likely to be vulnerable.
-I think that most developers in professional settings are decent at 
+I think that most developers in professional settings are decent at
 validating JSON request bodies with a variety of tools, but I've noticed
 this is often not the case for query parameters. I believe a big reason for
 this is that the object syntax is not well known, and surprising behavior.
@@ -125,11 +142,32 @@ whenever you get data you don't expect. Even if under normal circumstances
 nothing weird can happen, a library you use might do the wrong thing with
 unexpected data instead of just rejecting it.
 
+On Knex
+-------
+
+It's quite unfortunate to see that this went unpatched for so long. I'd
+invite anyone reading this to try to not pile on on the authors but think
+about the larger ecosystem.
+
+This bug was hidden in plain sight. Lots of people must have randomly
+ran into it and a ticket was opened. Probably the most responsible thing to
+do would have been what [@rgmz][8] did: do their best to contact the authors,
+failing that contact Github Security Team. After the Github Security Team also
+weren't able to connect to the authors make a CVE which puts this on every
+everyone's radar. This Ultimately led to a random bystander make their first
+contribution and [submit a fix][9].
+
+Knex feels high risk now though, and I can't help wondering what else might
+be unpatched. I've only recently made the jump from just writing my own queries
+to a querybuilder/ORM (after like 20 years) and chose Knex, but it's probably
+best to just avoid intermediates and leaky abstractions
 
 [1]: https://github.com/knex/knex/issues/1227
 [2]: https://www.ghostccamm.com/blog/knex_sqli/
-[3]: https://nvd.nist.gov/vuln/detail/CVE-2016-20018 
+[3]: https://nvd.nist.gov/vuln/detail/CVE-2016-20018
 [4]: https://knexjs.org/
 [5]: https://expressjs.com/
-[6]: https://www.npmjs.com/package/qs 
+[6]: https://www.npmjs.com/package/qs
 [7]: https://curveballjs.org/
+[8]: https://github.com/knex/knex/issues/1227#issuecomment-1358165470
+[9]: https://github.com/knex/knex/pull/5417
