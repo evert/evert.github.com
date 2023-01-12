@@ -12,9 +12,12 @@ tags:
   - mysql
 ---
 
-[Knex][4] recently released a new version (2.4.0). Before this version, Knex had a
-pretty scary SQL injection. Knex currently has 1.3 million weekly downloads and
-is quite popular.
+[Knex][4] recently released a new version this week (2.4.0). Before this version,
+Knex had a pretty scary SQL injection. Knex currently has 1.3 million weekly
+downloads and is quite popular.
+
+The security bug is probably one of the worst SQL injections I've seen in recent
+memory, especially considering the scope and popularily.
 
 If you want to get straight to the details:
 
