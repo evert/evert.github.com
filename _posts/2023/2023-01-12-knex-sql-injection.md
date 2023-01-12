@@ -82,6 +82,7 @@ I think it has something to do with how MySQL casts things. In MySQL this yields
 SELECT 1 = 'foo' = 'bar'
 ```
 
+## Query strings and Express
 
 One place where this is especially scary, is if `lookupId` was provided by a user,
 via a JSON body or query string.
@@ -134,11 +135,39 @@ but this is also why the default behavior in our [Curveball framework][7] is
 to not support this. In most cases it's not needed, and if you do want it you can
 use `qs` and explicitly opt-in.
 
+Other examples
+--------------
+
 But of course, this issue is not limited to query strings. If you're not
 validating input somehwere and this ends up in a `.where()` statement there's
 risk.
 
-This does demonstrate again how is critical validating and throw errors
+A specific case where this part of your WHERE clause contains some string that
+should not be guessable by a user.
+
+For instance, say you had a database table with records that users can only
+see if they know a secret code, and it's selected with:
+
+```sql
+SELECT * FROM coupons WHERE product_id = 5 AND coupon_code = 'BIG_OOF2023'
+```
+
+A user presumably would have to *know* the `coupon_code` to see the coupons,
+but if this wasn't validated a user can rewrite this query to:
+
+```sql
+SELECT * FROM coupons WHERE product_id = 5 AND coupon_code = product_id = 'bla'
+```
+
+Which is equivalent to:
+
+```sql
+SELECT * FROM coupons WHERE product_id = 5
+```
+
+And thus no longer requiring coupon codes to get ALL the discounts.
+
+This does demonstrate again how is critical validating is and throw errors
 whenever you get data you don't expect. Even if under normal circumstances
 nothing weird can happen, a library you use might do the wrong thing with
 unexpected data instead of just rejecting it.
