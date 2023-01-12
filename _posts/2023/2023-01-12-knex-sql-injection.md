@@ -1,7 +1,9 @@
 ---
 title: "Knex + MySQL has a very scary SQL injection"
-date: "2023-01-12 05:00:00 UTC"
+date: "2023-01-12 21:31:43 UTC"
 draft: true
+geo: [43.686510, -79.328419]
+location: "East York, ON, Canada"
 tags:
   - node
   - knex
@@ -129,7 +131,7 @@ This is why I think Express users are expecially likely to be vulnerable.
 I think that most developers in professional settings are decent at
 validating JSON request bodies with a variety of tools, but I've noticed
 this is often not the case for query parameters. I believe a big reason for
-this is that the 'extended' syntax is not well known, and surprising behavior.
+this is that the 'extended' syntax is not well known and 'surprising' behavior.
 Many people assume these are just strings. This is not intended as a plug,
 but this is also why the default behavior in our [Curveball framework][7] is
 to not support this. In most cases it's not needed, and if you do want it you can
@@ -139,11 +141,11 @@ Other examples
 --------------
 
 But of course, this issue is not limited to query strings. If you're not
-validating input somehwere and this ends up in a `.where()` statement there's
+validating input somewhere and this ends up in a `.where()` statement there's
 risk.
 
-A specific case where this part of your WHERE clause contains some string that
-should not be guessable by a user.
+A specific example is a situation where part of the contents of your `WHERE`
+clause is unguessable.
 
 For instance, say you had a database table with records that users can only
 see if they know a secret code, and it's selected with:
@@ -153,7 +155,7 @@ SELECT * FROM coupons WHERE product_id = 5 AND coupon_code = 'BIG_OOF2023'
 ```
 
 A user presumably would have to *know* the `coupon_code` to see the coupons,
-but if it wasn't validated `coupon_code` was a string, a user would have the
+but if there's no code to validate `coupon_code` is a string, a user would have the
 power to change the query to this:
 
 ```sql
@@ -167,6 +169,10 @@ SELECT * FROM coupons WHERE product_id = 5
 ```
 
 And thus no longer requiring coupon codes to get ALL the discounts.
+
+Lastly, if you can rewrite a query that expects 1 result to return every
+record in a database is also an easy way to call a [Denial of service][10] attack.
+
 
 This does demonstrate again how is critical validating is and throw errors
 whenever you get data you don't expect. Even if under normal circumstances
@@ -185,7 +191,7 @@ ran into it and a ticket was opened. Probably the most responsible thing to
 do would have been what [@rgmz][8] did: do their best to contact the authors,
 failing that contact Github Security Team. After the Github Security Team also
 weren't able to connect to the authors, make a CVE which puts this on every
-everyone's radar. This Ultimately led to a random bystander make their first
+everyone's radar. This ultimately led to a random bystander make their first
 contribution and [submit a fix][9].
 
 Knex feels high risk now though, and I can't help wondering what else might
@@ -202,3 +208,4 @@ next project.
 [7]: https://curveballjs.org/
 [8]: https://github.com/knex/knex/issues/1227#issuecomment-1358165470
 [9]: https://github.com/knex/knex/pull/5417
+[10]: https://en.wikipedia.org/wiki/Denial-of-service_attack
