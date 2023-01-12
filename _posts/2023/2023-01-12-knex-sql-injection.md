@@ -1,7 +1,6 @@
 ---
 title: "Knex + MySQL has a very scary SQL injection"
 date: "2023-01-12 21:31:43 UTC"
-draft: true
 geo: [43.686510, -79.328419]
 location: "East York, ON, Canada"
 tags:
