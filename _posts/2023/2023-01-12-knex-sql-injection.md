@@ -110,7 +110,7 @@ It will return a single user, but if it was opened using:
 
 
 ```
-http://localhost:3000/?id%5Bname%5D=foo'
+http://localhost:3000/?id%5Bname%5D=foo
 ```
 
 It will return _every user_. And this issue is not limited to `SELECT`,
