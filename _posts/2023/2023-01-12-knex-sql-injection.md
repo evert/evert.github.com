@@ -122,22 +122,23 @@ way, a user can have things in `req.query` show up as objects or arrays.
 Express calls this the 'extended' syntax and turns it on by default. In my
 opinion this is a bad default because it's not really what users expect will
 happen. PHP does this as well, and I believe this may have been where Express
-(or specifically the [qs][6] library]) got the syntax from.
+(or specifically the [qs][6] library) got the syntax from.
 
 This is why I think Express users are expecially likely to be vulnerable.
 I think that most developers in professional settings are decent at
 validating JSON request bodies with a variety of tools, but I've noticed
 this is often not the case for query parameters. I believe a big reason for
-this is that the object syntax is not well known, and surprising behavior.
+this is that the 'extended' syntax is not well known, and surprising behavior.
 Many people assume these are just strings. This is not intended as a plug,
-but this is also why the default behavior in our [Curveball][7] is to not
-support this. In most cases it's not needed, and if you do want it you can
+but this is also why the default behavior in our [Curveball framework][7] is
+to not support this. In most cases it's not needed, and if you do want it you can
 use `qs` and explicitly opt-in.
 
-Of course anyone not validating input and making sure that they're really
-getting integers or strings instead of objects and arrays are still vulnerable.
+But of course, this issue is not limited to query strings. If you're not
+validating input somehwere and this ends up in a `.where()` statement there's
+risk.
 
-This does demonstrate again that validation is critical and throw errors
+This does demonstrate again how is critical validating and throw errors
 whenever you get data you don't expect. Even if under normal circumstances
 nothing weird can happen, a library you use might do the wrong thing with
 unexpected data instead of just rejecting it.
@@ -146,21 +147,21 @@ On Knex
 -------
 
 It's quite unfortunate to see that this went unpatched for so long. I'd
-invite anyone reading this to try to not pile on on the authors but think
-about the larger ecosystem.
+invite anyone reading this to try to not pile on on the (likely volunteer)
+authors but think about the larger ecosystem.
 
 This bug was hidden in plain sight. Lots of people must have randomly
 ran into it and a ticket was opened. Probably the most responsible thing to
 do would have been what [@rgmz][8] did: do their best to contact the authors,
 failing that contact Github Security Team. After the Github Security Team also
-weren't able to connect to the authors make a CVE which puts this on every
+weren't able to connect to the authors, make a CVE which puts this on every
 everyone's radar. This Ultimately led to a random bystander make their first
 contribution and [submit a fix][9].
 
 Knex feels high risk now though, and I can't help wondering what else might
 be unpatched. I've only recently made the jump from just writing my own queries
-to a querybuilder/ORM (after like 20 years) and chose Knex, but it's probably
-best to just avoid intermediates and leaky abstractions
+for like 20 years to Knex, but I'm probably reversing that decision for my
+next project.
 
 [1]: https://github.com/knex/knex/issues/1227
 [2]: https://www.ghostccamm.com/blog/knex_sqli/
