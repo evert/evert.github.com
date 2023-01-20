@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+
+  <title>Stacks</title>
+
+  <style>
+    body {
+      font-family: arial;
+      background: #4E598C;
+    }
+    .money, #time {
+      color: #F9C784;
+      font-size: 50px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="money">
+    $
+    <span id="amount">0.00</span>
+    CAD
+  </div>
+
+  <div id="time">
+    0:00:00
+  </div>
+
+  <button onclick="startTimer()">Start</start>
+
+</body>
+
+<script>
+
+  let startTime = null;
+  let interval;
+
+  const usdPerHour = 750;
+  const cadPerHour = 1.34 * 750;
+  const cadPerMillisecond = cadPerHour / 3600_000;
+
+  function startTimer() {
+    
+    startTime = Date.now();
+    interval = setInterval(tick, 100);
+
+  }
+
+  function tick() {
+
+    const timePassed = Date.now() - startTime;
+    if (timePassed === 3600_000) {
+      setValues(timePassed);
+      clearInterval(interval);
+      return;
+    }
+
+    setValues(timePassed);
+
+
+  }
+
+  function setValues(timePassed) {
+
+    let timeStr;
+    if (timePassed === 3600_000) {
+      timeStr = '1:00:00';
+    } else {
+      timeStr = '0:' + Math.floor(timePassed / 60_000).toString().padStart(2, '0') + ':' + Math.floor((timePassed / 1000) % 60).toString().padStart(2, '0');
+    }
+    document.getElementById('amount').innerText = (timePassed * cadPerMillisecond).toFixed(2);
+    document.getElementById('time').innerText = timeStr; 
+
+  }
+
+
+</script>
