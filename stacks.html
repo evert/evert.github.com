@@ -28,7 +28,7 @@
     0:00:00
   </div>
 
-  <button onclick="startTimer()">Start</start>
+  <button id="btn" onclick="startTimer()">Start</start>
 
 </body>
 
@@ -45,6 +45,7 @@
     
     startTime = Date.now();
     interval = setInterval(tick, 100);
+    document.getElementById('btn').style.display = 'none';
 
   }
 
