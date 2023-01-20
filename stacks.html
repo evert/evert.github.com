@@ -51,7 +51,7 @@
   function tick() {
 
     const timePassed = Date.now() - startTime;
-    if (timePassed === 3600_000) {
+    if (timePassed >= 3600_000) {
       setValues(timePassed);
       clearInterval(interval);
       return;
