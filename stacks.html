@@ -71,7 +71,7 @@
 
     const timePassed = Date.now() - startTime;
     if (timePassed >= 3600_000) {
-      setValues(timePassed);
+      setValues(3600_000);
       clearInterval(interval);
       return;
     }
