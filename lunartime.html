@@ -9,11 +9,11 @@
     body {
       font-family: arial;
       background: #32302f;
-      color: #f4ed18
+      color: #f4ed18;
       display: flex;
       flex-direction: column;
     }
-    #earth, #lunar {
+    #earth, #lunar, #atomic-lunar {
       font-size: 50px;
     }
   </style>
@@ -22,14 +22,70 @@
 
 <body>
 
+
+
   <div id="earth">
     <span class="emoji">🌍</span>
     <span class="time">0:00:00</span>
   </div>
+  <p>
+  Yesterday I saw <a href="https://www.nature.com/articles/d41586-023-00185-z">an article</a> about the need for having a standard for time-keeping on the moon if there's going to be new moon missions.
+  </p>
+  <p>
+    The length of a second doesn't change, but because the moon has less gravity relativity
+    apparently tells us that time moves a bit faster <em>relative</em> to earth.
+  </p>
+  <p>
+    I was curious if neil armstrong dropped an atomic clock on the moon, how far ahead it would be right now. Turns out it's less than a second!
+  </p>
+  <div id="atomic-lunar">
+    <span class="emoji">🌕</span>
+    <span class="time">0:00:00</span>
+  </div>
+
+  <p>A very small difference, and less than the accuracy of pretty much any watch so while computers will care, a human checking their watch or making plans with another human will not.</p>
+
+  <p>
+    This made me wonder if we can come up with what a fictional calendar might
+    look like for future Moon denizens.
+  </p>
+  <p>
+    The moon is tidally locked, and takes 29.5306 earth days to go around the earth.
+    This means that a 'moon day' is also 29.5306 days. So it's similar to Earth day
+    in that it takes that long for the Sun to be in the sameish spot, but also
+    similar to the earth year because it takes that long to do 1 full revolution
+    around it's 'parent'.
+  </p>
+  <p>
+    So I decided to make the 'Lunar Day' the significant number, but what should
+    the first day be? It makes sense to start counting from a moment significant
+    to moon people, and what could be more significant than the moon landing?
+    So our 'epoch' will be July 20th, 1969 at 20:17 UTC when the eagle touched
+    down.
+  </p>
+  <p>
+    Earth years start counting at 1. Even more akward, there is no year 0. Before
+    year 1 there's 1 BCE. The first people moving to the moon will likely be
+    scientist, so that's a mistake the wouldn't make. The lunar calendar starts
+    at 0, and I'm calling this the Lunar year:
+  </p>
+
   <div id="lunar">
     <span class="emoji">🌕</span>
     <span class="time">0:00:00</span>
   </div>
+
+  <div>
+    Looking at this number made me realize something though. While we can
+    quickly see the Lunar day/year, Humans still live on a 24 hour circadian
+    cycle, and it's helpful to quickly see how far we're in that cycle. So
+    instead of a perfect number, it does make sense to me next digit to
+    represent how many circadian cycles have passed since the lunar year
+    started.
+  </div>
+  <div>
+
+
 
 </body>
 
@@ -39,11 +95,18 @@
   //
   // Source: https://svs.gsfc.nasa.gov/12739
   const moonDayLength = 29.5306;
-  // Time dilation on the moon per earth 24 hours
-  // expressed in milliseconds
+
+  // Time dilation on the moon compared to earth.
+  //
+  // Every 24 earth days the moon adds 5.6 microseconds. This formula
+  // normalizes this to s/s.
   //
   // Source: https://www.nature.com/articles/d41586-023-00185-z
-  const moonTimeDilation = 0.054
+  const moonTimeDilation = (56e-6) / 86400;
+
+  // We consider the '0' of the lunar time the moment the eagle
+  // landed.
+  const moonEpoch = new Date('1969-07-20 20:17:00Z');
 
   let interval;
 
@@ -55,7 +118,8 @@
 
     const date = new Date();
     showEarthDate(date);
-    showMoonDate(date);
+    showLunarDate(date);
+    showLunarAtomic(date);
 
   }
 
@@ -72,39 +136,30 @@
     document.querySelector('#earth .time').innerText = date.toUTCString();
 
   }
-  function showMoonDate(date) {
+  function showLunarDate(date) {
 
-    // 0 = the time the eagle touched down
-    const moonEpoch = new Date('1969-07-20 20:17:00Z');
-    
-    // How many earth seconds have passed since the epoch.
+    // How many earth ms have passed since the epoch.
     const earthTimestamp = date.getTime() - moonEpoch.getTime();
-    
+
+    const moonDate = (earthTimestamp / (moonDayLength*86400000)).toFixed(7);
+    document.querySelector('#lunar .time').innerText = 'Lunar Date: ' + moonDate;
+
+  }
+  function showLunarAtomic(date) {
+
+    // How many earth seconds have passed since the epoch.
+    const earthTimestamp = (date.getTime() - moonEpoch.getTime()) / 1000;
+
     // Account for general relativity.
-    // 
-    // Due to the weaker gravitational pull, the lunar clock
-    // gains about 56 microseconds every 24 hours.
-    //
-    // This means that if an atomic clock was started on the
-    // moon at the epoch, every second we need to add
-    // 0.000000000648148. At the time of writing that's a bit
-    // under 11 seconds in the last ~54 years.
-    // 
-    // @source https://www.nature.com/articles/d41586-023-00185-z
     const moonTimestamp = Math.floor(
-      earthTimestamp + 
-      (earthTimestamp * (moonTimeDilation / 86400))
+      earthTimestamp +
+      (earthTimestamp * moonTimeDilation)
     );
 
-    //console.info(
-    //  'Earth timestamp: %i, Moon timestamp: %i, Dillation: %i',
-    //  earthTimestamp, moonTimestamp, moonTimestamp-earthTimestamp
-    //);
+    //console.log('e: %i, m: %i, d: %i', earthTimestamp, moonTimestamp, earthTimestamp-moonTimestamp);
 
-    // Why use the earth timestamp? Because the moonDayLength cited above
-    // uses earth days'
-    const moonDate = (earthTimestamp / (moonDayLength*86400000)).toFixed(6); 
-    document.querySelector('#lunar .time').innerText = 'Lunar Date: ' + moonDate;
+    const moonDateTime = new Date((moonTimestamp*1000)+moonEpoch.getTime());
+    document.querySelector('#atomic-lunar .time').innerText = moonDateTime.toUTCString();
 
   }
 
