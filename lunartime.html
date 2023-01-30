@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1" />
+  <title>Lunar Time</title>
+
+
+  <style>
+    body {
+      font-family: arial;
+      background: #32302f;
+      color: #f4ed18
+      display: flex;
+      flex-direction: column;
+    }
+    #earth, #lunar {
+      font-size: 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="earth">
+    <span class="emoji">🌍</span>
+    <span class="time">0:00:00</span>
+  </div>
+  <div id="lunar">
+    <span class="emoji">🌕</span>
+    <span class="time">0:00:00</span>
+  </div>
+
+</body>
+
+<script>
+
+  // Length of a lunar day, expressed in earth days
+  //
+  // Source: https://svs.gsfc.nasa.gov/12739
+  const moonDayLength = 29.5306;
+  // Time dilation on the moon per earth 24 hours
+  // expressed in milliseconds
+  //
+  // Source: https://www.nature.com/articles/d41586-023-00185-z
+  const moonTimeDilation = 0.054
+
+  let interval;
+
+  function start() {
+    interval = setInterval(tick, 10);
+  }
+
+  function tick() {
+
+    const date = new Date();
+    showEarthDate(date);
+    showMoonDate(date);
+
+  }
+
+  function showEarthDate(date) {
+
+    let emoji;
+    switch((Math.floor(date.getTime()/10000)) % 3) {
+      case 1 : emoji = '🌎'; break;
+      case 2 : emoji = '🌍'; break;
+      default: emoji = '🌏'; break;
+    }
+
+    document.querySelector('#earth .emoji').innerText = emoji;
+    document.querySelector('#earth .time').innerText = date.toUTCString();
+
+  }
+  function showMoonDate(date) {
+
+    // 0 = the time the eagle touched down
+    const moonEpoch = new Date('1969-07-20 20:17:00Z');
+    
+    // How many earth seconds have passed since the epoch.
+    const earthTimestamp = date.getTime() - moonEpoch.getTime();
+    
+    // Account for general relativity.
+    // 
+    // Due to the weaker gravitational pull, the lunar clock
+    // gains about 56 microseconds every 24 hours.
+    //
+    // This means that if an atomic clock was started on the
+    // moon at the epoch, every second we need to add
+    // 0.000000000648148. At the time of writing that's a bit
+    // under 11 seconds in the last ~54 years.
+    // 
+    // @source https://www.nature.com/articles/d41586-023-00185-z
+    const moonTimestamp = Math.floor(
+      earthTimestamp + 
+      (earthTimestamp * (moonTimeDilation / 86400))
+    );
+
+    //console.info(
+    //  'Earth timestamp: %i, Moon timestamp: %i, Dillation: %i',
+    //  earthTimestamp, moonTimestamp, moonTimestamp-earthTimestamp
+    //);
+
+    // Why use the earth timestamp? Because the moonDayLength cited above
+    // uses earth days'
+    const moonDate = (earthTimestamp / (moonDayLength*86400000)).toFixed(6); 
+    document.querySelector('#lunar .time').innerText = 'Lunar Date: ' + moonDate;
+
+  }
+
+  document.addEventListener('DOMContentLoaded', () => start());
+
+</script>
