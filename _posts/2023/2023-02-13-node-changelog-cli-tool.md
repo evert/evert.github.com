@@ -104,7 +104,7 @@ export async function parseFile(filename) {
 ```
 
 The CommonJS -> ESM transition is not without pain, but for an new project
-like this it's really the ideal choice. (top level `await`!)
+like this it's really the ideal choice. (top level `await` 🎉)
 
 I've also made the choice to not write my code in Typescript, but use JSDoc
 annotations instead (These are the `@param` and `@returns` comments).
