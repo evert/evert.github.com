@@ -367,7 +367,7 @@ step feels right for a project this size.
 I hope this inspires someone in the future to start their next project from
 an empty directory instead of copying a large boilerplate project.
 
-[Github link][7].
+[changelog-tool project on Github][7].
 
 [1]: https://github.com/curveball/a12n-server/ "An awesome lightweight OAuth2 server"
 [2]: https://nodejs.org/api/util.html#utilparseargsconfig "Parsing arguments with Node"
