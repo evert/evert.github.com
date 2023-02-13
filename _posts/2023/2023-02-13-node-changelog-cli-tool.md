@@ -48,9 +48,10 @@ The reason is that the audience for these is a bit different. I want to bring
 attention to the things that are the most important for the end-user, and
 focus on the impact of the change to the user.
 
-I thought it would be fun to write a CLI tool that makes it a bit easier to
-maintain these. So, I did! and I thought it would be fun to go a bit into the
-technology choices that went into this.
+I thought it would be handy to write a CLI tool that makes it a bit easier to
+maintain these. [So, I did!][7]. If you are curious what kind of technology
+choices went into this, read on.
+
 
 Goals and features
 ------------------
@@ -102,12 +103,16 @@ export async function parseFile(filename) {
 }
 ```
 
-The CommonJS -> ESM transition is not without pain, but for an isolated project
+The CommonJS -> ESM transition is not without pain, but for an new project
 like this it's really the ideal choice. (top level `await`!)
 
+I've also made the choice to not write my code in Typescript, but use JSDoc
+annotations instead (These are the `@param` and `@returns` comments).
 
 Not everyone knows that you don't need to write .ts files to benefit from
-Typescript. Typescript can also check your Javascript files quite strictly.
+Typescript. Typescript can also check your Javascript files quite strictly,
+and there's a lot of work still being done in adding new features to this
+syntax.
 
 This has the benefit of not needing a build phase. You don't even need
 Typescript during development which reduces the barrier to entry.
@@ -132,6 +137,10 @@ Here's my minimal `tsconfig.json`:
   }
 }
 ```
+
+The Typescript documentation has a [page detailing the JSDoc annotations they
+support][8], if you'd like to learn more.
+
 
 ### Command line parsing
 
@@ -166,11 +175,16 @@ const { positionals, values } = parseArgs({
 });
 ```
 
+This confguration adds flags like `--major`, lets you specify a message
+with `--message "hello!"` or use a short-hand alternative like `-m "Hi"`.
+
 Does it do everything? No! There's packages out there that are more
 sophisticated, use colors, automatically create help screens but they
 also ship with large dependency trees.
 
-Check out the [Node docs][2] for more info
+In my case, this was good enough.
+
+Check out the [Node docs][2] for more info.
 
 ### Testing
 
@@ -180,10 +194,7 @@ Node 18 (also backported to 16) Node has a built-in test-runner.
 It has an API similar to Mocha and Jest with keywords like `it`, `test`,
 `describe`, `before`, etc.
 
-Node also had an assertion library for much longer, so this could also
-mean no "Chai".
-
-Here's a sample of 1 of my tests:
+Here's a sample of one of my tests:
 
 ```javascript
 // @ts-check
@@ -262,9 +273,10 @@ ok 1 - /home/evert/src/changelog-tool/test/parse.mjs
 
 In Node 19 new test reporters will be shipped, but I haven't tested this yet.
 
-Frankly, after using this I don't know why I would use Mocha anymore. I'm sure
-it has some nice features and benefits, but I write a ton of tests and I don't
-think there's anything I need beyond what Node is already providing here.
+Frankly, after using this I don't know if would use Mocha anymore. I've been
+using probably over a decade, and it has some nice features and benefits,
+for the kinds of tests I write (and I write a lot), I think there's anything
+I need beyond what Node is offering here.
 
 Some links:
 
@@ -272,19 +284,18 @@ Some links:
 * [node:assert package][5].
 * [Mocking in node][6].
 
-
 package.json, annotated
 -----------------------
 
-I wanted to end with how I've set up my `package.json`, so you can see how it
-all ties together. (If only `npm` [supported JSON5][4] so I could keep my
-comments right in the package 😭).
+I wanted to end this article with how I've set up my `package.json`, so you
+can see how it all ties together. (If only `npm` [supported JSON5][4] so I
+could keep my comments right in the package 😭).
 
 
-```json5
+```json
 {
   // The name of the package, and how it's published on NPM
-  name: "changelog-tool",
+  "name": "changelog-tool",
 
   // Package version!
   "version": "0.5.0",
@@ -344,8 +355,7 @@ comments right in the package 😭).
 Conclusion
 ----------
 
-I love building new things and being deliberate about every choice instead of
-starting with a whole bunch of boilerplate.
+I love building new things and being deliberate about every choice.
 
 The result is that I'm more likely to end up with something minimal,
 low-maintance and I gain a deeper understanding of the tools I use.
@@ -353,6 +363,9 @@ low-maintance and I gain a deeper understanding of the tools I use.
 In the near future I would probably make all these choices again. The Node test
 runner is fast and low-cruft, ESM is great when it works and not needing a build
 step feels right for a project this size.
+
+I hope this inspires someone in the future to start their next project from
+an empty directory instead of copying a large boilerplate project.
 
 [Github link][7].
 
@@ -363,3 +376,4 @@ step feels right for a project this size.
 [5]: https://nodejs.org/api/assert.html "Assertion Testing"
 [6]: https://nodejs.org/api/test.html#mocking "Mocking in Node tests"
 [7]: https://github.com/evert/changelog-tool "The changelog tool!"
+[8]: https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html "JSDoc support in Typescript"
