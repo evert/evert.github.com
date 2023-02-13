@@ -3,7 +3,6 @@ title: "Building a simple CLI tool with modern Node.js"
 date: "2023-02-13 19:05:14 UTC"
 location: "Mexico City, Mexico"
 geo: [19.4085058, -99.1708821]
-draft: true
 tags:
   - node
   - cli
