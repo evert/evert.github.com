@@ -75,23 +75,23 @@ based marketing analytics.
 My role there was to help drive the design and architecture of a REST API. We've
 used HAL, OAuth2, json-schema to drive the hypermedia API using NodeJS, ES6,
 ES7. On a docker-container infrastructure running on Amazon Web Services.
-I also helped mentor other developers, and act as a technical lead.
+I also helped mentor other developers and act as a technical lead.
 
 In April 2017 Turnstyle got acquired by Yelp, and I subsequently moved to San
 Francisco in October 2017.
 
-There I helped onboard a quickly growing development team, and working with
+There I helped onboard a quickly growing development team and working with
 the needs and requirements of a much larger corporation, including integrating
 our existing systems and culture with Yelp's.
 
 ### Co-Founder/CTO fruux, Germany + UK — 2011 - 2015
 
 In December 2011 I went full-time with fruux, which was a bit of a
-side-project at the time. We got a seed investment round, and opened the
+side-project at the time. We got a seed investment round and opened the
 door to our office. As the technical lead I’ve been responsible for the
 technical and product direction, as well as leading the team from a
 technical perspective. Aside from that I’ve also got my hands dirty in some
-marketing and sales, and basically just stepped in where needed.
+marketing and sales and just stepped in where needed.
 
 As a programmer I helped develop their synchronization system for personal
 information such as calendars, contacts and files. I acted as a liaison for
@@ -124,7 +124,7 @@ My role was primarily in leading development teams, training and development.
 I’ve worked here on scalability issues for nu.nl (the number one Dutch news
 site), designed Javascript/YUI3 based ‘fat’ javascript clients, (RESTful)
 Web-service development and in-house training around subjects such as
-web-services design, and a full-day javascript workshop.
+web-services design and a full-day javascript workshop.
 
 ### Lead architect/owner, Filemobile, Toronto, Canada — 2006-2014
 
@@ -160,7 +160,7 @@ EasyConcepts, Netmasters and UDC/Dancevalley.
 
 Developed and implemented a car inventory and lease database. The Database was
 based on Interbase, the front-end was built using Borland Delphi. I got this
-job as an intern, and I was forced to jump in and learn many technologies that
+job as an intern. I was forced to jump in and learn many technologies that
 were new for me at the time, such as SQL.
 
 
@@ -241,7 +241,7 @@ I've been blogging on and off since 2006. Here's some of my favourites:
 </ul>
 
 Because of this, I've been published in both PHP Architect (a paper PHP
-magazine), and PHP Advent (now defunct series of articles).
+magazine) and PHP Advent (now defunct series of articles).
 
 
 ### Ketting
