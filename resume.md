@@ -9,7 +9,7 @@ Evert Pot
 
 _Web architect, API developer_
 
-* Last update: *May 17th, 2022*.
+* Last update: *Feb 19th, 2023*.
 * Location: Toronto, ON, Canada.
 * Contact: <mailto:work@evertpot.com>.
 
@@ -17,16 +17,10 @@ _Web architect, API developer_
 Summary
 -------
 
-My name is Evert, and I've been professionally programming for 18 years. I've
-been consulting for a wide range of companies, from startups to telcos,
-financial services and national broadcasters.
+I'm 20 year software engineering veteran and co-founded several businesses.
 
-I'm especially interested in API design, implementing better engineering
-practices, scalability problems and application architecture. I served
-as CTO or technical leadership in most of the companies I've worked at.
-
-In 2019 I started a software development agency (Bad Gateway), which is now
-my main focus.
+I'm currently on the look-out for new opportunities. I'm especially
+interested in CTO and Director or Non-full time advistor positions.
 
 Links
 -----
@@ -40,13 +34,13 @@ Links
 Experience
 ----------
 
-### Founder at Bad Gateway, Toronto, 2019-now
+### Founder/CEO at Bad Gateway, Toronto, 2019-2023
 
 In June 2019 I founded a software development agency in Toronto. Our team
 builds Web Applications and APIs for clients in a variety of industries.
 
-My role includes running the company, architect, sales, support and
-recruiting. (Hopefully this list steadily decreases over time).
+This company eventually grew to 7 employees. We worked for for a variety of
+customers, including start-ups, media companies and financial institutions.
 
 
 ### Software Engineer at Ascendant Digital, Cayman Islands/Toronto - 2018-2020
