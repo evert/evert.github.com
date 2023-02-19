@@ -27,7 +27,7 @@ Links
 
 * Blog: <https://evertpot.com/>
 * Github: <https://github.com/evert/>
-* LinkedIn: <https://www.linkedin.com/in/evert-pot-868746147>
+* LinkedIn: <https://linkedin.com/in/evert-pot/>
 * Stack Overflow: <http://stackoverflow.com/users/80911/evert>
 
 
