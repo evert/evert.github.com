@@ -78,12 +78,11 @@ ES7. On a docker-container infrastructure running on Amazon Web Services.
 I also helped mentor other developers, and act as a technical lead.
 
 In April 2017 Turnstyle got acquired by Yelp, and I subsequently moved to San
-Francisco in October.
+Francisco in October 2017.
 
-Although my role hasn't changed that much, I helped onboard a quickly growing
-development team, and working with the needs and requirements of a much
-larger corporation, including integrating our existing systems and culture with
-Yelp's.
+There I helped onboard a quickly growing development team, and working with
+the needs and requirements of a much larger corporation, including integrating
+our existing systems and culture with Yelp's.
 
 ### Co-Founder/CTO fruux, Germany + UK — 2011 - 2015
 
