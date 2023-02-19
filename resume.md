@@ -7,12 +7,11 @@ permalink: "/resume.html"
 Evert Pot
 =========
 
-_Web architect, API developer_
+Technical Leadership / API specialist.
 
 * Last update: *Feb 19th, 2023*.
 * Location: Toronto, ON, Canada.
 * Contact: <mailto:work@evertpot.com>.
-
 
 Summary
 -------
@@ -37,7 +36,7 @@ Experience
 ### Founder/CEO at Bad Gateway, Toronto, 2019-2023
 
 In June 2019 I founded a software development agency in Toronto. Our team
-builds Web Applications and APIs for clients in a variety of industries.
+buildt Web Applications and APIs for clients in a variety of industries.
 
 This company eventually grew to 7 employees. We worked for for a variety of
 customers, including start-ups, media companies and financial institutions.
