@@ -7,7 +7,7 @@ permalink: "/resume.html"
 Evert Pot
 =========
 
-Technical Leadership / API specialist.
+_Technical Leadership / API specialist._
 
 * Last update: *Feb 19th, 2023*.
 * Location: Toronto, ON, Canada.
