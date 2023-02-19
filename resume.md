@@ -43,6 +43,14 @@ This company eventually grew to 7 employees. We worked for for a variety of
 customers, including start-ups, media companies and financial institutions.
 
 
+### Technical Advisor at OrderUp, Toronto, 2020-2022
+
+
+At OrderUp I helped the engineering tool develop processes, work through
+technical issues and help architect their system through inception till
+their eventual aquisition.
+
+
 ### Software Engineer at Ascendant Digital, Cayman Islands/Toronto - 2018-2020
 
 Ascendant Digital is a private investment firm, providing investors exposure
@@ -157,12 +165,6 @@ based on Interbase, the front-end was built using Borland Delphi. I got this
 job as an intern, and I was forced to jump in and learn many technologies that
 were new for me at the time, such as SQL.
 
-### Junior sys admin/Tech support, Microdesk, Rijswijk, The Netherlands — 2001
-
-This job involved many system administrator tasks, such as working with
-hardware, installing and preparing massive amounts of desktop machines and
-occasionally getting coffee for the more senior people in the company.
-
 
 Skills
 ------
@@ -181,53 +183,25 @@ Expert skills
 -------------
 
 HTTP, Node.js, Typescript, AWS, React, RestAPI, Javascript, OAuth2
-HTML5, MySQL, CSS3, Linux, Video transcoding tools, Docker.
-
-Things I'm good at but do not use every day (anymore)
---------------------------------------------------
-
-PHP, WebDAV, CalDAV, CardDAV, Backbone.js, Atom, Less, Sass, YUI3, Flash
-Video, Apache, Nginx, Squid, CakePHP, Make, Golang.
-
-Beginner skills
----------------
-
-C, Bash programming, Java, Python, Ruby.
-
-Ancient skills
---------------
-
-(Q/GW)Basic, Delphi, Interbase, Turbo Pascal, x86 assembler,
-Actionscript, Podcasting, AMF, Flash-PHP interaction using Flash Remoting,
-FMS/FCS-PHP integration, Flix Encoder, XUL, Wowza Media Server, Lighttpd.
-
-
-### Management
-
-I’ve built and led several development teams, implemented development
-processes (where appropriate and keeps people happy). Teams consisting of
-people with various skills such as browser front-end developer, designers,
-Actionscript developers, DBA’s, Linux system administrators and
-backend-engineers. Experience in interpreting business requirements and
-communicating technical requirements.
+HTML5, MySQL, CSS3, Linux, Docker.
 
 
 ### Speaking
 
-* FlashInTO 2007, Toronto, Video conversion with FFMpeg.
-* Flash In The Can 2007, Toronto, Flash Video LiveCycle: From User To Delivery. 
-* PHPBenelux Meetup 2011, Amersfoort, Netherlands: Integrating WebDAV in PHP applications.
-* Dutch PHP conference 2011 - Amsterdam, Netherlands: RESTful webservices.
-* Dutch PHP conference 2012 - Amsterdam, Netherlands: Backbone.js.
-* OwnCloud contributer conference 2015 - Berlin, Germany: sabre/dav and Promises & Generators.
-* True North PHP 2015 - Toronto, Canada: Promises & Generators. ([slides](https://github.com/evert/promises-and-generators))
-* PHP Meetup, September 2016 - Toronto, Canada: Go for PHP programmers. ([slides](/talks/go-for-php-programmers/) )
-* True North PHP 2016 - Toronto, Canada: Making CSS fun again with Sass. ([slides](https://github.com/evert/sass-talk)).
-* True North PHP 2016 - Toronto, Canada: Introducing sabre/dav.
-* Midwest PHP 2017 - Minneapolis, USA: Promises and Generators. ([slides](https://github.com/evert/promises-and-generators))
+* Apidays New York 2021 - Introduction to HATEOAS with Ketting. [video](https://www.youtube.com/watch?v=cZ0e-HoPPJ8)
+* TorontoJS, August 2020 - Building a Promise from scratch [video](https://www.youtube.com/watch?v=CVzx-6fu0d8)
 * React + Native Toronto - Using Ketting with React.
-* TorontoJS, August 2020 - Building a Promise from scratch ([video](https://www.youtube.com/watch?v=CVzx-6fu0d8))
-* Apidays New York 2021 - Introduction to HATEOAS with Ketting. ([video](https://www.youtube.com/watch?v=cZ0e-HoPPJ8))
+* Midwest PHP 2017 - Minneapolis, USA: Promises and Generators. [slides](https://github.com/evert/promises-and-generators)
+* True North PHP 2016 - Toronto, Canada: Introducing sabre/dav.
+* True North PHP 2016 - Toronto, Canada: Making CSS fun again with Sass. [slides](https://github.com/evert/sass-talk).
+* PHP Meetup, September 2016 - Toronto, Canada: Go for PHP programmers. [slides](/talks/go-for-php-programmers/)
+* True North PHP 2015 - Toronto, Canada: Promises & Generators. [slides](https://github.com/evert/promises-and-generators)
+* OwnCloud contributer conference 2015 - Berlin, Germany: sabre/dav and Promises & Generators.
+* Dutch PHP conference 2012 - Amsterdam, Netherlands: Backbone.js.
+* Dutch PHP conference 2011 - Amsterdam, Netherlands: RESTful webservices.
+* PHPBenelux Meetup 2011, Amersfoort, Netherlands: Integrating WebDAV in PHP applications.
+* Flash In The Can 2007, Toronto, Flash Video LiveCycle: From User To Delivery. 
+* FlashInTO 2007, Toronto, Video conversion with FFMpeg.
 
 
 ### Recognition
@@ -236,7 +210,8 @@ communicating technical requirements.
 
 ### Standards
 
-* Member of the PHP Framework Interoperability Group (<http://php-fig.org/>).
+
+* Former member of the PHP Framework Interoperability Group <http://php-fig.org/>.
   Contributor to various PHP standards.
 * Member of CalConnect, the Calendaring & Scheduling Consortium. Currently
   working on several documents that hopefully will become IETF RFCs.
@@ -270,15 +245,27 @@ I've been blogging on and off since 2006. Here's some of my favourites:
 Because of this, I've been published in both PHP Architect (a paper PHP
 magazine), and PHP Advent (now defunct series of articles).
 
-### sabre.io
-
-Since 2007 I started working on an open source library that would be named
-sabre/dav. This project spawned a number of PHP libraries that are now widely
-in use for various purposes. The project site is <http://sabre.io/>. I'm still
-the lead maintainer for all of these projects.
 
 ### Ketting
 
 In 2016 I started a new open-source project called
 [Ketting](https://github.com/evert/ketting). This project is an opiniated REST
 client, written in Javascript for both server and client side.
+
+### Curveball
+
+A also started [Curveball](https://curveballjs.org/), a modern Javascript
+framework to replace Express.
+
+### a12n-server
+
+I built both a [OAuth2 and OpenID Connect server](https://github.com/curveball/a12nserver)
+and an [OAuth2 Client](https://github.com/badgateway/oauth2-client).
+
+
+### sabre.io
+
+Since 2007 I started working on an open source library that would be named
+sabre/dav. This project spawned a number of PHP libraries that are now widely
+in use for various purposes. The project site is <http://sabre.io/>. I'm still
+the lead maintainer for all of these projects.
