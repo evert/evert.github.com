@@ -46,7 +46,7 @@ Skills
 ### Language
 
 {% for language in site.data.resume.languages %}
-* {{ language.language} - {{ language.fluency }}
+* {{ language.language}} - {{ language.fluency }}
 {% endfor %}
 
 ### Technology
