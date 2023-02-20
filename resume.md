@@ -21,6 +21,8 @@ I'm 20 year software engineering veteran and co-founded several businesses.
 I'm currently on the look-out for new opportunities. I'm especially
 interested in CTO and Director or part-time advisor positions.
 
+I'm strictly not interested in Cryptocurrency or NFT-related businesses.
+
 Links
 -----
 
