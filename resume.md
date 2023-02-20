@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Evert Pot - Resume
+title: "Evert Pot - Resume"
 permalink: "/resume.html"
 ---
 
-Evert Pot
+{{ site.data.resume.basics.name }}
 =========
 
-_Technical Leadership / API specialist._
+_{{ site.data.resume.basics.label }}_
 
 * Last update: *Feb 19th, 2023*.
 * Location: Toronto, ON, Canada.
-* Contact: <mailto:work@evertpot.com>.
+* Contact: <{{ site.data.resume.basics.email }}>.
 
 Summary
 -------
@@ -24,144 +24,20 @@ interested in CTO and Director or part-time advisor positions.
 Links
 -----
 
-* Blog: <https://evertpot.com/>
-* Github: <https://github.com/evert/>
-* LinkedIn: <https://linkedin.com/in/evert-pot/>
-* Stack Overflow: <http://stackoverflow.com/users/80911/evert>
-
+{% for profile in site.data.resume.profiles %}
+* {{ profile.network }}: <{{profile.url}}>
+{% endfor %}
 
 Experience
 ----------
 
-### Founder/CEO at Bad Gateway, Toronto, 2019-2023
+{% for job in site.data.resume.work %}
 
-In June 2019 I founded a software development agency in Toronto. Our team
-built Web Applications and APIs for clients in a variety of industries.
+### {{job.position}} at {{job.name}}, {{job.location}}, {{job.startDate}}-{{job.endDate}}
 
-This company eventually grew to 7 employees. We worked for for a variety of
-customers, including start-ups, media companies and financial institutions.
+{{job.summary}}
 
-
-### Technical Advisor at OrderUp, Toronto, 2020-2022
-
-
-At OrderUp I helped the engineering tool develop processes, work through
-technical issues and help architect their system through inception till
-their eventual aquisition.
-
-
-### Software Engineer at Ascendant Digital, Cayman Islands/Toronto - 2018-2020
-
-Ascendant Digital is a private investment firm, providing investors exposure
-to crypto currencies.
-
-My role was to develop tools to help the company analyze the market, to build
-a system for tracking performance and reconsilation of different investment
-strategies and advise on information security.
-
-To do this, I've built REST apis (primarily HAL) in Node.js and Typescript,
-browser-based frontends using React, integrations with tools such as Google
-Sheets and Dropbox and various serverless processes using the AWS ecosystem.
-
-Initially I joined the team as a full-time position, but as my services became
-less necessary, my role became a fractional position allowing me to start my
-own agency.
-
-### Technical Lead at Yelp, Toronto/San Francisco - 2016-2018
-
-In October 2016, I joined Turnstyle, a company in Toronto that does location-
-based marketing analytics.
-
-My role there was to help drive the design and architecture of a REST API. We've
-used HAL, OAuth2, json-schema to drive the hypermedia API using NodeJS, ES6,
-ES7. On a docker-container infrastructure running on Amazon Web Services.
-I also helped mentor other developers and act as a technical lead.
-
-In April 2017 Turnstyle got acquired by Yelp, and I subsequently moved to San
-Francisco in October 2017.
-
-There I helped onboard a quickly growing development team and working with
-the needs and requirements of a much larger corporation, including integrating
-our existing systems and culture with Yelp's.
-
-### Co-Founder/CTO fruux, Germany + UK — 2011 - 2015
-
-In December 2011 I went full-time with fruux, which was a bit of a
-side-project at the time. We got a seed investment round and opened the
-door to our office. As the technical lead I’ve been responsible for the
-technical and product direction, as well as leading the team from a
-technical perspective. Aside from that I’ve also got my hands dirty in some
-marketing and sales and just stepped in where needed.
-
-As a programmer I helped develop their synchronization system for personal
-information such as calendars, contacts and files. I acted as a liaison for
-the CalConnect calendar and scheduling standard consortium.
-
-### Consulting, worldwide — 2003-today
-
-I originally incorporated at age 17 at the Chamber of Commerce in the
-Netherlands. I've been a consultant and freelancer pretty much at any point
-in my career where there's gaps between jobs.
-
-I’ve had the opportunity to work in
-telecommunication, social media, group ware, advertising, broadcasting,
-financial service companies in Australia, Portugal, Canada and The
-Netherlands, and remotely worked for various other companies from North
-America, Europe and Asia.
-
-Used many different technologies such PHP / Lamp stack, NodeJS, Lots of
-Javascript, AWS, Backbone, Golang, Sass/Less, or basically whatever tech the
-job called for.
-
-
-### Software engineer, Ibuildings, Utrecht, Netherlands — 2010-2011
-
-In 2010 I started working for Ibuildings in the Netherlands as a senior
-software engineer. Ibuildings is a software development company based in
-The Netherlands and London, UK specializing in PHP and other web-related
-technologies.
-My role was primarily in leading development teams, training and development.
-I’ve worked here on scalability issues for nu.nl (the number one Dutch news
-site), designed Javascript/YUI3 based ‘fat’ javascript clients, (RESTful)
-Web-service development and in-house training around subjects such as
-web-services design and a full-day javascript workshop.
-
-### Lead architect/owner, Filemobile, Toronto, Canada — 2006-2014
-
-After working with Filemobile as a contractor, I took on the job as lead
-architect. Being the first person on the payroll, I was given the task of
-making both the application and business scalable by hiring and managing new
-engineers and putting development processes in place. For Filemobile, I
-developed a scalable social network and user-generated content whitelabel
-engine, working with Canada’s leading media brands such as CBC, CTV, Fox, TSN,
-CP24.
-
-In this job I worked with PHP, complicated multi-master, MySQL setups (with
-geographic redundancy), Memcached, Amazon S3 and EC2 and I was responsible
-for developing a multi-core, multi-machine transcoding engine as well as
-leading the development team.
-Starting August 2009 I resigned as lead architect to continue my work as
-independent consultant, after that I was still involved in an advisory role
-and owner.
-
-In late 2015 the company was sold to NewZulu, an Australian-based media
-company.
-
-### Senior Web developer/partner, Collab, Utrecht, the Netherlands — 2004-2006
-
-Together with Collab I’ve got a taste of many experimental innovative software,
-such as real-time, multi-user rich internet applications including web video
-chat and media conversion. Using technologies such as Flash Communication
-Server (now Flash Media Server) and FFMpeg. In these 3 years I’ve worked with
-Dutch media and internet companies, such as NOS, BNN, Telegraaf/Speurders.nl,
-EasyConcepts, Netmasters and UDC/Dancevalley.
-
-### Application developer/Sys admin, V/d Veer, Surhuisterveen, The Netherlands — 2003
-
-Developed and implemented a car inventory and lease database. The Database was
-based on Interbase, the front-end was built using Borland Delphi. I got this
-job as an intern. I was forced to jump in and learn many technologies that
-were new for me at the time, such as SQL.
+{% endfor %}
 
 
 Skills
@@ -169,11 +45,9 @@ Skills
 
 ### Language
 
-* English: advanced speaking/writing
-* Dutch: advanced speaking/writing
-* Frisian: advanced speaking
-* German: basic speaking/writing
-
+{% for language in site.data.resume.languages %}
+* {{ language.language} - {{ language.fluency }}
+{% endfor %}
 
 ### Technology
 
@@ -204,7 +78,9 @@ HTML5, MySQL, CSS3, Linux, Docker.
 
 ### Recognition
 
-* Best developer of the year - Canadian New Media Awards 2008
+{% for award of site.data.resume.awards %}
+* {{ award.title }} - {{ award.awarder }}
+{% endfor %}
 
 ### Standards
 
