@@ -78,7 +78,7 @@ HTML5, MySQL, CSS3, Linux, Docker.
 
 ### Recognition
 
-{% for award of site.data.resume.awards %}
+{% for award in site.data.resume.awards %}
 * {{ award.title }} - {{ award.awarder }}
 {% endfor %}
 
