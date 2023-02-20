@@ -49,16 +49,21 @@ Skills
 * {{ language.language}} - {{ language.fluency }}
 {% endfor %}
 
-### Technology
+<ul>
+{% for post in site.tags.featured %}
+  <li>{{ languages.language }} - {{ language.fluency }}</li>
+{% endfor %}
+</ul>
 
-Expert skills
--------------
+
+### Technology
 
 HTTP, Node.js, Typescript, AWS, React, RestAPI, Javascript, OAuth2
 HTML5, MySQL, CSS3, Linux, Docker.
 
 
-### Speaking
+Speaking
+--------
 
 * Apidays New York 2021 - Introduction to HATEOAS with Ketting. [video](https://www.youtube.com/watch?v=cZ0e-HoPPJ8)
 * TorontoJS, August 2020 - Building a Promise from scratch [video](https://www.youtube.com/watch?v=CVzx-6fu0d8)
@@ -76,13 +81,15 @@ HTML5, MySQL, CSS3, Linux, Docker.
 * FlashInTO 2007, Toronto, Video conversion with FFMpeg.
 
 
-### Recognition
+Recognition
+-----------
 
 {% for award in site.data.resume.awards %}
 * {{ award.title }} - {{ award.awarder }}
 {% endfor %}
 
-### Standards
+Standards
+---------
 
 
 * Former member of the PHP Framework Interoperability Group <http://php-fig.org/>.
