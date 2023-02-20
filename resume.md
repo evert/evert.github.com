@@ -43,10 +43,10 @@ Experience
 Skills
 ------
 
-### Language
+### Languages
 
 <ul>
-{% for language in site.data.resume.language %}
+{% for language in site.data.resume.languages %}
   <li>{{ languages.language }} - {{ language.fluency }}</li>
 {% endfor %}
 </ul>
