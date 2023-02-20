@@ -45,12 +45,8 @@ Skills
 
 ### Language
 
-{% for language in site.data.resume.languages %}
-* {{ language.language}} - {{ language.fluency }}
-{% endfor %}
-
 <ul>
-{% for post in site.tags.featured %}
+{% for language in site.data.resume.language %}
   <li>{{ languages.language }} - {{ language.fluency }}</li>
 {% endfor %}
 </ul>
@@ -67,7 +63,7 @@ Speaking
 
 * Apidays New York 2021 - Introduction to HATEOAS with Ketting. [video](https://www.youtube.com/watch?v=cZ0e-HoPPJ8)
 * TorontoJS, August 2020 - Building a Promise from scratch [video](https://www.youtube.com/watch?v=CVzx-6fu0d8)
-* React + Native Toronto - Using Ketting with React.
+* React + Native Toronto - 2020 - Using Ketting with React.
 * Midwest PHP 2017 - Minneapolis, USA: Promises and Generators. [slides](https://github.com/evert/promises-and-generators)
 * True North PHP 2016 - Toronto, Canada: Introducing sabre/dav.
 * True North PHP 2016 - Toronto, Canada: Making CSS fun again with Sass. [slides](https://github.com/evert/sass-talk).

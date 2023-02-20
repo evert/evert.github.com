@@ -24,6 +24,12 @@ body {
   }
 }
 
+@media print {
+  body {
+    font-size: 90%;
+  }
+}
+
 ul,ol,p {
     line-height: 1.75;
 }
