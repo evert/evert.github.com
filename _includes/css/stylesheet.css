@@ -28,6 +28,12 @@ body {
   body {
     font-size: 90%;
   }
+  footer {
+    display: none;
+  }
+  .flower {
+    display: none;
+  }
 }
 
 ul,ol,p {

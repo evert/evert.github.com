@@ -24,9 +24,11 @@ interested in CTO and Director or part-time advisor positions.
 Links
 -----
 
-{% for profile in site.data.resume.profiles %}
-* {{ profile.network }}: <{{profile.url}}>
+<ul>
+{% for profile in site.data.resume.basics.profiles %}
+  <li>{{ profile.network }} - <a href="{{profile.url}}">{{profile.url}}</a></li>
 {% endfor %}
+</ul>
 
 Experience
 ----------
@@ -47,15 +49,17 @@ Skills
 
 <ul>
 {% for language in site.data.resume.languages %}
-  <li>{{ languages.language }} - {{ language.fluency }}</li>
+  <li>{{ language.language }} - {{ language.fluency }}</li>
 {% endfor %}
 </ul>
 
+{% for skill in site.data.resume.skills %}
 
-### Technology
+### {{ skill.name }}
 
-HTTP, Node.js, Typescript, AWS, React, RestAPI, Javascript, OAuth2
-HTML5, MySQL, CSS3, Linux, Docker.
+{{ skill.keywords | join: ", " }}
+
+{% endfor %}
 
 
 Speaking
