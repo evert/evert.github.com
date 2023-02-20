@@ -9,7 +9,7 @@ permalink: "/resume.html"
 
 _{{ site.data.resume.basics.label }}_
 
-* Last update: *Feb 19th, 2023*.
+* Last update: *Feb 20th, 2023*.
 * Location: Toronto, ON, Canada.
 * Contact: <{{ site.data.resume.basics.email }}>.
 
@@ -27,6 +27,7 @@ Links
 -----
 
 <ul>
+  <li>Personal site: <a href="{{ site.data.resume.basics.url }}">{{ site.data.resume.basics.url}}</a></li>
 {% for profile in site.data.resume.basics.profiles %}
   <li>{{ profile.network }} - <a href="{{profile.url}}">{{profile.url}}</a></li>
 {% endfor %}
