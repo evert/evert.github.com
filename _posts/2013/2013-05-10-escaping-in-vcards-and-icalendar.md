@@ -119,7 +119,7 @@ iCalendar 2.0
 -------------
 
 iCalendar 2.0 largely follows the same rules as vCard 4.0, but commas and
-semi-colons _must_ be esacped, unless they are used as a delimiter.
+semi-colons _must_ be escaped, unless they are used as a delimiter.
 
 Semi-colons are used as a delimiter in `REQUEST-STATUS`, `RRULE`, `GEO` and
 `EXRULE`, every other property uses commas.
