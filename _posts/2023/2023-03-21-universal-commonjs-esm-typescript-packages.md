@@ -82,6 +82,13 @@ Our published NPM packages will have a directory structure roughly like this:
 We include the original typescript sources to make step-through debugging work
 well, and have a seperate directory for the ESM and CommonJS builds.
 
+If you just want to skip to the end and see an example of a package that has
+all this work done, check out my `@curveball/core` package:
+
+* Github source: <https://github.com/curveball/core>
+* Published NPM package contents: <https://www.npmjs.com/package/@curveball/core?activeTab=code>
+
+
 Typescript features we don't use
 ---------------------------------
 
