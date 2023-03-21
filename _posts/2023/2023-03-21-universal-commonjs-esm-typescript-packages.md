@@ -1,6 +1,6 @@
 ---
 title: "Supporting CommonJS and ESM with Typescript and Node"
-date: "2023-03-21 17:00:00 UTC"
+date: "2023-03-21 17:11:00 UTC"
 geo: [43.64793345752491, -79.42044389030917]
 location: "Bad Gateway Office"
 tags:
