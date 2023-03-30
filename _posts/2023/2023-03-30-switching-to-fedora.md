@@ -32,8 +32,8 @@ But it's fast because of software, not hardware.
 
 But something changed with Ubuntu in recent years. I think linux users have
 a thicker than usual skin when it comes to software issues and are willing
-to look past more things. But Ubuntu's quality has been consistently falling,
-and I was being worn down, and [I'm not alone][12].
+to look past more things. But Ubuntu's quality has been consistently falling.
+I was being worn down, and it seems to be a common sentiment in my bubble.
 
 The best example is Ubuntu's package manager Snap. A pretty good idea, I like
 the branding too but the execution hasn't been there. Ubuntu users have been
