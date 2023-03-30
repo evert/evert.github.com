@@ -27,7 +27,7 @@ Ubuntu's fall
 Ubuntu was the obvious choice. I want something that just works, and [Dell's
 XPS 13 Developer Edition][1] ships with Ubuntu which means hardware support
 from Dell itself. Breath of fresh air and fast as hell. The experience was
-similar to what people have been saying about the new M1 chips. Fast as hell.
+similar to what people have been saying about the new M1 chips.
 But it's fast because of software, not hardware.
 
 But something changed with Ubuntu in recent years. I think linux users have
