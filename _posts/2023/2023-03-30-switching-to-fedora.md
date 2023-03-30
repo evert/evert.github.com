@@ -80,7 +80,7 @@ install. I'm sure the drivers I need are available for Fedora, but I don't
 know what to look for which makes me slightly worried my computer is not
 running optimally. Battery feels worse but that could also be my imagination.
 
-Video in Firefox didn't work at all in stock firefox. I had to install
+Video in Firefox didn't work at all in stock Fedora. I had to install
 ffmpeg to get it to barely function, but then I discovered [RPM Fusion][7], where
 I got an even better ffmpeg, plus gstreamer and Intel drivers and I can now watch
 beautiful smooth 4K video, and confirmed with `intel_gpu_top` that I'm using
