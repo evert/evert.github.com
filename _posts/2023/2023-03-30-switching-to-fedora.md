@@ -1,7 +1,7 @@
 ---
 title: "Switching to Fedora from Ubuntu"
 date: "2023-03-30 16:00:00 UTC"
-geo: [43.663961, -79.333157],
+geo: [43.663961, -79.333157]
 location: "Leslieville, Toronto, ON, Canada"
 tags:
   - fedora
