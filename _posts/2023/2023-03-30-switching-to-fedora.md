@@ -41,8 +41,8 @@ effectively beta-testing this for years. Just to give you an idea I made a
 [giant list of bugs][3] that I ran into when Ubuntu switched Firefox from apt
 to Snap.
 
-To be honest I feel a bit bad ragging on Ubuntu, because without knowning
-*anything* about how the project and Canconical is run, my intuition is
+To be honest I feel a bit bad ragging on Ubuntu, because without knowing
+*anything* about how the project and Canonical is run, my intuition is
 that the steam is just kind of running out for them. Ubuntu feels 'depressed',
 but maybe it's all in my head.
 
@@ -59,7 +59,7 @@ spot for desktop linux. It's funded by Red Hat, and seems to have a focus on
 keeping it's packages very up to date, which I like and why I originally
 switched from Debian to Ubuntu!
 
-I'm a week an a bit in, and here are my first impressions.
+I'm a week and a bit in, and here are my first impressions.
 
 ### Installation
 
@@ -119,15 +119,15 @@ was to not remind me of its existence unless I'm installing something, and
 so far it's done that. [Flathub][8] is nice, and I love the idea of developers
 not having to repackage for every distro under the sun.
 
-### Buggyness 
+### Bugginess
 
 Fedora does generally feel more stable. Fewer background processes
 pegged at 100%. 3rd party application support doesn't seem as good on
 first sight. I had to find workarounds for [KeeppassXC][10] and
 [Element][9] to not crash all the time.
 
-This is of no fault of the Fedora team, but it does tell you something
-about how much Fedora is on other's people radars. If developers test
+This is no fault of the Fedora team, but it does tell you something
+about how much Fedora is on other people's radars. If developers test
 1 linux distro, it will be Ubuntu.
 
 ### Software Center app
@@ -147,14 +147,14 @@ Things are never perfect, but even with some of the issues I ran into
 I'm very happy I switched. It's hard to describe, but things feel more
 solid.
 
-To get here state I did have to put is some work and research, but not
+To get to this state I did have to put in some work and research, but not
 at a level of recompiling kernels.
 
-If you are comfortable googling, using the termimal for some commands
+If you are comfortable googling, using the terminal for some commands
 and interpreting an occasional error message I would now recommend Fedora
 over Ubuntu.
 
-If you are not a technical user or programmer-adjecent, I think Ubuntu
+If you are not a technical user or programmer-adjacent, I think Ubuntu
 is still going to be the choice with the least amount of friction. In
 large I think this is simply because it is the biggest, has the most
 eyes and the most support.
