@@ -109,7 +109,7 @@ identity Ubuntu has though. It sets itself apart from Mac and Windows.
 <a href="/assets/posts/fedora/fedora.png"><img class="fill-width" alt="Gnome's neutral colors" src="/assets/posts/fedora/fedora.png" /></a>
 
 I'm sure I can customize Fedora to be more fun, but if I'm being real
-with myself I probably haven't changed my desktop background in 10 years,
+with myself I haven't changed my desktop background in 10 years,
 and so this will never happen.
 
 ### Flatpak
