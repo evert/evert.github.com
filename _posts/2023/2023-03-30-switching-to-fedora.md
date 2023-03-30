@@ -72,7 +72,7 @@ was no exception.
 ### Non-free stuff
 
 Fedora does not ship with things that aren't open source. Nothing against that
-philosphy (awesome in fact), but personally I don't mind adding some binaries
+philosophy (awesome in fact), but personally I don't mind adding some binaries
 for a better experience.
 
 I miss Ubuntu's [Additional Drivers][6] tool, because it told me what to
