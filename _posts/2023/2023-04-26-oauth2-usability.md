@@ -17,7 +17,7 @@ use the author's product [Nango][8] that advertises support
 for supporting OAuth2 flows for 90+ APIs and justifying the existence
 of the product.
 
-We don't need 90 HTTP clients to talk to 90 websites, so why
+We don't need 90 browsers to open 90 websites, so why
 is this the case with OAuth2? In a similar vain, the popular [passport.js][10]
 project has 538(!) modules for authenticating with various services,
 most of which likely use OAuth2. All of these are NPM packages.
