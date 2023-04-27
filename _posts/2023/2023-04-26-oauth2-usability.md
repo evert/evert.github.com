@@ -1,6 +1,6 @@
 ---
 title: "Does OAuth2 have a usability problem? (yes!)"
-date: "2023-04-26 23:00:00 UTC"
+date: "2023-04-27 02:18:00 UTC"
 geo: [43.64793345752491, -79.42044389030917]
 location: "Bad Gateway Office"
 tags:
