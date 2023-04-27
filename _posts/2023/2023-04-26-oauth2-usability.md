@@ -226,8 +226,8 @@ Final notes
 
 * A future OAuth version should also explicitly allow `http://localhost` as
   a `redirect_url`. We need to be able to test.
-* I'm aware that there was a OAuth 3 proposal, which is now called [XYZ or
-  maybe GNAP][12]. I'm not very familiar with this proposed protocol.
+* I'm aware that there was a OAuth 3 proposal, which is now called [XYZ (or
+  maybe GNAP?)][12]. I'm not very familiar with this proposed protocol.
 * [XKCD 927][14] is funny, but ultimately a conversation stopper and a bit
   cynical.
 
