@@ -13,7 +13,7 @@ draft: true
 
 I read an [interesting thread][7] on Hackernews in response to a post:
 "Why is OAuth still hard in 2023". The post and comments bring up a lot
-of real issues with OAuth. he article ends with a pitch to
+of real issues with OAuth. The article ends with a pitch to
 use the author's product [Nango][8] that advertises support
 for supporting OAuth2 flows for 90+ APIs and justifying the existance
 of the product.
@@ -83,9 +83,9 @@ Most people only need a small part of OAuth2, but to understand *which* small
 part you need you'll need to wade through and understand a dozen IETF RFC
 documents, some of wich are still drafts.
 
-Sidenote: [OpenID Connect][12] is another dimension on top of this. OpenID Connect builds on
+_Sidenote: [OpenID Connect][12] is another dimension on top of this. OpenID Connect builds on
 OAuth2 and adds many features and another set of dense technical specs that are
-(in my opinion) even harder to read.
+(in my opinion) even harder to read._
 
 OAuth2 as a framework is really good and very successful. But it's not as good
 at being a generic protocol that people can write generic code for.
