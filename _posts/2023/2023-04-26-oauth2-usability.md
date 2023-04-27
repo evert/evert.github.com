@@ -8,7 +8,6 @@ tags:
   - opensource
   - javascript
   - typescript
-draft: true
 ---
 
 I read an [interesting thread][7] on Hackernews in response to a post:
