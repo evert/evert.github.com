@@ -1,5 +1,5 @@
 ---
-title: "An OAuth 3 proposal"
+title: "Does OAuth2 have a usability problem? (yes!)"
 date: "2023-04-26 23:00:00 UTC"
 geo: [43.64793345752491, -79.42044389030917]
 location: "Bad Gateway Office"
@@ -19,7 +19,7 @@ for supporting OAuth2 flows for 90+ APIs and justifying the existance
 of the product.
 
 We don't need 90 HTTP clients to talk to 90 websites, so why
-is this the case with OAuth2? Similarly, the popular [passport.js][10]
+is this the case with OAuth2? In a similar vain, the popular [passport.js][10]
 project has 538(!) modules for authenticating with various services,
 most of which likely use OAuth2.
 
@@ -81,19 +81,19 @@ Another result is that I see *many* people invent their own authentication flows
 with JWT and refresh tokens from scratch, even though OAuth2 would be good fit.
 Most people only need a small part of OAuth2, but to understand *which* small
 part you need you'll need to wade through and understand a dozen IETF RFC
-documents, some of which best practices that have the draft status.
+documents, some of wich are still drafts.
 
 Sidenote: [OpenID Connect][12] is another dimension on top of this. OpenID Connect builds on
 OAuth2 and adds many features and another set of dense technical specs that are
-even harder to read.
+(in my opinion) even harder to read.
 
-OAuth 2 as a framework is really good, but it's not as good at being a generic
-protocol that people can write generic code for.
+OAuth2 as a framework is really good and very successful. But it's not as good
+at being a generic protocol that people can write generic code for.
 
 Solving the setup issue
 -----------------------
 
-There's a nice OAuth2 feature called `OAuth 2.0 Authorization Server Metadata`,
+There's a nice OAuth2 feature called "OAuth 2.0 Authorization Server Metadata",
 defined in [RFC8414][4]. This is a JSON document sitting at a predictable URL:
 `https://your-server/.well-known/oauth-authorization-server`, and can tell
 clients:
@@ -102,7 +102,7 @@ clients:
 * How to pass credentials
 * URLs to every endpoint.
 
-Here's an example from [my server][5]:
+Here's an example from my server:
 
 ```json
 {
@@ -146,8 +146,8 @@ Here's an example from [my server][5]:
 }
 ```
 
-If you server and client supports this, it can simplify the setup a great
-deal. Here's an example using [my client][1]:
+If your server and client supports this, it can simplify the setup a great
+deal. Here's an example using my client:
 
 
 ```typescript
@@ -180,7 +180,7 @@ and `password` flows) and PKCE is brought in as a core feature.
 If you're a OAuth 2 client or server maintainer and kept up with the specs,
 you likely are already compatible with OAuth 2.1.
 
-I don't think OAuth 2.1 goes far enough though.
+I don't think OAuth 2.1 goes far enough.
 
 I think that this proposal should _require_ support for the discovery document
 and make it a required step to find features and endpoints. I also think
@@ -190,14 +190,9 @@ how they might work. (or forbid them).
 This version of OAuth should also provide a way to discover the discovery
 endpoint (hear me out).
 
-If a client makes a HTTP request to an API, and it replies with `401`, it
+If a client makes a HTTP request to an API, and the API replies with `401`, it
 should tell the client where to find the discovery document and which
 flow(s) to use.
-
-It should make expiry information for tokens non-optional, and
-explicitly allow `http://localhost` for redirects to make developers
-not jump through a number of unneeded hoops just to get a working test
-environments.
 
 Lastly, I think that it should be renamed to OAuth 3, so API vendors no longer
 have to state:
@@ -217,18 +212,20 @@ But instead:
 * Your `client_id` is X.
 
 A nice aspect of this proposal is that OAuth 2 clients can still talk to
-OAuth 3 servers, it also doesn't obsolete OAuth 2.
+OAuth 3 servers, it also doesn't obsolete the OAuth 2 framework.
 
 Perhaps you could name this "OAuth 2.1: the good parts", but I think increasing
 the major version number sends a clear signal to users they should be looking
 for a OAuth 3 library.
 
 Then _maybe_, 10 years from now we no longer need 538 Passport.js modules for
-538 APIs.
+538 APIs. Perhaps browers could even facilitate authentication.
 
 Final notes
 -----------
 
+* A future OAuth version should also explicitly allow `http://localhost` as
+  a `redirect_url`. We need to be able to test.
 * I'm aware that there was a OAuth 3 proposal, which is now called [XYZ or
   maybe GNAP][12]. I'm not very familiar with this proposed protocol.
 * [XKCD 927][14] is funny, but ultimately a conversation stopper and a bit
