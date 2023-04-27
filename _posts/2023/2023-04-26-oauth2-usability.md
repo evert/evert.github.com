@@ -15,7 +15,7 @@ I read an [interesting thread][7] on Hackernews in response to a post:
 "Why is OAuth still hard in 2023". The post and comments bring up a lot
 of real issues with OAuth. The article ends with a pitch to
 use the author's product [Nango][8] that advertises support
-for supporting OAuth2 flows for 90+ APIs and justifying the existance
+for supporting OAuth2 flows for 90+ APIs and justifying the existence
 of the product.
 
 We don't need 90 HTTP clients to talk to 90 websites, so why
@@ -51,7 +51,7 @@ servers and run into mild incompatibilities that this library will have to
 add workarounds for.
 
 Although I think OAuth2 is pretty well defined, the full breadth of specs and
-implementations makes so that it's not enough to (as an API developer) to just
+implementations makes it so that it's not enough to (as an API developer) to just
 tell your users: "We use OAuth2".
 
 For the typical case, you might have to tell them something like this:
@@ -219,7 +219,7 @@ the major version number sends a clear signal to users they should be looking
 for a OAuth 3 library.
 
 Then _maybe_, 10 years from now we no longer need 538 Passport.js modules for
-538 APIs. Perhaps browers could even facilitate authentication.
+538 APIs. Perhaps browsers could even facilitate authentication.
 
 Final notes
 -----------
