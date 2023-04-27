@@ -1,5 +1,5 @@
 ---
-title: "Does OAuth2 have a usability problem? (yes!)"
+title: "An OAuth 3 proposal"
 date: "2023-04-26 23:00:00 UTC"
 geo: [43.64793345752491, -79.42044389030917]
 location: "Bad Gateway Office"
@@ -226,6 +226,15 @@ for a OAuth 3 library.
 Then _maybe_, 10 years from now we no longer need 538 Passport.js modules for
 538 APIs.
 
+Final notes
+-----------
+
+* I'm aware that there was a OAuth 3 proposal, which is now called [XYZ or
+  maybe GNAP][12]. I'm not very familiar with this proposed protocol.
+* [XKCD 927][14] is funny, but ultimately a conversation stopper and a bit
+  cynical.
+
+
 [1]: https://github.com/badgateway/oauth2-client
 [2]: https://oauth.net/2/pkce/
 [3]: https://www.npmjs.com/package/@badgateway/oauth2-client
@@ -238,3 +247,5 @@ Then _maybe_, 10 years from now we no longer need 538 Passport.js modules for
 [10]: https://www.passportjs.org/packages/
 [11]: https://github.com/curveball/a12n-server
 [12]: https://openid.net/connect/
+[13]: https://oauth.xyz/
+[14]: https://xkcd.com/927/
