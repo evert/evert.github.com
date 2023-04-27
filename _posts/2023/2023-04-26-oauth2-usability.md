@@ -20,7 +20,7 @@ of the product.
 We don't need 90 HTTP clients to talk to 90 websites, so why
 is this the case with OAuth2? In a similar vain, the popular [passport.js][10]
 project has 538(!) modules for authenticating with various services,
-most of which likely use OAuth2.
+most of which likely use OAuth2. All of these are NPM packages.
 
 Anyway, I've been wanting to write this article for a while. It's not
 a direct response to the Nango article, but it's a similar take with
@@ -235,12 +235,11 @@ Final notes
 [2]: https://oauth.net/2/pkce/
 [3]: https://www.npmjs.com/package/@badgateway/oauth2-client
 [4]: https://www.rfc-editor.org/rfc/rfc8414
-[5]: https://github.com/curveball/a12n-server
 [6]: https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-08.html
 [7]: https://news.ycombinator.com/item?id=35713518
 [8]: https://www.nango.dev/
 [9]: https://www.nango.dev/blog/why-is-oauth-still-hard
-[10]: https://www.passportjs.org/packages/
+[10]: https://www.passportjs.org/
 [11]: https://github.com/curveball/a12n-server
 [12]: https://openid.net/connect/
 [13]: https://oauth.xyz/
