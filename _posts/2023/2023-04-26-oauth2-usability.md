@@ -13,19 +13,27 @@ draft: true
 
 I read an [interesting thread][7] on Hackernews in response to a post:
 "Why is OAuth still hard in 2023". The post and comments bring up a lot
-of real issues with OAuth. Ultimately the article ends with a pitch to
-use the author's open source project [Nango][8] that advertises support
-for supporting OAuth2 flows for 90+ APIs.
+of real issues with OAuth. he article ends with a pitch to
+use the author's product [Nango][8] that advertises support
+for supporting OAuth2 flows for 90+ APIs and justifying the existance
+of the product.
 
 We don't need 90 HTTP clients to talk to 90 websites, so why
 is this the case with OAuth2? Similarly, the popular [passport.js][10]
-project has 538(!) modules for authenticating with various services.
+project has 538(!) modules for authenticating with various services,
+most of which likely use OAuth2.
 
-Last year I released a new [OAuth2 client for Javascript][1], with the
-goals to make a 0-dependency, modern and lean client for OAuth2,
-supporting features like such as [PKCE][2].
+Anyway, I've been wanting to write this article for a while. It's not
+a direct response to the Nango article, but it's a similar take with
+a different solution.
 
-Since that public release, the client got several new features and requests
+My perspective
+-------------
+
+I've been working on an [OAuth2 server][11] for a year years now, and last
+year I released an open source [OAuth2 client][1].
+
+Since I released the client, I've gotten several new features and requests
 that were all contributed by users of the library, a few of note are:
 
 * Allowing `client_id` and `client_secret` to be sent in request bodies
@@ -58,14 +66,14 @@ For the typical case, you might have to tell them something like this:
 * Any custom non-standard extensions.
 
 To some extent this is by design. The OAuth2 spec calls itself: "The OAuth 2.0
-Authorization Framework". If you have an authentication use-case, you can
-likely use framework as a foundation.
+Authorization Framework". It's not saying it is _the_ protocol, but rather it's
+a set of really good building blocks to implement your own authentication.
 
-For end-users this is not ideal. Not only because of the amount of information
-that needs to be shared, but also it requires users of your API to be familiar
-with all these terms.
+But for users that want to use generic OAuth2 tooling this is not ideal.
+Not only because of the amount of information that needs to be shared, but also
+it requires users of your API to be familiar with all these terms.
 
-A side-effect of this is that API vendors that use OAuth2 will be more likely 
+A side-effect of this is that API vendors that use OAuth2 will be more likely
 roll their own SDKs, so they can insulate users from these implementation details.
 It also creates a market for products like Nango and Passport.js.
 
@@ -74,6 +82,13 @@ with JWT and refresh tokens from scratch, even though OAuth2 would be good fit.
 Most people only need a small part of OAuth2, but to understand *which* small
 part you need you'll need to wade through and understand a dozen IETF RFC
 documents, some of which best practices that have the draft status.
+
+Sidenote: [OpenID Connect][12] is another dimension on top of this. OpenID Connect builds on
+OAuth2 and adds many features and another set of dense technical specs that are
+even harder to read.
+
+OAuth 2 as a framework is really good, but it's not as good at being a generic
+protocol that people can write generic code for.
 
 Solving the setup issue
 -----------------------
@@ -152,7 +167,7 @@ document.
 And for the clients that _do_ support it, you would need to call out that
 your users' client needs support for RFC8414.
 
-So while I think the discovery spec is great, and solves real problems
+So while I think the discovery spec is great and solves real problems;
 it alone cannot solve the OAuth2 usability problem.
 
 My proposal
@@ -163,13 +178,12 @@ features that are considered insecure or bad practices (such as `implicit`
 and `password` flows) and PKCE is brought in as a core feature.
 
 If you're a OAuth 2 client or server maintainer and kept up with the specs,
-If you kept up with your OAuth 2.0 clients and servers, you likely are already
-compatible with OAuth 2.1.
+you likely are already compatible with OAuth 2.1.
 
-I don't think OAuth 2.1 goes far enough though. 
+I don't think OAuth 2.1 goes far enough though.
 
 I think that this proposal should _require_ support for the discovery document
-and make it the only valid way to discover features and endpoints. I also think
+and make it a required step to find features and endpoints. I also think
 it should have an opinion on how clients should support custom extensions and
 how they might work. (or forbid them).
 
@@ -180,7 +194,12 @@ If a client makes a HTTP request to an API, and it replies with `401`, it
 should tell the client where to find the discovery document and which
 flow(s) to use.
 
-I also think that it should be renamed to OAuth 3, so API vendors no longer
+It should make expiry information for tokens non-optional, and
+explicitly allow `http://localhost` for redirects to make developers
+not jump through a number of unneeded hoops just to get a working test
+environments.
+
+Lastly, I think that it should be renamed to OAuth 3, so API vendors no longer
 have to state:
 
 * We use OAuth 2.
@@ -197,15 +216,10 @@ But instead:
 * We use OAuth 3.
 * Your `client_id` is X.
 
-Lastly, it should make expiry information for tokens non-optional, and
-explicitly allow `http://localhost` for redirects to make developers
-not jump through a number of unneeded hoops just to get a working test
-environments.
-
 A nice aspect of this proposal is that OAuth 2 clients can still talk to
 OAuth 3 servers, it also doesn't obsolete OAuth 2.
 
-Perhaps you could name this "OAuth 2: the good parts", but I think increasing
+Perhaps you could name this "OAuth 2.1: the good parts", but I think increasing
 the major version number sends a clear signal to users they should be looking
 for a OAuth 3 library.
 
@@ -222,3 +236,5 @@ Then _maybe_, 10 years from now we no longer need 538 Passport.js modules for
 [8]: https://www.nango.dev/
 [9]: https://www.nango.dev/blog/why-is-oauth-still-hard
 [10]: https://www.passportjs.org/packages/
+[11]: https://github.com/curveball/a12n-server
+[12]: https://openid.net/connect/
