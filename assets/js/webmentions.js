@@ -55,6 +55,7 @@ function displayWebMentions(elem, result) {
 
     switch(link.activity.type) {
       case 'like' :
+      case 'bookmark' :
         likeHtml.push(getAvatar(link, link.data.url));
         break;
       case 'repost' :
