@@ -29,7 +29,7 @@ a different solution.
 My perspective
 -------------
 
-I've been working on an [OAuth2 server][11] for a year years now, and last
+I've been working on an [OAuth2 server][11] for a few years now, and last
 year I released an open source [OAuth2 client][1].
 
 Since I released the client, I've gotten several new features and requests
