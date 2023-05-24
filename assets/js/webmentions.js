@@ -69,7 +69,7 @@ function displayWebMentions(elem, result) {
         if (!content) {
           content = link.data.url;
         }
-        activityHtml.push('<li><div class="comment">' + getAvatar(link) + '<div class="inner"><p>' + getAuthorName(link) + publishedTime + '</p>' + content + '</div></div>');
+        activityHtml.push('<li data-webmention-url="'+h(link.data.url)+'"><div class="comment">' + getAvatar(link) + '<div class="inner"><p>' + getAuthorName(link) + publishedTime + '</p>' + content + '</div></div>');
         break;
       default :
         if (link.activity.sentence_html) {
