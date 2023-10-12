@@ -36,7 +36,7 @@ experience matches this too. I know a number of people in
 the Netherlands that don't work full-time, and I think there are more opportunities
 for part-time career jobs. I don't see them much in North America.
 
-<iframe src="https://data.oecd.org/chart/7de9" width="860" height="645" style="border: 0; max-width: 100%" mozallowfullscreen="true" webkitallowfullscreen="true" allowfullscreen="true"><a href="https://data.oecd.org/chart/7de9" target="_blank">OECD Chart: Part-time employment rate, Total, % of employment, Annual, 2022</a></iframe>
+<iframe src="https://data.oecd.org/chart/7de9" width="860" height="645" style="border: 0; width: 100%; max-width: 100%" mozallowfullscreen="true" webkitallowfullscreen="true" allowfullscreen="true"><a href="https://data.oecd.org/chart/7de9" target="_blank">OECD Chart: Part-time employment rate, Total, % of employment, Annual, 2022</a></iframe>
 
 
 My first-hand experience is when I was interviewing a few years into my
