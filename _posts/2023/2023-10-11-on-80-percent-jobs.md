@@ -30,12 +30,14 @@ I got strong roots and professional experience in both places, but there was
 one thing that surprised me most in the Netherlands that I haven't really seen
 in North America.
 
-Apparently Netherlands has a very high rate of part-time careers (I read
-statistics suggesting they are the highest in the world by large margin, but
-I didn't trust the sources enough to share, suffice to say they are probably
-high). My personal experience matches this too. I know a number of people in
+Apparently Netherlands has a very high rate of part-time careers. Statstics
+suggest that they are the highest in the world by a large margin. My personal
+experience matches this too. I know a number of people in
 the Netherlands that don't work full-time, and I think there are more opportunities
 for part-time career jobs. I don't see them much in North America.
+
+<iframe src="https://data.oecd.org/chart/7de9" width="860" height="645" style="border: 0" mozallowfullscreen="true" webkitallowfullscreen="true" allowfullscreen="true"><a href="https://data.oecd.org/chart/7de9" target="_blank">OECD Chart: Part-time employment rate, Total, % of employment, Annual, 2022</a></iframe>
+
 
 My first-hand experience is when I was interviewing a few years into my
 career at a company named Ibuildings in Utrecht, Netherlands. After the
