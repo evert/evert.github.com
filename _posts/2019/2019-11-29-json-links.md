@@ -151,7 +151,7 @@ support for `type` or `hreflang`.
 }
 ```
 
-[Source](https://iot.mozilla.org/wot)
+[Source](https://w3c.github.io/wot-thing-description/#link)
 
 ### JSON:API
 
