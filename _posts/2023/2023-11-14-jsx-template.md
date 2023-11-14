@@ -1,5 +1,5 @@
 ---
-title: "Using JSX on the server without React"
+title: "Using JSX on the server as a template engine"
 date: "2023-11-14 12:10:55 UTC"
 location: "Nijega, NL"
 geo: [53.140006, 6.032090]
@@ -25,19 +25,23 @@ So while React/Next.js may be relegated to the enterprise and legacy systems in
 a few years, I believe [JSX][1] is set up to be it's own thing and it may be able to
 avoid that fate.
 
-This article digs into what JSX is, where it comes from and where JSX ends and
-React starts.
+I've been using JSX as a template engine to replace template engines like
+[EJS][11] and [Handlebars][12], and more than once people were surprised this was
+possible. I thought it might be nice to write some stuff down about this.
+
+So in this article I'm digging into what JSX is, where it comes from and how one
+might go about using it as a simple server-side HTML template engine.
 
 
 What is JSX?
 ------------
 
 JSX an extension to the Javascript language, and was introduced with React.
-It's not compatible with Javascript. It usually has a `.jsx` extension and it
-needs to be compiled *to* Javascript. Most build tools people already use, like
-ESbuild, Babel, Vite, etc. all support this natively or through a plugin.
-Typescript natively supports it, so if you use Typescript you can just start
-using it without using another tool.
+It usually has a `.jsx` extension and it needs to be compiled *to* Javascript.
+Most build tools people already use, like ESbuild, Babel, Vite, etc. all
+support this natively or through a plugin.
+Typescript also natively supports it, so if you use Typescript you can just start
+using it without adding another tool.
 
 It looks like this:
 
@@ -67,9 +71,9 @@ const foo = <div>
 </div>;
 ```
 
-It also has a convention to treat lowercase tags `<h1>` as output, but if the
-tag starts with an uppercase character, it's a component which automatically
-gets called.
+It has a convention to treat tags that start with a lowercase character such
+as `<h1>` as output, but if the tag starts with an uppercase character,
+it's a component, which usually is represented by a function:
 
 ```jsx
 function HelloWorldComponent(props) {
@@ -86,8 +90,8 @@ const foo = <section>
 Anyway, if you're reading this you likely knew most of this but it's important
 to state that this are all JSX features, not React.
 
-Inspo
------
+#Inspo
+------
 
 JSX probably has it's roots in [E4X][2] (and more directly [XHP][4]). E4X was a
 way to embed XML in Javascript. E4X has been supported in Firefox for years, and
@@ -98,11 +102,17 @@ With E4X you embed XML documents as data, similar to
 defining a JSON object in a Javascript file. After defining the XML document
 you can manipulate it. A fictional transpiler for E4X could (as far as I can
 tell) just take the XML structure, turn it into a string and pass it to
-[`DOMParser.parseFromString()`][3].
+[`DOMParser.parseFromString()`][3]. There's no variables, functions, components,
+or logic. Similar to how a Regular expression is part of the JS language.
 
 JSX is quite different. It's fully integrated in the language and it effectively
-compiles down to nested function definitions. These functions don't get turned
-into HTML until they are [called][5].
+compiles down to nested function definitions. These functions are don't get turned
+into HTML until they are called by [some render function][5]. Before this they are
+defined but not evaluated.
+
+So while E4X and JSX share that they both make XML/HTML first-class citizens
+in the language, the goals and features are wildly different. JSX really is a
+[DSL][19].
 
 JSX Transpiled
 --------------
@@ -422,3 +432,4 @@ You can respond to this post by replying to this [Mastodon post][18].
 [16]: https://react.dev/reference/react-dom/server/renderToStaticMarkup
 [17]: https://indieweb.social/@evert
 [18]: about:blank
+[19]: https://en.wikipedia.org/wiki/Domain-specific_language
