@@ -350,8 +350,8 @@ templates, and with those the data is typically also passed in 'at the
 top'.
 
 It would certainly be possible to implement Suspend and allow for
-asynchronous data fetching or wait for other singles, but this is a
-choice I have not made.
+asynchronous data fetching or wait for other signals, but I haven't
+yet needed this.
 
 Frequently asked questions
 --------------------------
