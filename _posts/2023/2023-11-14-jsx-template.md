@@ -1,6 +1,6 @@
 ---
 title: "Using JSX on the server as a template engine"
-date: "2023-11-14 12:10:55 UTC"
+date: "2023-11-14 13:14:02 UTC"
 location: "Nijega, NL"
 geo: [53.140006, 6.032090]
 draft: true
