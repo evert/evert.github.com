@@ -466,6 +466,6 @@ to this [Mastodon post][18].
 [15]: https://expressjs.com/
 [16]: https://react.dev/reference/react-dom/server/renderToStaticMarkup
 [17]: https://indieweb.social/@evert
-[18]: about:blank
+[18]: https://indieweb.social/@evert/111409207581858234
 [19]: https://en.wikipedia.org/wiki/Domain-specific_language
 [20]: https://mustache.github.io/
