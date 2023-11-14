@@ -204,7 +204,7 @@ some sample code that works:
 
 Here's an example of a small controller:
 
-```typescript
+```tsx
 import Router from 'koa-router';
 
 const router = new Router();
@@ -224,7 +224,7 @@ ensures this gets tranformed into HTML.
 Similar to Koa, we can use JSX instead where otherwise HTML strings would be
 used:
 
-```typescript
+```tsx
 import { FastifyInstance } from 'fastify'
 
 export function routes(fastify: FastifyInstance) {
@@ -246,7 +246,7 @@ the transformation before the response is sent.
 
 ### Koa middleware
 
-```typescript
+```tsx
 import { renderToStaticMarkup } from 'react-dom/server';
 import { isValidElement } from 'react';
 import { Context, Middleware, Next } from 'koa';
@@ -267,7 +267,7 @@ export const jsx: Middleware = async(ctx: Context, next: Next) => {
 
 This is how it's used:
 
-```typescript
+```tsx
 const application = new Koa();
 application.use(jsx);
 ```
@@ -276,7 +276,7 @@ application.use(jsx);
 
 This one needed a few more hacks, but the result is worth it:
 
-```typescript
+```tsx
 import { onSendHookHandler, preSerializationHookHandler } from 'fastify';
 import { isValidElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
@@ -343,8 +343,10 @@ It would certainly be possible to implement Suspend and allow for
 asynchronous data fetching or wait for other singles, but this is a
 choice I have not made.
 
-Frequently asked question: How do you do routes?
-------------------------------------------------
+Frequently asked questions
+--------------------------
+
+### How do you handle routing?
 
 The short answer is: you don't. Routing is already handled by your
 framework, and each route/endpoint/controller is responsible for rendering
@@ -354,7 +356,7 @@ To re-use things like the global layout, you use components. A slightly
 fictionalized example of a page for us looks like this:
 
 
-```typescript
+```tsx
 ctx.body = <PublicLayout>
 
   <div>
@@ -378,7 +380,7 @@ ctx.body = <PublicLayout>
 
 This in effect 'inherits' from `PublicLayout`, which looks like this:
 
-```typescript
+```tsx
 type Props = {
   children: JSX.Element[]|JSX.Element;
   className: string;
@@ -404,6 +406,23 @@ export function PublicLayout(props: Props) {
 
 }
 ```
+
+### Is there still a reason to use Handlebars or EJS
+
+I think one benefit of these template languages are they they are their own
+isolated format with limited capabilities.
+
+This is helpful when for example you build an application and let your own
+users edit templates. Perhaps you for example have a 'welcome email' and want
+to let your users/tenants modify it.
+
+Giving them the full power of a Javascript + a DSL that needs to be transpiled
+might be a negative here, because limiting features makes it easier to evolve
+systems and there's also a major security component.
+
+My template engine of choice for these is probably [handlebars][12] or even
+the more limited variant [mustache][20].
+
 
 Anyway
 ------
@@ -434,3 +453,4 @@ You can respond to this post by replying to this [Mastodon post][18].
 [17]: https://indieweb.social/@evert
 [18]: about:blank
 [19]: https://en.wikipedia.org/wiki/Domain-specific_language
+[20]: https://mustache.github.io/
