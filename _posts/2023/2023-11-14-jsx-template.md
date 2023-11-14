@@ -14,7 +14,7 @@ tags:
     - typescript
 ---
 
-The React/Next.js ecosystem is spinning out of control in magic and complexity.
+The React/Next.js ecosystem is spinning out of control in terms of magic and complexity.
 The stack has failed to stay focused and simple, and it's my belief
 that software stacks that are too complex and magical must eventually fail,
 because as sensibilities around software design change they will be unable to
