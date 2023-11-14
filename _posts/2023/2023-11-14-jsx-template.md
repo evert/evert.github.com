@@ -417,7 +417,7 @@ export function PublicLayout(props: Props) {
 }
 ```
 
-### Is there still a reason to use Handlebars or EJS
+### Is there still a reason to use Handlebars or EJS?
 
 I think one benefit of these template languages are they they are their own
 isolated format with limited capabilities.
