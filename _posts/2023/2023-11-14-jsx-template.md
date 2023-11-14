@@ -22,8 +22,9 @@ because as sensibilities around software design change they will be unable to
 adapt to those changes without abandonding their existing userbase.
 
 So while React/Next.js may be relegated to the enterprise and legacy systems in
-a few years, I believe [JSX][1] is set up to be it's own thing and it may be able to
-avoid that fate.
+a few years, they completely transformed front-end development and created ripple
+effects in many other technologies. One of many great ideas is [JSX][1]. I think
+JSX has a chance to stay relevant and useful beyond React/Next.
 
 I've been using JSX as a template engine to replace template engines like
 [EJS][11] and [Handlebars][12], and more than once people were surprised this was
@@ -101,14 +102,15 @@ between E4X and JSX.
 With E4X you embed XML documents as data, similar to
 defining a JSON object in a Javascript file. After defining the XML document
 you can manipulate it. A fictional transpiler for E4X could (as far as I can
-tell) just take the XML structure, turn it into a string and pass it to
-[`DOMParser.parseFromString()`][3]. There's no variables, functions, components,
-or logic. Similar to how a Regular expression is part of the JS language.
+tell) could just take the XML structure and turn it into a string and pass it to
+[`DOMParser.parseFromString()`][3]. In E4X there are no variables, functions,
+components, or logic. Similar to how a Regular expression is part of the JS
+language.
 
-JSX is quite different. It's fully integrated in the language and it effectively
-compiles down to nested function definitions. These functions are don't get turned
-into HTML until they are called by [some render function][5]. Before this they are
-defined but not evaluated.
+JSX is quite different to this. It's fully integrated in the language and it
+effectively compiles down to nested function definitions. These functions are
+don't get turned into HTML until they are called by [some render function][5].
+Before this they are defined but not evaluated.
 
 So while E4X and JSX share that they both make XML/HTML first-class citizens
 in the language, the goals and features are wildly different. JSX really is a
