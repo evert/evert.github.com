@@ -16,7 +16,7 @@ tags:
 
 The React/Next.js ecosystem is spinning out of control in magic and complexity.
 The stack has failed to stay focused and simple, and it's my belief
-that that software stacks that are too complex and magical must eventually fail,
+that software stacks that are too complex and magical must eventually fail,
 because as sensibilities around software design change they will be unable to
 adapt to those changes without cannibalizing their existing userbase.
 
@@ -38,7 +38,7 @@ might go about using it as a simple server-side HTML template engine.
 What is JSX?
 ------------
 
-JSX an extension to the Javascript language, and was introduced with React.
+JSX is an extension to the Javascript language, and was introduced with React.
 It usually has a `.jsx` extension and it needs to be compiled *to* Javascript.
 Most build tools people already use, like ESbuild, Babel, Vite, etc. all
 support this natively or through a plugin.
@@ -54,7 +54,7 @@ const foo = <div>
 </div>;
 ```
 
-As you can see here, some HTML is directly embbedded into Javascript, without
+As you can see here, some HTML is directly embedded into Javascript, without
 quotes. It's all syntax. It lets you use the full power of Javascript, such
 as variables and loops:
 
@@ -185,7 +185,7 @@ Using JSX as a template engine
 
 When generating HTML on the server with Node, it's pretty common to use
 template engines such as [EJS][11] or [Handlebars][12]. When building a
-new (multi-page) web application, it occured to me that neither are quit
+new (multi-page) web application, it occurred to me that neither are quit
 as good as JSX.
 
 Some of the advantages of JSX are:
@@ -198,7 +198,7 @@ Some of the advantages of JSX are:
 * By default dynamic data is escaped. They made it challenging to get
   unescaped HTML!
 
-This had me wonder, can we use server-side microframeworks such
+This had me wondering, can we use server-side microframeworks such
 as [Koa][13], [Fastify][14] or [Express][15] but instead of string-based
 template parsers and get all the benefits of JSX?
 
@@ -225,7 +225,7 @@ router.get('/foo.html', ctx => {
 ```
 
 As you can see here we can set JSX straight on the body property. A middleware
-ensures this gets tranformed into HTML.
+ensures this gets transformed into HTML.
 
 ### Fastify
 
@@ -341,7 +341,7 @@ Limitations to this approach
 Users of React and other frameworks may be used to pulling in data
 asynchronously and updating their document. This approach only allows
 for a single pass, so this means that all dynamic data to your JSX
-templates needs to be fetched in advanced and passed down as props.
+templates needs to be fetched in advance and passed down as props.
 
 This means no hooks or state.
 
@@ -362,7 +362,7 @@ The short answer is: you don't. Routing is already handled by your
 framework, and each route/endpoint/controller is responsible for rendering
 it's entire page.
 
-To re-use things like the global layout, you use components. A slightly
+To reuse things like the global layout, you use components. A slightly
 fictionalized example of a page for us looks like this:
 
 
@@ -441,7 +441,7 @@ Hope this was interesting. If there's interest in turning my Koa and Fastify
 code into real NPM packages, let me know! Happy to do it if there's a non-0
 number of users.
 
-In the future I might even be interested to develop my own JSX Factory that
+In the future I might even be interested in developing my own JSX Factory that
 allows awaiting for async components.
 
 If any of this sounds interesting, you have a scathing critique or found
