@@ -18,16 +18,18 @@ The React/Next.js ecosystem is spinning out of control in magic and complexity.
 The stack has failed to stay focused and simple, and it's my belief
 that that software stacks that are too complex and magical must eventually fail,
 because as sensibilities around software design change they will be unable to
-adapt to those changes without abandonding their existing userbase.
+adapt to those changes without cannibalizing their existing userbase.
 
 So while React/Next.js may be relegated to the enterprise and legacy systems in
 a few years, they completely transformed front-end development and created ripple
-effects in many other technologies. One of many great ideas is [JSX][1]. I think
-JSX has a chance to stay relevant and useful beyond React/Next.
+effects in many other technologies. One of many great ideas stemming from this
+stack is [JSX][1]. I think JSX has a chance to stay relevant and useful beyond
+React/Next.
 
-I've been using JSX as a template engine to replace template engines like
-[EJS][11] and [Handlebars][12], and more than once people were surprised this was
-possible. I thought it might be nice to write some stuff down about this.
+One of it's use-cases is for server-side templating. I've been using JSX as a
+template engine to replace template engines like [EJS][11] and
+[Handlebars][12], and more than once people were surprised this was possible
+without bulky frameworks such as Next.js.
 
 So in this article I'm digging into what JSX is, where it comes from and how one
 might go about using it as a simple server-side HTML template engine.
@@ -186,11 +188,17 @@ template engines such as [EJS][11] or [Handlebars][12]. When building a
 new (multi-page) web application, it occured to me that neither are quit
 as good as JSX.
 
-JSX has deep IDE integration because it's syntax and not strings. It also
-has native Typescript support, enforces correct nesting and by default
-correctly escapes output (for security).
+Some of the advantages of JSX are:
 
-This had me wonder, can keep standard server-side microframeworks such
+* Deep IDE/Language server/intellisense integration, because it's all
+  syntax.
+* Static type checking with Typescript.
+* It also enforced correctly structured HTML. No way to forget to close
+  an element.
+* By default dynamic data is escaped. They made it challenging to get
+  unescaped HTML!
+
+This had me wonder, can we use server-side microframeworks such
 as [Koa][13], [Fastify][14] or [Express][15] but instead of string-based
 template parsers and get all the benefits of JSX?
 
@@ -216,7 +224,7 @@ router.get('/foo.html', ctx => {
 });
 ```
 
-As you can see here we can set JSX straight on the body property. A middelware
+As you can see here we can set JSX straight on the body property. A middleware
 ensures this gets tranformed into HTML.
 
 ### Fastify
@@ -238,7 +246,7 @@ How does this magic work?
 -------------------------
 
 For both of these I used the React library. Despite it's ecosystem being
-rather bulky, a standalone React library is still pretty lean.
+rather bulky, standalone React is still pretty lean and highly optimized.
 
 For both of these frameworks, I simply created a middleware that checks if
 the body is a React node, and if so use React's  [renderToStaticMarkup][16] to do
@@ -324,6 +332,8 @@ const fastify = Fastify();
 fastify.addHook('preSerialization', jsxRender.preSerialization);
 fastify.addHook('onSend', jsxRender.onSend);
 ```
+
+Using Preact or your own factory should also totally work here.
 
 Limitations to this approach
 ----------------------------
@@ -431,7 +441,12 @@ Hope this was interesting. If there's interest in turning my Koa and Fastify
 code into real NPM packages, let me know! Happy to do it if there's a non-0
 number of users.
 
-You can respond to this post by replying to this [Mastodon post][18].
+In the future I might even be interested to develop my own JSX Factory that
+allows awaiting for async components.
+
+If any of this sounds interesting, you have a scathing critique or found
+punctuation in the wrong place, you can leave a comment by replying
+to this [Mastodon post][18].
 
 
 [1]: https://en.wikipedia.org/wiki/JSX_(JavaScript)
