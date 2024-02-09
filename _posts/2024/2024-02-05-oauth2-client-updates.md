@@ -12,7 +12,7 @@ I just released v2.3.0 of [`@badgateway/oauth2-client`][1], which I wrote
 because there weren't any lean, 0-dependency oauth2 clients with modern
 features such as [PKCE][2].
 
-I just released v2.3.0, which includes support for:
+This new version includes support for:
 
 * Resource Indicators for OAuth 2.0 ([RFC8707][5]).
 * OAuth2 Token Revocation ([RFC7009][6]).
