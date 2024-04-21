@@ -1,6 +1,6 @@
 ---
 title: Moving on from Mocha, Chai and nyc.
-date: "2024-04-20 15:00:00 UTC"
+date: "2024-04-21 03:00:00 UTC"
 geo: [43.663961, -79.333157]
 location: "Leslieville, Toronto, ON, Canada"
 tags:
