@@ -43,9 +43,12 @@ is pretty good now and has pretty output.
 
 It also:
 
-* Is much faster.
+* Is much faster (about twice as fast with Typescript and code coverage
+  reporting, but I suspect the difference will grow with larger code bases).
 * Easier to configure (especially when you're also using Typescript. Just use `tsx --test`).
 * It can output test coverage with (`--experimental-test-coverage`).
+
+<video src="/assets/video/node-test.webm" class="fill-width" controls loop></video>
 
 Furthermore, while [node:assert][6] doesn't have all features of Chai, it has
 the important ones (deep compare) and adds better Promise support.
@@ -54,7 +57,9 @@ All in all this reduced my `node_modules` directory from a surprising 159M
 to 97M, most of which is now Typescript and ESLint, and my total dependency
 count from 335 to 141 (almost all of which is ESLint).
 
-<video src="/assets/video/node-test.webm" class="fill-width"></video>
+Make sure that Node's test library, coverage and assertion library is right
+for you. It may not have all the features you expect, but I keep my testing
+setup relatively simple, so the switch was easy.
 
 [1]: https://github.com/evert/bigint-money
 [2]: https://evertpot.com/universal-commonjs-esm-typescript-packages/
