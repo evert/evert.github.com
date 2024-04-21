@@ -30,11 +30,11 @@ over to [ESM][3]. For a while I [tried to support both CommonJS and ESM][2]
 builds for my packages, but only a year after all that effort it frankly no
 longer feels needed. Fow a while I was worried the ecosystem was going to
 split, but people stuck on (unsupported) versions of Node that don't
-support ESM aren't going proactively keep their other dependencies updated,
+support ESM aren't going to proactively keep their other dependencies updated,
 so CommonJS is for (and many others) in the past now. (yay!)
 
 Probably _the single best way_ to keep maintenance burden for packages low is
-to have few dependencies. Many of packages have 0 dependencies.
+to have few dependencies. Many of my packages have 0 dependencies.
 
 Reducing `devDependencies` also helps. If you didn't know, `node` now has a
 built-in testrunner. I've been using [Mocha][4] + [Chai][5] for many many
