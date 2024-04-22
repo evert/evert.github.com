@@ -14,7 +14,7 @@ tags:
 
 I'm a maintainer of several small open-source libraries. It's a fun activity.
 If the scope of the library is small enough, the maintenance burden is
-typically fairly low. It does this thing, and I occasionally just need to
+typically fairly low. They're usually mostly 'done', and I occasionally just need to
 answer a few questions per year, and do the occasional release to bring it
 back up to the current 'meta' of the ecosystem.
 
@@ -28,7 +28,7 @@ is a fast library for currency math.
 I originally wrote this in 2018, so the big BC break was switching everything
 over to [ESM][3]. For a while I [tried to support both CommonJS and ESM][2]
 builds for my packages, but only a year after all that effort it frankly no
-longer feels needed. Fow a while I was worried the ecosystem was going to
+longer feels needed. I was worried the ecosystem was going to
 split, but people stuck on (unsupported) versions of Node that don't
 support ESM aren't going to proactively keep their other dependencies updated,
 so CommonJS is for (and many others) in the past now. (yay!)
