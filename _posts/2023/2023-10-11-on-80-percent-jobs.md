@@ -30,7 +30,7 @@ I got strong roots and professional experience in both places, but there was
 one thing that surprised me most in the Netherlands that I haven't really seen
 in North America.
 
-Apparently Netherlands has a very high rate of part-time careers. Statstics
+Apparently Netherlands has a very high rate of part-time careers. Statistics
 suggest that they are the highest in the world by a large margin. My personal
 experience matches this too. I know a number of people in
 the Netherlands that don't work full-time, and I think there are more opportunities

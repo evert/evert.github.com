@@ -13,7 +13,7 @@ After that, we need a few ruby dependencies:
   sudo gem install jekyll
   sudo gem install github-pages
 
-On Ubuntu, you might need to run the follwoing first:
+On Ubuntu, you might need to run the following first:
 
   sudo apt install zlib1g-dev ruby ruby-dev
 ```
