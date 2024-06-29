@@ -23,7 +23,7 @@ class DownloadCounter extends HTMLSpanElement {
       (Date.now()-this.date) * this.inc
       );
 
-    this.textContent = currentDownloads;
+    this.textContent = Intl.NumberFormat().format(currentDownloads);
 
     setTimeout(
       () => this.calculateCurrentDownloads(),
