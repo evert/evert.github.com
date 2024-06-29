@@ -27,6 +27,7 @@ class DownloadCounter extends HTMLSpanElement {
 
     setTimeout(
       () => this.calculateCurrentDownloads(),
+      // Add some randomnes
       Math.floor(Math.random() * 150)+50,
     );
 
