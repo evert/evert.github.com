@@ -13,7 +13,7 @@ tags:
 Over the years I've written several open source libraries. They're mostly
 unglamorous and utilitarian, but a bunch of them obtained got a decent
 download count, so I thought it would be fun to try and get a grand total
-and show a live download counter on my blog.
+and show a 'live' download counter on my blog.
 
 This is how that looks like:
 
