@@ -304,4 +304,4 @@ Web Components seems like a really great replacement for that.
 Got comments? Liked this aticle? You can reply to [this Mastodon post][1]
 to make the comments show up here.
 
-[1]: #
+[1]: https://indieweb.social/@evert/112717778570631838
