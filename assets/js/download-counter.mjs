@@ -1,18 +1,10 @@
-class DownloadCounter extends HTMLSpanElement {
-  static observedAttributes = [
-    'date',
-    'inc-per-day'
-  ];
+class DownloadCounter extends HTMLElement {
 
-  constructor() {
-    super();
-  }
   connectedCallback() {
     this.count = +this.textContent;
     this.date = new Date(this.getAttribute('date'));
     this.inc = (+this.getAttribute('inc-per-day')) / (3600 * 24 * 1000) 
     this.calculateCurrentDownloads();
-
   }
 
   calculateCurrentDownloads() {
@@ -35,4 +27,8 @@ class DownloadCounter extends HTMLSpanElement {
 
 }
 
-customElements.define('download-counter', DownloadCounter, { extends: 'span' });
+customElements.define(
+  'download-counter',
+  DownloadCounter, 
+);
+
