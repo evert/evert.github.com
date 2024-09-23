@@ -48,7 +48,7 @@ get this one for free.
 To find out if your server does, try running the command below (with your
 URL!):
 
-    curl -X OPTIONS http://localhost:3000/some/
+    curl -X OPTIONS http://localhost:3000/some/endpoint/
 
 One nice thing you could do with the `Allow` header, is that you could also
 communicate access-control information on a very basic level. For example,
@@ -58,8 +58,8 @@ a resource.
 
 ## Accept and Accept-Encoding
 
-There's a number of other standard headers servers can use. Here's an
-example showing a whole bunch at once:
+There's server other standard headers for discovery. Here's an example showing
+a few at once:
 
 ```http
 HTTP/1.1 204 No Content
@@ -175,7 +175,7 @@ Allow: GET, PROPFIND, ACL, PROPPATCH, MKCOL, LOCK, UNLOCK
 DAV: 1, 2, 3, access-control, addressbook, calendar-access
 ```
 
-### The server-wide request
+### The server-wide asterisk request
 
 Normally HTTP requests are made to a path on the server, and the first line
 looks a bit like the following in HTTP/1.1:
