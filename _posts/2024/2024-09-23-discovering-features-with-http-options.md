@@ -39,6 +39,12 @@ URL!):
 
     curl -X OPTIONS http://localhost:3000/some/
 
+One nice thing you could do with the `Allow` header, is that you could also
+communicate access-control information on a very basic level. For example,
+you could only include `DELETE` and `PUT` if a user has write access to
+a resource.
+
+
 ## Accept and Accept-Encoding
 
 There's a number of other standard headers servers can use. Here's an
@@ -107,7 +113,9 @@ in `OPTIONS`, even though the HTTP specific doesn't super clearly define this.
 If I'm wrong with my interpretation here, I would love to know!
 
 <small>
-Also if you're wondering about `DELETE`, `DELETE` should never have a body.
+Also if you're wondering about `DELETE`, `DELETE` should never have a body,
+so all a user would need to know is _can_ they delete, which you can see
+in the `Allow` header.
 If this is new to you to, [read my other article][18] about `GET` request
 bodies. Most of the information there is applicable to `DELETE` as well.
 </small>
