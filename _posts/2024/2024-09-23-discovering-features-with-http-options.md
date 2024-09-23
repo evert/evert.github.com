@@ -106,6 +106,12 @@ in `OPTIONS`, even though the HTTP specific doesn't super clearly define this.
 
 If I'm wrong with my interpretation here, I would love to know!
 
+<small>
+Also if you're wondering about `DELETE`, `DELETE` should never have a body.
+If this is new to you to, [read my other article][18] about `GET` request
+bodies. Most of the information there is applicable to `DELETE` as well.
+</small>
+
 ## Linking to documentation
 
 The `OPTIONS` response is also a great place to tell users where to find
