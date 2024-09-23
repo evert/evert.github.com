@@ -13,8 +13,9 @@ tags:
 ---
 
 Say you have an API, and you want to communicate what sort of things a user can
-do on a specific endpoint. You can use external description formats, but
-sometimes it's nice to also communicate this on the API itself.
+do on a specific endpoint. You can use external description formats like OpenAPI
+or JSON Schema, but sometimes it's nice to also dynamically communicate this on
+the API itself.
 
 [`OPTIONS`][1] is the method used for that. You may know this HTTP method from
 [CORS][2], but it's general purpose is for clients to passively find out 'What
