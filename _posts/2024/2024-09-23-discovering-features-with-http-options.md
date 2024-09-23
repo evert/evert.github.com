@@ -209,8 +209,14 @@ consider using `OPTIONS` instead of a proprietary approach! As you can
 see in many of these examples, it's especially useful if you use [mimetypes][17]
 well.
 
-Do you have questions, other novel uses of `OPTIONS` or other ideas around
-feature discovery.
+If you have questions, other novel uses of `OPTIONS` or other ideas around
+feature discovery, you can respond via:
+
+* This post on Mastodon
+* This post on Bluesky
+* Via the Webmention protocol!
+
+
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/OPTIONS
 [2]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
