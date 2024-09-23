@@ -1,5 +1,5 @@
 ---
-title: "Finding out what formats are available on an endpoint with OPTIONS"
+title: "Discovering features and information via HTTP OPTIONS"
 date: "2024-09-23 02:44:00 UTC"
 geo: [43.663961, -79.333157]
 location: "Leslieville, Toronto, ON, Canada"
@@ -13,7 +13,7 @@ tags:
 ---
 
 Say you have an API, and you want to communicate what sort of things a user can
-do on a specific endpoint. You can use extrenal description formats, but
+do on a specific endpoint. You can use external description formats, but
 sometimes it's nice to also communicate this on the API itself.
 
 [`OPTIONS`][1] is the method used for that. You may know this HTTP method from
@@ -25,13 +25,13 @@ A basic `OPTIONS` response might might look like this:
 ```http
 HTTP/1.1 204 No Content
 Date: Mon, 23 Sep 2024 02:57:38 GMT
-Server: Kachel/1.2
+Server: KKachel/1.2
 Allow: GET, PUT, POST, DELETE, OPTIONS
 ```
 
 Based on the [`Allow`][3] header you can quickly tell which HTTP methods
 are available at a given endpoint. Many web frameworks emit this automatically
-and generate the list of methods dynmically per route, so chances are that you
+and generate the list of methods dynamically per route, so chances are that you
 get this one for free.
 
 To find out if your server does, try running the command below (with your
@@ -47,7 +47,7 @@ example showing a whole bunch at once:
 ```http
 HTTP/1.1 204 No Content
 Date: Mon, 23 Sep 2024 02:57:38 GMT
-Server: Kachel/1.2
+Server: KKachel/1.2
 Allow: GET, PUT, POST, DELETE, OPTIONS
 Accept: application/vnd.my-company-api+json, application/json, text/html
 Accept-Encoding: gzip,brotli,identity
@@ -70,24 +70,23 @@ and [`Accept-Query`][8]. These three headers are used to tell a client what
 content-types are available for the [`PATCH`][9], [`POST`][10] and
 [`QUERY`][11] http methods respectively.
 
-For all of these headers, their values effectively dictate what are valid
-values for the `Content-Type` header.
+For all of these headers, their values effectively dictate what valid
+values are for the `Content-Type` header when making the request.
 
 ```http
 HTTP/1.1 204 No Content
 Date: Mon, 23 Sep 2024 02:57:38 GMT
-Server: Kachel/1.2
+Server: KKachel/1.2
 Allow: OPTIONS, QUERY, POST, PATCH
 Accept-Patch: application/json-patch+json, application/merge-patch+json
 Accept-Query: application/graphql
 Accept-Post: multipart/form-data, application/vnd.custom.rpc+json
-Accept-Encoding: gzip,brotli,identity
 ```
 
 In the above response, the server indicates it supports both [JSON Patch][12]
 and [JSON Merge Patch][13] content-types in `PATCH` requests. It also suggests
-that GraphQL can be used via the `QUERY` method and has some custom `POST`
-requests.
+that GraphQL can be used via the `QUERY` method, and for `POST` it supports
+both standard file uploads and some custom JSON-based format.
 
 Typically you wouldn't find all of these at the same endpoint, but I wanted
 to show a few examples together.
@@ -101,9 +100,11 @@ extends to both. But the spec is not clear on this.
 
 I think the actual reality is that `Accept-Patch` was the first header in
 this category that really clearly defined this as a means of feature discovery
-on `OPTIONS`. `Accept-Post` and `Accept-Query` followed suit, but `Accept`
-was probably used for this before in practice but the spec isn't 100%
-clear on usage in `OPTIONS`.
+on `OPTIONS`. `Accept-Post` and `Accept-Query` followed suit. I think
+`Accept-Patch` in `OPTIONS` was modelled after in-the-wild usage of `Accept`
+in `OPTIONS`, even though the HTTP specific doesn't super clearly define this.
+
+If I'm wrong with my interpretation here, I would love to know!
 
 ## Linking to documentation
 
@@ -130,7 +131,7 @@ The dev team
 ```
 
 I recommend keeping the response body as mostly informal and minimal
-any real information should probably just live on it's own URL and be linked to.
+any real information should probably just live on its own URL and be linked to.
 
 I used the [`service-doc`][14] and [`service-desc`][17] link relationships here,
 but you can of course use any of the [IANA link relationship types][15] here
@@ -158,7 +159,7 @@ looks a bit like the following in HTTP/1.1:
 GET /path HTTP/1.1
 ```
 
-But, there are a few other request lines formats that are rarely used. One of
+But, there are a few other "request line" formats that are rarely used. One of
 them lets you discover features available on an entire server, using the
 asterisk:
 
