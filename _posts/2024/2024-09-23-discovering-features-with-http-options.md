@@ -25,7 +25,10 @@ All HTTP clients typically support making `OPTIONS` request. For example with
 `fetch()`:
 
 ```javascript
-const response = await fetch('https://example.org', {method: 'OPTIONS'});
+const response = await fetch(
+  'https://example.org',
+  {method: 'OPTIONS'}
+);
 ```
 
 A basic `OPTIONS` response might might look like this:
