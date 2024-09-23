@@ -21,6 +21,13 @@ the API itself.
 [CORS][2], but it's general purpose is for clients to passively find out 'What
 can I do here?'.
 
+All HTTP clients typically support making `OPTIONS` request. For example with
+`fetch()`:
+
+```javascript
+const response = await fetch('https://example.org', {method: 'OPTIONS'});
+```
+
 A basic `OPTIONS` response might might look like this:
 
 ```http
