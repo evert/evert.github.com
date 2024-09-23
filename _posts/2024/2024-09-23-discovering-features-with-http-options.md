@@ -112,13 +112,13 @@ in `OPTIONS`, even though the HTTP specific doesn't super clearly define this.
 
 If I'm wrong with my interpretation here, I would love to know!
 
-<small>
-Also if you're wondering about `DELETE`, `DELETE` should never have a body,
+<small><em>
+Aside: If you're wondering about `DELETE`, `DELETE` should never have a body,
 so all a user would need to know is _can_ they delete, which you can see
 in the `Allow` header.
 If this is new to you to, [read my other article][18] about `GET` request
 bodies. Most of the information there is applicable to `DELETE` as well.
-</small>
+</em></small>
 
 ## Linking to documentation
 
