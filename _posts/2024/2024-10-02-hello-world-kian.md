@@ -12,4 +12,4 @@ One week ago on September 24th my son Kian was born, after a 5 year fertility
 journey with my wife Roxy. Roxy and Kian are well and I'm really excited for
 everything that comes next!
 
-<img src="/assets/images/posts/kian.jpg" class="fill-width" title="Evert holding his son Kian at the day of his birth" />
+<img src="/assets/posts/kian.jpg" class="fill-width" title="Evert holding his son Kian at the day of his birth" />
