@@ -1,6 +1,6 @@
 ---
 title: "Hello World, meet Kian"
-date: "2024-10-03 11:08:31 -0400"
+date: "2024-10-02 11:08:31 -0400"
 geo: [43.6907195162, -79.324880132]
 location: "Michael Garron Hospital, Toronto"
 tags:
