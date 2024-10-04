@@ -18,8 +18,8 @@ A new RFC was released for Structured Fields: [RFC9651][2].
 What is it?
 -----------
 
-HTTP headers have been a bit of a free-for all in terms of how information
-is structured, with many headers requiring their own mini-parser.
+HTTP headers have been a bit of a free-for all in terms of how complex values
+are encoded, with many headers requiring their own mini-parser.
 
 A while back an effort was started to fix this for headers going forward,
 named 'Structured Fields'. They're called Fields and not 'Headers' because
@@ -88,6 +88,23 @@ Header: @1686634251
 Header %"Frysl%C3%A2n"
 ```
 
+Why should you care?
+--------------------
+
+If you encounter these headers in the wild, it's a really good idea to use
+a standard parser. One of the reasons is that with using structured-fields,
+there's a built-in extension mechanism. You'll want to make sure that when
+a new parameter appears your application doesn't suddenly break.
+
+You may also want to define and use your own HTTP headers. The structured
+fields format is a very good 'default choice' that removes decisions such
+as 'How should I encode a key value object' or 'how do I encode a UTF-8
+string'.
+
+With parsers popping up for every language, you don't have to worry about
+writing your own one-off formats.
+
+
 Javascript package
 ------------------
 
@@ -102,14 +119,13 @@ added ES Modules support.
 Comments?
 ---------
 
-Reply to one of these to have you comment automatically show up:
+Reply to one of these:
 
-* [This Mastodon post][4]
-* [This Bluesky post][5]
-
+* [Mastodon post][4]
+* [Bluesky post][5]
 
 [1]: https://www.rfc-editor.org/rfc/rfc8941.html "Structured Field Values for HTTP old spec"
 [2]: https://www.rfc-editor.org/rfc/rfc9651.html "Structured Field Values for HTTP"
 [3]: https://github.com/badgateway/structured-headers "Structured Fields parser/serializer for Javascript and Typescript"
-[4]: #
-[5]: #
+[4]: https://indieweb.social/@evert/113247162498865971 "Mastodon post" 
+[5]: https://bsky.app/profile/evertp.bsky.social/post/3l5nvxuyfv32m "Bluesky post"
