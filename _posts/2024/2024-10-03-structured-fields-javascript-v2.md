@@ -108,8 +108,8 @@ Reply to one of these to have you comment automatically show up:
 * [This Bluesky post][5]
 
 
-[1]: https://www.rfc-editor.org/rfc/rfc8941.html
-[2]: https://www.rfc-editor.org/rfc/rfc9651.html
-[3]: https://github.com/badgateway/structured-headers
+[1]: https://www.rfc-editor.org/rfc/rfc8941.html "Structured Field Values for HTTP old spec"
+[2]: https://www.rfc-editor.org/rfc/rfc9651.html "Structured Field Values for HTTP"
+[3]: https://github.com/badgateway/structured-headers "Structured Fields parser/serializer for Javascript and Typescript"
 [4]: #
 [5]: #
