@@ -1,9 +1,8 @@
 ---
 title: "Discovering features and information via HTTP OPTIONS"
-date: "2024-09-23 02:44:00 UTC"
+date: "2024-10-16 13:44:00 UTC"
 geo: [43.663961, -79.333157]
 location: "Leslieville, Toronto, ON, Canada"
-draft: true
 tags:
   - rest
   - options
