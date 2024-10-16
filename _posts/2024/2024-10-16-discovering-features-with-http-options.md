@@ -211,10 +211,9 @@ well.
 If you have questions, other novel uses of `OPTIONS` or other ideas around
 feature discovery, you can respond via:
 
-* This post on Mastodon
-* This post on Bluesky
-* Via the Webmention protocol!
-
+* [This post on Mastodon](https://indieweb.social/@evert/113317676213353403)
+* [This post on Bluesky](https://bsky.app/profile/evertpot.com/post/3l6n7363zii23)
+* Via the [Webmention](https://www.w3.org/TR/webmention/) protocol!
 
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/OPTIONS
