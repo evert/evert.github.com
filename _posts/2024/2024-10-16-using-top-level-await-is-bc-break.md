@@ -1,5 +1,5 @@
 ---
-title: "In the future using top-level await might be a BC break in Node"
+title: "In the future using top-level await might be cause a backwards compatibility break in Node"
 date: "2024-10-17 21:13:00 -0400"
 geo: [43.663961, -79.333157]
 location: "Leslieville, Toronto, ON, Canada"
