@@ -1,6 +1,6 @@
 ---
 title: "In the future using top-level await might be a BC break in Node"
-date: "2024-10-16 13:44:00 UTC"
+date: "2024-10-17 21:13:00 -0400"
 geo: [43.663961, -79.333157]
 location: "Leslieville, Toronto, ON, Canada"
 tags:
@@ -9,7 +9,8 @@ tags:
   - async
   - javascript
   - backwards compatibility
-draft: true
+  - esm
+  - CommonJS
 ---
 
 [Node 23][1] was released this week, and the hot ticket item probably is the
@@ -134,10 +135,31 @@ In order of preference, consider the following:
    code-base. If all (top-level, not-dynamic) `requires()` are ran/resolved,
    any changes in depndencies should just blow up your CI environment and
    application.
-3. Find out if your dependencies are ESM-only, and never `require()` them.
-   This protects you from issues with direct dependencies, but statistically
-   it's more likely this issue will pop up in a sub-dependency though.
+3. Find out if any of your dependencies are ESM-only, and never `require()`
+   them. This protects you from issues with direct dependencies. But keep
+   in mind that this can still be an issue in sub-dependencies even if your
+   direct dependencies are CommonJS themselves!
 
+## My opinion
+
+For the above reasons I don't think this should land in a stable Node.js
+version. The intentions are good but it creates yet another avenue of confusion
+and incompatibilities.
+
+It effectively expands the number of Javascript flavors from 2 to 3:
+
+1. CommonJS
+2. ESM
+3. ESM but without top-level await.
+
+If a module uses flavor #3, it's compatible with flavor #1, but if anywhere in
+the dependency tree something starts using to-level await, suddently the entire
+tree ESM dependency tree switches from flavor #3 to #2 and breaks compatibilty
+with flavor #1.
+
+I'm aware that Bun already has had this feature for a while, but nobody really
+directly targets Bun. Node is the reference, and it's fine if the Node
+alternatives are supersets of Node.
 
 [1]: https://nodejs.org/en/blog/release/v23.0.0
 [2]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import
