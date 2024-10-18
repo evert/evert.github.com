@@ -74,6 +74,8 @@ break Node.js users, if they used `require()` to bring in your module.
 This means that the first top-level `await` in your project (or any of your
 dependencies) might now constitute a new major version if you follow [semver][4].
 
+If you don't want to do this, here are some other things you could do:
+
 ### 1. Tell your users you don't support require()
 
 You could effectively tell them if they use `require()` they're on their own.
