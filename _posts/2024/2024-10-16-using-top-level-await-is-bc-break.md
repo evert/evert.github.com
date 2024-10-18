@@ -154,7 +154,7 @@ It effectively expands the number of Javascript flavors from 2 to 3:
 
 If a module uses flavor #3, it's compatible with flavor #1, but if anywhere in
 the dependency tree something starts using to-level await, suddently the entire
-tree ESM dependency tree switches from flavor #3 to #2 and breaks compatibilty
+tree ESM dependency tree cascades from flavor #3 to #2 and breaks compatibilty
 with flavor #1.
 
 I'm aware that Bun already has had this feature for a while, but nobody really
