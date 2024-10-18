@@ -25,9 +25,10 @@ const theThing = await import('some/module/file.mjs');
 
 This is called a [dynamic import][2] and it's extra annoying, because you
 can't just put this at the top of your file. It returns a Promise, so you
-can only import these modules 'asynchronously' or in functions. So you can't
-use import a module, and use it. You need some kind of deferred initialization
-logic and your entire CommonJS file itself now needs to be asynchronous.
+can only import these modules 'asynchronously' or in functions. The reason
+is that you can only `await` inside functions in CommonJS files. So this
+syntax prevents importing a "module" and immediately using it. To use a
+module in CommonJS, you'll need some kind of initialization logic.
 
 Many Javascript packages resort to [shipping both a 'CommonJS' and a 'ESM'
 version of their code][3] to reduce this kind of annoyance, but not everyone
@@ -49,14 +50,13 @@ initialization logic.
 But there's a big caveat:
 
 This _only_ works if the module you loaded in is not using top-level await.
-"Top level await" is a Javascript feature that lets you `await` promises outside
-of `async` functions, at the 'top level' of the file. Notably, top-level await
-_only_ works in ESM.
+"Top level await" means awaiting things outside of (async) functions, which
+is possible in modules (but not CommonJS).
 
 If a top-level await _was_ used, a `ERR_REQUIRE_ASYNC_MODULE` error will be
 thrown. But the important thing to note is that this doesn't just apply to
-the file you are importing/requiring. It also applies to any files loaded
-by that file, at any level in either your project or any dependency or
+the file you are directly importing/requiring. It also applies to any files
+loaded by that file, at any level in either your project or any dependency or
 sub-dependencies.
 
 ## Using top-level await is now a BC break
@@ -71,9 +71,7 @@ compatibility break, but if it's the first `await` you might now inadvertently
 break Node.js users, if they used `require()` to bring in your module.
 
 This means that the first top-level `await` in your project (or any of your
-dependencies) might now constitute a new major version.
-
-There's three alternatives:
+dependencies) might now constitute a new major version if you follow [semver][4].
 
 ### 1. Tell your users you don't support require()
 
@@ -93,8 +91,8 @@ await "Good things come to those that support await"
 
 ### 3. Explictly break CommonJS
 
-Packages can provide both CommonJS and ESM support via the `exports` key in
-`package.json`. It could be an option to export a single CommonJS file that
+Packages can provide both CommonJS and ESM support via the [`exports`][6] key
+in `package.json`. It could be an option to export a single CommonJS file that
 just throws an error to warn CommonJS users they shouldn't use this package.
 
 
@@ -113,22 +111,32 @@ fewer trade-offs to make. But if you do use `require()` to import a module
 with top-level await it still has the same issue. There's just fewer reasons
 in Bun to even want to do this.
 
-Deno [doesn't support CommonJS][5] so it doesn't have that problem. 
+Deno [doesn't support CommonJS][5] so it doesn't have that problem.
+
+## Does the issue exists when importing CommonJS files into modules?
+
+Importing CommonJS files into modules was always possible via the standard
+`import` syntax, and because CommonJS can't asynchronously export this
+problem doesn't exist there.
 
 ## What should I do as a user?
 
 Most of this article was about the effects for package maintainers, but not every
-package will do this well so as a user you're still exposed to this issue.
+package will do this well so as a user you're still potentially exposed to this
+issue.
 
 In order of preference, consider the following:
 
-1. Stop using CommonJS. Start using ESM everywhere. This issue only exists in CommonJS
-   files using ESM, not the reverse. ESM is the future. You're working with dead-end
-   technology.
-2. Have some testing in place that at the very least loads the entirely of your code-base. If all (top-level, not-dynamic) `requires()` are ran/resolved, any changes in depndencies should just blow up your CI environment and application.
-3. Find out if your dependencies are ESM-only, and never `require()`. This protects
-   you from issues with direct dependencies, but statistically it's more likely this issue will pop up in a sub-dependency though.
-
+1. Stop using CommonJS. Start using ESM everywhere. This issue only exists in
+   CommonJS files using ESM, not the reverse. ESM is the future. You're working
+   with dead-end technology.
+2. Have some testing in place that at the very least loads the entirely of your
+   code-base. If all (top-level, not-dynamic) `requires()` are ran/resolved,
+   any changes in depndencies should just blow up your CI environment and
+   application.
+3. Find out if your dependencies are ESM-only, and never `require()` them.
+   This protects you from issues with direct dependencies, but statistically
+   it's more likely this issue will pop up in a sub-dependency though.
 
 
 [1]: https://nodejs.org/en/blog/release/v23.0.0
@@ -136,3 +144,4 @@ In order of preference, consider the following:
 [3]: https://evertpot.com/universal-commonjs-esm-typescript-packages/
 [4]: https://semver.org/
 [5]: https://docs.deno.com/runtime/tutorials/cjs_to_esm/
+[6]: https://nodejs.org/api/packages.html#exports
