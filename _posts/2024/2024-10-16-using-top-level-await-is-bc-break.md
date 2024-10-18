@@ -143,8 +143,7 @@ In order of preference, consider the following:
 ## My opinion
 
 For the above reasons I don't think this should land in a stable Node.js
-version. The intentions are good but it creates yet another avenue of confusion
-and incompatibilities.
+version. The intentions are good but it creates yet another avenue of confusion.
 
 It effectively expands the number of Javascript flavors from 2 to 3:
 
@@ -153,13 +152,14 @@ It effectively expands the number of Javascript flavors from 2 to 3:
 3. ESM but without top-level await.
 
 If a module uses flavor #3, it's compatible with flavor #1, but if anywhere in
-the dependency tree something starts using to-level await, suddently the entire
+the dependency tree something starts using top-level await, suddenly the entire
 tree ESM dependency tree cascades from flavor #3 to #2 and breaks compatibilty
 with flavor #1.
 
-I'm aware that Bun already has had this feature for a while, but nobody really
-directly targets Bun. Node is the reference, and it's fine if the Node
-alternatives are supersets of Node.
+Given the already confusing landscape (and reputation) of Javascript modules,
+this feels like a step in the wrong direction, as it adds a feature to
+CommonJS (which in my opinion is time to freeze), and makes ESM _less_
+reliable as a result.
 
 [1]: https://nodejs.org/en/blog/release/v23.0.0
 [2]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import
