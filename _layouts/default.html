@@ -12,9 +12,12 @@
     <link rel="canonical" href="https://evertpot.com{{page.url}}" />
 
     <meta name="viewport" content="width=device-width,minimum-scale=1" />
+
+
     <link rel="openid.server" href="https://indieauth.com/openid" />
     <link rel="openid.delegate" href="http://evertpot.com/" />
     <link rel="source" href="https://github.com/evert/evert.github.com/blob/master/{{ page.path }}" />
+
 
     <link rel="pingback" href="https://webmention.io/evertpot.com/xmlrpc" />
     <link rel="webmention" href="https://webmention.io/evertpot.com/webmention" />
@@ -23,8 +26,9 @@
     <meta property="og:type" content="article" />
 
     <meta property="twitter:site" content="@evertp" />
-
     <meta property="twitter:creator" content="@evertp" />
+
+    <meta name="fediverse:creator" content="@evert@indieweb.social">
 
     {% if page.tags %}<meta property="keywords" content="{{page.tags | join: ", "}}" />{% endif %}
 
