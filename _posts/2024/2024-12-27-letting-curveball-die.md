@@ -1,10 +1,9 @@
 ---
 title: "Letting Curveball die"
-date: "2024-12-27 21:13:00 -0400"
+date: "2024-12-29 10:00:00 -0500"
 geo: [43.663961, -79.333157]
 location: "Tango Coffee Place, Queen St E., Toronto, ON, Canada"
 cover_image: https://evertpot.com/assets/cover/curveball-die.png
-draft: true
 tags:
   - node
   - curveball
