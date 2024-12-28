@@ -15,6 +15,11 @@ it for 6 years as a side-project, but it wasn't successful and it's time to let
 it go. This is a hard thing to do, because I probably have 1000's of hours into
 this project, and there's a strong sense of missed potential.
 
+I'm writing this article because my psyche requires closure in order for them to
+not take up space in my mind. This decision was probably a few years late.
+Hopefully this creates more space for new things that aren't a frustrating drag.
+
+
 Some quick numbers.
 -------------------
 
@@ -90,11 +95,18 @@ Express has gotten by without a major release in over a decade, so if you're
 using Curveball today I think there's very little chance you need to do
 anything in a long while. I will even fix bugs as they are reported, but this
 blog post is effectively my statement that I'm no longer going to put much
-energy in it. Curveball is stable but don't use it for new projects. It's
+energy in it. Curveball is stable. Don't use it for new projects. It's
 techical debt, but it works and is very stable.
 
 If you need advice on a migration path, I'm happy to do a free 30 minute
 consultation! You probably know how to reach me.
+
+If you like the project, why can't you work on it despite not having many users
+--------------------------------------------------------------------------------
+
+I get a lot of energy from working with people, getting feedback and seeing
+my ideas validated. If this is not happening, to me it feels a bit like writing
+a book that nobody reads. It's a constant reminder of failure.
 
 
 Are there any bits salvagable?
@@ -106,7 +118,21 @@ Are there any bits salvagable?
 * I think the built-in [HATEOAS API browser][10] is great and I'm going to
   port it to a new framework. (most likely Hono as it's the closest in spirit).
 * [a12n-server][11], which is an authn/authz server similar to keycloak is
-  
+  still very interesting to me. It needs its own brand and logo and will port
+  this project to a different framework at some future date. Depsite being
+  under the 'curveball' namespace I always saw this as its own project. This
+  project does suffer from a similar problem though. Low uptake and just me
+  maintaining it. I need to set some goals for 2025 and kill this as well if
+  I don't meet them.
+
+Thank you
+---------
+
+If you're a current user of Curveball: thank you for giving this a shot! I
+hope this news is not too frustrating.
+
+To my friends that gave me encouragement and feedback over the years: I love
+you and appreciate you!
 
 
 [1]: https://curveballjs.org/
@@ -119,4 +145,4 @@ Are there any bits salvagable?
 [8]: https://evertpot.com/h2-parallelism/
 [9]: https://www.npmjs.com/package/@curveball/http-errors
 [10]: https://github.com/curveball/browser/
-[11]: 
+[11]: https://github.com/curveball/a12n-server 
