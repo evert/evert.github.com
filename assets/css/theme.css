@@ -359,7 +359,7 @@ body.map main #map {
   li {
     list-style: none;
     padding: 5px;
-
+    line-height: 25px;
   }
   .weight1  { font-size: 11px; }
   .weight2  { font-size: 12px; }
