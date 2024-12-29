@@ -98,8 +98,7 @@ Express has gotten by without a major release in over a decade, so if you're
 using Curveball today I think there's very little chance you need to do
 anything in a long while. I will even fix bugs as they are reported, but this
 blog post is effectively my statement that I'm no longer going to put much
-energy in it. Curveball is stable. Don't use it for new projects. It's
-techical debt, but it works and is very stable.
+energy in it. Curveball is stable. Don't use it for new projects.
 
 If you need advice on a migration path, I'm happy to do a free 30 minute
 consultation! You probably know how to reach me.
