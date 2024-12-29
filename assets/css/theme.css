@@ -9,7 +9,7 @@ html {
 body {
     font-family: 'PT Serif', serif;
     width: 100%;
-    background-color: #EEE;
+    background-color: #FAFAFA;
     margin: 0;
     height: 100%;
     display: flex;
@@ -343,12 +343,37 @@ body.map main #map {
   overflow-x: auto;
 }
 
-
 .draft-warning {
   background: #C33;
   color: white;
   font-size: 120%;
   text-align: center;
+}
+
+.tag-cloud {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    list-style: none;
+    padding: 5px;
+
+  }
+  .weight1  { font-size: 11px; }
+  .weight2  { font-size: 12px; }
+  .weight3  { font-size: 13px; }
+  .weight4  { font-size: 14px; }
+  .weight5  { font-size: 15px; }
+  .weight6  { font-size: 17px; }
+  .weight7  { font-size: 19px; }
+  .weight8  { font-size: 21px; }
+  .weight9  { font-size: 23px; }
+  .weight10 { font-size: 25px; }
+  li::after {
+    content: "";
+  }
 }
 
 figure * {

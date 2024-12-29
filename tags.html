@@ -1,0 +1,16 @@
+---
+layout: default
+title: Evert's dugout - All Tags
+permalink: "/tags/"
+---
+
+<h1>Tags</h1>
+
+<p>I don't know yet how how create pages that link from here. So, this page is useless
+until I figure that out.</p>
+
+<ul class="tag-cloud">
+{% for tag in site.tags %}
+<li class="weight{{ tag[1] | size | at_most: 14 | divide 2 | round  }}">{{ tag[0] }}</li>
+{% endfor %}
+</ul>
