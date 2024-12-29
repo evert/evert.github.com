@@ -121,7 +121,7 @@ Are there any bits salvagable?
   port it to a new framework. (most likely Hono as it's the closest in spirit).
 * [a12n-server][11], which is an authn/authz server similar to keycloak is
   still very interesting to me. It needs its own brand and logo and will port
-  this project to a different framework at some future date. Depsite being
+  this project to a different framework at some future date. Despite being
   under the 'curveball' namespace I always saw this as its own project. This
   project does suffer from a similar problem though. Low uptake and just me
   maintaining it. I need to set some goals for 2025 and kill this as well if
