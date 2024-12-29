@@ -1,5 +1,5 @@
 ---
-title: "Letting Curveball die"
+title: "Putting Curveball in maintenance mode"
 date: "2024-12-29 10:00:00 -0500"
 geo: [43.663961, -79.333157]
 location: "Tango Coffee Place, Queen St E., Toronto, ON, Canada"
@@ -17,7 +17,7 @@ this project, and there's a strong sense of missed potential.
 
 I'm writing this article because my psyche requires closure in order for them to
 not take up space in my mind. This decision was probably a few years late.
-Hopefully this creates more space for new things that aren't a frustrating drag.
+Hopefully this creates more space for new things.
 
 
 Some quick numbers.
@@ -40,10 +40,13 @@ particularly interested in.
 
 * Good Typescript support (This is pretty much fixed in Koa, but at the time
   it was buggy).
-* The ability to do internal sub-requests without going over the network. Koa
-  (and express) wrap the `http` Node.js library, and don't have a good
+* The ability to do internal "sub-requests" without going over the network.
+  (think: hitting a different route in your framework with a local function).
+  Koa (and express) wrap the `http` Node.js library, and don't have a good
   internal abstraction for requests and responses. This makes sub-requests
-  hard and deploying into non-node runtimes such as AWS Lambdas very painful.
+  hard and deploying into non-node runtimes such as AWS Lambdas very painful
+  and requires mocking the whole Node `http` library or worse: run full HTTP
+  server inside the lambda function just so requests can be forwarded.
   New frameworks like [Hono][4] do this perfectly these days, but this wasn't
   around at the time.
 * Native ['JSX as a template engine'][6] support. [Hono][5] also does this.
