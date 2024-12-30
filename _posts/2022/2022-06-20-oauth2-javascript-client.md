@@ -1,7 +1,7 @@
 ---
 title: "A new OAuth2 client for Javascript"
 date: "2022-06-20 19:40:00 UTC"
-geo: [45.686510, -79.328419]
+geo: [43.686510, -79.328419]
 location: "East York, ON, Canada"
 tags:
   - oauth2

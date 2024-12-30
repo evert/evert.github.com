@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu bungled the Firefox Snap package transition"
 date: "2022-09-01 09:39:29 UTC"
-geo: [45.686510, -79.328419]
+geo: [43.686510, -79.328419]
 location: "East York, ON, Canada"
 tags:
   - firefox
