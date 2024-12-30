@@ -11,6 +11,6 @@ until I figure that out.</p>
 
 <ul class="tag-cloud">
 {% for tag in site.tags %}
-<li class="weight{{ tag[1] | size | at_most: 14 | divide 2 | round  }}">{{ tag[0] }}</li>
+<li class="weight{{ tag[1] | size | at_most: 14 | divide: 2 | round  }}">{{ tag[0] }}</li>
 {% endfor %}
 </ul>

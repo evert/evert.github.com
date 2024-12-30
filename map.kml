@@ -15,7 +15,7 @@ layout: null
         <name>{{ post.title | xml_escape }}</name>
         <Point>
           <coordinates>
-            {{ post.geo[1] }},{{ post.geo[0] }},0
+            {{ post.geo[1] }}{{ post.date | date: '%s' | modulo: 1000 }},{{ post.geo[0] }}{{post.date | date: '%s' | divide: 10 | modulo: 1000 }},0
           </coordinates>
         </Point>
         <description>https://evertpot.com{{post.url}} - {{ post.date | date: "%B %d, %Y" }}</description>
