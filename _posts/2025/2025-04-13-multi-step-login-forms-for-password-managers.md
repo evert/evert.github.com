@@ -144,13 +144,15 @@ Your one-time code is 123123
 @mydomain #123123
 ```
 
-Password manager developer advice
----------------------------------
+Password manager developers:
+-----------------------------
 
-Please also try to follow these recommendations! For better or worse, this
-is where a lot of applications are going to. [KeepassXC-Browser][5] in
-particular does a pretty poor job at handling some of these cases. I've filed
-a feature request but it was unfortunately closed despite some luke-warm interest.
+Please also try to follow these recommendations! For better or worse, a lot of
+applications are going to this multi-step flow. [KeepassXC-Browser][5] in
+particular does a pretty poor job at handling some of these cases, unless you are one
+of their [blessed sites][[11] I've filed a [feature request][8] but it was
+unfortunately closed despite some luke-warm interest.
+
 
 References and further reading:
 -------------------------------
@@ -183,3 +185,4 @@ website as a comment:
 [8]: https://github.com/keepassxreboot/keepassxc-browser/issues/2436
 [9]: https://www.chromium.org/developers/design-documents/create-amazing-password-forms/
 [10]: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/password
+[11]: https://github.com/keepassxreboot/keepassxc-browser/blob/b186eb1fd286bdc9515bb59f1e5c7e5ec568b41c/keepassxc-browser/common/sites.js#L3
