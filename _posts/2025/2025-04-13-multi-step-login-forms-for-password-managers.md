@@ -124,7 +124,7 @@ correctly:
 
 ```html
 <input
-    type="string"
+    type="text"
     autocomplete="one-time-code"
     name="otp"
     required
