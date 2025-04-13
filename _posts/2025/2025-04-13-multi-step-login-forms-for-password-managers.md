@@ -13,9 +13,9 @@ tags:
 Password managers are still the best way to manage credentials, and if you
 are doing things on the web, you should be using one.
 
-Increasingly, websites are using multi-step login forms which don't work as
-well with password managers. They might first ask for _just_ an email address
-and only after present users with a password field.
+Increasingly, websites are using multi-step login forms. They might first
+ask for _just_ an email address and only after present users with a password
+field.
 
 <figure>
   <img src="/assets/posts/login-forms/google-login.png" class="fill-width" />
