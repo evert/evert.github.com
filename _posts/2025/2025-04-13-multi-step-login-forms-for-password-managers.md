@@ -27,8 +27,13 @@ and only after present users with a password field.
   <figcaption>Amazon Login form</figcaption>
 </figure>
 
-Why do they do that?
---------------------
+Unfortunately, this doesn't always work well with password managers. Password
+managers are such an integral part of the web, I think it's important as 
+web developers to make this work as best as possible. It's also an
+accessibility issue.
+
+Why do websites use multi-step login forms?
+---------------------------------------------
 
 The short version is that many companies want to centralize their login /
 password management systems for all their employees. This lets them change
@@ -154,6 +159,16 @@ References and further reading:
 * [Create Amazing Password Forms (chromium.org)][9]
 * [`<input type="password">` (MDN)][10]
 * [KeeppassXC-browser rejected feature request to better support multi-step login forms][8]
+
+Thoughts?
+---------
+
+If you have further workarounds to make password managers behave well, you
+can reply to these posts on Mastodon or Bluesky to automatically appear on this
+website as a comment:
+
+* Mastodon: <#>
+* Bluesky: <#>
 
 
 [1]: https://keepassxc.org/
