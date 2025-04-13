@@ -171,8 +171,8 @@ If you have further workarounds to make password managers behave well, you
 can reply to these posts on Mastodon or Bluesky to automatically appear on this
 website as a comment:
 
-* Mastodon: <#>
-* Bluesky: <#>
+* Mastodon: <https://indieweb.social/@evert/114330222551324994>
+* Bluesky: <https://bsky.app/profile/evertpot.com/post/3lmouioj5hh2h>
 
 
 [1]: https://keepassxc.org/
