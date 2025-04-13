@@ -122,6 +122,7 @@ additional security. Password managers let you store TOTP codes, but in order
 for your password manager to detect the field, you also need to annotate this
 correctly:
 
+```html
 <input
     type="string"
     autocomplete="one-time-code"
@@ -131,6 +132,7 @@ correctly:
     inputmode="numeric"
 
 />
+```
 
 The key attribute here is 'autocomplete'. You can even get this auto-filled
 with SMS codes, if you use a [specially formatted SMS][6], which looks a bit
