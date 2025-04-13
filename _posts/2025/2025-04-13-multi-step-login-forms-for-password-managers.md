@@ -18,17 +18,17 @@ well with password managers. They might first ask for _just_ an email address
 and only after present users with a password field.
 
 <figure>
-  <img src="/assets/posts/login-forms/google-login.png" />
+  <img src="/assets/posts/login-forms/google-login.png" class="fill-width" />
   <figcaption>Google Login form</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/posts/login-forms/amazon-login.png" />
+  <img src="/assets/posts/login-forms/amazon-login.png" class="fill-width" />
   <figcaption>Amazon Login form</figcaption>
 </figure>
 
 Unfortunately, this doesn't always work well with password managers. Password
-managers are such an integral part of the web, I think it's important as 
+managers are such an integral part of the web, I think it's important as
 web developers to make this work as best as possible. It's also an
 accessibility issue.
 
