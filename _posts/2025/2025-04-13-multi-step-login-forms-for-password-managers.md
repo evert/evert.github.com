@@ -115,6 +115,9 @@ This is particularly great if the user has multiple accounts on your system.
 The pre-filled username lets a password manager detect which account is
 being used to log in.
 
+This might also be important for ensuring that password managers offer to save
+the credentials in the first place.
+
 ### 3. If you're using one-time-codes, also annotate those fields
 
 Many login systems use SMS codes or TOTP (Authenticator App) codes for
