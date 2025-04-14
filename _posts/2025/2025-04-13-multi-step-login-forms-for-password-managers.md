@@ -162,9 +162,8 @@ Password manager developers:
 
 Please also try to follow these recommendations! For better or worse, a lot of
 applications are going to this multi-step flow. [KeepassXC-Browser][5] in
-particular does a pretty poor job at handling some of these cases, unless you are one
-of their [blessed sites][[11] I've filed a [feature request][8] but it was
-unfortunately closed despite some luke-warm interest.
+particular doesn't handle these cases well, unless you're one of
+of their [blessed sites][[11] ([feature request][8]).
 
 
 References and further reading:
