@@ -144,6 +144,16 @@ Your one-time code is 123123
 @mydomain #123123
 ```
 
+### If you want users to be able to auto-login use HTML correctly.
+
+The [1Password][7] site describes that they simulate a 'click' on a login
+button to trigger the login.
+
+But if there's no `<button>`, it's less likely password managers will be able
+to find it. Using HTML correctly is always a good idea. If you use a component
+library, check what it generates for buttons and if it's not `<div>`'s all the
+way down.
+
 Password manager developers:
 -----------------------------
 
