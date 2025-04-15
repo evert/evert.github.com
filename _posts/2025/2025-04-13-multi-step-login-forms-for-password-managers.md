@@ -100,7 +100,7 @@ field again (prefilled), and hidden with CSS.
     name="username"
     required
     value="spam@evertpot.com"
-    style="display:hidden"
+    style="display:none"
 />
 
 <input
