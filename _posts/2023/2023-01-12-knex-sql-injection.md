@@ -73,7 +73,7 @@ You might expect an error from Knex, but instead it generates the following quer
 SELECT `id`, `name` FROM `users` WHERE `id` = `name` = 'foo'
 ```
 
-This query is not invalid. I don't fully understand fully understand MySQL's behavior,
+This query is not invalid. I don't fully understand MySQL's behavior,
 but it causes the WHERE clause to be ignored and the result is equivalent to:
 
 ```sql
