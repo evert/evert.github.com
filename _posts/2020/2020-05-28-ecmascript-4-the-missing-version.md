@@ -310,7 +310,7 @@ Sources
 [1]: https://en.wikipedia.org/wiki/ECMAScript#4th_Edition_(abandoned)
 [2]: https://auth0.com/blog/the-real-story-behind-es4/ "The Real Story Behind ECMAScript 4"
 [3]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields
-[4]: https://www.ecma-international.org/activities/Languages/Language%20overview.pdf
+[4]: https://archives.ecma-international.org/2007/misc/overview.pdf "Proposed ECMAScript 4 th Edition – Language Overview"
 [5]: https://www.typescriptlang.org/docs/handbook/functions.html
 [6]: https://en.wikipedia.org/wiki/ECMAScript_for_XML
 [7]: https://reactjs.org/docs/introducing-jsx.htm://reactjs.org/docs/introducing-jsx.html
