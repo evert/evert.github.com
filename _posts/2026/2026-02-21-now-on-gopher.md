@@ -16,10 +16,10 @@ about something called [Gopher][1] via this settings screen:
   <figcaption>Windows 98 proxy setting screen</figcaption>
 </figure>
 
-I always had a bit of an obession with obscure protocols, so I was always
-a bit curious about this. At the time all major browsers supported Gopher
-and occasionally would run into an elusive `gopher://` link, perfectly
-integrated with the rest of the web.
+I was always a bit curious about this. At the time all major browsers
+supported Gopher and occasionally would run into an elusive `gopher://` link,
+perfectly integrated with the rest of the web, but also feeling somewhat
+alien.
 
 In 2006 I learned about [inetd][6] on linux and it occured to me that I could
 build a gopher server with PHP without needing to learn about sockets (which
@@ -44,8 +44,8 @@ idealism of the internet in mid 00's is dead and buried, Gopher (and
 
 The biggest year for Gopher in this century was actually 2025, when the number
 of active gopher sites reached a whopping **432** according to
-[Wikipedia][1], and even new clients are being made. Most of these sites
-are just personal spaces, like the homepages of yore.
+[Wikipedia][1], Most of these sites are just personal spaces, like the
+homepages of yore.
 
 I also recently built a little homelab, so this seemed like the perfect time
 to finally set up a permament gopher server (or 'hole').
