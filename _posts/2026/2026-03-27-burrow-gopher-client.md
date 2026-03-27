@@ -27,6 +27,8 @@ and browse Gopherspace!
 
 It's GPL licensed, source code is available on [GitHub][3].
 
+Visit my website, at `gopher://hole.din.gy/` !
+
 
 [1]: /now-on-gopher
 [2]: https://en.wikipedia.org/wiki/Gopher_(protocol)
