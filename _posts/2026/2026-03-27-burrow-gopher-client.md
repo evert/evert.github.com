@@ -18,7 +18,7 @@ native platforms.
 Anyway, here's a screenshot:
 
 <figure>
-    <img src="/assets/posts/gopher/burrow.png" alt="Screenshot of Burrow, a Gopher client in the browser">
+    <img src="/assets/posts/gopher/burrow.png" alt="Screenshot of Burrow, a Gopher client in the browser" class="fill-width">
     <figcaption>Burrow screenshot</figcaption>
 </figure>
 
