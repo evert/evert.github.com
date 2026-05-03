@@ -172,7 +172,7 @@ are different).
 
 Link once more:
 
-* https://github.com/evert/nmea-static-gps-server
+* <https://github.com/evert/nmea-static-gps-server>
 
 
 [1]: https://www.omgubuntu.co.uk/2024/03/mozilla-location-services-axed
