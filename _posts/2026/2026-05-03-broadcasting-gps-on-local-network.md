@@ -163,8 +163,14 @@ Now I never have to wait for a slower, inaccurate GPS lookup again and as long
 as I'm home all my Linux machines will just instantly pick up the correct
 location.
 
+It also _seemed_ to work on Apple Maps on a Mac, but only when Location
+Services was turned off. I didn't get an exact dot on the map but it got the
+area right.
+
 For fun, you could also use this to spoof incorrect locations to your
 Linux-using guests and co-workers.
+
+
 
 Hope this tool is useful to anyone else. If you'd like to contribute,
 more/better setup instructions for other distros are appreciated (if they
