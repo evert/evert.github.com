@@ -57,7 +57,7 @@ has been around for a bit, but I've just been copy-pasting `ProxyCommand` from
 previous configs for a decade+.
 
 You might not have a DNS setup like this, and might be using `.local` domains
-to access local servers, if so I think this _should_ also work fine:
+to access local servers, if this also work, HOWEVER:
 
 ```ssh
 Match host *.local exec "! getent hosts %h >/dev/null"
@@ -67,7 +67,7 @@ Match host *.local exec "! getent hosts %h >/dev/null"
     ProxyJump bastion.example.ca:6767
 ```
 
-But keep in mind that every time you do this, you computer likely first
+Every time you do this, you computer likely first
 broadcasts on your local network it's looking for that machine. `.local` / MDNS
 also tends to be a bit slower when you're local, and given that you're paying
 that cost. `ForwardAgent` agent can also make this extremely dangerous because
