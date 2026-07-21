@@ -85,6 +85,7 @@ Host *.local
 ```
 
 
+This _always_ go through the bastion for every SSH connection to a `.local` host.
 
 [1]: https://thekelleys.org.uk/dnsmasq/doc.html
 [2]: https://en.wikipedia.org/wiki/Split-horizon_DNS
