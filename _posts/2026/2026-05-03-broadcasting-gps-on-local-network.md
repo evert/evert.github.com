@@ -59,7 +59,7 @@ $GPRMC,204049.000,A,5308.3999,N,00601.9266,E,0.000,0.000,030526,,*02
 $GPGGA,204049.000,5308.3999,N,00601.9266,E,1,08,1.0,119.0,M,0.0,M,,*6F
 ```
 
-It's also support, and enabled by default by GeoClue. The settings in 
+It's also supported, and enabled by default by GeoClue. The settings in 
 `/etc/geoclue/geoclue.conf` look like this for me:
 
 ```ini
