@@ -70,8 +70,9 @@ Match host *.local exec "! getent hosts %h >/dev/null"
 But keep in mind that every time you do this, you computer likely first
 broadcasts on your local network it's looking for that machine. `.local` / MDNS
 also tends to be a bit slower when you're local, and given that you're paying
-that cost. I'm not certain but `ForwardAgent` but also make this actively very
-dangerous. So maybe for that case it's not the worst thing to just always go
+that cost. `ForwardAgent` agent can also make this extremely dangerous because
+someone might impersonate `target.local` and get access to your entire SSH keychain.
+So maybe for that case it's not the worst thing to just always go
 through a bastion server. If so, this config is for you:
 
 
